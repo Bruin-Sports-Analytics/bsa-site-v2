@@ -14,6 +14,10 @@ export function Navigation() {
   const [open, setOpen] = useState(false);
   const scrolled = useScrolledState();
   const featured = projects.filter((project) => project.featured).slice(0, 3);
+  const recentProjects = [...projects]
+    .filter((project) => project.visibility !== "hidden")
+    .sort((a, b) => Date.parse(b.lastUpdated) - Date.parse(a.lastUpdated))
+    .slice(0, 3);
 
   return (
     <header className={cn(styles.header, scrolled && styles.scrolled)}>
@@ -25,7 +29,7 @@ export function Navigation() {
         <nav className={styles.desktop} aria-label="Primary navigation">
           {navItems.map((item) => {
             const active = item.href === "/" ? pathname === "/" : pathname.startsWith(item.href);
-            const hasMenu = item.label === "Our Work" || item.label === "People";
+            const hasMenu = item.label === "Our Work" || item.label === "Projects" || item.label === "People";
             return (
               <div className={styles.navGroup} key={item.href}>
                 <Link href={item.href} className={`${styles.navLink} ${active ? styles.active : ""}`}>
@@ -47,6 +51,29 @@ export function Navigation() {
                         <div className={styles.menuColumn}>
                           <span className="eyebrow">Featured</span>
                           {featured.map((project) => (
+                            <Link href={`/projects/${project.slug}`} key={project.slug}>
+                              {project.title}
+                              <small>{project.projectType} · {project.status}</small>
+                            </Link>
+                          ))}
+                        </div>
+                      </>
+                    ) : item.label === "Projects" ? (
+                      <>
+                        <div className={styles.menuColumn}>
+                          <span className="eyebrow">Project Dashboard</span>
+                          <Link href="/projects">
+                            Browse all projects
+                            <small>Search, filter, and sort the full index</small>
+                          </Link>
+                          <Link href="/work">
+                            Explore by sport
+                            <small>Baseball, volleyball, basketball, football, and tennis</small>
+                          </Link>
+                        </div>
+                        <div className={styles.menuColumn}>
+                          <span className="eyebrow">Recently updated</span>
+                          {recentProjects.map((project) => (
                             <Link href={`/projects/${project.slug}`} key={project.slug}>
                               {project.title}
                               <small>{project.projectType} · {project.status}</small>

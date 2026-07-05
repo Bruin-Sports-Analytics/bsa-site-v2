@@ -77,6 +77,16 @@
   position: relative;
 }
 
+.navGroup::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: max(100%, 560px);
+  height: 14px;
+  display: none;
+}
+
 .navLink {
   position: relative;
   min-height: 44px;
@@ -125,11 +135,25 @@
   gap: 16px;
   margin-top: 12px;
   padding: 18px;
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, .075), rgba(74, 168, 255, .045)),
+    rgba(4, 17, 32, .92);
+  border-color: rgba(218, 237, 255, .42);
+  box-shadow:
+    0 34px 90px rgba(0, 5, 15, .62),
+    0 1px 0 rgba(255, 255, 255, .14) inset;
+  -webkit-backdrop-filter: blur(38px) saturate(155%) brightness(92%);
+  backdrop-filter: blur(38px) saturate(155%) brightness(92%);
 }
 
 .navGroup:hover .megaMenu,
 .navGroup:focus-within .megaMenu {
   display: grid;
+}
+
+.navGroup:hover::after,
+.navGroup:focus-within::after {
+  display: block;
 }
 
 .menuColumn {
@@ -140,18 +164,21 @@
 .menuColumn a {
   display: grid;
   gap: 4px;
+  border: 1px solid transparent;
   border-radius: var(--radius-sm);
+  background: rgba(4, 17, 32, .28);
   padding: 10px;
   color: var(--text-primary);
   font-weight: 800;
 }
 
 .menuColumn a:hover {
-  background: rgba(139, 203, 255, .10);
+  border-color: rgba(139, 203, 255, .22);
+  background: rgba(139, 203, 255, .12);
 }
 
 .menuColumn small {
-  color: var(--text-muted);
+  color: var(--text-secondary);
   font-weight: 600;
 }
 
