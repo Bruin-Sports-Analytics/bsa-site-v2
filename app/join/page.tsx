@@ -3,6 +3,7 @@ import Link from "next/link";
 import { FAQAccordion } from "@/components/FAQAccordion";
 import { Timeline } from "@/components/Timeline";
 import { recruitment } from "@/data/site";
+import styles from "./join.module.css";
 
 export const metadata: Metadata = {
   title: "Join"
@@ -49,19 +50,23 @@ export default function JoinPage() {
       </section>
       <section className="section tight">
         <div className="container grid two">
-          <article className="card" style={{ padding: 28 }}>
+          <article className={`card ${styles.recruitmentCard}`}>
             <span className="eyebrow">What members do</span>
             <h2 className="section-title" style={{ fontSize: 40 }}>Build in real project teams.</h2>
             <p className="section-lede">Members clean data, write models, build dashboards, publish analysis, and communicate results to teammates, readers, and partners.</p>
           </article>
-          <article className="card" style={{ padding: 28 }}>
-            <span className="eyebrow">Roles recruiting</span>
-            <div className="tag-row">
-              {recruitment.roles.map((role) => <span className="tag" key={role}>{role}</span>)}
+          <article className={`card ${styles.tagPanel}`}>
+            <div className={styles.tagGroup}>
+              <span className="eyebrow">Roles recruiting</span>
+              <div className={styles.tags}>
+                {recruitment.roles.map((role) => <span className="tag" key={role}>{role}</span>)}
+              </div>
             </div>
-            <span className="eyebrow" style={{ marginTop: 22 }}>Teams</span>
-            <div className="tag-row">
-              {recruitment.teamsRecruiting.map((team) => <span className="tag" key={team}>{team}</span>)}
+            <div className={styles.tagGroup}>
+              <span className="eyebrow">Teams</span>
+              <div className={styles.tags}>
+                {recruitment.teamsRecruiting.map((team) => <span className="tag" key={team}>{team}</span>)}
+              </div>
             </div>
           </article>
         </div>

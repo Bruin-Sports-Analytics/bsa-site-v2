@@ -1,0 +1,35 @@
+.recruitmentCard {
+  min-height: 330px;
+  padding: 40px;
+}
+
+.tagPanel {
+  min-height: 330px;
+  display: grid;
+  align-content: start;
+  gap: 20px;
+  padding: 40px;
+}
+
+.tagGroup {
+  display: grid;
+  gap: 12px;
+}
+
+.tagGroup + .tagGroup {
+  margin-top: 10px;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px 16px;
+}
+
+@media (max-width: 900px) {
+  .recruitmentCard,
+  .tagPanel {
+    min-height: auto;
+    padding: 28px;
+  }
+}
