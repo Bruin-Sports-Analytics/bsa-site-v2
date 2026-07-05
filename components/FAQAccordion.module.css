@@ -1,0 +1,49 @@
+.accordion {
+  display: grid;
+  gap: 10px;
+}
+
+.item {
+  border: 1px solid var(--glass-border);
+  border-radius: var(--glass-radius-sm);
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, .045), rgba(74, 168, 255, .025)),
+    var(--glass-regular-fill);
+  box-shadow: var(--glass-shadow-sm);
+  -webkit-backdrop-filter: blur(var(--glass-clear-blur)) saturate(135%);
+  backdrop-filter: blur(var(--glass-clear-blur)) saturate(135%);
+}
+
+.item[open] {
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, .055), rgba(74, 168, 255, .035)),
+    rgba(7, 24, 43, .82);
+}
+
+.item summary {
+  min-height: 58px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 14px 16px;
+  color: var(--text-primary);
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.item summary::marker {
+  content: "";
+}
+
+.item[open] svg {
+  transform: rotate(90deg);
+}
+
+.item p {
+  margin: 0;
+  border-top: 1px solid var(--border);
+  padding: 16px;
+  color: var(--text-secondary);
+  line-height: 1.65;
+}

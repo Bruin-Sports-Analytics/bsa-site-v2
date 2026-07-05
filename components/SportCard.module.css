@@ -1,0 +1,94 @@
+.card {
+  min-height: 360px;
+  display: grid;
+  gap: 14px;
+  align-content: start;
+  padding: 22px;
+  color: var(--text-primary);
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  color: var(--accent);
+}
+
+.marker {
+  border: 1px solid var(--glass-border-gold);
+  border-radius: var(--glass-radius-pill);
+  background: rgba(255, 209, 0, .08);
+  padding: 5px 8px;
+  color: var(--ucla-gold);
+  font-family: var(--font-mono), monospace;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.card h3 {
+  margin: 0;
+  font-family: var(--font-sora), system-ui, sans-serif;
+  font-size: 30px;
+}
+
+.card p {
+  margin: 0;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.metric {
+  color: var(--text-muted);
+  font-family: var(--font-mono), monospace;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+.metric b {
+  color: var(--ucla-gold);
+}
+
+.chart {
+  position: relative;
+  min-height: 96px;
+  border: 1px solid rgba(139, 203, 255, .18);
+  border-radius: var(--glass-radius-sm);
+  background-color: rgba(4, 18, 34, .42);
+  background:
+    linear-gradient(90deg, rgba(139, 203, 255, .09) 1px, transparent 1px),
+    linear-gradient(rgba(139, 203, 255, .09) 1px, transparent 1px);
+  background-size: 22px 22px;
+}
+
+.chart span {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--accent);
+  box-shadow: 0 0 18px var(--accent);
+}
+
+.chart span:nth-child(1) {
+  left: 18%;
+  top: 42%;
+}
+
+.chart span:nth-child(2) {
+  left: 50%;
+  top: 22%;
+}
+
+.chart span:nth-child(3) {
+  right: 18%;
+  bottom: 24%;
+}
+
+.action {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  margin-top: auto;
+  color: var(--ucla-gold);
+  font-weight: 900;
+}

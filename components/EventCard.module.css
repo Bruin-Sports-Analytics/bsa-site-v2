@@ -1,0 +1,45 @@
+.card {
+  min-height: 300px;
+  display: grid;
+  gap: 14px;
+  align-content: start;
+  padding: 22px;
+}
+
+.type,
+.members {
+  width: fit-content;
+  border: 1px solid rgba(255, 209, 0, .26);
+  border-radius: var(--radius-sm);
+  color: var(--ucla-gold);
+  padding: 5px 8px;
+  font-family: var(--font-mono), monospace;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.card h3 {
+  margin: 0;
+  font-family: var(--font-sora), system-ui, sans-serif;
+  font-size: 25px;
+}
+
+.card p {
+  margin: 0;
+  color: var(--text-secondary);
+  line-height: 1.55;
+}
+
+.meta {
+  display: grid;
+  gap: 8px;
+  color: var(--text-muted);
+  font-weight: 700;
+}
+
+.meta span {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+}

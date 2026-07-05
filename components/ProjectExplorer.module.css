@@ -1,0 +1,87 @@
+.explorer {
+  display: grid;
+  gap: 24px;
+}
+
+.controls {
+  position: sticky;
+  top: 92px;
+  z-index: 20;
+  display: grid;
+  grid-template-columns: minmax(220px, 1.6fr) repeat(4, minmax(130px, 1fr)) minmax(170px, auto);
+  gap: 10px;
+  padding: 12px;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.search,
+.controls select {
+  min-height: 46px;
+  border: 1px solid rgba(190, 224, 255, 0.18);
+  border-radius: var(--glass-radius-pill);
+  background: rgba(4, 18, 34, 0.78);
+  color: var(--text-primary);
+  padding: 0 12px;
+}
+
+.search input {
+  width: 100%;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  color: var(--text-primary);
+}
+
+.toggle {
+  min-height: 46px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--text-secondary);
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.grid,
+.compactGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.compactGrid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.empty {
+  color: var(--text-secondary);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+@media (max-width: 1050px) {
+  .controls {
+    position: static;
+  }
+
+  .controls,
+  .grid,
+  .compactGrid {
+    grid-template-columns: 1fr;
+  }
+}

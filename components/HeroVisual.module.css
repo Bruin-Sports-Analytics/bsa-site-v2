@@ -1,0 +1,167 @@
+.visual {
+  position: relative;
+  min-height: 560px;
+  border: 1px solid var(--glass-border);
+  border-radius: var(--glass-radius-lg);
+  background:
+    radial-gradient(circle at 50% 45%, rgba(74, 168, 255, .24), transparent 38%),
+    linear-gradient(145deg, rgba(16, 42, 73, .8), rgba(6, 20, 38, .42));
+  box-shadow: var(--glass-shadow-md);
+  overflow: hidden;
+}
+
+.court {
+  position: absolute;
+  inset: 54px 40px;
+  border: 2px solid rgba(139, 203, 255, .22);
+  transform: perspective(680px) rotateX(58deg) rotateZ(-13deg);
+}
+
+.court::before,
+.court::after,
+.court span {
+  content: "";
+  position: absolute;
+  border: 1px solid rgba(255, 209, 0, .22);
+}
+
+.court::before {
+  inset: 20% 32%;
+  border-radius: 50%;
+}
+
+.court::after {
+  left: 50%;
+  top: 0;
+  bottom: 0;
+}
+
+.court span:nth-child(1) {
+  left: 0;
+  right: 0;
+  top: 50%;
+}
+
+.court span:nth-child(2) {
+  left: 15%;
+  top: 0;
+  bottom: 0;
+}
+
+.court span:nth-child(3) {
+  right: 15%;
+  top: 0;
+  bottom: 0;
+}
+
+.orbit {
+  position: absolute;
+  width: 330px;
+  height: 330px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  animation: spin 18s linear infinite;
+}
+
+.orbit::before {
+  content: "";
+  position: absolute;
+  inset: 44px;
+  border: 1px solid rgba(255, 209, 0, .28);
+  border-radius: 50%;
+  box-shadow: 0 0 60px rgba(74, 168, 255, .3);
+}
+
+.orbit i {
+  --angle: calc(var(--i) * 10.58deg);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--sky-blue);
+  box-shadow: 0 0 16px rgba(139, 203, 255, .9);
+  transform: rotate(var(--angle)) translateX(150px);
+}
+
+.paths {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  fill: none;
+  stroke: rgba(255, 209, 0, .55);
+  stroke-width: 2;
+  stroke-dasharray: 9 13;
+  animation: dash 9s linear infinite;
+}
+
+.metric {
+  position: absolute;
+  display: grid;
+  gap: 2px;
+  border: 1px solid var(--glass-border);
+  border-radius: var(--glass-radius-sm);
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, .08), rgba(74, 168, 255, .04)),
+    var(--glass-clear-fill);
+  box-shadow: var(--glass-shadow-sm);
+  padding: 12px 14px;
+  -webkit-backdrop-filter: blur(var(--glass-clear-blur)) saturate(135%);
+  backdrop-filter: blur(var(--glass-clear-blur)) saturate(135%);
+}
+
+.metric b {
+  color: var(--ucla-gold);
+  font-family: var(--font-sora), system-ui, sans-serif;
+  font-size: 28px;
+}
+
+.metric span {
+  color: var(--text-secondary);
+  font-family: var(--font-mono), monospace;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.metricOne {
+  left: 28px;
+  top: 56px;
+}
+
+.metricTwo {
+  right: 30px;
+  top: 118px;
+}
+
+.metricThree {
+  left: 62px;
+  bottom: 50px;
+}
+
+@keyframes spin {
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: -160;
+  }
+}
+
+@media (max-width: 900px) {
+  .visual {
+    min-height: 380px;
+  }
+
+  .metric {
+    position: static;
+    display: inline-grid;
+    margin: 10px;
+  }
+}

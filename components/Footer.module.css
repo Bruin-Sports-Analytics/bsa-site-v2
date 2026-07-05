@@ -1,0 +1,71 @@
+.footer {
+  border-top: 1px solid var(--border);
+  background: #04101f;
+  padding: 54px 0 44px;
+}
+
+.inner {
+  width: min(1180px, calc(100% - 40px));
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: minmax(220px, 1fr) 2.4fr;
+  gap: 42px;
+}
+
+.signature p {
+  max-width: 360px;
+  margin: 14px 0 0;
+  font-family: var(--font-sora), system-ui, sans-serif;
+  font-size: 28px;
+  line-height: 1.15;
+}
+
+.columns {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.columns div {
+  display: grid;
+  align-content: start;
+  gap: 10px;
+}
+
+.columns h2 {
+  margin: 0 0 4px;
+  color: var(--sky-blue);
+  font-family: var(--font-mono), monospace;
+  font-size: 12px;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+
+.columns a {
+  color: var(--text-secondary);
+  font-weight: 700;
+}
+
+.columns a:hover {
+  color: var(--text-primary);
+}
+
+.socials a {
+  min-height: 36px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid var(--glass-border);
+  border-radius: var(--glass-radius-pill);
+  background: var(--glass-clear-fill);
+  padding: 6px 10px;
+  -webkit-backdrop-filter: blur(var(--glass-clear-blur));
+  backdrop-filter: blur(var(--glass-clear-blur));
+}
+
+@media (max-width: 900px) {
+  .inner,
+  .columns {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,78 @@
+.card {
+  min-height: 420px;
+  display: grid;
+  grid-template-rows: 220px 1fr;
+  color: var(--text-primary);
+}
+
+.photo {
+  display: grid;
+  place-items: center;
+  background:
+    radial-gradient(circle at 70% 20%, rgba(255, 209, 0, .18), transparent 34%),
+    linear-gradient(145deg, #1a3b5b, #08172a);
+  color: var(--sky-blue);
+  font-family: var(--font-sora), system-ui, sans-serif;
+  font-size: 54px;
+  font-weight: 800;
+}
+
+.body {
+  position: relative;
+  z-index: 1;
+  margin: -42px 14px 14px;
+  display: grid;
+  gap: 8px;
+  border: 1px solid var(--glass-border);
+  border-radius: var(--glass-radius-md);
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, .07), rgba(74, 168, 255, .04)),
+    rgba(7, 24, 43, .82);
+  box-shadow: var(--glass-shadow-sm);
+  -webkit-backdrop-filter: blur(var(--glass-regular-blur)) saturate(135%);
+  backdrop-filter: blur(var(--glass-regular-blur)) saturate(135%);
+  padding: 18px;
+}
+
+.body h3 {
+  margin: 0;
+  font-family: var(--font-sora), system-ui, sans-serif;
+  font-size: 24px;
+}
+
+.body p,
+.body span,
+.body small {
+  margin: 0;
+  color: var(--text-secondary);
+}
+
+.body span {
+  font-weight: 700;
+}
+
+.body small {
+  opacity: 0;
+  line-height: 1.55;
+  transition: opacity .18s ease;
+}
+
+.card:hover small,
+.card:focus-within small {
+  opacity: 1;
+}
+
+.icon {
+  position: absolute;
+  right: 14px;
+  top: 14px;
+  width: 36px;
+  height: 36px;
+  border: 1px solid var(--glass-border);
+  border-radius: 50%;
+  background: var(--glass-clear-fill);
+  padding: 8px;
+  color: var(--ucla-gold);
+  -webkit-backdrop-filter: blur(var(--glass-clear-blur));
+  backdrop-filter: blur(var(--glass-clear-blur));
+}
