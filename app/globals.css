@@ -189,6 +189,16 @@ button {
   grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
+.sport-card-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.sport-card-grid > :last-child:nth-child(odd) {
+  grid-column: 1 / -1;
+}
+
 .button-row {
   display: flex;
   flex-wrap: wrap;
@@ -504,8 +514,13 @@ button {
   .grid.three,
   .grid.two,
   .grid.four,
+  .sport-card-grid,
   .form-grid {
     grid-template-columns: 1fr;
+  }
+
+  .sport-card-grid > :last-child:nth-child(odd) {
+    grid-column: auto;
   }
 
   .section {

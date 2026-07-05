@@ -19,7 +19,7 @@ export default function WorkPage() {
       </section>
       <section className="section">
         <div className="container">
-          <div className="grid three">
+          <div className="sport-card-grid">
             {sports.map((sport) => <SportCard sport={sport} key={sport.slug} />)}
           </div>
         </div>

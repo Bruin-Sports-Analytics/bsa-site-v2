@@ -18,11 +18,6 @@ export function SportCard({ sport }: { sport: Sport }) {
       <div className={styles.metric}>
         <b>{sport.activeProjects}</b> active / <b>{sport.archivedProjects}</b> archived
       </div>
-      <div className={styles.chart} aria-hidden>
-        <span />
-        <span />
-        <span />
-      </div>
       <div className={styles.action}>Explore {sport.name} <ArrowUpRight size={16} aria-hidden /></div>
     </GlassSurface>
   );

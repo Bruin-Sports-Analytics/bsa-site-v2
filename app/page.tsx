@@ -48,7 +48,7 @@ export default function Home() {
           <span className="eyebrow">Our Work</span>
           <h2 className="section-title">Explore by sport</h2>
           <p className="section-lede">Consulting projects, research, dashboards, tools, and articles live together under the sport where the question starts.</p>
-          <div className={styles.sportGrid}>
+          <div className="sport-card-grid">
             {sports.map((sport) => <SportCard sport={sport} key={sport.slug} />)}
           </div>
         </div>
