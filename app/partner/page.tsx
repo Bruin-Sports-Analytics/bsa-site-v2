@@ -26,7 +26,7 @@ export default function PartnerPage() {
               return (
                 <article className="card" style={{ padding: 24 }} key={capability.title}>
                   <Icon color="var(--ucla-gold)" size={30} aria-hidden />
-                  <h3 style={{ fontFamily: "var(--font-sora)", fontSize: 25 }}>{capability.title}</h3>
+                  <h3 style={{ fontFamily: "var(--font-sora)", fontSize: 23 }}>{capability.title}</h3>
                   <p style={{ color: "var(--text-secondary)", lineHeight: 1.6 }}>{capability.text}</p>
                 </article>
               );
@@ -52,7 +52,7 @@ export default function PartnerPage() {
         <div className="container grid two">
           <article className="card glass glass--strong glass--radius-lg" style={{ padding: 28 }}>
             <span className="eyebrow">Inquiry form</span>
-            <h2 className="section-title" style={{ fontSize: 38 }}>Bring us the problem.</h2>
+            <h2 className="section-title" style={{ fontSize: 34 }}>Bring us the problem.</h2>
             <form className="form-grid">
               <div className="field">
                 <label htmlFor="name">Name</label>
@@ -95,7 +95,7 @@ export default function PartnerPage() {
           </article>
           <aside className="card" style={{ padding: 28 }}>
             <span className="eyebrow">Technical credibility</span>
-            <h2 className="section-title" style={{ fontSize: 38 }}>Supported tools</h2>
+            <h2 className="section-title" style={{ fontSize: 34 }}>Supported tools</h2>
             <div className="tag-row">
               {technology.map((tool) => <span className="tag" key={tool}>{tool}</span>)}
             </div>

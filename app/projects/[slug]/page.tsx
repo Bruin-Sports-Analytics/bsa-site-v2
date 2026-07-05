@@ -52,7 +52,7 @@ export default function ProjectDetailPage({ params }: Props) {
           ].map(([title, text]) => (
             <article className="card" style={{ padding: 24 }} key={title}>
               <span className="eyebrow">{title}</span>
-              <p style={{ color: "var(--text-secondary)", fontSize: 18, lineHeight: 1.7 }}>{text}</p>
+              <p style={{ color: "var(--text-secondary)", fontSize: 16, lineHeight: 1.7 }}>{text}</p>
             </article>
           ))}
         </div>

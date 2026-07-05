@@ -27,7 +27,7 @@ export default function AboutPage() {
         <div className="container grid two">
           <article className="card" style={{ padding: 28 }}>
             <span className="eyebrow">Mission</span>
-            <h2 className="section-title" style={{ fontSize: 42 }}>Where sports meet data.</h2>
+            <h2 className="section-title" style={{ fontSize: 38 }}>Where sports meet data.</h2>
             <p className="section-lede">We build models, tools, dashboards, and writing that help people understand games more deeply and make better decisions from sports data.</p>
           </article>
           <article className="card" style={{ padding: 28 }}>
@@ -44,7 +44,7 @@ export default function AboutPage() {
             {milestones.map(([title, text]) => (
               <article className="card" style={{ padding: 24 }} key={title}>
                 <span className="tag">Milestone</span>
-                <h3 style={{ fontFamily: "var(--font-sora)", fontSize: 26 }}>{title}</h3>
+                <h3 style={{ fontFamily: "var(--font-sora)", fontSize: 24 }}>{title}</h3>
                 <p style={{ color: "var(--text-secondary)", lineHeight: 1.65 }}>{text}</p>
               </article>
             ))}
@@ -58,7 +58,7 @@ export default function AboutPage() {
           <div className="grid three">
             {["Rigor", "Curiosity", "Collaboration", "Practical impact", "Accessibility"].map((value) => (
               <article className="card" style={{ padding: 24 }} key={value}>
-                <h3 style={{ margin: 0, fontFamily: "var(--font-sora)", fontSize: 26 }}>{value}</h3>
+                <h3 style={{ margin: 0, fontFamily: "var(--font-sora)", fontSize: 24 }}>{value}</h3>
                 <p style={{ color: "var(--text-secondary)", lineHeight: 1.6 }}>A shared standard for building sports analysis that is useful, readable, and defensible.</p>
               </article>
             ))}
@@ -72,7 +72,7 @@ export default function AboutPage() {
             <div className="grid two">
               {impactStats.map((stat) => (
                 <div key={stat.label}>
-                  <b style={{ color: "var(--ucla-gold)", fontFamily: "var(--font-sora)", fontSize: 34 }}>{stat.value}</b>
+                  <b style={{ color: "var(--ucla-gold)", fontFamily: "var(--font-sora)", fontSize: 30 }}>{stat.value}</b>
                   <p style={{ color: "var(--text-secondary)" }}>{stat.label}</p>
                 </div>
               ))}

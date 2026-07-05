@@ -96,6 +96,7 @@ body {
   background-size: auto, auto, 42px 42px, 42px 42px, auto;
   color: var(--text-primary);
   font-family: var(--font-inter), system-ui, sans-serif;
+  font-size: 15px;
   min-height: 100vh;
 }
 
@@ -167,7 +168,7 @@ button {
 .eyebrow {
   color: var(--sky-blue);
   font-family: var(--font-mono), monospace;
-  font-size: 12px;
+  font-size: 11px;
   font-weight: 600;
   letter-spacing: .12em;
   text-transform: uppercase;
@@ -177,14 +178,14 @@ button {
   margin: 12px 0 16px;
   color: var(--text-primary);
   font-family: var(--font-sora), system-ui, sans-serif;
-  font-size: clamp(2rem, 4vw, 3.7rem);
+  font-size: clamp(1.85rem, 3.6vw, 3.35rem);
   line-height: 1;
 }
 
 .section-lede {
   max-width: 720px;
   color: var(--text-secondary);
-  font-size: 18px;
+  font-size: 17px;
   line-height: 1.7;
 }
 
@@ -309,7 +310,7 @@ button {
   padding: 5px 9px;
   color: var(--text-secondary);
   font-family: var(--font-mono), monospace;
-  font-size: 12px;
+  font-size: 11px;
   font-weight: 600;
   text-transform: uppercase;
 }
@@ -477,7 +478,7 @@ button {
   max-width: 900px;
   margin: 10px 0 18px;
   font-family: var(--font-sora), system-ui, sans-serif;
-  font-size: clamp(3rem, 8vw, 5.7rem);
+  font-size: clamp(2.7rem, 7.2vw, 5.15rem);
   line-height: .95;
   text-transform: uppercase;
 }
@@ -485,7 +486,7 @@ button {
 .page-hero p {
   max-width: 760px;
   color: var(--text-secondary);
-  font-size: 20px;
+  font-size: 18px;
   line-height: 1.65;
 }
 

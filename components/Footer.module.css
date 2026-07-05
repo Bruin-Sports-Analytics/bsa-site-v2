@@ -16,7 +16,7 @@
   max-width: 360px;
   margin: 14px 0 0;
   font-family: var(--font-sora), system-ui, sans-serif;
-  font-size: 28px;
+  font-size: 25px;
   line-height: 1.15;
 }
 
@@ -36,7 +36,7 @@
   margin: 0 0 4px;
   color: var(--sky-blue);
   font-family: var(--font-mono), monospace;
-  font-size: 12px;
+  font-size: 11px;
   letter-spacing: .12em;
   text-transform: uppercase;
 }

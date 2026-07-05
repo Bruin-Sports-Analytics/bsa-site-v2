@@ -14,7 +14,7 @@
   color: var(--ucla-gold);
   padding: 5px 8px;
   font-family: var(--font-mono), monospace;
-  font-size: 12px;
+  font-size: 11px;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -22,7 +22,7 @@
 .card h3 {
   margin: 0;
   font-family: var(--font-sora), system-ui, sans-serif;
-  font-size: 25px;
+  font-size: 23px;
 }
 
 .card p {

@@ -117,13 +117,13 @@
 .metric b {
   color: var(--ucla-gold);
   font-family: var(--font-sora), system-ui, sans-serif;
-  font-size: 28px;
+  font-size: 25px;
 }
 
 .metric span {
   color: var(--text-secondary);
   font-family: var(--font-mono), monospace;
-  font-size: 12px;
+  font-size: 11px;
   text-transform: uppercase;
 }
 

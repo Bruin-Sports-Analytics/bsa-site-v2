@@ -13,7 +13,7 @@
     linear-gradient(145deg, #1a3b5b, #08172a);
   color: var(--sky-blue);
   font-family: var(--font-sora), system-ui, sans-serif;
-  font-size: 54px;
+  font-size: 48px;
   font-weight: 800;
 }
 
@@ -37,7 +37,7 @@
 .body h3 {
   margin: 0;
   font-family: var(--font-sora), system-ui, sans-serif;
-  font-size: 24px;
+  font-size: 22px;
 }
 
 .body p,

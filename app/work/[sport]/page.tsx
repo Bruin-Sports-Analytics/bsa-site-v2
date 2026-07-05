@@ -45,7 +45,7 @@ export default function SportPage({ params }: Props) {
         <div className="container grid three">
           <div className="card" style={{ padding: 22 }}>
             <Icon size={34} color={sport.accent} aria-hidden />
-            <h2 className="section-title" style={{ fontSize: 32 }}>{sport.featuredMetric}</h2>
+            <h2 className="section-title" style={{ fontSize: 29 }}>{sport.featuredMetric}</h2>
             <p className="section-lede">Featured metric controlled from the sport content collection.</p>
           </div>
           {sport.focusAreas.map((area) => (
@@ -96,7 +96,7 @@ export default function SportPage({ params }: Props) {
         <div className="container">
           <div className="card" style={{ padding: 28 }}>
             <span className="eyebrow">Team</span>
-            <h2 style={{ fontFamily: "var(--font-sora)", fontSize: 36, margin: "10px 0" }}>{sport.lead}</h2>
+            <h2 style={{ fontFamily: "var(--font-sora)", fontSize: 32, margin: "10px 0" }}>{sport.lead}</h2>
             <p className="section-lede">{team.length ? team.map((member) => member.name).join(", ") : "Team members will be published after roster confirmation."}</p>
             <Link className="btn btn-primary" href="/partner" style={{ width: "fit-content" }}>Bring us a {sport.name.toLowerCase()} problem</Link>
           </div>
