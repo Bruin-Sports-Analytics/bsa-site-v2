@@ -42,7 +42,7 @@ export default function ProjectDetailPage({ params }: Props) {
         <div className="container grid two">
           {[
             ["Problem", project.problem],
-            ["Context", `This ${project.projectType.toLowerCase()} project sits inside BSA's ${sportName(project.sport)} workstream.`],
+            ["Context", `This ${project.projectType.toLowerCase()} project sits inside Bruin Sports Analytics' ${sportName(project.sport)} workstream.`],
             ["Approach", redacted ? "Detailed methods are redacted because this work may involve protected partner context." : project.approach],
             ["Data", redacted ? "Public page only describes approved data categories." : "Play-level, event-level, and contextual sports data prepared by the project team."],
             ["Methods and technology", project.techStack.join(", ")],

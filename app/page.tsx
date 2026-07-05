@@ -22,7 +22,7 @@ export default function Home() {
             <p>Bruin Sports Analytics is UCLA&apos;s student-run sports analytics organization, building research, tools, and competitive insights across the games we love.</p>
             <div className="button-row">
               <Link className="btn btn-primary" href="/work" data-analytics="hero_work_click">Explore Our Work <ArrowRight size={18} aria-hidden /></Link>
-              <Link className="btn btn-secondary" href="/join" data-analytics="hero_join_click">Join BSA</Link>
+              <Link className="btn btn-secondary" href="/join" data-analytics="hero_join_click">Join the Team</Link>
               <Link className="text-link" href="/partner">Partner With Us →</Link>
             </div>
           </div>
@@ -30,7 +30,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className={styles.impact} aria-label="BSA impact metrics">
+      <section className={styles.impact} aria-label="Bruin Sports Analytics impact metrics">
         <div className="container">
           <div className={styles.rail}>
             {impactStats.map((stat) => (

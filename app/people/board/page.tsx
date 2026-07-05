@@ -16,7 +16,7 @@ export default function BoardPage() {
         <div className="container">
           <span className="eyebrow">People</span>
           <h1>Board and directors.</h1>
-          <p>BSA leadership scopes projects, supports sport teams, and keeps the organization accountable to technical quality and partner trust.</p>
+          <p>Bruin Sports Analytics leadership scopes projects, supports sport teams, and keeps the organization accountable to technical quality and partner trust.</p>
           <Link className="btn btn-secondary" href="/people/members">View current members</Link>
         </div>
       </section>

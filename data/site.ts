@@ -302,7 +302,7 @@ export const members: Member[] = [
     team: "Executive Board",
     major: "Statistics & Data Science",
     gradYear: "2027",
-    bio: "Coordinates partner projects and keeps BSA's research standards consistent across teams.",
+    bio: "Coordinates partner projects and keeps Bruin Sports Analytics' research standards consistent across teams.",
     linkedinUrl: "https://www.linkedin.com/",
     sortOrder: 1,
     isPublished: true
@@ -434,7 +434,7 @@ export const faqs = [
   },
   {
     category: "Recruitment",
-    question: "When does BSA recruit?",
+    question: "When does Bruin Sports Analytics recruit?",
     answer: "The site is configured for Fall and Winter recruitment cycles. The Join page changes based on the active recruitment state."
   },
   {
@@ -444,7 +444,7 @@ export const faqs = [
   },
   {
     category: "Partnerships",
-    question: "Can BSA work with confidential data?",
+    question: "Can Bruin Sports Analytics work with confidential data?",
     answer: "Yes, but public pages only show approved summaries. Private repositories, athlete-level sensitive information, and protected partner data are not exposed."
   },
   {

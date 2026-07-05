@@ -13,7 +13,7 @@ export default function PartnerPage() {
         <div className="container">
           <span className="eyebrow">Partner with us</span>
           <h1>Turn your sports data into decisions.</h1>
-          <p>BSA combines analytics, engineering, visualization, and domain knowledge to solve competitive and operational problems.</p>
+          <p>Bruin Sports Analytics combines analytics, engineering, visualization, and domain knowledge to solve competitive and operational problems.</p>
         </div>
       </section>
       <section className="section">
@@ -88,7 +88,7 @@ export default function PartnerPage() {
               </div>
               <label className="field full" style={{ display: "flex", gridTemplateColumns: "auto 1fr", alignItems: "center", color: "var(--text-secondary)" }}>
                 <input type="checkbox" required style={{ width: 18, minHeight: 18 }} />
-                I consent to BSA contacting me about this inquiry.
+                I consent to Bruin Sports Analytics contacting me about this inquiry.
               </label>
               <button className="btn btn-primary" type="submit" data-analytics="partner_form_submit">Submit inquiry</button>
             </form>

@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 
 export default function AboutPage() {
   const milestones = [
-    ["Founded at UCLA", "Students formed BSA to make sports analytics more accessible across campus."],
+    ["Founded at UCLA", "Students formed Bruin Sports Analytics to make sports analytics more accessible across campus."],
     ["Sport teams launched", "Project groups expanded from public research into sport-specific workstreams."],
     ["Partner projects", "Members began scoping approved projects with athletics and sports organizations."],
     ["Unified work system", "Research, consulting, journalism, tools, and dashboards now live together by sport."]
@@ -18,9 +18,9 @@ export default function AboutPage() {
     <main>
       <section className="page-hero">
         <div className="container">
-          <span className="eyebrow">About BSA</span>
+          <span className="eyebrow">About Bruin Sports Analytics</span>
           <h1>Technical work. Real games. UCLA community.</h1>
-          <p>BSA gives students a place to learn rigorous analytics through sports problems that demand context, collaboration, and clear communication.</p>
+          <p>Bruin Sports Analytics gives students a place to learn rigorous analytics through sports problems that demand context, collaboration, and clear communication.</p>
         </div>
       </section>
       <section className="section">
@@ -32,7 +32,7 @@ export default function AboutPage() {
           </article>
           <article className="card" style={{ padding: 28 }}>
             <span className="eyebrow">Structure</span>
-            <p className="section-lede">BSA is organized around sport groups and shared functions: data engineering, research, design, journalism, dashboards, and partner communication.</p>
+            <p className="section-lede">Bruin Sports Analytics is organized around sport groups and shared functions: data engineering, research, design, journalism, dashboards, and partner communication.</p>
           </article>
         </div>
       </section>
