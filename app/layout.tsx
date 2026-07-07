@@ -10,6 +10,7 @@ export const metadata: Metadata = {
     template: "%s | Bruin Sports Analytics"
   },
   description: "UCLA's student-run sports analytics organization. Where sports meet data.",
+  icons: { icon: "/assets/bsa_logo.ico" },
   openGraph: {
     title: "Bruin Sports Analytics",
     description: "Where sports meet data.",
