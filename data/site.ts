@@ -90,9 +90,10 @@ export type Event = {
 };
 
 export const navItems = [
-  { label: "Our Work", href: "/work" },
   { label: "Projects", href: "/projects" },
   { label: "People", href: "/people/board" },
+  { label: "Teams", href: "/work" },
+  { label: "Journalism", href: "/journalism" },
   { label: "Events", href: "/events" },
   { label: "About", href: "/about" },
   { label: "Join", href: "/join" }
