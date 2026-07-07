@@ -1,8 +1,9 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { BarChart3, Menu, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import { navItems, projects, sports } from "@/data/site";
 import { useScrolledState } from "@/hooks/useScrolledState";
@@ -13,7 +14,6 @@ export function Navigation() {
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
   const scrolled = useScrolledState();
-  const featured = projects.filter((project) => project.featured).slice(0, 3);
   const recentProjects = [...projects]
     .filter((project) => project.visibility !== "hidden")
     .sort((a, b) => Date.parse(b.lastUpdated) - Date.parse(a.lastUpdated))
@@ -23,41 +23,33 @@ export function Navigation() {
     <header className={cn(styles.header, scrolled && styles.scrolled)}>
       <div className={styles.inner}>
         <Link href="/" className={styles.brand} aria-label="Bruin Sports Analytics home">
-          <span className={styles.brandMark}><BarChart3 size={21} aria-hidden /></span>
+          <span className={styles.brandMark}><Image src="/bsa_logo.jpeg" alt="" width={36} height={36} aria-hidden /></span>
           <span>Bruin Sports Analytics</span>
         </Link>
         <nav className={styles.desktop} aria-label="Primary navigation">
           {navItems.map((item) => {
             const active = item.href === "/" ? pathname === "/" : pathname.startsWith(item.href);
-            const hasMenu = item.label === "Our Work" || item.label === "Projects" || item.label === "People";
+            const hasMenu = item.label === "Projects" || item.label === "People" || item.label === "Teams";
             return (
               <div className={styles.navGroup} key={item.href}>
                 <Link href={item.href} className={`${styles.navLink} ${active ? styles.active : ""}`}>
                   {item.label}
                 </Link>
                 {hasMenu ? (
-                  <div className={`${styles.megaMenu} glass glass--strong glass--radius-lg`}>
-                    {item.label === "Our Work" ? (
-                      <>
-                        <div className={styles.menuColumn}>
-                          <span className="eyebrow">Sports</span>
-                          {sports.map((sport) => (
-                            <Link href={`/work/${sport.slug}`} key={sport.slug}>
-                              {sport.name}
-                              <small>{sport.activeProjects} active projects</small>
-                            </Link>
-                          ))}
+                  <div className={`${styles.megaMenu} ${item.label === "Teams" ? styles.teamsMenu : ""} glass glass--strong glass--radius-lg`}>
+                    {item.label === "Teams" ? (
+                      sports.map((sport) => (
+                        <div key={sport.slug} className={styles.teamsRow}>
+                          <Link href={`/work/${sport.slug}`}>{sport.name}</Link>
+                          <div className={styles.teamsSubLinks}>
+                            <Link href={`/work/${sport.slug}?type=Consulting`}>Consulting</Link>
+                            <Link href={`/work/${sport.slug}?type=Research`}>Research</Link>
+                            {sport.slug === "tennis" && (
+                              <a href="https://uclabruins.com/sports/tennis" target="_blank" rel="noopener noreferrer">UCLA Tennis ↗</a>
+                            )}
+                          </div>
                         </div>
-                        <div className={styles.menuColumn}>
-                          <span className="eyebrow">Featured</span>
-                          {featured.map((project) => (
-                            <Link href={`/projects/${project.slug}`} key={project.slug}>
-                              {project.title}
-                              <small>{project.projectType} · {project.status}</small>
-                            </Link>
-                          ))}
-                        </div>
-                      </>
+                      ))
                     ) : item.label === "Projects" ? (
                       <>
                         <div className={styles.menuColumn}>
@@ -94,7 +86,7 @@ export function Navigation() {
             );
           })}
         </nav>
-        <Link href="/partner" className={`${styles.partner} glass glass--gold glass--radius-pill`}>Partner With Us</Link>
+        <Link href="/partner" className={`${styles.partner} glass glass--gold glass--radius-pill`}><span className={styles.partnerLabel}>Partner With Us</span></Link>
         <button className={styles.mobileButton} type="button" onClick={() => setOpen((value) => !value)} aria-label="Toggle navigation" aria-expanded={open}>
           {open ? <X aria-hidden /> : <Menu aria-hidden />}
         </button>

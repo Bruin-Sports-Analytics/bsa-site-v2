@@ -55,16 +55,12 @@
 }
 
 .brandMark {
-  width: 40px;
-  height: 40px;
   display: grid;
   place-items: center;
-  border: 1px solid var(--glass-border-gold);
-  border-radius: var(--glass-radius-sm);
-  background:
-    linear-gradient(135deg, rgba(255, 255, 255, .12), rgba(255, 209, 0, .08)),
-    rgba(255, 209, 0, .1);
-  color: var(--ucla-gold);
+}
+
+.brandMark img {
+  border-radius: 8px;
 }
 
 .desktop {
@@ -116,6 +112,8 @@
 }
 
 .partner {
+  position: relative;
+  overflow: hidden;
   min-height: 44px;
   display: inline-flex;
   align-items: center;
@@ -123,6 +121,31 @@
   padding: 0 14px;
   font-size: 13px;
   font-weight: 900;
+  transition: color .22s ease;
+}
+
+.partner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  opacity: 1;
+  background: #ffd100;
+  transform: translateX(-101%);
+  transition: transform .28s ease;
+}
+
+.partner:hover::before {
+  transform: translateX(0);
+}
+
+.partner:hover {
+  color: #08192e;
+}
+
+.partnerLabel {
+  position: relative;
+  z-index: 2;
 }
 
 .megaMenu {
@@ -180,6 +203,62 @@
 .menuColumn small {
   color: var(--text-secondary);
   font-weight: 600;
+}
+
+.teamsMenu {
+  width: 460px;
+  grid-template-columns: 1fr;
+  gap: 4px;
+}
+
+.navGroup:hover .teamsMenu,
+.navGroup:focus-within .teamsMenu {
+  display: flex;
+  flex-direction: column;
+}
+
+.teamsRow {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  gap: 8px;
+  align-items: center;
+}
+
+.teamsRow > a {
+  border: 1px solid transparent;
+  border-radius: var(--radius-sm);
+  padding: 8px 10px;
+  color: var(--text-primary);
+  font-weight: 800;
+  font-size: 13px;
+  transition: background .12s, border-color .12s;
+}
+
+.teamsRow > a:hover {
+  border-color: rgba(139, 203, 255, .22);
+  background: rgba(139, 203, 255, .12);
+}
+
+.teamsSubLinks {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.teamsSubLinks a {
+  border: 1px solid var(--glass-border);
+  border-radius: var(--glass-radius-pill);
+  padding: 4px 11px;
+  color: var(--text-secondary);
+  font-size: 11px;
+  font-weight: 700;
+  transition: color .12s, border-color .12s, background .12s;
+}
+
+.teamsSubLinks a:hover {
+  color: var(--text-primary);
+  border-color: rgba(139, 203, 255, .3);
+  background: rgba(139, 203, 255, .08);
 }
 
 .mobileButton,
