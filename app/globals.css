@@ -431,9 +431,7 @@ button {
 }
 
 @media (hover: hover) and (pointer: fine) {
-  .glass[data-interactive="true"]:hover::after {
-    opacity: 1;
-  }
+
 
   .glass--interactive:hover {
     transform: translateY(var(--glass-hover-lift));
