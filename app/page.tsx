@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArrowRight, CalendarDays, Workflow } from "lucide-react";
+import { ArrowRight, CalendarDays } from "lucide-react";
 import { EventCard } from "@/components/EventCard";
 import { HeroVisual } from "@/components/HeroVisual";
 import { ProjectCard } from "@/components/ProjectCard";
@@ -7,6 +7,12 @@ import { SportCard } from "@/components/SportCard";
 import { events, impactStats, outcomes, sports } from "@/data/site";
 import { currentlyFeatured } from "@/lib/utils";
 import styles from "./page.module.css";
+
+const pipelineSteps: [string, string][] = [
+  ["Ask the right question", "Turn a coaching, product, or editorial problem into measurable hypotheses."],
+  ["Build the analysis", "Clean data, model uncertainty, and make the workflow repeatable."],
+  ["Deliver an actionable result", "Ship reports, dashboards, tools, and clear recommendations."]
+];
 
 export default function Home() {
   const featured = currentlyFeatured().slice(0, 5);
@@ -18,7 +24,7 @@ export default function Home() {
         <div className={`container ${styles.heroGrid}`}>
           <div className={styles.heroCopy}>
             <span className="eyebrow">UCLA sports analytics</span>
-            <h1>Where sports meet data.</h1>
+            <h1>Where sports meet <em>data.</em></h1>
             <p>Bruin Sports Analytics is UCLA&apos;s student-run sports analytics organization, building research, tools, and competitive insights across the games we love.</p>
             <div className="button-row">
               <Link className="btn btn-primary" href="/work" data-analytics="hero_work_click">Explore Our Work <ArrowRight size={18} aria-hidden /></Link>
@@ -71,18 +77,19 @@ export default function Home() {
 
       <section className="section tight">
         <div className="container">
-          <div className={styles.process}>
-            {[
-              ["Ask the right question", "Turn a coaching, product, or editorial problem into measurable hypotheses."],
-              ["Build the analysis", "Clean data, model uncertainty, and make the workflow repeatable."],
-              ["Deliver an actionable result", "Ship reports, dashboards, tools, and clear recommendations."]
-            ].map(([title, text], index) => (
-              <div key={title}>
-                <span><Workflow size={20} aria-hidden /> {String(index + 1).padStart(2, "0")}</span>
-                <h3>{title}</h3>
-                <p>{text}</p>
-              </div>
-            ))}
+          <div className={styles.pipeline}>
+            {pipelineSteps.flatMap(([title, text], index) => {
+              const node = (
+                <div key={title} className={styles.pipeNode}>
+                  <span className={styles.pipeIndex}>{String(index + 1).padStart(2, "0")}</span>
+                  <h3>{title}</h3>
+                  <p>{text}</p>
+                </div>
+              );
+              return index < pipelineSteps.length - 1
+                ? [node, <div key={`pipe-${index}`} className={styles.pipeArrow} aria-hidden="true" />]
+                : [node];
+            })}
           </div>
         </div>
       </section>
