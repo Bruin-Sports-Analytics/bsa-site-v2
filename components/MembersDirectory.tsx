@@ -9,11 +9,11 @@ import styles from "./MembersDirectory.module.css";
 export function MembersDirectory() {
   const [query, setQuery] = useState("");
   const [team, setTeam] = useState("All");
-  const teams = Array.from(new Set(members.filter((member) => member.isPublished && member.group !== "alum").map((member) => member.team)));
+  const teams = Array.from(new Set(members.filter((member) => member.isPublished && member.group === "member").map((member) => member.team)));
 
   const filtered = useMemo(() => {
     return members
-      .filter((member) => member.isPublished && member.group !== "alum")
+      .filter((member) => member.isPublished && member.group === "member")
       .filter((member) => team === "All" || member.team === team)
       .filter((member) => [member.name, member.role, member.team, member.major, member.gradYear].join(" ").toLowerCase().includes(query.toLowerCase()))
       .sort((a, b) => a.sortOrder - b.sortOrder);
