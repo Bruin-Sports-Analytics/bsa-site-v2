@@ -311,6 +311,20 @@ export const members: Member[] = [
     isPublished: true
   },
   {
+    name: "Sampath Kalagarla",
+    slug: "sampath-kalagarla",
+    role: "Webmaster",
+    group: "board",
+    team: "Webmaster",
+    major: "Computer Science",
+    gradYear: "2029",
+    bio: "I made this site.",
+    linkedinUrl: "https://www.linkedin.com/sampath-kalagarla/",
+    photoUrl: "/assets/linkedin_headshots/sampath-kalagarla.jpeg",
+    sortOrder: 2,
+    isPublished: true
+  },
+  {
     name: "Daniel Park",
     slug: "daniel-park",
     role: "VP of Projects",
