@@ -6,8 +6,10 @@
 }
 
 .photo {
+  position: relative;
   display: grid;
   place-items: center;
+  overflow: hidden;
   background:
     radial-gradient(circle at 70% 20%, rgba(255, 209, 0, .18), transparent 34%),
     linear-gradient(145deg, #1a3b5b, #08172a);
@@ -15,6 +17,11 @@
   font-family: var(--font-sora), system-ui, sans-serif;
   font-size: 48px;
   font-weight: 800;
+}
+
+.photoImg {
+  object-fit: cover;
+  object-position: center top;
 }
 
 .body {

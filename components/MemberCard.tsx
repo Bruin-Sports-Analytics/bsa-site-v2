@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Linkedin } from "lucide-react";
 import { GlassSurface } from "@/components/ui/GlassSurface";
 import type { Member } from "@/data/site";
@@ -8,7 +9,11 @@ export function MemberCard({ member }: { member: Member }) {
 
   const content = (
     <>
-      <div className={styles.photo} aria-hidden>{initials}</div>
+      <div className={styles.photo} aria-hidden>
+        {member.photoUrl
+          ? <Image src={member.photoUrl} alt={member.name} fill sizes="(max-width: 600px) 100vw, 400px" className={styles.photoImg} />
+          : initials}
+      </div>
       <div className={styles.body}>
         <div>
           <h3>{member.name}</h3>

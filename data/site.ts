@@ -71,6 +71,7 @@ export type Member = {
   gradYear: string;
   bio: string;
   linkedinUrl?: string;
+  photoUrl?: string;
   currentOrganization?: string;
   sortOrder: number;
   isPublished: boolean;
@@ -296,15 +297,16 @@ export const projects: Project[] = [
 
 export const members: Member[] = [
   {
-    name: "Maya Chen",
-    slug: "maya-chen",
+    name: "Moulik Chatterjee",
+    slug: "moulik-chatterjee",
     role: "President",
     group: "board",
-    team: "Executive Board",
-    major: "Statistics & Data Science",
+    team: "President",
+    major: "Business Economics; Stats & Data Science",
     gradYear: "2027",
     bio: "Coordinates partner projects and keeps Bruin Sports Analytics' research standards consistent across teams.",
-    linkedinUrl: "https://www.linkedin.com/",
+    linkedinUrl: "https://www.linkedin.com/in/moulik-chatterjee/",
+    photoUrl: "/assets/linkedin_headshots/moulik-chatterjee.jpeg",
     sortOrder: 1,
     isPublished: true
   },
