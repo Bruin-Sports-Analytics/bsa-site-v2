@@ -1,39 +1,25 @@
 import type { Metadata } from "next";
-import { notFound } from "next/navigation";
 import Link from "next/link";
-import { ArrowRight } from "lucide-react";
 import { ProjectCard } from "@/components/ProjectCard";
 import { members, projects, sports } from "@/data/site";
 
-type Props = {
-  params: { sport: string };
-};
+const sport = sports.find((s) => s.slug === "volleyball")!;
 
-export function generateStaticParams() {
-  return sports.map((sport) => ({ sport: sport.slug }));
-}
+export const metadata: Metadata = { title: "Volleyball Work" };
 
-export function generateMetadata({ params }: Props): Metadata {
-  const sport = sports.find((item) => item.slug === params.sport);
-  return { title: sport ? `${sport.name} Work` : "Sport Work" };
-}
-
-export default function SportPage({ params }: Props) {
-  const sport = sports.find((item) => item.slug === params.sport);
-  if (!sport) notFound();
-
-  const sportProjects = projects.filter((project) => project.sport === sport.slug && project.visibility !== "hidden");
-  const active = sportProjects.filter((project) => project.status === "Active" || project.status === "Ongoing");
-  const archived = sportProjects.filter((project) => project.status === "Completed" || project.status === "Archived");
-  const team = members.filter((member) => member.team.toLowerCase().includes(sport.name.toLowerCase()) && member.isPublished);
+export default function VolleyballPage() {
+  const sportProjects = projects.filter((p) => p.sport === "volleyball" && p.visibility !== "hidden");
+  const active = sportProjects.filter((p) => p.status === "Active" || p.status === "Ongoing");
+  const archived = sportProjects.filter((p) => p.status === "Completed" || p.status === "Archived");
+  const team = members.filter((m) => m.team.toLowerCase().includes("volleyball") && m.isPublished);
   const Icon = sport.icon;
 
   return (
     <main>
       <section className="page-hero">
         <div className="container">
-          <span className="eyebrow">{sport.name} analytics</span>
-          <h1>{sport.name}</h1>
+          <span className="eyebrow">Volleyball analytics</span>
+          <h1>Volleyball</h1>
           <p>{sport.description}</p>
           <div className="button-row">
             <Link className="btn btn-primary" href="/partner">Partner with this team</Link>
@@ -57,23 +43,6 @@ export default function SportPage({ params }: Props) {
           ))}
         </div>
       </section>
-      {sport.subdivisions ? (
-        <section className="section tight">
-          <div className="container">
-            <span className="eyebrow">Tennis programs</span>
-            <h2 className="section-title">Configurable subdivisions</h2>
-            <div className="grid three">
-              {sport.subdivisions.map((name) => (
-                <Link className="card" style={{ padding: 22 }} href={`/work/tennis/${name.toLowerCase().replace(/&/g, "and").replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "")}`} key={name}>
-                  <h3 style={{ margin: 0, fontFamily: "var(--font-sora)" }}>{name}</h3>
-                  <p style={{ color: "var(--text-secondary)" }}>Landing page with leads, projects, dashboards, and archives.</p>
-                  <span className="text-link">Open program <ArrowRight size={16} aria-hidden /></span>
-                </Link>
-              ))}
-            </div>
-          </div>
-        </section>
-      ) : null}
       <section className="section">
         <div className="container">
           <span className="eyebrow">Active projects</span>
@@ -97,8 +66,8 @@ export default function SportPage({ params }: Props) {
           <div className="card" style={{ padding: 28 }}>
             <span className="eyebrow">Team</span>
             <h2 style={{ fontFamily: "var(--font-sora)", fontSize: 32, margin: "10px 0" }}>{sport.lead}</h2>
-            <p className="section-lede">{team.length ? team.map((member) => member.name).join(", ") : "Team members will be published after roster confirmation."}</p>
-            <Link className="btn btn-primary" href="/partner" style={{ width: "fit-content" }}>Bring us a {sport.name.toLowerCase()} problem</Link>
+            <p className="section-lede">{team.length ? team.map((m) => m.name).join(", ") : "Team members will be published after roster confirmation."}</p>
+            <Link className="btn btn-primary" href="/partner" style={{ width: "fit-content" }}>Bring us a volleyball problem</Link>
           </div>
         </div>
       </section>
