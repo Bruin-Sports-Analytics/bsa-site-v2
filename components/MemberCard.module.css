@@ -1,15 +1,14 @@
 .card {
+  position: relative;
   min-height: 420px;
-  display: grid;
-  grid-template-rows: 220px 1fr;
   color: var(--text-primary);
 }
 
 .photo {
-  position: relative;
+  position: absolute;
+  inset: 0;
   display: grid;
   place-items: center;
-  overflow: hidden;
   background:
     radial-gradient(circle at 70% 20%, rgba(255, 209, 0, .18), transparent 34%),
     linear-gradient(145deg, #1a3b5b, #08172a);
@@ -24,21 +23,36 @@
   object-position: center top;
 }
 
-.body {
-  position: relative;
-  z-index: 1;
-  margin: -42px 14px 14px;
+.linkedinBadge {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  width: 36px;
+  height: 36px;
   display: grid;
-  gap: 8px;
+  place-items: center;
+  border: 1px solid var(--glass-border);
+  border-radius: 50%;
+  background: var(--glass-clear-fill);
+  color: var(--ucla-gold);
+  -webkit-backdrop-filter: blur(var(--glass-clear-blur));
+  backdrop-filter: blur(var(--glass-clear-blur));
+}
+
+.body {
+  position: absolute;
+  bottom: 12px;
+  left: 12px;
+  right: 12px;
   border: 1px solid var(--glass-border);
   border-radius: var(--glass-radius-md);
   background:
     linear-gradient(135deg, rgba(255, 255, 255, .07), rgba(74, 168, 255, .04)),
-    rgba(7, 24, 43, .82);
+    rgba(7, 24, 43, .85);
   box-shadow: var(--glass-shadow-sm);
   -webkit-backdrop-filter: blur(var(--glass-regular-blur)) saturate(135%);
   backdrop-filter: blur(var(--glass-regular-blur)) saturate(135%);
-  padding: 18px;
+  padding: 16px;
 }
 
 .body h3 {
@@ -47,39 +61,43 @@
   font-size: 22px;
 }
 
-.body p,
-.body span,
-.body small {
-  margin: 0;
+.body p {
+  margin: 4px 0 0;
   color: var(--text-secondary);
 }
 
-.body span {
+.bodyExpand {
+  display: grid;
+  grid-template-rows: 0fr;
+  overflow: hidden;
+  transition: grid-template-rows 0.28s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.card:hover .bodyExpand,
+.card:focus-within .bodyExpand {
+  grid-template-rows: 1fr;
+}
+
+.bodyExpandInner {
+  min-height: 0;
+  display: grid;
+  gap: 6px;
+  padding-top: 12px;
+}
+
+.bodyExpandInner span {
+  color: var(--text-secondary);
   font-weight: 700;
 }
 
-.body small {
-  opacity: 0;
+.bodyExpandInner small {
+  color: var(--text-secondary);
+  opacity: 0.8;
   line-height: 1.55;
-  transition: opacity .18s ease;
 }
 
-.card:hover small,
-.card:focus-within small {
-  opacity: 1;
-}
-
-.icon {
-  position: absolute;
-  right: 14px;
-  top: 14px;
-  width: 36px;
-  height: 36px;
-  border: 1px solid var(--glass-border);
-  border-radius: 50%;
-  background: var(--glass-clear-fill);
-  padding: 8px;
-  color: var(--ucla-gold);
-  -webkit-backdrop-filter: blur(var(--glass-clear-blur));
-  backdrop-filter: blur(var(--glass-clear-blur));
+@media (prefers-reduced-motion: reduce) {
+  .bodyExpand {
+    transition-duration: .01ms;
+  }
 }

@@ -11,19 +11,25 @@ export function MemberCard({ member }: { member: Member }) {
     <>
       <div className={styles.photo} aria-hidden>
         {member.photoUrl
-          ? <Image src={member.photoUrl} alt={member.name} fill sizes="(max-width: 600px) 100vw, 400px" className={styles.photoImg} />
+          ? <Image src={member.photoUrl} alt="" fill sizes="(max-width: 600px) 100vw, 400px" className={styles.photoImg} />
           : initials}
       </div>
+      {member.linkedinUrl && (
+        <span className={styles.linkedinBadge} aria-hidden>
+          <Linkedin size={16} />
+        </span>
+      )}
       <div className={styles.body}>
-        <div>
-          <h3>{member.name}</h3>
-          <p>{member.role}</p>
+        <h3>{member.name}</h3>
+        <p>{member.role}</p>
+        <div className={styles.bodyExpand}>
+          <div className={styles.bodyExpandInner}>
+            <span>{member.major} · {member.gradYear}</span>
+            <span>{member.team}</span>
+            <small>{member.bio}</small>
+          </div>
         </div>
-        <span>{member.major} · {member.gradYear}</span>
-        <span>{member.team}</span>
-        <small>{member.bio}</small>
       </div>
-      {member.linkedinUrl ? <Linkedin className={styles.icon} size={18} aria-hidden /> : null}
     </>
   );
 
