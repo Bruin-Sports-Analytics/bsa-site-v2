@@ -319,7 +319,7 @@ export const members: Member[] = [
     major: "Computer Science",
     gradYear: "2029",
     bio: "I made this site.",
-    linkedinUrl: "https://www.linkedin.com/sampath-kalagarla/",
+    linkedinUrl: "https://www.linkedin.com/in/sampath-kalagarla/",
     photoUrl: "/assets/linkedin_headshots/sampath-kalagarla.jpeg",
     sortOrder: 2,
     isPublished: true
