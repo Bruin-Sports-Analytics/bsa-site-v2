@@ -3,7 +3,6 @@ import { ArrowRight, CalendarDays } from "lucide-react";
 import { EventCard } from "@/components/EventCard";
 import { HeroVisual } from "@/components/HeroVisual";
 import { ProjectCard } from "@/components/ProjectCard";
-import { SportCard } from "@/components/SportCard";
 import { events, impactStats, outcomes, sports } from "@/data/site";
 import { currentlyFeatured } from "@/lib/utils";
 import styles from "./page.module.css";
@@ -47,8 +46,10 @@ export default function Home() {
           <span className="eyebrow">Our Work</span>
           <h2 className="section-title">Explore by sport</h2>
           <p className="section-lede">Consulting projects, research, dashboards, tools, and articles live together under the sport where the question starts.</p>
-          <div className="sport-card-grid">
-            {sports.map((sport) => <SportCard sport={sport} key={sport.slug} />)}
+          <div className={styles.sportPills}>
+            {sports.map((sport) => (
+              <Link key={sport.slug} href={`/work/${sport.slug}`} className={styles.sportPill}>{sport.name}</Link>
+            ))}
           </div>
         </div>
       </section>

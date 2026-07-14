@@ -83,6 +83,33 @@
   margin-bottom: 28px;
 }
 
+.sportPills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 28px;
+}
+
+.sportPill {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 24px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: rgba(16, 42, 73, .52);
+  color: var(--text-primary);
+  font-family: var(--font-sora), system-ui, sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  transition: border-color .18s ease, background .18s ease, color .18s ease;
+}
+
+.sportPill:hover {
+  border-color: rgba(255, 209, 0, .55);
+  background: rgba(16, 42, 73, .78);
+  color: var(--ucla-gold);
+}
+
 .logoWall {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
