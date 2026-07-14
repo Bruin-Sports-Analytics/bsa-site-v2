@@ -13,6 +13,7 @@ import styles from "./Navigation.module.css";
 export function Navigation() {
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
+  const [openMenu, setOpenMenu] = useState<string | null>(null);
   const scrolled = useScrolledState();
   const recentProjects = [...projects]
     .filter((project) => project.visibility !== "hidden")
@@ -29,14 +30,25 @@ export function Navigation() {
         <nav className={styles.desktop} aria-label="Primary navigation">
           {navItems.map((item) => {
             const active = item.href === "/" ? pathname === "/" : pathname.startsWith(item.href);
-            const hasMenu = item.label === "Projects" || item.label === "People" || item.label === "Teams";
+            const hasMenu = item.label === "People" || item.label === "Teams";
             return (
-              <div className={styles.navGroup} key={item.href}>
+              <div
+                className={styles.navGroup}
+                key={item.href}
+                onMouseEnter={() => hasMenu && setOpenMenu(item.label)}
+                onMouseLeave={() => setOpenMenu(null)}
+                onFocus={() => hasMenu && setOpenMenu(item.label)}
+                onBlur={(e) => {
+                  if (!e.currentTarget.contains(e.relatedTarget as Node)) {
+                    setOpenMenu(null);
+                  }
+                }}
+              >
                 <Link href={item.href} className={`${styles.navLink} ${active ? styles.active : ""}`}>
                   {item.label}
                 </Link>
                 {hasMenu ? (
-                  <div className={`${styles.megaMenu} ${item.label === "Teams" ? styles.teamsMenu : ""} glass glass--strong glass--radius-lg`}>
+                  <div className={`${styles.megaMenu} ${openMenu === item.label ? styles.menuOpen : ""} ${item.label === "Teams" ? styles.teamsMenu : ""} glass glass--strong glass--radius-lg`}>
                     {item.label === "Teams" ? (
                       sports.map((sport) => (
                         <div key={sport.slug} className={styles.teamsRow}>

@@ -169,13 +169,11 @@
   backdrop-filter: blur(38px) saturate(155%) brightness(92%);
 }
 
-.navGroup:hover .megaMenu,
-.navGroup:focus-within .megaMenu {
+.megaMenu.menuOpen {
   display: grid;
 }
 
-.navGroup:hover::after,
-.navGroup:focus-within::after {
+.navGroup:hover::after {
   display: block;
 }
 
@@ -211,8 +209,7 @@
   gap: 4px;
 }
 
-.navGroup:hover .teamsMenu,
-.navGroup:focus-within .teamsMenu {
+.teamsMenu.menuOpen {
   display: flex;
   flex-direction: column;
 }

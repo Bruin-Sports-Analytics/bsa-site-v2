@@ -73,8 +73,7 @@
   transition: grid-template-rows 0.28s cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 
-.card:hover .bodyExpand,
-.card:focus-within .bodyExpand {
+.bodyExpand.bodyExpandOpen {
   grid-template-rows: 1fr;
 }
 
