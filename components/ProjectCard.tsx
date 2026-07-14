@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useRef } from "react";
 import Link from "next/link";
 import { ArrowUpRight, LockKeyhole } from "lucide-react";
 import { GlassSurface } from "@/components/ui/GlassSurface";
@@ -10,14 +10,30 @@ import styles from "./ProjectCard.module.css";
 
 export function ProjectCard({ project }: { project: Project }) {
   const [expanded, setExpanded] = useState(false);
+  const [contentVisible, setContentVisible] = useState(false);
+  const collapseTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
   const isPrivate = project.visibility === "private" || project.visibility === "redacted";
 
+  const handleEnter = () => {
+    if (collapseTimer.current) {
+      clearTimeout(collapseTimer.current);
+      collapseTimer.current = null;
+    }
+    setExpanded(true);
+    setContentVisible(true);
+  };
+
+  const handleLeave = () => {
+    setContentVisible(false);
+    collapseTimer.current = setTimeout(() => setExpanded(false), 80);
+  };
+
   const handlers = {
-    onMouseEnter: () => setExpanded(true),
-    onMouseLeave: () => setExpanded(false),
-    onFocus: () => setExpanded(true),
+    onMouseEnter: handleEnter,
+    onMouseLeave: handleLeave,
+    onFocus: handleEnter,
     onBlur: (e: React.FocusEvent) => {
-      if (!e.currentTarget.contains(e.relatedTarget as Node)) setExpanded(false);
+      if (!e.currentTarget.contains(e.relatedTarget as Node)) handleLeave();
     },
   };
 
@@ -37,7 +53,7 @@ export function ProjectCard({ project }: { project: Project }) {
       </div>
       <div className={styles.body}>
         <h3 className={styles.title}>{project.title}</h3>
-        <div className={`${styles.reveal} ${expanded ? styles.revealOpen : ""}`}>
+        <div className={`${styles.reveal} ${contentVisible ? styles.revealOpen : ""}`}>
           <div className={styles.revealInner}>
             <div className={styles.divider} aria-hidden />
             <span className={styles.eyebrow}>{sportName(project.sport)} · {project.academicYear}</span>
