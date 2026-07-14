@@ -49,13 +49,17 @@
 
 .grid,
 .compactGrid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 18px;
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
 }
 
-.compactGrid {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+.column {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
 }
 
 .empty {
@@ -77,11 +81,21 @@
 @media (max-width: 1050px) {
   .controls {
     position: static;
+    grid-template-columns: 1fr;
   }
 
-  .controls,
-  .grid,
-  .compactGrid {
-    grid-template-columns: 1fr;
+  .grid {
+    flex-wrap: wrap;
+  }
+
+  .grid .column {
+    flex: 1 1 calc(50% - 7px);
+  }
+}
+
+@media (max-width: 600px) {
+  .grid .column,
+  .compactGrid .column {
+    flex: 1 1 100%;
   }
 }

@@ -34,6 +34,11 @@ export function ProjectExplorer({ compact = false }: { compact?: boolean }) {
       });
   }, [query, sport, status, type, showArchived, sort]);
 
+  const numCols = compact ? 2 : 4;
+  const columns = Array.from({ length: numCols }, (_, i) =>
+    filtered.filter((_, j) => j % numCols === i)
+  );
+
   return (
     <div className={styles.explorer}>
       <div className={`${styles.controls} glass glass--strong glass--radius-lg`}>
@@ -63,12 +68,19 @@ export function ProjectExplorer({ compact = false }: { compact?: boolean }) {
           Active and archived
         </label>
       </div>
-      <div className={compact ? styles.compactGrid : styles.grid}>
-        {filtered.map((project) => (
-          <ProjectCard project={project} key={project.slug} />
-        ))}
-      </div>
-      {filtered.length === 0 ? <p className={styles.empty}>No projects match those filters.</p> : null}
+      {filtered.length === 0 ? (
+        <p className={styles.empty}>No projects match those filters.</p>
+      ) : (
+        <div className={compact ? styles.compactGrid : styles.grid}>
+          {columns.map((col, i) => (
+            <div key={i} className={styles.column}>
+              {col.map((project) => (
+                <ProjectCard project={project} key={project.slug} />
+              ))}
+            </div>
+          ))}
+        </div>
+      )}
     </div>
   );
 }
