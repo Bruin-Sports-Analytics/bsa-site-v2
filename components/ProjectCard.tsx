@@ -44,6 +44,10 @@ export function ProjectCard({ project }: { project: Project }) {
       tint="none"
       radius="lg"
       className={`${styles.card} ${expanded ? styles.expanded : ""}`}
+      style={{
+        height: expanded ? "420px" : "200px",
+        transition: `height ${expanded ? ".55s" : ".38s"} cubic-bezier(.4, 0, .2, 1)`,
+      }}
       {...handlers}
     >
       <div className={styles.visual} aria-hidden>

@@ -1,17 +1,8 @@
 .card {
   display: flex;
   flex-direction: column;
-  height: 200px;
   cursor: default;
   overflow: hidden;
-  /* exit: collapse faster */
-  transition: height .38s cubic-bezier(.4, 0, .2, 1);
-}
-
-.card.expanded {
-  height: 420px;
-  /* enter: expand slower */
-  transition: height .55s cubic-bezier(.4, 0, .2, 1);
 }
 
 /* ── Abstract visual ── */
