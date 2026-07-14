@@ -40,3 +40,10 @@ export function currentlyFeatured(now = new Date()) {
 export function slugify(value: string) {
   return value.toLowerCase().replace(/&/g, "and").replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
 }
+
+export function formatAuthors(authors: string[]): string {
+  if (authors.length === 1) return `By ${authors[0]}`;
+  if (authors.length === 2) return `By ${authors[0]} and ${authors[1]}`;
+  const last = authors[authors.length - 1];
+  return `By ${authors.slice(0, -1).join(", ")}, and ${last}`;
+}
