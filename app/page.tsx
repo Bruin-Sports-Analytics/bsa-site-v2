@@ -17,8 +17,7 @@ export default function Home() {
       <section className={styles.hero}>
         <div className={`container ${styles.heroGrid}`}>
           <div className={styles.heroCopy}>
-            <span className="eyebrow">bruin sports analytics</span>
-            <h1>Where sports meet <em>data.</em></h1>
+            <h1>Bruin Sports Analytics</h1>
             <p>Bruin Sports Analytics is UCLA&apos;s student-run sports analytics organization, building research, tools, and competitive insights.</p>
             <div className="button-row">
               <Link className="btn btn-primary" href="/work" data-analytics="hero_work_click">Explore Our Work <ArrowRight size={18} aria-hidden /></Link>
