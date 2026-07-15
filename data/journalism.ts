@@ -5,8 +5,6 @@ export type JournalismArticle = {
   readTime: number;
   views: number;
   likes: number;
-  thumbnail?: string;
-  href?: string;
 };
 
 export const articles: JournalismArticle[] = [

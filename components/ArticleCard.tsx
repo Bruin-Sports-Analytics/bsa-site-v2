@@ -1,4 +1,4 @@
-import { MoreHorizontal, Heart } from "lucide-react";
+import { Heart } from "lucide-react";
 import type { JournalismArticle } from "@/data/journalism";
 import { formatAuthors } from "@/lib/utils";
 import styles from "./ArticleCard.module.css";
@@ -14,9 +14,6 @@ export function ArticleCard({ article }: { article: JournalismArticle }) {
             <span className={styles.dot} aria-hidden />
             <span>{article.readTime} min read</span>
           </span>
-          <button className={styles.menuBtn} aria-label="More options">
-            <MoreHorizontal size={18} />
-          </button>
         </div>
         <h3 className={styles.title}>{article.title}</h3>
         <p className={styles.authors}>{formatAuthors(article.authors)}</p>

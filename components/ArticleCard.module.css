@@ -46,16 +46,6 @@
   display: inline-block;
 }
 
-.menuBtn {
-  background: none;
-  border: none;
-  cursor: pointer;
-  color: #6b6b6b;
-  padding: 2px;
-  display: flex;
-  align-items: center;
-}
-
 .title {
   margin: 0;
   font-size: 1.2rem;

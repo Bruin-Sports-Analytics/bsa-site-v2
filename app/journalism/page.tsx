@@ -18,8 +18,8 @@ export default function JournalismPage() {
       <section className={styles.articles}>
         <div className="container">
           <div className={styles.list}>
-            {articles.map((article, i) => (
-              <ArticleCard key={i} article={article} />
+            {articles.map((article) => (
+              <ArticleCard key={article.title} article={article} />
             ))}
           </div>
         </div>
