@@ -13,6 +13,7 @@ export default function JournalismPage() {
       <section className="page-hero">
         <div className="container">
           <h1>Journalism</h1>
+          <p>Our Data Journalism team aims to write short articles each quarter that are driven by data science and statistics. Through meaningful visualizations and analysis, these pieces take a quick dive into contemporary sports topics. We look into all sports, from gymnastics and horse racing to the NFL and NBA.</p>
         </div>
       </section>
       <section className={styles.articles}>
