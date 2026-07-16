@@ -52,7 +52,7 @@
   box-shadow: var(--glass-shadow-sm);
   -webkit-backdrop-filter: blur(var(--glass-regular-blur)) saturate(135%);
   backdrop-filter: blur(var(--glass-regular-blur)) saturate(135%);
-  padding: 10px 12px;
+  padding: 6px 12px;
 }
 
 .body h3 {
