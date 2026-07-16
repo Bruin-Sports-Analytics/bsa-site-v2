@@ -13,17 +13,17 @@ export const metadata: Metadata = {
 export default function JoinPage() {
   const stateCopy = {
     UPCOMING: {
-      title: `Our next recruitment cycle is ${recruitment.nextCycleLabel}.`,
-      text: "Join the mailing list, attend public events, and review the roles that expect to recruit.",
+      title: `Our next recruitment cycle is ${recruitment.nextCycleLabel}`,
+      // text: "Join the mailing list, attend public events, and review the roles that expect to recruit.",
       cta: "Get notified"
     },
     OPEN: {
-      title: "Applications are open.",
+      title: "Applications are open",
       text: "Apply, attend info sessions, and use the timeline below to track each step.",
       cta: "Apply now"
     },
     CLOSED: {
-      title: "Applications are currently closed.",
+      title: "Applications are currently closed",
       text: "The next cycle will be posted here when dates are confirmed.",
       cta: "Join mailing list"
     }
@@ -48,7 +48,7 @@ export default function JoinPage() {
       <section className="section">
         <div className="container">
           <span className="eyebrow">Recruitment timeline</span>
-          <h2 className="section-title">Fall milestones</h2>
+          <h2 className="section-title">Fall Events</h2>
           <Timeline events={recruitment.timelineEvents} />
         </div>
       </section>

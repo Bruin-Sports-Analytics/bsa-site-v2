@@ -11,7 +11,7 @@ export default function ProjectsPage() {
       <section className="page-hero">
         <div className="container">
           <span className="eyebrow">Project dashboard</span>
-          <h1>Search the deliverables.</h1>
+          <h1>Search the deliverables</h1>
           <p>Filter by sport, project type, status, technology, and availability. Private work only exposes approved public summaries.</p>
         </div>
       </section>

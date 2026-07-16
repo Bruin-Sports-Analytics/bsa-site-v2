@@ -19,7 +19,7 @@ export default function AboutPage() {
       <section className="page-hero">
         <div className="container">
           <span className="eyebrow">About Bruin Sports Analytics</span>
-          <h1>Technical work. Real games. UCLA community.</h1>
+          <h1>Technical work. Real games. UCLA community</h1>
           <p>Bruin Sports Analytics gives students a place to learn rigorous analytics through sports problems that demand context, collaboration, and clear communication.</p>
         </div>
       </section>

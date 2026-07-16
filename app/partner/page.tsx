@@ -12,7 +12,7 @@ export default function PartnerPage() {
       <section className="page-hero">
         <div className="container">
           <span className="eyebrow">Partner with us</span>
-          <h1>Turn your sports data into decisions.</h1>
+          <h1>Turn your sports data into decisions</h1>
           <p>Bruin Sports Analytics combines analytics, engineering, visualization, and domain knowledge to solve competitive and operational problems.</p>
         </div>
       </section>

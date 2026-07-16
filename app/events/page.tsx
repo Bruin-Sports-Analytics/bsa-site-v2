@@ -12,7 +12,7 @@ export default function EventsPage() {
       <section className="page-hero">
         <div className="container">
           <span className="eyebrow">Events</span>
-          <h1>Workshops, speakers, meetings.</h1>
+          <h1>Workshops, speakers, meetings</h1>
           <p>Public events include RSVP actions. Members-only meetings hide sensitive location and link details.</p>
         </div>
       </section>
