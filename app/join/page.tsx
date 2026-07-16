@@ -32,13 +32,15 @@ export default function JoinPage() {
   return (
     <main>
       <section className="page-hero">
-        <div className="container">
-          <span className="eyebrow">{recruitment.name}</span>
-          <h1>{stateCopy.title}</h1>
-          <p>{stateCopy.text}</p>
-          <div className="button-row">
-            <a className="btn btn-primary" href={recruitment.status === "OPEN" ? recruitment.applicationUrl : "mailto:bruinsportsanalytics@gmail.com"} data-analytics="recruitment_apply_click">{stateCopy.cta}</a>
-            <Link className="btn btn-secondary" href="/events">Public events</Link>
+        <div className={`container ${recruitment.status === "UPCOMING" ? styles.heroLayout : ""}`}>
+          <div className={recruitment.status === "UPCOMING" ? styles.heroContent : ""}>
+            <span className="eyebrow">{recruitment.name}</span>
+            <h1>{stateCopy.title}</h1>
+            <p>{stateCopy.text}</p>
+            <div className="button-row">
+              <a className="btn btn-primary" href={recruitment.status === "OPEN" ? recruitment.applicationUrl : "mailto:bruinsportsanalytics@gmail.com"} data-analytics="recruitment_apply_click">{stateCopy.cta}</a>
+              <Link className="btn btn-secondary" href="/events">Public events</Link>
+            </div>
           </div>
           {recruitment.status === "UPCOMING" && <Countdown />}
         </div>
