@@ -65,6 +65,7 @@
   margin: 0;
   color: var(--text-secondary);
   font-size: clamp(10px, 0.85vw, 13px);
+  line-height: 1;
 }
 
 .bodyExpand {
