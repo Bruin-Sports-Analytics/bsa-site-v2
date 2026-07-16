@@ -1,6 +1,6 @@
 .card {
   position: relative;
-  min-height: 420px;
+  aspect-ratio: 1;
   color: var(--text-primary);
 }
 
@@ -58,7 +58,7 @@
 .body h3 {
   margin: 0;
   font-family: var(--font-sora), system-ui, sans-serif;
-  font-size: 22px;
+  font-size: clamp(14px, 1.4vw, 20px);
 }
 
 .body p {
