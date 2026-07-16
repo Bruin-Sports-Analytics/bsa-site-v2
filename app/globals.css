@@ -206,6 +206,10 @@ button {
   grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
+.grid.five {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+
 .sport-card-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -529,6 +533,7 @@ button {
   .grid.three,
   .grid.two,
   .grid.four,
+  .grid.five,
   .sport-card-grid,
   .form-grid {
     grid-template-columns: 1fr;

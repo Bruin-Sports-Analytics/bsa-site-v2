@@ -33,7 +33,7 @@ export function MembersDirectory() {
             {teams.map((item) => <option key={item}>{item}</option>)}
           </select>
         </div>
-        <div className="grid three">
+        <div className="grid five">
           {filtered.map((member) => <MemberCard member={member} key={member.slug} />)}
         </div>
       </div>

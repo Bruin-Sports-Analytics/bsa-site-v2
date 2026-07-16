@@ -29,7 +29,7 @@ export default function BoardPage() {
               <p className="section-lede">Configured for a consistent 4:5 portrait system once final photography is available.</p>
             </div>
           </article>
-          <div className="grid three">
+          <div className="grid five">
             {board.map((member) => <MemberCard member={member} key={member.slug} />)}
           </div>
         </div>
