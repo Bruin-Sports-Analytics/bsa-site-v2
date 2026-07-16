@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { FAQAccordion } from "@/components/FAQAccordion";
 import { Timeline } from "@/components/Timeline";
+import { Countdown } from "@/components/Countdown";
 import { recruitment } from "@/data/site";
 import styles from "./join.module.css";
 
@@ -39,6 +40,7 @@ export default function JoinPage() {
             <a className="btn btn-primary" href={recruitment.status === "OPEN" ? recruitment.applicationUrl : "mailto:bruinsportsanalytics@gmail.com"} data-analytics="recruitment_apply_click">{stateCopy.cta}</a>
             <Link className="btn btn-secondary" href="/events">Public events</Link>
           </div>
+          {recruitment.status === "UPCOMING" && <Countdown />}
         </div>
       </section>
       <section className="section">
