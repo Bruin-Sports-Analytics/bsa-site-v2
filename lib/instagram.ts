@@ -13,7 +13,7 @@ export async function getInstagramPosts(count: number): Promise<InstagramPost[]>
 
   try {
     const res = await fetch(
-      `https://graph.instagram.com/me/media?fields=id,media_type,media_url,permalink,timestamp&access_token=${token}`,
+      `https://graph.instagram.com/me/media?fields=id,media_type,media_url,permalink,timestamp&limit=${count}&access_token=${token}`,
       { next: { revalidate: 86400 } }
     );
     if (!res.ok) {
@@ -21,6 +21,10 @@ export async function getInstagramPosts(count: number): Promise<InstagramPost[]>
       return [];
     }
     const data = (await res.json()) as { data: RawPost[] };
+    if (!data?.data) {
+      console.error("Instagram API returned unexpected shape:", data);
+      return [];
+    }
     return data.data
       .filter((p) => p.media_type === "IMAGE")
       .slice(0, count)

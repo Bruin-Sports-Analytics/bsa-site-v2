@@ -72,7 +72,7 @@ export function InstagramCollage({ posts }: Props) {
                 src={post.media_url}
                 alt=""
                 fill
-                sizes="190px"
+                sizes="(max-width: 1100px) 150px, 190px"
                 style={{ objectFit: "cover" }}
               />
             </div>
