@@ -39,6 +39,16 @@
   line-height: 1.65;
 }
 
+.heroCta {
+  display: flex;
+  align-items: center;
+}
+
+.partnerLink {
+  flex: 1;
+  text-align: center;
+}
+
 .heroLogo {
   display: flex;
   align-items: center;

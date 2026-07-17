@@ -22,7 +22,6 @@
 
 .label {
   writing-mode: vertical-lr;
-  transform: rotate(180deg);
   font-size: 10px;
   font-weight: 800;
   letter-spacing: .14em;

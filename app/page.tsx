@@ -20,10 +20,12 @@ export default function Home() {
           <div className={styles.heroCopy}>
             <h1>Bruin Sports Analytics</h1>
             <p>Bruin Sports Analytics is UCLA&apos;s student-run sports analytics organization, building research, tools, and competitive insights.</p>
-            <div className="button-row">
-              <Link className="btn btn-primary" href="/work" data-analytics="hero_work_click">Explore Our Work <ArrowRight size={18} aria-hidden /></Link>
-              <Link className="btn btn-secondary" href="/join" data-analytics="hero_join_click">Join the Team</Link>
-              <Link className="text-link" href="/partner">Partner With Us →</Link>
+            <div className={styles.heroCta}>
+              <div className="button-row">
+                <Link className="btn btn-primary" href="/work" data-analytics="hero_work_click">Explore Our Work <ArrowRight size={18} aria-hidden /></Link>
+                <Link className="btn btn-secondary" href="/join" data-analytics="hero_join_click">Join the Team</Link>
+              </div>
+              <Link className={`text-link ${styles.partnerLink}`} href="/partner">Partner With Us →</Link>
             </div>
           </div>
           {instagramPosts.length > 0 ? (
