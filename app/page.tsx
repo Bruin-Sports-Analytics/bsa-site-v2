@@ -1,15 +1,18 @@
+import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, CalendarDays } from "lucide-react";
 import { EventCard } from "@/components/EventCard";
-import { HeroVisual } from "@/components/HeroVisual";
+import { InstagramCollage } from "@/components/InstagramCollage";
 import { ProjectCard } from "@/components/ProjectCard";
+import { getInstagramPosts } from "@/lib/instagram";
 import { events, impactStats, outcomes, sports } from "@/data/site";
 import { currentlyFeatured } from "@/lib/utils";
 import styles from "./page.module.css";
 
-export default function Home() {
+export default async function Home() {
   const featured = currentlyFeatured().slice(0, 5);
   const publicEvents = events.filter((event) => !event.isMembersOnly).slice(0, 3);
+  const instagramPosts = await getInstagramPosts(9);
 
   return (
     <main>
@@ -24,7 +27,19 @@ export default function Home() {
               <Link className="text-link" href="/partner">Partner With Us →</Link>
             </div>
           </div>
-          <HeroVisual />
+          {instagramPosts.length > 0 ? (
+            <InstagramCollage posts={instagramPosts} />
+          ) : (
+            <div className={styles.heroLogo}>
+              <Image
+                src="/assets/bruin_sports_analytics_logo_high_quality.jpg"
+                alt="Bruin Sports Analytics logo"
+                width={420}
+                height={420}
+                priority
+              />
+            </div>
+          )}
         </div>
       </section>
 
