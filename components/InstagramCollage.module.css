@@ -1,0 +1,47 @@
+.collage {
+  position: relative;
+  width: 100%;
+  height: 520px;
+}
+
+.tile {
+  position: absolute;
+  top: var(--t);
+  left: var(--l);
+  width: 190px;
+  height: 190px;
+  border: 1px solid var(--glass-border);
+  border-radius: var(--glass-radius-lg);
+  box-shadow: var(--glass-shadow-md);
+  overflow: hidden;
+  transform: rotate(var(--r));
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  display: block;
+  text-decoration: none;
+}
+
+.tile:hover {
+  transform: rotate(0deg) scale(1.08) translateY(-6px);
+  box-shadow: 0 12px 40px rgba(255, 209, 0, 0.35);
+  z-index: 10;
+}
+
+.imageWrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 1100px) {
+  .collage {
+    height: 380px;
+    max-width: 580px;
+  }
+
+  .tile {
+    top: var(--mt);
+    left: var(--ml);
+    width: 150px;
+    height: 150px;
+  }
+}
