@@ -39,6 +39,19 @@
   line-height: 1.65;
 }
 
+.heroLogo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.heroLogo img {
+  width: 100%;
+  max-width: 420px;
+  height: auto;
+  border-radius: var(--glass-radius-lg);
+}
+
 .impact {
   border-block: 1px solid var(--border);
   background: rgba(16, 42, 73, .58);

@@ -304,7 +304,7 @@ export const members: Member[] = [
     team: "President",
     major: "Business Economics; Stats & Data Science",
     gradYear: "2027",
-    bio: "Coordinates partner projects and keeps Bruin Sports Analytics' research standards consistent across teams.",
+    bio: "Coordinates partner projects. Leads club strategy, recruitment, and operations.",
     linkedinUrl: "https://www.linkedin.com/in/moulik-chatterjee/",
     photoUrl: "/assets/linkedin_headshots/moulik-chatterjee.jpeg",
     sortOrder: 1,
