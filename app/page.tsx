@@ -4,15 +4,14 @@ import { ArrowRight, CalendarDays } from "lucide-react";
 import { EventCard } from "@/components/EventCard";
 import { InstagramCollage } from "@/components/InstagramCollage";
 import { ProjectCard } from "@/components/ProjectCard";
-import { getInstagramPosts } from "@/lib/instagram";
+import { instagramPosts } from "@/data/instagram-posts";
 import { events, impactStats, outcomes, sports } from "@/data/site";
 import { currentlyFeatured } from "@/lib/utils";
 import styles from "./page.module.css";
 
-export default async function Home() {
+export default function Home() {
   const featured = currentlyFeatured().slice(0, 5);
   const publicEvents = events.filter((event) => !event.isMembersOnly).slice(0, 3);
-  const instagramPosts = await getInstagramPosts(9);
 
   return (
     <main>

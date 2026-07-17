@@ -1,5 +1,5 @@
 import Image from "next/image";
-import type { InstagramPost } from "@/lib/instagram";
+import type { InstagramPost } from "@/data/instagram-posts";
 import styles from "./InstagramCollage.module.css";
 
 type Props = {
@@ -51,12 +51,12 @@ export function InstagramCollage({ posts }: Props) {
 
         return (
           <a
-            key={post.id}
+            key={post.src}
             href={post.permalink}
             target="_blank"
             rel="noopener noreferrer"
             className={styles.tile}
-            aria-label={`View Instagram post from ${formatDate(post.timestamp)}`}
+            aria-label={`View Instagram post from ${formatDate(post.date)}`}
             style={
               {
                 "--t": `${top}px`,
@@ -69,7 +69,7 @@ export function InstagramCollage({ posts }: Props) {
           >
             <div className={styles.imageWrapper}>
               <Image
-                src={post.media_url}
+                src={post.src}
                 alt=""
                 fill
                 sizes="(max-width: 1100px) 150px, 190px"
