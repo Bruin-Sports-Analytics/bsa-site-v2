@@ -54,8 +54,8 @@ export function Navigation() {
                         <div key={sport.slug} className={styles.teamsRow}>
                           <Link href={`/work/${sport.slug}`}>{sport.name}</Link>
                           <div className={styles.teamsSubLinks}>
-                            <Link href={`/work/${sport.slug}?type=Consulting`}>Consulting</Link>
-                            <Link href={`/work/${sport.slug}?type=Research`}>Research</Link>
+                            <Link href={`/work/${sport.slug}/consulting`}>Consulting</Link>
+                            <Link href={`/work/${sport.slug}/research`}>Research</Link>
                             {sport.slug === "tennis" && (
                               <a href="https://uclabruins.com/sports/tennis" target="_blank" rel="noopener noreferrer">UCLA Tennis ↗</a>
                             )}
