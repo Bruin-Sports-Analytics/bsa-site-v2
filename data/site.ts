@@ -247,7 +247,7 @@ export const projects: Project[] = [
     result: "Certain defensive metrics show stronger correlation with shift usage than others, and high-shift teams do not consistently outperform low-shift teams on overall run prevention.",
     members: [],
     techStack: ["Python", "pandas", "matplotlib"],
-    links: { paper: "/projects/mlb-defensive-shift-analysis" },
+    links: { paper: "https://hfpruaivskrkweobtvcf.supabase.co/storage/v1/object/public/project_papers/An%20Analysis%20of%20Defensive%20Shifts%20in%20the%20MLB,%202016-2019.pdf" },
     visibility: "public",
     featured: false,
     lastUpdated: "2021-01-23"
