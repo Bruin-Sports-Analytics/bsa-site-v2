@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { ArrowUpRight, LockKeyhole } from "lucide-react";
 import { projects } from "@/data/site";
 import { formatDate, sportName, visibleProjectDetail } from "@/lib/utils";
+import styles from "./page.module.css";
 
 type Props = {
   params: { slug: string };
@@ -25,41 +26,46 @@ export default function ProjectDetailPage({ params }: Props) {
 
   return (
     <main>
-      <section className="page-hero">
+      <section className={styles.header}>
         <div className="container">
           <span className="eyebrow">{sportName(project.sport)} · {project.projectType}</span>
-          <h1>{project.title}</h1>
-          <p>{project.summary}</p>
-          <div className="tag-row">
+          <h1 className={styles.title}>{project.title}</h1>
+          <div className="tag-row" style={{ marginTop: 10 }}>
             <span className="tag">{project.status}</span>
             <span className="tag">{project.academicYear}</span>
             <span className="tag">Updated {formatDate(project.lastUpdated)}</span>
-            {redacted ? <span className="tag"><LockKeyhole size={14} aria-hidden /> Redacted methods/results</span> : null}
+            {redacted ? <span className="tag"><LockKeyhole size={14} aria-hidden /> Redacted</span> : null}
           </div>
         </div>
       </section>
-      <section className="section">
-        <div className="container grid two">
-          {[
-            ["Problem", project.problem],
-            ["Context", `This ${project.projectType.toLowerCase()} project sits inside Bruin Sports Analytics' ${sportName(project.sport)} workstream.`],
-            ["Approach", redacted ? "Detailed methods are redacted because this work may involve protected partner context." : project.approach],
-            ["Data", redacted ? "Public page only describes approved data categories." : "Play-level, event-level, and contextual sports data prepared by the project team."],
-            ["Methods and technology", project.techStack.join(", ")],
-            ["Results", redacted ? "Results are summarized at a high level for public viewing." : project.result],
-            ["Team", project.members.join(", ") || "Team details not listed."],
-          ].map(([title, text]) => (
-            <article className="card" style={{ padding: 24 }} key={title}>
-              <span className="eyebrow">{title}</span>
-              <p style={{ color: "var(--text-secondary)", fontSize: 16, lineHeight: 1.7 }}>{text}</p>
-            </article>
-          ))}
+
+      <section className={styles.detailsSection}>
+        <div className="container">
+          <details className={styles.details}>
+            <summary className={styles.summary}>Project details</summary>
+            <div className="grid two" style={{ marginTop: 16 }}>
+              {[
+                ["Problem", project.problem],
+                ["Context", `This ${project.projectType.toLowerCase()} project sits inside Bruin Sports Analytics' ${sportName(project.sport)} workstream.`],
+                ["Approach", redacted ? "Detailed methods are redacted because this work may involve protected partner context." : project.approach],
+                ["Results", redacted ? "Results are summarized at a high level for public viewing." : project.result],
+                ["Methods and technology", project.techStack.join(", ")],
+                ["Team", project.members.join(", ") || "Team details not listed."],
+              ].map(([title, text]) => (
+                <article className="card" style={{ padding: 20 }} key={title}>
+                  <span className="eyebrow">{title}</span>
+                  <p style={{ color: "var(--text-secondary)", fontSize: 15, lineHeight: 1.7, margin: 0 }}>{text}</p>
+                </article>
+              ))}
+            </div>
+          </details>
         </div>
       </section>
+
       {project.links.paper && (
-        <section className="section tight">
+        <section className={styles.paperSection}>
           <div className="container">
-            <div style={{ display: "flex", alignItems: "baseline", justifyContent: "space-between", marginBottom: 16 }}>
+            <div className={styles.paperHeader}>
               <span className="eyebrow">Full paper</span>
               <a
                 href={project.links.paper}
@@ -73,7 +79,7 @@ export default function ProjectDetailPage({ params }: Props) {
             <iframe
               src={project.links.paper}
               title={`${project.title} — full paper`}
-              style={{ width: "100%", height: "80vh", border: "none", borderRadius: 12 }}
+              className={styles.iframe}
             />
           </div>
         </section>
