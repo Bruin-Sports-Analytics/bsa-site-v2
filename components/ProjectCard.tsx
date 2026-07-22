@@ -63,9 +63,9 @@ export function ProjectCard({ project }: { project: Project }) {
               {isPrivate ? (
                 <span className={styles.private}><LockKeyhole size={14} aria-hidden /> Approved summary only</span>
               ) : project.links.paper ? (
-                <a href={project.links.paper} target="_blank" rel="noopener noreferrer" className={styles.link}>
+                <Link href={`/projects/${project.slug}`} className={styles.link}>
                   Read paper <ArrowUpRight size={15} aria-hidden />
-                </a>
+                </Link>
               ) : (
                 <Link href={`/projects/${project.slug}`} className={styles.link}>
                   Open project <ArrowUpRight size={15} aria-hidden />
