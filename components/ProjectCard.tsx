@@ -44,19 +44,11 @@ export function ProjectCard({ project }: { project: Project }) {
       tint="none"
       radius="lg"
       className={`${styles.card} ${expanded ? styles.expanded : ""}`}
-      style={{
-        height: expanded ? "420px" : "200px",
-        transition: `height ${expanded ? ".55s" : ".38s"} cubic-bezier(.4, 0, .2, 1)`,
-      }}
       {...handlers}
     >
-      <div className={styles.visual} aria-hidden>
-        <span />
-        <span />
-        <span />
-      </div>
       <div className={styles.body}>
         <h3 className={styles.title}>{project.title}</h3>
+        <span className={styles.date}>{new Date(project.lastUpdated).toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" })}</span>
         <div className={`${styles.reveal} ${contentVisible ? styles.revealOpen : ""}`}>
           <div className={styles.revealInner}>
             <div className={styles.divider} aria-hidden />
