@@ -39,7 +39,7 @@ export default function ProjectDetailPage({ params }: Props) {
         </div>
       </section>
 
-      {/* TODO: project details accordion hidden until content is verified against source papers — see GitHub issue #XX */}
+      {/* TODO: project details accordion hidden until content is verified against source papers — see GitHub issue #1 */}
 
       {project.links.paper && (
         <section className={styles.paperSection}>
