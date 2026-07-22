@@ -193,7 +193,7 @@ export const projects: Project[] = [
     result: "The framework produces interpretable playstyle labels validated against expert ratings and surfaces dominant archetypes across the NCAA landscape.",
     members: [],
     techStack: ["Python", "scikit-learn", "pandas"],
-    links: { paper: "/projects/ml-playstyle-classification-tennis" },
+    links: { paper: "https://hfpruaivskrkweobtvcf.supabase.co/storage/v1/object/public/project_papers/Machine%20Learning%20Based%20Playstyle%20Classification%20for%20NCAA%20Tennis%20Players.pdf" },
     visibility: "public",
     featured: false,
     lastUpdated: "2026-01-03"
@@ -211,7 +211,7 @@ export const projects: Project[] = [
     result: "The resulting score correlates with run game success rates and provides a repeatable alternative to subjective film grades.",
     members: [],
     techStack: ["Python", "pandas", "Altair"],
-    links: { paper: "/projects/wr-blocking-effectiveness-framework" },
+    links: { paper: "https://hfpruaivskrkweobtvcf.supabase.co/storage/v1/object/public/project_papers/A%20Quantitative%20Framework%20for%20Assessing%20Wide%20Receiver%20Blocking%20Effectiveness%20Using%20Player%20Tracking%20Data.pdf" },
     visibility: "public",
     featured: false,
     lastUpdated: "2026-01-03"
