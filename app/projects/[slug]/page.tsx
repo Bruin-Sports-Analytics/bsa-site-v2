@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { LockKeyhole } from "lucide-react";
+import { ArrowUpRight, LockKeyhole } from "lucide-react";
 import { projects } from "@/data/site";
 import { formatDate, sportName, visibleProjectDetail } from "@/lib/utils";
 
@@ -47,8 +47,7 @@ export default function ProjectDetailPage({ params }: Props) {
             ["Data", redacted ? "Public page only describes approved data categories." : "Play-level, event-level, and contextual sports data prepared by the project team."],
             ["Methods and technology", project.techStack.join(", ")],
             ["Results", redacted ? "Results are summarized at a high level for public viewing." : project.result],
-            ["Team", project.members.join(", ")],
-            ["External links", Object.values(project.links).filter(Boolean).join(" · ") || "No public external links yet."]
+            ["Team", project.members.join(", ") || "Team details not listed."],
           ].map(([title, text]) => (
             <article className="card" style={{ padding: 24 }} key={title}>
               <span className="eyebrow">{title}</span>
@@ -57,6 +56,28 @@ export default function ProjectDetailPage({ params }: Props) {
           ))}
         </div>
       </section>
+      {project.links.paper && (
+        <section className="section tight">
+          <div className="container">
+            <div style={{ display: "flex", alignItems: "baseline", justifyContent: "space-between", marginBottom: 16 }}>
+              <span className="eyebrow">Full paper</span>
+              <a
+                href={project.links.paper}
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ display: "inline-flex", alignItems: "center", gap: 4, color: "var(--ucla-gold)", fontSize: 13, fontWeight: 800 }}
+              >
+                Open in new tab <ArrowUpRight size={14} aria-hidden />
+              </a>
+            </div>
+            <iframe
+              src={project.links.paper}
+              title={`${project.title} — full paper`}
+              style={{ width: "100%", height: "80vh", border: "none", borderRadius: 12 }}
+            />
+          </div>
+        </section>
+      )}
     </main>
   );
 }
