@@ -8,14 +8,12 @@ export const metadata: Metadata = {
 export default function ProjectsPage() {
   return (
     <main>
-      <section className="page-hero">
+      <section style={{ padding: "120px 0 32px" }}>
         <div className="container">
           <span className="eyebrow">Project dashboard</span>
-          <h1>Search the deliverables</h1>
-          <p>Filter by sport, project type, status, technology, and availability. Private work only exposes approved public summaries.</p>
         </div>
       </section>
-      <section className="section">
+      <section className="section tight">
         <div className="container">
           <ProjectExplorer />
         </div>
