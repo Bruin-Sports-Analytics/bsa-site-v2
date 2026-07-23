@@ -3,7 +3,7 @@ import Link from "next/link";
 import { ArrowRight, CalendarDays } from "lucide-react";
 import { EventCard } from "@/components/EventCard";
 import { InstagramCollage } from "@/components/InstagramCollage";
-import { ProjectCard } from "@/components/ProjectCard";
+import { ProjectCardGroup } from "@/components/ProjectCardGroup";
 import { instagramPosts } from "@/data/instagram-posts";
 import { events, impactStats, outcomes, sports } from "@/data/site";
 import { currentlyFeatured, publicProjects } from "@/lib/utils";
@@ -83,9 +83,7 @@ export default function Home() {
             </div>
             <Link className="btn btn-secondary" href="/projects">Open dashboard</Link>
           </div>
-          <div className="grid three">
-            {featured.map((project) => <ProjectCard project={project} key={project.slug} />)}
-          </div>
+          <ProjectCardGroup projects={featured} />
         </div>
       </section>
 
