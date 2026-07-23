@@ -33,7 +33,7 @@
   border: 1px solid rgba(139, 203, 255, .12);
   border-radius: 12px;
   cursor: default;
-  transition: border-radius .15s ease;
+  transition: border-radius .22s ease;
 }
 
 .floatOpen {
@@ -66,12 +66,6 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
-  animation: fadeIn .18s ease forwards;
-}
-
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(4px); }
-  to   { opacity: 1; transform: translateY(0); }
 }
 
 /* Reveal dropdown visual continuation */
@@ -92,6 +86,18 @@
   border-top: none;
   border-radius: 0 0 12px 12px;
   box-shadow: 0 16px 40px rgba(0, 0, 0, .4);
+  opacity: 0;
+  transform: translateY(-6px);
+  pointer-events: none;
+  transition:
+    opacity .22s ease,
+    transform .26s cubic-bezier(.2, .8, .2, 1);
+}
+
+.revealOpen {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
 }
 
 .divider {
@@ -143,6 +149,7 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .reveal { animation: none; }
+  .reveal { transition: opacity .01ms; transform: none; }
+  .revealOpen { transform: none; }
   .float { transition: none; }
 }
