@@ -108,11 +108,11 @@ export const socialLinks = [
 ];
 
 export const impactStats = [
-  { label: "Active projects", value: 18 },
+  { label: "Active projects", value: 11 },
   { label: "Sports groups", value: 5 },
   { label: "Current members", value: 64 },
-  { label: "Years at UCLA", value: 8 },
-  { label: "Partner problems scoped", value: 27 }
+  { label: "Years at UCLA", value: 9 },
+  { label: "UCLA Athletics Partners", value: 3 }
 ];
 
 export const sports: Sport[] = [
