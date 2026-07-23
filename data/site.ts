@@ -108,11 +108,11 @@ export const socialLinks = [
 ];
 
 export const impactStats = [
-  { label: "Active projects", value: 18 },
+  { label: "Active projects", value: 11 },
   { label: "Sports groups", value: 5 },
   { label: "Current members", value: 64 },
-  { label: "Years at UCLA", value: 8 },
-  { label: "Partner problems scoped", value: 27 }
+  { label: "Years at UCLA", value: 9 },
+  { label: "UCLA Athletics Partners", value: 3 }
 ];
 
 export const sports: Sport[] = [
@@ -193,7 +193,7 @@ export const projects: Project[] = [
     result: "The framework produces interpretable playstyle labels validated against expert ratings and surfaces dominant archetypes across the NCAA landscape.",
     members: [],
     techStack: ["Python", "scikit-learn", "pandas"],
-    links: { paper: "/projects/ml-playstyle-classification-tennis" },
+    links: { paper: "https://hfpruaivskrkweobtvcf.supabase.co/storage/v1/object/public/project_papers/Machine%20Learning%20Based%20Playstyle%20Classification%20for%20NCAA%20Tennis%20Players.pdf" },
     visibility: "public",
     featured: false,
     lastUpdated: "2026-01-03"
@@ -211,7 +211,7 @@ export const projects: Project[] = [
     result: "The resulting score correlates with run game success rates and provides a repeatable alternative to subjective film grades.",
     members: [],
     techStack: ["Python", "pandas", "Altair"],
-    links: { paper: "/projects/wr-blocking-effectiveness-framework" },
+    links: { paper: "https://hfpruaivskrkweobtvcf.supabase.co/storage/v1/object/public/project_papers/A%20Quantitative%20Framework%20for%20Assessing%20Wide%20Receiver%20Blocking%20Effectiveness%20Using%20Player%20Tracking%20Data.pdf" },
     visibility: "public",
     featured: false,
     lastUpdated: "2026-01-03"
@@ -229,7 +229,7 @@ export const projects: Project[] = [
     result: "Specific rule adjustments — including serve constraint changes — are shown to increase entertainment index scores without altering competitive balance significantly.",
     members: [],
     techStack: ["Python", "pandas"],
-    links: { paper: "/projects/spicing-up-spikeball" },
+    links: { paper: "https://hfpruaivskrkweobtvcf.supabase.co/storage/v1/object/public/project_papers/spicing-up-spikeball-quantifying-entertainment-of-the-sport-of-roundnet-and-beyond.pdf" },
     visibility: "public",
     featured: false,
     lastUpdated: "2021-07-12"
@@ -247,7 +247,7 @@ export const projects: Project[] = [
     result: "Certain defensive metrics show stronger correlation with shift usage than others, and high-shift teams do not consistently outperform low-shift teams on overall run prevention.",
     members: [],
     techStack: ["Python", "pandas", "matplotlib"],
-    links: { paper: "/projects/mlb-defensive-shift-analysis" },
+    links: { paper: "https://hfpruaivskrkweobtvcf.supabase.co/storage/v1/object/public/project_papers/An%20Analysis%20of%20Defensive%20Shifts%20in%20the%20MLB,%202016-2019.pdf" },
     visibility: "public",
     featured: false,
     lastUpdated: "2021-01-23"
@@ -265,7 +265,7 @@ export const projects: Project[] = [
     result: "Statistical models recover most All-NBA selections with high accuracy and identify a small set of borderline cases where narrative and popularity may outweigh on-court production.",
     members: [],
     techStack: ["Python", "scikit-learn", "pandas"],
-    links: { paper: "/projects/what-makes-all-nba-player" },
+    links: { paper: "https://hfpruaivskrkweobtvcf.supabase.co/storage/v1/object/public/project_papers/what-makes-an-all-nba-player.pdf" },
     visibility: "public",
     featured: false,
     lastUpdated: "2020-09-11"
@@ -283,7 +283,7 @@ export const projects: Project[] = [
     result: "The report clarifies PER's construction and highlights systematic biases that affect certain player roles, providing a clear guide for analysts and fans using the metric.",
     members: [],
     techStack: ["Python", "pandas", "matplotlib"],
-    links: { paper: "/projects/nba-player-per-report" },
+    links: { paper: "https://hfpruaivskrkweobtvcf.supabase.co/storage/v1/object/public/project_papers/nba-players-rank-research-report.pdf" },
     visibility: "public",
     featured: false,
     lastUpdated: "2017-12-15"

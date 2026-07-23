@@ -20,11 +20,6 @@
   font-size: 17px;
   font-weight: 800;
   line-height: 1.2;
-  transition: font-size .4s cubic-bezier(.4, 0, .2, 1);
-}
-
-.expanded .title {
-  font-size: 19px;
 }
 
 .date {

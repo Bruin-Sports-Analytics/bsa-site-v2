@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { LockKeyhole } from "lucide-react";
+import { ArrowUpRight, LockKeyhole } from "lucide-react";
 import { projects } from "@/data/site";
 import { formatDate, sportName, visibleProjectDetail } from "@/lib/utils";
+import styles from "./page.module.css";
 
 type Props = {
   params: { slug: string };
@@ -25,38 +26,43 @@ export default function ProjectDetailPage({ params }: Props) {
 
   return (
     <main>
-      <section className="page-hero">
+      <section className={styles.header}>
         <div className="container">
           <span className="eyebrow">{sportName(project.sport)} · {project.projectType}</span>
-          <h1>{project.title}</h1>
-          <p>{project.summary}</p>
-          <div className="tag-row">
+          <h1 className={styles.title}>{project.title}</h1>
+          <div className="tag-row" style={{ marginTop: 10 }}>
             <span className="tag">{project.status}</span>
             <span className="tag">{project.academicYear}</span>
             <span className="tag">Updated {formatDate(project.lastUpdated)}</span>
-            {redacted ? <span className="tag"><LockKeyhole size={14} aria-hidden /> Redacted methods/results</span> : null}
+            {redacted ? <span className="tag"><LockKeyhole size={14} aria-hidden /> Redacted</span> : null}
           </div>
         </div>
       </section>
-      <section className="section">
-        <div className="container grid two">
-          {[
-            ["Problem", project.problem],
-            ["Context", `This ${project.projectType.toLowerCase()} project sits inside Bruin Sports Analytics' ${sportName(project.sport)} workstream.`],
-            ["Approach", redacted ? "Detailed methods are redacted because this work may involve protected partner context." : project.approach],
-            ["Data", redacted ? "Public page only describes approved data categories." : "Play-level, event-level, and contextual sports data prepared by the project team."],
-            ["Methods and technology", project.techStack.join(", ")],
-            ["Results", redacted ? "Results are summarized at a high level for public viewing." : project.result],
-            ["Team", project.members.join(", ")],
-            ["External links", Object.values(project.links).filter(Boolean).join(" · ") || "No public external links yet."]
-          ].map(([title, text]) => (
-            <article className="card" style={{ padding: 24 }} key={title}>
-              <span className="eyebrow">{title}</span>
-              <p style={{ color: "var(--text-secondary)", fontSize: 16, lineHeight: 1.7 }}>{text}</p>
-            </article>
-          ))}
-        </div>
-      </section>
+
+      {/* TODO: project details accordion hidden until content is verified against source papers — see GitHub issue #1 */}
+
+      {project.links.paper && (
+        <section className={styles.paperSection}>
+          <div className="container">
+            <div className={styles.paperHeader}>
+              <span className="eyebrow">Full paper</span>
+              <a
+                href={project.links.paper}
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ display: "inline-flex", alignItems: "center", gap: 4, color: "var(--ucla-gold)", fontSize: 13, fontWeight: 800 }}
+              >
+                Open in new tab <ArrowUpRight size={14} aria-hidden />
+              </a>
+            </div>
+            <iframe
+              src={project.links.paper}
+              title={`${project.title} — full paper`}
+              className={styles.iframe}
+            />
+          </div>
+        </section>
+      )}
     </main>
   );
 }

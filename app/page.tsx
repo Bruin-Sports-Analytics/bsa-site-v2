@@ -3,14 +3,18 @@ import Link from "next/link";
 import { ArrowRight, CalendarDays } from "lucide-react";
 import { EventCard } from "@/components/EventCard";
 import { InstagramCollage } from "@/components/InstagramCollage";
-import { ProjectCard } from "@/components/ProjectCard";
+import { ProjectCardGroup } from "@/components/ProjectCardGroup";
 import { instagramPosts } from "@/data/instagram-posts";
 import { events, impactStats, outcomes, sports } from "@/data/site";
-import { currentlyFeatured } from "@/lib/utils";
+import { currentlyFeatured, publicProjects } from "@/lib/utils";
 import styles from "./page.module.css";
 
 export default function Home() {
-  const featured = currentlyFeatured().slice(0, 5);
+  const featuredProjects = currentlyFeatured();
+  const featured = (featuredProjects.length > 0
+    ? featuredProjects
+    : [...publicProjects()].sort((a, b) => Date.parse(b.lastUpdated) - Date.parse(a.lastUpdated))
+  ).slice(0, 3);
   const publicEvents = events.filter((event) => !event.isMembersOnly).slice(0, 3);
 
   return (
@@ -70,7 +74,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="section">
+      <section className={`section ${styles.featured}`}>
         <div className="container">
           <div className={styles.sectionHeader}>
             <div>
@@ -79,9 +83,7 @@ export default function Home() {
             </div>
             <Link className="btn btn-secondary" href="/projects">Open dashboard</Link>
           </div>
-          <div className="grid three">
-            {featured.slice(0, 3).map((project) => <ProjectCard project={project} key={project.slug} />)}
-          </div>
+          <ProjectCardGroup projects={featured} />
         </div>
       </section>
 
@@ -120,7 +122,7 @@ export default function Home() {
           <div className={styles.finalCta}>
             <Link href="/join">
               <span>Students</span>
-              <b>Build the next play.</b>
+              <b>Build with us.</b>
             </Link>
             <Link href="/partner">
               <span>Organizations</span>

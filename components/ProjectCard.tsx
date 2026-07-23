@@ -8,24 +8,34 @@ import type { Project } from "@/data/site";
 import { sportName } from "@/lib/utils";
 import styles from "./ProjectCard.module.css";
 
-export function ProjectCard({ project }: { project: Project }) {
-  const [expanded, setExpanded] = useState(false);
-  const [contentVisible, setContentVisible] = useState(false);
+type Props = {
+  project: Project;
+  active?: boolean;
+  onActivate?: () => void;
+  onDeactivate?: () => void;
+};
+
+export function ProjectCard({ project, active, onActivate, onDeactivate }: Props) {
+  const controlled = active !== undefined;
+  const [internalExpanded, setInternalExpanded] = useState(false);
+  const [internalVisible, setInternalVisible] = useState(false);
   const collapseTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
   const isPrivate = project.visibility === "private" || project.visibility === "redacted";
 
+  const expanded = controlled ? active : internalExpanded;
+  const contentVisible = controlled ? active : internalVisible;
+
   const handleEnter = () => {
-    if (collapseTimer.current) {
-      clearTimeout(collapseTimer.current);
-      collapseTimer.current = null;
-    }
-    setExpanded(true);
-    setContentVisible(true);
+    if (controlled) { onActivate?.(); return; }
+    if (collapseTimer.current) { clearTimeout(collapseTimer.current); collapseTimer.current = null; }
+    setInternalExpanded(true);
+    setInternalVisible(true);
   };
 
   const handleLeave = () => {
-    setContentVisible(false);
-    collapseTimer.current = setTimeout(() => setExpanded(false), 80);
+    if (controlled) { onDeactivate?.(); return; }
+    setInternalVisible(false);
+    collapseTimer.current = setTimeout(() => setInternalExpanded(false), 80);
   };
 
   const handlers = {
@@ -62,6 +72,10 @@ export function ProjectCard({ project }: { project: Project }) {
             <div className={styles.action}>
               {isPrivate ? (
                 <span className={styles.private}><LockKeyhole size={14} aria-hidden /> Approved summary only</span>
+              ) : project.links.paper ? (
+                <Link href={`/projects/${project.slug}`} className={styles.link}>
+                  Read paper <ArrowUpRight size={15} aria-hidden />
+                </Link>
               ) : (
                 <Link href={`/projects/${project.slug}`} className={styles.link}>
                   Open project <ArrowUpRight size={15} aria-hidden />
