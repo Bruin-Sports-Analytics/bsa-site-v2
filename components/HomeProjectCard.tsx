@@ -57,7 +57,7 @@ export function HomeProjectCard({ project, active, onActivate, onDeactivate }: P
       </GlassSurface>
 
       {mounted && (
-        <div className={`${styles.reveal} ${visible ? styles.revealOpen : ""}`} aria-hidden={!active}>
+        <div className={`${styles.reveal} ${visible ? styles.revealOpen : ""}`} aria-hidden={!active} onMouseEnter={onActivate} onMouseLeave={onDeactivate}>
           <span className={styles.eyebrow}>{sportName(project.sport)} · {project.academicYear}</span>
           <p className={styles.summary}>{project.summary}</p>
           <div className="tag-row">
