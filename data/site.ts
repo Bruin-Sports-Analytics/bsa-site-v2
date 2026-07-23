@@ -229,7 +229,7 @@ export const projects: Project[] = [
     result: "Specific rule adjustments — including serve constraint changes — are shown to increase entertainment index scores without altering competitive balance significantly.",
     members: [],
     techStack: ["Python", "pandas"],
-    links: { paper: "/projects/spicing-up-spikeball" },
+    links: { paper: "https://hfpruaivskrkweobtvcf.supabase.co/storage/v1/object/public/project_papers/spicing-up-spikeball-quantifying-entertainment-of-the-sport-of-roundnet-and-beyond.pdf" },
     visibility: "public",
     featured: false,
     lastUpdated: "2021-07-12"
@@ -265,7 +265,7 @@ export const projects: Project[] = [
     result: "Statistical models recover most All-NBA selections with high accuracy and identify a small set of borderline cases where narrative and popularity may outweigh on-court production.",
     members: [],
     techStack: ["Python", "scikit-learn", "pandas"],
-    links: { paper: "/projects/what-makes-all-nba-player" },
+    links: { paper: "https://hfpruaivskrkweobtvcf.supabase.co/storage/v1/object/public/project_papers/what-makes-an-all-nba-player.pdf" },
     visibility: "public",
     featured: false,
     lastUpdated: "2020-09-11"
@@ -283,7 +283,7 @@ export const projects: Project[] = [
     result: "The report clarifies PER's construction and highlights systematic biases that affect certain player roles, providing a clear guide for analysts and fans using the metric.",
     members: [],
     techStack: ["Python", "pandas", "matplotlib"],
-    links: { paper: "/projects/nba-player-per-report" },
+    links: { paper: "https://hfpruaivskrkweobtvcf.supabase.co/storage/v1/object/public/project_papers/nba-players-rank-research-report.pdf" },
     visibility: "public",
     featured: false,
     lastUpdated: "2017-12-15"
