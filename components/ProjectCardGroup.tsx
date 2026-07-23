@@ -1,12 +1,25 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { HomeProjectCard } from "@/components/HomeProjectCard";
 import type { Project } from "@/data/site";
 import styles from "./ProjectCardGroup.module.css";
 
 export function ProjectCardGroup({ projects }: { projects: Project[] }) {
   const [activeSlug, setActiveSlug] = useState<string | null>(null);
+  const closeTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
+
+  const handleActivate = (slug: string) => {
+    if (closeTimer.current) {
+      clearTimeout(closeTimer.current);
+      closeTimer.current = null;
+    }
+    setActiveSlug(slug);
+  };
+
+  const handleDeactivate = () => {
+    closeTimer.current = setTimeout(() => setActiveSlug(null), 120);
+  };
 
   return (
     <div className={styles.grid}>
@@ -15,8 +28,8 @@ export function ProjectCardGroup({ projects }: { projects: Project[] }) {
           key={project.slug}
           project={project}
           active={activeSlug === project.slug}
-          onActivate={() => setActiveSlug(project.slug)}
-          onDeactivate={() => setActiveSlug(null)}
+          onActivate={() => handleActivate(project.slug)}
+          onDeactivate={handleDeactivate}
         />
       ))}
     </div>
