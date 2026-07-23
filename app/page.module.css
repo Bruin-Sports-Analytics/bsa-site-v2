@@ -106,6 +106,15 @@
   margin-bottom: 28px;
 }
 
+/* Elevate the featured section above following sections so an expanded
+   project card's reveal panel (which overflows below the card) paints on
+   top and stays hoverable/clickable instead of being covered by the next
+   section's stacking context. */
+.featured {
+  position: relative;
+  z-index: 5;
+}
+
 .sportPills {
   display: flex;
   flex-wrap: wrap;
