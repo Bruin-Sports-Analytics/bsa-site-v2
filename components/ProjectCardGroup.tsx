@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { ProjectCard } from "@/components/ProjectCard";
+import { HomeProjectCard } from "@/components/HomeProjectCard";
 import type { Project } from "@/data/site";
 import styles from "./ProjectCardGroup.module.css";
 
@@ -11,7 +11,7 @@ export function ProjectCardGroup({ projects }: { projects: Project[] }) {
   return (
     <div className={styles.grid}>
       {projects.map((project) => (
-        <ProjectCard
+        <HomeProjectCard
           key={project.slug}
           project={project}
           active={activeSlug === project.slug}
