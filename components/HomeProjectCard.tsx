@@ -1,5 +1,6 @@
 "use client";
 
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import { ArrowUpRight, LockKeyhole } from "lucide-react";
 import { GlassSurface } from "@/components/ui/GlassSurface";
@@ -16,6 +17,20 @@ type Props = {
 
 export function HomeProjectCard({ project, active, onActivate, onDeactivate }: Props) {
   const isPrivate = project.visibility === "private" || project.visibility === "redacted";
+  const [visible, setVisible] = useState(false);
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    if (active) {
+      setMounted(true);
+      const t = requestAnimationFrame(() => setVisible(true));
+      return () => cancelAnimationFrame(t);
+    } else {
+      setVisible(false);
+      const t = setTimeout(() => setMounted(false), 220);
+      return () => clearTimeout(t);
+    }
+  }, [active]);
 
   const handlers = {
     onMouseEnter: onActivate,
@@ -41,24 +56,26 @@ export function HomeProjectCard({ project, active, onActivate, onDeactivate }: P
         </span>
       </GlassSurface>
 
-      <div className={`${styles.reveal} ${active ? styles.revealOpen : ""}`} aria-hidden={!active}>
-        <span className={styles.eyebrow}>{sportName(project.sport)} · {project.academicYear}</span>
-        <p className={styles.summary}>{project.summary}</p>
-        <div className="tag-row">
-          {project.techStack.slice(0, 3).map((tech) => (
-            <span className="tag" key={tech}>{tech}</span>
-          ))}
+      {mounted && (
+        <div className={`${styles.reveal} ${visible ? styles.revealOpen : ""}`} aria-hidden={!active}>
+          <span className={styles.eyebrow}>{sportName(project.sport)} · {project.academicYear}</span>
+          <p className={styles.summary}>{project.summary}</p>
+          <div className="tag-row">
+            {project.techStack.slice(0, 3).map((tech) => (
+              <span className="tag" key={tech}>{tech}</span>
+            ))}
+          </div>
+          <div className={styles.action}>
+            {isPrivate ? (
+              <span className={styles.private}><LockKeyhole size={14} aria-hidden /> Approved summary only</span>
+            ) : (
+              <Link href={`/projects/${project.slug}`} className={styles.link}>
+                {project.links.paper ? "Read paper" : "Open project"} <ArrowUpRight size={15} aria-hidden />
+              </Link>
+            )}
+          </div>
         </div>
-        <div className={styles.action}>
-          {isPrivate ? (
-            <span className={styles.private}><LockKeyhole size={14} aria-hidden /> Approved summary only</span>
-          ) : (
-            <Link href={`/projects/${project.slug}`} className={styles.link}>
-              {project.links.paper ? "Read paper" : "Open project"} <ArrowUpRight size={15} aria-hidden />
-            </Link>
-          )}
-        </div>
-      </div>
+      )}
     </div>
   );
 }
