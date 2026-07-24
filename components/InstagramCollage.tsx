@@ -1,4 +1,5 @@
 import Image from "next/image";
+import type { CSSProperties } from "react";
 import type { InstagramPost } from "@/data/instagram-posts";
 import styles from "./InstagramCollage.module.css";
 
@@ -64,7 +65,8 @@ export function InstagramCollage({ posts }: Props) {
                 "--mt": `${mobileTop}px`,
                 "--ml": `${mobileLeft}px`,
                 "--r": `${rotate}deg`,
-              } as React.CSSProperties
+                "--flow-delay": `${220 + i * 55}ms`,
+              } as CSSProperties
             }
           >
             <div className={styles.imageWrapper}>

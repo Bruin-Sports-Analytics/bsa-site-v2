@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import type { CSSProperties } from "react";
 import { ArrowRight, CalendarDays } from "lucide-react";
 import { EventCard } from "@/components/EventCard";
 import { InstagramCollage } from "@/components/InstagramCollage";
@@ -22,9 +23,9 @@ export default function Home() {
       <section className={styles.hero}>
         <div className={`container ${styles.heroGrid}`}>
           <div className={styles.heroCopy}>
-            <h1>Bruin Sports Analytics</h1>
-            <p>Bruin Sports Analytics is UCLA&apos;s student-run sports analytics organization, building research, tools, and competitive insights.</p>
-            <div className={styles.heroCta}>
+            <h1 className={styles.flowTitle}>Bruin Sports Analytics</h1>
+            <p className={styles.flowText}>Bruin Sports Analytics is UCLA&apos;s student-run sports analytics organization, building research, tools, and competitive insights.</p>
+            <div className={`${styles.heroCta} ${styles.flowCta}`}>
               <div className="button-row">
                 <Link className="btn btn-primary" href="/work" data-analytics="hero_work_click">Explore Our Work <ArrowRight size={18} aria-hidden /></Link>
                 <Link className="btn btn-secondary" href="/join" data-analytics="hero_join_click">Join the Team</Link>
@@ -33,9 +34,11 @@ export default function Home() {
             </div>
           </div>
           {instagramPosts.length > 0 ? (
-            <InstagramCollage posts={instagramPosts} />
+            <div className={styles.flowVisual}>
+              <InstagramCollage posts={instagramPosts} />
+            </div>
           ) : (
-            <div className={styles.heroLogo}>
+            <div className={`${styles.heroLogo} ${styles.flowVisual}`}>
               <Image
                 src="/assets/bruin_sports_analytics_logo_high_quality.jpg"
                 alt="Bruin Sports Analytics logo"
@@ -51,8 +54,8 @@ export default function Home() {
       <section className={styles.impact} aria-label="Bruin Sports Analytics impact metrics">
         <div className="container">
           <div className={styles.rail}>
-            {impactStats.map((stat) => (
-              <div key={stat.label}>
+            {impactStats.map((stat, index) => (
+              <div key={stat.label} data-load-reveal style={{ "--flow-delay": `${520 + index * 70}ms` } as CSSProperties}>
                 <b>{stat.value}</b>
                 <span>{stat.label}</span>
               </div>

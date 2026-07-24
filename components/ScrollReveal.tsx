@@ -24,7 +24,11 @@ export function ScrollReveal() {
     if (reduceMotion.matches) return;
 
     const elements = Array.from(document.querySelectorAll<HTMLElement>(revealSelector)).filter(
-      (element) => !element.closest("header") && !element.closest("footer")
+      (element) =>
+        !element.closest("header") &&
+        !element.closest("footer") &&
+        !element.matches("[data-load-reveal]") &&
+        !element.closest("[data-load-reveal]")
     );
 
     document.documentElement.classList.add("scroll-reveal-enabled");
