@@ -7,6 +7,17 @@ export type JournalismArticle = {
   likes: number;
 };
 
+export type DjResource = { label: string; href: string };
+
+const DJ_RESOURCES_BASE =
+  "https://hfpruaivskrkweobtvcf.supabase.co/storage/v1/object/public/dj_resources";
+
+export const djResources: DjResource[] = [
+  { label: "Creating Graphics", href: `${DJ_RESOURCES_BASE}/creating-graphics.pdf` },
+  { label: "Guidelines", href: `${DJ_RESOURCES_BASE}/guidelines.pdf` },
+  { label: "Example Timeline", href: `${DJ_RESOURCES_BASE}/example-timeline.pdf` }
+];
+
 export const articles: JournalismArticle[] = [
   {
     title: 'Are the "Uncs" Holding Back the NBA?',

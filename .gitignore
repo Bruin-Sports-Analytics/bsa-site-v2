@@ -13,3 +13,6 @@ tsconfig.tsbuildinfo
 
 # Local project paper PDFs — served from Supabase Storage, uploaded via `npm run upload-paper`
 public/assets/papers/
+
+# Local Data Journalism resource PDFs — served from Supabase Storage, uploaded via `npm run upload-dj-resources`
+public/assets/dj_resources/

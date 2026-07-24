@@ -8,6 +8,7 @@
     "start": "next start",
     "lint": "next lint",
     "upload-paper": "node --env-file=.env.local scripts/upload-paper.mjs",
+    "upload-dj-resources": "node --env-file=.env.local scripts/upload-dj-resources.mjs",
     "test": "node --test \"scripts/**/*.test.mjs\""
   },
   "dependencies": {
