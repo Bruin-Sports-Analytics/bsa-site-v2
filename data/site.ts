@@ -484,8 +484,36 @@ export const members: Member[] = [
     bio: "Leads basketball analytics projects and oversees basketball team operations.",
     linkedinUrl: "https://www.linkedin.com/in/rajakavasseri/",
     photoUrl: "/assets/linkedin_headshots/raja-kavasseri.jpeg",
-    photoTransform: "scale(1.2) translateY(-8%)",
+    // photoTransform: "scale(1) translateY(-10%)",
     sortOrder: 5,
+    isPublished: true
+  },
+  {
+    name: "Pavan Gudavalli",
+    slug: "pavan-gudavalli",
+    role: "Tennis Chair",
+    group: "board",
+    team: "tennis",
+    major: "Computer Science & Engineering; Math & Economics",
+    gradYear: "2027",
+    bio: "Leads tennis analytics projects and oversees tennis team operations.",
+    linkedinUrl: "https://www.linkedin.com/in/pavan-gudavalli/",
+    photoUrl: "/assets/linkedin_headshots/pavan-gudavalli.jpeg",
+    sortOrder: 6,
+    isPublished: true
+  },
+  {
+    name: "Beck Zimmerman",
+    slug: "beck-zimmerman",
+    role: "Volleyball Chair",
+    group: "board",
+    team: "volleyball",
+    major: "Stats & Data Science",
+    gradYear: "2027",
+    bio: "Leads volleyball analytics projects and oversees volleyball team operations.",
+    linkedinUrl: "https://www.linkedin.com/in/beck-zimmerman-45317a312/",
+    photoUrl: "/assets/linkedin_headshots/beck-zimmerman.jpeg",
+    sortOrder: 7,
     isPublished: true
   }
 ];
