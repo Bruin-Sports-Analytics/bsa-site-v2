@@ -74,7 +74,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className={`section ${styles.featured}`}>
+      <section className="section">
         <div className="container">
           <div className={styles.sectionHeader}>
             <div>
