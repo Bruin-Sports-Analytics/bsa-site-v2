@@ -1,3 +1,33 @@
+.heroRow {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 28px;
+}
+
+.heroText {
+  min-width: 0;
+}
+
+/* The resource button (last child) keeps its size and nudges down to sit
+   alongside the heading rather than the container top edge. */
+.heroRow > :last-child {
+  flex-shrink: 0;
+  margin-top: 14px;
+}
+
+@media (max-width: 720px) {
+  .heroRow {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .heroRow > :last-child {
+    margin-top: 0;
+  }
+}
+
 .articles {
   padding: 48px 0 80px;
 }
