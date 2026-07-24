@@ -12,38 +12,69 @@
   box-shadow: var(--glass-shadow-sm);
   -webkit-backdrop-filter: blur(var(--glass-clear-blur)) saturate(135%);
   backdrop-filter: blur(var(--glass-clear-blur)) saturate(135%);
+  transition: background .25s ease;
 }
 
-.item[open] {
+.item.open {
   background:
     linear-gradient(135deg, rgba(255, 255, 255, .055), rgba(74, 168, 255, .035)),
     rgba(7, 24, 43, .82);
 }
 
-.item summary {
+.summary {
+  width: 100%;
   min-height: 58px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 16px;
   padding: 14px 16px;
+  border: 0;
+  background: transparent;
   color: var(--text-primary);
+  font: inherit;
   font-weight: 800;
+  text-align: left;
   cursor: pointer;
 }
 
-.item summary::marker {
-  content: "";
+.icon {
+  flex-shrink: 0;
+  transition: transform .28s ease;
 }
 
-.item[open] svg {
+.item.open .icon {
   transform: rotate(90deg);
 }
 
-.item p {
+/* Smooth expand/collapse: animate the grid row from 0fr to 1fr while the inner
+   wrapper clips the overflow. */
+.panel {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows .28s ease;
+}
+
+.item.open .panel {
+  grid-template-rows: 1fr;
+}
+
+.panelInner {
+  overflow: hidden;
+}
+
+.panel p {
   margin: 0;
   border-top: 1px solid var(--border);
   padding: 16px;
   color: var(--text-secondary);
   line-height: 1.65;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .panel,
+  .icon,
+  .item {
+    transition: none;
+  }
 }
