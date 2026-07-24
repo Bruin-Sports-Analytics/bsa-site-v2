@@ -148,7 +148,7 @@
   z-index: 2;
 }
 
-.megaMenu {
+.navGroup .megaMenu {
   position: absolute;
   top: 100%;
   left: 0;
@@ -169,7 +169,7 @@
   backdrop-filter: blur(var(--glass-strong-blur)) saturate(var(--glass-saturation)) brightness(96%);
 }
 
-.megaMenu.menuOpen {
+.navGroup .megaMenu.menuOpen {
   display: grid;
 }
 
@@ -203,13 +203,13 @@
   font-weight: 600;
 }
 
-.teamsMenu {
+.navGroup .teamsMenu {
   width: 460px;
   grid-template-columns: 1fr;
   gap: 4px;
 }
 
-.teamsMenu.menuOpen {
+.navGroup .teamsMenu.menuOpen {
   display: flex;
   flex-direction: column;
 }
