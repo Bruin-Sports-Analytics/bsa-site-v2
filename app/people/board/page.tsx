@@ -22,13 +22,6 @@ export default function BoardPage() {
       </section>
       <section className="section">
         <div className="container">
-          <article className="card" style={{ minHeight: 300, display: "grid", placeItems: "center", marginBottom: 28 }}>
-            <div style={{ textAlign: "center" }}>
-              <span className="eyebrow">Group photo</span>
-              <h2 style={{ fontFamily: "var(--font-sora)", fontSize: 34 }}>Leadership photoshoot placeholder</h2>
-              <p className="section-lede">Configured for a consistent 4:5 portrait system once final photography is available.</p>
-            </div>
-          </article>
           <div className="grid five">
             {board.map((member) => <MemberCard member={member} key={member.slug} />)}
           </div>
