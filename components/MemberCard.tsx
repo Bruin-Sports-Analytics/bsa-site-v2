@@ -24,7 +24,7 @@ export function MemberCard({ member }: { member: Member }) {
     <>
       <div className={styles.photo} aria-hidden>
         {member.photoUrl
-          ? <Image src={member.photoUrl} alt="" fill sizes="(max-width: 600px) 100vw, 400px" className={styles.photoImg} />
+          ? <Image src={member.photoUrl} alt="" fill sizes="(max-width: 600px) 100vw, 400px" className={styles.photoImg} style={member.photoTransform ? { transform: member.photoTransform } : undefined} />
           : initials}
       </div>
       {member.linkedinUrl && (
