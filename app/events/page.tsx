@@ -13,7 +13,7 @@ export default function EventsPage() {
         <div className="container">
           <span className="eyebrow">Events</span>
           <h1>Workshops, speakers, meetings</h1>
-          <p>Public events include RSVP actions. Members-only meetings hide sensitive location and link details.</p>
+          <p>Public events include RSVP actions. <br />For members of sports groups and data journalism teams, please refer to slack.</p>
         </div>
       </section>
       <section className="section">
