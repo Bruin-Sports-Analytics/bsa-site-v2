@@ -1,3 +1,11 @@
+/* Tighten the vertical rhythm between homepage sections (the global .section
+   default of 82px 0 leaves ~164px gaps). Scoped to the homepage; the .tight
+   final CTA keeps its own padding. */
+.home :global(.section:not(.tight)) {
+  padding-top: 52px;
+  padding-bottom: 52px;
+}
+
 .hero {
   position: relative;
   padding: 138px 0 44px;

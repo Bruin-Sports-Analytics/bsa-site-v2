@@ -18,7 +18,7 @@ export default function Home() {
   const publicEvents = events.filter((event) => !event.isMembersOnly).slice(0, 3);
 
   return (
-    <main>
+    <main className={styles.home}>
       <section className={styles.hero}>
         <div className={`container ${styles.heroGrid}`}>
           <div className={styles.heroCopy}>
