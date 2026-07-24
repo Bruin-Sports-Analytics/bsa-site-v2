@@ -165,8 +165,8 @@
   box-shadow:
     0 34px 90px rgba(0, 5, 15, .62),
     0 1px 0 rgba(255, 255, 255, .14) inset;
-  -webkit-backdrop-filter: blur(38px) saturate(155%) brightness(92%);
-  backdrop-filter: blur(38px) saturate(155%) brightness(92%);
+  -webkit-backdrop-filter: blur(var(--glass-strong-blur)) saturate(var(--glass-saturation)) brightness(96%);
+  backdrop-filter: blur(var(--glass-strong-blur)) saturate(var(--glass-saturation)) brightness(96%);
 }
 
 .megaMenu.menuOpen {

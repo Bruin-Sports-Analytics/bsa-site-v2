@@ -41,11 +41,11 @@
   --glass-fallback-fill: rgba(10, 31, 54, 0.96);
   --glass-blue-tint: rgba(74, 168, 255, 0.13);
   --glass-gold-tint: rgba(255, 209, 0, 0.12);
-  --glass-clear-blur: 14px;
-  --glass-regular-blur: 22px;
-  --glass-strong-blur: 30px;
-  --glass-saturation: 145%;
-  --glass-brightness: 108%;
+  --glass-clear-blur: 8px;
+  --glass-regular-blur: 12px;
+  --glass-strong-blur: 16px;
+  --glass-saturation: 125%;
+  --glass-brightness: 104%;
   --glass-border: rgba(190, 224, 255, 0.20);
   --glass-border-hover: rgba(206, 234, 255, 0.38);
   --glass-border-strong: rgba(218, 237, 255, 0.30);
@@ -93,22 +93,12 @@ body {
     linear-gradient(rgba(139, 203, 255, .035) 1px, transparent 1px),
     linear-gradient(90deg, rgba(139, 203, 255, .035) 1px, transparent 1px),
     linear-gradient(180deg, var(--bg-primary) 0%, #081a2f 55%, var(--bg-primary) 100%);
-  background-attachment: fixed;
+  background-attachment: scroll;
   background-size: auto, auto, 42px 42px, 42px 42px, auto;
   color: var(--text-primary);
   font-family: var(--font-inter), system-ui, sans-serif;
   font-size: 15px;
   min-height: 100vh;
-}
-
-body::before {
-  content: "";
-  position: fixed;
-  inset: 0;
-  pointer-events: none;
-  z-index: 100;
-  opacity: .045;
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 160 160' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)' opacity='.45'/%3E%3C/svg%3E");
 }
 
 a {
@@ -432,7 +422,6 @@ button {
 
 .glass--interactive {
   transition: var(--glass-transition);
-  will-change: transform;
 }
 
 @media (hover: hover) and (pointer: fine) {
