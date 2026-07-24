@@ -301,7 +301,7 @@ export const projects: Project[] = [
     result: "The analysis demonstrates significant competitive imbalance and shows that conference-blind seeding would have changed playoff fields substantially in most recent seasons.",
     members: [],
     techStack: ["Python", "pandas"],
-    links: { paper: "/projects/abolishing-nba-conferences" },
+    links: { paper: "https://hfpruaivskrkweobtvcf.supabase.co/storage/v1/object/public/project_papers/abolish-conferences.pdf" },
     visibility: "public",
     featured: false,
     lastUpdated: "2017-08-04"
@@ -319,7 +319,7 @@ export const projects: Project[] = [
     result: "The model identifies consistently undervalued player profiles and produces example rosters that outperform expected win totals relative to their payroll.",
     members: [],
     techStack: ["Python", "pandas", "matplotlib"],
-    links: { paper: "/projects/basketball-on-a-budget" },
+    links: { paper: "https://hfpruaivskrkweobtvcf.supabase.co/storage/v1/object/public/project_papers/basketball-on-budget.pdf" },
     visibility: "public",
     featured: false,
     lastUpdated: "2017-06-14"
@@ -337,7 +337,7 @@ export const projects: Project[] = [
     result: "Distinct statistical signatures separate top seeds from lower seeds in both conferences, and persistent stylistic differences between Eastern and Western contenders are identified.",
     members: [],
     techStack: ["Python", "pandas", "matplotlib"],
-    links: { paper: "/projects/nba-team-synergy-analysis" },
+    links: { paper: "https://hfpruaivskrkweobtvcf.supabase.co/storage/v1/object/public/project_papers/synergy.pdf" },
     visibility: "public",
     featured: false,
     lastUpdated: "2016-06-03"
