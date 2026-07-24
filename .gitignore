@@ -9,6 +9,7 @@ yarn-debug.log*
 yarn-error.log*
 .DS_Store
 .claude
+tsconfig.tsbuildinfo
 
 # Local project paper PDFs — served from Supabase Storage, uploaded via `npm run upload-paper`
 public/assets/papers/
