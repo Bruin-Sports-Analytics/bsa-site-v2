@@ -31,11 +31,3 @@
 .articles {
   padding: 48px 0 80px;
 }
-
-.list {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-  max-width: 760px;
-  margin: 0 auto;
-}

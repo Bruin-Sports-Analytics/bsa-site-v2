@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
-import { ArticleCard } from "@/components/ArticleCard";
+import { JournalismExplorer } from "@/components/JournalismExplorer";
 import { ViewResourcesButton } from "@/components/ViewResourcesButton";
-import { articles, djResources } from "@/data/journalism";
+import { djResources } from "@/data/journalism";
 import styles from "./page.module.css";
 
 export const metadata: Metadata = {
@@ -22,11 +22,7 @@ export default function JournalismPage() {
       </section>
       <section className={styles.articles}>
         <div className="container">
-          <div className={styles.list}>
-            {articles.map((article) => (
-              <ArticleCard key={article.title} article={article} />
-            ))}
-          </div>
+          <JournalismExplorer />
         </div>
       </section>
     </main>
