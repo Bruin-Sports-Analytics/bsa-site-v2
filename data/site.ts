@@ -357,7 +357,7 @@ export const members: Member[] = [
     gradYear: "2027",
     bio: "Coordinates partner projects. Leads club strategy, recruitment, and operations.",
     linkedinUrl: "https://www.linkedin.com/in/moulik-chatterjee/",
-    photoUrl: "/assets/linkedin_headshots/moulik-chatterjee.jpeg",
+    // photoUrl: "/assets/linkedin_headshots/moulik-chatterjee.jpeg",
     sortOrder: 1,
     isPublished: true
   },
@@ -371,7 +371,7 @@ export const members: Member[] = [
     gradYear: "2029",
     bio: "Leads website development, maintenance, and analytics. Oversees technical infrastructure.",
     linkedinUrl: "https://www.linkedin.com/in/sampath-kalagarla/",
-    photoUrl: "/assets/linkedin_headshots/sampath-kalagarla.jpeg",
+    // photoUrl: "/assets/linkedin_headshots/sampath-kalagarla.jpeg",
     sortOrder: 100,
     isPublished: true
   },
@@ -385,7 +385,7 @@ export const members: Member[] = [
     gradYear: "2027",
     bio: "Leads internal operations, project management, and member development.",
     linkedinUrl: "https://www.linkedin.com/in/troutman-ben/",
-    photoUrl: "/assets/linkedin_headshots/ben-troutman.jpeg",
+    // photoUrl: "/assets/linkedin_headshots/ben-troutman.jpeg",
     sortOrder: 2,
     isPublished: true
   },
@@ -399,7 +399,7 @@ export const members: Member[] = [
     gradYear: "2027",
     bio: "Leads external partnerships, communications, and marketing.",
     linkedinUrl: "https://www.linkedin.com/in/vardaan-sinha-234663272/",
-    photoUrl: "/assets/linkedin_headshots/vardaan-sinha.png",
+    // photoUrl: "/assets/linkedin_headshots/vardaan-sinha.png",
     sortOrder: 2,
     isPublished: true
   },
@@ -413,7 +413,7 @@ export const members: Member[] = [
     gradYear: "2029",
     bio: "Leads baseball analytics projects and oversees baseball team operations.",
     linkedinUrl: "https://www.linkedin.com/in/anthony-mui-820a7a272/",
-    photoUrl: "/assets/linkedin_headshots/anthony-mui.jpeg",
+    // photoUrl: "/assets/linkedin_headshots/anthony-mui.jpeg",
     sortOrder: 3,
     isPublished: true
   },
@@ -427,7 +427,7 @@ export const members: Member[] = [
     gradYear: "2027",
     bio: "Leads baseball analytics projects and oversees baseball team operations.",
     linkedinUrl: "https://www.linkedin.com/in/colingranger/",
-    photoUrl: "/assets/linkedin_headshots/colin-granger.jpeg",
+    // photoUrl: "/assets/linkedin_headshots/colin-granger.jpeg",
     sortOrder: 3,
     isPublished: true
   },
@@ -441,7 +441,7 @@ export const members: Member[] = [
     gradYear: "2027",
     bio: "Leads football analytics projects and oversees football team operations.",
     linkedinUrl: "https://www.linkedin.com/in/eshaan-dhavala-12ba98241/",
-    photoUrl: "/assets/linkedin_headshots/eshaan-dhavala.png",
+    // photoUrl: "/assets/linkedin_headshots/eshaan-dhavala.png",
     sortOrder: 4,
     isPublished: true
   },
@@ -455,7 +455,7 @@ export const members: Member[] = [
     gradYear: "2028",
     bio: "Leads football analytics projects and oversees football team operations.",
     linkedinUrl: "https://www.linkedin.com/in/abhi-kumar-/",
-    photoUrl: "/assets/linkedin_headshots/abhi-kumar.jpeg",
+    // photoUrl: "/assets/linkedin_headshots/abhi-kumar.jpeg",
     sortOrder: 4,
     isPublished: true
   },
@@ -469,7 +469,7 @@ export const members: Member[] = [
     gradYear: "2027",
     bio: "Leads basketball analytics projects and oversees basketball team operations.",
     linkedinUrl: "https://www.linkedin.com/in/lucaspichardo/",
-    photoUrl: "/assets/linkedin_headshots/lucas-pichardo.png",
+    // photoUrl: "/assets/linkedin_headshots/lucas-pichardo.png",
     sortOrder: 5,
     isPublished: true
   },
@@ -483,7 +483,7 @@ export const members: Member[] = [
     gradYear: "2027",
     bio: "Leads basketball analytics projects and oversees basketball team operations.",
     linkedinUrl: "https://www.linkedin.com/in/rajakavasseri/",
-    photoUrl: "/assets/linkedin_headshots/raja-kavasseri.jpeg",
+    // photoUrl: "/assets/linkedin_headshots/raja-kavasseri.jpeg",
     // photoTransform: "scale(1) translateY(-10%)",
     sortOrder: 5,
     isPublished: true
@@ -498,7 +498,7 @@ export const members: Member[] = [
     gradYear: "2027",
     bio: "Leads tennis analytics projects and oversees tennis team operations.",
     linkedinUrl: "https://www.linkedin.com/in/pavan-gudavalli/",
-    photoUrl: "/assets/linkedin_headshots/pavan-gudavalli.jpeg",
+    // photoUrl: "/assets/linkedin_headshots/pavan-gudavalli.jpeg",
     sortOrder: 6,
     isPublished: true
   },
@@ -512,7 +512,7 @@ export const members: Member[] = [
     gradYear: "2027",
     bio: "Leads volleyball analytics projects and oversees volleyball team operations.",
     linkedinUrl: "https://www.linkedin.com/in/beck-zimmerman-45317a312/",
-    photoUrl: "/assets/linkedin_headshots/beck-zimmerman.jpeg",
+    // photoUrl: "/assets/linkedin_headshots/beck-zimmerman.jpeg",
     sortOrder: 7,
     isPublished: true
   }
