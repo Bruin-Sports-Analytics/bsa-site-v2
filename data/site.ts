@@ -372,7 +372,7 @@ export const members: Member[] = [
     bio: "Leads website development, maintenance, and analytics. Oversees technical infrastructure.",
     linkedinUrl: "https://www.linkedin.com/in/sampath-kalagarla/",
     // photoUrl: "/assets/linkedin_headshots/sampath-kalagarla.jpeg",
-    sortOrder: 100,
+    sortOrder: 12,
     isPublished: true
   },
   {
@@ -611,7 +611,7 @@ export const members: Member[] = [
     bio: "Advises board members on sports analytics projects, technical direction, and member development.",
     linkedinUrl: "https://www.linkedin.com/in/kevinmbaer/",
     // photoUrl: "/assets/linkedin_headshots/kevin-baer.jpeg",
-    sortOrder: 12,
+    sortOrder: 13,
     isPublished: true
   },
   {
@@ -625,7 +625,7 @@ export const members: Member[] = [
     bio: "Advises board members on organizational strategy, analytics projects, and technical mentorship.",
     linkedinUrl: "https://www.linkedin.com/in/harsh-govindji/",
     // photoUrl: "/assets/linkedin_headshots/harsh-govindji.jpeg",
-    sortOrder: 12,
+    sortOrder: 13,
     isPublished: true
   }
 ];
