@@ -18,8 +18,7 @@ export default function AboutPage() {
     <main>
       <section className="page-hero">
         <div className="container">
-          <span className="eyebrow">About Bruin Sports Analytics</span>
-          <h1>What we do</h1>
+          <h1>About Bruin Sports Analytics</h1>
           <p>Bruin Sports Analytics is a UCLA student club where members learn analytics by working on real sports problems.</p>
         </div>
       </section>
@@ -39,7 +38,6 @@ export default function AboutPage() {
       <section className="section tight">
         <div className="container">
           <span className="eyebrow">Timeline</span>
-          <h2 className="section-title">Founded at UCLA</h2>
           <div className="grid two">
             {milestones.map(([title, text]) => (
               <article className="card" style={{ padding: 24 }} key={title}>
