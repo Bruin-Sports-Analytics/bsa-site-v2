@@ -19,15 +19,15 @@ export default function AboutPage() {
       <section className="page-hero">
         <div className="container">
           <span className="eyebrow">About Bruin Sports Analytics</span>
-          <h1>Technical work. Real games. UCLA community</h1>
-          <p>Bruin Sports Analytics gives students a place to learn rigorous analytics through sports problems that demand context, collaboration, and clear communication.</p>
+          <h1>What we do</h1>
+          <p>Bruin Sports Analytics is a UCLA student club where members learn analytics by working on real sports problems.</p>
         </div>
       </section>
       <section className="section">
         <div className="container grid two">
           <article className="card" style={{ padding: 28 }}>
             <span className="eyebrow">Mission</span>
-            <h2 className="section-title" style={{ fontSize: 38 }}>Where sports meet data.</h2>
+            <h2 className="section-title" style={{ fontSize: 38 }}>Learning analytics through sports</h2>
             <p className="section-lede">We build models, tools, dashboards, and writing that help people understand games more deeply and make better decisions from sports data.</p>
           </article>
           <article className="card" style={{ padding: 28 }}>

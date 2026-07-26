@@ -11,7 +11,7 @@ export default function MembersPage() {
       <section className="page-hero">
         <div className="container">
           <span className="eyebrow">Current members</span>
-          <h1>Teams behind the work.</h1>
+          <h1>Our members</h1>
           <p>Search current members by name, team, function, or class year. Published links open in a new tab.</p>
         </div>
       </section>

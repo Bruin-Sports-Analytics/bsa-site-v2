@@ -12,14 +12,14 @@ export default function PartnerPage() {
       <section className="page-hero">
         <div className="container">
           <span className="eyebrow">Partner with us</span>
-          <h1>Turn your sports data into decisions</h1>
+          <h1>Consulting for sports organizations</h1>
           <p>Bruin Sports Analytics combines analytics, engineering, visualization, and domain knowledge to solve competitive and operational problems.</p>
         </div>
       </section>
       <section className="section">
         <div className="container">
           <span className="eyebrow">Capabilities</span>
-          <h2 className="section-title">What we can reliably deliver</h2>
+          <h2 className="section-title">What we deliver</h2>
           <div className="grid three">
             {capabilities.map((capability) => {
               const Icon = capability.icon;
@@ -37,7 +37,7 @@ export default function PartnerPage() {
       <section className="section tight">
         <div className="container">
           <span className="eyebrow">Engagement process</span>
-          <h2 className="section-title">From discovery to handoff</h2>
+          <h2 className="section-title">How a project works</h2>
           <div className="grid four">
             {["Discovery", "Scope and data review", "Build and iterate", "Present and hand off"].map((step, index) => (
               <article className="card" style={{ padding: 22 }} key={step}>
@@ -52,7 +52,7 @@ export default function PartnerPage() {
         <div className="container grid two">
           <article className="card glass glass--strong glass--radius-lg" style={{ padding: 28 }}>
             <span className="eyebrow">Inquiry form</span>
-            <h2 className="section-title" style={{ fontSize: 34 }}>Bring us the problem.</h2>
+            <h2 className="section-title" style={{ fontSize: 34 }}>Send us your project</h2>
             <form className="form-grid">
               <div className="field">
                 <label htmlFor="name">Name</label>

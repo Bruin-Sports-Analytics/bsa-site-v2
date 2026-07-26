@@ -24,7 +24,7 @@ export default function Home() {
         <div className={`container ${styles.heroGrid}`}>
           <div className={styles.heroCopy}>
             <h1 className={styles.flowTitle}>Bruin Sports Analytics</h1>
-            <p className={styles.flowText}>Bruin Sports Analytics is UCLA&apos;s student-run sports analytics organization, building research, tools, and competitive insights.</p>
+            <p className={styles.flowText}>UCLA&apos;s student-run sports analytics organization. Research, tools, and analysis across five sports.</p>
             <div className={`${styles.heroCta} ${styles.flowCta}`}>
               <div className="button-row">
                 <Link className="btn btn-primary" href="/work" data-analytics="hero_work_click">Explore Our Work <ArrowRight size={18} aria-hidden /></Link>
@@ -67,8 +67,8 @@ export default function Home() {
       <section className="section">
         <div className="container">
           <span className="eyebrow">Our Work</span>
-          <h2 className="section-title">Explore by sport</h2>
-          <p className="section-lede">Consulting projects, research, dashboards, tools, and articles live together under the sport where the question starts.</p>
+          <h2 className="section-title">Our sports teams</h2>
+          <p className="section-lede">Each team focuses on one sport, from baseball to tennis.</p>
           <div className={styles.sportPills}>
             {sports.map((sport) => (
               <Link key={sport.slug} href={`/work/${sport.slug}`} className={styles.sportPill}>{sport.name}</Link>
@@ -82,7 +82,7 @@ export default function Home() {
           <div className={styles.sectionHeader}>
             <div>
               <span className="eyebrow">Featured work</span>
-              <h2 className="section-title">Current analysis in motion</h2>
+              <h2 className="section-title">Featured projects</h2>
             </div>
             <Link className="btn btn-secondary" href="/projects">Open dashboard</Link>
           </div>
@@ -93,7 +93,7 @@ export default function Home() {
       <section className="section">
         <div className="container">
           <span className="eyebrow">Outcomes</span>
-          <h2 className="section-title">Where Bruins take analytics</h2>
+          <h2 className="section-title">Where our members go</h2>
           <div className={styles.logoWall}>
             {outcomes.filter((outcome) => outcome.approvedForDisplay).map((outcome) => (
               <a href="#" aria-label={`${outcome.name}, ${outcome.category}`} key={outcome.name}>
@@ -109,8 +109,8 @@ export default function Home() {
         <div className="container">
           <div className={styles.sectionHeader}>
             <div>
-              <span className="eyebrow">Upcoming events</span>
-              <h2 className="section-title">Workshops, speakers, and recruitment</h2>
+              <span className="eyebrow">What&apos;s next</span>
+              <h2 className="section-title">Upcoming events</h2>
             </div>
             <Link className="btn btn-secondary" href="/events"><CalendarDays size={18} aria-hidden /> View all</Link>
           </div>

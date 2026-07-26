@@ -56,7 +56,7 @@ export default function JoinPage() {
         <div className="container grid two">
           <article className={`card ${styles.recruitmentCard}`}>
             <span className="eyebrow">What members do</span>
-            <h2 className="section-title" style={{ fontSize: 36 }}>Build in real project teams.</h2>
+            <h2 className="section-title" style={{ fontSize: 36 }}>Work on real project teams</h2>
             <p className="section-lede">Members clean data, write models, build dashboards, publish analysis, and communicate results to teammates, readers, and partners.</p>
           </article>
           <article className={`card ${styles.tagPanel}`}>

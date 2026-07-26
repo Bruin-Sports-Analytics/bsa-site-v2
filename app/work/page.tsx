@@ -13,7 +13,7 @@ export default function WorkPage() {
       <section className="page-hero">
         <div className="container">
           <span className="eyebrow">Our Work</span>
-          <h1>Sports first. Every format together</h1>
+          <h1>Projects by sport</h1>
           <p>Explore consulting, research, journalism, dashboards, and tools through the sports questions that drive them.</p>
         </div>
       </section>

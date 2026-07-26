@@ -78,7 +78,7 @@ export default function TennisPage() {
       <section className="section tight">
         <div className="container">
           <span className="eyebrow">Archive</span>
-          <h2 className="section-title">Research, journalism, dashboards, and consulting</h2>
+          <h2 className="section-title">Past work</h2>
           <div className="grid three">
             {archived.map((project) => <ProjectCard project={project} key={project.slug} />)}
           </div>
