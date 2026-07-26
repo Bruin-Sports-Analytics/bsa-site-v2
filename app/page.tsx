@@ -124,12 +124,18 @@ export default function Home() {
         <div className="container">
           <div className={styles.finalCta}>
             <Link href="/join">
-              <span>Students</span>
-              <b>Build with us.</b>
+              <div className={styles.ctaText}>
+                <span>Students</span>
+                <b>Build with us.</b>
+              </div>
+              <ArrowRight className={styles.ctaArrow} aria-hidden />
             </Link>
             <Link href="/partner">
-              <span>Organizations</span>
-              <b>Bring us the problem.</b>
+              <div className={styles.ctaText}>
+                <span>Organizations</span>
+                <b>Bring us the problem.</b>
+              </div>
+              <ArrowRight className={styles.ctaArrow} aria-hidden />
             </Link>
           </div>
         </div>
