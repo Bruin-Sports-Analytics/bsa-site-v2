@@ -57,7 +57,7 @@ export function Navigation() {
                             <Link href={`/work/${sport.slug}/consulting`}>Consulting</Link>
                             <Link href={`/work/${sport.slug}/research`}>Research</Link>
                             {sport.slug === "tennis" && (
-                              <a href="https://uclabruins.com/sports/tennis" target="_blank" rel="noopener noreferrer">UCLA Tennis ↗</a>
+                              <a href="https://match-manager-umber.vercel.app" target="_blank" rel="noopener noreferrer">Match Manager ↗</a>
                             )}
                           </div>
                         </div>
