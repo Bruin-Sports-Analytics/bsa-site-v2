@@ -9,6 +9,7 @@ const revealSelector = [
   ".sport-card-grid > *",
   ".grid > *",
   ".card",
+  "[data-scroll-reveal]",
   "[class*='compactGrid'] > *",
   "[class*='logoWall'] > *",
   "[class*='finalCta'] > *",
