@@ -93,12 +93,12 @@ export type Event = {
 };
 
 export const navItems = [
-  { label: "Projects", href: "/projects" },
-  { label: "People", href: "/people/board" },
+  { label: "About", href: "/about" },
   { label: "Teams", href: "/work" },
   { label: "Journalism", href: "/journalism" },
+  { label: "Projects", href: "/projects" },
+  { label: "People", href: "/people/board" },
   { label: "Events", href: "/events" },
-  { label: "About", href: "/about" },
   { label: "Join", href: "/join" }
 ];
 
@@ -357,7 +357,7 @@ export const members: Member[] = [
     gradYear: "2027",
     bio: "Coordinates partner projects. Leads club strategy, recruitment, and operations.",
     linkedinUrl: "https://www.linkedin.com/in/moulik-chatterjee/",
-    // photoUrl: "/assets/linkedin_headshots/moulik-chatterjee.jpeg",
+    photoUrl: "/assets/linkedin_headshots/moulik-chatterjee.jpeg",
     sortOrder: 1,
     isPublished: true
   },
@@ -371,7 +371,7 @@ export const members: Member[] = [
     gradYear: "2029",
     bio: "Leads website development, maintenance, and analytics. Oversees technical infrastructure.",
     linkedinUrl: "https://www.linkedin.com/in/sampath-kalagarla/",
-    // photoUrl: "/assets/linkedin_headshots/sampath-kalagarla.jpeg",
+    photoUrl: "/assets/linkedin_headshots/sampath-kalagarla.jpeg",
     sortOrder: 12,
     isPublished: true
   },
@@ -385,7 +385,7 @@ export const members: Member[] = [
     gradYear: "2027",
     bio: "Leads internal operations, project management, and member development.",
     linkedinUrl: "https://www.linkedin.com/in/troutman-ben/",
-    // photoUrl: "/assets/linkedin_headshots/ben-troutman.jpeg",
+    photoUrl: "/assets/linkedin_headshots/ben-troutman.jpeg",
     sortOrder: 2,
     isPublished: true
   },
@@ -399,7 +399,7 @@ export const members: Member[] = [
     gradYear: "2027",
     bio: "Leads external partnerships, communications, and marketing.",
     linkedinUrl: "https://www.linkedin.com/in/vardaan-sinha-234663272/",
-    // photoUrl: "/assets/linkedin_headshots/vardaan-sinha.png",
+    photoUrl: "/assets/linkedin_headshots/vardaan-sinha.png",
     sortOrder: 2,
     isPublished: true
   },
@@ -413,7 +413,7 @@ export const members: Member[] = [
     gradYear: "2029",
     bio: "Leads baseball analytics projects and oversees baseball team operations.",
     linkedinUrl: "https://www.linkedin.com/in/anthony-mui-820a7a272/",
-    // photoUrl: "/assets/linkedin_headshots/anthony-mui.jpeg",
+    photoUrl: "/assets/linkedin_headshots/anthony-mui.jpeg",
     sortOrder: 3,
     isPublished: true
   },
@@ -427,7 +427,7 @@ export const members: Member[] = [
     gradYear: "2027",
     bio: "Leads baseball analytics projects and oversees baseball team operations.",
     linkedinUrl: "https://www.linkedin.com/in/colingranger/",
-    // photoUrl: "/assets/linkedin_headshots/colin-granger.jpeg",
+    photoUrl: "/assets/linkedin_headshots/colin-granger.jpeg",
     sortOrder: 3,
     isPublished: true
   },
@@ -441,7 +441,7 @@ export const members: Member[] = [
     gradYear: "2027",
     bio: "Leads football analytics projects and oversees football team operations.",
     linkedinUrl: "https://www.linkedin.com/in/eshaan-dhavala-12ba98241/",
-    // photoUrl: "/assets/linkedin_headshots/eshaan-dhavala.png",
+    photoUrl: "/assets/linkedin_headshots/eshaan-dhavala.png",
     sortOrder: 4,
     isPublished: true
   },
@@ -455,7 +455,7 @@ export const members: Member[] = [
     gradYear: "2028",
     bio: "Leads football analytics projects and oversees football team operations.",
     linkedinUrl: "https://www.linkedin.com/in/abhi-kumar-/",
-    // photoUrl: "/assets/linkedin_headshots/abhi-kumar.jpeg",
+    photoUrl: "/assets/linkedin_headshots/abhi-kumar.jpeg",
     sortOrder: 4,
     isPublished: true
   },
@@ -469,7 +469,7 @@ export const members: Member[] = [
     gradYear: "2027",
     bio: "Leads basketball analytics projects and oversees basketball team operations.",
     linkedinUrl: "https://www.linkedin.com/in/lucaspichardo/",
-    // photoUrl: "/assets/linkedin_headshots/lucas-pichardo.png",
+    photoUrl: "/assets/linkedin_headshots/lucas-pichardo.png",
     sortOrder: 5,
     isPublished: true
   },
@@ -483,7 +483,7 @@ export const members: Member[] = [
     gradYear: "2027",
     bio: "Leads basketball analytics projects and oversees basketball team operations.",
     linkedinUrl: "https://www.linkedin.com/in/rajakavasseri/",
-    // photoUrl: "/assets/linkedin_headshots/raja-kavasseri.jpeg",
+    photoUrl: "/assets/linkedin_headshots/raja-kavasseri.jpeg",
     // photoTransform: "scale(1) translateY(-10%)",
     sortOrder: 5,
     isPublished: true
@@ -498,7 +498,7 @@ export const members: Member[] = [
     gradYear: "2027",
     bio: "Leads tennis analytics projects and oversees tennis team operations.",
     linkedinUrl: "https://www.linkedin.com/in/pavan-gudavalli/",
-    // photoUrl: "/assets/linkedin_headshots/pavan-gudavalli.jpeg",
+    photoUrl: "/assets/linkedin_headshots/pavan-gudavalli.jpeg",
     sortOrder: 6,
     isPublished: true
   },
@@ -512,7 +512,7 @@ export const members: Member[] = [
     gradYear: "2027",
     bio: "Leads volleyball analytics projects and oversees volleyball team operations.",
     linkedinUrl: "https://www.linkedin.com/in/beck-zimmerman-45317a312/",
-    // photoUrl: "/assets/linkedin_headshots/beck-zimmerman.jpeg",
+    photoUrl: "/assets/linkedin_headshots/beck-zimmerman.jpeg",
     sortOrder: 7,
     isPublished: true
   },
@@ -526,7 +526,7 @@ export const members: Member[] = [
     gradYear: "2028",
     bio: "Leads data journalism projects and oversees data storytelling initiatives.",
     linkedinUrl: "https://www.linkedin.com/in/anika-soitkar/",
-    // photoUrl: "/assets/linkedin_headshots/anika-soitkar.jpeg",
+    photoUrl: "/assets/linkedin_headshots/anika-soitkar.png",
     sortOrder: 8,
     isPublished: true
   },
@@ -540,7 +540,7 @@ export const members: Member[] = [
     gradYear: "2028",
     bio: "Leads data journalism projects and oversees data storytelling initiatives.",
     linkedinUrl: "https://www.linkedin.com/in/alan-ruiz24/",
-    // photoUrl: "/assets/linkedin_headshots/alan-ruiz.jpeg",
+    photoUrl: "/assets/linkedin_headshots/alan-ruiz.png",
     sortOrder: 8,
     isPublished: true
   },
@@ -554,7 +554,7 @@ export const members: Member[] = [
     gradYear: "2027",
     bio: "Leads recruitment efforts and oversees member engagement.",
     linkedinUrl: "https://www.linkedin.com/in/mateo-shelton/",
-    // photoUrl: "/assets/linkedin_headshots/mateo-shelton.jpeg",
+    photoUrl: "/assets/linkedin_headshots/mateo-shelton.png",
     sortOrder: 9,
     isPublished: true
   },
@@ -568,7 +568,7 @@ export const members: Member[] = [
     gradYear: "2027",
     bio: "Leads budget planning and finance operations for the organization.",
     linkedinUrl: "https://www.linkedin.com/in/madeleine-curran-819845258/",
-    // photoUrl: "/assets/linkedin_headshots/madeleine-curran.jpeg",
+    photoUrl: "/assets/linkedin_headshots/madeleine-curran.jpeg",
     sortOrder: 10,
     isPublished: true
   },
@@ -582,7 +582,7 @@ export const members: Member[] = [
     gradYear: "2029",
     bio: "Supports marketing, communications, and data storytelling for Bruin Sports Analytics.",
     linkedinUrl: "https://www.linkedin.com/in/evana-sharma-a031803a5/",
-    // photoUrl: "/assets/linkedin_headshots/evana-sharma.jpeg",
+    photoUrl: "/assets/linkedin_headshots/evana-sharma.png",
     sortOrder: 11,
     isPublished: true
   },
@@ -596,7 +596,7 @@ export const members: Member[] = [
     gradYear: "2028",
     bio: "Supports marketing, outreach, and member-facing communications for Bruin Sports Analytics.",
     linkedinUrl: "https://www.linkedin.com/in/annikaagupta/",
-    // photoUrl: "/assets/linkedin_headshots/annika-gupta.jpeg",
+    photoUrl: "/assets/linkedin_headshots/annika-gupta.jpeg",
     sortOrder: 11,
     isPublished: true
   },
@@ -610,7 +610,7 @@ export const members: Member[] = [
     gradYear: "2027",
     bio: "Advises board members on sports analytics projects, technical direction, and member development.",
     linkedinUrl: "https://www.linkedin.com/in/kevinmbaer/",
-    // photoUrl: "/assets/linkedin_headshots/kevin-baer.jpeg",
+    photoUrl: "/assets/linkedin_headshots/kevin-baer.jpeg",
     sortOrder: 13,
     isPublished: true
   },
@@ -624,7 +624,7 @@ export const members: Member[] = [
     gradYear: "2027",
     bio: "Advises board members on organizational strategy, analytics projects, and technical mentorship.",
     linkedinUrl: "https://www.linkedin.com/in/harsh-govindji/",
-    // photoUrl: "/assets/linkedin_headshots/harsh-govindji.jpeg",
+    photoUrl: "/assets/linkedin_headshots/harsh-govindji.jpeg",
     sortOrder: 13,
     isPublished: true
   }
@@ -675,12 +675,13 @@ export const recruitment = {
   roles: ["Sport analysts", "Data engineers", "Writers", "Designers", "Dashboard builders"],
   teamsRecruiting: ["Baseball", "Volleyball", "Basketball", "Football", "Tennis"],
   timelineEvents: [
-    { date: "Sep 28", title: "Applications open", detail: "Application form goes live.", status: "upcoming" },
-    { date: "Sep 29", title: "Info session", detail: "Project walkthrough and Q&A.", status: "upcoming" },
-    { date: "Oct 3-8", title: "Coffee chats", detail: "Meet members by team and role.", status: "upcoming" },
-    { date: "Oct 12", title: "Application deadline", detail: "Submit by 11:59 PM PT.", status: "upcoming" },
-    { date: "Oct 18-22", title: "Interviews", detail: "Short technical and team conversations.", status: "upcoming" },
-    { date: "Oct 26", title: "Kickoff", detail: "New-member project matching.", status: "upcoming" }
+    { date: "Sep 22", title: "EAF", detail: "Enormous Activities Fair — bring the poster board, hand out materials, and drive QR-code signups.", status: "Awareness" },
+    { date: "TBD", title: "Data Science Showcase", detail: "Generate more exposure within the data science community.", status: "Awareness" },
+    { date: "TBD", title: "Applications Released", detail: "Application form goes live and is shared through the email list, Instagram, and Slack.", status: "Application" },
+    { date: "TBD", title: "BSA Info Session", detail: "What research, consulting, and competitions actually look like day to day, plus open Q&A.", status: "Application" },
+    { date: "TBD", title: "Coffee Chats", detail: "Get to know prospective members and let them learn more about individual experiences.", status: "Application" },
+    { date: "TBD", title: "Application Deadline", detail: "Applications close; interviews are scheduled after reviewing submissions.", status: "Application" },
+    { date: "TBD", title: "Final Interviews", detail: "In-person interviews where possible, synchronized across division interview schedules.", status: "Selection" }
   ]
 };
 
@@ -706,6 +707,31 @@ export const faqs = [
     answer: "Yes, but public pages only show approved summaries. Private repositories, athlete-level sensitive information, and protected partner data are not exposed."
   },
   {
+    category: "Partnerships",
+    question: "What kinds of organizations do you work with?",
+    answer: "We partner with collegiate and professional teams, leagues, agencies, sports-technology companies, and departments across UCLA Athletics. Engagements range from focused one-off analyses to season-long projects."
+  },
+  {
+    category: "Partnerships",
+    question: "What does a partnership cost?",
+    answer: "As a student organization, most engagements are low-cost or pro bono depending on scope and data access. We align on expectations and any costs together during the discovery call before work begins."
+  },
+  {
+    category: "Partnerships",
+    question: "How long does a typical project take?",
+    answer: "Most projects run from a few weeks to a full academic quarter, depending on complexity and how ready your data is. We scope the timeline with you up front."
+  },
+  {
+    category: "Partnerships",
+    question: "Who owns the deliverables?",
+    answer: "You do. Partners retain ownership of final deliverables and any proprietary outputs. We only display approved, non-sensitive summaries publicly, and only with your permission."
+  },
+  {
+    category: "Partnerships",
+    question: "How do we get started?",
+    answer: "Submit the inquiry form with your problem and available data. Our External Vice President will follow up to schedule a discovery call and scope the engagement."
+  },
+  {
     category: "Events",
     question: "Are events open to non-members?",
     answer: "Public workshops, speaker events, and info sessions are listed on the Events page. Internal meetings are marked members-only."
@@ -713,14 +739,40 @@ export const faqs = [
 ];
 
 export const outcomes = [
-  { name: "UCLA Athletics", category: "Sports", approvedForDisplay: true },
-  { name: "Los Angeles Dodgers", category: "Sports", approvedForDisplay: true },
-  { name: "ESPN", category: "Media", approvedForDisplay: true },
-  { name: "Sportradar", category: "Sports Tech", approvedForDisplay: true },
-  { name: "Deloitte", category: "Consulting", approvedForDisplay: true },
-  { name: "Google", category: "Technology", approvedForDisplay: true },
-  { name: "UCLA Anderson", category: "Graduate Program", approvedForDisplay: true },
-  { name: "Stanford", category: "Graduate Program", approvedForDisplay: true }
+  // Sports
+  { name: "UCLA Athletics", category: "Sports", logo: "/assets/logos/ucla-athletics.png", approvedForDisplay: true },
+  { name: "Seattle Mariners", category: "Sports", logo: "/assets/logos/seattle-mariners.png", approvedForDisplay: true },
+  { name: "Miami Dolphins", category: "Sports", logo: "/assets/logos/miami-dolphins.svg", approvedForDisplay: true },
+  { name: "OKC Thunder", category: "Sports", logo: "/assets/logos/okc-thunder.svg", approvedForDisplay: true },
+  { name: "PFF", category: "Sports Analytics", logo: "/assets/logos/pff.jpg", approvedForDisplay: true },
+  // Technology
+  { name: "Google", category: "Technology", logo: "/assets/logos/google.svg", approvedForDisplay: true },
+  { name: "Amazon", category: "Technology", logo: "/assets/logos/amazon.svg", approvedForDisplay: true },
+  { name: "Oracle", category: "Technology", logo: "/assets/logos/oracle.svg", approvedForDisplay: true },
+  { name: "IBM", category: "Technology", logo: "/assets/logos/ibm.svg", approvedForDisplay: true },
+  { name: "Coinbase", category: "Technology", logo: "/assets/logos/coinbase.svg", approvedForDisplay: true },
+  { name: "Palo Alto Networks", category: "Technology", logo: "/assets/logos/palo-alto-networks.svg", approvedForDisplay: true },
+  { name: "Nokia", category: "Technology", logo: "/assets/logos/nokia.svg", approvedForDisplay: true },
+  { name: "Rocket Lab", category: "Aerospace", logo: "/assets/logos/rocket-lab.svg", approvedForDisplay: true },
+  { name: "Lucid", category: "Technology", logo: "/assets/logos/lucid.svg", approvedForDisplay: true },
+  { name: "Valorant", category: "AI", logo: "/assets/logos/valorant.png", approvedForDisplay: true },
+  { name: "John Deere", category: "Technology", logo: "/assets/logos/john-deere.png", approvedForDisplay: true },
+  { name: "Paramount", category: "Media", logo: "/assets/logos/paramount.svg", approvedForDisplay: true },
+  { name: "Conagra Foods", category: "Consumer Goods", logo: "/assets/logos/conagra.svg", approvedForDisplay: true },
+  // Finance / Banking / Investments / Consulting
+  { name: "Goldman Sachs", category: "Finance", logo: "/assets/logos/goldman-sachs.svg", approvedForDisplay: true },
+  { name: "Balyasny Asset Management", category: "Investments", logo: "/assets/logos/balyasny.png", approvedForDisplay: true },
+  { name: "Graham Partners", category: "Investments", logo: "/assets/logos/graham-partners.png", approvedForDisplay: true },
+  { name: "Pacific Life", category: "Finance", logo: "/assets/logos/pacific-life.svg", approvedForDisplay: true },
+  { name: "PwC", category: "Consulting", logo: "/assets/logos/pwc.svg", approvedForDisplay: true },
+  { name: "Deloitte", category: "Consulting", logo: "/assets/logos/deloitte.svg", approvedForDisplay: true },
+  { name: "Altman Solon", category: "Consulting", logo: "/assets/logos/altman-solon.png", approvedForDisplay: true },
+  // Schools (last)
+  { name: "UCLA Anderson", category: "Graduate Program", logo: "/assets/logos/ucla-anderson.png", approvedForDisplay: true },
+  { name: "MIT", category: "University", logo: "/assets/logos/mit.svg", approvedForDisplay: true },
+  { name: "Harvard", category: "University", logo: "/assets/logos/harvard.svg", approvedForDisplay: true },
+  { name: "Columbia", category: "University", logo: "/assets/logos/columbia.png", approvedForDisplay: true },
+  { name: "NYU Courant", category: "Graduate Program", logo: "/assets/logos/nyu.png", approvedForDisplay: true }
 ];
 
 export const capabilities = [

@@ -6,8 +6,8 @@
 .nodes {
   position: relative;
   display: grid;
-  grid-template-columns: repeat(6, minmax(0, 1fr));
-  gap: 14px;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  gap: 10px;
   align-items: stretch;
 }
 
@@ -31,9 +31,9 @@
   display: grid;
   align-content: center;
   justify-items: start;
-  gap: 12px;
+  gap: 8px;
   color: var(--text-primary);
-  padding: 18px;
+  padding: 14px;
   text-align: left;
 }
 
@@ -82,7 +82,7 @@
   color: var(--text-secondary);
 }
 
-@media (max-width: 760px) {
+@media (max-width: 900px) {
   .nodes {
     grid-template-columns: 1fr;
     gap: 12px;

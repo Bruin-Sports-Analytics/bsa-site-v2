@@ -53,6 +53,10 @@ export default function PartnerPage() {
           <article className="card glass glass--strong glass--radius-lg" style={{ padding: 28 }}>
             <span className="eyebrow">Inquiry form</span>
             <h2 className="section-title" style={{ fontSize: 34 }}>Send us your project</h2>
+            <p style={{ color: "var(--text-secondary)", margin: "0 0 24px", lineHeight: 1.6 }}>
+              Your inquiry goes directly to{" "}
+              <a className="text-link" href="https://www.linkedin.com/in/vardaan-sinha-234663272/" target="_blank" rel="noreferrer">Vardaan Sinha</a>, our External Vice President.
+            </p>
             <form className="form-grid">
               <div className="field">
                 <label htmlFor="name">Name</label>
