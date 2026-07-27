@@ -33,7 +33,7 @@ export function Navigation() {
             const hasMenu = item.label === "People" || item.label === "Teams";
             return (
               <div
-                className={styles.navGroup}
+                className={cn(styles.navGroup, item.label === "People" && styles.peopleGroup)}
                 key={item.href}
                 onMouseEnter={() => hasMenu && setOpenMenu(item.label)}
                 onMouseLeave={() => setOpenMenu(null)}
@@ -48,7 +48,7 @@ export function Navigation() {
                   {item.label}
                 </Link>
                 {hasMenu ? (
-                  <div className={`${styles.megaMenu} ${openMenu === item.label ? styles.menuOpen : ""} ${item.label === "Teams" ? styles.teamsMenu : ""} glass glass--strong glass--radius-lg`}>
+                  <div className={`${styles.megaMenu} ${openMenu === item.label ? styles.menuOpen : ""} ${item.label === "Teams" ? styles.teamsMenu : ""} ${item.label === "People" ? styles.peopleMenu : ""} glass glass--strong glass--radius-lg`}>
                     {item.label === "Teams" ? (
                       sports.map((sport) => (
                         <div key={sport.slug} className={styles.teamsRow}>
@@ -98,7 +98,7 @@ export function Navigation() {
             );
           })}
         </nav>
-        <Link href="/partner" className={`${styles.partner} glass glass--gold glass--radius-pill`}><span className={styles.partnerLabel}>Partner With Us</span></Link>
+        <Link href="/partner" className={`${styles.partner} glass glass--gold glass--radius-pill`}><span className={styles.partnerFill} aria-hidden /><span className={styles.partnerLabel}>Partner With Us</span></Link>
         <button className={styles.mobileButton} type="button" onClick={() => setOpen((value) => !value)} aria-label="Toggle navigation" aria-expanded={open}>
           {open ? <X aria-hidden /> : <Menu aria-hidden />}
         </button>

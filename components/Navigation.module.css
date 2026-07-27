@@ -125,18 +125,17 @@
   transition: color .22s ease;
 }
 
-.partner::before {
-  content: "";
+.partnerFill {
   position: absolute;
   inset: 0;
   z-index: 1;
-  opacity: 1;
   background: #ffd100;
   transform: translateX(-101%);
   transition: transform .28s ease;
+  pointer-events: none;
 }
 
-.partner:hover::before {
+.partner:hover .partnerFill {
   transform: translateX(0);
 }
 
@@ -178,6 +177,12 @@
   display: block;
 }
 
+.peopleGroup::after {
+  left: 50%;
+  width: 320px;
+  transform: translateX(-50%);
+}
+
 .menuColumn {
   display: grid;
   gap: 8px;
@@ -202,6 +207,13 @@
 .menuColumn small {
   color: var(--text-secondary);
   font-weight: 600;
+}
+
+.navGroup .peopleMenu {
+  left: 50%;
+  width: 320px;
+  grid-template-columns: 1fr;
+  transform: translateX(-50%);
 }
 
 .navGroup .teamsMenu {
