@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import type { CSSProperties } from "react";
 import { ArrowRight, CalendarDays } from "lucide-react";
+import { CountUp } from "@/components/CountUp";
 import { EventCard } from "@/components/EventCard";
 import { InstagramCollage } from "@/components/InstagramCollage";
 import { ProjectCardGroup } from "@/components/ProjectCardGroup";
@@ -17,6 +18,9 @@ export default function Home() {
     : [...publicProjects()].sort((a, b) => Date.parse(b.lastUpdated) - Date.parse(a.lastUpdated))
   ).slice(0, 3);
   const publicEvents = events.filter((event) => !event.isMembersOnly).slice(0, 3);
+  const displayedOutcomes = outcomes.filter((outcome) => outcome.approvedForDisplay);
+  const marqueeMidpoint = Math.ceil(displayedOutcomes.length / 2);
+  const marqueeRows = [displayedOutcomes.slice(0, marqueeMidpoint), displayedOutcomes.slice(marqueeMidpoint)];
 
   return (
     <main className={styles.home}>
@@ -56,7 +60,7 @@ export default function Home() {
           <div className={styles.rail}>
             {impactStats.map((stat, index) => (
               <div key={stat.label} data-load-reveal style={{ "--flow-delay": `${520 + index * 70}ms` } as CSSProperties}>
-                <b>{stat.value}</b>
+                <b><CountUp value={stat.value} /></b>
                 <span>{stat.label}</span>
               </div>
             ))}
@@ -94,14 +98,30 @@ export default function Home() {
         <div className="container">
           <span className="eyebrow">Outcomes</span>
           <h2 className="section-title">Where our members go</h2>
-          <div className={styles.logoWall}>
-            {outcomes.filter((outcome) => outcome.approvedForDisplay).map((outcome) => (
-              <a href="#" aria-label={`${outcome.name}, ${outcome.category}`} key={outcome.name}>
-                <span>{outcome.name}</span>
-                <small>{outcome.category}</small>
-              </a>
-            ))}
-          </div>
+        </div>
+        <div className={styles.logoMarquee}>
+          {marqueeRows.map((row, rowIndex) => (
+            <div className={styles.marqueeRow} key={rowIndex}>
+              <div className={styles.marqueeTrack}>
+                {[...row, ...row].map((outcome, index) => (
+                  <div
+                    className={styles.logoTile}
+                    title={`${outcome.name} — ${outcome.category}`}
+                    aria-hidden={index >= row.length}
+                    key={`${outcome.name}-${index}`}
+                  >
+                    {outcome.logo ? (
+                      <span className={styles.logoImgWrap}>
+                        <Image src={outcome.logo} alt={outcome.name} fill sizes="180px" className={styles.logoImg} />
+                      </span>
+                    ) : (
+                      <span className={styles.logoText}>{outcome.name}</span>
+                    )}
+                  </div>
+                ))}
+              </div>
+            </div>
+          ))}
         </div>
       </section>
 
