@@ -706,6 +706,31 @@ export const faqs = [
     answer: "Yes, but public pages only show approved summaries. Private repositories, athlete-level sensitive information, and protected partner data are not exposed."
   },
   {
+    category: "Partnerships",
+    question: "What kinds of organizations do you work with?",
+    answer: "We partner with collegiate and professional teams, leagues, agencies, sports-technology companies, and departments across UCLA Athletics. Engagements range from focused one-off analyses to season-long projects."
+  },
+  {
+    category: "Partnerships",
+    question: "What does a partnership cost?",
+    answer: "As a student organization, most engagements are low-cost or pro bono depending on scope and data access. We align on expectations and any costs together during the discovery call before work begins."
+  },
+  {
+    category: "Partnerships",
+    question: "How long does a typical project take?",
+    answer: "Most projects run from a few weeks to a full academic quarter, depending on complexity and how ready your data is. We scope the timeline with you up front."
+  },
+  {
+    category: "Partnerships",
+    question: "Who owns the deliverables?",
+    answer: "You do. Partners retain ownership of final deliverables and any proprietary outputs. We only display approved, non-sensitive summaries publicly, and only with your permission."
+  },
+  {
+    category: "Partnerships",
+    question: "How do we get started?",
+    answer: "Submit the inquiry form with your problem and available data. Our External Vice President will follow up to schedule a discovery call and scope the engagement."
+  },
+  {
     category: "Events",
     question: "Are events open to non-members?",
     answer: "Public workshops, speaker events, and info sessions are listed on the Events page. Internal meetings are marked members-only."
