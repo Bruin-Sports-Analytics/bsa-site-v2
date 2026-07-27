@@ -129,7 +129,7 @@ button {
 main > section {
   position: relative;
   isolation: isolate;
-  overflow: clip;
+  overflow: visible;
 }
 
 main > section::before {
@@ -137,20 +137,20 @@ main > section::before {
   position: absolute;
   z-index: 0;
   top: 50%;
-  width: min(48rem, 58vw);
-  height: min(38rem, 88%);
-  min-height: 22rem;
+  width: min(56rem, 66vw);
+  height: calc(100% + 18rem);
+  min-height: 36rem;
   pointer-events: none;
   background:
     radial-gradient(
       ellipse at center,
-      rgba(255, 209, 0, 0.16) 0%,
-      rgba(255, 209, 0, 0.07) 38%,
-      rgba(255, 184, 28, 0.025) 56%,
-      transparent 72%
+      rgba(255, 209, 0, 0.13) 0%,
+      rgba(255, 209, 0, 0.065) 34%,
+      rgba(255, 184, 28, 0.026) 55%,
+      transparent 76%
     );
-  filter: blur(1px);
-  opacity: 0.9;
+  filter: blur(10px);
+  opacity: 0.84;
   transform: translateY(-50%);
 }
 
@@ -599,10 +599,10 @@ main > section > * {
   }
 
   main > section::before {
-    width: 78vw;
-    height: 24rem;
-    min-height: 18rem;
-    opacity: 0.72;
+    width: 86vw;
+    height: calc(100% + 12rem);
+    min-height: 28rem;
+    opacity: 0.68;
   }
 
   main > section:nth-of-type(odd)::before {
