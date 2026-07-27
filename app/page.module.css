@@ -94,9 +94,6 @@
   animation-delay: 180ms;
 }
 
-.impact {
-  background: rgba(16, 42, 73, .58);
-}
 
 .rail {
   display: grid;
