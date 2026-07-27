@@ -93,12 +93,12 @@ export type Event = {
 };
 
 export const navItems = [
-  { label: "Projects", href: "/projects" },
-  { label: "People", href: "/people/board" },
+  { label: "About", href: "/about" },
   { label: "Teams", href: "/work" },
   { label: "Journalism", href: "/journalism" },
+  { label: "Projects", href: "/projects" },
+  { label: "People", href: "/people/board" },
   { label: "Events", href: "/events" },
-  { label: "About", href: "/about" },
   { label: "Join", href: "/join" }
 ];
 
