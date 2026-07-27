@@ -675,12 +675,13 @@ export const recruitment = {
   roles: ["Sport analysts", "Data engineers", "Writers", "Designers", "Dashboard builders"],
   teamsRecruiting: ["Baseball", "Volleyball", "Basketball", "Football", "Tennis"],
   timelineEvents: [
-    { date: "Sep 28", title: "Applications open", detail: "Application form goes live.", status: "upcoming" },
-    { date: "Sep 29", title: "Info session", detail: "Project walkthrough and Q&A.", status: "upcoming" },
-    { date: "Oct 3-8", title: "Coffee chats", detail: "Meet members by team and role.", status: "upcoming" },
-    { date: "Oct 12", title: "Application deadline", detail: "Submit by 11:59 PM PT.", status: "upcoming" },
-    { date: "Oct 18-22", title: "Interviews", detail: "Short technical and team conversations.", status: "upcoming" },
-    { date: "Oct 26", title: "Kickoff", detail: "New-member project matching.", status: "upcoming" }
+    { date: "Sep 22", title: "EAF", detail: "Enormous Activities Fair — bring the poster board, hand out materials, and drive QR-code signups.", status: "Awareness" },
+    { date: "TBD", title: "Data Science Showcase", detail: "Generate more exposure within the data science community.", status: "Awareness" },
+    { date: "TBD", title: "Applications Released", detail: "Application form goes live and is shared through the email list, Instagram, and Slack.", status: "Application" },
+    { date: "TBD", title: "BSA Info Session", detail: "What research, consulting, and competitions actually look like day to day, plus open Q&A.", status: "Application" },
+    { date: "TBD", title: "Coffee Chats", detail: "Get to know prospective members and let them learn more about individual experiences.", status: "Application" },
+    { date: "TBD", title: "Application Deadline", detail: "Applications close; interviews are scheduled after reviewing submissions.", status: "Application" },
+    { date: "TBD", title: "Final Interviews", detail: "In-person interviews where possible, synchronized across division interview schedules.", status: "Selection" }
   ]
 };
 
