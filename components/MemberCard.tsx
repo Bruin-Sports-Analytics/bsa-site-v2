@@ -38,8 +38,6 @@ export function MemberCard({ member }: { member: Member }) {
         <div className={`${styles.bodyExpand} ${expanded ? styles.bodyExpandOpen : ""}`}>
           <div className={styles.bodyExpandInner}>
             <span>{member.major} · {member.gradYear}</span>
-            {member.team !== member.role && <span>{member.team}</span>}
-            <small>{member.bio}</small>
           </div>
         </div>
       </div>

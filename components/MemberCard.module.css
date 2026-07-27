@@ -53,13 +53,15 @@
   box-shadow: var(--glass-shadow-sm);
   -webkit-backdrop-filter: blur(var(--glass-regular-blur)) saturate(135%);
   backdrop-filter: blur(var(--glass-regular-blur)) saturate(135%);
-  padding: 6px 12px;
+  padding: 3px 12px;
+  text-align: center;
 }
 
 .body h3 {
   margin: 0;
   font-family: var(--font-sora), system-ui, sans-serif;
   font-size: clamp(11px, 1vw, 15px);
+  line-height: 1.1;
 }
 
 .body p {
@@ -82,14 +84,15 @@
 
 .bodyExpandInner {
   min-height: 0;
+  overflow: hidden;
   display: grid;
   gap: 6px;
-  padding-top: 12px;
 }
 
 .bodyExpandInner span {
   color: var(--text-secondary);
   font-weight: 700;
+  padding-top: 10px;
 }
 
 .bodyExpandInner small {
