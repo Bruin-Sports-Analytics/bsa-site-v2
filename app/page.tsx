@@ -4,6 +4,7 @@ import type { CSSProperties } from "react";
 import { ArrowRight, CalendarDays } from "lucide-react";
 import { CountUp } from "@/components/CountUp";
 import { EventCard } from "@/components/EventCard";
+import { LogoMarquee } from "@/components/LogoMarquee";
 import { InstagramCollage } from "@/components/InstagramCollage";
 import { ProjectCardGroup } from "@/components/ProjectCardGroup";
 import { instagramPosts } from "@/data/instagram-posts";
@@ -99,30 +100,7 @@ export default function Home() {
           <span className="eyebrow">Outcomes</span>
           <h2 className="section-title">Where our members go</h2>
         </div>
-        <div className={styles.logoMarquee}>
-          {marqueeRows.map((row, rowIndex) => (
-            <div className={styles.marqueeRow} key={rowIndex}>
-              <div className={styles.marqueeTrack}>
-                {[...row, ...row].map((outcome, index) => (
-                  <div
-                    className={styles.logoTile}
-                    title={`${outcome.name} — ${outcome.category}`}
-                    aria-hidden={index >= row.length}
-                    key={`${outcome.name}-${index}`}
-                  >
-                    {outcome.logo ? (
-                      <span className={styles.logoImgWrap}>
-                        <Image src={outcome.logo} alt={outcome.name} fill sizes="180px" className={styles.logoImg} />
-                      </span>
-                    ) : (
-                      <span className={styles.logoText}>{outcome.name}</span>
-                    )}
-                  </div>
-                ))}
-              </div>
-            </div>
-          ))}
-        </div>
+        <LogoMarquee rows={marqueeRows} />
       </section>
 
       <section className="section">
