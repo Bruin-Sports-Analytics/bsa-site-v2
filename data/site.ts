@@ -754,7 +754,7 @@ export const outcomes = [
   { name: "Palo Alto Networks", category: "Technology", logo: "/assets/logos/palo-alto-networks.svg", logoLight: "/assets/logos/modes/palo-alto-networks-light.svg", logoDark: "/assets/logos/modes/palo-alto-networks-dark.svg", approvedForDisplay: true },
   { name: "Nokia", category: "Technology", logo: "/assets/logos/nokia.svg", logoLight: "/assets/logos/modes/nokia-light.svg", logoDark: "/assets/logos/modes/nokia-dark.svg", approvedForDisplay: true },
   { name: "Rocket Lab", category: "Aerospace", logo: "/assets/logos/rocket-lab.svg", logoLight: "/assets/logos/modes/rocket-lab-light.svg", logoDark: "/assets/logos/modes/rocket-lab-dark.svg", approvedForDisplay: true },
-  { name: "Lucid", category: "Technology", logo: "/assets/logos/lucid.svg", logoLight: "/assets/logos/modes/lucid-light.svg", logoDark: "/assets/logos/modes/lucid-dark.svg", approvedForDisplay: true },
+  { name: "Lucid", category: "Technology", logo: "/assets/logos/lucid.png", logoLight: "/assets/logos/modes/lucid-light.svg", logoDark: "/assets/logos/modes/lucid-dark.svg", approvedForDisplay: true },
   { name: "Valorant", category: "AI", logo: "/assets/logos/valorant.png", logoLight: "/assets/logos/modes/valorant-light.svg", logoDark: "/assets/logos/modes/valorant-dark.svg", approvedForDisplay: true },
   { name: "John Deere", category: "Technology", logo: "/assets/logos/john-deere.png", logoLight: "/assets/logos/modes/john-deere-light.svg", logoDark: "/assets/logos/modes/john-deere-dark.svg", approvedForDisplay: true },
   { name: "Paramount", category: "Media", logo: "/assets/logos/paramount.png", logoLight: "/assets/logos/modes/paramount-light.svg", logoDark: "/assets/logos/modes/paramount-dark.svg", approvedForDisplay: true, prestige: true },
