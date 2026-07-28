@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { FAQAccordion } from "@/components/FAQAccordion";
 import { capabilities, technology } from "@/data/site";
 
@@ -53,10 +54,28 @@ export default function PartnerPage() {
           <article className="card glass glass--strong glass--radius-lg" style={{ padding: 28 }}>
             <span className="eyebrow">Inquiry form</span>
             <h2 className="section-title" style={{ fontSize: 34 }}>Send us your project</h2>
-            <p style={{ color: "var(--text-secondary)", margin: "0 0 24px", lineHeight: 1.6 }}>
-              Your inquiry goes directly to{" "}
-              <a className="text-link" href="https://www.linkedin.com/in/vardaan-sinha-234663272/" target="_blank" rel="noreferrer">Vardaan Sinha</a>, our External Vice President.
+            <p style={{ color: "var(--text-secondary)", margin: "0 0 16px", lineHeight: 1.6 }}>
+              Your inquiry goes directly to our External Vice President.
             </p>
+            <div style={{
+              display: "flex",
+              alignItems: "center",
+              gap: 14,
+              padding: "12px 16px",
+              marginBottom: 24,
+              borderRadius: "var(--glass-radius-md)",
+              border: "1px solid var(--glass-border)",
+              background: "var(--glass-regular-fill)",
+            }}>
+              <div style={{ position: "relative", width: 48, height: 48, borderRadius: "50%", overflow: "hidden", flexShrink: 0 }}>
+                <Image src="/assets/linkedin_headshots/vardaan-sinha.png" alt="Vardaan Sinha" fill sizes="48px" style={{ objectFit: "cover", objectPosition: "center top" }} />
+              </div>
+              <div>
+                <p style={{ margin: 0, fontWeight: 700, fontSize: 14, color: "var(--text-primary)" }}>Vardaan Sinha</p>
+                <p style={{ margin: 0, fontSize: 12, color: "var(--text-secondary)" }}>External Vice President</p>
+                <a href="mailto:vardaansinha28@g.ucla.edu" style={{ fontSize: 12, color: "var(--electric-blue)" }}>vardaansinha28@g.ucla.edu</a>
+              </div>
+            </div>
             <form className="form-grid">
               <div className="field">
                 <label htmlFor="name">Name</label>

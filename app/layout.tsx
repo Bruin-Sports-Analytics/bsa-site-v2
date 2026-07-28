@@ -3,6 +3,7 @@ import { Montserrat, Lato, Roboto } from "next/font/google";
 import "./globals.css";
 import { Footer } from "@/components/Footer";
 import { Navigation } from "@/components/Navigation";
+import { ColorPops } from "@/components/ColorPops";
 import { ScrollReveal } from "@/components/ScrollReveal";
 import { SocialSidebar } from "@/components/SocialSidebar";
 
@@ -47,6 +48,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body>
         <div className="shell">
           <Navigation />
+          <ColorPops />
           <ScrollReveal />
           <SocialSidebar />
           {children}

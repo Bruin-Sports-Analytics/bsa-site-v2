@@ -122,6 +122,7 @@ button {
 }
 
 .shell {
+  position: relative;
   min-height: 100vh;
   overflow: clip;
 }
