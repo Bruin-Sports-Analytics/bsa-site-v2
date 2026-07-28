@@ -149,7 +149,7 @@
   padding: 10px 24px;
   border: 1px solid var(--border);
   border-radius: 999px;
-  background: var(--sport-pill-fill);
+  background: rgba(16, 42, 73, .52);
   color: var(--text-primary);
   font-family: var(--font-sora), system-ui, sans-serif;
   font-size: 15px;
@@ -159,7 +159,7 @@
 
 .sportPill:hover {
   border-color: rgba(255, 209, 0, .55);
-  background: var(--sport-pill-hover-fill);
+  background: rgba(16, 42, 73, .78);
   color: var(--ucla-gold);
 }
 
@@ -212,8 +212,8 @@
 
 .logoTile:hover {
   transform: translateY(-2px);
-  background: var(--logo-tile-hover-bg);
-  box-shadow: var(--logo-tile-hover-shadow);
+  background: rgba(247, 251, 255, .92);
+  box-shadow: 0 16px 38px rgba(0, 5, 15, .28);
 }
 
 .logoImgWrap {
@@ -223,42 +223,17 @@
   height: 62px;
 }
 
-.logoMask {
-  position: absolute;
-  inset: 0;
-  display: block;
-  background: var(--logo-mode-color);
-  opacity: var(--logo-img-opacity);
-  -webkit-mask: var(--logo-dark, var(--logo-mask)) center / contain no-repeat;
-  mask: var(--logo-dark, var(--logo-mask)) center / contain no-repeat;
-  transition: opacity .18s ease;
-}
-
-:global(html[data-theme="light"]) .logoMask {
-  -webkit-mask: var(--logo-light, var(--logo-mask)) center / contain no-repeat;
-  mask: var(--logo-light, var(--logo-mask)) center / contain no-repeat;
-}
-
 .logoImg {
   object-fit: contain;
   object-position: center;
+  opacity: .72;
+  filter: grayscale(1) brightness(0) invert(1);
   transition: filter .18s ease, opacity .18s ease;
-}
-
-.logoColor {
-  opacity: 0;
 }
 
 .logoTile:hover .logoImg {
   opacity: 1;
-}
-
-.logoTile:hover .logoMask {
-  opacity: 0;
-}
-
-.logoTile:hover .logoColor {
-  opacity: 1;
+  filter: none;
 }
 
 .logoText {
@@ -266,12 +241,12 @@
   font-size: 17px;
   font-weight: 800;
   line-height: 1.15;
-  color: var(--logo-text-color);
+  color: rgba(247, 251, 255, .72);
   transition: color .18s ease;
 }
 
 .logoTile:hover .logoText {
-  color: var(--logo-hover-text-color);
+  color: #102a49;
 }
 
 .finalCta {

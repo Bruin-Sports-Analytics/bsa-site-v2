@@ -1,13 +1,7 @@
-import type { CSSProperties } from "react";
+import Image from "next/image";
 import styles from "./LogoWall.module.css";
 
-type Outcome = {
-  name: string;
-  category: string;
-  logo?: string | null;
-  logoDark?: string | null;
-  logoLight?: string | null;
-};
+type Outcome = { name: string; category: string; logo?: string | null };
 
 export function LogoWall({ logos }: { logos: Outcome[] }) {
   return (
@@ -16,16 +10,7 @@ export function LogoWall({ logos }: { logos: Outcome[] }) {
         <div className={styles.tile} title={`${outcome.name} — ${outcome.category}`} key={outcome.name}>
           {outcome.logo ? (
             <span className={styles.imgWrap}>
-              <span
-                className={styles.imgMask}
-                role="img"
-                aria-label={outcome.name}
-                style={{
-                  "--logo-mask": `url("${outcome.logo}")`,
-                  ...(outcome.logoDark ? { "--logo-dark": `url("${outcome.logoDark}")` } : {}),
-                  ...(outcome.logoLight ? { "--logo-light": `url("${outcome.logoLight}")` } : {}),
-                } as CSSProperties}
-              />
+              <Image src={outcome.logo} alt={outcome.name} fill sizes="200px" className={styles.img} />
             </span>
           ) : (
             <span className={styles.text}>{outcome.name}</span>
