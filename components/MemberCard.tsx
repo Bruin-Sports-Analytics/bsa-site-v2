@@ -9,6 +9,7 @@ import styles from "./MemberCard.module.css";
 
 export function MemberCard({ member }: { member: Member }) {
   const [expanded, setExpanded] = useState(false);
+  const [imgError, setImgError] = useState(false);
   const initials = member.name.split(" ").map((part) => part[0]).join("");
 
   const expandHandlers = {
@@ -23,8 +24,8 @@ export function MemberCard({ member }: { member: Member }) {
   const content = (
     <>
       <div className={styles.photo} aria-hidden>
-        {member.photoUrl
-          ? <Image src={member.photoUrl} alt="" fill sizes="(max-width: 600px) 100vw, 400px" className={styles.photoImg} style={member.photoTransform ? { transform: member.photoTransform } : undefined} />
+        {member.photoUrl && !imgError
+          ? <Image src={member.photoUrl} alt="" fill sizes="(max-width: 600px) 100vw, 400px" className={styles.photoImg} style={member.photoTransform ? { transform: member.photoTransform } : undefined} onError={() => setImgError(true)} />
           : initials}
       </div>
       {member.linkedinUrl && (
