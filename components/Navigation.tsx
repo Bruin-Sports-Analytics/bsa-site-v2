@@ -5,7 +5,8 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
-import { navItems, projects, sports } from "@/data/site";
+import { navItems, projects } from "@/data/site";
+import { TeamsCarousel } from "@/components/TeamsCarousel";
 import { ThemeToggle } from "@/components/ThemeToggle";
 import { useScrolledState } from "@/hooks/useScrolledState";
 import { cn } from "@/lib/cn";
@@ -15,6 +16,7 @@ export function Navigation() {
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
   const [openMenu, setOpenMenu] = useState<string | null>(null);
+  const [activeTeamIndex, setActiveTeamIndex] = useState(0);
   const scrolled = useScrolledState();
   const recentProjects = [...projects]
     .filter((project) => project.visibility !== "hidden")
@@ -37,7 +39,10 @@ export function Navigation() {
                 className={cn(styles.navGroup, item.label === "People" && styles.peopleGroup)}
                 key={item.href}
                 onMouseEnter={() => hasMenu && setOpenMenu(item.label)}
-                onMouseLeave={() => setOpenMenu(null)}
+                onMouseLeave={() => {
+                  setOpenMenu(null);
+                  if (item.label === "Teams") setActiveTeamIndex(0);
+                }}
                 onFocus={() => hasMenu && setOpenMenu(item.label)}
                 onBlur={(e) => {
                   if (!e.currentTarget.contains(e.relatedTarget as Node)) {
@@ -51,18 +56,10 @@ export function Navigation() {
                 {hasMenu ? (
                   <div className={`${styles.megaMenu} ${openMenu === item.label ? styles.menuOpen : ""} ${item.label === "Teams" ? styles.teamsMenu : ""} ${item.label === "People" ? styles.peopleMenu : ""} glass glass--strong glass--radius-lg`}>
                     {item.label === "Teams" ? (
-                      sports.map((sport) => (
-                        <div key={sport.slug} className={styles.teamsRow}>
-                          <Link href={`/work/${sport.slug}`}>{sport.name}</Link>
-                          <div className={styles.teamsSubLinks}>
-                            <Link href={`/work/${sport.slug}/consulting`}>Consulting</Link>
-                            <Link href={`/work/${sport.slug}/research`}>Research</Link>
-                            {sport.slug === "tennis" && (
-                              <a href="https://match-manager-umber.vercel.app" target="_blank" rel="noopener noreferrer">Match Manager ↗</a>
-                            )}
-                          </div>
-                        </div>
-                      ))
+                      <TeamsCarousel
+                        activeIndex={activeTeamIndex}
+                        setActiveIndex={setActiveTeamIndex}
+                      />
                     ) : item.label === "Projects" ? (
                       <>
                         <div className={styles.menuColumn}>

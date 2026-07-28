@@ -219,9 +219,9 @@
 }
 
 .navGroup .teamsMenu {
-  width: 460px;
+  width: 520px;
   grid-template-columns: 1fr;
-  gap: 4px;
+  gap: 0;
 }
 
 .navGroup .teamsMenu.menuOpen {
@@ -229,26 +229,116 @@
   flex-direction: column;
 }
 
-.teamsRow {
+.teamsCarousel {
+  outline: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.teamsCarouselBody {
   display: grid;
-  grid-template-columns: 120px 1fr;
-  gap: 8px;
+  grid-template-columns: 116px 1fr;
+  gap: 16px;
+  align-items: start;
+}
+
+.teamsCarouselCard {
+  border-radius: var(--radius-md);
+  aspect-ratio: 1;
+  display: flex;
   align-items: center;
+  justify-content: center;
+  transition: opacity 0.12s;
+  text-decoration: none;
 }
 
-.teamsRow > a {
-  border: 1px solid transparent;
-  border-radius: var(--radius-sm);
-  padding: 8px 10px;
-  color: var(--text-primary);
+.teamsCarouselCard:hover {
+  opacity: 0.85;
+}
+
+.teamsCarouselInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.teamsCarouselHeader {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.teamsCarouselName {
+  font-size: 15px;
   font-weight: 800;
-  font-size: 13px;
-  transition: background .12s, border-color .12s;
+  color: var(--text-primary);
+  text-decoration: none;
 }
 
-.teamsRow > a:hover {
+.teamsCarouselName:hover {
+  color: var(--text-primary);
+}
+
+.teamsCarouselCount {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  opacity: 0.6;
+  white-space: nowrap;
+}
+
+.teamsCarouselDesc {
+  font-size: 12px;
+  line-height: 1.55;
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+.teamsCarouselNav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+.teamsCarouselChevron {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  border-radius: var(--radius-sm);
+  color: var(--text-secondary);
+  background: transparent;
+  border: 1px solid transparent;
+  cursor: pointer;
+  padding: 0;
+  transition: color 0.12s, border-color 0.12s, background 0.12s;
+}
+
+.teamsCarouselChevron:hover {
+  color: var(--text-primary);
   border-color: var(--menu-item-hover-border);
   background: var(--menu-item-hover-fill);
+}
+
+.teamsCarouselDot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  background: var(--text-secondary);
+  opacity: 0.3;
+  padding: 0;
+  transition: opacity 0.15s, transform 0.15s;
+}
+
+.teamsCarouselDotActive {
+  opacity: 1;
+  transform: scale(1.25);
 }
 
 .teamsSubLinks {
@@ -265,6 +355,7 @@
   font-size: 11px;
   font-weight: 700;
   transition: color .12s, border-color .12s, background .12s;
+  text-decoration: none;
 }
 
 .teamsSubLinks a:hover {
