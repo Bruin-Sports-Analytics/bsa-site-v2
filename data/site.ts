@@ -744,7 +744,7 @@ export const outcomes = [
   { name: "Seattle Mariners", category: "Sports", logo: "/assets/logos/seattle-mariners.png", logoLight: "/assets/logos/modes/seattle-mariners-light.svg", logoDark: "/assets/logos/modes/seattle-mariners-dark.svg", approvedForDisplay: true, prestige: true },
   { name: "Miami Dolphins", category: "Sports", logo: "/assets/logos/miami-dolphins.svg", logoLight: "/assets/logos/modes/miami-dolphins-light.svg", logoDark: "/assets/logos/modes/miami-dolphins-dark.svg", approvedForDisplay: true, prestige: true },
   { name: "OKC Thunder", category: "Sports", logo: "/assets/logos/okc-thunder.png", logoLight: "/assets/logos/modes/okc-thunder-light.svg", logoDark: "/assets/logos/modes/okc-thunder-dark.svg", approvedForDisplay: true, prestige: true },
-  { name: "PFF", category: "Sports Analytics", logo: "/assets/logos/pff.png", logoLight: "/assets/logos/modes/pff-light.svg", logoDark: "/assets/logos/modes/pff-dark.svg", logoScale: 1.5, approvedForDisplay: true },
+  { name: "PFF", category: "Sports Analytics", logo: "/assets/logos/pff.png", logoLight: "/assets/logos/modes/pff-light.svg", logoDark: "/assets/logos/modes/pff-dark.svg", logoScale: 1.8, approvedForDisplay: true },
   // Technology
   { name: "Google", category: "Technology", logo: "/assets/logos/google.svg", logoLight: "/assets/logos/modes/google-light.svg", logoDark: "/assets/logos/modes/google-dark.svg", approvedForDisplay: true, prestige: true },
   { name: "Amazon", category: "Technology", logo: "/assets/logos/amazon.svg", logoLight: "/assets/logos/modes/amazon-light.svg", logoDark: "/assets/logos/modes/amazon-dark.svg", approvedForDisplay: true, prestige: true },
@@ -766,7 +766,7 @@ export const outcomes = [
   { name: "Pacific Life", category: "Finance", logo: "/assets/logos/pacific-life.svg", logoLight: "/assets/logos/modes/pacific-life-light.svg", logoDark: "/assets/logos/modes/pacific-life-dark.svg", approvedForDisplay: true },
   { name: "PwC", category: "Consulting", logo: "/assets/logos/pwc.svg", logoLight: "/assets/logos/modes/pwc-light.svg", logoDark: "/assets/logos/modes/pwc-dark.svg", approvedForDisplay: true, prestige: true },
   { name: "Deloitte", category: "Consulting", logo: "/assets/logos/deloitte.svg", logoLight: "/assets/logos/modes/deloitte-light.svg", logoDark: "/assets/logos/modes/deloitte-dark.svg", approvedForDisplay: true, prestige: true },
-  { name: "Altman Solon", category: "Consulting", logo: "/assets/logos/altman-solon.png", logoLight: "/assets/logos/modes/altman-solon-light.svg", logoDark: "/assets/logos/modes/altman-solon-dark.svg", approvedForDisplay: true },
+  { name: "Altman Solon", category: "Consulting", logo: "/assets/logos/altman-solon.png", logoLight: "/assets/logos/modes/altman-solon-light.svg", logoDark: "/assets/logos/modes/altman-solon-dark.svg", logoScale: 2.0, approvedForDisplay: true },
   { name: "EY-Parthenon", category: "Consulting", logo: "/assets/logos/ey-parthenon.svg", logoLight: "/assets/logos/modes/ey-parthenon-light.svg", logoDark: "/assets/logos/modes/ey-parthenon-dark.svg", approvedForDisplay: true },
   // Schools (last)
   { name: "UCLA Anderson", category: "Graduate Program", logo: "/assets/logos/ucla-anderson.png", logoLight: "/assets/logos/modes/ucla-anderson-light.svg", logoDark: "/assets/logos/modes/ucla-anderson-dark.svg", approvedForDisplay: true },
