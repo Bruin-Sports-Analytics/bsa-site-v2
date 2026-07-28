@@ -12,14 +12,14 @@
   place-items: center;
   padding: 20px 22px;
   text-align: center;
-  background: #fff;
+  background: var(--logo-wall-tile-bg);
   border-radius: var(--radius-md);
   transition: transform .18s ease, box-shadow .18s ease;
 }
 
 .tile:hover {
   transform: translateY(-3px);
-  box-shadow: 0 10px 24px rgba(0, 0, 0, .28);
+  box-shadow: var(--logo-wall-hover-shadow);
 }
 
 .imgWrap {
@@ -29,9 +29,18 @@
   height: 76px;
 }
 
-.img {
-  object-fit: contain;
-  object-position: center;
+.imgMask {
+  position: absolute;
+  inset: 0;
+  display: block;
+  background: var(--logo-mode-color);
+  -webkit-mask: var(--logo-dark, var(--logo-mask)) center / contain no-repeat;
+  mask: var(--logo-dark, var(--logo-mask)) center / contain no-repeat;
+}
+
+:global(html[data-theme="light"]) .imgMask {
+  -webkit-mask: var(--logo-light, var(--logo-mask)) center / contain no-repeat;
+  mask: var(--logo-light, var(--logo-mask)) center / contain no-repeat;
 }
 
 .text {
@@ -39,7 +48,7 @@
   font-size: 18px;
   font-weight: 800;
   line-height: 1.15;
-  color: #102a49;
+  color: var(--logo-wall-text-color);
 }
 
 @media (max-width: 1024px) {

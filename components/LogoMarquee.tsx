@@ -2,9 +2,16 @@
 
 import { useEffect, useRef } from "react";
 import Image from "next/image";
+import type { CSSProperties } from "react";
 import styles from "@/app/page.module.css";
 
-type Outcome = { name: string; category: string; logo?: string | null };
+type Outcome = {
+  name: string;
+  category: string;
+  logo?: string | null;
+  logoDark?: string | null;
+  logoLight?: string | null;
+};
 
 const SPEED = 45; // auto-scroll speed in px/second
 
@@ -101,7 +108,17 @@ function MarqueeRow({ row }: { row: Outcome[] }) {
           >
             {outcome.logo ? (
               <span className={styles.logoImgWrap}>
-                <Image src={outcome.logo} alt={outcome.name} fill sizes="180px" className={styles.logoImg} />
+                <span
+                  className={styles.logoMask}
+                  role="img"
+                  aria-label={outcome.name}
+                  style={{
+                    "--logo-mask": `url("${outcome.logo}")`,
+                    ...(outcome.logoDark ? { "--logo-dark": `url("${outcome.logoDark}")` } : {}),
+                    ...(outcome.logoLight ? { "--logo-light": `url("${outcome.logoLight}")` } : {}),
+                  } as CSSProperties}
+                />
+                <Image src={outcome.logo} alt="" fill sizes="180px" className={`${styles.logoImg} ${styles.logoColor}`} aria-hidden />
               </span>
             ) : (
               <span className={styles.logoText}>{outcome.name}</span>
