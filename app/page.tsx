@@ -1,12 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
-import type { CSSProperties } from "react";
 import { ArrowRight, CalendarDays } from "lucide-react";
-import { CountUp } from "@/components/CountUp";
 import { EventCard } from "@/components/EventCard";
 import { LogoMarquee } from "@/components/LogoMarquee";
 import { InstagramCollage } from "@/components/InstagramCollage";
 import { ProjectCardGroup } from "@/components/ProjectCardGroup";
+import { ScrollCountStats } from "@/components/ScrollCountStats";
 import { instagramPosts } from "@/data/instagram-posts";
 import { events, impactStats, outcomes, sports } from "@/data/site";
 import { currentlyFeatured, publicProjects } from "@/lib/utils";
@@ -56,18 +55,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className={styles.impact} aria-label="Bruin Sports Analytics impact metrics">
-        <div className="container">
-          <div className={styles.rail}>
-            {impactStats.map((stat, index) => (
-              <div key={stat.label} data-load-reveal style={{ "--flow-delay": `${520 + index * 70}ms` } as CSSProperties}>
-                <b><CountUp value={stat.value} /></b>
-                <span>{stat.label}</span>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      <ScrollCountStats stats={impactStats} />
 
       <section className="section">
         <div className="container">

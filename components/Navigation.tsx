@@ -90,6 +90,7 @@ export function Navigation() {
                         <span className="eyebrow">People</span>
                         <Link href="/people/board">Board <small>Leadership and directors</small></Link>
                         <Link href="/people/members">Current Members <small>Teams and contributors</small></Link>
+                        <Link href="/people/alumni">Alumni <small>Former members</small></Link>
                       </div>
                     )}
                   </div>

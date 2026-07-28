@@ -1,0 +1,7 @@
+.section {
+  padding: var(--section-padding, 4rem) 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  /* No changes needed — progress stays at 1 (final values shown) */
+}
