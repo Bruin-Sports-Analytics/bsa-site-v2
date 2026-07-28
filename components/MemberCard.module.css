@@ -10,9 +10,7 @@
   overflow: hidden;
   display: grid;
   place-items: center;
-  background:
-    radial-gradient(circle at 70% 20%, rgba(255, 209, 0, .18), transparent 34%),
-    linear-gradient(145deg, #1a3b5b, #08172a);
+  background: var(--member-photo-bg);
   color: var(--sky-blue);
   font-family: var(--font-sora), system-ui, sans-serif;
   font-size: 48px;
@@ -34,7 +32,7 @@
   place-items: center;
   border: 1px solid var(--glass-border);
   border-radius: 50%;
-  background: rgba(7, 24, 43, 0.75);
+  background: var(--member-badge-fill);
   color: var(--ucla-gold);
 }
 
@@ -47,7 +45,7 @@
   border-radius: var(--glass-radius-md);
   background:
     linear-gradient(135deg, rgba(255, 255, 255, .07), rgba(74, 168, 255, .04)),
-    rgba(7, 24, 43, .92);
+    var(--member-overlay-fill);
   box-shadow: var(--glass-shadow-sm);
   padding: 3px 12px;
   text-align: center;

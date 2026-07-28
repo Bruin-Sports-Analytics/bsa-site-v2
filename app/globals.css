@@ -74,6 +74,147 @@
     border-color 180ms ease,
     background-color 180ms ease,
     box-shadow 180ms ease;
+  --html-bg: #0c283b;
+  --body-spotlight: rgba(74, 168, 255, 0.20);
+  --body-grid-line: rgba(139, 203, 255, .035);
+  --section-glow-strong: rgba(255, 209, 0, 0.13);
+  --section-glow-mid: rgba(255, 209, 0, 0.065);
+  --section-glow-soft: rgba(255, 184, 28, 0.026);
+  --section-glow-opacity: 0.84;
+  --card-fill: rgba(12, 34, 58, .88);
+  --card-shadow: 0 24px 70px rgba(0, 5, 15, .24), inset 0 1px 0 rgba(255, 255, 255, .06);
+  --tag-fill: rgba(12, 34, 58, .62);
+  --control-border: rgba(190, 224, 255, 0.18);
+  --control-fill: rgba(4, 18, 34, 0.78);
+  --nav-fill: rgba(10, 31, 54, .48);
+  --nav-scrolled-fill: rgba(7, 24, 43, .78);
+  --nav-shadow-fade: rgba(6, 20, 38, .32);
+  --dropdown-fill: rgba(4, 17, 32, .92);
+  --dropdown-border: rgba(218, 237, 255, .42);
+  --dropdown-shadow:
+    0 34px 90px rgba(0, 5, 15, .62),
+    0 1px 0 rgba(255, 255, 255, .14) inset;
+  --menu-item-fill: rgba(4, 17, 32, .28);
+  --menu-item-hover-fill: rgba(139, 203, 255, .12);
+  --menu-item-hover-border: rgba(139, 203, 255, .22);
+  --control-hover-fill: rgba(139, 203, 255, .10);
+  --sport-pill-fill: rgba(16, 42, 73, .52);
+  --sport-pill-hover-fill: rgba(16, 42, 73, .78);
+  --logo-tile-hover-bg: rgba(247, 251, 255, .92);
+  --logo-tile-hover-shadow: 0 16px 38px rgba(0, 5, 15, .28);
+  --logo-img-filter: grayscale(1) brightness(0) invert(1);
+  --logo-img-opacity: .72;
+  --logo-mode-color: #f7fbff;
+  --logo-text-color: rgba(247, 251, 255, .72);
+  --logo-hover-text-color: #102a49;
+  --logo-wall-tile-bg: rgba(7, 24, 43, .78);
+  --logo-wall-text-color: var(--text-primary);
+  --logo-wall-hover-shadow: 0 10px 24px rgba(0, 5, 15, .28);
+  --member-photo-bg:
+    radial-gradient(circle at 70% 20%, rgba(255, 209, 0, .18), transparent 34%),
+    linear-gradient(145deg, #1a3b5b, #08172a);
+  --member-badge-fill: rgba(7, 24, 43, 0.75);
+  --member-overlay-fill: rgba(7, 24, 43, .92);
+  --sidebar-fill: rgba(7, 24, 43, .72);
+  --hero-visual-bg:
+    radial-gradient(circle at 50% 45%, rgba(74, 168, 255, .24), transparent 38%),
+    linear-gradient(145deg, rgba(16, 42, 73, .8), rgba(6, 20, 38, .42));
+  --contrast-glass-fill: rgba(4, 17, 32, 0.96);
+  --print-surface: #fff;
+  --print-text: #000;
+  --print-border: #333;
+  color-scheme: dark;
+}
+
+html[data-theme="light"] {
+  --bsa-bg-primary: #f2f7fc;
+  --bsa-bg-secondary: #e7f1fb;
+  --bsa-surface: #ffffff;
+  --bsa-text-primary: #102235;
+  --bsa-text-secondary: #425970;
+  --bg-primary: #f2f7fc;
+  --bg-secondary: #e7f1fb;
+  --surface: #ffffff;
+  --surface-elevated: #eef5fb;
+  --electric-blue: #1e78ba;
+  --sky-blue: #246f9f;
+  --text-primary: #102235;
+  --text-secondary: #425970;
+  --text-muted: #6b7f91;
+  --border: rgba(34, 86, 124, 0.18);
+  --gradient-hero: radial-gradient(circle at 78% 35%, rgba(39, 116, 174, .18), transparent 38%),
+    radial-gradient(circle at 88% 52%, rgba(255, 209, 0, .20), transparent 28%);
+  --gradient-card: linear-gradient(145deg, rgba(39, 116, 174, .09), rgba(255, 209, 0, .09));
+  --glass-clear-fill: rgba(255, 255, 255, 0.42);
+  --glass-regular-fill: rgba(255, 255, 255, 0.66);
+  --glass-strong-fill: rgba(247, 251, 255, 0.88);
+  --glass-fallback-fill: rgba(255, 255, 255, 0.94);
+  --glass-blue-tint: rgba(39, 116, 174, 0.10);
+  --glass-gold-tint: rgba(255, 209, 0, 0.14);
+  --glass-saturation: 145%;
+  --glass-brightness: 108%;
+  --glass-border: rgba(34, 86, 124, 0.20);
+  --glass-border-hover: rgba(39, 116, 174, 0.36);
+  --glass-border-strong: rgba(34, 86, 124, 0.26);
+  --glass-border-gold: rgba(211, 160, 0, 0.50);
+  --glass-highlight: rgba(255, 255, 255, 0.56);
+  --glass-highlight-soft: rgba(39, 116, 174, 0.08);
+  --glass-shadow-sm:
+    0 8px 24px rgba(26, 62, 96, 0.12),
+    0 1px 0 rgba(255, 255, 255, 0.80) inset;
+  --glass-shadow-md:
+    0 18px 50px rgba(26, 62, 96, 0.16),
+    0 1px 0 rgba(255, 255, 255, 0.85) inset;
+  --glass-shadow-lg:
+    0 28px 80px rgba(26, 62, 96, 0.20),
+    0 1px 0 rgba(255, 255, 255, 0.88) inset;
+  --html-bg: #f2f7fc;
+  --body-spotlight: rgba(39, 116, 174, 0.14);
+  --body-grid-line: rgba(39, 116, 174, .055);
+  --section-glow-strong: rgba(255, 209, 0, 0.16);
+  --section-glow-mid: rgba(255, 209, 0, 0.075);
+  --section-glow-soft: rgba(255, 184, 28, 0.035);
+  --section-glow-opacity: 0.70;
+  --card-fill: rgba(255, 255, 255, .78);
+  --card-shadow: 0 24px 70px rgba(26, 62, 96, .13), inset 0 1px 0 rgba(255, 255, 255, .84);
+  --tag-fill: rgba(255, 255, 255, .70);
+  --control-border: rgba(34, 86, 124, 0.20);
+  --control-fill: rgba(255, 255, 255, 0.76);
+  --nav-fill: rgba(255, 255, 255, .62);
+  --nav-scrolled-fill: rgba(255, 255, 255, .84);
+  --nav-shadow-fade: rgba(74, 112, 145, .16);
+  --dropdown-fill: rgba(247, 251, 255, .94);
+  --dropdown-border: rgba(34, 86, 124, .26);
+  --dropdown-shadow:
+    0 34px 90px rgba(26, 62, 96, .20),
+    0 1px 0 rgba(255, 255, 255, .92) inset;
+  --menu-item-fill: rgba(255, 255, 255, .54);
+  --menu-item-hover-fill: rgba(39, 116, 174, .09);
+  --menu-item-hover-border: rgba(39, 116, 174, .22);
+  --control-hover-fill: rgba(39, 116, 174, .09);
+  --sport-pill-fill: rgba(255, 255, 255, .62);
+  --sport-pill-hover-fill: rgba(255, 255, 255, .88);
+  --logo-tile-hover-bg: rgba(255, 255, 255, .90);
+  --logo-tile-hover-shadow: 0 16px 38px rgba(26, 62, 96, .14);
+  --logo-img-filter: grayscale(1) brightness(.12);
+  --logo-img-opacity: .68;
+  --logo-mode-color: #102235;
+  --logo-text-color: rgba(16, 34, 53, .72);
+  --logo-hover-text-color: #102a49;
+  --logo-wall-tile-bg: rgba(255, 255, 255, .86);
+  --logo-wall-text-color: #102a49;
+  --logo-wall-hover-shadow: 0 10px 24px rgba(26, 62, 96, .16);
+  --member-photo-bg:
+    radial-gradient(circle at 70% 20%, rgba(255, 209, 0, .18), transparent 34%),
+    linear-gradient(145deg, #d7e7f4, #f8fbff);
+  --member-badge-fill: rgba(255, 255, 255, 0.78);
+  --member-overlay-fill: rgba(255, 255, 255, .88);
+  --sidebar-fill: rgba(255, 255, 255, .78);
+  --hero-visual-bg:
+    radial-gradient(circle at 50% 45%, rgba(39, 116, 174, .16), transparent 38%),
+    linear-gradient(145deg, rgba(255, 255, 255, .76), rgba(214, 232, 246, .44));
+  --contrast-glass-fill: rgba(255, 255, 255, 0.96);
+  color-scheme: light;
 }
 
 * {
@@ -82,15 +223,15 @@
 
 html {
   scroll-behavior: smooth;
-  background: #0c283b;
+  background: var(--html-bg);
 }
 
 body {
   margin: 0;
   background:
-    radial-gradient(circle at 78% 18%, rgba(74, 168, 255, 0.20), transparent 34rem),
-    linear-gradient(rgba(139, 203, 255, .035) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(139, 203, 255, .035) 1px, transparent 1px),
+    radial-gradient(circle at 78% 18%, var(--body-spotlight), transparent 34rem),
+    linear-gradient(var(--body-grid-line) 1px, transparent 1px),
+    linear-gradient(90deg, var(--body-grid-line) 1px, transparent 1px),
     linear-gradient(180deg, var(--bg-primary) 0%, var(--bg-primary) 100%);
   background-attachment: scroll;
   background-size: auto, 42px 42px, 42px 42px, auto;
@@ -145,13 +286,13 @@ main > section::before {
   background:
     radial-gradient(
       ellipse at center,
-      rgba(255, 209, 0, 0.13) 0%,
-      rgba(255, 209, 0, 0.065) 34%,
-      rgba(255, 184, 28, 0.026) 55%,
+      var(--section-glow-strong) 0%,
+      var(--section-glow-mid) 34%,
+      var(--section-glow-soft) 55%,
       transparent 76%
     );
   filter: blur(10px);
-  opacity: 0.84;
+  opacity: var(--section-glow-opacity);
   transform: translateY(-50%);
 }
 
@@ -329,8 +470,8 @@ main > section > * {
   border-radius: var(--radius-md);
   background:
     linear-gradient(135deg, rgba(255, 255, 255, .045), rgba(74, 168, 255, .025)),
-    rgba(12, 34, 58, .88);
-  box-shadow: 0 24px 70px rgba(0, 5, 15, .24), inset 0 1px 0 rgba(255, 255, 255, .06);
+    var(--card-fill);
+  box-shadow: var(--card-shadow);
 }
 
 .card::after {
@@ -361,7 +502,7 @@ main > section > * {
   min-height: 28px;
   border: 1px solid var(--glass-border);
   border-radius: var(--radius-sm);
-  background: rgba(12, 34, 58, .62);
+  background: var(--tag-fill);
   padding: 5px 9px;
   color: var(--text-secondary);
   font-family: var(--font-mono), monospace;
@@ -568,9 +709,9 @@ main > section > * {
 .field textarea {
   width: 100%;
   min-height: 46px;
-  border: 1px solid rgba(190, 224, 255, 0.18);
+  border: 1px solid var(--control-border);
   border-radius: var(--radius-sm);
-  background: rgba(4, 18, 34, 0.78);
+  background: var(--control-fill);
   color: var(--text-primary);
   padding: 11px 12px;
 }
@@ -619,7 +760,7 @@ main > section > * {
 
   body {
     background:
-      radial-gradient(circle at 82% 14%, rgba(74, 168, 255, 0.14), transparent 24rem),
+      radial-gradient(circle at 82% 14%, var(--body-spotlight), transparent 24rem),
       linear-gradient(180deg, var(--bg-primary) 0%, var(--bg-primary) 100%);
   }
 
@@ -665,7 +806,7 @@ html.reduce-transparency .btn-secondary {
 
 @media (prefers-contrast: more) {
   .glass {
-    background: rgba(4, 17, 32, 0.96);
+    background: var(--contrast-glass-fill);
     border-color: rgba(255, 255, 255, 0.58);
     box-shadow: none;
   }

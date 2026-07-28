@@ -18,7 +18,7 @@
 .item.open {
   background:
     linear-gradient(135deg, rgba(255, 255, 255, .055), rgba(74, 168, 255, .035)),
-    rgba(7, 24, 43, .82);
+    var(--glass-strong-fill);
 }
 
 .summary {

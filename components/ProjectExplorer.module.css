@@ -22,9 +22,9 @@
 .search,
 .controls select {
   min-height: 46px;
-  border: 1px solid rgba(190, 224, 255, 0.18);
+  border: 1px solid var(--control-border);
   border-radius: var(--glass-radius-pill);
-  background: rgba(4, 18, 34, 0.78);
+  background: var(--control-fill);
   color: var(--text-primary);
   padding: 0 12px;
 }

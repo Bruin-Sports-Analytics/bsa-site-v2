@@ -57,7 +57,7 @@
 .detail {
   border: 1px solid var(--glass-border);
   border-radius: var(--glass-radius-md);
-  background: rgba(7, 24, 43, .88);
+  background: var(--glass-strong-fill);
   padding: 22px;
 }
 

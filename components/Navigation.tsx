@@ -6,6 +6,7 @@ import { usePathname } from "next/navigation";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import { navItems, projects, sports } from "@/data/site";
+import { ThemeToggle } from "@/components/ThemeToggle";
 import { useScrolledState } from "@/hooks/useScrolledState";
 import { cn } from "@/lib/cn";
 import styles from "./Navigation.module.css";
@@ -99,6 +100,7 @@ export function Navigation() {
             );
           })}
         </nav>
+        <ThemeToggle className={styles.desktopThemeToggle} />
         <Link href="/partner" className={`${styles.partner} glass glass--gold glass--radius-pill`}><span className={styles.partnerFill} aria-hidden /><span className={styles.partnerLabel}>Partner With Us</span></Link>
         <button className={styles.mobileButton} type="button" onClick={() => setOpen((value) => !value)} aria-label="Toggle navigation" aria-expanded={open}>
           {open ? <X aria-hidden /> : <Menu aria-hidden />}
@@ -111,6 +113,7 @@ export function Navigation() {
               {item.label}
             </Link>
           ))}
+          <ThemeToggle mobile />
           <Link href="/partner" onClick={() => setOpen(false)}>Partner With Us</Link>
         </div>
       ) : null}

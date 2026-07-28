@@ -42,9 +42,27 @@ export const metadata: Metadata = {
   }
 };
 
+const themeScript = `
+(() => {
+  try {
+    const stored = window.localStorage.getItem("theme");
+    const system = window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark";
+    const theme = stored === "light" || stored === "dark" ? stored : system;
+    document.documentElement.dataset.theme = theme;
+    document.documentElement.style.colorScheme = theme;
+  } catch {
+    document.documentElement.dataset.theme = "dark";
+    document.documentElement.style.colorScheme = "dark";
+  }
+})();
+`;
+
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={`${montserrat.variable} ${lato.variable} ${roboto.variable}`}>
+    <html lang="en" className={`${montserrat.variable} ${lato.variable} ${roboto.variable}`} suppressHydrationWarning>
+      <head>
+        <script dangerouslySetInnerHTML={{ __html: themeScript }} />
+      </head>
       <body>
         <div className="shell">
           <Navigation />
