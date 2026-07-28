@@ -236,6 +236,10 @@
   filter: none;
 }
 
+:global(html[data-theme="light"]) .logoImg {
+  filter: grayscale(1) brightness(0);
+}
+
 .logoText {
   font-family: var(--font-sora), system-ui, sans-serif;
   font-size: 17px;
