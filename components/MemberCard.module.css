@@ -34,10 +34,8 @@
   place-items: center;
   border: 1px solid var(--glass-border);
   border-radius: 50%;
-  background: var(--glass-clear-fill);
+  background: rgba(7, 24, 43, 0.75);
   color: var(--ucla-gold);
-  -webkit-backdrop-filter: blur(var(--glass-clear-blur));
-  backdrop-filter: blur(var(--glass-clear-blur));
 }
 
 .body {
@@ -49,10 +47,8 @@
   border-radius: var(--glass-radius-md);
   background:
     linear-gradient(135deg, rgba(255, 255, 255, .07), rgba(74, 168, 255, .04)),
-    rgba(7, 24, 43, .85);
+    rgba(7, 24, 43, .92);
   box-shadow: var(--glass-shadow-sm);
-  -webkit-backdrop-filter: blur(var(--glass-regular-blur)) saturate(135%);
-  backdrop-filter: blur(var(--glass-regular-blur)) saturate(135%);
   padding: 3px 12px;
   text-align: center;
 }

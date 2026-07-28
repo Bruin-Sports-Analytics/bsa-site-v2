@@ -183,6 +183,12 @@ main > section > * {
   will-change: auto;
 }
 
+/* Cards in large grids already have compositor layers via backdrop-filter;
+   pre-promoting them again with will-change wastes VRAM. */
+.scroll-reveal-enabled .board-grid [data-reveal="true"] {
+  will-change: auto;
+}
+
 .container {
   width: min(1180px, calc(100% - 40px));
   margin: 0 auto;
@@ -246,6 +252,7 @@ main > section > * {
   flex-wrap: wrap;
   justify-content: center;
   gap: 18px;
+  contain: layout;
 }
 
 .board-grid > * {
