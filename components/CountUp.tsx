@@ -4,7 +4,7 @@ import { useEffect, useLayoutEffect, useRef, useState } from "react";
 
 const useIsomorphicLayoutEffect = typeof window !== "undefined" ? useLayoutEffect : useEffect;
 
-export function CountUp({ value, duration = 1300 }: { value: number; duration?: number }) {
+export function CountUp({ value, duration = 2800 }: { value: number; duration?: number }) {
   const ref = useRef<HTMLSpanElement>(null);
   const [display, setDisplay] = useState(value);
 
@@ -28,7 +28,7 @@ export function CountUp({ value, duration = 1300 }: { value: number; duration?: 
       const t0 = performance.now();
       const tick = (now: number) => {
         const progress = Math.min((now - t0) / duration, 1);
-        const eased = 1 - Math.pow(1 - progress, 3); // easeOutCubic
+        const eased = progress;
         setDisplay(Math.round(eased * value));
         if (progress < 1) frame = requestAnimationFrame(tick);
       };
