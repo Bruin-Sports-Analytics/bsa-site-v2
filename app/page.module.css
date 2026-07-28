@@ -164,12 +164,14 @@
 }
 
 .logoMarquee {
+  width: 100vw;
   margin-top: 28px;
+  margin-left: calc(50% - 50vw);
   display: flex;
   flex-direction: column;
-  gap: 8px;
-  padding: 26px 0;
-  background: #fff;
+  gap: 10px;
+  padding: 24px 0;
+  background: transparent;
   overflow: hidden;
 }
 
@@ -194,18 +196,24 @@
   flex: 0 0 auto;
   width: 200px;
   min-height: 104px;
-  margin-right: 12px;
+  margin-right: 18px;
   box-sizing: border-box;
   display: grid;
   place-items: center;
   padding: 14px 18px;
   text-align: center;
   background: transparent;
-  transition: transform .18s ease, opacity .18s ease;
+  border-radius: var(--radius-sm);
+  transition:
+    transform .18s ease,
+    background-color .18s ease,
+    box-shadow .18s ease;
 }
 
 .logoTile:hover {
   transform: translateY(-2px);
+  background: rgba(247, 251, 255, .92);
+  box-shadow: 0 16px 38px rgba(0, 5, 15, .28);
 }
 
 .logoImgWrap {
@@ -218,6 +226,14 @@
 .logoImg {
   object-fit: contain;
   object-position: center;
+  opacity: .72;
+  filter: grayscale(1) brightness(0) invert(1);
+  transition: filter .18s ease, opacity .18s ease;
+}
+
+.logoTile:hover .logoImg {
+  opacity: 1;
+  filter: none;
 }
 
 .logoText {
@@ -225,6 +241,11 @@
   font-size: 17px;
   font-weight: 800;
   line-height: 1.15;
+  color: rgba(247, 251, 255, .72);
+  transition: color .18s ease;
+}
+
+.logoTile:hover .logoText {
   color: #102a49;
 }
 

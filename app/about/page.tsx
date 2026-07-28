@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { LogoWall } from "@/components/LogoWall";
 import { impactStats, outcomes, sports } from "@/data/site";
 
 export const metadata: Metadata = {
@@ -15,7 +16,7 @@ export default function AboutPage() {
   ];
   const stats = impactStats.filter((stat) => !/athletics partner/i.test(stat.label));
   const functions = ["Data engineering", "Research", "Design", "Journalism", "Dashboards", "Partner communication"];
-  const destinations = outcomes.filter((outcome) => outcome.approvedForDisplay).map((outcome) => outcome.name);
+  const prestigeLogos = outcomes.filter((outcome) => outcome.approvedForDisplay && "prestige" in outcome && outcome.prestige);
 
   const label: React.CSSProperties = {
     fontFamily: "var(--font-mono), monospace",
@@ -82,8 +83,11 @@ export default function AboutPage() {
       <section className="section">
         <div className="container">
           <span className="eyebrow">Where our members go</span>
-          <p className="section-lede">{destinations.join(", ")}.</p>
-          <div className="button-row">
+          <p className="section-lede">
+            Our members have gone on to teams, labs, and firms across sports, tech, finance, and academia, including:
+          </p>
+          <LogoWall logos={prestigeLogos} />
+          <div className="button-row" style={{ marginTop: 28 }}>
             <Link className="btn btn-primary" href="/people/board">Board</Link>
             <Link className="btn btn-secondary" href="/people/members">Current members</Link>
           </div>
