@@ -4,7 +4,7 @@ import { useEffect, useRef } from "react";
 import Image from "next/image";
 import styles from "@/app/page.module.css";
 
-type Outcome = { name: string; category: string; logo?: string | null };
+type Outcome = { name: string; category: string; logo?: string | null; logoScale?: number };
 
 const SPEED = 45; // auto-scroll speed in px/second
 
@@ -101,7 +101,14 @@ function MarqueeRow({ row }: { row: Outcome[] }) {
           >
             {outcome.logo ? (
               <span className={styles.logoImgWrap}>
-                <Image src={outcome.logo} alt={outcome.name} fill sizes="180px" className={styles.logoImg} />
+                <Image
+                  src={outcome.logo}
+                  alt={outcome.name}
+                  fill
+                  sizes="180px"
+                  className={styles.logoImg}
+                  style={outcome.logoScale ? { transform: `scale(${outcome.logoScale})` } : undefined}
+                />
               </span>
             ) : (
               <span className={styles.logoText}>{outcome.name}</span>
