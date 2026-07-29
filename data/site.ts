@@ -1194,7 +1194,7 @@ export const outcomes = [
   { name: "Balyasny Asset Management", category: "Investments", logo: "/assets/logos/balyasny.png", logoLight: "/assets/logos/modes/balyasny-light.svg", logoDark: "/assets/logos/modes/balyasny-dark.svg", approvedForDisplay: true },
   { name: "Graham Partners", category: "Investments", logo: "/assets/logos/graham-partners.png", logoLight: "/assets/logos/modes/graham-partners-light.svg", logoDark: "/assets/logos/modes/graham-partners-dark.svg", logoScale: 1.7, approvedForDisplay: true },
   { name: "Pacific Life", category: "Finance", logo: "/assets/logos/pacific-life.svg", logoLight: "/assets/logos/modes/pacific-life-light.svg", logoDark: "/assets/logos/modes/pacific-life-dark.svg", approvedForDisplay: true },
-  { name: "McKinsey & Company", category: "Consulting", logo: "/assets/logos/mckinsey.png", logoScale: 2.0, approvedForDisplay: true, prestige: true },
+  { name: "McKinsey & Company", category: "Consulting", logo: "/assets/logos/mckinsey.png", logoScale: 1.2, approvedForDisplay: true, prestige: true },
   { name: "PwC", category: "Consulting", logo: "/assets/logos/pwc.svg", logoLight: "/assets/logos/modes/pwc-light.svg", logoDark: "/assets/logos/modes/pwc-dark.svg", approvedForDisplay: true, prestige: true },
   { name: "Deloitte", category: "Consulting", logo: "/assets/logos/deloitte.svg", logoLight: "/assets/logos/modes/deloitte-light.svg", logoDark: "/assets/logos/modes/deloitte-dark.svg", approvedForDisplay: true, prestige: true },
   { name: "Altman Solon", category: "Consulting", logo: "/assets/logos/altman-solon.png", logoLight: "/assets/logos/modes/altman-solon-light.svg", logoDark: "/assets/logos/modes/altman-solon-dark.svg", logoScale: 2.0, approvedForDisplay: true },

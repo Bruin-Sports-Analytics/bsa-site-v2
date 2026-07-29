@@ -70,7 +70,7 @@ export default function AboutPage() {
 
       <section className="section">
         <div className="container">
-          <span className="eyebrow">Board</span>
+          <span className="eyebrow" style={{ color: "var(--text-primary)", fontSize: "clamp(1.5rem, 3vw, 2.25rem)", display: "block", textAlign: "center" }}>Board</span>
           {boardSections.map((section, index) => (
             <div key={section.title} style={index === 0 ? { marginTop: "18px" } : { marginTop: "48px" }}>
               <span className="eyebrow" data-scroll-reveal style={{ display: "block", marginBottom: "16px", fontSize: "16px", textAlign: "center" }}>{section.title}</span>

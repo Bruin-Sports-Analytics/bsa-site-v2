@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { MemberCard } from "@/components/MemberCard";
 import { ProjectCard } from "@/components/ProjectCard";
 import { members, projects, sports } from "@/data/site";
 
@@ -11,7 +12,8 @@ export default function FootballPage() {
   const sportProjects = projects.filter((p) => p.sport === "football" && p.visibility !== "hidden");
   const active = sportProjects.filter((p) => p.status === "Active" || p.status === "Ongoing");
   const archived = sportProjects.filter((p) => p.status === "Completed" || p.status === "Archived");
-  const team = members.filter((m) => m.team.toLowerCase().includes("football") && m.isPublished);
+  const chairs = members.filter((m) => m.group === "board" && m.team.toLowerCase().includes("football") && m.isPublished).sort((a, b) => a.sortOrder - b.sortOrder);
+  const analysts = members.filter((m) => m.group === "member" && m.team.toLowerCase() === "football" && m.isPublished).sort((a, b) => a.sortOrder - b.sortOrder);
   const Icon = sport.icon;
 
   return (
@@ -63,11 +65,12 @@ export default function FootballPage() {
       </section>
       <section className="section tight">
         <div className="container">
-          <div className="card" style={{ padding: 28 }}>
-            <span className="eyebrow">Team</span>
-            <h2 style={{ fontFamily: "var(--font-sora)", fontSize: 32, margin: "10px 0" }}>{sport.lead}</h2>
-            <p className="section-lede">{team.length ? team.map((m) => m.name).join(", ") : "Team members will be published after roster confirmation."}</p>
-            <Link className="btn btn-primary" href="/partner" style={{ width: "fit-content" }}>Bring us a football problem</Link>
+          <span className="eyebrow">Team</span>
+          <div className="board-grid" style={{ marginTop: "18px" }}>
+            {[...chairs, ...analysts].map((m) => <MemberCard member={m} key={m.slug} />)}
+          </div>
+          <div className="button-row" style={{ marginTop: "28px" }}>
+            <Link className="btn btn-primary" href="/partner">Bring us a football problem</Link>
           </div>
         </div>
       </section>
