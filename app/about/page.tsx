@@ -1,13 +1,31 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { LogoWall } from "@/components/LogoWall";
-import { impactStats, outcomes, sports } from "@/data/site";
+import { MemberCard } from "@/components/MemberCard";
+import { impactStats, members, outcomes, sports } from "@/data/site";
 
 export const metadata: Metadata = {
   title: "About"
 };
 
+const boardGroups: { title: string; teams: string[] }[] = [
+  { title: "Executive Board", teams: ["president", "executive board"] },
+  { title: "Division Chairs", teams: ["baseball", "football", "basketball", "tennis", "volleyball", "data journalism"] },
+  { title: "Operations", teams: ["webmaster", "marketing", "recruitment", "finance"] },
+  { title: "Advisors", teams: ["advisors"] },
+];
+
 export default function AboutPage() {
+  const board = members.filter((m) => m.group === "board" && m.isPublished);
+  const boardSections = boardGroups
+    .map((group) => ({
+      title: group.title,
+      people: board
+        .filter((m) => group.teams.includes(m.team.trim().toLowerCase()))
+        .sort((a, b) => a.sortOrder - b.sortOrder),
+    }))
+    .filter((s) => s.people.length > 0);
+
   const milestones = [
     ["Founded at UCLA", "Students formed Bruin Sports Analytics to make sports analytics more accessible across campus."],
     ["Sport teams launched", "Project groups expanded from public research into sport-specific workstreams."],
@@ -47,6 +65,20 @@ export default function AboutPage() {
               </div>
             ))}
           </div>
+        </div>
+      </section>
+
+      <section className="section">
+        <div className="container">
+          <span className="eyebrow">Board</span>
+          {boardSections.map((section, index) => (
+            <div key={section.title} style={index === 0 ? { marginTop: "18px" } : { marginTop: "48px" }}>
+              <span className="eyebrow" data-scroll-reveal style={{ display: "block", marginBottom: "16px", fontSize: "16px", textAlign: "center" }}>{section.title}</span>
+              <div className="board-grid">
+                {section.people.map((member) => <MemberCard member={member} key={member.slug} />)}
+              </div>
+            </div>
+          ))}
         </div>
       </section>
 
