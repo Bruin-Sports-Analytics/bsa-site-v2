@@ -114,6 +114,7 @@
     radial-gradient(circle at 70% 20%, rgba(255, 209, 0, .18), transparent 34%),
     linear-gradient(145deg, #1a3b5b, #08172a);
   --member-badge-fill: rgba(7, 24, 43, 0.75);
+  --member-badge-color: var(--ucla-gold);
   --member-overlay-fill: rgba(7, 24, 43, .92);
   --sidebar-fill: rgba(7, 24, 43, .72);
   --hero-visual-bg:
@@ -208,6 +209,7 @@ html[data-theme="light"] {
     radial-gradient(circle at 70% 20%, rgba(255, 209, 0, .18), transparent 34%),
     linear-gradient(145deg, #d7e7f4, #f8fbff);
   --member-badge-fill: rgba(255, 255, 255, 0.78);
+  --member-badge-color: #07182b;
   --member-overlay-fill: rgba(255, 255, 255, .88);
   --sidebar-fill: rgba(255, 255, 255, .78);
   --hero-visual-bg:

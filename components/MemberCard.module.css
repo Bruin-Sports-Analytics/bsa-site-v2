@@ -33,7 +33,7 @@
   border: 1px solid var(--glass-border);
   border-radius: 50%;
   background: var(--member-badge-fill);
-  color: var(--ucla-gold);
+  color: var(--member-badge-color);
 }
 
 .body {

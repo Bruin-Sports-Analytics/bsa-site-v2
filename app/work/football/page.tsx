@@ -13,7 +13,8 @@ export default function FootballPage() {
   const active = sportProjects.filter((p) => p.status === "Active" || p.status === "Ongoing");
   const archived = sportProjects.filter((p) => p.status === "Completed" || p.status === "Archived");
   const chairs = members.filter((m) => m.group === "board" && m.team.toLowerCase().includes("football") && m.isPublished).sort((a, b) => a.sortOrder - b.sortOrder);
-  const analysts = members.filter((m) => m.group === "member" && m.team.toLowerCase() === "football" && m.isPublished).sort((a, b) => a.sortOrder - b.sortOrder);
+  const chairNames = new Set(chairs.map((m) => m.name));
+  const analysts = members.filter((m) => m.group === "member" && m.team.toLowerCase() === "football" && m.isPublished && !chairNames.has(m.name)).sort((a, b) => a.sortOrder - b.sortOrder);
   const Icon = sport.icon;
 
   return (

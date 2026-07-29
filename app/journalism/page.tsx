@@ -18,25 +18,24 @@ export default function JournalismPage() {
   return (
     <main>
       <section className="page-hero">
-        <div className="container">
-          <h1>Data Journalism</h1>
-          <p>Our Data Journalism team aims to write short articles each quarter that are driven by data science and statistics. Through meaningful visualizations and analysis, these pieces take a quick dive into contemporary sports topics. We look into all sports, from gymnastics and horse racing to the NFL and NBA.</p>
+        <div className={`container ${styles.heroRow}`}>
+          <div className={styles.heroText}>
+            <h1>Data Journalism</h1>
+            <p>Our Data Journalism team aims to write short articles each quarter that are driven by data science and statistics. Through meaningful visualizations and analysis, these pieces take a quick dive into contemporary sports topics. We look into all sports, from gymnastics and horse racing to the NFL and NBA.</p>
+          </div>
+          <div className={styles.heroRight}>
+            <div className={styles.chairGrid}>
+              {djChairs.map((m) => <MemberCard member={m} key={m.slug} />)}
+            </div>
+            <div style={{ width: "100%", display: "flex", justifyContent: "center" }}>
+              <ViewResourcesButton resources={djResources} />
+            </div>
+          </div>
         </div>
       </section>
       <section className={styles.articles}>
         <div className="container">
           <JournalismExplorer />
-        </div>
-      </section>
-      <section className="section tight">
-        <div className="container">
-          <span className="eyebrow">Team</span>
-          <div className="board-grid" style={{ marginTop: "18px" }}>
-            {djChairs.map((m) => <MemberCard member={m} key={m.slug} />)}
-          </div>
-          <div style={{ marginTop: "28px" }}>
-            <ViewResourcesButton resources={djResources} />
-          </div>
         </div>
       </section>
     </main>

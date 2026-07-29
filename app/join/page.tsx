@@ -79,7 +79,7 @@ export default function JoinPage() {
         <div className="container">
           <span className="eyebrow">FAQ</span>
           <h2 className="section-title">Recruitment questions</h2>
-          <FAQAccordion />
+          <FAQAccordion excludeCategory="Partnerships" />
         </div>
       </section>
     </main>

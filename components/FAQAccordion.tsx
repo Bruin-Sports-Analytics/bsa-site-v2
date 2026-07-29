@@ -32,8 +32,12 @@ function FAQItem({ question, answer }: { question: string; answer: string }) {
   );
 }
 
-export function FAQAccordion({ category }: { category?: string }) {
-  const items = category ? faqs.filter((faq) => faq.category === category) : faqs;
+export function FAQAccordion({ category, excludeCategory }: { category?: string; excludeCategory?: string }) {
+  const items = faqs.filter((faq) => {
+    if (category && faq.category !== category) return false;
+    if (excludeCategory && faq.category === excludeCategory) return false;
+    return true;
+  });
 
   return (
     <div className={styles.accordion}>
