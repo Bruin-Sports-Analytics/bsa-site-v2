@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { FAQAccordion } from "@/components/FAQAccordion";
 import { Timeline } from "@/components/Timeline";
@@ -76,10 +77,65 @@ export default function JoinPage() {
         </div>
       </section>
       <section className="section">
-        <div className="container">
-          <span className="eyebrow">FAQ</span>
-          <h2 className="section-title">Recruitment questions</h2>
-          <FAQAccordion excludeCategory="Partnerships" />
+        <div className="container grid two">
+          <article className="card glass glass--strong glass--radius-lg" style={{ padding: 28 }}>
+            <span className="eyebrow">Reach out</span>
+            <h2 className="section-title" style={{ fontSize: 34 }}>Questions about joining?</h2>
+            <p style={{ color: "var(--text-secondary)", margin: "0 0 16px", lineHeight: 1.6 }}>
+              Your message goes directly to our Recruitment Chair.
+            </p>
+            <div style={{
+              display: "flex",
+              alignItems: "center",
+              gap: 14,
+              padding: "12px 16px",
+              marginBottom: 24,
+              borderRadius: "var(--glass-radius-md)",
+              border: "1px solid var(--glass-border)",
+              background: "var(--glass-regular-fill)",
+            }}>
+              <div style={{ position: "relative", width: 48, height: 48, borderRadius: "50%", overflow: "hidden", flexShrink: 0 }}>
+                <Image src="/assets/linkedin_headshots/mateo-shelton.png" alt="Mateo Shelton" fill sizes="48px" style={{ objectFit: "cover", objectPosition: "center top" }} />
+              </div>
+              <div>
+                <p style={{ margin: 0, fontWeight: 700, fontSize: 14, color: "var(--text-primary)" }}>Mateo Shelton</p>
+                <p style={{ margin: 0, fontSize: 12, color: "var(--text-secondary)" }}>Recruitment Chair</p>
+                <a href="mailto:mateoshelton@ucla.edu" style={{ fontSize: 12, color: "var(--electric-blue)" }}>mateoshelton@ucla.edu</a>
+              </div>
+            </div>
+            <form className="form-grid">
+              <div className="field">
+                <label htmlFor="name">Name</label>
+                <input id="name" name="name" autoComplete="name" />
+              </div>
+              <div className="field">
+                <label htmlFor="email">Email</label>
+                <input id="email" name="email" type="email" autoComplete="email" />
+              </div>
+              <div className="field">
+                <label htmlFor="major">Major</label>
+                <input id="major" name="major" />
+              </div>
+              <div className="field">
+                <label htmlFor="sport">Sport interest</label>
+                <input id="sport" name="sport" />
+              </div>
+              <div className="field full">
+                <label htmlFor="message">Message</label>
+                <textarea id="message" name="message" />
+              </div>
+              <label className="field full" style={{ display: "flex", gridTemplateColumns: "auto 1fr", alignItems: "center", color: "var(--text-secondary)" }}>
+                <input type="checkbox" required style={{ width: 18, minHeight: 18 }} />
+                I consent to Bruin Sports Analytics contacting me about this inquiry.
+              </label>
+              <button className="btn btn-primary" type="submit">Send message</button>
+            </form>
+          </article>
+          <aside className="card" style={{ padding: 28 }}>
+            <span className="eyebrow">FAQ</span>
+            <h2 className="section-title" style={{ fontSize: 34 }}>Recruitment questions</h2>
+            <FAQAccordion excludeCategory="Partnerships" />
+          </aside>
         </div>
       </section>
     </main>

@@ -62,7 +62,7 @@ export function ProjectCard({ project, active, onActivate, onDeactivate }: Props
         <div className={`${styles.reveal} ${contentVisible ? styles.revealOpen : ""}`}>
           <div className={styles.revealInner}>
             <div className={styles.divider} aria-hidden />
-            <span className={styles.eyebrow}>{sportName(project.sport)} · {project.academicYear}</span>
+            <span className={styles.eyebrow}>{project.subdivision ?? sportName(project.sport)} · {project.academicYear}</span>
             <p className={styles.summary}>{project.summary}</p>
             <div className="tag-row">
               {project.techStack.slice(0, 3).map((tech) => (

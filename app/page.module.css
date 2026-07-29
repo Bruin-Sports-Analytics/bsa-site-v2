@@ -163,6 +163,18 @@
   color: var(--ucla-gold);
 }
 
+:global(html[data-theme="light"]) .sportPill {
+  background: #102a49;
+  border-color: #102a49;
+  color: #fff;
+}
+
+:global(html[data-theme="light"]) .sportPill:hover {
+  background: #07182b;
+  border-color: #07182b;
+  color: var(--ucla-gold);
+}
+
 .logoMarquee {
   width: 100vw;
   margin-top: 28px;

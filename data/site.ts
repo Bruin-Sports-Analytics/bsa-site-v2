@@ -14,7 +14,7 @@ import {
 } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 
-export type SportSlug = "baseball" | "volleyball" | "basketball" | "football" | "tennis";
+export type SportSlug = "baseball" | "volleyball" | "basketball" | "football" | "tennis" | "other";
 export type WorkType = "Consulting" | "Research" | "Journalism" | "Dashboard" | "Tool";
 export type ProjectStatus = "Active" | "Completed" | "Ongoing" | "Archived";
 export type Visibility = "public" | "redacted" | "private" | "hidden";
@@ -221,7 +221,8 @@ export const projects: Project[] = [
   {
     title: "Spicing up Spikeball",
     slug: "spicing-up-spikeball",
-    sport: "volleyball",
+    sport: "other",
+    subdivision: "Spikeball",
     projectType: "Research",
     status: "Archived",
     academicYear: "2021-22",
