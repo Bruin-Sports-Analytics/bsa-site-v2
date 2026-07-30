@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Montserrat, Lato, Roboto } from "next/font/google";
 import "./globals.css";
 import { Footer } from "@/components/Footer";
@@ -27,6 +27,11 @@ const roboto = Roboto({
   variable: "--font-roboto",
   display: "swap",
 });
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+};
 
 export const metadata: Metadata = {
   title: {
