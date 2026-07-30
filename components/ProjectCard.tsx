@@ -72,14 +72,24 @@ export function ProjectCard({ project, active, onActivate, onDeactivate }: Props
             <div className={styles.action}>
               {isPrivate ? (
                 <span className={styles.private}><LockKeyhole size={14} aria-hidden /> Approved summary only</span>
-              ) : project.links.paper ? (
-                <Link href={`/projects/${project.slug}`} className={styles.link}>
-                  Read paper <ArrowUpRight size={15} aria-hidden />
-                </Link>
               ) : (
-                <Link href={`/projects/${project.slug}`} className={styles.link}>
-                  Open project <ArrowUpRight size={15} aria-hidden />
-                </Link>
+                <>
+                  {project.links.demo && (
+                    <a href={project.links.demo} target="_blank" rel="noopener noreferrer" className={styles.link}>
+                      Open tool <ArrowUpRight size={15} aria-hidden />
+                    </a>
+                  )}
+                  {project.links.paper && (
+                    <Link href={`/projects/${project.slug}`} className={styles.link}>
+                      Read paper <ArrowUpRight size={15} aria-hidden />
+                    </Link>
+                  )}
+                  {!project.links.demo && !project.links.paper && (
+                    <Link href={`/projects/${project.slug}`} className={styles.link}>
+                      Open project <ArrowUpRight size={15} aria-hidden />
+                    </Link>
+                  )}
+                </>
               )}
             </div>
           </div>

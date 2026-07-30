@@ -32,6 +32,7 @@ export type Sport = {
   lead: string;
   accent: string;
   subdivisions?: string[];
+  subpages?: ("consulting" | "research")[];
 };
 
 export type Project = {
@@ -164,7 +165,8 @@ export const sports: Sport[] = [
     archivedProjects: 7,
     featuredMetric: "312 formations classified",
     lead: "Football Analytics Lead",
-    accent: "#FFB81C"
+    accent: "#FFB81C",
+    subpages: []
   },
   {
     name: "Tennis",
@@ -199,6 +201,42 @@ export const projects: Project[] = [
     visibility: "public",
     featured: false,
     lastUpdated: "2026-01-03"
+  },
+  {
+    title: "NFL OT 4th Down Decision Engine",
+    slug: "nfl-ot-4th-down-decision-engine",
+    sport: "football",
+    projectType: "Tool",
+    status: "Active",
+    academicYear: "2025-26",
+    summary: "A decision-support tool that recommends whether NFL coaches should go for it, punt, or kick a field goal on 4th down in overtime — trained on 350,000+ plays from 2016–2024.",
+    problem: "NFL coaches lack a real-time, data-driven framework for 4th-down decisions in overtime, where post-2022 rules guarantee both teams a possession before sudden death.",
+    approach: "Four XGBoost submodels — punt outcome, field goal probability, conversion probability, and win probability — are chained together with isotonic calibration and expected-value maximization to recommend the optimal decision given field position, score, team quality, weather, and venue.",
+    result: "The live tool at playbyplay.football lets users input any game situation and instantly surfaces win-probability estimates for all three options under current overtime rules.",
+    members: [],
+    techStack: ["Python", "XGBoost", "React"],
+    links: { paper: "https://hfpruaivskrkweobtvcf.supabase.co/storage/v1/object/public/project_papers/bsa-group-1-winter-presentation.pdf", demo: "https://playbyplay.football" },
+    visibility: "public",
+    featured: true,
+    lastUpdated: "2026-07-30"
+  },
+  {
+    title: "QB Pocket Clutch Ratings",
+    slug: "qb-pocket-clutch-ratings",
+    sport: "football",
+    projectType: "Research",
+    status: "Active",
+    academicYear: "2025-26",
+    summary: "A clutch rating system for NFL quarterbacks that measures how much better — or worse — each QB performs in high-leverage passing situations versus their own baseline, derived from player tracking data and an XGBoost EPA model.",
+    problem: "No existing metric isolates a quarterback's clutch performance relative to their own baseline — most stats conflate absolute output with situation-adjusted execution, making it impossible to distinguish QBs who genuinely elevate under pressure from those who merely happen to be good.",
+    approach: "Paired nflfastR play-by-play data (~7,000 pass plays, 2021 season) with NFL Big Data Bowl 2023 tracking data (10Hz, weeks 1–8) to engineer spatial features — pocket area and collapse rate via convex hull geometry, QB displacement and body orientation at release, and nearest pass-rusher distances and speeds. A leave-one-week-out XGBoost regressor predicts EPA per play from these features, then clutch rating = mean EPA residual on clutch plays (win probability 40–60%, Q4/OT) minus mean EPA residual on all plays.",
+    result: "Patrick Mahomes ranked highest on clutch rating among qualified QBs (≥50 clutch and ≥50 non-clutch plays); Carson Wentz ranked lowest. The metric surfaces quarterbacks who consistently elevate execution under pressure beyond what pocket geometry alone would predict.",
+    members: [],
+    techStack: ["Python", "XGBoost", "nflfastR", "scipy"],
+    links: { paper: "https://hfpruaivskrkweobtvcf.supabase.co/storage/v1/object/public/project_papers/bsa-group-1-spring-presentation.pdf",},
+    visibility: "public",
+    featured: false,
+    lastUpdated: "2026-05-15"
   },
   {
     title: "A Quantitative Framework for Assessing Wide Receiver Blocking Effectiveness Using Player Tracking Data",
@@ -876,7 +914,7 @@ export const members: Member[] = [
     role: "Football Analyst",
     group: "member",
     team: "Football",
-    major: "Applied Mathematics",
+    major: "Applied Math",
     gradYear: "2026",
     bio: "Football analytics researcher and contributor.",
     linkedinUrl: "https://www.linkedin.com/in/maia-salti",
@@ -1105,13 +1143,13 @@ export const recruitment = {
   roles: ["Sport analysts", "Data engineers", "Writers", "Designers", "Dashboard builders"],
   teamsRecruiting: ["Baseball", "Volleyball", "Basketball", "Football", "Tennis"],
   timelineEvents: [
-    { date: "Sep 22", title: "EAF", detail: "Enormous Activities Fair — bring the poster board, hand out materials, and drive QR-code signups.", status: "Awareness" },
-    { date: "TBD", title: "Data Science Showcase", detail: "Generate more exposure within the data science community.", status: "Awareness" },
-    { date: "TBD", title: "Applications Released", detail: "Application form goes live and is shared through the email list, Instagram, and Slack.", status: "Application" },
+    { date: "Sep 22", title: "EAF", detail: "Enormous Activities Fair — Meet the club and learn about our projects.", status: "Awareness" },
+    { date: "TBD", title: "Data Science Showcase", detail: "Learn more about UCLA's data science organizations.", status: "Awareness" },
+    { date: "TBD", title: "Applications Released", detail: "Application form goes live. Check our Slack, Instagram, and email for updates.", status: "Application" },
     { date: "TBD", title: "BSA Info Session", detail: "What research, consulting, and competitions actually look like day to day, plus open Q&A.", status: "Application" },
-    { date: "TBD", title: "Coffee Chats", detail: "Get to know prospective members and let them learn more about individual experiences.", status: "Application" },
-    { date: "TBD", title: "Application Deadline", detail: "Applications close; interviews are scheduled after reviewing submissions.", status: "Application" },
-    { date: "TBD", title: "Final Interviews", detail: "In-person interviews where possible, synchronized across division interview schedules.", status: "Selection" }
+    { date: "TBD", title: "Coffee Chats", detail: "Get to know other prospective members and let them learn more about member experiences.", status: "Application" },
+    { date: "TBD", title: "Application Deadline", detail: "Applications close; interviews invites are sent out after reviewing submissions.", status: "Application" },
+    { date: "TBD", title: "Final Interviews", detail: "In-person interviews where possible with chairs & returning members", status: "Selection" }
   ]
 };
 

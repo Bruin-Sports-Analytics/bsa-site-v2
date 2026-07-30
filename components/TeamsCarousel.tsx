@@ -59,8 +59,12 @@ export function TeamsCarousel({ activeIndex, setActiveIndex }: Props) {
           </div>
           <p className={styles.teamsCarouselDesc}>{sport.description}</p>
           <div className={styles.teamsSubLinks}>
-            <Link href={`/work/${sport.slug}/consulting`}>Consulting</Link>
-            <Link href={`/work/${sport.slug}/research`}>Research</Link>
+            {(sport.subpages ?? ["consulting", "research"]).includes("consulting") && (
+              <Link href={`/work/${sport.slug}/consulting`}>Consulting</Link>
+            )}
+            {(sport.subpages ?? ["consulting", "research"]).includes("research") && (
+              <Link href={`/work/${sport.slug}/research`}>Research</Link>
+            )}
             {sport.slug === "tennis" && (
               <a
                 href="https://match-manager-umber.vercel.app"

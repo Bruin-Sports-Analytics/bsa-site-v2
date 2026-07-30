@@ -1,0 +1,42 @@
+.heroRow {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.heroText {
+  min-width: 0;
+  flex: 1 1 0;
+}
+
+.chairGrid {
+  flex-shrink: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  width: 468px;
+  margin-top: 14px;
+}
+
+.chairGrid > * {
+  flex: 0 0 calc(50% - 9px);
+  max-width: calc(50% - 9px);
+}
+
+@media (max-width: 960px) {
+  .heroRow {
+    flex-direction: column;
+    gap: 28px;
+  }
+
+  .chairGrid {
+    width: 100%;
+    margin-top: 0;
+  }
+
+  .chairGrid > * {
+    flex: 0 0 calc(50% - 9px);
+    max-width: calc(50% - 9px);
+  }
+}

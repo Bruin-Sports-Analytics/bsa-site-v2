@@ -4,6 +4,7 @@ import { ArrowRight } from "lucide-react";
 import { MemberCard } from "@/components/MemberCard";
 import { ProjectCard } from "@/components/ProjectCard";
 import { members, projects, sports } from "@/data/site";
+import styles from "../sport-hero.module.css";
 
 const sport = sports.find((s) => s.slug === "tennis")!;
 
@@ -21,14 +22,21 @@ export default function TennisPage() {
   return (
     <main>
       <section className="page-hero">
-        <div className="container">
-          <span className="eyebrow">Tennis analytics</span>
-          <h1>Tennis</h1>
-          <p>{sport.description}</p>
-          <div className="button-row">
-            <Link className="btn btn-primary" href="/partner">Partner with this team</Link>
-            <Link className="btn btn-secondary" href="/projects">All projects</Link>
+        <div className={`container ${styles.heroRow}`}>
+          <div className={styles.heroText}>
+            <span className="eyebrow">Tennis analytics</span>
+            <h1>Tennis</h1>
+            <p>{sport.description}</p>
+            <div className="button-row">
+              <Link className="btn btn-primary" href="/partner">Partner with this team</Link>
+              <Link className="btn btn-secondary" href="/projects">All projects</Link>
+            </div>
           </div>
+          {chairs.length > 0 && (
+            <div className={styles.chairGrid}>
+              {chairs.map((m) => <MemberCard member={m} key={m.slug} />)}
+            </div>
+          )}
         </div>
       </section>
       <section className="section tight">
