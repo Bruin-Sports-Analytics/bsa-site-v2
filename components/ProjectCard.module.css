@@ -1,8 +1,12 @@
 .card {
   display: flex;
   flex-direction: column;
-  cursor: default;
+  cursor: pointer;
   overflow: hidden;
+}
+
+.card.expanded {
+  cursor: default;
 }
 
 /* ── Body ── */

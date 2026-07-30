@@ -38,7 +38,21 @@ export function ProjectCard({ project, active, onActivate, onDeactivate }: Props
     collapseTimer.current = setTimeout(() => setInternalExpanded(false), 80);
   };
 
+  const handleClick = (e: React.MouseEvent) => {
+    if ((e.target as HTMLElement).closest("a, button")) return;
+    if (controlled) { onActivate?.(); return; }
+    if (internalExpanded) {
+      setInternalVisible(false);
+      collapseTimer.current = setTimeout(() => setInternalExpanded(false), 80);
+    } else {
+      if (collapseTimer.current) { clearTimeout(collapseTimer.current); collapseTimer.current = null; }
+      setInternalExpanded(true);
+      setInternalVisible(true);
+    }
+  };
+
   const handlers = {
+    onClick: handleClick,
     onMouseEnter: handleEnter,
     onMouseLeave: handleLeave,
     onFocus: handleEnter,
