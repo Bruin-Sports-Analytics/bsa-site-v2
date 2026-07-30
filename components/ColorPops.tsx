@@ -103,6 +103,7 @@ export function ColorPops() {
   return (
     <div
       aria-hidden
+      className="color-pops"
       style={{
         position: "absolute",
         inset: 0,

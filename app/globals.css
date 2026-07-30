@@ -724,6 +724,10 @@ main > section > * {
 }
 
 @media (max-width: 900px) {
+  .color-pops {
+    display: none;
+  }
+
   .grid.three,
   .grid.two,
   .grid.four,
