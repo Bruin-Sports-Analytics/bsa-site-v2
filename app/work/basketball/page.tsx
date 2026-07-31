@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { MemberCard } from "@/components/MemberCard";
-import { ProjectCard } from "@/components/ProjectCard";
+import { ProjectCardGrid } from "@/components/ProjectCardGrid";
 import { members, projects, sports } from "@/data/site";
 import styles from "../sport-hero.module.css";
 
@@ -58,18 +58,14 @@ export default function BasketballPage() {
         <div className="container">
           <span className="eyebrow">Active projects</span>
           <h2 className="section-title">Current work</h2>
-          <div className="grid three">
-            {active.map((project) => <ProjectCard project={project} key={project.slug} />)}
-          </div>
+          <ProjectCardGrid projects={active} />
         </div>
       </section>
       <section className="section tight">
         <div className="container">
           <span className="eyebrow">Archive</span>
           <h2 className="section-title">Past work</h2>
-          <div className="grid three">
-            {archived.map((project) => <ProjectCard project={project} key={project.slug} />)}
-          </div>
+          <ProjectCardGrid projects={archived} />
         </div>
       </section>
       <section className="section tight">
