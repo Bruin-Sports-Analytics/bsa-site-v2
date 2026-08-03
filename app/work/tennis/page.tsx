@@ -96,12 +96,12 @@ export default function TennisPage() {
         </div>
       </section>
       <section className="section tight">
-        <div className="container">
-          <span className="eyebrow">Team</span>
+        <div className={`container ${styles.teamSection}`}>
+          <h2 className="section-title" style={{ textAlign: "center", marginBottom: "28px" }}>Team</h2>
           <div className="board-grid" style={{ marginTop: "18px" }}>
             {[...chairs, ...analysts].map((m) => <MemberCard member={m} key={m.slug} />)}
           </div>
-          <div className="button-row" style={{ marginTop: "28px" }}>
+          <div className="button-row" style={{ marginTop: "28px", justifyContent: "center" }}>
             <Link className="btn btn-primary" href="/partner">Bring us a tennis problem</Link>
           </div>
         </div>
