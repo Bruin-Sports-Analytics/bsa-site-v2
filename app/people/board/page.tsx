@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { MemberCard } from "@/components/MemberCard";
 import { members } from "@/data/site";
+import { PeopleSections } from "@/components/PeopleSections";
 
 export const metadata: Metadata = {
   title: "Board"
@@ -39,14 +39,7 @@ export default function BoardPage() {
       </section>
       <section className="section">
         <div className="container">
-          {sections.map((section, index) => (
-            <div key={section.title} style={index > 0 ? { marginTop: "48px" } : undefined}>
-              <span className="eyebrow" data-scroll-reveal style={{ display: "block", marginBottom: "16px", fontSize: "16px", textAlign: "center" }}>{section.title}</span>
-              <div className="board-grid">
-                {section.people.map((member) => <MemberCard member={member} key={member.slug} />)}
-              </div>
-            </div>
-          ))}
+          <PeopleSections sections={sections} />
         </div>
       </section>
     </main>

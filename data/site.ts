@@ -62,24 +62,29 @@ export type Project = {
   lastUpdated: string;
 };
 
-export type Member = {
-  name: string;
+export type MemberAssignment = {
   slug: string;
   role: string;
   group: "board" | "member" | "alum";
   team: string;
+  bio: string;
+  sortOrder: number;
+};
+
+export type MemberProfile = {
+  name: string;
   major: string;
   gradYear: string;
-  bio: string;
   linkedinUrl?: string;
   photoUrl?: string;
   /** Optional CSS transform to reframe the headshot crop (e.g. zoom/shift the face). */
   photoTransform?: string;
   currentOrganization?: string;
-  sortOrder: number;
   isPublished: boolean;
+  assignments: MemberAssignment[];
 };
 
+export type Member = Omit<MemberProfile, "assignments"> & MemberAssignment;
 export type Event = {
   title: string;
   slug: string;
@@ -135,13 +140,14 @@ export const sports: Sport[] = [
     name: "Volleyball",
     slug: "volleyball",
     icon: ChartNoAxesCombined,
-    description: "Serve receive, lineup efficiency, rally outcomes, and opponent tendency reports.",
+    description: "Consulting for serve receive, lineup efficiency, rally outcomes, and opponent tendency reports through a 2-year partnership with UCLA men's and women's volleyball.",
     focusAreas: ["Rotation efficiency", "Serve target maps", "Rally transition value"],
     activeProjects: 3,
     archivedProjects: 6,
     featuredMetric: "2.4k rallies tagged this year",
     lead: "Volleyball Analytics Lead",
-    accent: "#FFD100"
+    accent: "#FFD100",
+    subpages: []
   },
   {
     name: "Basketball",
@@ -423,718 +429,732 @@ export const projects: Project[] = [
   }
 ];
 
-export const members: Member[] = [
-  {
-    name: "Moulik Chatterjee",
-    slug: "moulik-chatterjee",
-    role: "President",
-    group: "board",
-    team: "President",
-    major: "Business Economics; Stats & Data Science",
-    gradYear: "2027",
-    bio: "Coordinates partner projects. Leads club strategy, recruitment, and operations.",
-    linkedinUrl: "https://www.linkedin.com/in/moulik-chatterjee/",
-    photoUrl: "/assets/linkedin_headshots/moulik-chatterjee.jpeg",
-    sortOrder: 1,
-    isPublished: true
-  },
-  {
-    name: "Sampath Kalagarla",
-    slug: "sampath-kalagarla",
-    role: "Webmaster",
-    group: "board",
-    team: "Webmaster",
-    major: "Computer Science",
-    gradYear: "2029",
-    bio: "Leads website development, maintenance, and analytics. Oversees technical infrastructure.",
-    linkedinUrl: "https://www.linkedin.com/in/sampath-kalagarla/",
-    photoUrl: "/assets/linkedin_headshots/sampath-kalagarla.jpeg",
-    sortOrder: 12,
-    isPublished: true
-  },
-  {
-    name: "Ben Troutman",
-    slug: "ben-troutman",
-    role: "Internal Vice President",
-    group: "board",
-    team: "Executive Board",
-    major: "Stats & Data Science",
-    gradYear: "2027",
-    bio: "Leads internal operations, project management, and member development.",
-    linkedinUrl: "https://www.linkedin.com/in/troutman-ben/",
-    photoUrl: "/assets/linkedin_headshots/ben-troutman.jpeg",
-    sortOrder: 2,
-    isPublished: true
-  },
-  {
-    name: "Vardaan Sinha",
-    slug: "vardaan-sinha",
-    role: "External Vice President",
-    group: "board",
-    team: "Executive Board",
-    major: "Applied Math",
-    gradYear: "2027",
-    bio: "Leads external partnerships, communications, and marketing.",
-    linkedinUrl: "https://www.linkedin.com/in/vardaan-sinha-234663272/",
-    photoUrl: "/assets/linkedin_headshots/vardaan-sinha.png",
-    sortOrder: 2,
-    isPublished: true
-  },
-  {
-    name: "Anthony Mui",
-    slug: "anthony-mui",
-    role: "Baseball Co-Chair",
-    group: "board",
-    team: "Baseball",
-    major: "Math of Computation",
-    gradYear: "2029",
-    bio: "Leads baseball analytics projects and oversees baseball team operations.",
-    linkedinUrl: "https://www.linkedin.com/in/anthony-mui-820a7a272/",
-    photoUrl: "/assets/linkedin_headshots/anthony-mui.jpeg",
-    sortOrder: 3,
-    isPublished: true
-  },
-  {
-    name: "Colin Granger",
-    slug: "colin-granger",
-    role: "Baseball Co-Chair",
-    group: "board",
-    team: "Baseball",
-    major: "Stats & Data Science",
-    gradYear: "2027",
-    bio: "Leads baseball analytics projects and oversees baseball team operations.",
-    linkedinUrl: "https://www.linkedin.com/in/colingranger/",
-    photoUrl: "/assets/linkedin_headshots/colin-granger.jpeg",
-    sortOrder: 3,
-    isPublished: true
-  },
-  {
-    name: "Eshaan Dhavala",
-    slug: "eshaan-dhavala",
-    role: "Football Co-Chair",
-    group: "board",
-    team: "football",
-    major: "Stats & Data Science",
-    gradYear: "2027",
-    bio: "Leads football analytics projects and oversees football team operations.",
-    linkedinUrl: "https://www.linkedin.com/in/eshaan-dhavala-12ba98241/",
-    photoUrl: "/assets/linkedin_headshots/eshaan-dhavala.png",
-    sortOrder: 4,
-    isPublished: true
-  },
-  {
-    name: "Abhi Kumar",
-    slug: "abhi-kumar",
-    role: "Football Co-Chair",
-    group: "board",
-    team: "football",
-    major: "Math & Economics",
-    gradYear: "2028",
-    bio: "Leads football analytics projects and oversees football team operations.",
-    linkedinUrl: "https://www.linkedin.com/in/abhi-kumar-/",
-    photoUrl: "/assets/linkedin_headshots/abhi-kumar.jpeg",
-    sortOrder: 4,
-    isPublished: true
-  },
-  {
-    name: "Lucas Pichardo",
-    slug: "lucas-pichardo",
-    role: "Basketball Co-Chair",
-    group: "board",
-    team: "basketball",
-    major: "Stats & Data Science",
-    gradYear: "2027",
-    bio: "Leads basketball analytics projects and oversees basketball team operations.",
-    linkedinUrl: "https://www.linkedin.com/in/lucaspichardo/",
-    photoUrl: "/assets/linkedin_headshots/lucas-pichardo.png",
-    sortOrder: 5,
-    isPublished: true
-  },
-  {
-    name: "Raja Kavasseri",
-    slug: "raja-kavasseri",
-    role: "Basketball Co-Chair",
-    group: "board",
-    team: "basketball",
-    major: "Stats & Data Science",
-    gradYear: "2027",
-    bio: "Leads basketball analytics projects and oversees basketball team operations.",
-    linkedinUrl: "https://www.linkedin.com/in/rajakavasseri/",
-    photoUrl: "/assets/linkedin_headshots/raja-kavasseri.jpeg",
-    // photoTransform: "scale(1) translateY(-10%)",
-    sortOrder: 5,
-    isPublished: true
-  },
-  {
-    name: "Pavan Gudavalli",
-    slug: "pavan-gudavalli",
-    role: "Tennis Chair",
-    group: "board",
-    team: "tennis",
-    major: "Computer Science & Engineering; Math & Economics",
-    gradYear: "2027",
-    bio: "Leads tennis analytics projects and oversees tennis team operations.",
-    linkedinUrl: "https://www.linkedin.com/in/pavan-gudavalli/",
-    photoUrl: "/assets/linkedin_headshots/pavan-gudavalli.jpeg",
-    sortOrder: 6,
-    isPublished: true
-  },
-  {
-    name: "Beck Zimmerman",
-    slug: "beck-zimmerman",
-    role: "Volleyball Chair",
-    group: "board",
-    team: "volleyball",
-    major: "Stats & Data Science",
-    gradYear: "2027",
-    bio: "Leads volleyball analytics projects and oversees volleyball team operations.",
-    linkedinUrl: "https://www.linkedin.com/in/beck-zimmerman-45317a312/",
-    photoUrl: "/assets/linkedin_headshots/beck-zimmerman.jpeg",
-    sortOrder: 7,
-    isPublished: true
-  },
-  {
-    name: "Anika Soitkar",
-    slug: "anika-soitkar",
-    role: "Data Journalism Co-Chair",
-    group: "board",
-    team: "data journalism",
-    major: "Data Theory",
-    gradYear: "2028",
-    bio: "Leads data journalism projects and oversees data storytelling initiatives.",
-    linkedinUrl: "https://www.linkedin.com/in/anika-soitkar/",
-    photoUrl: "/assets/linkedin_headshots/anika-soitkar.png",
-    sortOrder: 8,
-    isPublished: true
-  },
-  {
-    name: "Alan Ruiz",
-    slug: "alan-ruiz",
-    role: "Data Journalism Co-Chair",
-    group: "board",
-    team: "data journalism",
-    major: "Stats & Data Science",
-    gradYear: "2028",
-    bio: "Leads data journalism projects and oversees data storytelling initiatives.",
-    linkedinUrl: "https://www.linkedin.com/in/alan-ruiz24/",
-    photoUrl: "/assets/linkedin_headshots/alan-ruiz.png",
-    sortOrder: 8,
-    isPublished: true
-  },
-  {
-    name: "Mateo Shelton",
-    slug: "mateo-shelton",
-    role: "Recruitment Chair",
-    group: "board",
-    team: "recruitment",
-    major: "Stats & Data Science",
-    gradYear: "2027",
-    bio: "Leads recruitment efforts and oversees member engagement.",
-    linkedinUrl: "https://www.linkedin.com/in/mateo-shelton/",
-    photoUrl: "/assets/linkedin_headshots/mateo-shelton.png",
-    sortOrder: 9,
-    isPublished: true
-  },
-  {
-    name: "Madeleine Curran",
-    slug: "madeleine-curran",
-    role: "Finance Chair",
-    group: "board",
-    team: "finance",
-    major: "Data Theory",
-    gradYear: "2027",
-    bio: "Leads budget planning and finance operations for the organization.",
-    linkedinUrl: "https://www.linkedin.com/in/madeleine-curran-819845258/",
-    photoUrl: "/assets/linkedin_headshots/madeleine-curran.jpeg",
-    sortOrder: 10,
-    isPublished: true
-  },
-  {
-    name: "Evana Sharma",
-    slug: "evana-sharma",
-    role: "Marketing Co-Chair",
-    group: "board",
-    team: "marketing",
-    major: "Stats & Data Science",
-    gradYear: "2029",
-    bio: "Supports marketing, communications, and data storytelling for Bruin Sports Analytics.",
-    linkedinUrl: "https://www.linkedin.com/in/evana-sharma-a031803a5/",
-    photoUrl: "/assets/linkedin_headshots/evana-sharma.png",
-    sortOrder: 11,
-    isPublished: true
-  },
-  {
-    name: "Annika Gupta",
-    slug: "annika-gupta",
-    role: "Marketing Co-Chair",
-    group: "board",
-    team: "marketing",
-    major: "Stats & Data Science",
-    gradYear: "2028",
-    bio: "Supports marketing, outreach, and member-facing communications for Bruin Sports Analytics.",
-    linkedinUrl: "https://www.linkedin.com/in/annikaagupta/",
-    photoUrl: "/assets/linkedin_headshots/annika-gupta.jpeg",
-    sortOrder: 11,
-    isPublished: true
-  },
-  {
-    name: "Kevin Baer",
-    slug: "kevin-baer",
-    role: "Advisor",
-    group: "board",
-    team: "advisors",
-    major: "Stats & Data Science",
-    gradYear: "2027",
-    bio: "Advises board members on sports analytics projects, technical direction, and member development.",
-    linkedinUrl: "https://www.linkedin.com/in/kevinmbaer/",
-    photoUrl: "/assets/linkedin_headshots/kevin-baer.jpeg",
-    sortOrder: 13,
-    isPublished: true
-  },
-  {
-    name: "Harsh Govindji",
-    slug: "harsh-govindji",
-    role: "Advisor",
-    group: "board",
-    team: "advisors",
-    major: "Data Theory",
-    gradYear: "2027",
-    bio: "Advises board members on organizational strategy, analytics projects, and technical mentorship.",
-    linkedinUrl: "https://www.linkedin.com/in/harsh-govindji/",
-    photoUrl: "/assets/linkedin_headshots/harsh-govindji.jpeg",
-    sortOrder: 13,
-    isPublished: true
-  },
 
-  // ── Basketball members ──────────────────────────────────────────────────────
+export const memberProfiles: MemberProfile[] = [
   {
-    name: "Lucas Pichardo",
-    slug: "lucas-pichardo-member",
-    role: "Basketball Co-Chair",
-    group: "member",
-    team: "Basketball",
-    major: "Stats & Data Science",
-    gradYear: "2027",
-    bio: "Leads basketball analytics projects and oversees basketball team operations.",
-    linkedinUrl: "https://www.linkedin.com/in/lucaspichardo/",
-    photoUrl: "/assets/linkedin_headshots/lucas-pichardo.png",
-    sortOrder: 101,
-    isPublished: true
+    "name": "Moulik Chatterjee",
+    "major": "Business Economics; Stats & Data Science",
+    "gradYear": "2027",
+    "linkedinUrl": "https://www.linkedin.com/in/moulik-chatterjee/",
+    "photoUrl": "/assets/linkedin_headshots/moulik-chatterjee.jpeg",
+    "isPublished": true,
+    "assignments": [
+      {
+        "slug": "moulik-chatterjee",
+        "role": "President",
+        "group": "board",
+        "team": "President",
+        "bio": "Coordinates partner projects. Leads club strategy, recruitment, and operations.",
+        "sortOrder": 1
+      },
+      {
+        "slug": "moulik-chatterjee-basketball",
+        "role": "Basketball Analyst",
+        "group": "member",
+        "team": "Basketball",
+        "bio": "Basketball analytics contributor and BSA president.",
+        "sortOrder": 104
+      },
+      {
+        "slug": "moulik-chatterjee-football",
+        "role": "Football Analyst",
+        "group": "member",
+        "team": "Football",
+        "bio": "Football analytics contributor and BSA president.",
+        "sortOrder": 204
+      }
+    ]
   },
   {
-    name: "Raja Kavasseri",
-    slug: "raja-kavasseri-member",
-    role: "Basketball Co-Chair",
-    group: "member",
-    team: "Basketball",
-    major: "Stats & Data Science",
-    gradYear: "2027",
-    bio: "Leads basketball analytics projects and oversees basketball team operations.",
-    linkedinUrl: "https://www.linkedin.com/in/rajakavasseri/",
-    photoUrl: "/assets/linkedin_headshots/raja-kavasseri.jpeg",
-    sortOrder: 102,
-    isPublished: true
+    "name": "Sampath Kalagarla",
+    "major": "Computer Science",
+    "gradYear": "2029",
+    "linkedinUrl": "https://www.linkedin.com/in/sampath-kalagarla/",
+    "photoUrl": "/assets/linkedin_headshots/sampath-kalagarla.jpeg",
+    "isPublished": true,
+    "assignments": [
+      {
+        "slug": "sampath-kalagarla",
+        "role": "Webmaster",
+        "group": "board",
+        "team": "Webmaster",
+        "bio": "Leads website development, maintenance, and analytics. Oversees technical infrastructure.",
+        "sortOrder": 12
+      },
+      {
+        "slug": "sampath-kalagarla-basketball",
+        "role": "Basketball Analyst",
+        "group": "member",
+        "team": "Basketball",
+        "bio": "Basketball analytics contributor and BSA webmaster.",
+        "sortOrder": 105
+      }
+    ]
   },
   {
-    name: "Harsh Govindji",
-    slug: "harsh-govindji-basketball",
-    role: "Basketball Analyst",
-    group: "member",
-    team: "Basketball",
-    major: "Data Theory",
-    gradYear: "2027",
-    bio: "Basketball analytics researcher and advisor.",
-    linkedinUrl: "https://www.linkedin.com/in/harsh-govindji/",
-    photoUrl: "/assets/linkedin_headshots/harsh-govindji.jpeg",
-    sortOrder: 103,
-    isPublished: true
+    "name": "Ben Troutman",
+    "major": "Stats & Data Science",
+    "gradYear": "2027",
+    "linkedinUrl": "https://www.linkedin.com/in/troutman-ben/",
+    "photoUrl": "/assets/linkedin_headshots/ben-troutman.jpeg",
+    "isPublished": true,
+    "assignments": [
+      {
+        "slug": "ben-troutman",
+        "role": "Internal Vice President",
+        "group": "board",
+        "team": "Executive Board",
+        "bio": "Leads internal operations, project management, and member development.",
+        "sortOrder": 2
+      }
+    ]
   },
   {
-    name: "Moulik Chatterjee",
-    slug: "moulik-chatterjee-basketball",
-    role: "Basketball Analyst",
-    group: "member",
-    team: "Basketball",
-    major: "Business Economics; Stats & Data Science",
-    gradYear: "2027",
-    bio: "Basketball analytics contributor and BSA president.",
-    linkedinUrl: "https://www.linkedin.com/in/moulik-chatterjee/",
-    photoUrl: "/assets/linkedin_headshots/moulik-chatterjee.jpeg",
-    sortOrder: 104,
-    isPublished: true
+    "name": "Vardaan Sinha",
+    "major": "Applied Math",
+    "gradYear": "2027",
+    "linkedinUrl": "https://www.linkedin.com/in/vardaan-sinha-234663272/",
+    "photoUrl": "/assets/linkedin_headshots/vardaan-sinha.png",
+    "isPublished": true,
+    "assignments": [
+      {
+        "slug": "vardaan-sinha",
+        "role": "External Vice President",
+        "group": "board",
+        "team": "Executive Board",
+        "bio": "Leads external partnerships, communications, and marketing.",
+        "sortOrder": 2
+      },
+      {
+        "slug": "vardaan-sinha-football",
+        "role": "Football Analyst",
+        "group": "member",
+        "team": "Football",
+        "bio": "Football analytics contributor and BSA External Vice President.",
+        "sortOrder": 203
+      }
+    ]
   },
   {
-    name: "Sampath Kalagarla",
-    slug: "sampath-kalagarla-basketball",
-    role: "Basketball Analyst",
-    group: "member",
-    team: "Basketball",
-    major: "Computer Science",
-    gradYear: "2029",
-    bio: "Basketball analytics contributor and BSA webmaster.",
-    linkedinUrl: "https://www.linkedin.com/in/sampath-kalagarla/",
-    photoUrl: "/assets/linkedin_headshots/sampath-kalagarla.jpeg",
-    sortOrder: 105,
-    isPublished: true
+    "name": "Anthony Mui",
+    "major": "Math of Computation",
+    "gradYear": "2029",
+    "linkedinUrl": "https://www.linkedin.com/in/anthony-mui-820a7a272/",
+    "photoUrl": "/assets/linkedin_headshots/anthony-mui.jpeg",
+    "isPublished": true,
+    "assignments": [
+      {
+        "slug": "anthony-mui",
+        "role": "Baseball Co-Chair",
+        "group": "board",
+        "team": "Baseball",
+        "bio": "Leads baseball analytics projects and oversees baseball team operations.",
+        "sortOrder": 3
+      },
+      {
+        "slug": "anthony-mui-member",
+        "role": "Baseball Co-Chair",
+        "group": "member",
+        "team": "Baseball",
+        "bio": "Leads baseball analytics projects and oversees baseball team operations.",
+        "sortOrder": 302
+      }
+    ]
   },
   {
-    name: "Vikram Subramanian",
-    slug: "vikram-subramanian",
-    role: "Basketball Analyst",
-    group: "member",
-    team: "Basketball",
-    major: "Computer Science & Linguistics",
-    gradYear: "2029",
-    bio: "Basketball analytics researcher and contributor.",
-    linkedinUrl: "https://www.linkedin.com/in/vikramsbr/",
-    photoUrl: "/assets/linkedin_headshots/vikram-subramanian.jpeg",
-    sortOrder: 106,
-    isPublished: true
+    "name": "Colin Granger",
+    "major": "Stats & Data Science",
+    "gradYear": "2027",
+    "linkedinUrl": "https://www.linkedin.com/in/colingranger/",
+    "photoUrl": "/assets/linkedin_headshots/colin-granger.jpeg",
+    "isPublished": true,
+    "assignments": [
+      {
+        "slug": "colin-granger",
+        "role": "Baseball Co-Chair",
+        "group": "board",
+        "team": "Baseball",
+        "bio": "Leads baseball analytics projects and oversees baseball team operations.",
+        "sortOrder": 3
+      },
+      {
+        "slug": "colin-granger-member",
+        "role": "Baseball Co-Chair",
+        "group": "member",
+        "team": "Baseball",
+        "bio": "Leads baseball analytics projects and oversees baseball team operations.",
+        "sortOrder": 301
+      }
+    ]
   },
   {
-    name: "Danny Lenney",
-    slug: "danny-lenney",
-    role: "Basketball Analyst",
-    group: "member",
-    team: "Basketball",
-    major: "Stats & Data Science",
-    gradYear: "2028",
-    bio: "Basketball analytics researcher and contributor.",
-    linkedinUrl: "https://www.linkedin.com/in/daniellenney/",
-    photoUrl: "/assets/linkedin_headshots/danny-lenney.jpeg",
-    sortOrder: 107,
-    isPublished: true
+    "name": "Eshaan Dhavala",
+    "major": "Stats & Data Science",
+    "gradYear": "2027",
+    "linkedinUrl": "https://www.linkedin.com/in/eshaan-dhavala-12ba98241/",
+    "photoUrl": "/assets/linkedin_headshots/eshaan-dhavala.png",
+    "isPublished": true,
+    "assignments": [
+      {
+        "slug": "eshaan-dhavala",
+        "role": "Football Co-Chair",
+        "group": "board",
+        "team": "football",
+        "bio": "Leads football analytics projects and oversees football team operations.",
+        "sortOrder": 4
+      },
+      {
+        "slug": "eshaan-dhavala-member",
+        "role": "Football Co-Chair",
+        "group": "member",
+        "team": "Football",
+        "bio": "Leads football analytics projects and oversees football team operations.",
+        "sortOrder": 201
+      }
+    ]
   },
   {
-    name: "Josh Rusit",
-    slug: "josh-rusit",
-    role: "Basketball Analyst",
-    group: "member",
-    team: "Basketball",
-    major: "Stats & Data Science",
-    gradYear: "2027",
-    bio: "Basketball analytics researcher and contributor.",
-    linkedinUrl: "https://www.linkedin.com/in/jgrusit",
-    photoUrl: "/assets/linkedin_headshots/josh-rusit.jpeg",
-    sortOrder: 108,
-    isPublished: true
-  },
-
-  // ── Football members ────────────────────────────────────────────────────────
-  {
-    name: "Eshaan Dhavala",
-    slug: "eshaan-dhavala-member",
-    role: "Football Co-Chair",
-    group: "member",
-    team: "Football",
-    major: "Stats & Data Science",
-    gradYear: "2027",
-    bio: "Leads football analytics projects and oversees football team operations.",
-    linkedinUrl: "https://www.linkedin.com/in/eshaan-dhavala-12ba98241/",
-    photoUrl: "/assets/linkedin_headshots/eshaan-dhavala.png",
-    sortOrder: 201,
-    isPublished: true
+    "name": "Abhi Kumar",
+    "major": "Math & Economics",
+    "gradYear": "2028",
+    "linkedinUrl": "https://www.linkedin.com/in/abhi-kumar-/",
+    "photoUrl": "/assets/linkedin_headshots/abhi-kumar.jpeg",
+    "isPublished": true,
+    "assignments": [
+      {
+        "slug": "abhi-kumar",
+        "role": "Football Co-Chair",
+        "group": "board",
+        "team": "football",
+        "bio": "Leads football analytics projects and oversees football team operations.",
+        "sortOrder": 4
+      },
+      {
+        "slug": "abhi-kumar-member",
+        "role": "Football Co-Chair",
+        "group": "member",
+        "team": "Football",
+        "bio": "Leads football analytics projects and oversees football team operations.",
+        "sortOrder": 202
+      }
+    ]
   },
   {
-    name: "Abhi Kumar",
-    slug: "abhi-kumar-member",
-    role: "Football Co-Chair",
-    group: "member",
-    team: "Football",
-    major: "Math & Economics",
-    gradYear: "2028",
-    bio: "Leads football analytics projects and oversees football team operations.",
-    linkedinUrl: "https://www.linkedin.com/in/abhi-kumar-/",
-    photoUrl: "/assets/linkedin_headshots/abhi-kumar.jpeg",
-    sortOrder: 202,
-    isPublished: true
+    "name": "Lucas Pichardo",
+    "major": "Stats & Data Science",
+    "gradYear": "2027",
+    "linkedinUrl": "https://www.linkedin.com/in/lucaspichardo/",
+    "photoUrl": "/assets/linkedin_headshots/lucas-pichardo.png",
+    "isPublished": true,
+    "assignments": [
+      {
+        "slug": "lucas-pichardo",
+        "role": "Basketball Co-Chair",
+        "group": "board",
+        "team": "basketball",
+        "bio": "Leads basketball analytics projects and oversees basketball team operations.",
+        "sortOrder": 5
+      },
+      {
+        "slug": "lucas-pichardo-member",
+        "role": "Basketball Co-Chair",
+        "group": "member",
+        "team": "Basketball",
+        "bio": "Leads basketball analytics projects and oversees basketball team operations.",
+        "sortOrder": 101
+      }
+    ]
   },
   {
-    name: "Vardaan Sinha",
-    slug: "vardaan-sinha-football",
-    role: "Football Analyst",
-    group: "member",
-    team: "Football",
-    major: "Applied Math",
-    gradYear: "2027",
-    bio: "Football analytics contributor and BSA External Vice President.",
-    linkedinUrl: "https://www.linkedin.com/in/vardaan-sinha-234663272/",
-    photoUrl: "/assets/linkedin_headshots/vardaan-sinha.png",
-    sortOrder: 203,
-    isPublished: true
+    "name": "Raja Kavasseri",
+    "major": "Stats & Data Science",
+    "gradYear": "2027",
+    "linkedinUrl": "https://www.linkedin.com/in/rajakavasseri/",
+    "photoUrl": "/assets/linkedin_headshots/raja-kavasseri.jpeg",
+    "isPublished": true,
+    "assignments": [
+      {
+        "slug": "raja-kavasseri",
+        "role": "Basketball Co-Chair",
+        "group": "board",
+        "team": "basketball",
+        "bio": "Leads basketball analytics projects and oversees basketball team operations.",
+        "sortOrder": 5
+      },
+      {
+        "slug": "raja-kavasseri-member",
+        "role": "Basketball Co-Chair",
+        "group": "member",
+        "team": "Basketball",
+        "bio": "Leads basketball analytics projects and oversees basketball team operations.",
+        "sortOrder": 102
+      }
+    ]
   },
   {
-    name: "Moulik Chatterjee",
-    slug: "moulik-chatterjee-football",
-    role: "Football Analyst",
-    group: "member",
-    team: "Football",
-    major: "Business Economics; Stats & Data Science",
-    gradYear: "2027",
-    bio: "Football analytics contributor and BSA president.",
-    linkedinUrl: "https://www.linkedin.com/in/moulik-chatterjee/",
-    photoUrl: "/assets/linkedin_headshots/moulik-chatterjee.jpeg",
-    sortOrder: 204,
-    isPublished: true
+    "name": "Pavan Gudavalli",
+    "major": "Computer Science & Engineering; Math & Economics",
+    "gradYear": "2027",
+    "linkedinUrl": "https://www.linkedin.com/in/pavan-gudavalli/",
+    "photoUrl": "/assets/linkedin_headshots/pavan-gudavalli.jpeg",
+    "isPublished": true,
+    "assignments": [
+      {
+        "slug": "pavan-gudavalli",
+        "role": "Tennis Chair",
+        "group": "board",
+        "team": "tennis",
+        "bio": "Leads tennis analytics projects and oversees tennis team operations.",
+        "sortOrder": 6
+      },
+      {
+        "slug": "pavan-gudavalli-member",
+        "role": "Tennis Chair",
+        "group": "member",
+        "team": "Tennis",
+        "bio": "Leads tennis analytics projects and oversees tennis team operations.",
+        "sortOrder": 401
+      }
+    ]
   },
   {
-    name: "Mateo Shelton",
-    slug: "mateo-shelton-football",
-    role: "Football Analyst",
-    group: "member",
-    team: "Football",
-    major: "Stats & Data Science",
-    gradYear: "2027",
-    bio: "Football analytics contributor and BSA Recruitment Chair.",
-    linkedinUrl: "https://www.linkedin.com/in/mateo-shelton/",
-    photoUrl: "/assets/linkedin_headshots/mateo-shelton.png",
-    sortOrder: 205,
-    isPublished: true
+    "name": "Beck Zimmerman",
+    "major": "Stats & Data Science",
+    "gradYear": "2027",
+    "linkedinUrl": "https://www.linkedin.com/in/beck-zimmerman-45317a312/",
+    "photoUrl": "/assets/linkedin_headshots/beck-zimmerman.jpeg",
+    "isPublished": true,
+    "assignments": [
+      {
+        "slug": "beck-zimmerman",
+        "role": "Volleyball Chair",
+        "group": "board",
+        "team": "volleyball",
+        "bio": "Leads volleyball analytics projects and oversees volleyball team operations.",
+        "sortOrder": 7
+      },
+      {
+        "slug": "beck-zimmerman-member",
+        "role": "Volleyball Chair",
+        "group": "member",
+        "team": "Volleyball",
+        "bio": "Leads volleyball analytics projects and oversees volleyball team operations.",
+        "sortOrder": 501
+      }
+    ]
   },
   {
-    name: "Anika Soitkar",
-    slug: "anika-soitkar-football",
-    role: "Football Analyst",
-    group: "member",
-    team: "Football",
-    major: "Data Theory",
-    gradYear: "2028",
-    bio: "Football analytics contributor and BSA Data Journalism Co-Chair.",
-    linkedinUrl: "https://www.linkedin.com/in/anika-soitkar/",
-    photoUrl: "/assets/linkedin_headshots/anika-soitkar.png",
-    sortOrder: 206,
-    isPublished: true
+    "name": "Anika Soitkar",
+    "major": "Data Theory",
+    "gradYear": "2028",
+    "linkedinUrl": "https://www.linkedin.com/in/anika-soitkar/",
+    "photoUrl": "/assets/linkedin_headshots/anika-soitkar.png",
+    "isPublished": true,
+    "assignments": [
+      {
+        "slug": "anika-soitkar",
+        "role": "Data Journalism Co-Chair",
+        "group": "board",
+        "team": "data journalism",
+        "bio": "Leads data journalism projects and oversees data storytelling initiatives.",
+        "sortOrder": 8
+      },
+      {
+        "slug": "anika-soitkar-football",
+        "role": "Football Analyst",
+        "group": "member",
+        "team": "Football",
+        "bio": "Football analytics contributor and BSA Data Journalism Co-Chair.",
+        "sortOrder": 206
+      },
+      {
+        "slug": "anika-soitkar-volleyball",
+        "role": "Volleyball Analyst",
+        "group": "member",
+        "team": "Volleyball",
+        "bio": "Volleyball analytics contributor and BSA Data Journalism Co-Chair.",
+        "sortOrder": 502
+      }
+    ]
   },
   {
-    name: "Michael Zheng",
-    slug: "michael-zheng",
-    role: "Football Analyst",
-    group: "member",
-    team: "Football",
-    major: "Data Theory",
-    gradYear: "2028",
-    bio: "Football analytics researcher and contributor.",
-    linkedinUrl: "https://www.linkedin.com/in/michael-zheng-5508b22a2/",
-    photoUrl: "/assets/linkedin_headshots/michael-zheng.jpeg",
-    sortOrder: 207,
-    isPublished: true
+    "name": "Alan Ruiz",
+    "major": "Stats & Data Science",
+    "gradYear": "2028",
+    "linkedinUrl": "https://www.linkedin.com/in/alan-ruiz24/",
+    "photoUrl": "/assets/linkedin_headshots/alan-ruiz.png",
+    "isPublished": true,
+    "assignments": [
+      {
+        "slug": "alan-ruiz",
+        "role": "Data Journalism Co-Chair",
+        "group": "board",
+        "team": "data journalism",
+        "bio": "Leads data journalism projects and oversees data storytelling initiatives.",
+        "sortOrder": 8
+      },
+      {
+        "slug": "alan-ruiz-baseball",
+        "role": "Baseball Analyst",
+        "group": "member",
+        "team": "Baseball",
+        "bio": "Baseball analytics contributor and BSA Data Journalism Co-Chair.",
+        "sortOrder": 305
+      }
+    ]
   },
   {
-    name: "Ayush Verma",
-    slug: "ayush-verma",
-    role: "Football Analyst",
-    group: "member",
-    team: "Football",
-    major: "",
-    gradYear: "",
-    bio: "Football analytics researcher and contributor.",
-    photoUrl: "/assets/linkedin_headshots/ayush-verma.jpeg",
-    sortOrder: 208,
-    isPublished: true
+    "name": "Mateo Shelton",
+    "major": "Stats & Data Science",
+    "gradYear": "2027",
+    "linkedinUrl": "https://www.linkedin.com/in/mateo-shelton/",
+    "photoUrl": "/assets/linkedin_headshots/mateo-shelton.png",
+    "isPublished": true,
+    "assignments": [
+      {
+        "slug": "mateo-shelton",
+        "role": "Recruitment Chair",
+        "group": "board",
+        "team": "recruitment",
+        "bio": "Leads recruitment efforts and oversees member engagement.",
+        "sortOrder": 9
+      },
+      {
+        "slug": "mateo-shelton-football",
+        "role": "Football Analyst",
+        "group": "member",
+        "team": "Football",
+        "bio": "Football analytics contributor and BSA Recruitment Chair.",
+        "sortOrder": 205
+      }
+    ]
   },
   {
-    name: "Keith Bui",
-    slug: "keith-bui",
-    role: "Football Analyst",
-    group: "member",
-    team: "Football",
-    major: "Data Theory",
-    gradYear: "2027",
-    bio: "Football analytics researcher and contributor.",
-    linkedinUrl: "https://www.linkedin.com/in/keith-bui/",
-    photoUrl: "/assets/linkedin_headshots/keith-bui.jpeg",
-    sortOrder: 209,
-    isPublished: true
+    "name": "Madeleine Curran",
+    "major": "Data Theory",
+    "gradYear": "2027",
+    "linkedinUrl": "https://www.linkedin.com/in/madeleine-curran-819845258/",
+    "photoUrl": "/assets/linkedin_headshots/madeleine-curran.jpeg",
+    "isPublished": true,
+    "assignments": [
+      {
+        "slug": "madeleine-curran",
+        "role": "Finance Chair",
+        "group": "board",
+        "team": "finance",
+        "bio": "Leads budget planning and finance operations for the organization.",
+        "sortOrder": 10
+      },
+      {
+        "slug": "madeleine-curran-baseball",
+        "role": "Baseball Analyst",
+        "group": "member",
+        "team": "Baseball",
+        "bio": "Baseball analytics contributor and BSA Finance Chair.",
+        "sortOrder": 303
+      }
+    ]
   },
   {
-    name: "Maia Salti",
-    slug: "maia-salti",
-    role: "Football Analyst",
-    group: "member",
-    team: "Football",
-    major: "Applied Math",
-    gradYear: "2026",
-    bio: "Football analytics researcher and contributor.",
-    linkedinUrl: "https://www.linkedin.com/in/maia-salti",
-    photoUrl: "/assets/linkedin_headshots/maia-salti.png",
-    sortOrder: 210,
-    isPublished: true
+    "name": "Evana Sharma",
+    "major": "Stats & Data Science",
+    "gradYear": "2029",
+    "linkedinUrl": "https://www.linkedin.com/in/evana-sharma-a031803a5/",
+    "photoUrl": "/assets/linkedin_headshots/evana-sharma.png",
+    "isPublished": true,
+    "assignments": [
+      {
+        "slug": "evana-sharma",
+        "role": "Marketing Co-Chair",
+        "group": "board",
+        "team": "marketing",
+        "bio": "Supports marketing, communications, and data storytelling for Bruin Sports Analytics.",
+        "sortOrder": 11
+      }
+    ]
   },
   {
-    name: "Andrew Yang",
-    slug: "andrew-yang",
-    role: "Football Analyst",
-    group: "member",
-    team: "Football",
-    major: "Applied Math",
-    gradYear: "2027",
-    bio: "Football analytics researcher and contributor.",
-    linkedinUrl: "https://www.linkedin.com/in/andrew-yang-381a952bb/",
-    photoUrl: "/assets/linkedin_headshots/andrew-yang.png",
-    sortOrder: 211,
-    isPublished: true
-  },
-
-  // ── Baseball members ────────────────────────────────────────────────────────
-  {
-    name: "Colin Granger",
-    slug: "colin-granger-member",
-    role: "Baseball Co-Chair",
-    group: "member",
-    team: "Baseball",
-    major: "Stats & Data Science",
-    gradYear: "2027",
-    bio: "Leads baseball analytics projects and oversees baseball team operations.",
-    linkedinUrl: "https://www.linkedin.com/in/colingranger/",
-    photoUrl: "/assets/linkedin_headshots/colin-granger.jpeg",
-    sortOrder: 301,
-    isPublished: true
+    "name": "Annika Gupta",
+    "major": "Stats & Data Science",
+    "gradYear": "2028",
+    "linkedinUrl": "https://www.linkedin.com/in/annikaagupta/",
+    "photoUrl": "/assets/linkedin_headshots/annika-gupta.jpeg",
+    "isPublished": true,
+    "assignments": [
+      {
+        "slug": "annika-gupta",
+        "role": "Marketing Co-Chair",
+        "group": "board",
+        "team": "marketing",
+        "bio": "Supports marketing, outreach, and member-facing communications for Bruin Sports Analytics.",
+        "sortOrder": 11
+      }
+    ]
   },
   {
-    name: "Anthony Mui",
-    slug: "anthony-mui-member",
-    role: "Baseball Co-Chair",
-    group: "member",
-    team: "Baseball",
-    major: "Math of Computation",
-    gradYear: "2029",
-    bio: "Leads baseball analytics projects and oversees baseball team operations.",
-    linkedinUrl: "https://www.linkedin.com/in/anthony-mui-820a7a272/",
-    photoUrl: "/assets/linkedin_headshots/anthony-mui.jpeg",
-    sortOrder: 302,
-    isPublished: true
+    "name": "Kevin Baer",
+    "major": "Stats & Data Science",
+    "gradYear": "2027",
+    "linkedinUrl": "https://www.linkedin.com/in/kevinmbaer/",
+    "photoUrl": "/assets/linkedin_headshots/kevin-baer.jpeg",
+    "isPublished": true,
+    "assignments": [
+      {
+        "slug": "kevin-baer",
+        "role": "Advisor",
+        "group": "board",
+        "team": "advisors",
+        "bio": "Advises board members on sports analytics projects, technical direction, and member development.",
+        "sortOrder": 13
+      }
+    ]
   },
   {
-    name: "Madeleine Curran",
-    slug: "madeleine-curran-baseball",
-    role: "Baseball Analyst",
-    group: "member",
-    team: "Baseball",
-    major: "Data Theory",
-    gradYear: "2027",
-    bio: "Baseball analytics contributor and BSA Finance Chair.",
-    linkedinUrl: "https://www.linkedin.com/in/madeleine-curran-819845258/",
-    photoUrl: "/assets/linkedin_headshots/madeleine-curran.jpeg",
-    sortOrder: 303,
-    isPublished: true
+    "name": "Harsh Govindji",
+    "major": "Data Theory",
+    "gradYear": "2027",
+    "linkedinUrl": "https://www.linkedin.com/in/harsh-govindji/",
+    "photoUrl": "/assets/linkedin_headshots/harsh-govindji.jpeg",
+    "isPublished": true,
+    "assignments": [
+      {
+        "slug": "harsh-govindji",
+        "role": "Advisor",
+        "group": "board",
+        "team": "advisors",
+        "bio": "Advises board members on organizational strategy, analytics projects, and technical mentorship.",
+        "sortOrder": 13
+      },
+      {
+        "slug": "harsh-govindji-basketball",
+        "role": "Basketball Analyst",
+        "group": "member",
+        "team": "Basketball",
+        "bio": "Basketball analytics researcher and advisor.",
+        "sortOrder": 103
+      }
+    ]
   },
   {
-    name: "Ethan Rome",
-    slug: "ethan-rome",
-    role: "Baseball Analyst",
-    group: "member",
-    team: "Baseball",
-    major: "Stats & Data Science",
-    gradYear: "2028",
-    bio: "Baseball analytics researcher and contributor.",
-    linkedinUrl: "https://www.linkedin.com/in/ethan-rome-3b3501322/",
-    photoUrl: "/assets/linkedin_headshots/ethan-rome.png",
-    sortOrder: 304,
-    isPublished: true
+    "name": "Vikram Subramanian",
+    "major": "Computer Science & Linguistics",
+    "gradYear": "2029",
+    "linkedinUrl": "https://www.linkedin.com/in/vikramsbr/",
+    "photoUrl": "/assets/linkedin_headshots/vikram-subramanian.jpeg",
+    "isPublished": true,
+    "assignments": [
+      {
+        "slug": "vikram-subramanian",
+        "role": "Basketball Analyst",
+        "group": "member",
+        "team": "Basketball",
+        "bio": "Basketball analytics researcher and contributor.",
+        "sortOrder": 106
+      }
+    ]
   },
   {
-    name: "Alan Ruiz",
-    slug: "alan-ruiz-baseball",
-    role: "Baseball Analyst",
-    group: "member",
-    team: "Baseball",
-    major: "Stats & Data Science",
-    gradYear: "2028",
-    bio: "Baseball analytics contributor and BSA Data Journalism Co-Chair.",
-    linkedinUrl: "https://www.linkedin.com/in/alan-ruiz24/",
-    photoUrl: "/assets/linkedin_headshots/alan-ruiz.png",
-    sortOrder: 305,
-    isPublished: true
-  },
-
-  // ── Tennis members ──────────────────────────────────────────────────────────
-  {
-    name: "Pavan Gudavalli",
-    slug: "pavan-gudavalli-member",
-    role: "Tennis Chair",
-    group: "member",
-    team: "Tennis",
-    major: "Computer Science & Engineering; Math & Economics",
-    gradYear: "2027",
-    bio: "Leads tennis analytics projects and oversees tennis team operations.",
-    linkedinUrl: "https://www.linkedin.com/in/pavan-gudavalli/",
-    photoUrl: "/assets/linkedin_headshots/pavan-gudavalli.jpeg",
-    sortOrder: 401,
-    isPublished: true
+    "name": "Danny Lenney",
+    "major": "Stats & Data Science",
+    "gradYear": "2028",
+    "linkedinUrl": "https://www.linkedin.com/in/daniellenney/",
+    "photoUrl": "/assets/linkedin_headshots/danny-lenney.jpeg",
+    "isPublished": true,
+    "assignments": [
+      {
+        "slug": "danny-lenney",
+        "role": "Basketball Analyst",
+        "group": "member",
+        "team": "Basketball",
+        "bio": "Basketball analytics researcher and contributor.",
+        "sortOrder": 107
+      }
+    ]
   },
   {
-    name: "Niranjan Bhagwat",
-    slug: "niranjan-bhagwat",
-    role: "Tennis Analyst",
-    group: "member",
-    team: "Tennis",
-    major: "Stats & Data Science",
-    gradYear: "2027",
-    bio: "Tennis analytics researcher and contributor.",
-    linkedinUrl: "https://www.linkedin.com/in/niranjan-bhagwat8/",
-    photoUrl: "/assets/linkedin_headshots/niranjan-bhagwat.png",
-    sortOrder: 402,
-    isPublished: true
+    "name": "Josh Rusit",
+    "major": "Stats & Data Science",
+    "gradYear": "2027",
+    "linkedinUrl": "https://www.linkedin.com/in/jgrusit",
+    "photoUrl": "/assets/linkedin_headshots/josh-rusit.jpeg",
+    "isPublished": true,
+    "assignments": [
+      {
+        "slug": "josh-rusit",
+        "role": "Basketball Analyst",
+        "group": "member",
+        "team": "Basketball",
+        "bio": "Basketball analytics researcher and contributor.",
+        "sortOrder": 108
+      }
+    ]
   },
   {
-    name: "Emma Li",
-    slug: "emma-li",
-    role: "Tennis Analyst",
-    group: "member",
-    team: "Tennis",
-    major: "Stats & Data Science",
-    gradYear: "2028",
-    bio: "Tennis analytics researcher and contributor.",
-    linkedinUrl: "https://www.linkedin.com/in/emma-li-80952b267",
-    photoUrl: "/assets/linkedin_headshots/emma-li.jpeg",
-    sortOrder: 403,
-    isPublished: true
-  },
-
-  // ── Volleyball members ──────────────────────────────────────────────────────
-  {
-    name: "Beck Zimmerman",
-    slug: "beck-zimmerman-member",
-    role: "Volleyball Chair",
-    group: "member",
-    team: "Volleyball",
-    major: "Stats & Data Science",
-    gradYear: "2027",
-    bio: "Leads volleyball analytics projects and oversees volleyball team operations.",
-    linkedinUrl: "https://www.linkedin.com/in/beck-zimmerman-45317a312/",
-    photoUrl: "/assets/linkedin_headshots/beck-zimmerman.jpeg",
-    sortOrder: 501,
-    isPublished: true
+    "name": "Michael Zheng",
+    "major": "Data Theory",
+    "gradYear": "2028",
+    "linkedinUrl": "https://www.linkedin.com/in/michael-zheng-5508b22a2/",
+    "photoUrl": "/assets/linkedin_headshots/michael-zheng.jpeg",
+    "isPublished": true,
+    "assignments": [
+      {
+        "slug": "michael-zheng",
+        "role": "Football Analyst",
+        "group": "member",
+        "team": "Football",
+        "bio": "Football analytics researcher and contributor.",
+        "sortOrder": 207
+      }
+    ]
   },
   {
-    name: "Anika Soitkar",
-    slug: "anika-soitkar-volleyball",
-    role: "Volleyball Analyst",
-    group: "member",
-    team: "Volleyball",
-    major: "Data Theory",
-    gradYear: "2028",
-    bio: "Volleyball analytics contributor and BSA Data Journalism Co-Chair.",
-    linkedinUrl: "https://www.linkedin.com/in/anika-soitkar/",
-    photoUrl: "/assets/linkedin_headshots/anika-soitkar.png",
-    sortOrder: 502,
-    isPublished: true
+    "name": "Ayush Verma",
+    "major": "",
+    "gradYear": "",
+    "photoUrl": "/assets/linkedin_headshots/ayush-verma.jpeg",
+    "isPublished": true,
+    "assignments": [
+      {
+        "slug": "ayush-verma",
+        "role": "Football Analyst",
+        "group": "member",
+        "team": "Football",
+        "bio": "Football analytics researcher and contributor.",
+        "sortOrder": 208
+      }
+    ]
   },
   {
-    name: "Ethan Rome",
-    slug: "ethan-rome-volleyball",
-    role: "Volleyball Analyst",
-    group: "member",
-    team: "Volleyball",
-    major: "Stats & Data Science",
-    gradYear: "2028",
-    bio: "Volleyball analytics researcher and contributor.",
-    linkedinUrl: "https://www.linkedin.com/in/ethan-rome-3b3501322/",
-    photoUrl: "/assets/linkedin_headshots/ethan-rome.png",
-    sortOrder: 503,
-    isPublished: true
+    "name": "Keith Bui",
+    "major": "Data Theory",
+    "gradYear": "2027",
+    "linkedinUrl": "https://www.linkedin.com/in/keith-bui/",
+    "photoUrl": "/assets/linkedin_headshots/keith-bui.jpeg",
+    "isPublished": true,
+    "assignments": [
+      {
+        "slug": "keith-bui",
+        "role": "Football Analyst",
+        "group": "member",
+        "team": "Football",
+        "bio": "Football analytics researcher and contributor.",
+        "sortOrder": 209
+      }
+    ]
+  },
+  {
+    "name": "Maia Salti",
+    "major": "Applied Math",
+    "gradYear": "2026",
+    "linkedinUrl": "https://www.linkedin.com/in/maia-salti",
+    "photoUrl": "/assets/linkedin_headshots/maia-salti.png",
+    "isPublished": true,
+    "assignments": [
+      {
+        "slug": "maia-salti",
+        "role": "Football Analyst",
+        "group": "member",
+        "team": "Football",
+        "bio": "Football analytics researcher and contributor.",
+        "sortOrder": 210
+      }
+    ]
+  },
+  {
+    "name": "Andrew Yang",
+    "major": "Applied Math",
+    "gradYear": "2027",
+    "linkedinUrl": "https://www.linkedin.com/in/andrew-yang-381a952bb/",
+    "photoUrl": "/assets/linkedin_headshots/andrew-yang.png",
+    "isPublished": true,
+    "assignments": [
+      {
+        "slug": "andrew-yang",
+        "role": "Football Analyst",
+        "group": "member",
+        "team": "Football",
+        "bio": "Football analytics researcher and contributor.",
+        "sortOrder": 211
+      }
+    ]
+  },
+  {
+    "name": "Ethan Rome",
+    "major": "Stats & Data Science",
+    "gradYear": "2028",
+    "linkedinUrl": "https://www.linkedin.com/in/ethan-rome-3b3501322/",
+    "photoUrl": "/assets/linkedin_headshots/ethan-rome.png",
+    "isPublished": true,
+    "assignments": [
+      {
+        "slug": "ethan-rome",
+        "role": "Baseball Analyst",
+        "group": "member",
+        "team": "Baseball",
+        "bio": "Baseball analytics researcher and contributor.",
+        "sortOrder": 304
+      },
+      {
+        "slug": "ethan-rome-volleyball",
+        "role": "Volleyball Analyst",
+        "group": "member",
+        "team": "Volleyball",
+        "bio": "Volleyball analytics researcher and contributor.",
+        "sortOrder": 503
+      }
+    ]
+  },
+  {
+    "name": "Niranjan Bhagwat",
+    "major": "Stats & Data Science",
+    "gradYear": "2027",
+    "linkedinUrl": "https://www.linkedin.com/in/niranjan-bhagwat8/",
+    "photoUrl": "/assets/linkedin_headshots/niranjan-bhagwat.png",
+    "isPublished": true,
+    "assignments": [
+      {
+        "slug": "niranjan-bhagwat",
+        "role": "Tennis Analyst",
+        "group": "member",
+        "team": "Tennis",
+        "bio": "Tennis analytics researcher and contributor.",
+        "sortOrder": 402
+      }
+    ]
+  },
+  {
+    "name": "Emma Li",
+    "major": "Stats & Data Science",
+    "gradYear": "2028",
+    "linkedinUrl": "https://www.linkedin.com/in/emma-li-80952b267",
+    "photoUrl": "/assets/linkedin_headshots/emma-li.jpeg",
+    "isPublished": true,
+    "assignments": [
+      {
+        "slug": "emma-li",
+        "role": "Tennis Analyst",
+        "group": "member",
+        "team": "Tennis",
+        "bio": "Tennis analytics researcher and contributor.",
+        "sortOrder": 403
+      }
+    ]
   }
 ];
+
+export const members: Member[] = memberProfiles.flatMap((profile) =>
+  profile.assignments.map((assignment) => ({
+    name: profile.name,
+    major: profile.major,
+    gradYear: profile.gradYear,
+    linkedinUrl: profile.linkedinUrl,
+    photoUrl: profile.photoUrl,
+    photoTransform: profile.photoTransform,
+    currentOrganization: profile.currentOrganization,
+    isPublished: profile.isPublished,
+    ...assignment
+  }))
+);
 
 export const events: Event[] = [
   {
@@ -1181,7 +1201,7 @@ export const recruitment = {
   roles: ["Sport analysts", "Data engineers", "Writers", "Designers", "Dashboard builders"],
   teamsRecruiting: ["Baseball", "Volleyball", "Basketball", "Football", "Tennis"],
   timelineEvents: [
-    { date: "Sep 22", title: "EAF", detail: "Enormous Activities Fair — Meet the club and learn about our projects.", status: "Awareness" },
+    { date: "Sep 22", title: "EAF", detail: "Enormous Activities Fair - Meet the club and learn about our projects.", status: "Awareness" },
     { date: "TBD", title: "Data Science Showcase", detail: "Learn more about UCLA's data science organizations.", status: "Awareness" },
     { date: "TBD", title: "Applications Released", detail: "Application form goes live. Check our Slack, Instagram, and email for updates.", status: "Application" },
     { date: "TBD", title: "BSA Info Session", detail: "What research, consulting, and competitions actually look like day to day, plus open Q&A.", status: "Application" },
