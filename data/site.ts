@@ -1220,12 +1220,12 @@ export const faqs = [
   {
     category: "Recruitment",
     question: "When does Bruin Sports Analytics recruit?",
-    answer: "The site is configured for Fall and Winter recruitment cycles. The Join page changes based on the active recruitment state."
+    answer: "Our sports groups recruit exclusively in the fall. We accept applications for Data Journalism during winter and spring quarters. Check the Recruitment page for the current cycle's dates."
   },
   {
     category: "Technical background",
     question: "What tools do members use?",
-    answer: "Common tools include Python, R, SQL, Tableau, React, GitHub, and statistical modeling libraries. Project needs determine the stack."
+    answer: "Common tools include Python, R, SQL, Tableau, React, GitHub, and statistical modeling libraries. Project needs determine the stack. Experience with web development tools is also a plus."
   },
   {
     category: "Partnerships",
