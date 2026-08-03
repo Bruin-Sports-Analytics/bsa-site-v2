@@ -6,7 +6,6 @@ import { usePathname } from "next/navigation";
 const GRID = 42; // matches body background-size grid
 const COLORS = ["#FFD100", "#4AA8FF", "#162d47"] as const;
 const COUNT = 8;
-const PAGE_ROWS = 95;
 // Max visible portion of any pop is (maxWidth - minOff) cells = 3 cells = 126px.
 // Check elements within this distance from either edge.
 const EDGE_THRESHOLD = 130;
@@ -27,10 +26,10 @@ function overlaps(topRow: number, heightCells: number, zones: Zone[]): boolean {
   return zones.some((z) => topRow < z.bottomRow && bottom > z.topRow);
 }
 
-function generate(excluded: Zone[]): Pop[] {
+function generate(excluded: Zone[], pageRows: number): Pop[] {
   const pops: Pop[] = [];
   let lastColor = "";
-  const bandSize = PAGE_ROWS / COUNT;
+  const bandSize = pageRows / COUNT;
 
   for (let i = 0; i < COUNT; i++) {
     const available = COLORS.filter((c) => c !== lastColor);
@@ -64,7 +63,6 @@ function generate(excluded: Zone[]): Pop[] {
 
 function getExcludedZones(): Zone[] {
   const zones: Zone[] = [];
-  const scrollY = window.scrollY;
   const vw = window.innerWidth;
 
   const selectors = [
@@ -74,15 +72,13 @@ function getExcludedZones(): Zone[] {
     ".page-hero",             // hero blocks
   ];
 
+  // Use viewport-relative coords (no scrollY offset) since the wrapper is position: fixed
   document.querySelectorAll<HTMLElement>(selectors.join(",")).forEach((el) => {
     const rect = el.getBoundingClientRect();
-    // Only exclude elements that are within the visible edge zone
     if (rect.left >= EDGE_THRESHOLD && rect.right <= vw - EDGE_THRESHOLD) return;
-    const absTop = rect.top + scrollY;
-    const absBottom = rect.bottom + scrollY;
     zones.push({
-      topRow: Math.floor(absTop / GRID) - 1,
-      bottomRow: Math.ceil(absBottom / GRID) + 1,
+      topRow: Math.floor(rect.top / GRID) - 1,
+      bottomRow: Math.ceil(rect.bottom / GRID) + 1,
     });
   });
 
@@ -95,7 +91,8 @@ export function ColorPops() {
 
   useEffect(() => {
     const excluded = getExcludedZones();
-    setPops(generate(excluded));
+    const pageRows = Math.ceil(window.innerHeight / GRID);
+    setPops(generate(excluded, pageRows));
   }, [pathname]);
 
   if (pops.length === 0) return null;
@@ -105,7 +102,7 @@ export function ColorPops() {
       aria-hidden
       className="color-pops"
       style={{
-        position: "absolute",
+        position: "fixed",
         inset: 0,
         pointerEvents: "none",
         zIndex: 0,
