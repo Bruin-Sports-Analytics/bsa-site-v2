@@ -10,6 +10,7 @@ const siteSource = path.join(repoRoot, "data", "site.ts");
 const outputDir = path.join(repoRoot, "public", "assets", "project-thumbnails");
 const tempDir = path.join(repoRoot, ".tmp", "project-thumbnails");
 const pdfToPpm = process.env.PDFTOPPM ?? "pdftoppm";
+const maxPages = Number(process.env.THUMBNAIL_MAX_PAGES ?? 8);
 
 const source = fs.readFileSync(siteSource, "utf8");
 const projectRegex = /title:\s*"([^"]+)"[\s\S]*?slug:\s*"([^"]+)"[\s\S]*?links:\s*\{\s*paper:\s*"([^"]+)"/g;
@@ -24,8 +25,38 @@ if (!projects.length) {
   throw new Error("No project papers found in data/site.ts");
 }
 
+fs.rmSync(outputDir, { recursive: true, force: true });
+fs.rmSync(tempDir, { recursive: true, force: true });
 fs.mkdirSync(outputDir, { recursive: true });
 fs.mkdirSync(tempDir, { recursive: true });
+
+function scoreImage(imagePath) {
+  const script = `
+from PIL import Image, ImageFilter, ImageStat
+import sys
+
+path = sys.argv[1]
+img = Image.open(path).convert("RGB")
+if img.width > 1100:
+    new_height = max(1, round(img.height * (1100 / img.width)))
+    img = img.resize((1100, new_height))
+gray = img.convert("L")
+hist = gray.histogram()
+total = gray.width * gray.height
+nonwhite = sum(hist[:245]) / total
+edges = gray.filter(ImageFilter.FIND_EDGES)
+edge_mean = ImageStat.Stat(edges).mean[0] / 255
+color_std = sum(ImageStat.Stat(img).stddev) / (3 * 128)
+score = (edge_mean * 2.2) + (color_std * 1.4) + (nonwhite * 0.5)
+print(score)
+`;
+
+  const result = spawnSync("python3", ["-c", script, imagePath], { encoding: "utf8" });
+  if (result.status !== 0) {
+    throw new Error(result.stderr || `Failed to score ${imagePath}`);
+  }
+  return Number.parseFloat(result.stdout.trim()) || 0;
+}
 
 const browser = await chromium.launch({ headless: true });
 const page = await browser.newPage({ acceptDownloads: true });
@@ -35,14 +66,15 @@ page.setDefaultNavigationTimeout(120000);
 try {
   for (const project of projects) {
     const pdfPath = path.join(tempDir, `${project.slug}.pdf`);
-    const pngBase = path.join(outputDir, project.slug);
+    const candidateBase = path.join(tempDir, project.slug);
+    const finalPath = path.join(outputDir, `${project.slug}.png`);
     const downloadPromise = page.waitForEvent("download");
 
     await page.goto(project.paper, { waitUntil: "domcontentloaded" }).catch(() => {});
     const download = await downloadPromise;
     await download.saveAs(pdfPath);
 
-    const render = spawnSync(pdfToPpm, ["-png", "-f", "1", "-l", "1", "-singlefile", pdfPath, pngBase], {
+    const render = spawnSync(pdfToPpm, ["-png", "-f", "1", "-l", String(maxPages), pdfPath, candidateBase], {
       stdio: "inherit"
     });
 
@@ -50,9 +82,39 @@ try {
       throw new Error(`pdftoppm failed for ${project.slug}`);
     }
 
-    console.log(`wrote ${project.slug}.png`);
+    const candidates = fs
+      .readdirSync(tempDir)
+      .filter((name) => name.startsWith(`${project.slug}-`) && name.endsWith(".png"))
+      .map((name) => ({
+        name,
+        page: Number.parseInt(name.match(/-(\d+)\.png$/)?.[1] ?? "1", 10),
+        path: path.join(tempDir, name)
+      }))
+      .sort((a, b) => a.page - b.page);
+
+    if (!candidates.length) {
+      throw new Error(`No rendered pages found for ${project.slug}`);
+    }
+
+    let best = candidates[0];
+    let bestScore = -Infinity;
+    for (const candidate of candidates) {
+      const score = scoreImage(candidate.path);
+      if (score > bestScore) {
+        best = candidate;
+        bestScore = score;
+      }
+    }
+
+    fs.copyFileSync(best.path, finalPath);
+    console.log(`wrote ${project.slug}.png (page ${best.page}, score ${bestScore.toFixed(3)})`);
+
+    for (const candidate of candidates) {
+      fs.rmSync(candidate.path, { force: true });
+    }
   }
 } finally {
   await page.close();
   await browser.close();
+  fs.rmSync(tempDir, { recursive: true, force: true });
 }
