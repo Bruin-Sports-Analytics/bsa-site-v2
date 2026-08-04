@@ -10,7 +10,8 @@ const siteSource = path.join(repoRoot, "data", "site.ts");
 const outputDir = path.join(repoRoot, "public", "assets", "project-thumbnails");
 const tempDir = path.join(repoRoot, ".tmp", "project-thumbnails");
 const pdfToPpm = process.env.PDFTOPPM ?? "pdftoppm";
-const maxPages = Number(process.env.THUMBNAIL_MAX_PAGES ?? 8);
+const maxPages = Number(process.env.THUMBNAIL_MAX_PAGES ?? 20);
+const minGraphScore = Number(process.env.THUMBNAIL_MIN_GRAPH_SCORE ?? 0.2);
 
 const source = fs.readFileSync(siteSource, "utf8");
 const projectRegex = /title:\s*"([^"]+)"[\s\S]*?slug:\s*"([^"]+)"[\s\S]*?links:\s*\{\s*paper:\s*"([^"]+)"/g;
@@ -58,6 +59,32 @@ print(score)
   return Number.parseFloat(result.stdout.trim()) || 0;
 }
 
+function countWords(pdfPath, pageNumber) {
+  const result = spawnSync(
+    "pdftotext",
+    ["-f", String(pageNumber), "-l", String(pageNumber), "-layout", pdfPath, "-"],
+    { encoding: "utf8" }
+  );
+
+  if (result.status !== 0) {
+    throw new Error(result.stderr || `Failed to extract text from page ${pageNumber}`);
+  }
+
+  const text = result.stdout.trim();
+  const words = text.match(/\b[\w'%.-]+\b/g) ?? [];
+  return words.length;
+}
+
+function getPageCount(pdfPath) {
+  const result = spawnSync("pdfinfo", [pdfPath], { encoding: "utf8" });
+  if (result.status !== 0) {
+    throw new Error(result.stderr || `Failed to read pdf metadata for ${pdfPath}`);
+  }
+
+  const match = result.stdout.match(/^Pages:\s+(\d+)/m);
+  return Number.parseInt(match?.[1] ?? "0", 10);
+}
+
 const browser = await chromium.launch({ headless: true });
 const page = await browser.newPage({ acceptDownloads: true });
 page.setDefaultTimeout(120000);
@@ -74,7 +101,10 @@ try {
     const download = await downloadPromise;
     await download.saveAs(pdfPath);
 
-    const render = spawnSync(pdfToPpm, ["-png", "-f", "1", "-l", String(maxPages), pdfPath, candidateBase], {
+    const pageCount = getPageCount(pdfPath);
+    const pagesToScan = Math.max(1, Math.min(maxPages, pageCount));
+
+    const render = spawnSync(pdfToPpm, ["-png", "-f", "1", "-l", String(pagesToScan), pdfPath, candidateBase], {
       stdio: "inherit"
     });
 
@@ -98,11 +128,28 @@ try {
 
     let best = candidates[0];
     let bestScore = -Infinity;
+    let eligibleCount = 0;
     for (const candidate of candidates) {
-      const score = scoreImage(candidate.path);
+      const graphScore = scoreImage(candidate.path);
+      if (graphScore < minGraphScore) continue;
+      eligibleCount += 1;
+      const words = countWords(pdfPath, candidate.page);
+      const score = (graphScore * 3) - (words / 260);
       if (score > bestScore) {
         best = candidate;
         bestScore = score;
+      }
+    }
+
+    if (eligibleCount === 0) {
+      bestScore = -Infinity;
+      for (const candidate of candidates) {
+        const words = countWords(pdfPath, candidate.page);
+        const score = (scoreImage(candidate.path) * 3) - (words / 260);
+        if (score > bestScore) {
+          best = candidate;
+          bestScore = score;
+        }
       }
     }
 
