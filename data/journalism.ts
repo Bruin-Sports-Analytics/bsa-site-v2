@@ -5,6 +5,7 @@ export type JournalismArticle = {
   year: number;
   sport: string;
   readTime: number;
+  paperUrl?: string;
   views?: number;
   likes?: number;
 };
@@ -27,7 +28,8 @@ export const articles: JournalismArticle[] = [
     date: "Feb 9, 2019",
     year: 2019,
     sport: "Basketball",
-    readTime: 8
+    readTime: 8,
+    paperUrl: "https://hfpruaivskrkweobtvcf.supabase.co/storage/v1/object/public/dj_archive/anthony_davis.pdf"
   },
   {
     title: "Goalkeeper Passing: What's been done so far",
@@ -35,7 +37,8 @@ export const articles: JournalismArticle[] = [
     date: "Jan 27, 2019",
     year: 2019,
     sport: "Football",
-    readTime: 8
+    readTime: 8,
+    paperUrl: "https://hfpruaivskrkweobtvcf.supabase.co/storage/v1/object/public/dj_archive/goalkeeper_passing.pdf"
   },
   {
     title: "Beyond the Standings: Using Data to Predict the NBA Playoff Race",

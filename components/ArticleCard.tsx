@@ -1,5 +1,7 @@
-import { Heart } from "lucide-react";
+import Link from "next/link";
+import { ArrowUpRight, Heart } from "lucide-react";
 import type { JournalismArticle } from "@/data/journalism";
+import { slugify } from "@/lib/utils";
 import { formatAuthors } from "@/lib/utils";
 import styles from "./ArticleCard.module.css";
 
@@ -14,8 +16,14 @@ function getSportTone(sport: string) {
   return SPORT_TONES[sport] ?? { top: "#8BCBFF", bottom: "#1b3e61" };
 }
 
-export function ArticleCard({ article, featured = false }: { article: JournalismArticle; featured?: boolean }) {
+type Props = {
+  article: JournalismArticle;
+  featured?: boolean;
+};
+
+export function ArticleCard({ article, featured = false }: Props) {
   const tone = getSportTone(article.sport);
+  const readHref = article.paperUrl ? `/journalism/${slugify(article.title)}` : null;
 
   return (
     <article className={`${styles.card}${featured ? ` ${styles.featured}` : ""}`}>
@@ -38,15 +46,24 @@ export function ArticleCard({ article, featured = false }: { article: Journalism
         <h3 className={`${styles.title}${featured ? ` ${styles.titleFeatured}` : ""}`}>{article.title}</h3>
         <p className={styles.authors}>{formatAuthors(article.authors)}</p>
         <hr className={styles.divider} />
-        {(article.views != null || (article.likes ?? 0) > 0) && (
+        {(article.views != null || (article.likes ?? 0) > 0 || readHref) && (
           <div className={styles.footer}>
-            <span>{article.views != null ? `${article.views} views` : ""}</span>
-            {(article.likes ?? 0) > 0 && (
-              <span className={styles.footerRight}>
-                <Heart size={14} aria-hidden />
-                {article.likes}
-              </span>
-            )}
+            <div className={styles.footerLeft}>
+              {article.views != null && <span>{`${article.views} views`}</span>}
+            </div>
+            <div className={styles.footerRight}>
+              {(article.likes ?? 0) > 0 && (
+                <span className={styles.likes}>
+                  <Heart size={14} aria-hidden />
+                  {article.likes}
+                </span>
+              )}
+              {readHref && (
+                <Link href={readHref} className={styles.readButton}>
+                  Read <ArrowUpRight size={14} aria-hidden />
+                </Link>
+              )}
+            </div>
           </div>
         )}
       </div>

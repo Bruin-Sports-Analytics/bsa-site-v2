@@ -92,12 +92,49 @@
   align-items: center;
   font-size: 13px;
   color: var(--text-muted);
+  gap: 12px;
+}
+
+.footerLeft {
+  display: flex;
+  align-items: center;
+  min-width: 0;
 }
 
 .footerRight {
   display: flex;
   align-items: center;
   gap: 4px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.likes {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.readButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+  border: 1px solid rgba(139, 203, 255, .22);
+  border-radius: 999px;
+  background: rgba(139, 203, 255, .08);
+  color: var(--text-primary);
+  font-size: 13px;
+  font-weight: 700;
+  padding: 7px 12px;
+  transition: background .15s ease, border-color .15s ease, transform .15s ease;
+}
+
+.readButton:hover,
+.readButton:focus-visible {
+  background: rgba(139, 203, 255, .14);
+  border-color: rgba(139, 203, 255, .34);
+  transform: translateY(-1px);
 }
 
 .thumbnailSport {
