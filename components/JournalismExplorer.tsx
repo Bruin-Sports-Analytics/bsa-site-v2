@@ -31,9 +31,6 @@ export function JournalismExplorer() {
       });
   }, [query, sport, year]);
 
-  const featured = filtered[0];
-  const rest = filtered.slice(1);
-
   return (
     <div className={styles.explorer}>
       <div className={`${styles.controls} glass glass--strong glass--radius-lg`}>
@@ -63,15 +60,10 @@ export function JournalismExplorer() {
       {filtered.length === 0 ? (
         <p className={styles.empty}>No articles match those filters.</p>
       ) : (
-        <div className={styles.feed}>
-          {featured && <ArticleCard key={featured.title} article={featured} featured />}
-          {rest.length > 0 && (
-            <div className={styles.grid}>
-              {rest.map((article) => (
-                <ArticleCard key={article.title} article={article} />
-              ))}
-            </div>
-          )}
+        <div className={styles.grid}>
+          {filtered.map((article) => (
+            <ArticleCard key={article.title} article={article} />
+          ))}
         </div>
       )}
     </div>
