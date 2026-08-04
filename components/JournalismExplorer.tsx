@@ -20,7 +20,8 @@ export function JournalismExplorer() {
 
   const filtered = useMemo(() => {
     const needle = query.trim().toLowerCase();
-    return articles
+    return [...articles]
+      .sort((a, b) => Date.parse(b.date) - Date.parse(a.date))
       .filter((article) => sport === ALL || article.sport === sport)
       .filter((article) => year === ALL || String(article.year) === year)
       .filter((article) => {
@@ -29,6 +30,9 @@ export function JournalismExplorer() {
         return haystack.includes(needle);
       });
   }, [query, sport, year]);
+
+  const featured = filtered[0];
+  const rest = filtered.slice(1);
 
   return (
     <div className={styles.explorer}>
@@ -59,10 +63,15 @@ export function JournalismExplorer() {
       {filtered.length === 0 ? (
         <p className={styles.empty}>No articles match those filters.</p>
       ) : (
-        <div className={styles.list}>
-          {filtered.map((article) => (
-            <ArticleCard key={article.title} article={article} />
-          ))}
+        <div className={styles.feed}>
+          {featured && <ArticleCard key={featured.title} article={featured} featured />}
+          {rest.length > 0 && (
+            <div className={styles.grid}>
+              {rest.map((article) => (
+                <ArticleCard key={article.title} article={article} />
+              ))}
+            </div>
+          )}
         </div>
       )}
     </div>
