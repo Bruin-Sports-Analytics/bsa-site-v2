@@ -38,15 +38,17 @@ export function ArticleCard({ article, featured = false }: { article: Journalism
         <h3 className={`${styles.title}${featured ? ` ${styles.titleFeatured}` : ""}`}>{article.title}</h3>
         <p className={styles.authors}>{formatAuthors(article.authors)}</p>
         <hr className={styles.divider} />
-        <div className={styles.footer}>
-          <span>{article.views} views</span>
-          {article.likes > 0 && (
-            <span className={styles.footerRight}>
-              <Heart size={14} />
-              {article.likes}
-            </span>
-          )}
-        </div>
+        {(article.views != null || (article.likes ?? 0) > 0) && (
+          <div className={styles.footer}>
+            <span>{article.views != null ? `${article.views} views` : ""}</span>
+            {(article.likes ?? 0) > 0 && (
+              <span className={styles.footerRight}>
+                <Heart size={14} aria-hidden />
+                {article.likes}
+              </span>
+            )}
+          </div>
+        )}
       </div>
     </article>
   );

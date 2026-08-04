@@ -5,8 +5,8 @@ export type JournalismArticle = {
   year: number;
   sport: string;
   readTime: number;
-  views: number;
-  likes: number;
+  views?: number;
+  likes?: number;
 };
 
 export type DjResource = { label: string; href: string };
@@ -21,6 +21,22 @@ export const djResources: DjResource[] = [
 ];
 
 export const articles: JournalismArticle[] = [
+  {
+    title: "Why Anthony Davis and the Pelicans Failed",
+    authors: ["Chad Shimozaki"],
+    date: "Feb 9, 2019",
+    year: 2019,
+    sport: "Basketball",
+    readTime: 8
+  },
+  {
+    title: "Goalkeeper Passing: What's been done so far",
+    authors: ["Salil Akundi"],
+    date: "Jan 27, 2019",
+    year: 2019,
+    sport: "Football",
+    readTime: 8
+  },
   {
     title: "Beyond the Standings: Using Data to Predict the NBA Playoff Race",
     authors: ["Aarnav Dharia", "Aditya Malhotra", "Samir Joshi"],
