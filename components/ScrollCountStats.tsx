@@ -5,7 +5,7 @@ import type { CSSProperties } from "react";
 import pageStyles from "@/app/page.module.css";
 import styles from "./ScrollCountStats.module.css";
 
-const DURATION = 1400; // ms
+const DURATION_MS = 1200;
 
 type Stat = { label: string; value: number };
 
@@ -19,41 +19,43 @@ export function ScrollCountStats({ stats }: { stats: Stat[] }) {
     const el = sectionRef.current;
     if (!el) return;
 
+    let frame = 0;
     let hasRun = false;
 
     const run = () => {
       if (hasRun) return;
       hasRun = true;
       observer.disconnect();
-
       setProgress(0);
-
-      // Block scroll during count-up
-      const prevent = (e: Event) => e.preventDefault();
-      window.addEventListener("wheel", prevent, { passive: false });
-      window.addEventListener("touchmove", prevent, { passive: false });
 
       const start = performance.now();
       const tick = (now: number) => {
-        const t = Math.min((now - start) / DURATION, 1);
-        const eased = 1 - Math.pow(1 - t, 3); // ease-out cubic
+        const t = Math.min((now - start) / DURATION_MS, 1);
+        const eased = 1 - Math.pow(1 - t, 3);
         setProgress(eased);
+
         if (t < 1) {
-          requestAnimationFrame(tick);
-        } else {
-          window.removeEventListener("wheel", prevent);
-          window.removeEventListener("touchmove", prevent);
+          frame = window.requestAnimationFrame(tick);
         }
       };
-      requestAnimationFrame(tick);
+
+      frame = window.requestAnimationFrame(tick);
     };
 
+    setProgress(0);
     const observer = new IntersectionObserver(
-      (entries) => { if (entries[0].isIntersecting) run(); },
-      { threshold: 0.6 }
+      ([entry]) => {
+        if (entry.isIntersecting) run();
+      },
+      { threshold: 0.45 }
     );
+
     observer.observe(el);
-    return () => observer.disconnect();
+
+    return () => {
+      observer.disconnect();
+      if (frame) window.cancelAnimationFrame(frame);
+    };
   }, []);
 
   return (
