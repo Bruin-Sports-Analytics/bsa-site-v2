@@ -78,12 +78,12 @@ export default function FootballPage() {
         </div>
       </section>
       <section className="section tight">
-        <div className="container">
-          <span className="eyebrow">Team</span>
+        <div className={`container ${styles.teamSection}`}>
+          <h2 className={`section-title ${styles.teamTitle}`}>Team</h2>
           <div className="board-grid" style={{ marginTop: "18px" }}>
             {[...chairs, ...analysts].map((m) => <MemberCard member={m} key={m.slug} />)}
           </div>
-          <div className="button-row" style={{ marginTop: "28px" }}>
+          <div className={`button-row ${styles.teamButtonRow}`}>
             <Link className="btn btn-primary" href="/partner">Bring us a football problem</Link>
           </div>
         </div>
