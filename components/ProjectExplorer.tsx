@@ -11,9 +11,9 @@ const statuses: Array<ProjectStatus | "All"> = ["All", "Active", "Ongoing", "Com
 
 export function ProjectExplorer({ compact = false }: { compact?: boolean }) {
   const [query, setQuery] = useState("");
-  const [sport, setSport] = useState("All");
-  const [type, setType] = useState("All");
-  const [status, setStatus] = useState("All");
+  const [sport, setSport] = useState("");
+  const [type, setType] = useState("");
+  const [status, setStatus] = useState("");
   const [showArchived, setShowArchived] = useState(true);
   const [sort, setSort] = useState("newest");
 
@@ -21,9 +21,9 @@ export function ProjectExplorer({ compact = false }: { compact?: boolean }) {
     return projects
       .filter((project) => project.visibility !== "hidden")
       .filter((project) => showArchived || project.status !== "Archived")
-      .filter((project) => sport === "All" || project.sport === sport)
-      .filter((project) => type === "All" || project.projectType === type)
-      .filter((project) => status === "All" || project.status === status)
+      .filter((project) => !sport || project.sport === sport)
+      .filter((project) => !type || project.projectType === type)
+      .filter((project) => !status || project.status === status)
       .filter((project) => {
         const haystack = [project.title, project.summary, project.techStack.join(" "), project.members.join(" ")].join(" ").toLowerCase();
         return haystack.includes(query.toLowerCase());
@@ -48,18 +48,21 @@ export function ProjectExplorer({ compact = false }: { compact?: boolean }) {
           <input value={query} onChange={(event) => setQuery(event.target.value)} placeholder="Search projects, tech, members" />
         </label>
         <select value={sport} onChange={(event) => setSport(event.target.value)} aria-label="Filter by sport">
-          <option>All</option>
+          <option value="">Sport</option>
           {sports.map((item) => (
             <option value={item.slug} key={item.slug}>{item.name}</option>
           ))}
         </select>
         <select value={type} onChange={(event) => setType(event.target.value)} aria-label="Filter by work type">
-          {types.map((item) => <option key={item}>{item}</option>)}
+          <option value="">Type</option>
+          {types.slice(1).map((item) => <option key={item}>{item}</option>)}
         </select>
         <select value={status} onChange={(event) => setStatus(event.target.value)} aria-label="Filter by project status">
-          {statuses.map((item) => <option key={item}>{item}</option>)}
+          <option value="">Status</option>
+          {statuses.slice(1).map((item) => <option key={item}>{item}</option>)}
         </select>
         <select value={sort} onChange={(event) => setSort(event.target.value)} aria-label="Sort projects">
+          <option value="" disabled hidden>Sort</option>
           <option value="newest">Newest</option>
           <option value="featured">Featured</option>
         </select>
