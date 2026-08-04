@@ -12,14 +12,15 @@
   place-items: center;
   padding: 20px 22px;
   text-align: center;
-  background: transparent;
+  background: var(--logo-wall-tile-bg, transparent);
   border-radius: var(--radius-md);
-  transition: background-color .18s ease, box-shadow .18s ease;
+  transition:
+    background-color .18s ease,
+    box-shadow .18s ease;
 }
 
 .tile:hover {
-  background: #fff;
-  box-shadow: 0 8px 28px rgba(0, 5, 15, .28);
+  box-shadow: var(--logo-wall-hover-shadow, 0 8px 28px rgba(0, 5, 15, .28));
 }
 
 .imgWrap {
@@ -32,14 +33,16 @@
 .img {
   object-fit: contain;
   object-position: center;
-  filter: grayscale(1) brightness(0) invert(1);
-  opacity: 0.72;
-  transition: filter .18s ease, opacity .18s ease;
+  filter: var(--logo-wall-img-filter, grayscale(1) brightness(0) invert(1));
+  opacity: var(--logo-wall-img-opacity, .72);
+  transition:
+    filter .18s ease,
+    opacity .18s ease;
 }
 
 .tile:hover .img {
-  filter: none;
-  opacity: 1;
+  filter: var(--logo-wall-hover-img-filter, none);
+  opacity: var(--logo-wall-hover-img-opacity, 1);
 }
 
 .text {
@@ -47,12 +50,12 @@
   font-size: 18px;
   font-weight: 800;
   line-height: 1.15;
-  color: rgba(247, 251, 255, .72);
+  color: var(--logo-wall-text-color, rgba(247, 251, 255, .72));
   transition: color .18s ease;
 }
 
 .tile:hover .text {
-  color: #102a49;
+  color: var(--logo-hover-text-color, #102a49);
 }
 
 @media (max-width: 1024px) {

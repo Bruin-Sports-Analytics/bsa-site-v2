@@ -110,6 +110,10 @@
   --logo-wall-tile-bg: rgba(7, 24, 43, .78);
   --logo-wall-text-color: var(--text-primary);
   --logo-wall-hover-shadow: 0 10px 24px rgba(0, 5, 15, .28);
+  --logo-wall-img-filter: grayscale(1) brightness(0) invert(1);
+  --logo-wall-img-opacity: .72;
+  --logo-wall-hover-img-filter: none;
+  --logo-wall-hover-img-opacity: 1;
   --member-photo-bg:
     radial-gradient(circle at 70% 20%, rgba(255, 209, 0, .18), transparent 34%),
     linear-gradient(145deg, #1a3b5b, #08172a);
@@ -205,6 +209,10 @@ html[data-theme="light"] {
   --logo-wall-tile-bg: rgba(255, 255, 255, .86);
   --logo-wall-text-color: #102a49;
   --logo-wall-hover-shadow: 0 10px 24px rgba(26, 62, 96, .16);
+  --logo-wall-img-filter: grayscale(1) brightness(0);
+  --logo-wall-img-opacity: .76;
+  --logo-wall-hover-img-filter: none;
+  --logo-wall-hover-img-opacity: 1;
   --member-photo-bg:
     radial-gradient(circle at 70% 20%, rgba(255, 209, 0, .18), transparent 34%),
     linear-gradient(145deg, #d7e7f4, #f8fbff);
