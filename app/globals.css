@@ -278,6 +278,20 @@ button {
   overflow: clip;
 }
 
+.route-transition {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  min-width: 0;
+  opacity: 1;
+  transition: opacity 160ms ease;
+}
+
+.route-transition--exiting {
+  opacity: 0;
+  pointer-events: none;
+}
+
 main > section {
   position: relative;
   isolation: isolate;
@@ -882,6 +896,10 @@ html.reduce-transparency .btn-secondary {
   .glass::after {
     animation: none !important;
     transition-duration: .01ms !important;
+  }
+
+  .route-transition {
+    transition: none !important;
   }
 
   .glass--interactive:hover,

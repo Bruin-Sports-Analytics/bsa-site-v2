@@ -4,6 +4,7 @@ import "./globals.css";
 import { Footer } from "@/components/Footer";
 import { Navigation } from "@/components/Navigation";
 import { ColorPops } from "@/components/ColorPops";
+import { RouteTransitions } from "@/components/RouteTransitions";
 import { ScrollReveal } from "@/components/ScrollReveal";
 import { SocialSidebar } from "@/components/SocialSidebar";
 
@@ -74,7 +75,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <ColorPops />
           <ScrollReveal />
           <SocialSidebar />
-          {children}
+          <RouteTransitions>{children}</RouteTransitions>
           <Footer />
         </div>
       </body>
