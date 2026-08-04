@@ -31,7 +31,7 @@ export default function Home() {
             <p className={styles.flowText}>UCLA&apos;s student-run sports analytics organization. Research, tools, and analysis across five sports.</p>
             <div className={`${styles.heroCta} ${styles.flowCta}`}>
               <div className="button-row">
-                <Link className="btn btn-primary" href="/work" data-analytics="hero_work_click">Explore Our Work <ArrowRight size={18} aria-hidden /></Link>
+                <Link className="btn btn-primary" href="/teams" data-analytics="hero_work_click">Explore Our Work <ArrowRight size={18} aria-hidden /></Link>
                 <Link className="btn btn-secondary" href="/join" data-analytics="hero_join_click">Join the Team</Link>
               </div>
               <Link className={`text-link ${styles.partnerLink}`} href="/partner">Partner With Us →</Link>
@@ -64,7 +64,7 @@ export default function Home() {
           <p className="section-lede">Each team focuses on one sport, from baseball to tennis.</p>
           <div className={styles.sportPills}>
             {sports.map((sport) => (
-              <Link key={sport.slug} href={`/work/${sport.slug}`} className={styles.sportPill}>{sport.name}</Link>
+              <Link key={sport.slug} href={`/teams/${sport.slug}`} className={styles.sportPill}>{sport.name}</Link>
             ))}
           </div>
         </div>

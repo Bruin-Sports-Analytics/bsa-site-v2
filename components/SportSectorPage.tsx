@@ -28,7 +28,7 @@ export default function SportSectorPage({ sport: sportSlug, sector }: Props) {
           <p>{sport.description}</p>
           <div className="button-row">
             <Link className="btn btn-primary" href="/partner">Partner with this team</Link>
-            <Link className="btn btn-secondary" href={`/work/${sportSlug}`}>All {sport.name} work</Link>
+            <Link className="btn btn-secondary" href={`/teams/${sportSlug}`}>All {sport.name} work</Link>
           </div>
         </div>
       </section>

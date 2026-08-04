@@ -68,7 +68,7 @@ export function Navigation() {
                             Browse all projects
                             <small>Search, filter, and sort the full index</small>
                           </Link>
-                          <Link href="/work">
+                          <Link href="/teams">
                             Explore by sport
                             <small>Baseball, volleyball, basketball, football, and tennis</small>
                           </Link>

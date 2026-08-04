@@ -43,7 +43,7 @@ export function TeamsCarousel({ activeIndex, setActiveIndex }: Props) {
     >
       <div className={styles.teamsCarouselBody}>
         <Link
-          href={`/work/${sport.slug}`}
+          href={`/teams/${sport.slug}`}
           className={styles.teamsCarouselCard}
           style={{ background: sport.accent }}
           aria-label={`${sport.name} team page`}
@@ -52,7 +52,7 @@ export function TeamsCarousel({ activeIndex, setActiveIndex }: Props) {
         </Link>
         <div className={styles.teamsCarouselInfo}>
           <div className={styles.teamsCarouselHeader}>
-            <Link href={`/work/${sport.slug}`} className={styles.teamsCarouselName}>
+            <Link href={`/teams/${sport.slug}`} className={styles.teamsCarouselName}>
               {sport.name}
             </Link>
             <span className={styles.teamsCarouselCount}>{activeIndex + 1}/{total}</span>
@@ -60,10 +60,10 @@ export function TeamsCarousel({ activeIndex, setActiveIndex }: Props) {
           <p className={styles.teamsCarouselDesc}>{sport.description}</p>
           <div className={styles.teamsSubLinks}>
             {(sport.subpages ?? ["consulting", "research"]).includes("consulting") && (
-              <Link href={`/work/${sport.slug}/consulting`}>Consulting</Link>
+              <Link href={`/teams/${sport.slug}/consulting`}>Consulting</Link>
             )}
             {(sport.subpages ?? ["consulting", "research"]).includes("research") && (
-              <Link href={`/work/${sport.slug}/research`}>Research</Link>
+              <Link href={`/teams/${sport.slug}/research`}>Research</Link>
             )}
             {sport.slug === "tennis" && (
               <a

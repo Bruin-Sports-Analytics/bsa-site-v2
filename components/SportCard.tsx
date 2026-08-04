@@ -8,7 +8,7 @@ export function SportCard({ sport }: { sport: Sport }) {
   const Icon = sport.icon;
 
   return (
-    <GlassSurface as={Link} href={`/work/${sport.slug}`} variant="regular" tint="blue" interactive radius="lg" className={styles.card} style={{ "--accent": sport.accent } as React.CSSProperties}>
+    <GlassSurface as={Link} href={`/teams/${sport.slug}`} variant="regular" tint="blue" interactive radius="lg" className={styles.card} style={{ "--accent": sport.accent } as React.CSSProperties}>
       <div className={styles.top}>
         <Icon size={34} aria-hidden />
         {sport.subdivisions ? <span className={styles.marker}>3 programs</span> : null}

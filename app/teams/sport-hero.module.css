@@ -1,28 +1,28 @@
 .heroRow {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 28px;
-  text-align: center;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 40px;
+  text-align: left;
 }
 
 .heroText {
   min-width: 0;
-  max-width: 880px;
+  flex: 1 1 0;
 }
 
 .chairGrid {
+  flex-shrink: 0;
   display: flex;
   flex-wrap: wrap;
   gap: 18px;
-  width: min(100%, 960px);
-  justify-content: center;
-  margin-top: 4px;
+  width: 468px;
+  margin-top: 14px;
 }
 
 .chairGrid > * {
-  flex: 0 0 clamp(240px, calc(50% - 9px), 340px);
-  max-width: clamp(240px, calc(50% - 9px), 340px);
+  flex: 0 0 calc(50% - 9px);
+  max-width: calc(50% - 9px);
 }
 
 .teamSection {
@@ -41,15 +41,17 @@
 
 @media (max-width: 960px) {
   .heroRow {
+    flex-direction: column;
     gap: 28px;
   }
 
   .chairGrid {
     width: 100%;
+    margin-top: 0;
   }
 
   .chairGrid > * {
-    flex: 0 0 min(100%, 340px);
-    max-width: min(100%, 340px);
+    flex: 0 0 calc(50% - 9px);
+    max-width: calc(50% - 9px);
   }
 }

@@ -65,7 +65,7 @@ export default function TennisPage() {
                 <Link
                   className="card"
                   style={{ padding: 22 }}
-                  href={`/work/tennis/${name.toLowerCase().replace(/&/g, "and").replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "")}`}
+                  href={`/teams/tennis/${name.toLowerCase().replace(/&/g, "and").replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "")}`}
                   key={name}
                 >
                   <h3 style={{ margin: 0, fontFamily: "var(--font-sora)" }}>{name}</h3>

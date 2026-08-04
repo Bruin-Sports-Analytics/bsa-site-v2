@@ -100,7 +100,7 @@ export type Event = {
 
 export const navItems = [
   { label: "About", href: "/about" },
-  { label: "Teams", href: "/work" },
+  { label: "Teams", href: "/teams" },
   { label: "Journalism", href: "/journalism" },
   { label: "Projects", href: "/projects" },
   { label: "People", href: "/people/board" },
