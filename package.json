@@ -7,6 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
+    "generate-project-thumbnails": "node scripts/generate-project-thumbnails.mjs",
     "upload-paper": "node --env-file=.env.local scripts/upload-paper.mjs",
     "upload-dj-resources": "node --env-file=.env.local scripts/upload-dj-resources.mjs",
     "test": "node --test \"scripts/**/*.test.mjs\""
@@ -14,6 +15,7 @@
   "dependencies": {
     "lucide-react": "^0.468.0",
     "next": "^14.2.5",
+    "playwright": "^1.62.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },

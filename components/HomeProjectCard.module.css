@@ -1,15 +1,22 @@
 .card {
   display: flex;
   flex-direction: column;
-  gap: 7px;
   height: 100%;
-  padding: 18px;
+  overflow: hidden;
   background-color: var(--glass-regular-fill);
   backdrop-filter: blur(var(--glass-regular-blur)) saturate(var(--glass-saturation));
   -webkit-backdrop-filter: blur(var(--glass-regular-blur)) saturate(var(--glass-saturation));
   border: 1px solid rgba(139, 203, 255, .12);
   border-radius: 12px;
   box-shadow: var(--glass-shadow-sm);
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  height: 100%;
+  padding: 18px;
 }
 
 .title {

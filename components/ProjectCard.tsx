@@ -6,6 +6,7 @@ import { ArrowUpRight, LockKeyhole } from "lucide-react";
 import { GlassSurface } from "@/components/ui/GlassSurface";
 import type { Project } from "@/data/site";
 import { sportName } from "@/lib/utils";
+import { ProjectVisual } from "@/components/ProjectVisual";
 import styles from "./ProjectCard.module.css";
 
 type Props = {
@@ -70,6 +71,7 @@ export function ProjectCard({ project, active, onActivate, onDeactivate }: Props
       className={`${styles.card} ${expanded ? styles.expanded : ""}`}
       {...handlers}
     >
+      <ProjectVisual project={project} />
       <div className={styles.body}>
         <h3 className={styles.title}>{project.title}</h3>
         <span className={styles.date}>{new Date(project.lastUpdated).toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" })}</span>
