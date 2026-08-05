@@ -23,6 +23,42 @@ export const djResources: DjResource[] = [
 
 export const articles: JournalismArticle[] = [
   {
+    title: "Early Overachievers: The 2018 Oakland Athletics",
+    authors: ["Alex Veroulis"],
+    date: "May 30, 2018",
+    year: 2018,
+    sport: "Baseball",
+    readTime: 10,
+    paperUrl: "https://hfpruaivskrkweobtvcf.supabase.co/storage/v1/object/public/dj_archive/2018_As.pdf"
+  },
+  {
+    title: "BSA Exclusive: Our Journey Through Research",
+    authors: ["Konner Macias", "Ben Messinger", "Nikhil Sharma", "Ronaq Virdi"],
+    date: "Jun 3, 2018",
+    year: 2018,
+    sport: "Basketball",
+    readTime: 13,
+    paperUrl: "https://hfpruaivskrkweobtvcf.supabase.co/storage/v1/object/public/dj_archive/journey_thru_research.pdf"
+  },
+  {
+    title: "The NBA's 'Perfect Game' by One of Basketball's Rising Superstars",
+    authors: ["Chad Shimozaki"],
+    date: "Nov 24, 2018",
+    year: 2018,
+    sport: "Basketball",
+    readTime: 5,
+    paperUrl: "https://hfpruaivskrkweobtvcf.supabase.co/storage/v1/object/public/dj_archive/nba_perfect_game.pdf"
+  },
+  {
+    title: "Do Summary Statistics Really Mean Anything in Tennis?",
+    authors: ["Gautham Pasupathy"],
+    date: "Dec 1, 2018",
+    year: 2018,
+    sport: "Tennis",
+    readTime: 5,
+    paperUrl: "https://hfpruaivskrkweobtvcf.supabase.co/storage/v1/object/public/dj_archive/summary_stats.pdf"
+  },
+  {
     title: "Can the Toronto Maple Leafs Pay Up?",
     authors: ["Joe Dunham"],
     date: "Nov 28, 2018",
