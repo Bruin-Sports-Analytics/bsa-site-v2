@@ -1,5 +1,4 @@
 import { Github, Instagram, Linkedin, Mail } from "lucide-react";
-import Image from "next/image";
 import { socialLinks } from "@/data/site";
 import styles from "./Footer.module.css";
 
@@ -27,7 +26,7 @@ export function Footer() {
                 aria-label={link.label}
               >
                 {link.label === "Slack" ? (
-                  <Image src="/assets/slack-logo.png" alt="" width={32} height={32} className={styles.slackIcon} aria-hidden />
+                  <span className={styles.slackIcon} aria-hidden />
                 ) : (
                   <Icon size={18} aria-hidden />
                 )}
