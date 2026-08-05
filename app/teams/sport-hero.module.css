@@ -25,6 +25,15 @@
   max-width: calc(50% - 9px);
 }
 
+.chairGridCentered {
+  justify-content: center;
+}
+
+.chairGridCentered > * {
+  flex-basis: min(100%, 234px);
+  max-width: 234px;
+}
+
 .teamSection {
   text-align: center;
 }

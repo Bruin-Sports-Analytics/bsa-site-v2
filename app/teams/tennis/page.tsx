@@ -33,7 +33,7 @@ export default function TennisPage() {
             </div>
           </div>
           {chairs.length > 0 && (
-            <div className={styles.chairGrid}>
+            <div className={`${styles.chairGrid} ${styles.chairGridCentered}`}>
               {chairs.map((m) => <MemberCard member={m} key={m.slug} />)}
             </div>
           )}

@@ -1,18 +1,14 @@
 import {
   BarChart3,
-  ChartNoAxesCombined,
-  CircleDot,
   Dumbbell,
-  Goal,
   LineChart,
   Network,
-  Radar,
   Search,
-  ShieldCheck,
   Trophy,
   Users
 } from "lucide-react";
-import type { LucideIcon } from "lucide-react";
+import type { ComponentType, SVGProps } from "react";
+import { BaseballIcon, BasketballIcon, FootballIcon, TennisIcon, VolleyballIcon } from "@/components/SportIcons";
 
 export type SportSlug = "baseball" | "volleyball" | "basketball" | "football" | "tennis" | "other";
 export type WorkType = "Consulting" | "Research" | "Journalism" | "Dashboard" | "Tool";
@@ -23,7 +19,7 @@ export type RecruitmentStatus = "UPCOMING" | "OPEN" | "CLOSED";
 export type Sport = {
   name: string;
   slug: SportSlug;
-  icon: LucideIcon;
+  icon: ComponentType<SVGProps<SVGSVGElement> & { size?: number | string; color?: string }>;
   description: string;
   focusAreas: string[];
   activeProjects: number;
@@ -127,7 +123,7 @@ export const sports: Sport[] = [
   {
     name: "Baseball",
     slug: "baseball",
-    icon: CircleDot,
+    icon: BaseballIcon,
     description: "Pitch design, batted-ball modeling, scouting tools, and game-planning support.",
     focusAreas: ["Pitch shape clustering", "Defensive positioning", "Opponent scouting"],
     activeProjects: 4,
@@ -139,7 +135,7 @@ export const sports: Sport[] = [
   {
     name: "Volleyball",
     slug: "volleyball",
-    icon: ChartNoAxesCombined,
+    icon: VolleyballIcon,
     description: "Consulting for serve receive, lineup efficiency, rally outcomes, and opponent tendency reports through a 2-year partnership with UCLA men's and women's volleyball.",
     focusAreas: ["Rotation efficiency", "Serve target maps", "Rally transition value"],
     activeProjects: 3,
@@ -152,7 +148,7 @@ export const sports: Sport[] = [
   {
     name: "Basketball",
     slug: "basketball",
-    icon: Goal,
+    icon: BasketballIcon,
     description: "Shot quality, lineup combinations, spatial tracking, and possession-level storytelling.",
     focusAreas: ["Shot charts", "Lineup interaction effects", "Player role similarity"],
     activeProjects: 5,
@@ -164,7 +160,7 @@ export const sports: Sport[] = [
   {
     name: "Football",
     slug: "football",
-    icon: ShieldCheck,
+    icon: FootballIcon,
     description: "Drive outcomes, coverage tendencies, win probability, and roster evaluation research.",
     focusAreas: ["Fourth-down decisions", "Explosive play prevention", "Recruiting evaluation"],
     activeProjects: 2,
@@ -177,7 +173,7 @@ export const sports: Sport[] = [
   {
     name: "Tennis",
     slug: "tennis",
-    icon: Radar,
+    icon: TennisIcon,
     description: "Match strategy, player development, and scouting work across three configurable programs.",
     focusAreas: ["Point patterns", "Serve plus-one value", "Opponent scouting"],
     activeProjects: 4,

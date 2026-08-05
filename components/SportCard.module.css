@@ -5,7 +5,6 @@
   grid-template-areas:
     "icon title"
     "icon copy"
-    "icon meta"
     "icon action";
   align-content: center;
   column-gap: 18px;
@@ -54,18 +53,6 @@
   color: var(--text-secondary);
   font-size: 14px;
   line-height: 1.45;
-}
-
-.metric {
-  grid-area: meta;
-  color: var(--text-muted);
-  font-family: var(--font-mono), monospace;
-  font-size: 12px;
-  text-transform: uppercase;
-}
-
-.metric b {
-  color: var(--ucla-gold);
 }
 
 .action {

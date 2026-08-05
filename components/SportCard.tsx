@@ -15,9 +15,6 @@ export function SportCard({ sport }: { sport: Sport }) {
       </div>
       <h3>{sport.name}</h3>
       <p>{sport.description}</p>
-      <div className={styles.metric}>
-        <b>{sport.activeProjects}</b> active / <b>{sport.archivedProjects}</b> archived
-      </div>
       <div className={styles.action}>Explore {sport.name} <ArrowUpRight size={16} aria-hidden /></div>
     </GlassSurface>
   );
