@@ -23,6 +23,24 @@ export const djResources: DjResource[] = [
 
 export const articles: JournalismArticle[] = [
   {
+    title: "NFL Draft 2018: Bruin Prospects",
+    authors: ["Alex Veroulis"],
+    date: "Apr 20, 2018",
+    year: 2018,
+    sport: "Football",
+    readTime: 22,
+    paperUrl: "https://hfpruaivskrkweobtvcf.supabase.co/storage/v1/object/public/dj_archive/nfl_bruins.pdf"
+  },
+  {
+    title: "Why Has Alexander Zverev Failed to Deliver at Grand Slams?",
+    authors: ["Kevin Hahn", "Kathir Ilango"],
+    date: "May 9, 2018",
+    year: 2018,
+    sport: "Tennis",
+    readTime: 8,
+    paperUrl: "https://hfpruaivskrkweobtvcf.supabase.co/storage/v1/object/public/dj_archive/alex_zverev.pdf"
+  },
+  {
     title: "Early Overachievers: The 2018 Oakland Athletics",
     authors: ["Alex Veroulis"],
     date: "May 30, 2018",
