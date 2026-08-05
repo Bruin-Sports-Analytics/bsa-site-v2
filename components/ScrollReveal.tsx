@@ -5,17 +5,65 @@ import { usePathname } from "next/navigation";
 
 const revealSelector = [
   ".page-hero",
+  ".page-hero > .container > *",
   ".section",
+  ".section > .container > *",
   ".sport-card-grid > *",
   ".grid > *",
+  ".board-grid > *",
   ".card",
+  "article",
+  "main ol > li",
+  "main ul > li",
   "[data-scroll-reveal]",
   "[class*='compactGrid'] > *",
+  "[class*='column'] > *",
+  "[class*='controls']",
+  "[class*='explorer'] > *",
+  "[class*='grid'] > *",
   "[class*='logoWall'] > *",
+  "[class*='wall'] > *",
   "[class*='finalCta'] > *",
+  "[class*='sportPill']",
   "[class*='rail'] > *",
   "[class*='process'] > *"
 ].join(",");
+
+function isGridRevealParent(element: Element) {
+  return element.matches(".grid, .board-grid, .sport-card-grid, [class*='grid'], [class*='wall'], [class*='compactGrid']");
+}
+
+function centerOutDelay(element: HTMLElement, siblings: HTMLElement[]) {
+  const rows: HTMLElement[][] = [];
+
+  [...siblings]
+    .sort((a, b) => {
+      const aRect = a.getBoundingClientRect();
+      const bRect = b.getBoundingClientRect();
+      return aRect.top === bRect.top ? aRect.left - bRect.left : aRect.top - bRect.top;
+    })
+    .forEach((sibling) => {
+      const rect = sibling.getBoundingClientRect();
+      const row = rows.find((items) => Math.abs(items[0].getBoundingClientRect().top - rect.top) < 8);
+      if (row) {
+        row.push(sibling);
+      } else {
+        rows.push([sibling]);
+      }
+    });
+
+  const rowIndex = rows.findIndex((row) => row.includes(element));
+  const row = rows[rowIndex];
+  if (!row) return 0;
+
+  row.sort((a, b) => a.getBoundingClientRect().left - b.getBoundingClientRect().left);
+  const index = row.indexOf(element);
+  const center = (row.length - 1) / 2;
+  const distances = Array.from(new Set(row.map((_, itemIndex) => Math.abs(itemIndex - center)))).sort((a, b) => a - b);
+  const distanceRank = distances.indexOf(Math.abs(index - center));
+
+  return Math.min(rowIndex * 45 + distanceRank * 70, 420);
+}
 
 export function ScrollReveal() {
   const pathname = usePathname();
@@ -40,9 +88,10 @@ export function ScrollReveal() {
       const parent = element.parentElement;
       if (!parent) return;
 
-      const siblings = Array.from(parent.children).filter((child) => child.matches(revealSelector));
+      const siblings = Array.from(parent.children).filter((child): child is HTMLElement => child instanceof HTMLElement && child.matches(revealSelector));
       const index = Math.max(0, siblings.indexOf(element));
-      element.style.setProperty("--reveal-delay", `${Math.min(index, 5) * 70}ms`);
+      const delay = isGridRevealParent(parent) ? centerOutDelay(element, siblings) : Math.min(index, 6) * 60;
+      element.style.setProperty("--reveal-delay", `${delay}ms`);
     });
 
     const observer = new IntersectionObserver(
