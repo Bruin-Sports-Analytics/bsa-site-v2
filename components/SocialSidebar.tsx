@@ -1,4 +1,5 @@
-import { Instagram, Linkedin, Mail, MessageSquare } from "lucide-react";
+import { Instagram, Linkedin, Mail } from "lucide-react";
+import Image from "next/image";
 import { socialLinks } from "@/data/site";
 import styles from "./SocialSidebar.module.css";
 
@@ -6,7 +7,6 @@ const iconMap = {
   Email: Mail,
   Instagram,
   LinkedIn: Linkedin,
-  Slack: MessageSquare,
 };
 
 export function SocialSidebar() {
@@ -16,7 +16,7 @@ export function SocialSidebar() {
       <div className={styles.icons}>
         {socialLinks.map((link) => {
           const Icon = iconMap[link.label as keyof typeof iconMap];
-          if (!Icon) return null;
+          if (!Icon && link.label !== "Slack") return null;
           return (
             <a
               key={link.label}
@@ -26,7 +26,11 @@ export function SocialSidebar() {
               aria-label={link.label}
               className={styles.icon}
             >
-              <Icon size={18} aria-hidden />
+              {link.label === "Slack" ? (
+                <Image src="/assets/slack-logo.png" alt="" width={32} height={32} className={styles.slackIcon} aria-hidden />
+              ) : (
+                Icon ? <Icon size={18} aria-hidden /> : null
+              )}
             </a>
           );
         })}

@@ -1,4 +1,5 @@
-import { Github, Instagram, Linkedin, Mail, MessageSquare } from "lucide-react";
+import { Github, Instagram, Linkedin, Mail } from "lucide-react";
+import Image from "next/image";
 import { socialLinks } from "@/data/site";
 import styles from "./Footer.module.css";
 
@@ -6,7 +7,6 @@ const iconMap = {
   Email: Mail,
   Instagram,
   LinkedIn: Linkedin,
-  Slack: MessageSquare
 };
 
 export function Footer() {
@@ -26,7 +26,11 @@ export function Footer() {
                 key={link.label}
                 aria-label={link.label}
               >
-                <Icon size={18} aria-hidden />
+                {link.label === "Slack" ? (
+                  <Image src="/assets/slack-logo.png" alt="" width={32} height={32} className={styles.slackIcon} aria-hidden />
+                ) : (
+                  <Icon size={18} aria-hidden />
+                )}
               </a>
             );
           })}

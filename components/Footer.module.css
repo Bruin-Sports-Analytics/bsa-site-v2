@@ -28,6 +28,20 @@
   color: var(--text-primary);
 }
 
+.slackIcon {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+  filter: var(--social-raster-icon-filter, invert(75%) sepia(13%) saturate(442%) hue-rotate(171deg) brightness(88%) contrast(88%));
+  opacity: .9;
+  transition: filter .2s ease, opacity .2s ease;
+}
+
+.socials a:hover .slackIcon {
+  filter: var(--social-raster-icon-hover-filter, invert(99%) sepia(61%) saturate(326%) hue-rotate(177deg) brightness(104%) contrast(104%));
+  opacity: 1;
+}
+
 .copyright {
   margin: 0;
   justify-self: center;
