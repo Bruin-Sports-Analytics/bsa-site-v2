@@ -9,7 +9,9 @@ const SPORT_TONES: Record<string, { top: string; bottom: string }> = {
   Basketball: { top: "#4AA8FF", bottom: "#163a5f" },
   Football: { top: "#FFB81C", bottom: "#6b4400" },
   Baseball: { top: "#40D39C", bottom: "#0f4c3a" },
-  Gymnastics: { top: "#FFD100", bottom: "#8d6100" }
+  Gymnastics: { top: "#FFD100", bottom: "#8d6100" },
+  Hockey: { top: "#8BCBFF", bottom: "#164d68" },
+  Soccer: { top: "#40D39C", bottom: "#315c21" }
 };
 
 function getSportTone(sport: string) {

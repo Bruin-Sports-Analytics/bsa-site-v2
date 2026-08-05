@@ -23,6 +23,78 @@ export const djResources: DjResource[] = [
 
 export const articles: JournalismArticle[] = [
   {
+    title: "Can the Toronto Maple Leafs Pay Up?",
+    authors: ["Joe Dunham"],
+    date: "Nov 28, 2018",
+    year: 2018,
+    sport: "Hockey",
+    readTime: 9,
+    paperUrl: "https://hfpruaivskrkweobtvcf.supabase.co/storage/v1/object/public/dj_archive/maple_leafs.pdf"
+  },
+  {
+    title: "2018 Ballon d'Or: A Look at the Contenders and their Numbers",
+    authors: ["Vedant Sahu"],
+    date: "Nov 29, 2018",
+    year: 2018,
+    sport: "Soccer",
+    readTime: 15,
+    paperUrl: "https://hfpruaivskrkweobtvcf.supabase.co/storage/v1/object/public/dj_archive/ballon_dor.pdf"
+  },
+  {
+    title: "Bust to Beast: The Jared Goff Story",
+    authors: ["Anirudh Mani"],
+    date: "Nov 29, 2018",
+    year: 2018,
+    sport: "Football",
+    readTime: 10,
+    paperUrl: "https://hfpruaivskrkweobtvcf.supabase.co/storage/v1/object/public/dj_archive/jared_goff.pdf"
+  },
+  {
+    title: "Defense in the Modern NFL (or Lack Thereof)",
+    authors: ["Arman Abrishamchian"],
+    date: "Dec 4, 2018",
+    year: 2018,
+    sport: "Football",
+    readTime: 5,
+    paperUrl: "https://hfpruaivskrkweobtvcf.supabase.co/storage/v1/object/public/dj_archive/defense_modern_nfl.pdf"
+  },
+  {
+    title: "Can Summer Ball Indicate Professional Success?",
+    authors: ["Haley Rao"],
+    date: "Dec 4, 2018",
+    year: 2018,
+    sport: "Baseball",
+    readTime: 4,
+    paperUrl: "https://hfpruaivskrkweobtvcf.supabase.co/storage/v1/object/public/dj_archive/summer_ball.pdf"
+  },
+  {
+    title: "Keys to Success for the Young Lakers Core",
+    authors: ["Justin Yee"],
+    date: "Dec 3, 2018",
+    year: 2018,
+    sport: "Basketball",
+    readTime: 6,
+    paperUrl: "https://hfpruaivskrkweobtvcf.supabase.co/storage/v1/object/public/dj_archive/lakers_young_core.pdf"
+  },
+  {
+    title: "Relievers in Today's MLB",
+    authors: ["Alex Veroulis"],
+    date: "Dec 5, 2018",
+    year: 2018,
+    sport: "Baseball",
+    readTime: 6,
+    paperUrl: "https://hfpruaivskrkweobtvcf.supabase.co/storage/v1/object/public/dj_archive/relievers.pdf"
+  },
+  {
+    title: "How Effective is a Possession-Based Play Style in the UEFA Champions League?",
+    authors: ["Faraz Murshed"],
+    date: "Dec 5, 2018",
+    year: 2018,
+    sport: "Soccer",
+    readTime: 6,
+    paperUrl: "https://hfpruaivskrkweobtvcf.supabase.co/storage/v1/object/public/dj_archive/uefa.pdf"
+  },
+  {
     title: "Why Anthony Davis and the Pelicans Failed",
     authors: ["Chad Shimozaki"],
     date: "Feb 9, 2019",
