@@ -48,6 +48,14 @@ export function ArticleCard({ article, featured = false }: Props) {
         </div>
         <h3 className={`${styles.title}${featured ? ` ${styles.titleFeatured}` : ""}`}>{article.title}</h3>
         <p className={styles.authors}>{formatAuthors(article.authors)}</p>
+        {article.summary && <p className={styles.summary}>{article.summary}</p>}
+        {article.techStack && (
+          <div className={styles.techRow}>
+            {article.techStack.slice(0, 3).map((item) => (
+              <span key={item}>{item}</span>
+            ))}
+          </div>
+        )}
         <hr className={styles.divider} />
         {(article.views != null || (article.likes ?? 0) > 0 || readHref) && (
           <div className={styles.footer}>

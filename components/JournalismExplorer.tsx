@@ -26,7 +26,7 @@ export function JournalismExplorer() {
       .filter((article) => year === ALL || String(article.year) === year)
       .filter((article) => {
         if (!needle) return true;
-        const haystack = [article.title, article.authors.join(" ")].join(" ").toLowerCase();
+        const haystack = [article.title, article.authors.join(" "), article.summary, article.techStack?.join(" ")].join(" ").toLowerCase();
         return haystack.includes(needle);
       });
   }, [query, sport, year]);
