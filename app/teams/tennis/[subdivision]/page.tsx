@@ -30,14 +30,12 @@ export default function TennisSubdivisionPage({ params }: Props) {
     <main>
       <section className="page-hero">
         <div className="container">
-          <span className="eyebrow">Tennis program</span>
           <h1>{name}</h1>
           <p>This CMS-configurable subdivision can publish its own active projects, dashboards, lead contacts, and archived work.</p>
         </div>
       </section>
       <section className="section">
         <div className="container">
-          <span className="eyebrow">Program work</span>
           <h2 className="section-title">Projects and dashboards</h2>
           <div className="grid three">
             {subdivisionProjects.map((project) => <ProjectCard project={project} key={project.slug} />)}

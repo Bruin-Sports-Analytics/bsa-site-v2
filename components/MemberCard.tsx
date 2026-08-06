@@ -46,7 +46,7 @@ export function MemberCard({ member }: { member: Member }) {
   );
 
   return member.linkedinUrl ? (
-    <GlassSurface as="a" variant="regular" tint="blue" interactive radius="lg" className={styles.card} href={member.linkedinUrl} target="_blank" rel="noreferrer" aria-label={`${member.name} on LinkedIn`} {...expandHandlers}>
+    <GlassSurface as="a" variant="regular" tint="blue" radius="lg" className={styles.card} href={member.linkedinUrl} target="_blank" rel="noreferrer" aria-label={`${member.name} on LinkedIn`} {...expandHandlers}>
       {content}
     </GlassSurface>
   ) : (

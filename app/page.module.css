@@ -238,18 +238,7 @@
 .logoImg {
   object-fit: contain;
   object-position: center;
-  opacity: .72;
-  filter: grayscale(1) brightness(0) invert(1);
-  transition: filter .18s ease, opacity .18s ease;
-}
-
-.logoTile:hover .logoImg {
   opacity: 1;
-  filter: none;
-}
-
-:global(html[data-theme="light"]) .logoImg {
-  filter: grayscale(1) brightness(0);
 }
 
 .logoText {
@@ -257,8 +246,7 @@
   font-size: 17px;
   font-weight: 800;
   line-height: 1.15;
-  color: rgba(247, 251, 255, .72);
-  transition: color .18s ease;
+  color: var(--text-primary);
 }
 
 .logoTile:hover .logoText {

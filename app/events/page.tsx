@@ -15,7 +15,6 @@ export default function EventsPage() {
     <main>
       <section className="page-hero">
         <div className="container">
-          <span className="eyebrow">Events</span>
           <h1>Upcoming events</h1>
           <p>Public events include RSVP actions. <br />For members of sports groups and data journalism teams, please refer to slack.</p>
         </div>

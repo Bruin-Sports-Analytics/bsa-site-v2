@@ -171,10 +171,6 @@
   z-index: 2;
 }
 
-.desktopThemeToggle {
-  display: inline-grid;
-}
-
 .navGroup .megaMenu {
   position: absolute;
   top: 100%;
@@ -211,12 +207,6 @@
   display: block;
 }
 
-.peopleGroup::after {
-  left: 50%;
-  width: 320px;
-  transform: translateX(-50%);
-}
-
 .menuColumn {
   display: grid;
   gap: 8px;
@@ -241,17 +231,6 @@
 .menuColumn small {
   color: var(--text-secondary);
   font-weight: 600;
-}
-
-.navGroup .peopleMenu {
-  left: 50%;
-  width: 320px;
-  grid-template-columns: 1fr;
-  transform: translate(-50%, -6px);
-}
-
-.navGroup .peopleMenu.menuOpen {
-  transform: translate(-50%, 0);
 }
 
 .navGroup .teamsMenu {
@@ -421,8 +400,7 @@
   }
 
   .desktop,
-  .partner,
-  .desktopThemeToggle {
+  .partner {
     display: none;
   }
 

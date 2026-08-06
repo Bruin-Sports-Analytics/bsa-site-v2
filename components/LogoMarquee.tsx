@@ -19,7 +19,6 @@ function MarqueeRow({ row }: { row: Outcome[] }) {
     let raf = 0;
     let last = performance.now();
     let carry = 0;
-    let hovered = false;
     let running = false;
 
     // The row renders three identical copies. Keep the scroll position inside the
@@ -40,7 +39,7 @@ function MarqueeRow({ row }: { row: Outcome[] }) {
       if (!running) return;
       const dt = Math.min((now - last) / 1000, 0.05);
       last = now;
-      if (!hovered && !reduceMotion.matches) {
+      if (!reduceMotion.matches) {
         carry += SPEED * dt;
         const whole = Math.trunc(carry);
         if (whole) {
@@ -71,21 +70,9 @@ function MarqueeRow({ row }: { row: Outcome[] }) {
     );
     io.observe(el);
 
-    const onEnter = () => {
-      hovered = true;
-    };
-    const onLeave = () => {
-      hovered = false;
-      last = performance.now();
-    };
-    el.addEventListener("pointerenter", onEnter);
-    el.addEventListener("pointerleave", onLeave);
-
     return () => {
       stop();
       io.disconnect();
-      el.removeEventListener("pointerenter", onEnter);
-      el.removeEventListener("pointerleave", onLeave);
     };
   }, []);
 

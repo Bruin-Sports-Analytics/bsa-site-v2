@@ -10,7 +10,7 @@ export default function ProjectsPage() {
     <main>
       <section style={{ padding: "120px 0 16px" }}>
         <div className="container">
-          <span className="eyebrow" style={{ fontSize: 15 }}>Project dashboard</span>
+          <h1 className="section-title" style={{ margin: 0 }}>Project dashboard</h1>
         </div>
       </section>
       <section style={{ padding: "0 0 48px" }}>

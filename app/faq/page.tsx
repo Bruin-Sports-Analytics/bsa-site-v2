@@ -10,7 +10,6 @@ export default function FAQPage() {
     <main>
       <section className="page-hero">
         <div className="container">
-          <span className="eyebrow">FAQ</span>
           <h1>Frequently asked questions</h1>
           <p>Membership, recruitment, technical background, events, partnerships, and data privacy answers are stored in one reusable collection.</p>
         </div>

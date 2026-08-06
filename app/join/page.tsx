@@ -35,7 +35,6 @@ export default function JoinPage() {
       <section className="page-hero">
         <div className={`container ${recruitment.status === "UPCOMING" ? styles.heroLayout : ""}`}>
           <div className={recruitment.status === "UPCOMING" ? styles.heroContent : ""}>
-            <span className="eyebrow">{recruitment.name}</span>
             <h1>{stateCopy.title}</h1>
             <p>{stateCopy.text}</p>
             <div className="button-row">
@@ -48,7 +47,6 @@ export default function JoinPage() {
       </section>
       <section className="section">
         <div className="container">
-          <span className="eyebrow">Recruitment timeline</span>
           <h2 className="section-title">Fall Events</h2>
           <Timeline events={recruitment.timelineEvents} />
         </div>
@@ -56,19 +54,18 @@ export default function JoinPage() {
       <section className="section tight">
         <div className="container grid two">
           <article className={`card ${styles.recruitmentCard}`}>
-            <span className="eyebrow">What members do</span>
             <h2 className="section-title" style={{ fontSize: 36 }}>Work on real project teams</h2>
             <p className="section-lede">Members clean data, write models, build dashboards, publish analysis, and communicate results to teammates, readers, and partners.</p>
           </article>
           <article className={`card ${styles.tagPanel}`}>
             <div className={styles.tagGroup}>
-              <span className="eyebrow">Roles recruiting</span>
+              <h3 style={{ margin: "0 0 12px", fontFamily: "var(--font-sora), system-ui, sans-serif", fontSize: 14, fontWeight: 700, letterSpacing: ".08em", textTransform: "uppercase", color: "var(--text-muted)" }}>Roles recruiting</h3>
               <div className={styles.tags}>
                 {recruitment.roles.map((role) => <span className="tag" key={role}>{role}</span>)}
               </div>
             </div>
             <div className={styles.tagGroup}>
-              <span className="eyebrow">Teams</span>
+              <h3 style={{ margin: "0 0 12px", fontFamily: "var(--font-sora), system-ui, sans-serif", fontSize: 14, fontWeight: 700, letterSpacing: ".08em", textTransform: "uppercase", color: "var(--text-muted)" }}>Teams</h3>
               <div className={styles.tags}>
                 {recruitment.teamsRecruiting.map((team) => <span className="tag" key={team}>{team}</span>)}
               </div>
@@ -79,7 +76,6 @@ export default function JoinPage() {
       <section className="section">
         <div className="container grid two">
           <article className="card glass glass--strong glass--radius-lg" style={{ padding: 28 }}>
-            <span className="eyebrow">Reach out</span>
             <h2 className="section-title" style={{ fontSize: 34 }}>Questions about joining?</h2>
             <p style={{ color: "var(--text-secondary)", margin: "0 0 16px", lineHeight: 1.6 }}>
               Your message goes directly to our Recruitment Chair.
@@ -132,7 +128,6 @@ export default function JoinPage() {
             </form>
           </article>
           <aside className="card" style={{ padding: 28 }}>
-            <span className="eyebrow">FAQ</span>
             <h2 className="section-title" style={{ fontSize: 34 }}>Recruitment questions</h2>
             <FAQAccordion excludeCategory="Partnerships" />
           </aside>

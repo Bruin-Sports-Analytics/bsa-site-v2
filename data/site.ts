@@ -109,7 +109,7 @@ export const navItems = [
   { label: "Teams", href: "/teams" },
   { label: "Journalism", href: "/journalism" },
   { label: "Projects", href: "/projects" },
-  { label: "People", href: "/people/board" },
+  { label: "Our Members", href: "/people" },
   { label: "Events", href: "/events" },
   { label: "Join", href: "/join" }
 ];

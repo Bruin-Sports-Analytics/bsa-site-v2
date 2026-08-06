@@ -41,7 +41,7 @@ export default function JournalismArticlePage({ params }: Props) {
       <section className={styles.paperSection}>
         <div className="container">
           <div className={styles.paperHeader}>
-            <span className="eyebrow">Full paper</span>
+            <h2 className="section-title" style={{ margin: 0, fontSize: 20 }}>Full paper</h2>
             <a
               href={article.paperUrl}
               target="_blank"

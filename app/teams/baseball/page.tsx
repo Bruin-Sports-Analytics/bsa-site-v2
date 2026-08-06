@@ -23,7 +23,6 @@ export default function BaseballPage() {
       <section className="page-hero">
         <div className={`container ${styles.heroRow}`}>
           <div className={styles.heroText}>
-            <span className="eyebrow">Baseball analytics</span>
             <h1>Baseball</h1>
             <p>{sport.description}</p>
             <div className="button-row">
@@ -47,7 +46,6 @@ export default function BaseballPage() {
           </div>
           {sport.focusAreas.map((area) => (
             <div className="card" style={{ padding: 22 }} key={area}>
-              <span className="eyebrow">Priority</span>
               <h2 style={{ margin: "10px 0", fontFamily: "var(--font-sora)" }}>{area}</h2>
               <p style={{ color: "var(--text-secondary)", lineHeight: 1.6 }}>Current questions, tools, and research are organized around this focus area.</p>
             </div>
@@ -56,7 +54,6 @@ export default function BaseballPage() {
       </section>
       <section className="section">
         <div className="container">
-          <span className="eyebrow">Active projects</span>
           <h2 className="section-title">Current work</h2>
           <div className="grid three">
             {active.map((project) => <ProjectCard project={project} key={project.slug} />)}
@@ -65,7 +62,6 @@ export default function BaseballPage() {
       </section>
       <section className="section tight">
         <div className="container">
-          <span className="eyebrow">Archive</span>
           <h2 className="section-title">Past work</h2>
           <div className="grid three">
             {archived.map((project) => <ProjectCard project={project} key={project.slug} />)}

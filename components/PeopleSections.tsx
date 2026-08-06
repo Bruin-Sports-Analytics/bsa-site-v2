@@ -15,13 +15,12 @@ export function PeopleSections({ sections }: Props) {
     <>
       {sections.map((section, index) => (
         <div key={section.title} style={index > 0 ? { marginTop: "48px" } : undefined}>
-          <span
-            className="eyebrow"
+          <h3
             data-scroll-reveal
-            style={{ display: "block", marginBottom: "16px", fontSize: "16px", textAlign: "center" }}
+            style={{ display: "block", marginBottom: "16px", fontSize: "16px", textAlign: "center", fontFamily: "var(--font-sora), system-ui, sans-serif", fontWeight: 700 }}
           >
             {section.title}
-          </span>
+          </h3>
           <div className="board-grid">
             {section.people.map((member) => <MemberCard member={member} key={member.slug} />)}
           </div>

@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, CalendarDays } from "lucide-react";
 import { EventCard } from "@/components/EventCard";
-import { LogoMarquee } from "@/components/LogoMarquee";
+import { LogoCategories } from "@/components/LogoCategories";
 import { InstagramCollage } from "@/components/InstagramCollage";
 import { ProjectCardGroup } from "@/components/ProjectCardGroup";
 import { ScrollCountStats } from "@/components/ScrollCountStats";
@@ -19,8 +19,6 @@ export default function Home() {
   ).slice(0, 3);
   const publicEvents = events.filter((event) => !event.isMembersOnly).slice(0, 3);
   const displayedOutcomes = outcomes.filter((outcome) => outcome.approvedForDisplay);
-  const marqueeMidpoint = Math.ceil(displayedOutcomes.length / 2);
-  const marqueeRows = [displayedOutcomes.slice(0, marqueeMidpoint), displayedOutcomes.slice(marqueeMidpoint)];
 
   return (
     <main className={styles.home}>
@@ -59,7 +57,6 @@ export default function Home() {
 
       <section className="section">
         <div className="container">
-          <span className="eyebrow">Our Work</span>
           <h2 className="section-title">Our sports teams</h2>
           <p className="section-lede">Each team focuses on one sport, from baseball to tennis.</p>
           <div className={styles.sportPills}>
@@ -74,7 +71,6 @@ export default function Home() {
         <div className="container">
           <div className={styles.sectionHeader}>
             <div>
-              <span className="eyebrow">Featured work</span>
               <h2 className="section-title">Featured projects</h2>
             </div>
             <Link className="btn btn-secondary" href="/projects">Open dashboard</Link>
@@ -85,17 +81,15 @@ export default function Home() {
 
       <section className="section">
         <div className="container">
-          <span className="eyebrow">Outcomes</span>
-          <h2 className="section-title">Where our members go</h2>
+          <h2 className="section-title" style={{ textAlign: "center" }}>Where We Go</h2>
+          <LogoCategories logos={displayedOutcomes} />
         </div>
-        <LogoMarquee rows={marqueeRows} />
       </section>
 
       <section className="section">
         <div className="container">
           <div className={styles.sectionHeader}>
             <div>
-              <span className="eyebrow">What&apos;s next</span>
               <h2 className="section-title">Upcoming events</h2>
             </div>
             <Link className="btn btn-secondary" href="/events"><CalendarDays size={18} aria-hidden /> View all</Link>

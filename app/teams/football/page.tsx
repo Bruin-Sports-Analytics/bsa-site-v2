@@ -23,7 +23,6 @@ export default function FootballPage() {
       <section className="page-hero">
         <div className={`container ${styles.heroRow}`}>
           <div className={styles.heroText}>
-            <span className="eyebrow">Football analytics</span>
             <h1>Football</h1>
             <p>{sport.description}</p>
             <div className="button-row">
@@ -65,14 +64,12 @@ export default function FootballPage() {
       </section>
       <section className="section">
         <div className="container">
-          <span className="eyebrow">Active projects</span>
           <h2 className="section-title">Current work</h2>
           <ProjectCardGroup projects={active} />
         </div>
       </section>
       <section className="section tight">
         <div className="container">
-          <span className="eyebrow">Archive</span>
           <h2 className="section-title">Past work</h2>
           <ProjectCardGroup projects={archived} />
         </div>

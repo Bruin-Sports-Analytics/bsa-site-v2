@@ -14,6 +14,21 @@ const nextConfig = {
         source: "/work/:path*",
         destination: "/teams/:path*",
         permanent: true
+      },
+      {
+        source: "/people/board",
+        destination: "/people",
+        permanent: true
+      },
+      {
+        source: "/people/members",
+        destination: "/people",
+        permanent: true
+      },
+      {
+        source: "/people/alumni",
+        destination: "/people",
+        permanent: true
       }
     ];
   }

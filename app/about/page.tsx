@@ -48,7 +48,7 @@ export default function AboutPage() {
     <main>
       <section className="page-hero" style={{ paddingBottom: 28 }}>
         <div className="container">
-          <span className="eyebrow" style={{ color: "var(--text-primary)", fontSize: "clamp(1.5rem, 3vw, 2.25rem)" }}>About Bruin Sports Analytics</span>
+          <h1 className="section-title" style={{ fontSize: "clamp(1.5rem, 3vw, 2.25rem)", margin: 0 }}>About Bruin Sports Analytics</h1>
         </div>
       </section>
 
@@ -70,10 +70,10 @@ export default function AboutPage() {
 
       <section className="section">
         <div className="container">
-          <span className="eyebrow" style={{ color: "var(--text-primary)", fontSize: "clamp(1.5rem, 3vw, 2.25rem)", display: "block", textAlign: "center" }}>Board</span>
+          <h2 className="section-title" style={{ fontSize: "clamp(1.5rem, 3vw, 2.25rem)", textAlign: "center", margin: 0 }}>Board</h2>
           {boardSections.map((section, index) => (
             <div key={section.title} style={index === 0 ? { marginTop: "18px" } : { marginTop: "48px" }}>
-              <span className="eyebrow" data-scroll-reveal style={{ display: "block", marginBottom: "16px", fontSize: "16px", textAlign: "center" }}>{section.title}</span>
+              <h3 data-scroll-reveal style={{ display: "block", marginBottom: "16px", fontSize: "16px", textAlign: "center", fontFamily: "var(--font-sora), system-ui, sans-serif", fontWeight: 700 }}>{section.title}</h3>
               <div className="board-grid">
                 {section.people.map((member) => <MemberCard member={member} key={member.slug} />)}
               </div>
@@ -84,7 +84,7 @@ export default function AboutPage() {
 
       <section className="section tight">
         <div className="container">
-          <span className="eyebrow">Milestones</span>
+          <h2 className="section-title">Milestones</h2>
           <ol className="grid four" style={{ listStyle: "none", padding: 0, margin: "18px 0 0" }}>
             {milestones.map(([title, text], index) => (
               <li key={title} style={{ borderTop: "2px solid var(--ucla-gold)", paddingTop: 14 }}>
@@ -100,7 +100,7 @@ export default function AboutPage() {
       <section className="section tight">
         <div className="container grid two">
           <div>
-            <span className="eyebrow">How we&apos;re organized</span>
+            <h2 className="section-title">How we&apos;re organized</h2>
             <p className="section-lede">Bruin Sports Analytics is built around sport groups and shared functions.</p>
           </div>
           <div>
@@ -114,14 +114,13 @@ export default function AboutPage() {
 
       <section className="section">
         <div className="container">
-          <span className="eyebrow">Where our members go</span>
+          <h2 className="section-title">Where We Go</h2>
           <p className="section-lede">
             Our members have gone on to teams, labs, and firms across sports, tech, finance, and academia, including:
           </p>
           <LogoWall logos={prestigeLogos} />
           <div className="button-row" style={{ marginTop: 28 }}>
-            <Link className="btn btn-primary" href="/people/board">Board</Link>
-            <Link className="btn btn-secondary" href="/people/members">Current members</Link>
+            <Link className="btn btn-primary" href="/people">Our Members</Link>
           </div>
         </div>
       </section>
