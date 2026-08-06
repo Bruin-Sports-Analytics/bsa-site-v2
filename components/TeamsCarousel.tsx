@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import { useRef } from "react";
 import { sports } from "@/data/site";
 import styles from "./Navigation.module.css";
 
@@ -14,6 +15,7 @@ export function TeamsCarousel({ activeIndex, setActiveIndex }: Props) {
   const total = sports.length;
   const sport = sports[activeIndex];
   const SportIcon = sport.icon;
+  const lastWheelAtRef = useRef(0);
 
   function prev() {
     setActiveIndex((activeIndex - 1 + total) % total);
@@ -24,7 +26,13 @@ export function TeamsCarousel({ activeIndex, setActiveIndex }: Props) {
   }
 
   function handleWheel(e: React.WheelEvent) {
+    if (e.ctrlKey || e.metaKey) return;
+
     e.preventDefault();
+    const now = Date.now();
+    if (now - lastWheelAtRef.current < 280) return;
+
+    lastWheelAtRef.current = now;
     if (e.deltaY > 0) next();
     else prev();
   }
@@ -45,10 +53,9 @@ export function TeamsCarousel({ activeIndex, setActiveIndex }: Props) {
         <Link
           href={`/teams/${sport.slug}`}
           className={styles.teamsCarouselCard}
-          style={{ background: sport.accent }}
           aria-label={`${sport.name} team page`}
         >
-          <SportIcon size={44} color="rgba(0,0,0,0.65)" aria-hidden />
+          <SportIcon size={44} color="currentColor" aria-hidden />
         </Link>
         <div className={styles.teamsCarouselInfo}>
           <div className={styles.teamsCarouselHeader}>

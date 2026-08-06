@@ -241,6 +241,24 @@ export const projects: Project[] = [
     lastUpdated: "2026-05-15"
   },
   {
+    title: "NFL Gravity Metric",
+    slug: "nfl-gravity-metric",
+    sport: "football",
+    projectType: "Research",
+    status: "Active",
+    academicYear: "2025-26",
+    summary: "A pass-rusher gravity metric that estimates which defenders command more blocking attention than expected on true pass sets.",
+    problem: "Traditional pass-rush production can miss defenders who create value by occupying extra blockers and opening cleaner rush lanes for teammates.",
+    approach: "The team defines observed attention from blocker-to-rusher matchups using a weighted distance and orientation metric, then models expected attention with engineered features and graph-based spatial concepts.",
+    result: "Initial XGBoost modeling explains meaningful variance in expected attention and surfaces case studies like Grady Jarrett, whose blocker attention exceeds what conventional production suggests.",
+    members: ["Anika Soitkar", "Ayush Varma", "Mateo Shelton", "Michael Zheng", "Moulik Chatterjee", "Vardaan Sinha"],
+    techStack: ["Python", "XGBoost", "GNN", "Kaggle"],
+    links: { paper: "https://hfpruaivskrkweobtvcf.supabase.co/storage/v1/object/public/project_papers/nfl-gravity-metric.pdf",},
+    visibility: "public",
+    featured: false,
+    lastUpdated: "2026-08-06"
+  },
+  {
     title: "A Quantitative Framework for Assessing Wide Receiver Blocking Effectiveness Using Player Tracking Data",
     slug: "wr-blocking-effectiveness-framework",
     sport: "football",
@@ -253,7 +271,7 @@ export const projects: Project[] = [
     result: "The resulting score correlates with run game success rates and provides a repeatable alternative to subjective film grades.",
     members: [],
     techStack: ["Python", "pandas", "Altair"],
-    links: { paper: "https://hfpruaivskrkweobtvcf.supabase.co/storage/v1/object/public/project_papers/A%20Quantitative%20Framework%20for%20Assessing%20Wide%20Receiver%20Blocking%20Effectiveness%20Using%20Player%20Tracking%20Data.pdf" },
+    links: { paper: "https://hfpruaivskrkweobtvcf.supabase.co/storage/v1/object/public/project_papers/wr-blocking-effectiveness-framework.pdf" },
     visibility: "public",
     featured: false,
     lastUpdated: "2026-01-03"
