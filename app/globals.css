@@ -319,10 +319,10 @@ main > section::before {
   content: "";
   position: absolute;
   z-index: 0;
-  top: 50%;
+  top: -8rem;
   width: min(56rem, 66vw);
-  height: calc(100% + 18rem);
-  min-height: 36rem;
+  height: min(46rem, 78vh);
+  min-height: 34rem;
   pointer-events: none;
   background:
     radial-gradient(
@@ -331,10 +331,9 @@ main > section::before {
       var(--section-glow-mid) 34%,
       var(--section-glow-soft) 55%,
       transparent 76%
-    );
+  );
   filter: blur(10px);
   opacity: var(--section-glow-opacity);
-  transform: translateY(-50%);
 }
 
 main > section:nth-of-type(odd)::before {
