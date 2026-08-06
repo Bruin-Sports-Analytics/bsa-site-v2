@@ -3,7 +3,7 @@ import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { MemberCard } from "@/components/MemberCard";
 import { ProjectCard } from "@/components/ProjectCard";
-import { members, projects, sports } from "@/data/site";
+import { isActiveProject, members, projects, sports } from "@/data/site";
 import styles from "../sport-hero.module.css";
 
 const sport = sports.find((s) => s.slug === "tennis")!;
@@ -12,8 +12,8 @@ export const metadata: Metadata = { title: "Tennis Work" };
 
 export default function TennisPage() {
   const sportProjects = projects.filter((p) => p.sport === "tennis" && p.visibility !== "hidden");
-  const active = sportProjects.filter((p) => p.status === "Active" || p.status === "Ongoing");
-  const archived = sportProjects.filter((p) => p.status === "Completed" || p.status === "Archived");
+  const active = sportProjects.filter(isActiveProject);
+  const archived = sportProjects.filter((p) => !isActiveProject(p));
   const chairs = members.filter((m) => m.group === "board" && m.team.toLowerCase().includes("tennis") && m.isPublished).sort((a, b) => a.sortOrder - b.sortOrder);
   const chairNames = new Set(chairs.map((m) => m.name));
   const analysts = members.filter((m) => m.group === "member" && m.team.toLowerCase() === "tennis" && m.isPublished && !chairNames.has(m.name)).sort((a, b) => a.sortOrder - b.sortOrder);

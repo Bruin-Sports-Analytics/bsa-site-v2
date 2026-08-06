@@ -2,12 +2,12 @@
 
 import { Search } from "lucide-react";
 import { useMemo, useState } from "react";
-import { projects, sports, type ProjectStatus, type WorkType } from "@/data/site";
+import { isActiveProject, projectLifecycleStatus, projects, sports, type WorkType } from "@/data/site";
 import { ProjectCard } from "@/components/ProjectCard";
 import styles from "./ProjectExplorer.module.css";
 
 const types: Array<WorkType | "All"> = ["All", "Consulting", "Research", "Journalism", "Dashboard", "Tool"];
-const statuses: Array<ProjectStatus | "All"> = ["All", "Active", "Ongoing", "Completed", "Archived"];
+const statuses = ["Active", "Archived"] as const;
 
 export function ProjectExplorer({ compact = false }: { compact?: boolean }) {
   const [query, setQuery] = useState("");
@@ -20,10 +20,10 @@ export function ProjectExplorer({ compact = false }: { compact?: boolean }) {
   const filtered = useMemo(() => {
     return projects
       .filter((project) => project.visibility !== "hidden")
-      .filter((project) => showArchived || project.status !== "Archived")
+      .filter((project) => showArchived || isActiveProject(project))
       .filter((project) => !sport || project.sport === sport)
       .filter((project) => !type || project.projectType === type)
-      .filter((project) => !status || project.status === status)
+      .filter((project) => !status || projectLifecycleStatus(project) === status)
       .filter((project) => {
         const haystack = [project.title, project.summary, project.techStack.join(" "), project.members.join(" ")].join(" ").toLowerCase();
         return haystack.includes(query.toLowerCase());
@@ -59,7 +59,7 @@ export function ProjectExplorer({ compact = false }: { compact?: boolean }) {
         </select>
         <select value={status} onChange={(event) => setStatus(event.target.value)} aria-label="Filter by project status">
           <option value="">Status</option>
-          {statuses.slice(1).map((item) => <option key={item}>{item}</option>)}
+          {statuses.map((item) => <option key={item}>{item}</option>)}
         </select>
         <select value={sort} onChange={(event) => setSort(event.target.value)} aria-label="Sort projects">
           <option value="" disabled hidden>Sort</option>

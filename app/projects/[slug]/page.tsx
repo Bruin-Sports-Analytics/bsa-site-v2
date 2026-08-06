@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { ArrowUpRight, LockKeyhole } from "lucide-react";
-import { projects } from "@/data/site";
+import { projectLifecycleStatus, projects } from "@/data/site";
 import { formatDate, sportName, visibleProjectDetail } from "@/lib/utils";
 import styles from "./page.module.css";
 
@@ -31,7 +31,7 @@ export default function ProjectDetailPage({ params }: Props) {
           <span className="eyebrow">{sportName(project.sport)} · {project.projectType}</span>
           <h1 className={styles.title}>{project.title}</h1>
           <div className="tag-row" style={{ marginTop: 10 }}>
-            <span className="tag">{project.status}</span>
+            <span className="tag">{projectLifecycleStatus(project)}</span>
             <span className="tag">{project.academicYear}</span>
             <span className="tag">Updated {formatDate(project.lastUpdated)}</span>
             {redacted ? <span className="tag"><LockKeyhole size={14} aria-hidden /> Redacted</span> : null}

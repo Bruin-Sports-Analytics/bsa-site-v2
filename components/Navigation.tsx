@@ -5,7 +5,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { ChevronDown, Menu, X } from "lucide-react";
 import { useState } from "react";
-import { navItems, projects } from "@/data/site";
+import { navItems, projectLifecycleStatus, projects } from "@/data/site";
 import { TeamsCarousel } from "@/components/TeamsCarousel";
 import { ThemeToggle } from "@/components/ThemeToggle";
 import { useScrolledState } from "@/hooks/useScrolledState";
@@ -79,7 +79,7 @@ export function Navigation() {
                           {recentProjects.map((project) => (
                             <Link href={`/projects/${project.slug}`} key={project.slug}>
                               {project.title}
-                              <small>{project.projectType} · {project.status}</small>
+                              <small>{project.projectType} · {projectLifecycleStatus(project)}</small>
                             </Link>
                           ))}
                         </div>

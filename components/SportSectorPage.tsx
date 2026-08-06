@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { ProjectCard } from "@/components/ProjectCard";
-import { members, projects, sports } from "@/data/site";
+import { isActiveProject, members, projects, sports } from "@/data/site";
 import type { SportSlug, WorkType } from "@/data/site";
 
 type Props = {
@@ -15,8 +15,8 @@ export default function SportSectorPage({ sport: sportSlug, sector }: Props) {
   const sectorProjects = projects.filter(
     (p) => p.sport === sportSlug && p.projectType === sector && p.visibility !== "hidden"
   );
-  const active = sectorProjects.filter((p) => p.status === "Active" || p.status === "Ongoing");
-  const archived = sectorProjects.filter((p) => p.status === "Completed" || p.status === "Archived");
+  const active = sectorProjects.filter(isActiveProject);
+  const archived = sectorProjects.filter((p) => !isActiveProject(p));
   const team = members.filter((m) => m.team.toLowerCase().includes(sportSlug) && m.isPublished);
 
   return (
@@ -60,7 +60,7 @@ export default function SportSectorPage({ sport: sportSlug, sector }: Props) {
       <section className="section tight">
         <div className="container">
           <span className="eyebrow">Archive</span>
-          <h2 className="section-title">Completed {sector.toLowerCase()}</h2>
+          <h2 className="section-title">Archived {sector.toLowerCase()}</h2>
           <div className="grid three">
             {archived.map((project) => <ProjectCard project={project} key={project.slug} />)}
           </div>

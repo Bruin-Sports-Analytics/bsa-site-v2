@@ -12,7 +12,7 @@ import { BaseballIcon, BasketballIcon, FootballIcon, TennisIcon, VolleyballIcon 
 
 export type SportSlug = "baseball" | "volleyball" | "basketball" | "football" | "tennis" | "other";
 export type WorkType = "Consulting" | "Research" | "Journalism" | "Dashboard" | "Tool";
-export type ProjectStatus = "Active" | "Completed" | "Ongoing" | "Archived";
+export type ProjectStatus = "Active" | "Archived";
 export type Visibility = "public" | "redacted" | "private" | "hidden";
 export type RecruitmentStatus = "UPCOMING" | "OPEN" | "CLOSED";
 
@@ -57,6 +57,16 @@ export type Project = {
   featuredUntil?: string;
   lastUpdated: string;
 };
+
+export const ACTIVE_PROJECT_START_DATE = "2025-09-01";
+
+export function isActiveProject(project: Pick<Project, "lastUpdated" | "visibility">) {
+  return project.visibility !== "hidden" && Date.parse(project.lastUpdated) >= Date.parse(ACTIVE_PROJECT_START_DATE);
+}
+
+export function projectLifecycleStatus(project: Pick<Project, "lastUpdated" | "visibility">): Extract<ProjectStatus, "Active" | "Archived"> {
+  return isActiveProject(project) ? "Active" : "Archived";
+}
 
 export type MemberAssignment = {
   slug: string;
@@ -109,14 +119,6 @@ export const socialLinks = [
   { label: "Instagram", href: "https://www.instagram.com/bruinsportsanalytics/" },
   { label: "LinkedIn", href: "https://www.linkedin.com/company/bruin-sports-analytics/" },
   { label: "Slack", href: "https://slack.com/" }
-];
-
-export const impactStats = [
-  { label: "Active projects", value: 11 },
-  { label: "Sports groups", value: 5 },
-  { label: "Current members", value: 64 },
-  { label: "Years at UCLA", value: 9 },
-  { label: "UCLA Athletics Partners", value: 3 }
 ];
 
 export const sports: Sport[] = [
@@ -191,7 +193,7 @@ export const projects: Project[] = [
     slug: "ml-playstyle-classification-tennis",
     sport: "tennis",
     projectType: "Research",
-    status: "Completed",
+    status: "Active",
     academicYear: "2025-26",
     summary: "A machine learning framework for classifying NCAA tennis player playstyles using match data.",
     problem: "Coaches and scouts lack a systematic way to categorize player playstyles from match statistics, relying instead on subjective observation.",
@@ -263,7 +265,7 @@ export const projects: Project[] = [
     slug: "wr-blocking-effectiveness-framework",
     sport: "football",
     projectType: "Research",
-    status: "Completed",
+    status: "Active",
     academicYear: "2025-26",
     summary: "Introducing the Skill Player Downfield Blocking Effectiveness Score, a novel metric derived from player tracking data rather than human evaluation.",
     problem: "Wide receiver blocking is one of the least-measured skills in football — traditional charting is subjective and inconsistent across evaluators.",
@@ -1169,6 +1171,20 @@ export const members: Member[] = memberProfiles.flatMap((profile) =>
     ...assignment
   }))
 );
+
+const activeProjectCount = projects.filter(isActiveProject).length;
+
+const currentMemberCount = memberProfiles.filter((profile) => (
+  profile.isPublished && profile.assignments.some((assignment) => assignment.group !== "alum")
+)).length;
+
+export const impactStats = [
+  { label: "Active projects", value: activeProjectCount },
+  { label: "Sports groups", value: sports.length },
+  { label: "Current members", value: currentMemberCount },
+  { label: "Years at UCLA", value: 9 },
+  { label: "UCLA Athletics Partners", value: 3 }
+];
 
 export const events: Event[] = [
   {
