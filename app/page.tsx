@@ -3,10 +3,8 @@ import Link from "next/link";
 import { ArrowRight, CalendarDays } from "lucide-react";
 import { EventCard } from "@/components/EventCard";
 import { LogoMarquee } from "@/components/LogoMarquee";
-import { InstagramCollage } from "@/components/InstagramCollage";
 import { ProjectCardGroup } from "@/components/ProjectCardGroup";
 import { ScrollCountStats } from "@/components/ScrollCountStats";
-import { instagramPosts } from "@/data/instagram-posts";
 import { events, impactStats, outcomes, sports } from "@/data/site";
 import { currentlyFeatured, publicProjects } from "@/lib/utils";
 import styles from "./page.module.css";
@@ -37,21 +35,15 @@ export default function Home() {
               <Link className={`text-link ${styles.partnerLink}`} href="/partner">Partner With Us →</Link>
             </div>
           </div>
-          {instagramPosts.length > 0 ? (
-            <div className={styles.flowVisual}>
-              <InstagramCollage posts={instagramPosts} />
-            </div>
-          ) : (
-            <div className={`${styles.heroLogo} ${styles.flowVisual}`}>
-              <Image
-                src="/assets/bruin_sports_analytics_logo_high_quality.jpg"
-                alt="Bruin Sports Analytics logo"
-                width={420}
-                height={420}
-                priority
-              />
-            </div>
-          )}
+          <div className={`${styles.heroLogo} ${styles.flowVisual}`}>
+            <Image
+              src="/assets/bsa_logo_high_res.jpeg"
+              alt="Bruin Sports Analytics logo"
+              width={800}
+              height={800}
+              priority
+            />
+          </div>
         </div>
       </section>
 

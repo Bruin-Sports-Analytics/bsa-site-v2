@@ -58,9 +58,36 @@
 }
 
 .heroLogo {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
+  isolation: isolate;
+}
+
+.heroLogo::before,
+.heroLogo::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  pointer-events: none;
+  border-radius: 50%;
+}
+
+.heroLogo::before {
+  width: min(560px, 112%);
+  aspect-ratio: 1;
+  background:
+    radial-gradient(circle, rgba(255, 209, 0, .20) 0%, rgba(255, 209, 0, .12) 35%, transparent 70%);
+  filter: blur(22px);
+}
+
+.heroLogo::after {
+  width: min(500px, 102%);
+  aspect-ratio: 1;
+  background:
+    radial-gradient(circle, rgba(139, 203, 255, .14) 0%, rgba(12, 40, 59, .22) 54%, transparent 76%);
+  filter: blur(16px);
 }
 
 .heroLogo img {
@@ -68,6 +95,16 @@
   max-width: 420px;
   height: auto;
   border-radius: var(--glass-radius-lg);
+  box-shadow:
+    0 0 0 1px rgba(139, 203, 255, .10),
+    0 0 26px rgba(12, 40, 59, .72),
+    0 0 54px rgba(39, 116, 174, .28),
+    0 0 74px rgba(255, 209, 0, .12);
+  filter: drop-shadow(0 0 18px rgba(255, 209, 0, .18));
+  -webkit-mask-image:
+    radial-gradient(ellipse at center, #000 64%, rgba(0, 0, 0, .94) 74%, rgba(0, 0, 0, .72) 88%, rgba(0, 0, 0, .52) 100%);
+  mask-image:
+    radial-gradient(ellipse at center, #000 64%, rgba(0, 0, 0, .94) 74%, rgba(0, 0, 0, .72) 88%, rgba(0, 0, 0, .52) 100%);
 }
 
 .flowTitle,
@@ -137,15 +174,17 @@
 }
 
 .sportPills {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 24px;
   margin-top: 28px;
 }
 
 .sportPill {
-  display: inline-flex;
+  display: flex;
   align-items: center;
+  justify-content: center;
+  width: 100%;
   padding: 10px 24px;
   border: 1px solid var(--border);
   border-radius: 999px;
@@ -366,6 +405,10 @@
     align-items: start;
     flex-direction: column;
   }
+
+  .sportPills {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
 }
 
 @media (max-width: 640px) {
@@ -379,6 +422,10 @@
 
   .heroCopy h1 em {
     font-size: clamp(2rem, 12vw, 4.6rem);
+  }
+
+  .sportPills {
+    grid-template-columns: 1fr;
   }
 
   .logoTile {
