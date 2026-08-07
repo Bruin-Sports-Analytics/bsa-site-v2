@@ -5,8 +5,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { ChevronDown, Menu, X } from "lucide-react";
 import { useState } from "react";
-import { navItems } from "@/data/site";
-import { TeamsCarousel } from "@/components/TeamsCarousel";
+import { navItems, sports } from "@/data/site";
 import { useScrolledState } from "@/hooks/useScrolledState";
 import { cn } from "@/lib/cn";
 import styles from "./Navigation.module.css";
@@ -15,7 +14,6 @@ export function Navigation() {
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
   const [openMenu, setOpenMenu] = useState<string | null>(null);
-  const [activeTeamIndex, setActiveTeamIndex] = useState(0);
   const scrolled = useScrolledState();
 
   return (
@@ -34,10 +32,7 @@ export function Navigation() {
                 className={styles.navGroup}
                 key={item.href}
                 onMouseEnter={() => hasMenu && setOpenMenu(item.label)}
-                onMouseLeave={() => {
-                  setOpenMenu(null);
-                  if (item.label === "Teams") setActiveTeamIndex(0);
-                }}
+                onMouseLeave={() => setOpenMenu(null)}
                 onFocus={() => hasMenu && setOpenMenu(item.label)}
                 onBlur={(e) => {
                   if (!e.currentTarget.contains(e.relatedTarget as Node)) {
@@ -51,10 +46,23 @@ export function Navigation() {
                 </Link>
                 {hasMenu ? (
                   <div className={`${styles.megaMenu} ${openMenu === item.label ? styles.menuOpen : ""} ${styles.teamsMenu} glass glass--strong glass--radius-lg`}>
-                    <TeamsCarousel
-                      activeIndex={activeTeamIndex}
-                      setActiveIndex={setActiveTeamIndex}
-                    />
+                    <div className={styles.teamsGrid}>
+                      {sports.map((sport) => {
+                        const SportIcon = sport.icon;
+                        return (
+                          <Link
+                            key={sport.slug}
+                            href={`/teams/${sport.slug}`}
+                            className={styles.teamTile}
+                          >
+                            <span className={styles.teamIcon} style={{ color: sport.accent }} aria-hidden>
+                              <SportIcon size={28} color="currentColor" />
+                            </span>
+                            <span className={styles.teamName}>{sport.name}</span>
+                          </Link>
+                        );
+                      })}
+                    </div>
                   </div>
                 ) : null}
               </div>

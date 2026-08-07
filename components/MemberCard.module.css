@@ -1,3 +1,8 @@
+.root {
+  display: grid;
+  gap: 10px;
+}
+
 .card {
   position: relative;
   aspect-ratio: 1;
@@ -47,7 +52,7 @@
     linear-gradient(135deg, rgba(255, 255, 255, .07), rgba(74, 168, 255, .04)),
     var(--member-overlay-fill);
   box-shadow: var(--glass-shadow-sm);
-  padding: 3px 12px;
+  padding: 8px 12px;
   text-align: center;
 }
 
@@ -55,48 +60,21 @@
   margin: 0;
   font-family: var(--font-sora), system-ui, sans-serif;
   font-size: clamp(11px, 1vw, 15px);
-  line-height: 1.1;
+  line-height: 1.2;
 }
 
 .body p {
-  margin: 0;
+  margin: 2px 0 0;
   color: var(--text-secondary);
   font-size: clamp(10px, 0.85vw, 13px);
-  line-height: 1;
+  line-height: 1.2;
 }
 
-.bodyExpand {
-  display: grid;
-  grid-template-rows: 0fr;
-  overflow: hidden;
-  transition: grid-template-rows 0.28s cubic-bezier(0.2, 0.8, 0.2, 1);
-}
-
-.bodyExpand.bodyExpandOpen {
-  grid-template-rows: 1fr;
-}
-
-.bodyExpandInner {
-  min-height: 0;
-  overflow: hidden;
-  display: grid;
-  gap: 6px;
-}
-
-.bodyExpandInner span {
-  color: var(--text-secondary);
-  font-weight: 700;
-  padding-top: 10px;
-}
-
-.bodyExpandInner small {
-  color: var(--text-secondary);
-  opacity: 0.8;
-  line-height: 1.55;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .bodyExpand {
-    transition-duration: .01ms;
-  }
+.meta {
+  margin: 0;
+  text-align: center;
+  color: #ffffff;
+  font-size: clamp(11px, 0.9vw, 13px);
+  font-weight: 600;
+  line-height: 1.35;
 }

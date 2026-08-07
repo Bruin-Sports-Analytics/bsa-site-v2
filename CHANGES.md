@@ -17,3 +17,5 @@ A running list of updates made to the BSA site.
 - Destination logos use translucent white monochrome treatment (no bright tiles)
 - Renamed homepage outcomes section header to “Where We Go”
 - Member cards no longer lift/move the photo on hover
+- Member cards show name/role in a static bubble; major and year sit as text under the photo
+- Replaced Teams nav carousel with a compact mega menu showing all sports at once
