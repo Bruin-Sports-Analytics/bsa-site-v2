@@ -3,6 +3,7 @@ import Link from "next/link";
 import { LogoWall } from "@/components/LogoWall";
 import { MemberCard } from "@/components/MemberCard";
 import { impactStats, members, outcomes, sports } from "@/data/site";
+import styles from "./page.module.css";
 
 export const metadata: Metadata = {
   title: "About"
@@ -54,8 +55,8 @@ export default function AboutPage() {
 
       <section className="section">
         <div className="container">
-          <p style={{ maxWidth: 780, fontFamily: "var(--font-sora), system-ui, sans-serif", fontSize: "clamp(1.5rem, 2.6vw, 2.1rem)", lineHeight: 1.3, margin: 0 }}>
-            We build models, tools, dashboards, and writing that help people understand games more deeply and make better decisions from sports data.
+          <p className={styles.missionStatement}>
+            We build models, tools, dashboards, and writing that <span className={styles.blueGlow}>help people understand</span> games more deeply and <span className={styles.goldGlow}>make better decisions</span> from sports data.
           </p>
           <div style={{ display: "flex", flexWrap: "wrap", gap: "28px 52px", marginTop: 44 }}>
             {stats.map((stat) => (

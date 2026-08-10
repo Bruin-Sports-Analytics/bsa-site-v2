@@ -512,22 +512,20 @@ main > section > * {
     linear-gradient(135deg, rgba(255, 255, 255, .045), rgba(74, 168, 255, .025)),
     var(--card-fill);
   box-shadow: var(--card-shadow);
+  transition:
+    transform 180ms cubic-bezier(.2, .8, .2, 1),
+    border-color 180ms ease,
+    box-shadow 180ms ease;
 }
 
-.card::after {
-  content: "";
-  position: absolute;
-  inset: -1px;
-  pointer-events: none;
-  opacity: 0;
-  background: linear-gradient(110deg, transparent 25%, rgba(255, 255, 255, .12), transparent 65%);
-  transform: translateX(-60%);
-  transition: opacity .2s ease, transform .6s ease;
-}
-
-.card:hover::after {
-  opacity: 1;
-  transform: translateX(70%);
+@media (hover: hover) and (pointer: fine) {
+  .card:hover {
+    transform: translateY(var(--glass-hover-lift));
+    border-color: var(--glass-border-hover);
+    box-shadow:
+      0 24px 66px rgba(0, 5, 15, 0.34),
+      0 1px 0 rgba(255, 255, 255, 0.10) inset;
+  }
 }
 
 .tag-row {
@@ -927,7 +925,8 @@ html.reduce-transparency .btn-secondary {
   }
 
   .glass--interactive:hover,
-  .glass--interactive:active {
+  .glass--interactive:active,
+  .card:hover {
     transform: none;
   }
 }

@@ -2,7 +2,6 @@
 
 import { useEffect, useRef, useState } from "react";
 import type { CSSProperties } from "react";
-import pageStyles from "@/app/page.module.css";
 import styles from "./ScrollCountStats.module.css";
 
 const DURATION_MS = 1200;
@@ -60,10 +59,10 @@ export function ScrollCountStats({ stats }: { stats: Stat[] }) {
 
   return (
     <section ref={sectionRef} className={styles.section} aria-label="Bruin Sports Analytics impact metrics">
-      <div className="container">
-        <div className={pageStyles.rail}>
+      <div className={styles.inner}>
+        <div className={styles.rail}>
           {stats.map((stat, index) => (
-            <div key={stat.label} data-load-reveal style={{ "--flow-delay": `${520 + index * 70}ms` } as CSSProperties}>
+            <div className={styles.stat} key={stat.label} data-load-reveal style={{ "--flow-delay": `${520 + index * 70}ms` } as CSSProperties}>
               <b>{Math.round(progress * stat.value)}</b>
               <span>{stat.label}</span>
             </div>
