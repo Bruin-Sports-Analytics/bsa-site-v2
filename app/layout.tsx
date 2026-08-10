@@ -1,9 +1,8 @@
 import type { Metadata, Viewport } from "next";
-import { Montserrat, Lato, Roboto } from "next/font/google";
+import { Lato, Montserrat, Roboto } from "next/font/google";
 import "./globals.css";
 import { Footer } from "@/components/Footer";
 import { Navigation } from "@/components/Navigation";
-import { ColorPops } from "@/components/ColorPops";
 import { RouteTransitions } from "@/components/RouteTransitions";
 import { ScrollReveal } from "@/components/ScrollReveal";
 import { SocialSidebar } from "@/components/SocialSidebar";
@@ -48,31 +47,12 @@ export const metadata: Metadata = {
   }
 };
 
-const themeScript = `
-(() => {
-  try {
-    const stored = window.localStorage.getItem("theme");
-    const system = window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark";
-    const theme = stored === "light" || stored === "dark" ? stored : system;
-    document.documentElement.dataset.theme = theme;
-    document.documentElement.style.colorScheme = theme;
-  } catch {
-    document.documentElement.dataset.theme = "dark";
-    document.documentElement.style.colorScheme = "dark";
-  }
-})();
-`;
-
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={`${montserrat.variable} ${lato.variable} ${roboto.variable}`} suppressHydrationWarning>
-      <head>
-        <script dangerouslySetInnerHTML={{ __html: themeScript }} />
-      </head>
+    <html lang="en" data-theme="dark" className={`${montserrat.variable} ${lato.variable} ${roboto.variable}`}>
       <body>
         <div className="shell">
           <Navigation />
-          <ColorPops />
           <ScrollReveal />
           <SocialSidebar />
           <RouteTransitions>{children}</RouteTransitions>

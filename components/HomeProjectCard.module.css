@@ -2,27 +2,24 @@
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  background-color: var(--glass-regular-fill);
-  backdrop-filter: blur(var(--glass-regular-blur)) saturate(var(--glass-saturation));
-  -webkit-backdrop-filter: blur(var(--glass-regular-blur)) saturate(var(--glass-saturation));
-  border: 1px solid rgba(139, 203, 255, .12);
-  border-radius: 12px;
-  box-shadow: var(--glass-shadow-sm);
+  background: var(--card-fill);
+  border: 1px solid var(--border);
+  border-radius: 2px;
 }
 
 .body {
   display: flex;
   flex-direction: column;
-  gap: 7px;
-  padding: 18px;
+  gap: 9px;
+  padding: 24px;
 }
 
 .title {
   margin: 0;
-  font-family: var(--font-sora), system-ui, sans-serif;
-  font-size: 15px;
-  font-weight: 800;
-  line-height: 1.2;
+  font-family: var(--font-editorial), Georgia, serif;
+  font-size: clamp(1.55rem, 2.5vw, 2.2rem);
+  font-weight: 650;
+  line-height: 1.02;
 }
 
 .date {
@@ -36,7 +33,7 @@
 
 .divider {
   height: 1px;
-  background: rgba(139, 203, 255, .15);
+  background: var(--border);
   margin: 5px 0 1px;
 }
 
@@ -52,8 +49,8 @@
 .summary {
   margin: 0;
   color: var(--text-secondary);
-  font-size: 12px;
-  line-height: 1.5;
+  font-size: 14px;
+  line-height: 1.55;
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
@@ -69,9 +66,13 @@
   display: inline-flex;
   align-items: center;
   gap: 5px;
-  color: var(--ucla-gold);
-  font-size: 12.5px;
+  color: var(--text-primary);
+  font-size: 13px;
   font-weight: 800;
+  text-decoration: underline;
+  text-decoration-color: var(--ucla-gold);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
 }
 
 .private {

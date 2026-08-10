@@ -1,15 +1,317 @@
 .section {
-  padding: 34px 0 30px;
+  padding: 42px 0 48px;
+  background: #071a2a;
+  border-bottom: 1px solid rgba(151, 193, 226, .16);
 }
 
-@media (prefers-reduced-motion: reduce) {
-  .section {
-    padding: var(--section-padding, 4rem) 0;
+.scoreboard {
+  position: relative;
+  overflow: hidden;
+  border: 7px solid #9faeb9;
+  background: #063780;
+  box-shadow:
+    0 22px 54px rgba(0, 0, 0, .34),
+    inset 0 0 0 2px rgba(255, 255, 255, .2);
+}
+
+.scoreboard::after {
+  content: "";
+  position: absolute;
+  inset: 10px;
+  pointer-events: none;
+  background:
+    radial-gradient(circle at 0 0, #c4ced5 0 3px, transparent 4px),
+    radial-gradient(circle at 100% 0, #c4ced5 0 3px, transparent 4px),
+    radial-gradient(circle at 0 100%, #c4ced5 0 3px, transparent 4px),
+    radial-gradient(circle at 100% 100%, #c4ced5 0 3px, transparent 4px);
+}
+
+.boardHeader {
+  min-height: 54px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 28px;
+  border-bottom: 4px solid #9faeb9;
+  background: #07326f;
+  color: #dfe9ef;
+  font-family: var(--font-sora), system-ui, sans-serif;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+.boardHeader strong {
+  color: #fff;
+  font-size: 17px;
+  letter-spacing: .16em;
+}
+
+.scoreGrid {
+  display: grid;
+  grid-template-columns: 1fr 1.45fr 1fr;
+  grid-template-rows: repeat(2, minmax(150px, auto));
+  gap: 4px;
+  padding: 4px;
+  background: #9faeb9;
+}
+
+.statCell,
+.seasonCell {
+  position: relative;
+  min-width: 0;
+  display: grid;
+  justify-items: center;
+  align-content: center;
+  gap: 15px;
+  padding: 22px 14px;
+  background: #073b88;
+  box-shadow: inset 0 0 28px rgba(0, 17, 54, .28);
+}
+
+.projects {
+  grid-area: 1 / 1;
+}
+
+.sports {
+  grid-area: 1 / 3;
+}
+
+.members {
+  grid-area: 2 / 1;
+}
+
+.partners {
+  grid-area: 2 / 2;
+}
+
+.years {
+  grid-area: 2 / 3;
+}
+
+.seasonCell {
+  grid-area: 1 / 2;
+  background: #062e6b;
+}
+
+.statLabel {
+  color: #f5f8fa;
+  font-family: var(--font-sora), system-ui, sans-serif;
+  font-size: clamp(12px, 1.3vw, 17px);
+  font-weight: 800;
+  letter-spacing: .08em;
+  line-height: 1.15;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.segmentNumber {
+  display: inline-flex;
+}
+
+.digitRow {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.digit {
+  position: relative;
+  width: 35px;
+  height: 62px;
+  display: inline-block;
+  flex: 0 0 auto;
+}
+
+.segment {
+  position: absolute;
+  display: block;
+  background: rgba(6, 13, 24, .78);
+}
+
+.segmentActive {
+  background: #ffb51b;
+  box-shadow:
+    0 0 5px rgba(255, 181, 27, .92),
+    0 0 12px rgba(255, 181, 27, .58);
+}
+
+.segmentA,
+.segmentG,
+.segmentD {
+  left: 16%;
+  width: 68%;
+  height: 10%;
+  clip-path: polygon(10% 0, 90% 0, 100% 50%, 90% 100%, 10% 100%, 0 50%);
+}
+
+.segmentA {
+  top: 0;
+}
+
+.segmentG {
+  top: 45%;
+}
+
+.segmentD {
+  bottom: 0;
+}
+
+.segmentB,
+.segmentC,
+.segmentE,
+.segmentF {
+  width: 15%;
+  height: 39%;
+  clip-path: polygon(50% 0, 100% 10%, 100% 90%, 50% 100%, 0 90%, 0 10%);
+}
+
+.segmentB {
+  top: 6%;
+  right: 0;
+}
+
+.segmentC {
+  right: 0;
+  bottom: 6%;
+}
+
+.segmentE {
+  bottom: 6%;
+  left: 0;
+}
+
+.segmentF {
+  top: 6%;
+  left: 0;
+}
+
+.colon {
+  position: relative;
+  width: 13px;
+  height: 62px;
+  display: inline-block;
+  flex: 0 0 auto;
+}
+
+.colon i {
+  position: absolute;
+  left: 50%;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #dce7ec;
+  transform: translateX(-50%);
+  box-shadow: 0 0 7px rgba(220, 231, 236, .75);
+  animation: scoreboardColonBlink 1s steps(1, end) infinite;
+}
+
+.colon i:first-child {
+  top: 29%;
+}
+
+.colon i:last-child {
+  bottom: 29%;
+}
+
+.seasonCell .digit {
+  width: 42px;
+  height: 74px;
+}
+
+.seasonCell .colon {
+  height: 74px;
+}
+
+@keyframes scoreboardColonBlink {
+  0%,
+  49% {
+    opacity: 1;
+  }
+
+  50%,
+  100% {
+    opacity: .12;
   }
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 760px) {
   .section {
-    padding: 3rem 0;
+    padding: 28px 0 34px;
+  }
+
+  .scoreboard {
+    border-width: 4px;
+  }
+
+  .boardHeader {
+    min-height: 54px;
+    padding: 10px 18px;
+  }
+
+  .scoreGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-rows: auto;
+  }
+
+  .seasonCell {
+    grid-area: 1 / 1 / auto / -1;
+  }
+
+  .projects {
+    grid-area: 2 / 1;
+  }
+
+  .sports {
+    grid-area: 2 / 2;
+  }
+
+  .members {
+    grid-area: 3 / 1;
+  }
+
+  .years {
+    grid-area: 3 / 2;
+  }
+
+  .partners {
+    grid-area: 4 / 1 / auto / -1;
+  }
+
+  .statCell,
+  .seasonCell {
+    min-height: 138px;
+    padding: 18px 10px;
+  }
+
+  .digit {
+    width: 29px;
+    height: 52px;
+  }
+
+  .seasonCell .digit {
+    width: 34px;
+    height: 61px;
+  }
+
+  .colon {
+    height: 52px;
+  }
+
+  .seasonCell .colon {
+    height: 61px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .segmentActive,
+  .colon i {
+    box-shadow: none;
+  }
+
+  .colon i {
+    animation: none;
+    opacity: 1;
   }
 }

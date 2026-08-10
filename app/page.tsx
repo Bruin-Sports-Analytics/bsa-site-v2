@@ -1,9 +1,15 @@
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight, CalendarDays } from "lucide-react";
+import {
+  ArrowRight,
+  ArrowUpRight,
+  CalendarDays,
+  ChartNoAxesColumnIncreasing,
+  Handshake,
+  Newspaper
+} from "lucide-react";
 import { EventCard } from "@/components/EventCard";
 import { LogoCategories } from "@/components/LogoCategories";
-import { InstagramCollage } from "@/components/InstagramCollage";
 import { ScrollCountStats } from "@/components/ScrollCountStats";
 import { instagramPosts } from "@/data/instagram-posts";
 import { events, impactStats, outcomes, sports } from "@/data/site";
@@ -12,26 +18,49 @@ import styles from "./page.module.css";
 export default function Home() {
   const publicEvents = events.filter((event) => !event.isMembersOnly).slice(0, 3);
   const displayedOutcomes = outcomes.filter((outcome) => outcome.approvedForDisplay);
+  const featuredPost = instagramPosts[4] ?? instagramPosts[0];
 
   return (
     <main className={styles.home}>
       <section className={styles.hero}>
         <div className={`container ${styles.heroGrid}`}>
           <div className={styles.heroCopy}>
-            <h1 className={styles.flowTitle}>Bruin Sports Analytics</h1>
-            <p className={styles.flowText}>UCLA&apos;s student-run sports analytics organization. Research, tools, and analysis across five sports.</p>
+            <p className={`${styles.kicker} ${styles.flowTitle}`}>Bruin Sports Analytics at UCLA</p>
+            <h1 className={styles.flowTitle}>Where sports meet data.</h1>
+            <p className={styles.flowText}>
+              We&apos;re a UCLA student organization working on research, tools,
+              and stories across five sports.
+            </p>
             <div className={`${styles.heroCta} ${styles.flowCta}`}>
               <div className="button-row">
-                <Link className="btn btn-primary" href="/teams" data-analytics="hero_work_click">Explore Our Work <ArrowRight size={18} aria-hidden /></Link>
-                <Link className="btn btn-secondary" href="/join" data-analytics="hero_join_click">Join the Team</Link>
+                <Link className="btn btn-primary" href="/teams" data-analytics="hero_work_click">
+                  Explore our teams <ArrowRight size={18} aria-hidden />
+                </Link>
+                <Link className="btn btn-secondary" href="/join" data-analytics="hero_join_click">Join BSA</Link>
               </div>
-              <Link className={`text-link ${styles.partnerLink}`} href="/partner">Partner With Us →</Link>
+              <Link className={styles.partnerLink} href="/partner">
+                Work with us <ArrowUpRight size={15} aria-hidden />
+              </Link>
             </div>
           </div>
-          {instagramPosts.length > 0 ? (
-            <div className={styles.flowVisual}>
-              <InstagramCollage posts={instagramPosts} />
-            </div>
+          {featuredPost ? (
+            <a
+              className={`${styles.heroFeature} ${styles.flowVisual}`}
+              href={featuredPost.permalink}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="See Bruin Sports Analytics on Instagram"
+            >
+              <div className={styles.heroImage}>
+                <Image
+                  src={featuredPost.src}
+                  alt="A Bruin Sports Analytics event at UCLA"
+                  fill
+                  priority
+                  sizes="(max-width: 900px) 100vw, 42vw"
+                />
+              </div>
+            </a>
           ) : (
             <div className={`${styles.heroLogo} ${styles.flowVisual}`}>
               <Image
@@ -48,36 +77,83 @@ export default function Home() {
 
       <ScrollCountStats stats={impactStats} />
 
-      <section className="section">
-        <div className="container">
-          <h2 className="section-title">Our sports teams</h2>
-          <p className="section-lede">Each team focuses on one sport, from baseball to tennis.</p>
-          <div className={styles.sportPills}>
-            {sports.map((sport) => (
-              <Link key={sport.slug} href={`/teams/${sport.slug}`} className={styles.sportPill}>{sport.name}</Link>
-            ))}
+      <section className={`section ${styles.introSection}`}>
+        <div className={`container ${styles.introGrid}`}>
+          <div>
+            <h2 className="section-title">What we do</h2>
+          </div>
+          <p className={styles.introCopy}>
+            Members join a sport team, learn from one another, and work on projects
+            throughout the year. No sports analytics experience is required.
+          </p>
+          <div className={styles.practiceGrid}>
+            <Link href="/projects">
+              <ChartNoAxesColumnIncreasing className={styles.practiceIcon} size={26} aria-hidden />
+              <strong>Team projects</strong>
+              <p>Build models, dashboards, and research with one of our five sports teams.</p>
+            </Link>
+            <Link href="/journalism">
+              <Newspaper className={styles.practiceIcon} size={26} aria-hidden />
+              <strong>Data journalism</strong>
+              <p>Tell clear, interesting sports stories through data and writing.</p>
+            </Link>
+            <Link href="/partner">
+              <Handshake className={styles.practiceIcon} size={26} aria-hidden />
+              <strong>Partnerships</strong>
+              <p>Work with teams and organizations on practical sports questions.</p>
+            </Link>
           </div>
         </div>
       </section>
 
-      <section className="section">
+      <section className={`section ${styles.teamsSection}`}>
         <div className="container">
-          <h2 className="section-title" style={{ textAlign: "center" }}>Where We Go</h2>
-          <LogoCategories logos={displayedOutcomes} />
+          <div className={styles.sectionHeader}>
+            <div>
+              <h2 className="section-title">Explore our teams</h2>
+            </div>
+            <p className={styles.headerNote}>Each team welcomes students with different interests and levels of experience.</p>
+          </div>
+          <div className={styles.sportList}>
+            {sports.map((sport) => {
+              const SportIcon = sport.icon;
+              return (
+                <Link
+                  key={sport.slug}
+                  href={`/teams/${sport.slug}`}
+                  className={styles.sportRow}
+                  style={{ borderTopColor: sport.accent }}
+                >
+                  <span className={styles.sportIcon} style={{ color: sport.accent }}><SportIcon size={28} /></span>
+                  <strong>{sport.name}</strong>
+                  <p>{sport.description}</p>
+                  <ArrowUpRight className={styles.sportArrow} size={22} aria-hidden />
+                </Link>
+              );
+            })}
+          </div>
         </div>
       </section>
 
-      <section className="section">
+      <section className={`section ${styles.eventsSection}`}>
         <div className="container">
           <div className={styles.sectionHeader}>
             <div>
               <h2 className="section-title">Upcoming events</h2>
             </div>
-            <Link className="btn btn-secondary" href="/events"><CalendarDays size={18} aria-hidden /> View all</Link>
+            <Link className={styles.sectionLink} href="/events"><CalendarDays size={17} aria-hidden /> View calendar</Link>
           </div>
           <div className="grid three">
             {publicEvents.map((event) => <EventCard event={event} key={event.slug} />)}
           </div>
+        </div>
+      </section>
+
+      <section className={`section ${styles.outcomesSection}`}>
+        <div className="container">
+          <h2 className="section-title">Where our members go</h2>
+          <p className="section-lede">Our members have continued their work across sports, technology, consulting, and graduate school.</p>
+          <LogoCategories logos={displayedOutcomes} />
         </div>
       </section>
 
@@ -86,15 +162,15 @@ export default function Home() {
           <div className={styles.finalCta}>
             <Link href="/join">
               <div className={styles.ctaText}>
-                <span>Students</span>
-                <b>Build with us.</b>
+                <span>For UCLA students</span>
+                <b>Find your team.</b>
               </div>
               <ArrowRight className={styles.ctaArrow} aria-hidden />
             </Link>
             <Link href="/partner">
               <div className={styles.ctaText}>
-                <span>Organizations</span>
-                <b>Bring us the problem.</b>
+                <span>For organizations</span>
+                <b>Work with BSA.</b>
               </div>
               <ArrowRight className={styles.ctaArrow} aria-hidden />
             </Link>
