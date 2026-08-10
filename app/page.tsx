@@ -4,19 +4,12 @@ import { ArrowRight, CalendarDays } from "lucide-react";
 import { EventCard } from "@/components/EventCard";
 import { LogoCategories } from "@/components/LogoCategories";
 import { InstagramCollage } from "@/components/InstagramCollage";
-import { ProjectCardGroup } from "@/components/ProjectCardGroup";
 import { ScrollCountStats } from "@/components/ScrollCountStats";
 import { instagramPosts } from "@/data/instagram-posts";
 import { events, impactStats, outcomes, sports } from "@/data/site";
-import { currentlyFeatured, publicProjects } from "@/lib/utils";
 import styles from "./page.module.css";
 
 export default function Home() {
-  const featuredProjects = currentlyFeatured();
-  const featured = (featuredProjects.length > 0
-    ? featuredProjects
-    : [...publicProjects()].sort((a, b) => Date.parse(b.lastUpdated) - Date.parse(a.lastUpdated))
-  ).slice(0, 3);
   const publicEvents = events.filter((event) => !event.isMembersOnly).slice(0, 3);
   const displayedOutcomes = outcomes.filter((outcome) => outcome.approvedForDisplay);
 
@@ -64,18 +57,6 @@ export default function Home() {
               <Link key={sport.slug} href={`/teams/${sport.slug}`} className={styles.sportPill}>{sport.name}</Link>
             ))}
           </div>
-        </div>
-      </section>
-
-      <section className="section">
-        <div className="container">
-          <div className={styles.sectionHeader}>
-            <div>
-              <h2 className="section-title">Featured projects</h2>
-            </div>
-            <Link className="btn btn-secondary" href="/projects">Open dashboard</Link>
-          </div>
-          <ProjectCardGroup projects={featured} />
         </div>
       </section>
 

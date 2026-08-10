@@ -19,3 +19,4 @@ A running list of updates made to the BSA site.
 - Member cards no longer lift/move the photo on hover
 - Member cards show name/role in a static bubble; major and year sit as text under the photo
 - Replaced Teams nav carousel with a compact mega menu showing all sports at once
+- Removed Featured projects section from the homepage
