@@ -14,16 +14,74 @@ type Props = {
 
 const contentDirectory = path.join(process.cwd(), "content", "journalism");
 
+const sectionHeadings = [
+  "Background",
+  "Best of 3 Dominance",
+  "Grand Slam Disappointment",
+  "But Time is Also a Friend",
+  "Goal of this Article",
+  "Predicting NBA Free Agent Salaries",
+  "Introduction Relevance",
+  "Introduction",
+  "It's more than just the goalkeeper",
+  "Understanding Contracts and Free Agency",
+  "Methodology Organizing the Data",
+  "Methodology and Rationale",
+  "Methodology",
+  "Interesting Notes",
+  "An Attempt to Create our Own Statistic",
+  "Results",
+  "Some top performers:",
+  "Next Steps",
+  "Conclusion and Further Remarks",
+  "Conclusion",
+  "Why GameScore",
+  "Exploring the Data",
+  "Other Issues and Future Plans",
+  "Sources and Credits",
+  "Time is the Enemy...",
+  "Analyzing the Performance of the Finalists",
+  "What is it?",
+  "StatsBomb",
+  "MLB: Jonathon Lucroy"
+].sort((a, b) => b.length - a.length);
+
+const ignoredExtractedText = new Set([
+  "Subscribe to our newsletter!",
+  "email address Subscribe",
+  "via GIPHY"
+]);
+
+function textToBlocks(text: string): ArticleBlock[] {
+  return text
+    .split(/\n{2,}/)
+    .map((value) => value.replace(/\s+/g, " ").trim())
+    .filter((value) => value && !ignoredExtractedText.has(value))
+    .flatMap((value) => {
+      const exactHeading = sectionHeadings.find((heading) => value === heading);
+      if (exactHeading) {
+        return [{ type: "heading", text: exactHeading } satisfies ArticleBlock];
+      }
+
+      const leadingHeading = sectionHeadings.find((heading) => value.startsWith(`${heading} `));
+      if (leadingHeading) {
+        const paragraph = value.slice(leadingHeading.length).trim();
+        return [
+          { type: "heading", text: leadingHeading } satisfies ArticleBlock,
+          { type: "paragraph", text: paragraph } satisfies ArticleBlock
+        ];
+      }
+
+      return [{ type: "paragraph", text: value } satisfies ArticleBlock];
+    });
+}
+
 function fileContentBlocks(article: JournalismArticle): ArticleBlock[] {
   if (!article.contentFile) return [];
 
   try {
     const filePath = path.join(contentDirectory, article.contentFile);
-    const blocks: ArticleBlock[] = readFileSync(filePath, "utf8")
-      .split(/\n{2,}/)
-      .map((text) => text.replace(/\s+/g, " ").trim())
-      .filter(Boolean)
-      .map((text) => ({ type: "paragraph", text }));
+    const blocks = textToBlocks(readFileSync(filePath, "utf8"));
 
     article.images?.forEach((image) => {
       blocks.splice(Math.min(image.afterParagraph + 1, blocks.length), 0, {
