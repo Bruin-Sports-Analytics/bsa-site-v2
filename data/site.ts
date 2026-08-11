@@ -791,12 +791,19 @@ export const memberProfiles: MemberProfile[] = [
         "team": "Football",
         "bio": "Football analytics contributor and BSA Data Journalism Co-Chair.",
         "sortOrder": 206
-      },
+      }
+    ]
+  },
+  {
+    "name": "Anika Malapati",
+    "major": "Stats & Data Science",
+    "gradYear": "2028",
+    "linkedinUrl": "https://www.linkedin.com/in/anika-malapati",
+    "photoUrl": "/assets/linkedin_headshots/anika-malapati.jpeg",
+    "isPublished": true,
+    "assignments": [
       {
         "slug": "anika-malapati-volleyball",
-        "name": "Anika Malapati",
-        "linkedinUrl": null,
-        "photoUrl": null,
         "role": "Volleyball Analyst",
         "group": "member",
         "team": "Volleyball",
