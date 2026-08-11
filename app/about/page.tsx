@@ -160,7 +160,6 @@ export default function AboutPage() {
                       <div
                         key={sport.slug}
                         className={styles.sportOrgItem}
-                        style={{ "--sport-accent": sport.accent } as React.CSSProperties}
                       >
                         <Icon size={22} aria-hidden="true" />
                         <span>{sport.name}</span>

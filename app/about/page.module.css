@@ -215,11 +215,11 @@
   min-height: 74px;
   align-items: center;
   gap: 12px;
-  border: 1px solid color-mix(in srgb, var(--sport-accent) 42%, var(--glass-border));
+  border: 1px solid var(--glass-border);
   border-radius: var(--radius-sm);
   padding: 14px;
   background:
-    linear-gradient(135deg, color-mix(in srgb, var(--sport-accent) 18%, transparent), transparent 66%),
+    linear-gradient(135deg, rgba(74, 168, 255, .10), rgba(255, 209, 0, .05) 66%),
     var(--tag-fill);
   color: var(--text-primary);
   font-family: var(--font-sora), system-ui, sans-serif;
@@ -228,7 +228,7 @@
 
 .sportOrgItem svg {
   flex: 0 0 auto;
-  color: var(--sport-accent);
+  color: var(--sky-blue);
 }
 
 .functionList {
