@@ -1189,27 +1189,27 @@ export const members: Member[] = memberProfiles.flatMap((profile) =>
 );
 
 export const alumni: AlumniProfile[] = [
-  { name: "Nadeev Alam" },
-  { name: "Rhea Jain" },
-  { name: "Trent Bellinger" },
-  { name: "Siddharth Singh" },
-  { name: "Tom Seifert" },
-  { name: "Daniel Wang" },
-  { name: "Leo Cardozo" },
-  { name: "Abhinav Madabhushi" },
-  { name: "Steven Lu Chen" },
-  { name: "Derek Nakagawa" },
-  { name: "Bryan Mui" },
-  { name: "Shail Mirpuri" },
-  { name: "Oscar O'Brien" },
-  { name: "Shashvat Patel" },
-  { name: "Jerry Shi" },
-  { name: "Clajerson Gimena" },
-  { name: "Lucas Q" },
-  { name: "Michelle Li" },
-  { name: "Alexander West" },
-  { name: "Frederick Zhang" },
-  { name: "Dillon Maheshwari" }
+  { name: "Nadeev Alam", linkedinUrl: "https://www.linkedin.com/in/nadeevalam" },
+  { name: "Rhea Jain", linkedinUrl: "https://www.linkedin.com/in/rhea-r-jain" },
+  { name: "Trent Bellinger", linkedinUrl: "https://www.linkedin.com/in/trent-bellinger-84041a22b" },
+  { name: "Siddharth Singh", linkedinUrl: "https://www.linkedin.com/in/siddharthsinghxx" },
+  { name: "Tom Seifert", linkedinUrl: "https://www.linkedin.com/in/tom-seifertt" },
+  { name: "Daniel Wang", linkedinUrl: "https://www.linkedin.com/in/danielwang22" },
+  { name: "Leo Cardozo", linkedinUrl: "https://www.linkedin.com/in/leo-cardozo" },
+  { name: "Abhinav Madabhushi", linkedinUrl: "https://www.linkedin.com/in/abhinav-madabhushi-a3109a211" },
+  { name: "Steven Lu Chen", linkedinUrl: "https://www.linkedin.com/in/stevenluchen" },
+  { name: "Derek Nakagawa", linkedinUrl: "https://www.linkedin.com/in/derek-nakagawa-77a9aa180" },
+  { name: "Bryan Mui", linkedinUrl: "https://www.linkedin.com/in/bryanmui" },
+  { name: "Shail Mirpuri", linkedinUrl: "https://www.linkedin.com/in/shail-mirpuri" },
+  { name: "Oscar O'Brien", linkedinUrl: "https://www.linkedin.com/in/oscar-obrien" },
+  { name: "Shashvat Patel", linkedinUrl: "https://www.linkedin.com/in/shashvatpatel" },
+  { name: "Jerry Shi", linkedinUrl: "https://www.linkedin.com/in/jerry-shi88" },
+  { name: "Clajerson Gimena", linkedinUrl: "https://www.linkedin.com/in/clajersongimena" },
+  { name: "Lucas Q", linkedinUrl: "https://www.linkedin.com/in/lucas-qiu" },
+  { name: "Michelle Li", linkedinUrl: "https://www.linkedin.com/in/michellexli" },
+  { name: "Alexander West", linkedinUrl: "https://www.linkedin.com/in/awest25" },
+  { name: "Frederick Zhang", linkedinUrl: "https://www.linkedin.com/in/frederickmzhang" },
+  { name: "Dillon Maheshwari", linkedinUrl: "https://www.linkedin.com/in/dillon-maheshwari-87378b302" }
 ];
 
 const activeProjectCount = projects.filter(isActiveProject).length;
