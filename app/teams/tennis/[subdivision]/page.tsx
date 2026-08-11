@@ -8,23 +8,39 @@ type Props = {
   params: { subdivision: string };
 };
 
-export function generateStaticParams() {
+const legacyTennisSubdivisionSlugs: Record<string, string> = {
+  "match-strategy": "Strategy - role",
+  "player-development": "Tagging - role",
+  "scouting-and-recruitment": "Scouting - role"
+};
+
+function tennisSubdivisions() {
   const tennis = sports.find((sport) => sport.slug === "tennis");
-  return (tennis?.subdivisions ?? []).map((subdivision) => ({ subdivision: slugify(subdivision) }));
+  return tennis?.subdivisions ?? [];
+}
+
+function resolveSubdivision(slug: string) {
+  return tennisSubdivisions().find((item) => slugify(item) === slug) ?? legacyTennisSubdivisionSlugs[slug];
+}
+
+export function generateStaticParams() {
+  return [
+    ...tennisSubdivisions().map((subdivision) => ({ subdivision: slugify(subdivision) })),
+    ...Object.keys(legacyTennisSubdivisionSlugs).map((subdivision) => ({ subdivision }))
+  ];
 }
 
 export function generateMetadata({ params }: Props): Metadata {
-  const tennis = sports.find((sport) => sport.slug === "tennis");
-  const name = tennis?.subdivisions?.find((item) => slugify(item) === params.subdivision);
+  const name = resolveSubdivision(params.subdivision);
   return { title: name ? `Tennis: ${name}` : "Tennis Program" };
 }
 
 export default function TennisSubdivisionPage({ params }: Props) {
   const tennis = sports.find((sport) => sport.slug === "tennis");
-  const name = tennis?.subdivisions?.find((item) => slugify(item) === params.subdivision);
+  const name = resolveSubdivision(params.subdivision);
   if (!tennis || !name) notFound();
 
-  const subdivisionProjects = projects.filter((project) => project.subdivision === name);
+  const subdivisionProjects = projects.filter((project) => project.subdivision === name || (project.subdivision && legacyTennisSubdivisionSlugs[slugify(project.subdivision)] === name));
 
   return (
     <main>
@@ -32,7 +48,7 @@ export default function TennisSubdivisionPage({ params }: Props) {
         <div className="container">
           <span className="eyebrow">Tennis program</span>
           <h1>{name}</h1>
-          <p>This CMS-configurable subdivision can publish its own active projects, dashboards, lead contacts, and archived work.</p>
+          <p>This role area can publish active projects, dashboards, lead contacts, and archived work without breaking older tennis program links.</p>
         </div>
       </section>
       <section className="section">

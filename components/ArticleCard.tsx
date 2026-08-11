@@ -26,7 +26,7 @@ type Props = {
 
 export function ArticleCard({ article, featured = false }: Props) {
   const tone = getSportTone(article.sport);
-  const readHref = article.paperUrl ? `/journalism/${slugify(article.title)}` : null;
+  const readHref = article.paperUrl || article.content?.length || article.contentFile ? `/journalism/${slugify(article.title)}` : null;
 
   return (
     <article className={`${styles.card}${featured ? ` ${styles.featured}` : ""}`}>

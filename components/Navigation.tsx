@@ -98,8 +98,8 @@ export function Navigation() {
             );
           })}
         </nav>
-        <ThemeToggle className={styles.desktopThemeToggle} />
         <Link href="/partner" className={`${styles.partner} glass glass--gold glass--radius-pill`}><span className={styles.partnerFill} aria-hidden /><span className={styles.partnerLabel}>Partner With Us</span></Link>
+        <ThemeToggle className={styles.desktopThemeToggle} />
         <button className={styles.mobileButton} type="button" onClick={() => setOpen((value) => !value)} aria-label="Toggle navigation" aria-expanded={open}>
           {open ? <X aria-hidden /> : <Menu aria-hidden />}
         </button>

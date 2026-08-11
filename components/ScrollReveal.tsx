@@ -62,7 +62,7 @@ function centerOutDelay(element: HTMLElement, siblings: HTMLElement[]) {
   const distances = Array.from(new Set(row.map((_, itemIndex) => Math.abs(itemIndex - center)))).sort((a, b) => a - b);
   const distanceRank = distances.indexOf(Math.abs(index - center));
 
-  return Math.min(rowIndex * 45 + distanceRank * 70, 420);
+  return Math.min(rowIndex * 24 + distanceRank * 32, 160);
 }
 
 export function ScrollReveal() {
@@ -90,7 +90,7 @@ export function ScrollReveal() {
 
       const siblings = Array.from(parent.children).filter((child): child is HTMLElement => child instanceof HTMLElement && child.matches(revealSelector));
       const index = Math.max(0, siblings.indexOf(element));
-      const delay = isGridRevealParent(parent) ? centerOutDelay(element, siblings) : Math.min(index, 6) * 60;
+      const delay = isGridRevealParent(parent) ? centerOutDelay(element, siblings) : Math.min(index, 4) * 28;
       element.style.setProperty("--reveal-delay", `${delay}ms`);
     });
 
@@ -104,8 +104,8 @@ export function ScrollReveal() {
       },
       {
         root: null,
-        rootMargin: "0px 0px -10% 0px",
-        threshold: 0.12
+        rootMargin: "0px 0px 18% 0px",
+        threshold: 0.01
       }
     );
 

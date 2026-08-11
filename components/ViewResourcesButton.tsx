@@ -46,23 +46,22 @@ export function ViewResourcesButton({ resources }: Props) {
         <ChevronDown size={16} aria-hidden className={`${styles.caret} ${open ? styles.caretOpen : ""}`} />
       </button>
 
-      {open && (
-        <div className={styles.menu} id={menuId} role="menu" aria-label="Data Journalism resources">
-          {resources.map((resource) => (
-            <a
-              key={resource.href}
-              className={styles.item}
-              role="menuitem"
-              href={resource.href}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <span>{resource.label}</span>
-              <ArrowUpRight size={15} aria-hidden />
-            </a>
-          ))}
-        </div>
-      )}
+      <div className={`${styles.menu} ${open ? styles.menuOpen : ""}`} id={menuId} role="menu" aria-label="Data Journalism resources" aria-hidden={!open}>
+        {resources.map((resource) => (
+          <a
+            key={resource.href}
+            className={styles.item}
+            role="menuitem"
+            href={resource.href}
+            target="_blank"
+            rel="noopener noreferrer"
+            tabIndex={open ? 0 : -1}
+          >
+            <span>{resource.label}</span>
+            <ArrowUpRight size={15} aria-hidden />
+          </a>
+        ))}
+      </div>
     </div>
   );
 }

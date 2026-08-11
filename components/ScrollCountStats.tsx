@@ -62,7 +62,7 @@ export function ScrollCountStats({ stats }: { stats: Stat[] }) {
       <div className={styles.inner}>
         <div className={styles.rail}>
           {stats.map((stat, index) => (
-            <div className={styles.stat} key={stat.label} data-load-reveal style={{ "--flow-delay": `${520 + index * 70}ms` } as CSSProperties}>
+            <div className={styles.stat} key={stat.label} data-load-reveal style={{ "--flow-delay": `${120 + index * 35}ms` } as CSSProperties}>
               <b>{Math.round(progress * stat.value)}</b>
               <span>{stat.label}</span>
             </div>

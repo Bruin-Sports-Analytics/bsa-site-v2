@@ -28,9 +28,282 @@
     0 0 34px rgba(255, 184, 28, .25);
 }
 
+.milestoneHeader {
+  margin-bottom: 18px;
+}
+
+.milestoneGrid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.milestoneCard {
+  position: relative;
+  min-height: 320px;
+  padding: 26px 22px 24px;
+  overflow: hidden;
+  border: 1px solid var(--glass-border);
+  border-top: 3px solid var(--ucla-gold);
+  border-radius: var(--radius-sm);
+  background:
+    linear-gradient(180deg, rgba(255, 209, 0, .10), transparent 34%),
+    var(--card-fill);
+  box-shadow: var(--card-shadow);
+}
+
+.milestoneCard::after {
+  position: absolute;
+  right: -42px;
+  bottom: -52px;
+  width: 132px;
+  height: 132px;
+  border: 1px solid rgba(139, 203, 255, .16);
+  border-radius: 50%;
+  content: "";
+}
+
+.milestoneMeta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  color: var(--text-muted);
+  font-family: var(--font-mono), monospace;
+  font-size: 12px;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+.milestoneCard h3 {
+  margin: 24px 0 14px;
+  font-family: var(--font-sora), system-ui, sans-serif;
+  font-size: clamp(1.25rem, 1.5vw, 1.55rem);
+  line-height: 1.16;
+}
+
+.milestoneCard p {
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  color: var(--text-secondary);
+  font-size: 15px;
+  line-height: 1.65;
+}
+
+.orgIntro {
+  max-width: 740px;
+  margin-bottom: 24px;
+}
+
+.orgMap {
+  display: grid;
+  gap: 18px;
+}
+
+.orgBand,
+.orgPanel {
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-sm);
+  background: var(--card-fill);
+  box-shadow: var(--card-shadow);
+}
+
+.orgBand {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(280px, .9fr);
+  align-items: center;
+  gap: 24px;
+  padding: 24px;
+}
+
+.governanceBand {
+  background:
+    linear-gradient(120deg, rgba(74, 168, 255, .14), rgba(255, 209, 0, .06)),
+    var(--card-fill);
+}
+
+.deliveryBand {
+  grid-template-columns: 180px minmax(0, 1fr);
+  border-color: var(--glass-border-gold);
+  background:
+    linear-gradient(120deg, rgba(255, 209, 0, .11), rgba(74, 168, 255, .07)),
+    var(--card-fill);
+}
+
+.orgKicker {
+  display: block;
+  color: var(--text-muted);
+  font-family: var(--font-mono), monospace;
+  font-size: 12px;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+
+.orgBand h3,
+.orgPanel h3 {
+  margin: 8px 0 10px;
+  font-family: var(--font-sora), system-ui, sans-serif;
+  font-size: clamp(1.35rem, 2vw, 1.85rem);
+  line-height: 1.16;
+}
+
+.orgBand p,
+.orgPanel p {
+  margin: 0;
+  color: var(--text-secondary);
+  line-height: 1.62;
+}
+
+.orgChips {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.orgChips span {
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-pill);
+  padding: 9px 12px;
+  background: var(--tag-fill);
+  color: var(--text-primary);
+  font-family: var(--font-mono), monospace;
+  font-size: 12px;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+}
+
+.orgMiddle {
+  display: grid;
+  grid-template-columns: minmax(0, 1.08fr) minmax(340px, .92fr);
+  gap: 18px;
+  align-items: stretch;
+}
+
+.orgPanel {
+  padding: 24px;
+}
+
+.orgPanelHeader {
+  margin-bottom: 20px;
+}
+
+.sportPanel {
+  background:
+    linear-gradient(180deg, rgba(74, 168, 255, .12), transparent 44%),
+    var(--card-fill);
+}
+
+.functionPanel {
+  background:
+    linear-gradient(180deg, rgba(255, 209, 0, .10), transparent 42%),
+    var(--card-fill);
+}
+
+.sportOrgGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.sportOrgItem {
+  display: flex;
+  min-height: 74px;
+  align-items: center;
+  gap: 12px;
+  border: 1px solid color-mix(in srgb, var(--sport-accent) 42%, var(--glass-border));
+  border-radius: var(--radius-sm);
+  padding: 14px;
+  background:
+    linear-gradient(135deg, color-mix(in srgb, var(--sport-accent) 18%, transparent), transparent 66%),
+    var(--tag-fill);
+  color: var(--text-primary);
+  font-family: var(--font-sora), system-ui, sans-serif;
+  font-weight: 700;
+}
+
+.sportOrgItem svg {
+  flex: 0 0 auto;
+  color: var(--sport-accent);
+}
+
+.functionList {
+  display: grid;
+  gap: 12px;
+}
+
+.functionItem {
+  border-left: 3px solid var(--ucla-gold);
+  padding: 2px 0 2px 14px;
+}
+
+.functionItem h4 {
+  margin: 0 0 5px;
+  font-family: var(--font-sora), system-ui, sans-serif;
+  font-size: 16px;
+}
+
+.functionItem p {
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+@media (max-width: 1100px) {
+  .milestoneGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .milestoneCard {
+    min-height: 260px;
+  }
+
+  .orgBand,
+  .orgMiddle {
+    grid-template-columns: 1fr;
+  }
+
+  .orgChips {
+    justify-content: flex-start;
+  }
+}
+
 @media (max-width: 640px) {
   .missionStatement {
     max-width: 100%;
     line-height: 1.38;
+  }
+
+  .milestoneGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .milestoneCard {
+    min-height: 0;
+    padding: 24px 20px;
+  }
+
+  .orgIntro {
+    margin-bottom: 18px;
+  }
+
+  .orgBand,
+  .orgPanel {
+    padding: 20px;
+  }
+
+  .deliveryBand {
+    gap: 10px;
+  }
+
+  .sportOrgGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .orgChips span {
+    font-size: 11px;
   }
 }

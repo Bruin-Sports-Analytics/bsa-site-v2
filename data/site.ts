@@ -69,6 +69,11 @@ export function projectLifecycleStatus(project: Pick<Project, "lastUpdated" | "v
 }
 
 export type MemberAssignment = {
+  name?: string;
+  major?: string;
+  gradYear?: string;
+  linkedinUrl?: string | null;
+  photoUrl?: string | null;
   slug: string;
   role: string;
   group: "board" | "member" | "alum";
@@ -91,6 +96,10 @@ export type MemberProfile = {
 };
 
 export type Member = Omit<MemberProfile, "assignments"> & MemberAssignment;
+export type AlumniProfile = {
+  name: string;
+  linkedinUrl?: string;
+};
 export type Event = {
   title: string;
   slug: string;
@@ -183,7 +192,7 @@ export const sports: Sport[] = [
     featuredMetric: "3 programs",
     lead: "Tennis Analytics Lead",
     accent: "#8BCBFF",
-    subdivisions: ["Match Strategy", "Player Development", "Scouting & Recruitment"]
+    subdivisions: ["Scouting - role", "Tagging - role", "Strategy - role"]
   }
 ];
 
@@ -784,11 +793,14 @@ export const memberProfiles: MemberProfile[] = [
         "sortOrder": 206
       },
       {
-        "slug": "anika-soitkar-volleyball",
+        "slug": "anika-malapati-volleyball",
+        "name": "Anika Malapati",
+        "linkedinUrl": null,
+        "photoUrl": null,
         "role": "Volleyball Analyst",
         "group": "member",
         "team": "Volleyball",
-        "bio": "Volleyball analytics contributor and BSA Data Journalism Co-Chair.",
+        "bio": "Volleyball analytics contributor.",
         "sortOrder": 502
       }
     ]
@@ -1159,18 +1171,46 @@ export const memberProfiles: MemberProfile[] = [
 ];
 
 export const members: Member[] = memberProfiles.flatMap((profile) =>
-  profile.assignments.map((assignment) => ({
-    name: profile.name,
-    major: profile.major,
-    gradYear: profile.gradYear,
-    linkedinUrl: profile.linkedinUrl,
-    photoUrl: profile.photoUrl,
-    photoTransform: profile.photoTransform,
-    currentOrganization: profile.currentOrganization,
-    isPublished: profile.isPublished,
-    ...assignment
-  }))
+  profile.assignments.map((assignment) => {
+    const { name, major, gradYear, linkedinUrl, photoUrl, ...assignmentDetails } = assignment;
+
+    return {
+      name: name ?? profile.name,
+      major: major ?? profile.major,
+      gradYear: gradYear ?? profile.gradYear,
+      linkedinUrl: linkedinUrl === null ? undefined : linkedinUrl ?? profile.linkedinUrl,
+      photoUrl: photoUrl === null ? undefined : photoUrl ?? profile.photoUrl,
+      photoTransform: profile.photoTransform,
+      currentOrganization: profile.currentOrganization,
+      isPublished: profile.isPublished,
+      ...assignmentDetails
+    };
+  })
 );
+
+export const alumni: AlumniProfile[] = [
+  { name: "Nadeev Alam" },
+  { name: "Rhea Jain" },
+  { name: "Trent Bellinger" },
+  { name: "Siddharth Singh" },
+  { name: "Tom Seifert" },
+  { name: "Daniel Wang" },
+  { name: "Leo Cardozo" },
+  { name: "Abhinav Madabhushi" },
+  { name: "Steven Lu Chen" },
+  { name: "Derek Nakagawa" },
+  { name: "Bryan Mui" },
+  { name: "Shail Mirpuri" },
+  { name: "Oscar O'Brien" },
+  { name: "Shashvat Patel" },
+  { name: "Jerry Shi" },
+  { name: "Clajerson Gimena" },
+  { name: "Lucas Q" },
+  { name: "Michelle Li" },
+  { name: "Alexander West" },
+  { name: "Frederick Zhang" },
+  { name: "Dillon Maheshwari" }
+];
 
 const activeProjectCount = projects.filter(isActiveProject).length;
 

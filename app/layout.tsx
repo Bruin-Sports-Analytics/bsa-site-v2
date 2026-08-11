@@ -75,8 +75,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <ColorPops />
           <ScrollReveal />
           <SocialSidebar />
-          <RouteTransitions>{children}</RouteTransitions>
-          <Footer />
+          <RouteTransitions>
+            {children}
+            <Footer />
+          </RouteTransitions>
         </div>
       </body>
     </html>

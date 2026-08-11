@@ -4,7 +4,7 @@ import { members } from "@/data/site";
 import { PeopleSections } from "@/components/PeopleSections";
 
 export const metadata: Metadata = {
-  title: "Board"
+  title: "Our Board, '26-27"
 };
 
 const normalize = (value: string) => value.trim().toLowerCase();
@@ -32,7 +32,7 @@ export default function BoardPage() {
       <section className="page-hero">
         <div className="container">
           <span className="eyebrow">People</span>
-          <h1>Board</h1>
+          <h1>Our Board, &apos;26-27</h1>
 
           <Link className="btn btn-secondary" href="/people/members">View current members</Link>
         </div>

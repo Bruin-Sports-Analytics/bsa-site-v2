@@ -284,28 +284,32 @@ button {
   flex: 1 1 auto;
   min-width: 0;
   opacity: 1;
-  animation: route-enter 520ms cubic-bezier(.2, .8, .2, 1) both;
-  transition:
-    opacity 240ms ease,
-    transform 240ms cubic-bezier(.32, 0, .67, 0);
-  will-change: opacity, transform;
+  animation: route-enter 260ms ease both;
+  will-change: opacity;
 }
 
 .route-transition--exiting {
-  opacity: 0;
-  transform: translateY(-8px) scale(.996);
+  animation: route-exit 240ms ease both;
   pointer-events: none;
 }
 
 @keyframes route-enter {
   from {
     opacity: 0;
-    transform: translateY(12px) scale(.998);
   }
 
   to {
     opacity: 1;
-    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes route-exit {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
   }
 }
 
@@ -351,10 +355,10 @@ main > section > * {
 
 .scroll-reveal-enabled [data-reveal="true"] {
   opacity: 0;
-  transform: translate3d(0, 24px, 0) scale(.988);
+  transform: translate3d(0, 12px, 0) scale(.995);
   transition:
-    opacity 640ms ease,
-    transform 640ms cubic-bezier(.2, .8, .2, 1);
+    opacity 360ms ease,
+    transform 360ms cubic-bezier(.2, .8, .2, 1);
   transition-delay: var(--reveal-delay, 0ms);
   will-change: opacity, transform;
 }

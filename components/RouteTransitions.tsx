@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useLayoutEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { usePathname, useRouter } from "next/navigation";
 import type { ReactNode } from "react";
 
@@ -23,10 +23,6 @@ export function RouteTransitions({ children }: { children: ReactNode }) {
   const router = useRouter();
   const timeoutRef = useRef<number | null>(null);
   const [exiting, setExiting] = useState(false);
-
-  useLayoutEffect(() => {
-    forceScrollTop();
-  }, [pathname]);
 
   useEffect(() => {
     setExiting(false);
@@ -53,7 +49,8 @@ export function RouteTransitions({ children }: { children: ReactNode }) {
       event.preventDefault();
 
       const navigate = () => {
-        router.push(`${url.pathname}${url.search}${url.hash}`, { scroll: false });
+        forceScrollTop();
+        router.push(`${url.pathname}${url.search}${url.hash}`);
       };
 
       if (timeoutRef.current) {
