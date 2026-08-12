@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 import {
   ArrowRight,
@@ -11,25 +10,22 @@ import {
 import { EventCard } from "@/components/EventCard";
 import { LogoCategories } from "@/components/LogoCategories";
 import { ScrollCountStats } from "@/components/ScrollCountStats";
-import { instagramPosts } from "@/data/instagram-posts";
 import { events, impactStats, outcomes, sports } from "@/data/site";
 import styles from "./page.module.css";
 
 export default function Home() {
   const publicEvents = events.filter((event) => !event.isMembersOnly).slice(0, 3);
   const displayedOutcomes = outcomes.filter((outcome) => outcome.approvedForDisplay);
-  const featuredPost = instagramPosts[4] ?? instagramPosts[0];
 
   return (
     <main className={styles.home}>
       <section className={styles.hero}>
         <div className={`container ${styles.heroGrid}`}>
           <div className={styles.heroCopy}>
-            <p className={`${styles.kicker} ${styles.flowTitle}`}>Bruin Sports Analytics at UCLA</p>
-            <h1 className={styles.flowTitle}>Where sports meet data.</h1>
+            <h1 className={styles.flowTitle}>Bruin Sports Analytics</h1>
             <p className={styles.flowText}>
-              We&apos;re a UCLA student organization working on research, tools,
-              and stories across five sports.
+              UCLA&apos;s student-run sports analytics organization. Research, tools,
+              and analysis across five sports.
             </p>
             <div className={`${styles.heroCta} ${styles.flowCta}`}>
               <div className="button-row">
@@ -43,35 +39,6 @@ export default function Home() {
               </Link>
             </div>
           </div>
-          {featuredPost ? (
-            <a
-              className={`${styles.heroFeature} ${styles.flowVisual}`}
-              href={featuredPost.permalink}
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="See Bruin Sports Analytics on Instagram"
-            >
-              <div className={styles.heroImage}>
-                <Image
-                  src={featuredPost.src}
-                  alt="A Bruin Sports Analytics event at UCLA"
-                  fill
-                  priority
-                  sizes="(max-width: 900px) 100vw, 42vw"
-                />
-              </div>
-            </a>
-          ) : (
-            <div className={`${styles.heroLogo} ${styles.flowVisual}`}>
-              <Image
-                src="/assets/bruin_sports_analytics_logo_high_quality.jpg"
-                alt="Bruin Sports Analytics logo"
-                width={420}
-                height={420}
-                priority
-              />
-            </div>
-          )}
         </div>
       </section>
 
