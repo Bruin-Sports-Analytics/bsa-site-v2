@@ -26,8 +26,6 @@ export type JournalismArticle = {
   contentFile?: string;
   images?: ArticleImage[];
   content?: ArticleBlock[];
-  views?: number;
-  likes?: number;
 };
 
 export type DjResource = { label: string; href: string };
@@ -320,8 +318,6 @@ export const articles: JournalismArticle[] = [
     year: 2026,
     sport: "Basketball",
     readTime: 5,
-    views: 122,
-    likes: 1,
   },
   {
     title: "As the Bar Rises, Scores Fall: Inside the New Normal of Olympic Gymnastics",
@@ -330,8 +326,6 @@ export const articles: JournalismArticle[] = [
     year: 2026,
     sport: "Gymnastics",
     readTime: 5,
-    views: 56,
-    likes: 0,
   },
   {
     title: "Why are the NBA ratings down?",
@@ -340,8 +334,6 @@ export const articles: JournalismArticle[] = [
     year: 2025,
     sport: "Basketball",
     readTime: 13,
-    views: 109,
-    likes: 1,
   },
   {
     title: 'Are the "Uncs" Holding Back the NBA?',
@@ -377,8 +369,6 @@ export const articles: JournalismArticle[] = [
         ]
       }
     ],
-    views: 74,
-    likes: 1,
   },
   {
     title: "Which Quarterbacks have been Historically Great against the Blitz?",
@@ -387,8 +377,6 @@ export const articles: JournalismArticle[] = [
     year: 2026,
     sport: "Football",
     readTime: 12,
-    views: 27,
-    likes: 0,
   },
   {
     title: "The Credit Goes to the Wrong People",
@@ -397,7 +385,5 @@ export const articles: JournalismArticle[] = [
     year: 2026,
     sport: "Baseball",
     readTime: 10,
-    views: 85,
-    likes: 3,
   },
 ];

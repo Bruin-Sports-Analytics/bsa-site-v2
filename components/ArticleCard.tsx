@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArrowUpRight, Heart } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
 import type { JournalismArticle } from "@/data/journalism";
 import { slugify } from "@/lib/utils";
 import { formatAuthors } from "@/lib/utils";
@@ -57,23 +57,12 @@ export function ArticleCard({ article, featured = false }: Props) {
           </div>
         )}
         <hr className={styles.divider} />
-        {(article.views != null || (article.likes ?? 0) > 0 || readHref) && (
+        {readHref && (
           <div className={styles.footer}>
-            <div className={styles.footerLeft}>
-              {article.views != null && <span>{`${article.views} views`}</span>}
-            </div>
             <div className={styles.footerRight}>
-              {(article.likes ?? 0) > 0 && (
-                <span className={styles.likes}>
-                  <Heart size={14} aria-hidden />
-                  {article.likes}
-                </span>
-              )}
-              {readHref && (
-                <Link href={readHref} className={styles.readButton}>
-                  Read <ArrowUpRight size={14} aria-hidden />
-                </Link>
-              )}
+              <Link href={readHref} className={styles.readButton}>
+                Read <ArrowUpRight size={14} aria-hidden />
+              </Link>
             </div>
           </div>
         )}
