@@ -5,6 +5,7 @@ import { ProjectCardGrid } from "@/components/ProjectCardGrid";
 import { getSportOverviewBySlug, type TeamSportSlug } from "@/lib/team-pages";
 import { slugify } from "@/lib/utils";
 import styles from "./SportHomePage.module.css";
+import heroStyles from "@/app/teams/sport-hero.module.css";
 
 const focusDescriptions: Record<TeamSportSlug, Record<string, string>> = {
   baseball: {
@@ -45,14 +46,13 @@ export function SportHomePage({ slug }: { slug: TeamSportSlug }) {
   if (!overview) return null;
 
   const { activeProjects, archivedProjects, analysts, chairs, featuredProject, sport, teamSize } = overview;
-  const Icon = sport.icon;
   const action = projectAction(featuredProject);
 
   return (
     <main>
       <section className="page-hero">
-        <div className={`container ${styles.heroGrid}`}>
-          <div className={styles.heroText}>
+        <div className={`container ${heroStyles.heroRow}`}>
+          <div className={heroStyles.heroText}>
             <span className="eyebrow">{sport.name} analytics</span>
             <h1>{sport.name}</h1>
             <p>{sport.description}</p>
@@ -65,33 +65,11 @@ export function SportHomePage({ slug }: { slug: TeamSportSlug }) {
             </div>
           </div>
 
-          <aside className={styles.heroPanel} aria-label={`${sport.name} team snapshot`} style={{ "--accent": sport.accent } as React.CSSProperties}>
-            <div className={styles.panelIcon}>
-              <Icon size={38} aria-hidden />
+          {chairs.length > 0 && (
+            <div className={chairs.length === 1 ? `${heroStyles.chairGrid} ${heroStyles.chairGridCentered}` : heroStyles.chairGrid}>
+              {chairs.map((chair) => <MemberCard member={chair} key={chair.slug} />)}
             </div>
-            <span className={styles.panelKicker}>Team snapshot</span>
-            <strong>{sport.featuredMetric}</strong>
-            <dl>
-              <div>
-                <dt>Active</dt>
-                <dd>{activeProjects.length}</dd>
-              </div>
-              <div>
-                <dt>Archive</dt>
-                <dd>{archivedProjects.length}</dd>
-              </div>
-              <div>
-                <dt>Members</dt>
-                <dd>{teamSize}</dd>
-              </div>
-            </dl>
-            {chairs.length ? (
-              <div className={styles.chairs}>
-                <span>Chairs</span>
-                <p>{chairs.map((chair) => chair.name).join(", ")}</p>
-              </div>
-            ) : null}
-          </aside>
+          )}
         </div>
       </section>
 
@@ -187,14 +165,14 @@ export function SportHomePage({ slug }: { slug: TeamSportSlug }) {
 
       <section className="section tight">
         <div className="container">
-          <div className={styles.teamHeader}>
+          <div className={heroStyles.teamSection}>
             <span className="eyebrow">Team</span>
-            <h2 className="section-title">{sport.name} roster</h2>
+            <h2 className={`section-title ${heroStyles.teamTitle}`}>{sport.name} roster</h2>
           </div>
           <div className="board-grid">
             {[...chairs, ...analysts].map((member) => <MemberCard member={member} key={member.slug} />)}
           </div>
-          <div className={styles.teamCta}>
+          <div className={`button-row ${heroStyles.teamButtonRow}`}>
             <Link className="btn btn-primary" href="/partner">Bring us a {sport.name.toLowerCase()} problem</Link>
           </div>
         </div>
