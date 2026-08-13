@@ -1,5 +1,8 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
+import { motion } from "framer-motion";
 import { ArrowRight, CalendarDays } from "lucide-react";
 import { EventCard } from "@/components/EventCard";
 import { LogoMarquee } from "@/components/LogoMarquee";
@@ -22,7 +25,12 @@ export default function Home() {
 
   return (
     <main className={styles.home}>
-      <section className={styles.hero}>
+      <motion.section
+        className={styles.hero}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.6 }}
+      >
         <div className={`container ${styles.heroGrid}`}>
           <div className={styles.heroCopy}>
             <h1 className={styles.flowTitle}>Bruin Sports Analytics</h1>
@@ -45,11 +53,24 @@ export default function Home() {
             />
           </div>
         </div>
-      </section>
+      </motion.section>
 
-      <ScrollCountStats stats={impactStats} />
+      <motion.div
+        initial={{ opacity: 0, y: 12 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, margin: "0px 0px -18% 0px" }}
+        transition={{ duration: 0.5 }}
+      >
+        <ScrollCountStats stats={impactStats} />
+      </motion.div>
 
-      <section className="section">
+      <motion.section
+        className="section"
+        initial={{ opacity: 0, y: 12 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, margin: "0px 0px -18% 0px" }}
+        transition={{ duration: 0.5 }}
+      >
         <div className="container">
           <span className="eyebrow">Our Work</span>
           <h2 className="section-title">Our sports teams</h2>
@@ -60,9 +81,15 @@ export default function Home() {
             ))}
           </div>
         </div>
-      </section>
+      </motion.section>
 
-      <section className="section">
+      <motion.section
+        className="section"
+        initial={{ opacity: 0, y: 12 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, margin: "0px 0px -18% 0px" }}
+        transition={{ duration: 0.5 }}
+      >
         <div className="container">
           <div className={styles.sectionHeader}>
             <div>
@@ -73,17 +100,29 @@ export default function Home() {
           </div>
           <ProjectCardGroup projects={featured} />
         </div>
-      </section>
+      </motion.section>
 
-      <section className="section">
+      <motion.section
+        className="section"
+        initial={{ opacity: 0, y: 12 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, margin: "0px 0px -18% 0px" }}
+        transition={{ duration: 0.5 }}
+      >
         <div className="container">
           <span className="eyebrow">Outcomes</span>
           <h2 className="section-title">Where our members go</h2>
         </div>
         <LogoMarquee rows={marqueeRows} />
-      </section>
+      </motion.section>
 
-      <section className="section">
+      <motion.section
+        className="section"
+        initial={{ opacity: 0, y: 12 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, margin: "0px 0px -18% 0px" }}
+        transition={{ duration: 0.5 }}
+      >
         <div className="container">
           <div className={styles.sectionHeader}>
             <div>
@@ -96,9 +135,15 @@ export default function Home() {
             {publicEvents.map((event) => <EventCard event={event} key={event.slug} />)}
           </div>
         </div>
-      </section>
+      </motion.section>
 
-      <section className="section tight">
+      <motion.section
+        className="section tight"
+        initial={{ opacity: 0, y: 12 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, margin: "0px 0px -18% 0px" }}
+        transition={{ duration: 0.5 }}
+      >
         <div className="container">
           <div className={styles.finalCta}>
             <Link href="/join">
@@ -117,7 +162,7 @@ export default function Home() {
             </Link>
           </div>
         </div>
-      </section>
+      </motion.section>
     </main>
   );
 }
