@@ -1,10 +1,66 @@
 .home {
   --home-rule: rgba(151, 193, 226, .18);
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  background: #0c283b;
+}
+
+.fieldBackdrop {
+  position: absolute;
+  z-index: 0;
+  inset: 0 24px;
+  display: grid;
+  grid-template-rows: repeat(32, minmax(0, 1fr));
+  border-right: 1px solid rgba(255, 209, 0, .2);
+  border-left: 1px solid rgba(255, 209, 0, .2);
+  pointer-events: none;
+}
+
+.fieldBackdrop span {
+  position: relative;
+  min-height: 0;
+  border-top: 1px solid rgba(255, 209, 0, .2);
+  background:
+    linear-gradient(
+      90deg,
+      transparent 0 43%,
+      rgba(255, 209, 0, .3) 43% 47%,
+      transparent 47% 53%,
+      rgba(255, 209, 0, .3) 53% 57%,
+      transparent 57%
+    ) top left / 100% 5px no-repeat;
+}
+
+.fieldBackdrop span i {
+  position: absolute;
+  top: 12px;
+  color: rgba(255, 209, 0, .52);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: clamp(13px, 1.5vw, 20px);
+  font-style: normal;
+  font-weight: 800;
+  letter-spacing: .05em;
+  line-height: 1;
+}
+
+.fieldBackdrop span i:first-child {
+  left: 34px;
+  transform: rotate(90deg);
+}
+
+.fieldBackdrop span i:last-child {
+  right: 34px;
+  transform: rotate(-90deg);
 }
 
 .home :global(.section:not(.tight)) {
   padding-top: 76px;
   padding-bottom: 76px;
+}
+
+.home :global(.section-title) {
+  text-transform: uppercase;
 }
 
 .hero {
@@ -14,22 +70,8 @@
   align-items: center;
   padding: 122px 0 58px;
   overflow: hidden;
-  background:
-    linear-gradient(rgba(139, 203, 255, .055) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(139, 203, 255, .055) 1px, transparent 1px),
-    #0c283b;
-  background-size: 74px 74px, 74px 74px, auto;
+  background: transparent;
   border-bottom: 0;
-}
-
-.hero::after {
-  content: "";
-  position: absolute;
-  inset: auto auto 0 0;
-  width: 36%;
-  height: 8px;
-  display: block;
-  background: #ffd100;
 }
 
 .heroGrid {
@@ -66,7 +108,6 @@
   margin-top: 34px;
 }
 
-.partnerLink,
 .sectionLink {
   display: inline-flex;
   align-items: center;
@@ -77,11 +118,6 @@
   transition: color .18s ease;
 }
 
-.hero .partnerLink {
-  color: #fff;
-}
-
-.partnerLink:hover,
 .sectionLink:hover {
   color: var(--ucla-gold);
 }
@@ -96,20 +132,7 @@
 .flowText { animation-delay: 90ms; }
 .flowCta { animation-delay: 170ms; }
 .introSection {
-  background: #0c283b;
-}
-
-.introGrid {
-  display: grid;
-  grid-template-columns: minmax(0, .9fr) minmax(340px, .7fr);
-  gap: 44px 80px;
-}
-
-.introCopy {
-  margin: 28px 0 0;
-  color: var(--text-secondary);
-  font-size: 18px;
-  line-height: 1.7;
+  background: transparent;
 }
 
 .practiceGrid {
@@ -118,6 +141,10 @@
   grid-template-columns: repeat(3, 1fr);
   border-top: 1px solid var(--home-rule);
   border-bottom: 1px solid var(--home-rule);
+}
+
+.practiceSection {
+  background: transparent;
 }
 
 .practiceGrid a {
@@ -143,6 +170,7 @@
   font-family: var(--font-sora), system-ui, sans-serif;
   font-size: 20px;
   line-height: 1.2;
+  text-transform: uppercase;
 }
 
 .practiceIcon {
@@ -178,7 +206,7 @@
 .teamsSection,
 .eventsSection,
 .outcomesSection {
-  background: #0c283b;
+  background: transparent;
 }
 
 .teamsSection {
@@ -294,6 +322,7 @@
   font-family: var(--font-sora), system-ui, sans-serif;
   font-size: clamp(1.6rem, 2.6vw, 2.4rem);
   line-height: 1.05;
+  text-transform: uppercase;
 }
 
 .ctaArrow {
@@ -340,10 +369,6 @@
     min-height: 0;
   }
 
-  .introGrid {
-    grid-template-columns: 1fr;
-  }
-
   .heroCopy h1 {
     max-width: 780px;
   }
@@ -381,8 +406,21 @@
     padding: 104px 0 56px;
   }
 
-  .hero::after {
-    display: none;
+  .fieldBackdrop {
+    inset: 0 12px;
+  }
+
+  .fieldBackdrop span i {
+    top: 9px;
+    font-size: 10px;
+  }
+
+  .fieldBackdrop span i:first-child {
+    left: 11px;
+  }
+
+  .fieldBackdrop span i:last-child {
+    right: 11px;
   }
 
   .heroCopy h1 {
@@ -395,14 +433,6 @@
 
   .heroCta :global(.btn) {
     flex: 1 1 auto;
-  }
-
-  .introGrid {
-    gap: 20px;
-  }
-
-  .introCopy {
-    margin-top: 0;
   }
 
   .finalCta {

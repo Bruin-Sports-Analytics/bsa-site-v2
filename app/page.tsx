@@ -3,8 +3,8 @@ import {
   ArrowRight,
   ArrowUpRight,
   CalendarDays,
-  ChartNoAxesColumnIncreasing,
   Handshake,
+  LineChart,
   Newspaper
 } from "lucide-react";
 import { EventCard } from "@/components/EventCard";
@@ -16,9 +16,19 @@ import styles from "./page.module.css";
 export default function Home() {
   const publicEvents = events.filter((event) => !event.isMembersOnly).slice(0, 3);
   const displayedOutcomes = outcomes.filter((outcome) => outcome.approvedForDisplay);
+  const yardNumberSequence = ["10", "20", "30", "40", "50", "40", "30", "20"];
+  const yardMarkers = Array.from({ length: 32 }, (_, index) => yardNumberSequence[index % yardNumberSequence.length]);
 
   return (
     <main className={styles.home}>
+      <div className={styles.fieldBackdrop} aria-hidden>
+        {yardMarkers.map((number, index) => (
+          <span key={`${number}-${index}`}>
+            <i>{number}</i>
+            <i>{number}</i>
+          </span>
+        ))}
+      </div>
       <section className={styles.hero}>
         <div className={`container ${styles.heroGrid}`}>
           <div className={styles.heroCopy}>
@@ -34,28 +44,25 @@ export default function Home() {
                 </Link>
                 <Link className="btn btn-secondary" href="/join" data-analytics="hero_join_click">Join BSA</Link>
               </div>
-              <Link className={styles.partnerLink} href="/partner">
-                Work with us <ArrowUpRight size={15} aria-hidden />
-              </Link>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section className={`section ${styles.introSection}`}>
+        <div className="container">
+          <div>
+            <h2 className="section-title">About us</h2>
           </div>
         </div>
       </section>
 
       <ScrollCountStats stats={impactStats} />
 
-      <section className={`section ${styles.introSection}`}>
-        <div className={`container ${styles.introGrid}`}>
-          <div>
-            <h2 className="section-title">What we do</h2>
-          </div>
-          <p className={styles.introCopy}>
-            Members join a sport team, learn from one another, and work on projects
-            throughout the year. No sports analytics experience is required.
-          </p>
-          <div className={styles.practiceGrid}>
+      <section className={`section tight ${styles.practiceSection}`}>
+        <div className={`container ${styles.practiceGrid}`}>
             <Link href="/projects">
-              <ChartNoAxesColumnIncreasing className={styles.practiceIcon} size={26} aria-hidden />
+              <LineChart className={styles.practiceIcon} size={26} aria-hidden />
               <strong>Team projects</strong>
               <p>Build models, dashboards, and research with one of our five sports teams.</p>
             </Link>
@@ -69,7 +76,6 @@ export default function Home() {
               <strong>Partnerships</strong>
               <p>Work with teams and organizations on practical sports questions.</p>
             </Link>
-          </div>
         </div>
       </section>
 
