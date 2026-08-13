@@ -221,6 +221,13 @@
   border-top: 1px solid var(--home-rule);
 }
 
+.outcomesSection :global(.container) {
+  width: calc(100% - 48px);
+  max-width: none;
+  padding-inline: clamp(74px, 8vw, 120px);
+  text-align: center;
+}
+
 .sportList {
   display: grid;
   grid-template-columns: repeat(5, minmax(0, 1fr));
@@ -273,7 +280,7 @@
 }
 
 .outcomesSection :global(.section-lede) {
-  margin-bottom: 34px;
+  margin: 0 auto 34px;
 }
 
 .finalCta {
@@ -468,6 +475,12 @@
   .finalCta a:last-child {
     border-bottom: 0;
   }
+
+  .outcomesSection :global(.container) {
+    width: calc(100% - 24px);
+    padding-inline: 40px;
+  }
+
 }
 
 @media (prefers-reduced-motion: reduce) {
