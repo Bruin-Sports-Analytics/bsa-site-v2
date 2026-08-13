@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import { Linkedin } from "lucide-react";
+import { motion } from "framer-motion";
 import { GlassSurface } from "@/components/ui/GlassSurface";
 import type { Member } from "@/data/site";
 import styles from "./MemberCard.module.css";
@@ -45,11 +46,22 @@ export function MemberCard({ member }: { member: Member }) {
     </>
   );
 
-  return member.linkedinUrl ? (
-    <GlassSurface as="a" variant="regular" tint="blue" interactive radius="lg" className={styles.card} href={member.linkedinUrl} target="_blank" rel="noreferrer" aria-label={`${member.name} on LinkedIn`} {...expandHandlers}>
-      {content}
-    </GlassSurface>
-  ) : (
-    <GlassSurface as="article" variant="regular" tint="blue" radius="lg" className={styles.card} {...expandHandlers}>{content}</GlassSurface>
+  return (
+    <motion.div
+      className={styles.card}
+      initial={{ opacity: 0, y: 12 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      whileHover={{ y: -4 }}
+      viewport={{ once: true, margin: "0px 0px -18% 0px" }}
+      transition={{ opacity: { duration: 0.5 }, y: { duration: 0.5 }, scale: { type: "spring", stiffness: 400, damping: 17 } }}
+    >
+      {member.linkedinUrl ? (
+        <GlassSurface as="a" variant="regular" tint="blue" interactive radius="lg" href={member.linkedinUrl} target="_blank" rel="noreferrer" aria-label={`${member.name} on LinkedIn`} {...expandHandlers}>
+          {content}
+        </GlassSurface>
+      ) : (
+        <GlassSurface as="article" variant="regular" tint="blue" radius="lg" {...expandHandlers}>{content}</GlassSurface>
+      )}
+    </motion.div>
   );
 }

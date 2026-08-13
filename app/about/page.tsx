@@ -95,7 +95,7 @@ export default function AboutPage() {
         <div className="container">
           {boardSections.map((section, index) => (
             <div key={section.title} style={index === 0 ? undefined : { marginTop: "48px" }}>
-              <span className="eyebrow" data-scroll-reveal style={{ display: "block", marginBottom: "16px", fontSize: "16px", textAlign: "center" }}>{section.title}</span>
+              <span className="eyebrow" style={{ display: "block", marginBottom: "16px", fontSize: "16px", textAlign: "center" }}>{section.title}</span>
               <div className="board-grid">
                 {section.people.map((member) => <MemberCard member={member} key={member.slug} />)}
               </div>

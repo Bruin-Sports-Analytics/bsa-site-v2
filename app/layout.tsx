@@ -5,7 +5,6 @@ import { Footer } from "@/components/Footer";
 import { Navigation } from "@/components/Navigation";
 import { ColorPops } from "@/components/ColorPops";
 import { RouteTransitions } from "@/components/RouteTransitions";
-import { ScrollReveal } from "@/components/ScrollReveal";
 import { SocialSidebar } from "@/components/SocialSidebar";
 
 const montserrat = Montserrat({
@@ -73,7 +72,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <div className="shell">
           <Navigation />
           <ColorPops />
-          <ScrollReveal />
           <SocialSidebar />
           <RouteTransitions>
             {children}

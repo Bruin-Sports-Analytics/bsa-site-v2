@@ -1,5 +1,8 @@
+"use client";
+
 import Link from "next/link";
 import { ArrowRight, ArrowUpRight } from "lucide-react";
+import { motion } from "framer-motion";
 import { MemberCard } from "@/components/MemberCard";
 import { ProjectCardGrid } from "@/components/ProjectCardGrid";
 import { getSportOverviewBySlug, type TeamSportSlug } from "@/lib/team-pages";
@@ -50,7 +53,12 @@ export function SportHomePage({ slug }: { slug: TeamSportSlug }) {
 
   return (
     <main>
-      <section className="page-hero">
+      <motion.section
+        className="page-hero"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.6 }}
+      >
         <div className={`container ${heroStyles.heroRow}`}>
           <div className={heroStyles.heroText}>
             <span className="eyebrow">{sport.name} analytics</span>
@@ -71,9 +79,15 @@ export function SportHomePage({ slug }: { slug: TeamSportSlug }) {
             </div>
           )}
         </div>
-      </section>
+      </motion.section>
 
-      <section className="section tight">
+      <motion.section
+        className="section tight"
+        initial={{ opacity: 0, y: 12 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, margin: "0px 0px -18% 0px" }}
+        transition={{ duration: 0.5 }}
+      >
         <div className="container">
           <div className={styles.sectionHeader}>
             <span className="eyebrow">Workstreams</span>
@@ -88,10 +102,16 @@ export function SportHomePage({ slug }: { slug: TeamSportSlug }) {
             ))}
           </div>
         </div>
-      </section>
+      </motion.section>
 
       {featuredProject ? (
-        <section className="section tight">
+        <motion.section
+          className="section tight"
+          initial={{ opacity: 0, y: 12 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "0px 0px -18% 0px" }}
+          transition={{ duration: 0.5 }}
+        >
           <div className="container">
             <article className={styles.featuredWork}>
               <div>
@@ -126,11 +146,17 @@ export function SportHomePage({ slug }: { slug: TeamSportSlug }) {
               </div>
             </article>
           </div>
-        </section>
+        </motion.section>
       ) : null}
 
       {sport.subdivisions ? (
-        <section className="section tight">
+        <motion.section
+          className="section tight"
+          initial={{ opacity: 0, y: 12 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "0px 0px -18% 0px" }}
+          transition={{ duration: 0.5 }}
+        >
           <div className="container">
             <span className="eyebrow">Tennis roles</span>
             <h2 className="section-title">Role-based programs</h2>
@@ -144,26 +170,45 @@ export function SportHomePage({ slug }: { slug: TeamSportSlug }) {
               ))}
             </div>
           </div>
-        </section>
+        </motion.section>
       ) : null}
 
-      <section className="section" id="projects">
+      <motion.section
+        className="section"
+        id="projects"
+        initial={{ opacity: 0, y: 12 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, margin: "0px 0px -18% 0px" }}
+        transition={{ duration: 0.5 }}
+      >
         <div className="container">
           <span className="eyebrow">Active projects</span>
           <h2 className="section-title">Current work</h2>
           {activeProjects.length ? <ProjectCardGrid projects={activeProjects} /> : <p className="section-lede">Active work will be published after project approval.</p>}
         </div>
-      </section>
+      </motion.section>
 
-      <section className="section tight">
+      <motion.section
+        className="section tight"
+        initial={{ opacity: 0, y: 12 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, margin: "0px 0px -18% 0px" }}
+        transition={{ duration: 0.5 }}
+      >
         <div className="container">
           <span className="eyebrow">Archive</span>
           <h2 className="section-title">Past work</h2>
           {archivedProjects.length ? <ProjectCardGrid projects={archivedProjects} /> : <p className="section-lede">Past work will appear here as the archive is filled out.</p>}
         </div>
-      </section>
+      </motion.section>
 
-      <section className="section tight">
+      <motion.section
+        className="section tight"
+        initial={{ opacity: 0, y: 12 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, margin: "0px 0px -18% 0px" }}
+        transition={{ duration: 0.5 }}
+      >
         <div className="container">
           <div className={heroStyles.teamSection}>
             <span className="eyebrow">Team</span>
@@ -176,7 +221,7 @@ export function SportHomePage({ slug }: { slug: TeamSportSlug }) {
             <Link className="btn btn-primary" href="/partner">Bring us a {sport.name.toLowerCase()} problem</Link>
           </div>
         </div>
-      </section>
+      </motion.section>
     </main>
   );
 }

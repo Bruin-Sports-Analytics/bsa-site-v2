@@ -3,8 +3,11 @@ import type { Member, Project, Sport, SportSlug } from "@/data/site";
 
 export type TeamSportSlug = Exclude<SportSlug, "other">;
 
+/** A Sport without its icon component so it can cross the server->client boundary. */
+export type SerializableSport = Omit<Sport, "icon">;
+
 export type SportOverview = {
-  sport: Sport;
+  sport: SerializableSport;
   projects: Project[];
   activeProjects: Project[];
   archivedProjects: Project[];
@@ -33,8 +36,10 @@ export function getSportOverview(sport: Sport): SportOverview {
     .filter((member) => member.group === "member" && member.team.toLowerCase() === sport.slug && member.isPublished && !chairNames.has(member.name))
     .sort(bySortOrder);
 
+  const { icon: _icon, ...serializableSport } = sport;
+
   return {
-    sport,
+    sport: serializableSport,
     projects: sportProjects,
     activeProjects,
     archivedProjects,

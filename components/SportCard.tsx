@@ -1,15 +1,38 @@
+"use client";
+
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
+import { motion } from "framer-motion";
 import { GlassSurface } from "@/components/ui/GlassSurface";
-import type { SportOverview } from "@/lib/team-pages";
+import { BaseballIcon, BasketballIcon, FootballIcon, TennisIcon, VolleyballIcon } from "@/components/SportIcons";
+import type { SportOverview, TeamSportSlug } from "@/lib/team-pages";
 import styles from "./SportCard.module.css";
 
-export function SportCard({ overview }: { overview: SportOverview }) {
+const SPORT_ICONS: Record<TeamSportSlug, typeof BaseballIcon> = {
+  baseball: BaseballIcon,
+  volleyball: VolleyballIcon,
+  basketball: BasketballIcon,
+  football: FootballIcon,
+  tennis: TennisIcon,
+};
+
+export function SportCard({ overview, index = 0 }: { overview: SportOverview; index?: number }) {
   const { activeProjects, archivedProjects, featuredProject, sport, teamSize } = overview;
-  const Icon = sport.icon;
+  const Icon = SPORT_ICONS[sport.slug as TeamSportSlug];
 
   return (
-    <GlassSurface as="article" variant="regular" tint="blue" radius="lg" className={styles.card} style={{ "--accent": sport.accent } as React.CSSProperties}>
+    <motion.div
+      initial={{ opacity: 0, y: 12 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      whileHover={{ y: -4, scale: 1.005 }}
+      viewport={{ once: true, margin: "0px 0px -18% 0px" }}
+      transition={{
+        opacity: { duration: 0.5, delay: index * 0.1 },
+        y: { duration: 0.5, delay: index * 0.1 },
+        scale: { type: "spring", stiffness: 400, damping: 17 },
+      }}
+    >
+      <GlassSurface as="article" variant="regular" tint="blue" radius="lg" className={styles.card} style={{ "--accent": sport.accent } as React.CSSProperties}>
       <div className={styles.header}>
         <div className={styles.iconWrap}>
           <Icon size={34} aria-hidden />
@@ -49,10 +72,11 @@ export function SportCard({ overview }: { overview: SportOverview }) {
         </div>
       ) : null}
       <div className={styles.actions}>
-        <Link href={`/teams/${sport.slug}`} className={styles.action}>
-          Open team <ArrowUpRight size={16} aria-hidden />
-        </Link>
-      </div>
-    </GlassSurface>
+          <Link href={`/teams/${sport.slug}`} className={styles.action}>
+            Open team <ArrowUpRight size={16} aria-hidden />
+          </Link>
+        </div>
+      </GlassSurface>
+    </motion.div>
   );
 }

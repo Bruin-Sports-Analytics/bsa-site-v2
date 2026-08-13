@@ -17,7 +17,6 @@ export function PeopleSections({ sections }: Props) {
         <div key={section.title} style={index > 0 ? { marginTop: "48px" } : undefined}>
           <span
             className="eyebrow"
-            data-scroll-reveal
             style={{ display: "block", marginBottom: "16px", fontSize: "16px", textAlign: "center" }}
           >
             {section.title}

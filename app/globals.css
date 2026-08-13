@@ -353,28 +353,6 @@ main > section > * {
   z-index: 1;
 }
 
-.scroll-reveal-enabled [data-reveal="true"] {
-  opacity: 0;
-  transform: translate3d(0, 12px, 0) scale(.995);
-  transition:
-    opacity 360ms ease,
-    transform 360ms cubic-bezier(.2, .8, .2, 1);
-  transition-delay: var(--reveal-delay, 0ms);
-  will-change: opacity, transform;
-}
-
-.scroll-reveal-enabled [data-reveal-visible="true"] {
-  opacity: 1;
-  transform: translate3d(0, 0, 0) scale(1);
-  will-change: auto;
-}
-
-/* Cards in large grids already have compositor layers via backdrop-filter;
-   pre-promoting them again with will-change wastes VRAM. */
-.scroll-reveal-enabled .board-grid [data-reveal="true"] {
-  will-change: auto;
-}
-
 .container {
   width: min(1180px, calc(100% - 40px));
   margin: 0 auto;
@@ -919,12 +897,6 @@ html.reduce-transparency .btn-secondary {
   .route-transition {
     animation: none !important;
     transition: none !important;
-    transform: none !important;
-  }
-
-  .scroll-reveal-enabled [data-reveal="true"],
-  .scroll-reveal-enabled [data-reveal-visible="true"] {
-    opacity: 1 !important;
     transform: none !important;
   }
 
