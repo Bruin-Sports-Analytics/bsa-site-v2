@@ -1,12 +1,14 @@
 import type { Metadata } from "next";
 import { SportCard } from "@/components/SportCard";
-import { sports } from "@/data/site";
+import { getTeamSportOverviews } from "@/lib/team-pages";
 
 export const metadata: Metadata = {
   title: "Teams"
 };
 
 export default function WorkPage() {
+  const overviews = getTeamSportOverviews();
+
   return (
     <main>
       <section className="page-hero page-hero--plain page-hero--work">
@@ -17,7 +19,7 @@ export default function WorkPage() {
       <section className="section">
         <div className="container">
           <div className="sport-card-grid">
-            {sports.map((sport) => <SportCard sport={sport} key={sport.slug} />)}
+            {overviews.map((overview) => <SportCard overview={overview} key={overview.sport.slug} />)}
           </div>
         </div>
       </section>

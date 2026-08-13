@@ -13,17 +13,17 @@
   --scoreboard-blue-dark: #0d3161;
   --scoreboard-frame-solid: #9db5c4;
   --segment-on: var(--ucla-gold);
-  --segment-off: #071b34;
+  --segment-off: #1a3a5c;
   --scoreboard-text: #f7fbff;
   --scoreboard-subtle-line: rgba(139, 203, 255, .13);
   --scoreboard-highlight: rgba(255, 255, 255, .08);
 
   position: relative;
   overflow: hidden;
-  border: 8px solid var(--scoreboard-frame-solid);
+  border: 5px solid var(--scoreboard-frame-solid);
   background: var(--scoreboard-blue);
   box-shadow:
-    var(--glass-shadow-lg),
+    var(--glass-shadow-md),
     inset 0 0 0 1px var(--scoreboard-highlight);
   color: var(--scoreboard-text);
 }
@@ -42,14 +42,14 @@
 .scoreboardTitle {
   position: relative;
   display: grid;
-  min-height: 76px;
+  min-height: 54px;
   place-items: center;
-  border-bottom: 8px solid var(--scoreboard-frame-solid);
+  border-bottom: 5px solid var(--scoreboard-frame-solid);
   background:
     linear-gradient(180deg, rgba(74, 168, 255, .12), rgba(255, 209, 0, .035)),
     var(--scoreboard-blue-dark);
   font-family: var(--font-sora), system-ui, sans-serif;
-  font-size: clamp(1.05rem, 2.2vw, 1.8rem);
+  font-size: clamp(.95rem, 2vw, 1.35rem);
   font-weight: 900;
   letter-spacing: .22em;
   line-height: 1.1;
@@ -63,17 +63,17 @@
   display: grid;
   grid-template-columns: minmax(0, .9fr) minmax(0, 1.28fr) minmax(0, .9fr);
   background: var(--scoreboard-frame-solid);
-  gap: 8px;
+  gap: 5px;
 }
 
 .stat {
   display: grid;
   min-width: 0;
-  min-height: clamp(170px, 15vw, 250px);
+  min-height: clamp(140px, 12vw, 180px);
   align-content: center;
   justify-items: center;
-  gap: clamp(18px, 2vw, 28px);
-  padding: clamp(24px, 3vw, 46px) 18px;
+  gap: clamp(14px, 1.6vw, 20px);
+  padding: clamp(18px, 2.5vw, 32px) 14px;
   background:
     linear-gradient(180deg, var(--scoreboard-subtle-line), rgba(0, 0, 0, .08)),
     var(--scoreboard-blue);
@@ -90,7 +90,7 @@
   max-width: 100%;
   color: var(--scoreboard-text);
   font-family: var(--font-sora), system-ui, sans-serif;
-  font-size: clamp(1.02rem, 2vw, 1.72rem);
+  font-size: clamp(.88rem, 1.7vw, 1.3rem);
   font-weight: 900;
   letter-spacing: .12em;
   line-height: 1.08;
@@ -103,15 +103,15 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: clamp(7px, .8vw, 13px);
-  min-height: clamp(82px, 8.5vw, 128px);
+  gap: clamp(6px, .7vw, 10px);
+  min-height: clamp(62px, 7vw, 92px);
 }
 
 .digit {
   position: relative;
   display: inline-block;
-  width: clamp(48px, 5.1vw, 78px);
-  height: clamp(82px, 8.5vw, 128px);
+  width: clamp(38px, 4.2vw, 58px);
+  height: clamp(62px, 7vw, 92px);
 }
 
 .segment {
@@ -182,8 +182,8 @@
 .colon {
   position: relative;
   display: inline-block;
-  width: clamp(14px, 1.4vw, 22px);
-  height: clamp(82px, 8.5vw, 128px);
+  width: clamp(11px, 1.2vw, 16px);
+  height: clamp(62px, 7vw, 92px);
 }
 
 .colon::before,

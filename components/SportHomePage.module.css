@@ -1,0 +1,253 @@
+.heroGrid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(320px, 420px);
+  align-items: start;
+  gap: clamp(28px, 5vw, 58px);
+  text-align: left;
+}
+
+.heroText {
+  min-width: 0;
+}
+
+.heroPanel {
+  --panel-accent: var(--accent, var(--ucla-gold));
+
+  display: grid;
+  gap: 16px;
+  border: 1px solid color-mix(in srgb, var(--panel-accent) 34%, var(--glass-border));
+  border-radius: var(--glass-radius-lg);
+  padding: 24px;
+  background:
+    radial-gradient(circle at 16% 14%, color-mix(in srgb, var(--panel-accent) 20%, transparent), transparent 36%),
+    var(--glass-regular-fill);
+  box-shadow: var(--glass-shadow-md);
+}
+
+.panelIcon {
+  width: 62px;
+  height: 62px;
+  display: grid;
+  place-items: center;
+  border-radius: var(--radius-sm);
+  background: color-mix(in srgb, var(--panel-accent) 16%, var(--tag-fill));
+  color: var(--panel-accent);
+}
+
+.panelKicker,
+.chairs span,
+.featuredDetails span {
+  color: var(--text-muted);
+  font-family: var(--font-mono), monospace;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+.heroPanel strong {
+  color: var(--text-primary);
+  font-family: var(--font-sora), system-ui, sans-serif;
+  font-size: clamp(1.65rem, 3vw, 2.4rem);
+  line-height: 1.05;
+}
+
+.heroPanel dl {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+  margin: 0;
+}
+
+.heroPanel dl div {
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 10px;
+  background: rgba(139, 203, 255, .055);
+}
+
+.heroPanel dt,
+.heroPanel dd {
+  margin: 0;
+}
+
+.heroPanel dt {
+  color: var(--text-muted);
+  font-size: 11px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.heroPanel dd {
+  margin-top: 4px;
+  color: var(--ucla-gold);
+  font-family: var(--font-sora), system-ui, sans-serif;
+  font-size: 25px;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.chairs {
+  border-top: 1px solid var(--border);
+  padding-top: 14px;
+}
+
+.chairs p {
+  margin: 6px 0 0;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+.sectionHeader {
+  max-width: 760px;
+  margin-bottom: 26px;
+}
+
+.focusGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.focusCard {
+  --focus-accent: var(--accent, var(--ucla-gold));
+
+  min-height: 176px;
+  border: 1px solid var(--border);
+  border-top: 3px solid var(--focus-accent);
+  border-radius: var(--radius-md);
+  padding: 22px;
+  background:
+    linear-gradient(145deg, color-mix(in srgb, var(--focus-accent) 12%, transparent), rgba(139, 203, 255, .04)),
+    var(--card-fill);
+  box-shadow: var(--card-shadow);
+}
+
+.focusCard span {
+  display: block;
+  color: var(--text-primary);
+  font-family: var(--font-sora), system-ui, sans-serif;
+  font-size: 20px;
+  font-weight: 850;
+  line-height: 1.15;
+}
+
+.focusCard p {
+  margin: 13px 0 0;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.featuredWork {
+  display: grid;
+  grid-template-columns: minmax(0, .88fr) minmax(0, 1.12fr);
+  gap: clamp(24px, 4vw, 48px);
+  border: 1px solid var(--border);
+  border-radius: var(--glass-radius-lg);
+  padding: clamp(24px, 4vw, 42px);
+  background:
+    linear-gradient(145deg, rgba(74, 168, 255, .12), rgba(255, 209, 0, .05)),
+    var(--card-fill);
+  box-shadow: var(--card-shadow);
+}
+
+.featuredWork h2 {
+  margin: 10px 0 16px;
+  font-family: var(--font-sora), system-ui, sans-serif;
+  font-size: clamp(2rem, 4vw, 3.3rem);
+  line-height: 1;
+}
+
+.featuredWork p {
+  margin: 0;
+  color: var(--text-secondary);
+  line-height: 1.65;
+}
+
+.featuredDetails {
+  display: grid;
+  gap: 16px;
+}
+
+.featuredDetails div {
+  border-left: 2px solid var(--ucla-gold);
+  padding-left: 14px;
+}
+
+.featuredDetails p {
+  margin-top: 6px;
+  font-size: 14px;
+}
+
+.roleGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.roleCard {
+  display: grid;
+  gap: 12px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 22px;
+  background: var(--card-fill);
+  color: var(--text-primary);
+  box-shadow: var(--card-shadow);
+}
+
+.roleCard h3 {
+  margin: 0;
+  font-family: var(--font-sora), system-ui, sans-serif;
+  font-size: 22px;
+}
+
+.roleCard p {
+  margin: 0;
+  color: var(--text-secondary);
+  line-height: 1.55;
+}
+
+.roleCard span {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  color: var(--ucla-gold);
+  font-weight: 900;
+}
+
+.teamHeader {
+  text-align: center;
+}
+
+.teamCta {
+  display: flex;
+  justify-content: center;
+  margin-top: 28px;
+}
+
+@media (max-width: 960px) {
+  .heroGrid,
+  .featuredWork {
+    grid-template-columns: 1fr;
+  }
+
+  .focusGrid,
+  .roleGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .heroPanel dl {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .heroPanel,
+  .focusCard,
+  .featuredWork,
+  .roleCard {
+    border-radius: var(--radius-sm);
+    padding: 18px;
+  }
+}
