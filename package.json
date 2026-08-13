@@ -14,6 +14,7 @@
     "test": "node --test \"scripts/**/*.test.mjs\""
   },
   "dependencies": {
+    "framer-motion": "^13.1.0",
     "lucide-react": "^0.468.0",
     "next": "^14.2.5",
     "playwright": "^1.62.1",
