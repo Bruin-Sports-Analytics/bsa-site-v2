@@ -31,10 +31,10 @@
     radial-gradient(circle at 88% 52%, rgba(255, 209, 0, .22), transparent 26%);
   --gradient-accent: linear-gradient(100deg, #4aa8ff 0%, #2774ae 50%, #ffd100 115%);
   --gradient-card: linear-gradient(145deg, rgba(74, 168, 255, .12), rgba(255, 209, 0, .04));
-  --radius-sm: 8px;
-  --radius-md: 14px;
-  --radius-lg: 22px;
-  --radius-pill: 999px;
+  --radius-sm: 0;
+  --radius-md: 0;
+  --radius-lg: 0;
+  --radius-pill: 0;
   --glass-clear-fill: rgba(12, 34, 58, 0.30);
   --glass-regular-fill: rgba(10, 31, 54, 0.56);
   --glass-strong-fill: rgba(7, 24, 43, 0.82);
@@ -63,10 +63,10 @@
   --glass-shadow-lg:
     0 28px 80px rgba(0, 5, 15, 0.45),
     0 1px 0 rgba(255, 255, 255, 0.11) inset;
-  --glass-radius-sm: 12px;
-  --glass-radius-md: 18px;
-  --glass-radius-lg: 26px;
-  --glass-radius-pill: 999px;
+  --glass-radius-sm: 0;
+  --glass-radius-md: 0;
+  --glass-radius-lg: 0;
+  --glass-radius-pill: 0;
   --glass-hover-lift: -3px;
   --glass-active-scale: 0.985;
   --glass-transition:

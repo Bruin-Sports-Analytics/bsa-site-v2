@@ -192,7 +192,7 @@
   left: 50%;
   width: clamp(8px, .8vw, 13px);
   aspect-ratio: 1;
-  border-radius: 50%;
+  border-radius: 0;
   background: #c9d8e4;
   box-shadow: 0 0 14px rgba(139, 203, 255, .42);
   content: "";
@@ -211,7 +211,7 @@
   position: absolute;
   width: 9px;
   height: 9px;
-  border-radius: 999px;
+  border-radius: 0;
   background: var(--scoreboard-frame-solid);
   box-shadow: 0 0 0 1px rgba(0, 0, 0, .14);
 }

@@ -31,7 +31,7 @@
   display: grid;
   place-items: center;
   border: 1px solid var(--glass-border);
-  border-radius: 50%;
+  border-radius: 0;
   background: var(--member-badge-fill);
   color: var(--member-badge-color);
 }

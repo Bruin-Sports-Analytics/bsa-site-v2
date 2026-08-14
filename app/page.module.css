@@ -71,7 +71,7 @@
   position: absolute;
   z-index: -1;
   pointer-events: none;
-  border-radius: 50%;
+  border-radius: 0;
 }
 
 .heroLogo::before {
@@ -154,7 +154,7 @@
   width: 100%;
   padding: 10px 24px;
   border: 1px solid var(--border);
-  border-radius: 999px;
+  border-radius: 0;
   background: rgba(16, 42, 73, .52);
   color: var(--text-primary);
   font-family: var(--font-sora), system-ui, sans-serif;

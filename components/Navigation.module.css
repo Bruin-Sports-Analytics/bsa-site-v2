@@ -61,7 +61,7 @@
 }
 
 .brandMark img {
-  border-radius: 8px;
+  border-radius: 0;
 }
 
 .desktop {
@@ -367,7 +367,7 @@
 .teamsCarouselDot {
   width: 6px;
   height: 6px;
-  border-radius: 50%;
+  border-radius: 0;
   border: none;
   cursor: pointer;
   background: var(--text-secondary);
@@ -445,7 +445,7 @@
     align-content: start;
     gap: 10px;
     padding: 24px;
-    border-radius: 0 0 var(--glass-radius-lg) var(--glass-radius-lg);
+    border-radius: 0;
   }
 
   .mobilePanel a {

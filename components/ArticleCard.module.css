@@ -4,7 +4,7 @@
   height: 100%;
   background: var(--surface);
   border: 1px solid var(--border);
-  border-radius: 14px;
+  border-radius: 0;
   box-shadow: var(--glass-shadow-sm);
   padding: 20px;
   overflow: hidden;
@@ -16,7 +16,7 @@
   background:
     linear-gradient(145deg, rgba(255, 255, 255, 0.18), rgba(255, 255, 255, 0.03)),
     linear-gradient(160deg, var(--tone-top), var(--tone-bottom));
-  border-radius: 10px;
+  border-radius: 0;
   color: #fff;
   padding: 14px;
   display: flex;
@@ -51,7 +51,7 @@
 .dot {
   width: 3px;
   height: 3px;
-  border-radius: 50%;
+  border-radius: 0;
   background: var(--text-muted);
   display: inline-block;
 }
@@ -102,7 +102,7 @@
   align-items: center;
   min-height: 24px;
   border: 1px solid var(--border);
-  border-radius: 999px;
+  border-radius: 0;
   padding: 3px 8px;
   color: var(--text-muted);
   font-size: 10px;
@@ -152,7 +152,7 @@
   gap: 4px;
   cursor: pointer;
   border: 1px solid rgba(139, 203, 255, .22);
-  border-radius: 999px;
+  border-radius: 0;
   background: rgba(139, 203, 255, .08);
   color: var(--text-primary);
   font-size: 13px;
@@ -174,7 +174,7 @@
   align-items: center;
   min-height: 28px;
   padding: 0 10px;
-  border-radius: 999px;
+  border-radius: 0;
   background: rgba(4, 17, 32, 0.42);
   font-size: 11px;
   font-weight: 700;
@@ -188,7 +188,7 @@
   align-items: center;
   min-height: 24px;
   padding: 0 10px;
-  border-radius: 999px;
+  border-radius: 0;
   background: rgba(4, 17, 32, 0.42);
   font-size: 11px;
   font-weight: 700;

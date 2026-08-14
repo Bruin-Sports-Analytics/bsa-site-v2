@@ -59,7 +59,7 @@
   justify-content: space-between;
   gap: 14px;
   padding: 10px 12px;
-  border-radius: 8px;
+  border-radius: 0;
   color: var(--text-primary);
   font-size: 14px;
   font-weight: 700;
