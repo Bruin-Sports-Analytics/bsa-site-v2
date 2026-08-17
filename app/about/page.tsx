@@ -77,14 +77,14 @@ export default function AboutPage() {
 
       <section className="section">
         <div className="container">
-          <p className={styles.missionStatement}>
+          <p className={styles.missionStatement} style={{ textAlign: "center" }}>
             We build models, tools, dashboards, and writing that <span className={styles.blueGlow}>help people understand</span> games more deeply and <span className={styles.goldGlow}>make better decisions</span> from sports data.
           </p>
-          <div style={{ display: "flex", flexWrap: "wrap", gap: "28px 52px", marginTop: 44 }}>
+          <div style={{ display: "grid", gridTemplateColumns: `repeat(${stats.length}, 1fr)`, gap: "52px", marginTop: 44 }}>
             {stats.map((stat) => (
-              <div key={stat.label}>
-                <b style={{ display: "block", color: "var(--ucla-gold)", fontFamily: "var(--font-sora), system-ui, sans-serif", fontSize: 34, fontVariantNumeric: "tabular-nums" }}>{stat.value}</b>
-                <span style={{ color: "var(--text-secondary)" }}>{stat.label}</span>
+              <div key={stat.label} style={{ textAlign: "center" }}>
+                <b style={{ display: "block", color: "var(--ucla-gold)", fontFamily: "var(--font-sora), system-ui, sans-serif", fontSize: 56, fontVariantNumeric: "tabular-nums", lineHeight: 1 }}>{stat.value}</b>
+                <span style={{ color: "var(--text-secondary)", display: "block", marginTop: "12px" }}>{stat.label}</span>
               </div>
             ))}
           </div>

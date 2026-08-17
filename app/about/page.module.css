@@ -1,6 +1,6 @@
 .missionStatement {
-  max-width: 820px;
-  margin: 0;
+  max-width: 100%;
+  margin: 0 auto;
   font-family: var(--font-sora), system-ui, sans-serif;
   font-size: clamp(1.5rem, 2.6vw, 2.1rem);
   line-height: 1.32;
