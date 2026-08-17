@@ -500,9 +500,9 @@ export const memberProfiles: MemberProfile[] = [
     "assignments": [
       {
         "slug": "sampath-kalagarla",
-        "role": "Webmaster",
+        "role": "Technical Director",
         "group": "board",
-        "team": "Webmaster",
+        "team": "Technical Director",
         "bio": "Leads website development, maintenance, and analytics. Oversees technical infrastructure.",
         "sortOrder": 12
       },
