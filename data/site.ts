@@ -502,7 +502,7 @@ export const memberProfiles: MemberProfile[] = [
         "slug": "sampath-kalagarla",
         "role": "Tech Director",
         "group": "board",
-        "team": "Tech Director",
+        "team": "tech-director",
         "bio": "Leads website development, maintenance, and analytics. Oversees technical infrastructure.",
         "sortOrder": 12
       },

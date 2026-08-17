@@ -9,8 +9,8 @@ export const metadata: Metadata = {
 
 const boardGroups: { title: string; teams: string[] }[] = [
   { title: "Executive Board", teams: ["president", "executive board"] },
+  { title: "Operations", teams: ["marketing", "recruitment", "finance", "tech-director"] },
   { title: "Division Chairs", teams: ["baseball", "football", "basketball", "tennis", "volleyball", "data journalism"] },
-  { title: "Operations", teams: ["webmaster", "marketing", "recruitment", "finance"] },
   { title: "Advisors", teams: ["advisors"] },
 ];
 

@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { alumni, members } from "@/data/site";
+import { members } from "@/data/site";
 import { PeopleSections } from "@/components/PeopleSections";
 
 export const metadata: Metadata = {
@@ -38,22 +38,6 @@ export default function MembersPage() {
       <section className="section">
         <div className="container">
           <PeopleSections sections={sections} />
-        </div>
-      </section>
-      <section className="section tight" id="alumni">
-        <div className="container">
-          <span className="eyebrow" style={{ display: "block", marginBottom: "16px", fontSize: "16px", textAlign: "center" }}>Alumni</span>
-          <ul className="grid three" style={{ justifyContent: "center", listStyle: "none", margin: "0 auto", maxWidth: 920, padding: 0, textAlign: "center" }}>
-            {alumni.map((person) => (
-              <li key={person.name} style={{ color: "var(--text-primary)", fontFamily: "var(--font-sora), system-ui, sans-serif", fontSize: "1.1rem", fontWeight: 700, justifySelf: "center", textAlign: "center", width: "100%" }}>
-                {person.linkedinUrl ? (
-                  <a href={person.linkedinUrl} target="_blank" rel="noopener noreferrer">
-                    {person.name}
-                  </a>
-                ) : person.name}
-              </li>
-            ))}
-          </ul>
         </div>
       </section>
     </main>
