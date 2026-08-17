@@ -11,19 +11,6 @@
   align-items: stretch;
 }
 
-.nodes::before {
-  content: "";
-  position: absolute;
-  z-index: 0;
-  left: 14px;
-  right: 14px;
-  top: 50%;
-  height: 2px;
-  background: linear-gradient(90deg, var(--electric-blue), var(--ucla-gold));
-  opacity: .45;
-  transform: translateY(-50%);
-}
-
 .node {
   position: relative;
   z-index: 1;
@@ -33,7 +20,7 @@
   justify-items: start;
   gap: 8px;
   color: var(--text-primary);
-  padding: 14px;
+  padding: 28px 14px 14px;
   text-align: left;
 }
 
@@ -44,14 +31,21 @@
   font-weight: 700;
 }
 
+.nodeNumber {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  color: var(--text-secondary);
+  font-size: 14px;
+  font-weight: 700;
+}
+
 .node b {
   font-size: 13px;
 }
 
 .active {
-  border-color: rgba(255, 209, 0, .7);
-  box-shadow: 0 0 0 4px rgba(255, 209, 0, .1);
-  animation: nodePulse 900ms ease-out 1;
+  border-color: var(--glass-border);
 }
 
 .detail {

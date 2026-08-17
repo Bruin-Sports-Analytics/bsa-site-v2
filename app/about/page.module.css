@@ -44,10 +44,9 @@
 .milestoneCard {
   position: relative;
   min-height: 320px;
-  padding: 26px 22px 24px;
+  padding: 44px 22px 24px;
   overflow: hidden;
   border: 1px solid var(--glass-border);
-  border-top: 3px solid var(--ucla-gold);
   border-radius: var(--radius-sm);
   background:
     linear-gradient(180deg, rgba(255, 209, 0, .10), transparent 34%),
@@ -67,15 +66,24 @@
 }
 
 .milestoneMeta {
+  position: absolute;
+  top: 14px;
+  left: 14px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 14px;
+  justify-content: flex-start;
+  gap: 8px;
   color: var(--text-muted);
   font-family: var(--font-mono), monospace;
   font-size: 12px;
   letter-spacing: .08em;
   text-transform: uppercase;
+}
+
+.milestoneMeta span:first-child {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--text-secondary);
 }
 
 .milestoneCard h3 {

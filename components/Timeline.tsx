@@ -25,6 +25,7 @@ export function Timeline({ events }: { events: TimelineEvent[] }) {
             role="listitem"
             aria-current={active === index ? "step" : undefined}
           >
+            <span className={styles.nodeNumber}>{String(index + 1).padStart(2, "0")}</span>
             <span>{event.date}</span>
             <b>{event.title}</b>
           </button>
