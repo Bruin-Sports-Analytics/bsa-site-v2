@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import { FAQAccordion } from "@/components/FAQAccordion";
+import { PartnerForm } from "@/components/PartnerForm";
 import { capabilities, technology } from "@/data/site";
 
 export const metadata: Metadata = {
@@ -76,45 +77,7 @@ export default function PartnerPage() {
                 <a href="mailto:vardaansinha28@g.ucla.edu" style={{ fontSize: 12, color: "var(--electric-blue)" }}>vardaansinha28@g.ucla.edu</a>
               </div>
             </div>
-            <form className="form-grid">
-              <div className="field">
-                <label htmlFor="name">Name</label>
-                <input id="name" name="name" autoComplete="name" />
-              </div>
-              <div className="field">
-                <label htmlFor="organization">Organization</label>
-                <input id="organization" name="organization" autoComplete="organization" />
-              </div>
-              <div className="field">
-                <label htmlFor="email">Email</label>
-                <input id="email" name="email" type="email" autoComplete="email" />
-              </div>
-              <div className="field">
-                <label htmlFor="sport">Sport / industry</label>
-                <input id="sport" name="sport" />
-              </div>
-              <div className="field full">
-                <label htmlFor="problem">Problem to solve</label>
-                <textarea id="problem" name="problem" />
-              </div>
-              <div className="field">
-                <label htmlFor="data">Available data</label>
-                <input id="data" name="data" />
-              </div>
-              <div className="field">
-                <label htmlFor="timeline">Desired timeline</label>
-                <input id="timeline" name="timeline" />
-              </div>
-              <div className="field full">
-                <label htmlFor="link">File upload or link</label>
-                <input id="link" name="link" />
-              </div>
-              <label className="field full" style={{ display: "flex", gridTemplateColumns: "auto 1fr", alignItems: "center", color: "var(--text-secondary)" }}>
-                <input type="checkbox" required style={{ width: 18, minHeight: 18 }} />
-                I consent to Bruin Sports Analytics contacting me about this inquiry.
-              </label>
-              <button className="btn btn-primary" type="submit" data-analytics="partner_form_submit">Submit inquiry</button>
-            </form>
+            <PartnerForm />
           </article>
           <aside className="card" style={{ padding: 28 }}>
             <span className="eyebrow">Technical credibility</span>

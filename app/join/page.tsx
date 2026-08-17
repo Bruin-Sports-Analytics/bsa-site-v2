@@ -4,6 +4,7 @@ import Link from "next/link";
 import { FAQAccordion } from "@/components/FAQAccordion";
 import { Timeline } from "@/components/Timeline";
 import { Countdown } from "@/components/Countdown";
+import { RecruitmentForm } from "@/components/RecruitmentForm";
 import { recruitment } from "@/data/site";
 import styles from "./join.module.css";
 
@@ -103,33 +104,7 @@ export default function JoinPage() {
                 <a href="mailto:mateoshelton@ucla.edu" style={{ fontSize: 12, color: "var(--electric-blue)" }}>mateoshelton@ucla.edu</a>
               </div>
             </div>
-            <form className="form-grid">
-              <div className="field">
-                <label htmlFor="name">Name</label>
-                <input id="name" name="name" autoComplete="name" />
-              </div>
-              <div className="field">
-                <label htmlFor="email">Email</label>
-                <input id="email" name="email" type="email" autoComplete="email" />
-              </div>
-              <div className="field">
-                <label htmlFor="major">Major</label>
-                <input id="major" name="major" />
-              </div>
-              <div className="field">
-                <label htmlFor="sport">Sport interest</label>
-                <input id="sport" name="sport" />
-              </div>
-              <div className="field full">
-                <label htmlFor="message">Message</label>
-                <textarea id="message" name="message" />
-              </div>
-              <label className="field full" style={{ display: "flex", gridTemplateColumns: "auto 1fr", alignItems: "center", color: "var(--text-secondary)" }}>
-                <input type="checkbox" required style={{ width: 18, minHeight: 18 }} />
-                I consent to Bruin Sports Analytics contacting me about this inquiry.
-              </label>
-              <button className="btn btn-primary" type="submit">Send message</button>
-            </form>
+            <RecruitmentForm />
           </article>
           <aside className="card" style={{ padding: 28 }}>
             <span className="eyebrow">FAQ</span>
