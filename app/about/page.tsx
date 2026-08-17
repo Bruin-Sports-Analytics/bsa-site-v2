@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { MemberCard } from "@/components/MemberCard";
 import { impactStats, members, sports } from "@/data/site";
 import styles from "./page.module.css";
@@ -157,13 +158,15 @@ export default function AboutPage() {
                   {sports.map((sport) => {
                     const Icon = sport.icon;
                     return (
-                      <div
+                      <Link
                         key={sport.slug}
+                        href={`/teams/${sport.slug}`}
                         className={styles.sportOrgItem}
+                        style={{ textDecoration: "none", color: "inherit" }}
                       >
                         <Icon size={22} aria-hidden="true" />
                         <span>{sport.name}</span>
-                      </div>
+                      </Link>
                     );
                   })}
                 </div>
