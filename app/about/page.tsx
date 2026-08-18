@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { MemberCard } from "@/components/MemberCard";
 import { impactStats, members, sports } from "@/data/site";
@@ -78,6 +79,15 @@ export default function AboutPage() {
 
       <section className="section">
         <div className="container">
+          <div style={{ position: "relative", width: "100%", height: "400px", marginBottom: "44px" }}>
+            <Image
+              src="/assets/ucla-athletics-aerial.jpeg"
+              alt="UCLA athletics facilities aerial view"
+              fill
+              style={{ objectFit: "cover" }}
+              priority
+            />
+          </div>
           <p className={styles.missionStatement} style={{ textAlign: "center" }}>
             We build models, tools, dashboards, and writing that <span className={styles.blueGlow}>help people understand</span> games more deeply and <span className={styles.goldGlow}>make better decisions</span> from sports data.
           </p>
