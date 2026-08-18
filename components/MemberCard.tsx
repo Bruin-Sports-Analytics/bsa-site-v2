@@ -27,12 +27,12 @@ export function MemberCard({ member, priority = false }: { member: Member; prior
         {member.photoUrl && !imgError
           ? <Image src={member.photoUrl} alt="" fill sizes="(max-width: 600px) 100vw, 400px" className={styles.photoImg} style={member.photoTransform ? { transform: member.photoTransform } : undefined} onError={() => setImgError(true)} priority={priority} />
           : initials}
+        {member.linkedinUrl && (
+          <span className={styles.linkedinBadge} aria-hidden>
+            <Linkedin size={16} />
+          </span>
+        )}
       </div>
-      {member.linkedinUrl && (
-        <span className={styles.linkedinBadge} aria-hidden>
-          <Linkedin size={16} />
-        </span>
-      )}
       <div className={styles.body}>
         <h3>{member.name}</h3>
         <p>{member.role}</p>

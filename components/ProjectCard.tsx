@@ -41,6 +41,14 @@ export function ProjectCard({ project, active, onActivate, onDeactivate }: Props
 
   const handleClick = (e: React.MouseEvent) => {
     if ((e.target as HTMLElement).closest("a, button")) return;
+
+    // Navigate to project page if not private
+    if (!isPrivate) {
+      window.location.href = `/projects/${project.slug}`;
+      return;
+    }
+
+    // For private projects, toggle expansion
     if (controlled) { onActivate?.(); return; }
     if (internalExpanded) {
       setInternalVisible(false);
@@ -94,16 +102,6 @@ export function ProjectCard({ project, active, onActivate, onDeactivate }: Props
                     <a href={project.links.demo} target="_blank" rel="noopener noreferrer" className={styles.link}>
                       Open tool <ArrowUpRight size={15} aria-hidden />
                     </a>
-                  )}
-                  {project.links.paper && (
-                    <Link href={`/projects/${project.slug}`} className={styles.link}>
-                      Read paper <ArrowUpRight size={15} aria-hidden />
-                    </Link>
-                  )}
-                  {!project.links.demo && !project.links.paper && (
-                    <Link href={`/projects/${project.slug}`} className={styles.link}>
-                      Open project <ArrowUpRight size={15} aria-hidden />
-                    </Link>
                   )}
                 </>
               )}

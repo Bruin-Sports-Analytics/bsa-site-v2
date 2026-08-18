@@ -82,11 +82,11 @@ export default function Home() {
               <p>We turn curiosity investigations into published explainers and visual stories complemented by thorough data analysis.</p>
             </div>
             <div className={styles.functionCard}>
-              <h3>Research and consulting</h3>
+              <h3>Research and Consulting</h3>
               <p>We scope sport questions, design analysis plans, and convert findings into usable recommendations.</p>
             </div>
             <div className={styles.functionCard}>
-              <h3>Data products</h3>
+              <h3>Data Products</h3>
               <p>We build reusable pipelines, dashboards, and tools that teams can keep improving across projects.</p>
             </div>
           </div>

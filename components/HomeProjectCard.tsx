@@ -9,8 +9,8 @@ export function HomeProjectCard({ project }: { project: Project }) {
   const isPrivate = project.visibility === "private" || project.visibility === "redacted";
   const date = new Date(project.lastUpdated).toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" });
 
-  return (
-    <div className={styles.card}>
+  const cardContent = (
+    <>
       <ProjectVisual project={project} />
       <div className={styles.body}>
         <h3 className={styles.title}>{project.title}</h3>
@@ -25,16 +25,22 @@ export function HomeProjectCard({ project }: { project: Project }) {
           ))}
         </div>
 
-        <div className={styles.action}>
-          {isPrivate ? (
+        {isPrivate && (
+          <div className={styles.action}>
             <span className={styles.private}><LockKeyhole size={14} aria-hidden /> Approved summary only</span>
-          ) : (
-            <Link href={`/projects/${project.slug}`} className={styles.link}>
-              {project.links.paper ? "Read paper" : "Open project"} <ArrowUpRight size={15} aria-hidden />
-            </Link>
-          )}
-        </div>
+          </div>
+        )}
       </div>
-    </div>
+    </>
+  );
+
+  if (isPrivate) {
+    return <div className={styles.card}>{cardContent}</div>;
+  }
+
+  return (
+    <Link href={`/projects/${project.slug}`} className={styles.card}>
+      {cardContent}
+    </Link>
   );
 }

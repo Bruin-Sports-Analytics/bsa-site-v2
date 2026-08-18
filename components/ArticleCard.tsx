@@ -30,43 +30,67 @@ export function ArticleCard({ article, featured = false }: Props) {
 
   return (
     <article className={`${styles.card}${featured ? ` ${styles.featured}` : ""}`}>
-      <div
-        className={styles.thumbnail}
-        aria-hidden
-        style={{ "--tone-top": tone.top, "--tone-bottom": tone.bottom } as React.CSSProperties}
-      >
-        <span className={styles.thumbnailSport}>{article.sport}</span>
-        <span className={styles.thumbnailMeta}>{article.readTime} min read</span>
-      </div>
-      <div className={styles.body}>
-        <div className={styles.meta}>
-          <span className={styles.metaLeft}>
-            <span>{article.date}</span>
-            <span className={styles.dot} aria-hidden />
-            <span>{article.readTime} min read</span>
-          </span>
-        </div>
-        <h3 className={`${styles.title}${featured ? ` ${styles.titleFeatured}` : ""}`}>{article.title}</h3>
-        <p className={styles.authors}>{formatAuthors(article.authors)}</p>
-        {article.summary && <p className={styles.summary}>{article.summary}</p>}
-        {article.techStack && (
-          <div className={styles.techRow}>
-            {article.techStack.slice(0, 3).map((item) => (
-              <span key={item}>{item}</span>
-            ))}
+      {readHref ? (
+        <Link href={readHref} className={styles.cardLink}>
+          <div
+            className={styles.thumbnail}
+            aria-hidden
+            style={{ "--tone-top": tone.top, "--tone-bottom": tone.bottom } as React.CSSProperties}
+          >
+            <span className={styles.thumbnailSport}>{article.sport}</span>
+            <span className={styles.thumbnailMeta}>{article.readTime} min read</span>
           </div>
-        )}
-        <hr className={styles.divider} />
-        {readHref && (
-          <div className={styles.footer}>
-            <div className={styles.footerRight}>
-              <Link href={readHref} className={styles.readButton}>
-                Read <ArrowUpRight size={14} aria-hidden />
-              </Link>
+          <div className={styles.body}>
+            <div className={styles.meta}>
+              <span className={styles.metaLeft}>
+                <span>{article.date}</span>
+                <span className={styles.dot} aria-hidden />
+                <span>{article.readTime} min read</span>
+              </span>
             </div>
+            <h3 className={`${styles.title}${featured ? ` ${styles.titleFeatured}` : ""}`}>{article.title}</h3>
+            <p className={styles.authors}>{formatAuthors(article.authors)}</p>
+            {article.summary && <p className={styles.summary}>{article.summary}</p>}
+            {article.techStack && (
+              <div className={styles.techRow}>
+                {article.techStack.slice(0, 3).map((item) => (
+                  <span key={item}>{item}</span>
+                ))}
+              </div>
+            )}
           </div>
-        )}
-      </div>
+        </Link>
+      ) : (
+        <>
+          <div
+            className={styles.thumbnail}
+            aria-hidden
+            style={{ "--tone-top": tone.top, "--tone-bottom": tone.bottom } as React.CSSProperties}
+          >
+            <span className={styles.thumbnailSport}>{article.sport}</span>
+            <span className={styles.thumbnailMeta}>{article.readTime} min read</span>
+          </div>
+          <div className={styles.body}>
+            <div className={styles.meta}>
+              <span className={styles.metaLeft}>
+                <span>{article.date}</span>
+                <span className={styles.dot} aria-hidden />
+                <span>{article.readTime} min read</span>
+              </span>
+            </div>
+            <h3 className={`${styles.title}${featured ? ` ${styles.titleFeatured}` : ""}`}>{article.title}</h3>
+            <p className={styles.authors}>{formatAuthors(article.authors)}</p>
+            {article.summary && <p className={styles.summary}>{article.summary}</p>}
+            {article.techStack && (
+              <div className={styles.techRow}>
+                {article.techStack.slice(0, 3).map((item) => (
+                  <span key={item}>{item}</span>
+                ))}
+              </div>
+            )}
+          </div>
+        </>
+      )}
     </article>
   );
 }
