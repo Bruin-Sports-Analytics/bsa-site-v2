@@ -1,4 +1,4 @@
-import { Instagram, Linkedin, Mail } from "lucide-react";
+import { Github, Instagram, Linkedin, Mail } from "lucide-react";
 import { socialLinks } from "@/data/site";
 import styles from "./SocialSidebar.module.css";
 
@@ -6,6 +6,7 @@ const iconMap = {
   Email: Mail,
   Instagram,
   LinkedIn: Linkedin,
+  GitHub: Github,
 };
 
 export function SocialSidebar() {

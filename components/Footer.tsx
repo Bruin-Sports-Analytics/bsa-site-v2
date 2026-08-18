@@ -6,6 +6,7 @@ const iconMap = {
   Email: Mail,
   Instagram,
   LinkedIn: Linkedin,
+  GitHub: Github,
 };
 
 export function Footer() {

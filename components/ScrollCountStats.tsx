@@ -112,7 +112,7 @@ export function ScrollCountStats({ stats }: { stats: Stat[] }) {
     <section ref={sectionRef} className={styles.section} aria-label="Bruin Sports Analytics impact metrics">
       <div className={styles.inner}>
         <div className={styles.scoreboard} data-load-reveal>
-          <div className={styles.scoreboardTitle}>Bruin Sports Analytics</div>
+          <div className={styles.scoreboardTitle}>AT A GLANCE</div>
           <div className={styles.scoreGrid}>
             {scoreItems.map((stat) => {
               const displayValue = typeof stat.value === "number"

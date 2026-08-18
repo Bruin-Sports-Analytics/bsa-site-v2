@@ -89,7 +89,7 @@ export default function AboutPage() {
             />
           </div>
           <p className={styles.missionStatement} style={{ textAlign: "center" }}>
-            We build models, tools, dashboards, and writing that <span className={styles.blueGlow}>help people understand</span> games more deeply and <span className={styles.goldGlow}>make better decisions</span> from sports data.
+            We build models, tools, dashboards, and publications that <span className={styles.blueGlow}>help people understand</span> games more deeply and <span className={styles.goldGlow}>make better decisions</span> from sports data.
           </p>
           <div style={{ display: "grid", gridTemplateColumns: `repeat(${stats.length}, 1fr)`, gap: "52px", marginTop: 44 }}>
             {stats.map((stat) => (

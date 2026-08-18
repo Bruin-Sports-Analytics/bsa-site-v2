@@ -114,6 +114,7 @@ export type Event = {
 };
 
 export const navItems = [
+  { label: "Home", href: "/" },
   { label: "About", href: "/about" },
   { label: "Teams", href: "/teams" },
   { label: "Journalism", href: "/journalism" },
@@ -127,6 +128,7 @@ export const socialLinks = [
   { label: "Email", href: "mailto:bruinsportsanalytics@gmail.com" },
   { label: "Instagram", href: "https://www.instagram.com/bruinsportsanalytics/" },
   { label: "LinkedIn", href: "https://www.linkedin.com/company/bruin-sports-analytics/" },
+  { label: "GitHub", href: "https://github.com/Bruin-Sports-Analytics" },
   { label: "Slack", href: "https://slack.com/" }
 ];
 

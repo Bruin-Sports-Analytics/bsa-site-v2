@@ -51,6 +51,15 @@ export default function Home() {
 
       <section className="section">
         <div className="container">
+          <span className="eyebrow" style={{ textAlign: "center", display: "block" }}>Who are we?</span>
+          <p className={styles.missionStatement} style={{ textAlign: "center", marginTop: "18px" }}>
+            We build models, tools, dashboards, and publications that <span className={styles.blueGlow}>help people understand</span> games more deeply and <span className={styles.goldGlow}>make better decisions</span> from sports data.
+          </p>
+        </div>
+      </section>
+
+      <section className="section">
+        <div className="container">
           <span className="eyebrow">Our Work</span>
           <h2 className="section-title">Our sports teams</h2>
           <p className="section-lede">Each team focuses on one sport, from baseball to tennis.</p>
@@ -58,6 +67,28 @@ export default function Home() {
             {sports.map((sport) => (
               <Link key={sport.slug} href={`/teams/${sport.slug}`} className={styles.sportPill}>{sport.name}</Link>
             ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="section">
+        <div className="container">
+          <span className="eyebrow">Shared Functions</span>
+          <h2 className="section-title">Cross-team support</h2>
+          <p className="section-lede">Shared groups make the work publishable, reusable, and coordinated across the whole club.</p>
+          <div className={styles.sharedFunctions}>
+            <div className={styles.functionCard}>
+              <h3>Data Journalism</h3>
+              <p>Turns club research into published explainers, visual stories, and public-facing analysis.</p>
+            </div>
+            <div className={styles.functionCard}>
+              <h3>Research and consulting</h3>
+              <p>Scopes sport questions, designs analysis plans, and converts findings into usable recommendations.</p>
+            </div>
+            <div className={styles.functionCard}>
+              <h3>Data products</h3>
+              <p>Builds reusable pipelines, dashboards, and tools that teams can keep improving across projects.</p>
+            </div>
           </div>
         </div>
       </section>
