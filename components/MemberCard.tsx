@@ -7,7 +7,7 @@ import { GlassSurface } from "@/components/ui/GlassSurface";
 import type { Member } from "@/data/site";
 import styles from "./MemberCard.module.css";
 
-export function MemberCard({ member }: { member: Member }) {
+export function MemberCard({ member, priority = false }: { member: Member; priority?: boolean }) {
   const [expanded, setExpanded] = useState(false);
   const [imgError, setImgError] = useState(false);
   const initials = member.name.split(" ").map((part) => part[0]).join("");
@@ -25,7 +25,7 @@ export function MemberCard({ member }: { member: Member }) {
     <>
       <div className={styles.photo} aria-hidden>
         {member.photoUrl && !imgError
-          ? <Image src={member.photoUrl} alt="" fill sizes="(max-width: 600px) 100vw, 400px" className={styles.photoImg} style={member.photoTransform ? { transform: member.photoTransform } : undefined} onError={() => setImgError(true)} />
+          ? <Image src={member.photoUrl} alt="" fill sizes="(max-width: 600px) 100vw, 400px" className={styles.photoImg} style={member.photoTransform ? { transform: member.photoTransform } : undefined} onError={() => setImgError(true)} priority={priority} />
           : initials}
       </div>
       {member.linkedinUrl && (

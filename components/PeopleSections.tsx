@@ -13,8 +13,8 @@ type Props = {
 export function PeopleSections({ sections }: Props) {
   return (
     <>
-      {sections.map((section, index) => (
-        <div key={section.title} style={index > 0 ? { marginTop: "48px" } : undefined}>
+      {sections.map((section, sectionIndex) => (
+        <div key={section.title} style={sectionIndex > 0 ? { marginTop: "48px" } : undefined}>
           <span
             className="eyebrow"
             data-scroll-reveal
@@ -23,7 +23,13 @@ export function PeopleSections({ sections }: Props) {
             {section.title}
           </span>
           <div className="board-grid">
-            {section.people.map((member) => <MemberCard member={member} key={member.slug} />)}
+            {section.people.map((member, memberIndex) => (
+              <MemberCard
+                member={member}
+                key={member.slug}
+                priority={sectionIndex === 0 && memberIndex < 3}
+              />
+            ))}
           </div>
         </div>
       ))}

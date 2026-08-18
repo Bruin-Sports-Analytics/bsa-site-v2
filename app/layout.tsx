@@ -8,6 +8,7 @@ import { ColorPops } from "@/components/ColorPops";
 import { RouteTransitions } from "@/components/RouteTransitions";
 import { ScrollReveal } from "@/components/ScrollReveal";
 import { SocialSidebar } from "@/components/SocialSidebar";
+import { ErrorBoundary } from "@/components/ErrorBoundary";
 
 const montserrat = Montserrat({
   weight: ["600", "700", "800"],
@@ -76,10 +77,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <ColorPops />
           <ScrollReveal />
           <SocialSidebar />
-          <RouteTransitions>
-            {children}
-            <Footer />
-          </RouteTransitions>
+          <ErrorBoundary>
+            <RouteTransitions>
+              {children}
+              <Footer />
+            </RouteTransitions>
+          </ErrorBoundary>
         </div>
         <Analytics />
       </body>

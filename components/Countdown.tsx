@@ -17,14 +17,20 @@ function getTimeLeft() {
 }
 
 export function Countdown() {
-  const [timeLeft, setTimeLeft] = useState(getTimeLeft);
+  const [timeLeft, setTimeLeft] = useState<ReturnType<typeof getTimeLeft>>(null);
+  const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
+    // Set initial value on client only to prevent hydration mismatch
+    setTimeLeft(getTimeLeft());
+    setMounted(true);
+
     const id = setInterval(() => setTimeLeft(getTimeLeft()), 1000);
     return () => clearInterval(id);
   }, []);
 
-  if (!timeLeft) return null;
+  // Don't render until client-side to avoid hydration mismatch
+  if (!mounted || !timeLeft) return null;
 
   const units = [
     { value: timeLeft.days, label: "days" },
