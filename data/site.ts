@@ -1045,14 +1045,15 @@ export const memberProfiles: MemberProfile[] = [
     ]
   },
   {
-    "name": "Ayush Verma",
-    "major": "",
-    "gradYear": "",
-    "photoUrl": "/assets/linkedin_headshots/ayush-verma.jpeg",
+    "name": "Ayush Varma",
+    "major": "Stats & Data Science; Economics",
+    "gradYear": "2028",
+    "linkedinUrl": "https://www.linkedin.com/in/ayushvarma0207/",
+    "photoUrl": "/assets/linkedin_headshots/ayush-varma.jpeg",
     "isPublished": true,
     "assignments": [
       {
-        "slug": "ayush-verma",
+        "slug": "ayush-varma",
         "role": "Football Analyst",
         "group": "member",
         "team": "Football",
