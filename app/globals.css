@@ -437,7 +437,8 @@ main > section > * {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 18px;
+  row-gap: 48px;
+  column-gap: 18px;
   contain: layout;
 }
 
