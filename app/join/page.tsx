@@ -9,7 +9,8 @@ import { recruitment } from "@/data/site";
 import styles from "./join.module.css";
 
 export const metadata: Metadata = {
-  title: "Join"
+  title: "Join",
+  description: "Join Bruin Sports Analytics. Apply for our fall recruitment cycle as an analyst, engineer, writer, or designer."
 };
 
 export default function JoinPage() {

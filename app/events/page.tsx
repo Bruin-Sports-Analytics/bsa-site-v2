@@ -5,7 +5,8 @@ import { recruitment } from "@/data/site";
 import eventCardStyles from "@/components/EventCard.module.css";
 
 export const metadata: Metadata = {
-  title: "Events"
+  title: "Events",
+  description: "Upcoming events from Bruin Sports Analytics. Workshops, info sessions, and recruitment events."
 };
 
 export default function EventsPage() {

@@ -4,7 +4,8 @@ import { members } from "@/data/site";
 import { PeopleSections } from "@/components/PeopleSections";
 
 export const metadata: Metadata = {
-  title: "Members"
+  title: "Members",
+  description: "Current members of Bruin Sports Analytics. Analysts, engineers, and writers across all sports teams."
 };
 
 const sportGroups = [

@@ -2,7 +2,8 @@ import type { Metadata } from "next";
 import { ProjectExplorer } from "@/components/ProjectExplorer";
 
 export const metadata: Metadata = {
-  title: "Projects"
+  title: "Projects",
+  description: "Sports analytics projects from Bruin Sports Analytics. Research papers, consulting reports, and interactive dashboards."
 };
 
 export default function ProjectsPage() {

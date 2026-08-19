@@ -3,7 +3,8 @@ import { SportCard } from "@/components/SportCard";
 import { getTeamSportOverviews } from "@/lib/team-pages";
 
 export const metadata: Metadata = {
-  title: "Teams"
+  title: "Teams",
+  description: "UCLA's sports analytics teams. Research, consulting, and dashboards across baseball, basketball, volleyball, football, and tennis."
 };
 
 export default function WorkPage() {

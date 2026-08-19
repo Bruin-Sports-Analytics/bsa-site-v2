@@ -5,7 +5,8 @@ import { PartnerForm } from "@/components/PartnerForm";
 import { capabilities, technology } from "@/data/site";
 
 export const metadata: Metadata = {
-  title: "Partner With Us"
+  title: "Partner With Us",
+  description: "Partner with Bruin Sports Analytics for sports analytics consulting, research, and data-driven insights. UCLA students."
 };
 
 export default function PartnerPage() {

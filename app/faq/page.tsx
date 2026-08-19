@@ -2,7 +2,8 @@ import type { Metadata } from "next";
 import { FAQAccordion } from "@/components/FAQAccordion";
 
 export const metadata: Metadata = {
-  title: "FAQ"
+  title: "FAQ",
+  description: "Frequently asked questions about Bruin Sports Analytics. Membership, recruitment, partnerships, and events."
 };
 
 export default function FAQPage() {

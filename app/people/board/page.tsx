@@ -4,7 +4,8 @@ import { members } from "@/data/site";
 import { PeopleSections } from "@/components/PeopleSections";
 
 export const metadata: Metadata = {
-  title: "Our Board, '26-27"
+  title: "Our Board, '26-27",
+  description: "Meet the leadership of Bruin Sports Analytics. President, vice presidents, and team chairs."
 };
 
 const normalize = (value: string) => value.trim().toLowerCase();

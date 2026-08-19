@@ -6,7 +6,8 @@ import { impactStats, members, sports } from "@/data/site";
 import styles from "./page.module.css";
 
 export const metadata: Metadata = {
-  title: "About"
+  title: "About",
+  description: "About Bruin Sports Analytics. UCLA's student-run sports analytics organization bridging sports and data."
 };
 
 const boardGroups: { title: string; teams: string[] }[] = [
