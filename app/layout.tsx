@@ -43,6 +43,13 @@ export const metadata: Metadata = {
   },
   description: "UCLA's student-run sports analytics organization. Where sports meet data.",
   icons: { icon: "/assets/bsa_logo.ico" },
+  robots: {
+    index: true,
+    follow: true,
+  },
+  alternates: {
+    canonical: "https://bruinsportsanalytics.org",
+  },
   openGraph: {
     title: "Bruin Sports Analytics",
     description: "Where sports meet data.",
@@ -70,6 +77,33 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en" className={`${montserrat.variable} ${lato.variable} ${roboto.variable}`} suppressHydrationWarning>
       <head>
         <script dangerouslySetInnerHTML={{ __html: themeScript }} />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              "name": "Bruin Sports Analytics",
+              "url": "https://bruinsportsanalytics.org",
+              "logo": "https://bruinsportsanalytics.org/assets/bsa_logo.jpeg",
+              "description": "UCLA's student-run sports analytics organization",
+              "location": {
+                "@type": "Place",
+                "name": "UCLA",
+                "address": {
+                  "@type": "PostalAddress",
+                  "addressLocality": "Los Angeles",
+                  "addressRegion": "CA"
+                }
+              },
+              "sameAs": [
+                "https://www.instagram.com/bruinsportsanalytics/",
+                "https://www.linkedin.com/company/bruin-sports-analytics/",
+                "https://github.com/Bruin-Sports-Analytics"
+              ]
+            })
+          }}
+        />
       </head>
       <body>
         <div className="shell">
