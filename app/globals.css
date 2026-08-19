@@ -289,7 +289,8 @@ button {
 }
 
 .route-transition--exiting {
-  animation: route-exit 240ms ease both;
+  opacity: 0;
+  transition: opacity 0s;
   pointer-events: none;
 }
 

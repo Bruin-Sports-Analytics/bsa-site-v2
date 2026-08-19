@@ -53,9 +53,11 @@ export const metadata: Metadata = {
 const themeScript = `
 (() => {
   try {
+    const stored = localStorage.getItem("theme");
     const system = window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark";
-    document.documentElement.dataset.theme = system;
-    document.documentElement.style.colorScheme = system;
+    const theme = stored || system;
+    document.documentElement.dataset.theme = theme;
+    document.documentElement.style.colorScheme = theme;
   } catch {
     document.documentElement.dataset.theme = "dark";
     document.documentElement.style.colorScheme = "dark";
