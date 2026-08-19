@@ -18,6 +18,15 @@ Add technical SEO basics to improve search visibility for Bruin Sports Analytics
 - Enhanced page metadata (descriptions)
 - JSON-LD Organization schema
 
+## Non-Goals
+These changes are **invisible to website visitors** and do not modify any user-facing content:
+- Meta descriptions appear only in Google search results and social media previews, not on pages
+- JSON-LD schema is read by search engines, not rendered on pages
+- Canonical URLs and robots metadata are in `<head>` tags only
+- No homepage content changes
+- No navigation changes
+- No text or layout changes on any visible pages
+
 ---
 
 ## 1. Sitemap Generation
