@@ -15,7 +15,13 @@ export function generateStaticParams() {
 
 export function generateMetadata({ params }: Props): Metadata {
   const project = visibleProjectDetail(params.slug);
-  return { title: project?.title ?? "Project" };
+  if (!project) {
+    return { title: "Project not found" };
+  }
+  return {
+    title: project.title,
+    description: project.summary
+  };
 }
 
 export default function ProjectDetailPage({ params }: Props) {

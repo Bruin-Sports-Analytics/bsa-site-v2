@@ -108,7 +108,13 @@ export function generateStaticParams() {
 
 export function generateMetadata({ params }: Props): Metadata {
   const article = articles.find((item) => (item.paperUrl || item.content?.length || item.contentFile) && slugify(item.title) === params.slug);
-  return { title: article?.title ?? "Journalism Article" };
+  if (!article) {
+    return { title: "Article not found" };
+  }
+  return {
+    title: article.title,
+    description: article.summary
+  };
 }
 
 export default function JournalismArticlePage({ params }: Props) {
