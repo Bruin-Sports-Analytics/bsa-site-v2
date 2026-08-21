@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, CalendarDays } from "lucide-react";
 import { EventCard } from "@/components/EventCard";
-import { LogoMarquee } from "@/components/LogoMarquee";
+import { LogoCategories } from "@/components/LogoCategories";
 import { ProjectCardGroup } from "@/components/ProjectCardGroup";
 import { ScrollCountStats } from "@/components/ScrollCountStats";
 import { events, impactStats, outcomes, sports } from "@/data/site";
@@ -19,9 +19,19 @@ export default function Home() {
   const displayedOutcomes = outcomes.filter((outcome) => outcome.approvedForDisplay);
   const marqueeMidpoint = Math.ceil(displayedOutcomes.length / 2);
   const marqueeRows = [displayedOutcomes.slice(0, marqueeMidpoint), displayedOutcomes.slice(marqueeMidpoint)];
+  const yardNumberSequence = ["10", "20", "30", "40", "50", "40", "30", "20"];
+  const yardMarkers = Array.from({ length: 32 }, (_, index) => yardNumberSequence[index % yardNumberSequence.length]);
 
   return (
     <main className={styles.home}>
+      <div className={styles.fieldBackdrop} aria-hidden>
+        {yardMarkers.map((number, index) => (
+          <span key={`${number}-${index}`}>
+            <i>{number}</i>
+            <i>{number}</i>
+          </span>
+        ))}
+      </div>
       <section className={styles.hero}>
         <div className={`container ${styles.heroGrid}`}>
           <div className={styles.heroCopy}>
@@ -89,8 +99,9 @@ export default function Home() {
         <div className="container">
           <span className="eyebrow">Outcomes</span>
           <h2 className="section-title">Where our members go</h2>
+          <p className="section-lede">Our members have continued their work across sports, technology, consulting, and graduate school.</p>
+          <LogoCategories logos={displayedOutcomes} />
         </div>
-        <LogoMarquee rows={marqueeRows} />
       </section>
 
       <section className="section">

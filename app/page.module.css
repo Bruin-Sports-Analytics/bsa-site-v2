@@ -1,6 +1,58 @@
 /* Tighten the vertical rhythm between homepage sections (the global .section
    default of 82px 0 leaves ~164px gaps). Scoped to the homepage; the .tight
    final CTA keeps its own padding. */
+
+.fieldBackdrop {
+  position: absolute;
+  z-index: 0;
+  inset: 0 24px;
+  display: grid;
+  grid-template-rows: repeat(32, minmax(0, 1fr));
+  border-right: 1px solid rgba(255, 209, 0, .2);
+  border-left: 1px solid rgba(255, 209, 0, .2);
+  pointer-events: none;
+}
+
+.fieldBackdrop span {
+  position: relative;
+  min-height: 0;
+  border-top: 1px solid rgba(255, 209, 0, .2);
+  background:
+    linear-gradient(
+      90deg,
+      transparent 0 43%,
+      rgba(255, 209, 0, .3) 43% 47%,
+      transparent 47% 53%,
+      rgba(255, 209, 0, .3) 53% 57%,
+      transparent 57%
+    ) top left / 100% 5px no-repeat;
+}
+
+.fieldBackdrop span i {
+  position: absolute;
+  top: 12px;
+  color: rgba(255, 209, 0, .52);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: clamp(13px, 1.5vw, 20px);
+  font-style: normal;
+  font-weight: 800;
+  letter-spacing: .05em;
+  line-height: 1;
+}
+
+.fieldBackdrop span i:first-child {
+  left: 34px;
+  transform: rotate(90deg);
+}
+
+.fieldBackdrop span i:last-child {
+  right: 34px;
+  transform: rotate(-90deg);
+}
+.home {
+  position: relative;
+}
+
 .home :global(.section:not(.tight)) {
   padding-top: 52px;
   padding-bottom: 52px;
@@ -395,6 +447,23 @@
 }
 
 @media (max-width: 640px) {
+  .fieldBackdrop {
+    inset: 0 12px;
+  }
+
+  .fieldBackdrop span i {
+    top: 9px;
+    font-size: 10px;
+  }
+
+  .fieldBackdrop span i:first-child {
+    left: 11px;
+  }
+
+  .fieldBackdrop span i:last-child {
+    right: 11px;
+  }
+
   .hero {
     padding: 96px 0 32px;
   }
