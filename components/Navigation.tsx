@@ -5,8 +5,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { ChevronDown, Menu, X } from "lucide-react";
 import { useState } from "react";
-import { navItems, projectLifecycleStatus, projects } from "@/data/site";
-import { TeamsCarousel } from "@/components/TeamsCarousel";
+import { navItems, projectLifecycleStatus, projects, sports } from "@/data/site";
 import { ThemeToggle } from "@/components/ThemeToggle";
 import { useScrolledState } from "@/hooks/useScrolledState";
 import { cn } from "@/lib/cn";
@@ -16,7 +15,6 @@ export function Navigation() {
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
   const [openMenu, setOpenMenu] = useState<string | null>(null);
-  const [activeTeamIndex, setActiveTeamIndex] = useState(0);
   const scrolled = useScrolledState();
   const recentProjects = [...projects]
     .filter((project) => project.visibility !== "hidden")
@@ -36,13 +34,14 @@ export function Navigation() {
             const hasMenu = item.label === "People" || item.label === "Teams";
             return (
               <div
-                className={cn(styles.navGroup, item.label === "People" && styles.peopleGroup)}
+                className={cn(
+                  styles.navGroup,
+                  item.label === "People" && styles.peopleGroup,
+                  item.label === "Teams" && styles.teamsGroup
+                )}
                 key={item.href}
                 onMouseEnter={() => hasMenu && setOpenMenu(item.label)}
-                onMouseLeave={() => {
-                  setOpenMenu(null);
-                  if (item.label === "Teams") setActiveTeamIndex(0);
-                }}
+                onMouseLeave={() => setOpenMenu(null)}
                 onFocus={() => hasMenu && setOpenMenu(item.label)}
                 onBlur={(e) => {
                   if (!e.currentTarget.contains(e.relatedTarget as Node)) {
@@ -57,10 +56,24 @@ export function Navigation() {
                 {hasMenu ? (
                   <div className={`${styles.megaMenu} ${openMenu === item.label ? styles.menuOpen : ""} ${item.label === "Teams" ? styles.teamsMenu : ""} ${item.label === "People" ? styles.peopleMenu : ""} glass glass--strong glass--radius-lg`}>
                     {item.label === "Teams" ? (
-                      <TeamsCarousel
-                        activeIndex={activeTeamIndex}
-                        setActiveIndex={setActiveTeamIndex}
-                      />
+                      <div className={styles.teamsGrid}>
+                        {sports.map((sport) => {
+                          const SportIcon = sport.icon;
+                          return (
+                            <Link
+                              key={sport.slug}
+                              href={`/teams/${sport.slug}`}
+                              className={styles.teamCard}
+                              onClick={() => setOpenMenu(null)}
+                            >
+                              <span className={styles.teamIconBox} style={{ color: sport.accent }}>
+                                <SportIcon size={32} color="currentColor" aria-hidden />
+                              </span>
+                              <span className={styles.teamCardName}>{sport.name}</span>
+                            </Link>
+                          );
+                        })}
+                      </div>
                     ) : item.label === "Projects" ? (
                       <>
                         <div className={styles.menuColumn}>

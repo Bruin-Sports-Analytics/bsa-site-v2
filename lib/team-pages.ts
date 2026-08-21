@@ -14,7 +14,7 @@ export type SportOverview = {
   teamSize: number;
 };
 
-export const teamSportSlugs: TeamSportSlug[] = ["baseball", "volleyball", "basketball", "football", "tennis"];
+export const teamSportSlugs: TeamSportSlug[] = ["tennis", "football", "basketball", "baseball", "volleyball"];
 
 function bySortOrder(a: Member, b: Member) {
   return a.sortOrder - b.sortOrder;
