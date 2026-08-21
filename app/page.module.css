@@ -5,7 +5,7 @@
 .fieldBackdrop {
   position: absolute;
   z-index: 0;
-  inset: 0 24px;
+  inset: 0 48px;
   display: grid;
   grid-template-rows: repeat(32, minmax(0, 1fr));
   border-right: 1px solid rgba(255, 209, 0, .2);
@@ -17,15 +17,6 @@
   position: relative;
   min-height: 0;
   border-top: 1px solid rgba(255, 209, 0, .2);
-  background:
-    linear-gradient(
-      90deg,
-      transparent 0 43%,
-      rgba(255, 209, 0, .3) 43% 47%,
-      transparent 47% 53%,
-      rgba(255, 209, 0, .3) 53% 57%,
-      transparent 57%
-    ) top left / 100% 5px no-repeat;
 }
 
 .fieldBackdrop span i {
@@ -51,6 +42,12 @@
 }
 .home {
   position: relative;
+  --glass-clear-fill: #0d2744;
+  --glass-regular-fill: #0c243d;
+  --glass-strong-fill: #0a1f36;
+  --glass-fallback-fill: #0c243d;
+  --card-fill: #0c243d;
+  --gradient-card: #0a223c;
 }
 
 .home :global(.section:not(.tight)) {
@@ -207,7 +204,7 @@
   padding: 10px 24px;
   border: 1px solid var(--border);
   border-radius: 0;
-  background: rgba(16, 42, 73, .52);
+  background: #0d2642;
   color: var(--text-primary);
   font-family: var(--font-sora), system-ui, sans-serif;
   font-size: 15px;
@@ -217,7 +214,7 @@
 
 .sportPill:hover {
   border-color: rgba(255, 209, 0, .55);
-  background: rgba(16, 42, 73, .78);
+  background: #143b64;
   color: var(--ucla-gold);
 }
 
@@ -323,6 +320,19 @@
   color: #102a49;
 }
 
+.outcomesSection {
+  text-align: center;
+}
+
+.outcomesSection :global(.eyebrow) {
+  display: block;
+}
+
+.outcomesSection :global(.section-lede) {
+  max-width: none;
+  margin: 8px auto 0;
+}
+
 .finalCta {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -337,13 +347,14 @@
   gap: 20px;
   border: 1px solid var(--border);
   border-radius: var(--radius-md);
-  background: var(--gradient-card);
+  background: #0a223c;
   padding: 22px 26px;
-  transition: border-color .2s ease;
+  transition: border-color .2s ease, background .2s ease;
 }
 
 .finalCta a:hover {
   border-color: var(--glass-border-hover);
+  background: #103052;
 }
 
 .ctaText {
@@ -448,7 +459,7 @@
 
 @media (max-width: 640px) {
   .fieldBackdrop {
-    inset: 0 12px;
+    inset: 0 24px;
   }
 
   .fieldBackdrop span i {
@@ -500,3 +511,44 @@
     transform: none;
   }
 }
+
+/* ── Homepage opaque overrides ──
+   Force all buttons, cards, and glass elements on the homepage to be
+   fully opaque so the football field lines don't bleed through. */
+
+.home :global(.btn-secondary) {
+  background: #0e2a46 !important;
+  border-color: rgba(190, 224, 255, 0.30) !important;
+  -webkit-backdrop-filter: none !important;
+  backdrop-filter: none !important;
+}
+
+.home :global(.btn-secondary:hover) {
+  background: #143554 !important;
+}
+
+.home :global(.card),
+.home :global([class*="card"]),
+.home :global([class*="Card"]),
+.home :global(.glass),
+.home :global([class*="glass"]) {
+  background: #0c2238 !important;
+  background-color: #0c2238 !important;
+  -webkit-backdrop-filter: none !important;
+  backdrop-filter: none !important;
+}
+
+.home :global(.card:hover),
+.home :global([class*="card"]:hover),
+.home :global([class*="Card"]:hover) {
+  background: #102a44 !important;
+  background-color: #102a44 !important;
+}
+
+.home :global(.glass)::before,
+.home :global(.glass)::after,
+.home :global([class*="glass"])::before,
+.home :global([class*="glass"])::after {
+  display: none !important;
+}
+

@@ -95,7 +95,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="section">
+      <section className={`section ${styles.outcomesSection}`}>
         <div className="container">
           <span className="eyebrow">Outcomes</span>
           <h2 className="section-title">Where our members go</h2>

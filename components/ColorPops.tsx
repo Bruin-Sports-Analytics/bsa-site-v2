@@ -41,7 +41,7 @@ function generate(excluded: Zone[]): Pop[] {
     const widthCells = 2 + Math.floor(Math.random() * 3);  // 2–4
     const heightCells = 2 + Math.floor(Math.random() * 3); // 2–4
     const side = Math.random() < 0.5 ? "left" : "right";
-    const offCells = 1 + Math.floor(Math.random() * Math.min(2, widthCells - 1));
+    const offCells = widthCells - 1 + Math.floor(Math.random() * 2); // push pops mostly off-screen, outside the field
 
     const bandStart = i === 0 ? 2 : Math.floor(i * bandSize);
     const bandEnd = Math.floor((i + 1) * bandSize);
