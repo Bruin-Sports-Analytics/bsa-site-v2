@@ -235,20 +235,16 @@ html {
   scroll-behavior: smooth;
   background-color: var(--html-bg);
   background-image:
+    radial-gradient(circle at 78% 18%, var(--body-spotlight), transparent 34rem),
     linear-gradient(var(--body-grid-line) 1px, transparent 1px),
     linear-gradient(90deg, var(--body-grid-line) 1px, transparent 1px);
-  background-size: 42px 42px;
+  background-size: auto, 42px 42px, 42px 42px;
+  background-repeat: no-repeat, repeat, repeat;
 }
 
 body {
   margin: 0;
-  background:
-    radial-gradient(circle at 78% 18%, var(--body-spotlight), transparent 34rem),
-    linear-gradient(var(--body-grid-line) 1px, transparent 1px),
-    linear-gradient(90deg, var(--body-grid-line) 1px, transparent 1px),
-    linear-gradient(180deg, var(--bg-primary) 0%, var(--bg-primary) 100%);
-  background-attachment: scroll;
-  background-size: auto, 42px 42px, 42px 42px, auto;
+  background: transparent;
   color: var(--text-primary);
   font-family: var(--font-inter), system-ui, sans-serif;
   font-size: 15px;
@@ -816,12 +812,6 @@ main > section > * {
     --glass-strong-blur: 22px;
     --glass-regular-fill: rgba(10, 31, 54, 0.68);
     --glass-strong-fill: rgba(7, 24, 43, 0.90);
-  }
-
-  body {
-    background:
-      radial-gradient(circle at 82% 14%, var(--body-spotlight), transparent 24rem),
-      linear-gradient(180deg, var(--bg-primary) 0%, var(--bg-primary) 100%);
   }
 
   main > section::before {
