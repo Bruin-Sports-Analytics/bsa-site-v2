@@ -528,10 +528,7 @@
 }
 
 .home :global(.card),
-.home :global([class*="card"]),
-.home :global([class*="Card"]),
-.home :global(.glass),
-.home :global([class*="glass"]) {
+.home :global(.glass) {
   background: #0c2238 !important;
   background-color: #0c2238 !important;
   -webkit-backdrop-filter: none !important;
@@ -539,16 +536,13 @@
 }
 
 .home :global(.card:hover),
-.home :global([class*="card"]:hover),
-.home :global([class*="Card"]:hover) {
+.home :global(.glass--interactive:hover) {
   background: #102a44 !important;
   background-color: #102a44 !important;
 }
 
 .home :global(.glass)::before,
-.home :global(.glass)::after,
-.home :global([class*="glass"])::before,
-.home :global([class*="glass"])::after {
+.home :global(.glass)::after {
   display: none !important;
 }
 
