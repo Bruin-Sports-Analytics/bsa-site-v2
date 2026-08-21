@@ -233,7 +233,11 @@ html[data-theme="light"] {
 
 html {
   scroll-behavior: smooth;
-  background: var(--html-bg);
+  background-color: var(--html-bg);
+  background-image:
+    linear-gradient(var(--body-grid-line) 1px, transparent 1px),
+    linear-gradient(90deg, var(--body-grid-line) 1px, transparent 1px);
+  background-size: 42px 42px;
 }
 
 body {
