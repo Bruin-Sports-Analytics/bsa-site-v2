@@ -71,27 +71,6 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="section">
-        <div className="container">
-          <span className="eyebrow">Shared Functions</span>
-          <h2 className="section-title">Cross-team support</h2>
-          <p className="section-lede">Shared groups make the work publishable, reusable, and coordinated across the whole club.</p>
-          <div className={styles.sharedFunctions}>
-            <div className={styles.functionCard}>
-              <h3>Data Journalism</h3>
-              <p>We turn curiosity investigations into published explainers and visual stories complemented by thorough data analysis.</p>
-            </div>
-            <div className={styles.functionCard}>
-              <h3>Research and Consulting</h3>
-              <p>We scope sport questions, design analysis plans, and convert findings into usable recommendations.</p>
-            </div>
-            <div className={styles.functionCard}>
-              <h3>Data Products</h3>
-              <p>We build reusable pipelines, dashboards, and tools that teams can keep improving across projects.</p>
-            </div>
-          </div>
-        </div>
-      </section>
 
       <section className="section">
         <div className="container">
