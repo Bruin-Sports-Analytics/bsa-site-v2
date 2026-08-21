@@ -60,14 +60,31 @@ export const metadata: Metadata = {
 const themeScript = `
 (() => {
   try {
-    const stored = localStorage.getItem("theme");
-    const system = window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark";
-    const theme = stored || system;
-    document.documentElement.dataset.theme = theme;
-    document.documentElement.style.colorScheme = theme;
+    localStorage.removeItem("theme");
+    const stored = sessionStorage.getItem("theme");
+    if (stored === "dark" || stored === "light") {
+      document.documentElement.dataset.theme = stored;
+      document.documentElement.style.colorScheme = stored;
+      return;
+    }
+    var systemTheme = "dark";
+    var mqlLight = window.matchMedia && window.matchMedia("(prefers-color-scheme: light)");
+    var mqlDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)");
+    if (mqlLight && mqlLight.matches) {
+      systemTheme = "light";
+    } else if (mqlDark && mqlDark.matches) {
+      systemTheme = "dark";
+    } else {
+      var hour = new Date().getHours();
+      systemTheme = (hour >= 6 && hour < 18) ? "light" : "dark";
+    }
+    document.documentElement.dataset.theme = systemTheme;
+    document.documentElement.style.colorScheme = systemTheme;
   } catch {
-    document.documentElement.dataset.theme = "dark";
-    document.documentElement.style.colorScheme = "dark";
+    var hour = new Date().getHours();
+    var fallbackTheme = (hour >= 6 && hour < 18) ? "light" : "dark";
+    document.documentElement.dataset.theme = fallbackTheme;
+    document.documentElement.style.colorScheme = fallbackTheme;
   }
 })();
 `;
