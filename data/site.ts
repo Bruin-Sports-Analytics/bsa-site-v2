@@ -133,6 +133,44 @@ export const socialLinks = [
 
 export const sports: Sport[] = [
   {
+    name: "Tennis",
+    slug: "tennis",
+    icon: TennisIcon,
+    description: "Match strategy, player development, and scouting work across three configurable programs.",
+    focusAreas: ["Point patterns", "Serve plus-one value", "Opponent scouting"],
+    activeProjects: 4,
+    archivedProjects: 5,
+    featuredMetric: "3 programs",
+    lead: "Tennis Analytics Lead",
+    accent: "#8BCBFF",
+    subdivisions: ["Scouting - role", "Tagging - role", "Strategy - role"]
+  },
+  {
+    name: "Football",
+    slug: "football",
+    icon: FootballIcon,
+    description: "Drive outcomes, coverage tendencies, win probability, and roster evaluation research.",
+    focusAreas: ["Fourth-down decisions", "Explosive play prevention", "Recruiting evaluation"],
+    activeProjects: 2,
+    archivedProjects: 7,
+    featuredMetric: "312 formations classified",
+    lead: "Football Analytics Lead",
+    accent: "#FFB81C",
+    subpages: []
+  },
+  {
+    name: "Basketball",
+    slug: "basketball",
+    icon: BasketballIcon,
+    description: "Shot quality, lineup combinations, spatial tracking, and possession-level storytelling.",
+    focusAreas: ["Shot charts", "Lineup interaction effects", "Player role similarity"],
+    activeProjects: 5,
+    archivedProjects: 11,
+    featuredMetric: "84k possessions modeled",
+    lead: "Basketball Analytics Lead",
+    accent: "#4AA8FF"
+  },
+  {
     name: "Baseball",
     slug: "baseball",
     icon: BaseballIcon,
@@ -156,44 +194,6 @@ export const sports: Sport[] = [
     lead: "Volleyball Analytics Lead",
     accent: "#FFD100",
     subpages: []
-  },
-  {
-    name: "Basketball",
-    slug: "basketball",
-    icon: BasketballIcon,
-    description: "Shot quality, lineup combinations, spatial tracking, and possession-level storytelling.",
-    focusAreas: ["Shot charts", "Lineup interaction effects", "Player role similarity"],
-    activeProjects: 5,
-    archivedProjects: 11,
-    featuredMetric: "84k possessions modeled",
-    lead: "Basketball Analytics Lead",
-    accent: "#4AA8FF"
-  },
-  {
-    name: "Football",
-    slug: "football",
-    icon: FootballIcon,
-    description: "Drive outcomes, coverage tendencies, win probability, and roster evaluation research.",
-    focusAreas: ["Fourth-down decisions", "Explosive play prevention", "Recruiting evaluation"],
-    activeProjects: 2,
-    archivedProjects: 7,
-    featuredMetric: "312 formations classified",
-    lead: "Football Analytics Lead",
-    accent: "#FFB81C",
-    subpages: []
-  },
-  {
-    name: "Tennis",
-    slug: "tennis",
-    icon: TennisIcon,
-    description: "Match strategy, player development, and scouting work across three configurable programs.",
-    focusAreas: ["Point patterns", "Serve plus-one value", "Opponent scouting"],
-    activeProjects: 4,
-    archivedProjects: 5,
-    featuredMetric: "3 programs",
-    lead: "Tennis Analytics Lead",
-    accent: "#8BCBFF",
-    subdivisions: ["Scouting - role", "Tagging - role", "Strategy - role"]
   }
 ];
 

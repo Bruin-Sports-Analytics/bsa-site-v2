@@ -18,32 +18,38 @@ const sectionHeadings = [
   "Background",
   "Best of 3 Dominance",
   "Grand Slam Disappointment",
+  "Time is the Enemy...",
   "But Time is Also a Friend",
   "Goal of this Article",
   "Predicting NBA Free Agent Salaries",
   "Introduction Relevance",
   "Introduction",
+  "Terms to Know",
   "It's more than just the goalkeeper",
+  "It's More Than Just the Goalkeeper",
   "Understanding Contracts and Free Agency",
   "Methodology Organizing the Data",
   "Methodology and Rationale",
   "Methodology",
   "Interesting Notes",
   "An Attempt to Create our Own Statistic",
+  "Final Variable Selection & Model Creation",
   "Results",
   "Some top performers:",
+  "Editor's Picks",
   "Next Steps",
   "Conclusion and Further Remarks",
   "Conclusion",
   "Why GameScore",
   "Exploring the Data",
+  "Finding the Keys to Success",
   "Other Issues and Future Plans",
   "Sources and Credits",
-  "Time is the Enemy...",
+  "Measuring Performance of All Teams",
+  "Key for \"Stage Reached\" Variable",
   "Analyzing the Performance of the Finalists",
   "What is it?",
-  "StatsBomb",
-  "MLB: Jonathon Lucroy"
+  "StatsBomb"
 ].sort((a, b) => b.length - a.length);
 
 const ignoredExtractedText = new Set([
@@ -81,20 +87,35 @@ function fileContentBlocks(article: JournalismArticle): ArticleBlock[] {
 
   try {
     const filePath = path.join(contentDirectory, article.contentFile);
-    const blocks = textToBlocks(readFileSync(filePath, "utf8"));
+    const rawBlocks = textToBlocks(readFileSync(filePath, "utf8"));
+    if (!article.images?.length) return rawBlocks;
 
-    article.images?.forEach((image) => {
-      blocks.splice(Math.min(image.afterParagraph + 1, blocks.length), 0, {
+    const imagesToInsert = [...article.images].sort((a, b) => b.afterParagraph - a.afterParagraph);
+    const finalBlocks = [...rawBlocks];
+
+    for (const img of imagesToInsert) {
+      let count = 0;
+      let targetIndex = finalBlocks.length;
+      for (let i = 0; i < finalBlocks.length; i++) {
+        if (finalBlocks[i].type === "paragraph" || finalBlocks[i].type === "heading") {
+          count++;
+          if (count === img.afterParagraph) {
+            targetIndex = i + 1;
+            break;
+          }
+        }
+      }
+      finalBlocks.splice(targetIndex, 0, {
         type: "image",
-        src: image.src,
-        alt: image.alt,
-        caption: image.caption,
-        width: image.width,
-        height: image.height
+        src: img.src,
+        alt: img.alt,
+        caption: img.caption,
+        width: img.width,
+        height: img.height
       });
-    });
+    }
 
-    return blocks;
+    return finalBlocks;
   } catch {
     return [];
   }
@@ -188,14 +209,22 @@ export default function JournalismArticlePage({ params }: Props) {
                 if (block.type === "image") {
                   return (
                     <figure className={styles.figure} key={`${block.src}-${index}`}>
-                      <Image
-                        src={block.src}
-                        alt={block.alt}
-                        width={block.width ?? 1200}
-                        height={block.height ?? 760}
-                        sizes="(max-width: 760px) 100vw, 960px"
-                      />
-                      {block.caption ? <figcaption>{block.caption}</figcaption> : null}
+                      <div className={styles.imageContainer}>
+                        <Image
+                          src={block.src}
+                          alt={block.alt}
+                          width={block.width ?? 1200}
+                          height={block.height ?? 760}
+                          sizes="(max-width: 860px) 100vw, 860px"
+                          className={styles.chartImage}
+                        />
+                      </div>
+                      {block.caption ? (
+                        <figcaption className={styles.figcaption}>
+                          <span className={styles.captionBadge}>FIGURE</span>
+                          <span className={styles.captionText}>{block.caption}</span>
+                        </figcaption>
+                      ) : null}
                     </figure>
                   );
                 }
