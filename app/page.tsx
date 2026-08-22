@@ -119,7 +119,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="section tight">
+      <section className={`section tight ${styles.finalCtaSection}`}>
         <div className="container">
           <div className={styles.finalCta}>
             <Link href="/join">

@@ -343,10 +343,34 @@
   margin: 8px auto 0;
 }
 
+.finalCtaSection {
+  position: relative;
+  isolation: isolate;
+}
+
+.finalCtaSection::before {
+  position: absolute;
+  inset: -60px 0 -40px;
+  pointer-events: none;
+  background:
+    radial-gradient(ellipse at 14% 75%, rgba(39, 116, 174, .28), transparent 48%),
+    radial-gradient(ellipse at 86% 50%, rgba(255, 209, 0, .14), transparent 44%);
+  content: "";
+  z-index: -1;
+}
+
+:global(html[data-theme="light"]) .finalCtaSection::before {
+  background:
+    radial-gradient(ellipse at 14% 75%, rgba(39, 116, 174, .10), transparent 48%),
+    radial-gradient(ellipse at 86% 50%, rgba(255, 209, 0, .06), transparent 44%);
+}
+
 .finalCta {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 16px;
+  position: relative;
+  z-index: 1;
 }
 
 .finalCta a {
@@ -357,24 +381,40 @@
   gap: 20px;
   border: 1px solid var(--border);
   border-radius: var(--radius-md);
-  background: #0a223c;
+  background:
+    linear-gradient(145deg, rgba(74, 168, 255, .10), rgba(255, 209, 0, .03)),
+    #0c233e;
   padding: 22px 26px;
-  transition: border-color .2s ease, background .2s ease, box-shadow .2s ease;
+  transition: border-color .2s ease, background .2s ease, box-shadow .2s ease, transform .2s ease;
 }
 
 .finalCta a:first-child {
-  border-left: 3px solid rgba(74, 168, 255, .55);
+  border-left: 3px solid rgba(74, 168, 255, .80);
 }
 
 .finalCta a:last-child {
-  border-left: 3px solid rgba(255, 209, 0, .55);
+  border-left: 3px solid rgba(255, 209, 0, .85);
 }
 
 .finalCta a:hover {
-  border-color: var(--ucla-gold);
+  background: #0f2d4e;
+  transform: translateY(-2px);
+}
+
+.finalCta a:first-child:hover {
+  border-color: rgba(74, 168, 255, .65);
+  border-left-color: rgba(74, 168, 255, 1);
+  box-shadow:
+    0 0 22px rgba(74, 168, 255, .32),
+    0 0 48px rgba(74, 168, 255, .14);
+}
+
+.finalCta a:last-child:hover {
+  border-color: rgba(255, 209, 0, .65);
   border-left-color: var(--ucla-gold);
-  background: #103052;
-  box-shadow: 0 0 20px rgba(255, 209, 0, .35), 0 0 45px rgba(255, 209, 0, .18);
+  box-shadow:
+    0 0 22px rgba(255, 209, 0, .35),
+    0 0 48px rgba(255, 209, 0, .16);
 }
 
 .ctaText {
@@ -415,11 +455,30 @@
   color: #102235;
 }
 
-:global(html[data-theme="light"]) .finalCta a:hover {
-  border-color: var(--ucla-gold);
-  border-left-color: var(--ucla-gold);
+:global(html[data-theme="light"]) .finalCta a:first-child {
+  border-left: 3px solid #2774ae;
+}
+
+:global(html[data-theme="light"]) .finalCta a:last-child {
+  border-left: 3px solid #d4a300;
+}
+
+:global(html[data-theme="light"]) .finalCta a:first-child:hover {
+  border-color: #2774ae;
+  border-left-color: #1b6399;
+  background: #fbfdff;
+  box-shadow:
+    0 0 20px rgba(39, 116, 174, .30),
+    0 0 40px rgba(39, 116, 174, .14);
+}
+
+:global(html[data-theme="light"]) .finalCta a:last-child:hover {
+  border-color: #d4a300;
+  border-left-color: #b58400;
   background: #fdfdfd;
-  box-shadow: 0 0 20px rgba(255, 209, 0, .45), 0 0 40px rgba(255, 209, 0, .20);
+  box-shadow:
+    0 0 20px rgba(255, 209, 0, .40),
+    0 0 40px rgba(255, 209, 0, .18);
 }
 
 :global(html[data-theme="light"]) .finalCta span {
