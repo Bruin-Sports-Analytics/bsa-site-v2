@@ -1176,6 +1176,24 @@ export const memberProfiles: MemberProfile[] = [
         "sortOrder": 403
       }
     ]
+  },
+  {
+    "name": "Elias Grant",
+    "major": "Stats & Data Science",
+    "gradYear": "2028",
+    "linkedinUrl": "https://www.linkedin.com/in/elias-grant/",
+    "photoUrl": "/assets/linkedin_headshots/elias-grant.jpeg",
+    "isPublished": true,
+    "assignments": [
+      {
+        "slug": "elias-grant",
+        "role": "Baseball Analyst",
+        "group": "member",
+        "team": "Baseball",
+        "bio": "Baseball analytics researcher and contributor.",
+        "sortOrder": 306
+      }
+    ]
   }
 ];
 
