@@ -76,7 +76,7 @@
     box-shadow 180ms ease;
   --html-bg: #0c283b;
   --body-spotlight: rgba(74, 168, 255, 0.20);
-  --body-grid-line: rgba(139, 203, 255, .035);
+  --body-grid-line: rgba(139, 203, 255, .018);
   --section-glow-strong: rgba(255, 209, 0, 0.13);
   --section-glow-mid: rgba(255, 209, 0, 0.065);
   --section-glow-soft: rgba(255, 184, 28, 0.026);
@@ -175,7 +175,7 @@ html[data-theme="light"] {
     0 1px 0 rgba(255, 255, 255, 0.88) inset;
   --html-bg: #f2f7fc;
   --body-spotlight: rgba(39, 116, 174, 0.14);
-  --body-grid-line: rgba(39, 116, 174, .055);
+  --body-grid-line: rgba(39, 116, 174, .025);
   --section-glow-strong: rgba(255, 209, 0, 0.16);
   --section-glow-mid: rgba(255, 209, 0, 0.075);
   --section-glow-soft: rgba(255, 184, 28, 0.035);
