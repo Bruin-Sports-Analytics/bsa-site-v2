@@ -15,12 +15,28 @@ export function Navigation() {
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
   const [openMenu, setOpenMenu] = useState<string | null>(null);
+  const [mobileTeamsOpen, setMobileTeamsOpen] = useState(false);
   const [mobilePeopleOpen, setMobilePeopleOpen] = useState(false);
   const scrolled = useScrolledState();
   const recentProjects = [...projects]
     .filter((project) => project.visibility !== "hidden")
     .sort((a, b) => Date.parse(b.lastUpdated) - Date.parse(a.lastUpdated))
     .slice(0, 3);
+
+  const teamLinks = [
+    ...sports.map((sport) => ({
+      label: sport.name,
+      href: `/teams/${sport.slug}`,
+      description: `${sport.name} analytics team`,
+      icon: sport.icon,
+    })),
+    {
+      label: "All Teams",
+      href: "/teams",
+      description: "Overview of all sports teams",
+      icon: null,
+    },
+  ];
 
   const peopleLinks = [
     { label: "Board", href: "/people/board", description: "Leadership and directors" },
@@ -38,7 +54,7 @@ export function Navigation() {
         <nav className={styles.desktop} aria-label="Primary navigation">
           {navItems.map((item) => {
             const active = item.href === "/" ? pathname === "/" : pathname.startsWith(item.href);
-            const hasMenu = item.label === "People" || item.label === "Teams";
+            const hasMenu = item.label === "People" || item.label === "Teams" || item.label === "Projects";
             return (
               <div
                 className={cn(
@@ -105,11 +121,19 @@ export function Navigation() {
                         </div>
                       </>
                     ) : (
-                      <div className={styles.menuColumn}>
-                        <span className="eyebrow">People</span>
-                        <Link href="/people/board">Board <small>Leadership and directors</small></Link>
-                        <Link href="/people/members">Current Members <small>Teams and contributors</small></Link>
-                        <Link href="/people/alumni">Alumni <small>Former members</small></Link>
+                      <div className={styles.peopleGrid}>
+                        <Link href="/people/board" className={styles.peopleCard} onClick={() => setOpenMenu(null)}>
+                          <span className={styles.peopleTitle}>Board</span>
+                          <span className={styles.peopleDesc}>Leadership, founders, and directors shaping BSA.</span>
+                        </Link>
+                        <Link href="/people/members" className={styles.peopleCard} onClick={() => setOpenMenu(null)}>
+                          <span className={styles.peopleTitle}>Current Members</span>
+                          <span className={styles.peopleDesc}>Analysts, engineers, and writers across all teams.</span>
+                        </Link>
+                        <Link href="/people/alumni" className={styles.peopleCard} onClick={() => setOpenMenu(null)}>
+                          <span className={styles.peopleTitle}>Alumni</span>
+                          <span className={styles.peopleDesc}>Where our graduates build careers across sports & tech.</span>
+                        </Link>
                       </div>
                     )}
                   </div>
@@ -126,8 +150,13 @@ export function Navigation() {
           onClick={() => {
             setOpen((value) => {
               const next = !value;
-              if (next && pathname.startsWith("/people")) {
-                setMobilePeopleOpen(true);
+              if (next) {
+                if (pathname.startsWith("/people")) {
+                  setMobilePeopleOpen(true);
+                }
+                if (pathname.startsWith("/teams")) {
+                  setMobileTeamsOpen(true);
+                }
               }
               return next;
             });
@@ -141,6 +170,55 @@ export function Navigation() {
       {open ? (
         <div className={`${styles.mobilePanel} glass glass--strong`}>
           {navItems.map((item) => {
+            if (item.label === "Teams") {
+              return (
+                <div key={item.label} className={styles.mobileDropdownGroup}>
+                  <button
+                    type="button"
+                    className={styles.mobileDropdownTrigger}
+                    onClick={() => setMobileTeamsOpen((prev) => !prev)}
+                    aria-expanded={mobileTeamsOpen}
+                  >
+                    <span>Teams</span>
+                    <ChevronDown
+                      className={cn(styles.dropdownChevron, mobileTeamsOpen && styles.dropdownChevronOpen)}
+                      size={24}
+                      aria-hidden
+                    />
+                  </button>
+                  {mobileTeamsOpen && (
+                    <div className={styles.mobileSubmenu}>
+                      {teamLinks.map((sub) => {
+                        const active = pathname === sub.href;
+                        const SportIcon = sub.icon;
+                        return (
+                          <Link
+                            key={sub.href}
+                            href={sub.href}
+                            className={cn(styles.mobileSubmenuLink, active && styles.activeSublink)}
+                            onClick={() => {
+                              setOpen(false);
+                              setMobileTeamsOpen(false);
+                            }}
+                          >
+                            {SportIcon && (
+                              <span className={styles.mobileTeamIconBox} aria-hidden>
+                                <SportIcon size={20} color="currentColor" />
+                              </span>
+                            )}
+                            <div className={styles.mobileSubmenuText}>
+                              <span className={styles.mobileSubmenuTitle}>{sub.label}</span>
+                              <small className={styles.mobileSubmenuDesc}>{sub.description}</small>
+                            </div>
+                          </Link>
+                        );
+                      })}
+                    </div>
+                  )}
+                </div>
+              );
+            }
+
             if (item.label === "People") {
               return (
                 <div key={item.label} className={styles.mobileDropdownGroup}>
@@ -171,8 +249,10 @@ export function Navigation() {
                               setMobilePeopleOpen(false);
                             }}
                           >
-                            <span className={styles.mobileSubmenuTitle}>{sub.label}</span>
-                            <small className={styles.mobileSubmenuDesc}>{sub.description}</small>
+                            <div className={styles.mobileSubmenuText}>
+                              <span className={styles.mobileSubmenuTitle}>{sub.label}</span>
+                              <small className={styles.mobileSubmenuDesc}>{sub.description}</small>
+                            </div>
                           </Link>
                         );
                       })}

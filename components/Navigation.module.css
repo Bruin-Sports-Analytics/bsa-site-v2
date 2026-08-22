@@ -425,8 +425,9 @@
 
   .mobilePanel .mobileSubmenu a.mobileSubmenuLink {
     min-height: auto;
-    display: grid;
-    gap: 2px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
     padding: 10px 14px;
     border: 1px solid rgba(139, 203, 255, 0.12);
     border-radius: var(--radius-sm);
@@ -435,6 +436,23 @@
     font-size: initial;
     font-weight: initial;
     transition: background 0.16s ease, border-color 0.16s ease;
+  }
+
+  .mobileTeamIconBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: var(--radius-sm);
+    background: rgba(255, 209, 0, 0.12);
+    color: var(--ucla-gold);
+    flex-shrink: 0;
+  }
+
+  .mobileSubmenuText {
+    display: grid;
+    gap: 2px;
   }
 
   .mobileSubmenuTitle {
@@ -484,6 +502,11 @@
 
   :global(html[data-theme="light"]) .mobileSubmenuDesc {
     color: #617b94;
+  }
+
+  :global(html[data-theme="light"]) .mobileTeamIconBox {
+    background: rgba(255, 209, 0, 0.18);
+    color: #b57a00;
   }
 
   :global(html[data-theme="light"]) .mobilePanel .mobileSubmenu a.mobileSubmenuLink:hover,
