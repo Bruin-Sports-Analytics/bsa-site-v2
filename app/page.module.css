@@ -515,45 +515,127 @@
 
 @media (max-width: 640px) {
   .fieldBackdrop {
-    inset: 0 24px;
+    inset: 0 16px;
   }
 
   .fieldBackdrop span i {
     top: 9px;
     font-size: 10px;
+    opacity: 0.65;
   }
 
   .fieldBackdrop span i:first-child {
-    left: 11px;
+    left: 4px;
   }
 
   .fieldBackdrop span i:last-child {
-    right: 11px;
+    right: 4px;
   }
 
   .hero {
-    padding: 96px 0 32px;
+    padding: 86px 0 28px;
+    overflow: hidden;
+  }
+
+  .heroGrid {
+    gap: 28px;
   }
 
   .heroCopy h1 {
-    font-size: clamp(1.8rem, 8vw, 3.1rem);
+    font-size: clamp(1.75rem, 7.5vw, 2.75rem);
+    word-break: break-word;
   }
 
   .heroCopy h1 em {
-    font-size: clamp(2rem, 12vw, 4.6rem);
+    font-size: clamp(2rem, 11vw, 4.2rem);
+  }
+
+  .heroCopy p {
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+
+  .heroCta {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+    width: 100%;
+  }
+
+  .button-row {
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+  }
+
+  .button-row :global(.btn) {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .partnerLink {
+    width: 100%;
+    text-align: center;
+    margin-top: 4px;
+  }
+
+  .heroLogo {
+    width: 100%;
+    max-width: 100%;
+    margin-top: 12px;
+  }
+
+  .heroLogo img {
+    max-width: min(280px, 80vw);
+  }
+
+  .heroLogo::before {
+    width: min(320px, 92vw);
+  }
+
+  .heroLogo::after {
+    width: min(280px, 82vw);
+  }
+
+  .missionStatement {
+    font-size: clamp(1.15rem, 4.8vw, 1.45rem);
+    line-height: 1.4;
+    padding: 0 4px;
   }
 
   .sportPills {
     grid-template-columns: 1fr;
+    gap: 10px;
+    margin-top: 20px;
   }
 
-  .logoTile {
-    width: 160px;
-    min-height: 92px;
+  .sportPill {
+    padding: 12px 16px;
+    font-size: 14px;
   }
 
-  .logoImgWrap {
-    height: 52px;
+  .sectionHeader {
+    align-items: stretch;
+    gap: 12px;
+    margin-bottom: 20px;
+  }
+
+  .sectionHeader :global(.btn) {
+    align-self: flex-start;
+  }
+
+  .finalCta {
+    gap: 12px;
+  }
+
+  .finalCta a {
+    min-height: 96px;
+    padding: 18px;
+    gap: 12px;
+  }
+
+  .finalCta b {
+    font-size: clamp(1.2rem, 5vw, 1.55rem);
   }
 }
 

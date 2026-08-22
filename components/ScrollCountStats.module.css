@@ -258,7 +258,7 @@
   }
 
   .inner {
-    width: min(100% - 28px, 460px);
+    width: min(1180px, calc(100% - 64px));
   }
 
   .scoreboard {

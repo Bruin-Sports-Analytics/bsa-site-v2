@@ -381,6 +381,12 @@ main > section > * {
   margin: 0 auto;
 }
 
+@media (max-width: 640px) {
+  .container {
+    width: min(1180px, calc(100% - 64px));
+  }
+}
+
 .section {
   padding: 82px 0;
 }
@@ -843,7 +849,7 @@ html[data-theme="light"] .text-link:hover {
   }
 
   .container {
-    width: min(100% - 28px, 1180px);
+    width: min(calc(100% - 64px), 1180px);
   }
 }
 
