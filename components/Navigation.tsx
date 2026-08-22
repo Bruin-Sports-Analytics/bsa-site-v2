@@ -15,11 +15,18 @@ export function Navigation() {
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
   const [openMenu, setOpenMenu] = useState<string | null>(null);
+  const [mobilePeopleOpen, setMobilePeopleOpen] = useState(false);
   const scrolled = useScrolledState();
   const recentProjects = [...projects]
     .filter((project) => project.visibility !== "hidden")
     .sort((a, b) => Date.parse(b.lastUpdated) - Date.parse(a.lastUpdated))
     .slice(0, 3);
+
+  const peopleLinks = [
+    { label: "Board", href: "/people/board", description: "Leadership and directors" },
+    { label: "Current Members", href: "/people/members", description: "Teams and contributors" },
+    { label: "Alumni", href: "/people/alumni", description: "Former members" },
+  ];
 
   return (
     <header className={cn(styles.header, scrolled && styles.scrolled)}>
@@ -113,17 +120,74 @@ export function Navigation() {
         </nav>
         <Link href="/partner" className={`${styles.partner} glass glass--gold glass--radius-pill`}><span className={styles.partnerFill} aria-hidden /><span className={styles.partnerLabel}>Partner With Us</span></Link>
         <ThemeToggle className={styles.desktopThemeToggle} />
-        <button className={styles.mobileButton} type="button" onClick={() => setOpen((value) => !value)} aria-label="Toggle navigation" aria-expanded={open}>
+        <button
+          className={styles.mobileButton}
+          type="button"
+          onClick={() => {
+            setOpen((value) => {
+              const next = !value;
+              if (next && pathname.startsWith("/people")) {
+                setMobilePeopleOpen(true);
+              }
+              return next;
+            });
+          }}
+          aria-label="Toggle navigation"
+          aria-expanded={open}
+        >
           {open ? <X aria-hidden /> : <Menu aria-hidden />}
         </button>
       </div>
       {open ? (
         <div className={`${styles.mobilePanel} glass glass--strong`}>
-          {navItems.map((item) => (
-            <Link href={item.href} key={item.href} onClick={() => setOpen(false)}>
-              {item.label}
-            </Link>
-          ))}
+          {navItems.map((item) => {
+            if (item.label === "People") {
+              return (
+                <div key={item.label} className={styles.mobileDropdownGroup}>
+                  <button
+                    type="button"
+                    className={styles.mobileDropdownTrigger}
+                    onClick={() => setMobilePeopleOpen((prev) => !prev)}
+                    aria-expanded={mobilePeopleOpen}
+                  >
+                    <span>People</span>
+                    <ChevronDown
+                      className={cn(styles.dropdownChevron, mobilePeopleOpen && styles.dropdownChevronOpen)}
+                      size={24}
+                      aria-hidden
+                    />
+                  </button>
+                  {mobilePeopleOpen && (
+                    <div className={styles.mobileSubmenu}>
+                      {peopleLinks.map((sub) => {
+                        const active = pathname === sub.href;
+                        return (
+                          <Link
+                            key={sub.href}
+                            href={sub.href}
+                            className={cn(styles.mobileSubmenuLink, active && styles.activeSublink)}
+                            onClick={() => {
+                              setOpen(false);
+                              setMobilePeopleOpen(false);
+                            }}
+                          >
+                            <span className={styles.mobileSubmenuTitle}>{sub.label}</span>
+                            <small className={styles.mobileSubmenuDesc}>{sub.description}</small>
+                          </Link>
+                        );
+                      })}
+                    </div>
+                  )}
+                </div>
+              );
+            }
+
+            return (
+              <Link href={item.href} key={item.href} onClick={() => setOpen(false)}>
+                {item.label}
+              </Link>
+            );
+          })}
           <ThemeToggle mobile />
           <Link href="/partner" onClick={() => setOpen(false)}>Partner With Us</Link>
         </div>

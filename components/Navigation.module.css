@@ -370,6 +370,7 @@
     gap: 10px;
     padding: 24px;
     border-radius: 0;
+    overflow-y: auto;
   }
 
   .mobilePanel a {
@@ -380,5 +381,119 @@
     font-family: var(--font-sora), system-ui, sans-serif;
     font-size: 25px;
     font-weight: 800;
+  }
+
+  .mobileDropdownGroup {
+    display: grid;
+    gap: 8px;
+  }
+
+  .mobileDropdownTrigger {
+    min-height: 58px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    border: 0;
+    border-bottom: 1px solid var(--border);
+    background: transparent;
+    color: var(--text-primary);
+    font-family: var(--font-sora), system-ui, sans-serif;
+    font-size: 25px;
+    font-weight: 800;
+    padding: 0;
+    cursor: pointer;
+    text-align: left;
+  }
+
+  .dropdownChevron {
+    color: var(--text-secondary);
+    transition: transform 0.22s ease, color 0.22s ease;
+  }
+
+  .dropdownChevronOpen {
+    transform: rotate(180deg);
+    color: var(--ucla-gold);
+  }
+
+  .mobileSubmenu {
+    display: grid;
+    gap: 8px;
+    padding: 4px 0 12px 10px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .mobilePanel .mobileSubmenu a.mobileSubmenuLink {
+    min-height: auto;
+    display: grid;
+    gap: 2px;
+    padding: 10px 14px;
+    border: 1px solid rgba(139, 203, 255, 0.12);
+    border-radius: var(--radius-sm);
+    background: rgba(16, 42, 73, 0.45);
+    text-decoration: none;
+    font-size: initial;
+    font-weight: initial;
+    transition: background 0.16s ease, border-color 0.16s ease;
+  }
+
+  .mobileSubmenuTitle {
+    font-family: var(--font-sora), system-ui, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--text-primary);
+  }
+
+  .mobileSubmenuDesc {
+    font-family: var(--font-mono), monospace;
+    font-size: 11px;
+    color: var(--text-secondary);
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+
+  .mobilePanel .mobileSubmenu a.mobileSubmenuLink:hover,
+  .mobilePanel .mobileSubmenu a.mobileSubmenuLink.activeSublink {
+    border-color: rgba(255, 209, 0, 0.45);
+    background: rgba(16, 42, 73, 0.85);
+  }
+
+  .mobilePanel .mobileSubmenu a.mobileSubmenuLink:hover .mobileSubmenuTitle,
+  .mobilePanel .mobileSubmenu a.mobileSubmenuLink.activeSublink .mobileSubmenuTitle {
+    color: var(--ucla-gold);
+  }
+
+  :global(html[data-theme="light"]) .mobileDropdownTrigger {
+    color: #102235;
+  }
+
+  :global(html[data-theme="light"]) .dropdownChevronOpen {
+    color: #b57a00;
+  }
+
+  :global(html[data-theme="light"]) .mobilePanel .mobileSubmenu a.mobileSubmenuLink {
+    background: #ffffff;
+    border-color: rgba(34, 86, 124, 0.18);
+    box-shadow: 0 2px 8px rgba(16, 42, 73, 0.05);
+  }
+
+  :global(html[data-theme="light"]) .mobileSubmenuTitle {
+    color: #102235;
+  }
+
+  :global(html[data-theme="light"]) .mobileSubmenuDesc {
+    color: #617b94;
+  }
+
+  :global(html[data-theme="light"]) .mobilePanel .mobileSubmenu a.mobileSubmenuLink:hover,
+  :global(html[data-theme="light"]) .mobilePanel .mobileSubmenu a.mobileSubmenuLink.activeSublink {
+    border-color: #ffd100;
+    background: #f7fbff;
+  }
+
+  :global(html[data-theme="light"]) .mobilePanel .mobileSubmenu a.mobileSubmenuLink:hover .mobileSubmenuTitle,
+  :global(html[data-theme="light"]) .mobilePanel .mobileSubmenu a.mobileSubmenuLink.activeSublink .mobileSubmenuTitle {
+    color: #0c3e6d;
   }
 }
