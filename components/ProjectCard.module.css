@@ -105,6 +105,14 @@
   font-weight: 800;
 }
 
+:global(html[data-theme="light"]) .divider {
+  background: rgba(34, 86, 124, 0.14);
+}
+
+:global(html[data-theme="light"]) .link {
+  color: #1a6cb0;
+}
+
 .private {
   display: inline-flex;
   align-items: center;

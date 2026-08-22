@@ -504,9 +504,45 @@ main > section > * {
   backdrop-filter: blur(var(--glass-clear-blur)) saturate(135%);
 }
 
+html[data-theme="light"] .btn-secondary {
+  background: #ffffff;
+  border-color: rgba(34, 86, 124, 0.24);
+  color: var(--text-primary);
+  box-shadow: 0 2px 8px rgba(16, 42, 73, 0.06);
+}
+
+html[data-theme="light"] .btn-secondary:hover {
+  background: #eef5fb;
+  border-color: rgba(39, 116, 174, 0.45);
+  color: #081d33;
+  box-shadow: 0 4px 14px rgba(39, 116, 174, 0.12);
+}
+
+html[data-theme="light"] .btn-primary {
+  border-color: rgba(211, 160, 0, 0.60);
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, .5), transparent 34%),
+    linear-gradient(135deg, #ffd100, #f5af19);
+  color: #081527;
+  box-shadow: 0 6px 20px rgba(255, 184, 28, 0.28), inset 0 1px 0 rgba(255, 255, 255, 0.6);
+}
+
+html[data-theme="light"] .btn-primary:hover {
+  box-shadow: 0 8px 26px rgba(255, 184, 28, 0.40), inset 0 1px 0 rgba(255, 255, 255, 0.8);
+}
+
 .text-link {
   color: var(--ucla-gold);
   font-weight: 800;
+}
+
+html[data-theme="light"] .text-link {
+  color: #1a6cb0;
+}
+
+html[data-theme="light"] .text-link:hover {
+  color: #0f518a;
+  text-decoration: underline;
 }
 
 .card {
@@ -531,6 +567,12 @@ main > section > * {
     box-shadow:
       0 24px 66px rgba(0, 5, 15, 0.34),
       0 1px 0 rgba(255, 255, 255, 0.10) inset;
+  }
+
+  html[data-theme="light"] .card:hover {
+    box-shadow:
+      0 14px 40px rgba(16, 42, 73, 0.12),
+      0 1px 0 rgba(255, 255, 255, 0.8) inset;
   }
 }
 

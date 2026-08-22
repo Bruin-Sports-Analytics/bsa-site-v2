@@ -20,6 +20,12 @@
   box-shadow: var(--glass-shadow-sm);
 }
 
+:global(html[data-theme="light"]) .sidebar {
+  background: rgba(255, 255, 255, 0.94);
+  border-color: rgba(34, 86, 124, 0.20);
+  box-shadow: 0 4px 20px rgba(16, 42, 73, 0.08);
+}
+
 .label {
   writing-mode: vertical-lr;
   font-size: 10px;

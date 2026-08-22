@@ -72,6 +72,22 @@
   color: var(--ucla-gold);
 }
 
+:global(html[data-theme="light"]) .menu {
+  background-color: #ffffff;
+  border-color: rgba(34, 86, 124, 0.22);
+  box-shadow: 0 16px 40px rgba(16, 42, 73, 0.16);
+}
+
+:global(html[data-theme="light"]) .item {
+  color: #102235;
+}
+
+:global(html[data-theme="light"]) .item:hover,
+:global(html[data-theme="light"]) .item:focus-visible {
+  background: #eef5fb;
+  color: #1a6cb0;
+}
+
 .item svg {
   flex-shrink: 0;
   opacity: .7;

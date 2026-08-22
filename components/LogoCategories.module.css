@@ -71,6 +71,29 @@
   color: rgba(247, 251, 255, 1);
 }
 
+:global(html[data-theme="light"]) .img {
+  filter: grayscale(1) brightness(0.12);
+  opacity: 0.72;
+}
+
+:global(html[data-theme="light"]) .tile:hover .img {
+  filter: none;
+  opacity: 1;
+}
+
+:global(html[data-theme="light"]) .text {
+  color: #102235;
+}
+
+:global(html[data-theme="light"]) .tile:hover .text {
+  color: #07182b;
+}
+
+:global(html[data-theme="light"]) .tile:hover {
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 8px 24px rgba(16, 42, 73, 0.08);
+}
+
 @media (max-width: 640px) {
   .root {
     gap: 32px;

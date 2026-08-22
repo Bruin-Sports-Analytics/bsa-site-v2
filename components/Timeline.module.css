@@ -31,6 +31,10 @@
   font-weight: 700;
 }
 
+:global(html[data-theme="light"]) .node span {
+  color: #1a6cb0;
+}
+
 .nodeNumber {
   position: absolute;
   top: 8px;
@@ -53,6 +57,12 @@
   border-radius: var(--glass-radius-md);
   background: var(--glass-strong-fill);
   padding: 22px;
+}
+
+:global(html[data-theme="light"]) .detail {
+  background: #ffffff;
+  border-color: rgba(34, 86, 124, 0.18);
+  box-shadow: 0 4px 20px rgba(16, 42, 73, 0.06);
 }
 
 .detail h3 {

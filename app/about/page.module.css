@@ -28,6 +28,16 @@
     0 0 34px rgba(255, 184, 28, .25);
 }
 
+:global(html[data-theme="light"]) .blueGlow {
+  color: #1e78ba;
+  text-shadow: 0 0 20px rgba(39, 116, 174, 0.22);
+}
+
+:global(html[data-theme="light"]) .goldGlow {
+  color: #b57a00;
+  text-shadow: 0 0 20px rgba(211, 160, 0, 0.20);
+}
+
 .milestoneHeader {
   margin-bottom: 18px;
 }
