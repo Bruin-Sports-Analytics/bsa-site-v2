@@ -66,7 +66,7 @@ export function Navigation() {
                               className={styles.teamCard}
                               onClick={() => setOpenMenu(null)}
                             >
-                              <span className={styles.teamIconBox} style={{ color: sport.accent }}>
+                              <span className={styles.teamIconBox}>
                                 <SportIcon size={32} color="currentColor" aria-hidden />
                               </span>
                               <span className={styles.teamCardName}>{sport.name}</span>
