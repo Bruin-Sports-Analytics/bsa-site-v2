@@ -45,7 +45,7 @@ export function SportHomePage({ slug }: { slug: TeamSportSlug }) {
   const overview = getSportOverviewBySlug(slug);
   if (!overview) return null;
 
-  const { activeProjects, archivedProjects, analysts, chairs, featuredProject, sport, teamSize } = overview;
+  const { activeProjects, archivedProjects, chairs, featuredProject, sport } = overview;
   const action = projectAction(featuredProject);
 
   return (
@@ -160,21 +160,6 @@ export function SportHomePage({ slug }: { slug: TeamSportSlug }) {
           <span className="eyebrow">Archive</span>
           <h2 className="section-title">Past work</h2>
           {archivedProjects.length ? <ProjectCardGrid projects={archivedProjects} /> : <p className="section-lede">Past work will appear here as the archive is filled out.</p>}
-        </div>
-      </section>
-
-      <section className="section tight">
-        <div className="container">
-          <div className={heroStyles.teamSection}>
-            <span className="eyebrow">Team</span>
-            <h2 className={`section-title ${heroStyles.teamTitle}`}>{sport.name} roster</h2>
-          </div>
-          <div className="board-grid">
-            {[...chairs, ...analysts].map((member) => <MemberCard member={member} key={member.slug} />)}
-          </div>
-          <div className={`button-row ${heroStyles.teamButtonRow}`}>
-            <Link className="btn btn-primary" href="/partner">Bring us a {sport.name.toLowerCase()} problem</Link>
-          </div>
         </div>
       </section>
     </main>
