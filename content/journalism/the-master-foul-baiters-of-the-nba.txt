@@ -1,0 +1,103 @@
+By Nicholas Shinghal, Colin Granger, and Moulik Chatterjee
+
+Controversy surrounding “foul-baiting” in the NBA perennially permeates discourse around the Association, especially in the late spring, when MVP awards are allocated and playoff competition stiffens. With the increased defensive intensity of playoff basketball and the lower willingness of officials to call fouls on physical plays, especially in the interior, discourse surrounding players and teams that disproportionately rely on free throws to carry regular season success frequently emerges. Around this time of year, certain players and teams are anecdotally given the label of “foul hunters,” with varying degrees of validity behind these monikers. Moreover, many fans claim that their team is treated unfairly by the officiating, attesting that they receive far fewer free throws than they deserve.
+
+Our team sought to answer these two prevailing questions surrounding the narrative of foul-baiting in the NBA. Firstly, which teams, if any, receive a disproportionate amount of foul calls relative to expectations? And secondly, which players receive more free throw attempts than they deserve based on their play?
+
+The Teams
+
+To quantify the number of free throws NBA teams receive relative to their expectations, we first had to establish a common way to compare free throws received across teams. We could not merely assess the total free throws a team receives in an average game, as this is highly dependent on offensive schemes and play type. For instance, a team heavily dependent on driving to the basket to fuel their offense, like the Memphis Grizzlies, would receive far more free throws per game than a team reliant on three-point shots, like the Celtics, however, this does not tell us anything about their actual foul-drawing tendencies.
+
+Thus, our team strictly examined drives to the basket and free throws earned on these drives to the basket. The intuition behind this is that in theory, a drive to the basket should result in the same number of free throws across teams on average if officiating were truly fair. We compared the number of drives a team took to the basket per game with the number of free throws they received on average on a drive to the basket, and received these results.
+
+In this figure, we can see the free throw landscape of the NBA broken into four quadrants. In the top left, we see teams that do not drive many times a game but receive lots of free throws, like the Lakers and Magic. These teams can be seen as those receiving a disproportionately large amount of free throws relative to their drives, benefitting the most from officiating. In the bottom left, we see teams that do not drive often and do not receive many free throws, somewhat in line with expectations, along with the top right, which are teams that drive often and receive many free throws. Finally, in the bottom right, there are teams who drive often and do not receive many free throws, like the Hawks and Heat. These teams can be considered those that are unfairly hurt by officiating.
+
+Another way to view this data is by calculating the average number of free throws a team receives per drive to the basket.
+
+Again, the Lakers, Magic, and Pistons emerge as teams that receive lots of free throws on each dribble drive, with the Kings, Heat, and Hawks receiving far less favorable treatment from officials.
+
+Another question that emerged for us is which teams are truly “earning” their free throws? In other words, which free throw attempts are truly warranted, such as those that come on and-one plays where the shot falls anyways, and which free throw attempts are less justified by the shot not falling? We compared the number of 2 point and-ones a team received, an indication of a justified free throw attempt, with free throws attempted per drive, and produced the following output.
+
+We can see that certain teams, like the Grizzlies and Jazz are “ethically” earning their free throws, as they earn a high number of and-ones. Meanwhile, we see other teams like the Lakers, Bucks, and Magic garnering lots of free throws but only scoring a middling number of and-ones, indicating that they are not truly “earning” their attempts at the line.
+
+From these results, we can observe certain teams, like the Lakers, Magic, and Pistons, consistently receive disproportionately high amounts of free throws, far greater than their and-ones or drives to the basket would suggest.
+
+The Players
+
+The NBA is a star-dominated league where fans tune in or pay to attend games for the thrill of getting to see the best basketball players on planet Earth compete. For our player analysis, our team is focused on the stars of the 2024-25 regular season. Players such as Shai Gilgeous-Alexander (SGA), the recently named Most Valuable Player of the 2024-45 season, is the pinnacle of NBA talent–known for driving to the basket, and being accused of this so-called “foul baiting.” So, let’s look at the data and what it suggests about these claims.
+
+Above is a graph displaying the top 50 players in the 2024-25 NBA regular season in drives to the rim per game (who played a minimum of 50 games during the season). These players are also designated a color to represent their primary position on the court, however it should be noted that many players are not restricted to a singular position throughout the year.
+
+This plot compares how many free throw attempts a player draws on drives on a per game basis against how many drive attempts a player makes per game. It can be seen that SGA has both the highest rate of drives/game and free throws on drives/game, but has a close to average rate of free throws compared to the league’s other best players. SGA’s frequent trips to the line seem to be more of a factor of his drive frequency than any “foul-baiting.” Other All-NBA caliber players find themselves at a higher free throw/drive rate, such as Anthony Edwards, Luka Doncic, and two time MVP Giannis Antetokounmpo.
+
+It is also worth noting that if we swap free throw attempts on drives for fouls on drives per game, we get a nearly perfect one-to-one identical graph. For further reference of free throw attempts on drives per game, it can be assumed that the same trends and outcomes result when looking at fouls on drives per game versus the same secondary variable that is being analyzed.
+
+Another common accusation that SGA receives has to do with how large of a proportion of his shot attempts and ensuing points come from the charity stripe. To look at this assumption we also sorted these same 50 players by ratio of FTA to FGA on drives.
+
+This table shows that among the 50 most prolific drive-to-the-basket players this season, SGA comes in at 14th on the list–far from deserving such a high volume of criticism. The same few players of Edwards, Doncic, and Antetokounmpo stick out as being such high-level players but find themselves in the top five of attempts on drives coming from free throws.
+
+Most shocking, however, is how Jimmy Butler III is head and shoulders above every other player from this list, having nearly 30% more of his attempts come from the line than anyone else on the list. Butler was also in the top 25 of drives/game in the league, so the sample size we are working with is far from the smallest on the list. It looks like we may have found ourselves a new culprit for “foul-baiting.”
+
+Next, we present a second table that calculates the same free throw attempts per field goal attempts as the previous table, however is not limited to only drive attempts, so we can see if the same players continue these trends throughout the course of an entire game.
+
+What sticks out most is that Jimmy Buckets finds himself atop the list yet again, but luckily for him, he is less of an outlier than on the previous table. One notable change that can also be seen between the two tables is that both James Harden and Trae Young have moved significantly up the list. A fact that both players have in common is their role in the NBA tightening up on what constitutes a foul on a jump shot, due to players “foul-baiting” their way to the line by contorting their body in a way which forces contact by the defender on jump shots. So while it may not be the main focus of our research in this article, it is still worth pointing out that players like Harden and Young may be beneficiaries of shooter-friendly foul rules.
+
+Back to our cover boy, SGA does find himself higher on this list than the previous one, which may suggest that with his slight increase of 0.382 to 0.404 FTA/FGA that he actually sees greater free throw rates when he is not driving than when he is. SGA does drive to the basket at a higher rate than any other player in the NBA, so this may just be a result of having a smaller sample size on non-drive possessions. Either way, even if SGA does receive some benefit of getting extra trips to the line, it is not more than the other basketball superstars. This may lead us to another suspect of this whole mystery: popularity.
+
+Suffering From Success?
+
+The NBA is a business, and what generates by far the most business across all sports are the faces of the league (aka the best-of-the-best players). On the table above, 56% of players have made an all star game or all-NBA team in the past three seasons, and 74% of the top 23 players on the list were among those all star/all-nba players. And among the top ten players of free throw attempts per shot attempt, the only players not named all stars this season are:
+
+Jimmy Butler: a six time all star who missed a large chunk of the first half of the season and was ineligible to make the all-nba team
+
+Julius Randle: a three time all star who made an all-nba team as recently as 2024, and who missed a month of the 2025 season
+
+Deni Avdija: outside of showing signs of being an up and coming international star on a sub-par Blazers team, is the one exception to this “star-favoritism” criteria in the top ten players.
+
+The referees seem to favor the money-making players, so maybe it is not SGA’s fault his MVP campaign consisted of more fouls than most.
+
+Speaking of MVP campaigns, we decided to take a look over the past decade or so of regular season MVPs and how they fared at the line in their given MVP season.
+
+Of the last 12 MVPs, we have split them into two categories: those who often find themselves shooting free throws, and those who do not. The six players in the first category are SGA, Embiid, Giannis, Harden, Durant and Westbrook–four of whom are notorious for finishing around the rim, one who is infamous for drawing fouls from behind the arc, and lastly Kevin Durant who is a quintessential three-level scorer that gets to the line on any shot type. The two that fall in the latter category are Jokic and Curry, neither of which are known for driving often and use their incredible playmaking to get themselves more contact-free shot attempts.
+
+SGA is by no means undeserving of this MVP because of his “unnatural” scoring and foul-drawing, as 7/12 MVP winners found themselves in the top three of free throw attempts that season. Funny enough, only 7/12 of these players were top three in the league for points per game in their MVP seasons, with almost identical overlap. The only exception is 2016 Curry led the NBA in scoring and 2020 Giannis finished fifth in scoring. This leads us to conclude that even for the best players in the world, part of scoring a ton of points is shooting a lot of free throws. The one exception to this was also the only unanimous MVP on the list, and most can agree that in 2016 Steph Curry and the 73-9 Warriors were on another level (until meeting Lebron in the finals of course).
+
+Whether it is some combination of the referees biasing these MVP level players, or high scoring and talent being accompanied with getting fouled more, SGA is no different than any of the MVPs and scorers of last decade, so why are we treating him as if he is?
+
+Are SGA’s High Numbers a Product of his Foul Drawing?
+
+Shifting our focus back to the top players in drives to the basket of the 2024-25 regular season, we can see if SGA stands out among others in the ratio of points scored on drives from free throws. And we have found that SGA is in a league of his own–but not in the way NBA media would make you think. The recently crowned MVP leads the league in both points and free throw attempts on drives, which makes sense given he also is the league-leader in total drives. But what is most significant is how far above the trend line we find SGA.
+
+To fully understand the graph, it must first be known that players above the dotted line score an above-average amount of points compared to how many free throw attempts they take. While this is somewhat impacted by how well a player makes their attempts from the foul line, it is most indicative of showing how many points they score on drives not from the free throw line, aka points from the field. Thus the higher a player's dot on the line is the less of their point scoring on drives relies on free throws.
+
+SGA also made 90% of his free throw attempts on drives this season, over 10% greater than the league average. This makes this gap above the trend line even more impressive because it is less convoluted with a higher number of free throw attempts from misses. His higher number of points from free throws on drives comes from a product of his higher volume of drives and his high efficiency when he finds himself there.
+
+The only other players in a similar position above their expected points per free throw attempt on drives are Cade Cunningham, Jalen Brunson, Kevin Durant, and Tyrese Maxey, none of which shoot as well from the line on drives as SGA. Yet again we find names like Jimmy Butler and Anthony Edwards who score a higher portion of their points on drives from free throws.
+
+What I find more polarizing than anything else about this graphic is that despite leading the league in free throw attempts on drives, SGA still shoots under four free throws a game from drives. Yes, he is still second in the league among qualified players in FTA across the entire season, but he still only manages an average of two trips to the line for his average of 20 drives each game. So if any accusations are to be made about any “foul-baiting” it is not occurring at an alarming rate while the MVP forces his way to the basket.
+
+Translation to Success - Teams
+
+The big concern that many fans have about teams receiving more foul calls than their opponents is that it gives them an unfair edge to win games. So our team has decided to take a look at how offensive rating and regular season wins in the 2024-25 season correlated with higher rates of team free throw attempts.
+
+We can see that the result is actually opposite of this theory that shooting more free throws is beneficial to team success. This led us to another hypothesis that perhaps it is more important to be efficient from the field on drives, maximizing offensive production without needing to waste possessions driving to the basket looking for a foul.
+
+From these graphs we did indeed find that a productive and winning offensive stems from efficient shooting on drives to the rim, not foul drawing. To test the second part of our hypothesis we also took a look at if it was more beneficial to increase the quantity of drives per game, or if efficiency is the key contributor to an elite offense and winning team.
+
+It turns out that similar to how shooting more free throws on drives is not helpful to team success, neither is driving to the rim too often. Shots at and around the rim should be some of the highest percentage shots that an NBA team takes over the course of a game, so being inefficient on these possessions puts a team at an inherent disadvantage to their opponent. Teams that can maximize efficiency, but without using too many of their limited possessions during the 48 minute contest, on drives give their team an opportunity to spend more offensive trips opening up the court and shooting three pointers. In the modern NBA, the two-point shot is best utilized when paired with increased spacing and better three-point looks.
+
+Fans should not be quick to assume that if the refs are giving more calls on drive attempts that the team drawing calls is at an advantage to win the game. Instead, the main focus on these drives is how effective a team can be and if better shots from deep are generated as a result.
+
+Translation to Success - Players
+
+Now, if we take a similar approach looking at player success from increased foul drawing on drive attempts, what will we find?
+
+What we see using our previous sample of players is that yes there is some evidence to suggest that players who are fouled more do see better efficiency ratings. What should also be taken from this graph is that players who rank above the black dotted line generate a better efficiency rating than what would be suggested from their rate of being fouled on drives. This could stem for a multitude of reasons such as that they do not have as high of drive attempts as some other players–limiting the opportunities they have to be fouled–or that they generate efficiency from playmaking or defense.
+
+However, in SGA’s instance, he drives more than anyone in the league, eliminating lack of sample size as a factor. The MVP should be recognized as an incredibly efficient player despite his high foul drawing rates. He has earned his spot near the top of the NBA in player efficiency rating due to his all-around scoring and impeccable defensive prowess. Even if it may be less entertaining for viewers to spend more of the broadcast watching free throws, these criticisms should not be redirected to SGA.
+
+Conclusion
+
+We find that teams, like the Lakers, Magic, and Pistons, consistently receive disproportionately high amounts of free throws, far greater than their and-ones or drives to the basket would suggest. SGA may find a high benefit of scoring from his play-style, but he is no outlier when it comes to foul-baiting. Other MVP-level players such as ANT, Luka, and Giannis are worse in this regard. Jimmy Butler is also an absurd outlier and if anyone should be getting these types of allegations for playing the game at the free throw line, it should be Jimmy.
+
+Overall, being able to drive more often and produce more fouls on drives is not nearly as helpful to offensive production and winning games as is being effective from the field on drives. Effective shooting on drives also helps teams win the net-foul battle. Players and teams, therefore, do find more success when they find the foul line more on drives.

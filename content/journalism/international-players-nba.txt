@@ -1,0 +1,201 @@
+Introduction:
+
+In recent years, the landscape of the NBA has undergone a remarkable transformation, marked by a significant influx of international talent onto its courts. From seasoned veterans to rising stars, players from across the globe have been making their mark in the world's premier basketball league like never before. As of 2022, this trend reached new heights, with the NBA boasting an uptrend with the number of international players in its history, counting to 125 players from all around the globe. This surge in international presence not only speaks to the league's global appeal but also underscores the growing talent pool and the increasing competitiveness on a global scale.
+
+In this article, we delve into the factors contributing to this surge, the impact it's having on the NBA, and the evolving narrative of basketball as a truly international sport.
+
+Background:
+
+To examine this trend of increasing presence of international players and their influence, we will be analyzing how they are performing as a collective in the past seasons. We will look into overall statistics like player population, PER,  and accolades. The data we will work on is to examine how international players are progressing and comparing them to league standards. The goal of the project is to see whether the international player population is growing, if they are competitive according to league standards, and measure their impact. We will be using a mixture of basic and advanced statistics and assign a score to determine certain aspects of their game and accolades, such as player efficiency, all star selections, notable international players etc.
+
+Methodology:
+
+Population of International Players:
+
+We start by identifying international players in the NBA. These include players born outside of the United States and those born in U.S. overseas territories.
+
+We collect data on the number of international players on opening-night rosters for each season.
+
+Key metrics: Total number of international players, countries represented, and trends over time.
+
+International Player Accolades:
+
+We focus on individual achievements and team success for international players.
+
+Accolades to consider:
+
+MVP Awards: Regular-season MVP honors.
+
+All-NBA Selections: Inclusion in All-NBA First, Second, or Third Teams.
+
+All-Star Appearances: Participation in NBA All-Star Games.
+
+Defensive Awards: Defensive Player of the Year, All-Defensive Teams.
+
+We compare these accolades with those of U.S.-born players.
+
+Player Efficiency Rating (PER):
+
+PER is a comprehensive metric that quantifies a player’s overall impact on the game.
+
+It considers various statistical factors, including points, rebounds, assists, steals, blocks, and turnovers.
+
+Formula: PER=Team’s Statistical OutputPlayer’s Statistical Output​
+
+A higher PER indicates greater efficiency and productivity.
+
+We analyze international players’ PER compared to U.S.-born players.
+
+Key metrics: Average PER, distribution, and trends.
+
+Data Collection and Analysis:
+
+We gather data from NBA records, official websites, and statistical databases.
+
+Statistical tests (e.g., t-tests) may be used to compare international and U.S.-born players.
+
+We consider both individual player performance and team outcomes.
+
+Analysis: Population Statistics
+
+In recent years, the landscape of the NBA has undergone a remarkable transformation, marked by a significant influx of international talent onto its courts. From seasoned veterans to rising stars, players from across the globe have been making their mark in the world's premier basketball league like never before. As of 2022, this trend reached new heights, with the NBA boasting an uptrend with the number of international players in its history, counting to 125 players from all around the globe. This surge in international presence not only speaks to the league's global appeal but also underscores the growing talent pool and the increasing competitiveness on a global scale. In this article, we delve into the factors contributing to this surge, the impact it's having on the NBA, and the evolving narrative of basketball as a truly international sport.
+
+Figure 1 and 2, Population of NBA International Players Country of Origin.
+
+Awards
+
+MVP
+
+Figure 3. Last 6 winners MVP
+
+The marquee awards that NBA players attempt to win are the Most Valuable Player(MVP). The MVP represents which player has impacted their team the most and led them in winning for the year. The last 5 winners of the award are notably international players; the award being shared across three players namely Joel Embiid, Nikola Jokic, and Giannis Antetokounmpo. he range of playing styles among these MVPs reflects the evolving nature of basketball, with an increasing emphasis on versatility and all-around impact. Furthermore, the fact that multiple positions are represented among the winners highlights the league's shift away from traditional positional roles towards more fluid and dynamic player roles.
+
+DPOY
+
+Figure 4. Last 6 winners of DPOY
+
+The NBA's Defensive Player of the Year (DPOY) award has displayed a notable balance between US-born and international players. While Jaren Jackson Jr. and Marcus Smart, both US-born, claimed the last two awards, the preceding four were secured by international talents Rudy Gobert of France and Giannis Antetokounmpo. This pattern shows the global nature of basketball talent and the increasing competitiveness on the defensive end from players across diverse backgrounds. The alternating victories between US-born and international players reflect the competitiveness of defensive excellence in the NBA, demonstrating that standout defenders can emerge from anywhere and any position.
+
+All-NBA Selections
+
+Figure 5. All-NBA Selections by year (gold is International, gray is US-born)
+
+2018
+
+2019
+
+2020
+
+2021
+
+2022
+
+2023
+
+International
+
+3
+
+4
+
+5
+
+5
+
+6
+
+5
+
+US-born
+
+12
+
+11
+
+10
+
+10
+
+9
+
+10
+
+The All-NBA team selection stands as a crucial benchmark for assessing player excellence in the NBA. Each season, the league identifies the top 15 performers based on their exceptional contributions throughout the campaign. Notably, since 2018, US-born players still maintain a dominant presence in the majority of slots. There has been a noticeable rise in the representation of international players among these selections: with players from diverse backgrounds leaving significant marks on the court. Among the standout international selections are renowned players such as Nikola Jokic, Giannis Antetokounmpo, and Joel Embiid. Furthermore, newer talents like Luka Dončić from Slovenia, Shai Gilgeous-Alexander from Canada and Domantas Sabonis, an American with Lithuanian ties, are also making notable contributions, adding to the rich tapestry of global talent in the NBA.
+
+All-Star Game Selection
+
+Figure 6. International Player All-Star Selections
+
+An increasingly notable measure of the growing influence of international players in the NBA is their rising number of All-Star selections each year. The All-Star game, a highlight of the All-Star weekend break, serves as an exhibition of the league's top talent in a single showcase. The selection process involves a combination of voting from NBA coaches, analysts, and fans to determine the participants. Since 2015, there has been a significant uptick in the number of international players selected for this prestigious event. This trend underscores not only the improvement in the skills of international players but also their increasing marketability, as reflected in the selection process involving fans, coaches, and analysts.
+
+Player Efficiency Rating (PER)
+
+Figure 7. PER of NBA players(gold is US-born, gray is International)
+
+2018
+
+2019
+
+2020
+
+2021
+
+2022
+
+2023
+
+International
+
+16.3367
+
+16.3476
+
+16.2592
+
+16.6571
+
+16.7444
+
+16.7209
+
+US-Born
+
+16.8268
+
+17.01510
+
+17.22348
+
+17.46812
+
+17.69586
+
+18.06446
+
+Player Efficiency Rating or PER is a statistical rating for basketball where it sums up all of a player’s positive impact and subtracts their negative impact and returns a rating that can quantify how good a player is. This is a value that is adjusted to a per-minute basis so that it is applicable to compare players who play in games longer versus to those who do not. A slightly above-average player in the league would average around a rating of 15, these would be the players that you would see starting on an NBA roster on game night.
+
+According to figure 7, the PER of US born and International player average are over the standard 15 which shows that there are a lot of talented players across the board that pull the average upwards. The edge is given to US-born players since they are consistently achieving better results than international player by a marginal advantage. It is better to run a statistical test to see whether there is a difference between international players are US-born ones.
+
+Figure 8. T-Test Comparing US-born and International Player PER
+
+The statistical test were run with parameters separating the samples based on country of origin and a minimum games played of 410 where it counts as minimum of 5 seasons to be fair. This removes players who have not played that long in the league.
+
+After a t-test comparing the mean PER of the two samples, it can be seen there there is no statistical difference between the PER of US-born players(sample x) and international players(sample y). This is very interesting since data from the last 5 years suggest otherwise but overall in NBA history when accounting all players it shows that there is no significant difference although the average is slightly higher for US-born players.
+
+Conclusion:
+
+Based on the findings, the impact of international players can be observed based on the awards they receive, and team selections. The rising trend is indicative of the future of the NBA where it incorporates more talent overseas as the market is truly a global one. Statistically, it has been shown that there is not a significant difference between the performances of US-Born and International players.
+
+This gives the NBA a chance to attract foreign markets by bringing more international talent to the fold as their country or origin’s fans would be interested in watching.
+
+Reflection:
+
+While going through the data, I am quite surprised that although there is an uptrend in international talent, US born players still were able to prove their worth throughout great performances in games in whatever era they are in.
+
+The method is not full-proof by any means, it does not account for international play in FIBA or the Olympics. It would also be interesting if there is a dataset that contains tendencies of players in an offensive or defensive scenario and see what are their strengths and weaknesses when comparing the two categories(International, US-born).
+
+Sources:
+
+https://www.basketball-reference.com/
+
+https://www.nba.com/stats

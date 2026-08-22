@@ -1,0 +1,59 @@
+39 Games, 13 Wins & 13 Losses, ERA 4.49
+
+The numbers are Kershaw’s career postseason stats. His nightmare in October repeated against the D-Backs this year, and some extreme fans are asking him to retire. We got used to seeing Kershaw frustrated at the bench after he messed up the big games. We can easily see comments on social media blaming Kershaw after his games. Then, did Kershaw always hurt the Dodgers in October?
+
+The answer is no. There were also many big games where Kershaw performed outstandingly. For example, in the World Series Game 1 against the Astros, he only allowed one run while pitching seven innings with 11 strikeouts. In the 2020 World Series, he won two games by only allowing three runs throughout the two games.
+
+Now the question is, “How should the Dodgers (or other teams) use Kershaw in the postseason?" Knowing that he is still a legendary starter, it is hard to imagine Kershaw playing as a reliever or being out of the roster. Then, we should find the best way to use him as a starter.
+
+To find a solution, I will refer to statistics and figure out the best way. Critics may argue that statistics are worth meaning when the sample size is relatively large. Moreover, baseball is a sport with many external factors. However, he pitched in the postseason for 12 seasons and played 39 games. The sample size is relatively big, and he pitched almost 200 innings in October.
+
+Before we start, what is our way to evaluate his performance? In this article, I will use ERA, average earned runs that the pitcher allows in 9 innings, as a standard. ERA is a number related to how many runs the pitcher allows. As results are most important in the postseason, ERA will be standard for me to evaluate his performance and suggest the usage of Kershaw. The data being dealt with is from the postseason game log page of Baseball Reference.
+
+1. One of his routines is to pitch every
+
+five days. In other words, he prefers to
+
+take four days of rest. This routine
+
+applied similarly in the postseason.
+
+The statistics show that his postseason
+
+ERA was the lowest with 2.85 when
+
+he took four days of rest. After five
+
+days of rest, his ERA jumped to 4.56. His ERA jumped as he took more rest at a rapid rate. Ironically, he even performed better when he had three days between the games, which is often
+
+considered to be a risky choice by the managers. Again, to use Kershaw most wisely, giving him four days of rest would be the best.
+
+However, it is hard to ensure four days of rest during the postseason because there are many rest days between the games. In the Wildcard Series, it is almost impossible for a pitcher to start the game twice, except for the opener. In Division Series, if a starting pitcher pitches in the first game, he may or may not be able to throw again after four days of rest. If there is a rest day after game 1, the pitcher can be on the mound again as a starter in game 4 with four days of rest. However, if games 1 and 2 are played consecutively, the option for the team is to use the starting pitcher of the first game again in game 4 after three days of rest or start the pitcher in game 5 after five days of rest. In the Championship Series or World Series, the way to be a starting pitcher of two games with four days of rest in between is to pitch on games 1 and 5 or 3 and 7.
+
+Yet, the problem is much more complicated. First, we do not know when the series will end. In addition, the schedule gets mixed, and it is hard to ensure that Kershaw pitches every five days. Additionally, if the team with Kershaw advances to the Division Series directly, then there is no way that he can throw balls on his first postseason game after four days of rest.
+
+In the introduction, I mentioned his outstanding performances in the World Series. However, what we mostly remember about Kershaw in the fall is the back-to-back homeruns allowed in the 2019 Division Series.
+
+2. His mentality is also often a subject of
+
+question. The correlation line between
+
+ALI, the average pressure that the player
+
+faces at the game, and ERA is positive.
+
+ALI is a value that shows how much mental pressure a pitcher would face on average in that game or situation. Of course, when the moment is crucial or the game itself is more important, the value of ALI would be higher. This graph shows the relationship between the importance of a situation and performance because importance is related to pressure. The correlation coefficient of the data is around 0.147, which is a positive number. The correlation coefficient always belongs between the negative one and the positive one. When the correlation is above 0, a positive correlation between the two categories exists. In other words, as one statistic increases, the other statistic rises together. Although the correlation coefficient of the graph above is not close to 1, it is still above 0 (the graph excluded the most recent game, 2023 Division Series Game 1 since he had a severe shoulder injury). In other words, as he faces situations with more pressure, his performance actually tends to get worse.
+
+Moreover, Kershaw's ERA in elimination games is 5.87, which is 3.39 higher than his all-time regular-season ERA and 1.38 higher than his postseason ERA. If we connect these two factors, we can assume that his performance drastically falls when he needs to be the hero for the team. Though managing pressure is not easy work, we all expect more than that from Kershaw.
+
+Then, the simple answer to my question is to use him every five days, but not elimination games. Yet, this is not an easy way due to the problems mentioned above. The best solution, or the best pitching routine, is to play in Division Series game 3, Championship Series game 1 and 5, World Series game 1 and 5 to ensure that there are four games in between if the league of his team starts the postseason first. Then, four out of five matches will start every five days. Even if not, he will pitch three out of the five games with four days of rest. Furthermore, in this way, the teams can reduce the chance of Kershaw playing in elimination games. Yet, even in this way, we still can not ensure he pitches every five days without elimination games. In conclusion, using Kershaw as a part of the starting rotation in the postseason has several restrictions hard to follow. However, it is not impossible, if the team follows the suggestions mentioned above.
+
+Sources:
+
+Clayton Kershaw 2023 postseason pitching game logs. Baseball. (n.d.).
+
+https://www.baseball-reference.com/players/gl.fcgi?id=kershcl01&t=p&post=1 Press, A. (2023, October 8).
+
+Clayton Kershaw’s nightmare outing sinks Dodgers in blowout loss to diamondbacks. New York Post.
+
+https://nypost.com/2023/10/08/clayton-kershaws-nightmare-outing-sinks-dodgers-in-ugly-loss/

@@ -1,0 +1,67 @@
+Introduction
+
+Since being coined by Alabama coaching legend Bear Bryant in the 70s, the phrase “defense wins championships” has been taken as doctrine through the NFL (and the entire realm of sports). It was easier to accept this idea in the era of the “Steel Curtain” and their four Super Bowl rings in six years. But with new rules protecting quarterbacks, passing records consistently climbing, and young stars like Patrick Mahomes taking the league by storm, doubt has been cast on this expression.
+
+In this article, we will consider the top five offenses and top five defenses from each season, and the percentage of each that made the playoffs. This will help us determine whether one is more important in leading teams to the Super Bowl. We will then examine the respective defensive and offensive rankings of the past 20 Super Bowl champions. We will take a look at the Patriots’ offensive and defensive rankings in the years of their six super bowl wins, and how these values affect the data as a whole. Finally, we will reflect on the evolution of NFL offenses and defenses and draw a conclusion about the verity of Bryant’s quote in the game today.
+
+We will measure offensive ranking by points scored in the regular season, and defensive ranking by points allowed in the regular season. There are undoubtedly limitations to these metrics; for example, they don’t account for turnovers and other influences on the other side of the ball. Despite this, they are preferred over metrics like total yardage, because a team can drive down the field consistently only to fall short in the red zone and lose games.
+
+Playoff Correlation
+
+An obvious precursor to the question of “Does defense win championships?” is, “Does defense get you to championships?” After all, Bryant’s complete quote reads, “Offense wins games, defense wins championships”.
+
+To answer this question, I looked at the top five offenses and defenses in each season and determined the percentage of each that made the playoffs. Since 2003, 85% of the league's top five offenses each season have made the playoffs, compared to only 79% of the league's top five defenses. Therefore, over the past 20 years, having a top-five defense is not a better indicator of a playoff berth than having a top-five offense.
+
+The data on championships
+
+The average offensive ranking of the past 20 Super Bowl champions is 8.4, with the average defensive ranking being 8.2. In order to assess the significance of this slight difference in mean offensive and defensive ranking, I conducted a t-test which resulted in a p-value of 0.45. This implies that Super Bowl winners in the past 20 years do not have a significantly higher defensive ranking than offensive ranking.
+
+It is also worth noting that four of the last 20 Super Bowl champions have had the top-ranked defense, while only one has had the top-ranked offense.
+
+The Pittsburgh Steelers hold the record for the lowest-ranked offense to win the Super Bowl since 2003, with their 2009 defeat of the Arizona Cardinals. The Steelers’ offense was ranked 20th that season. It is plausible that their #1 ranked defense was able to compensate for their lack of offensive production, especially considering this Super Bowl was highlighted by James Harrison’s 100-yard interception return for a Steelers touchdown.
+
+The New York Giants are responsible for the lowest-ranked defense to win the Super Bowl in the past 20 years, with their 25th-ranked defense defeating the New England Patriots in 2012. With a ranking of nine that season (below the average offensive ranking of Super Bowl champions in the past 20 years), their offense can hardly be credited with the victory. This win came only four years after the Giants pulled off what many consider to be the greatest upset in Super Bowl history, crushing the Patriots and their top-ranked offense’s dream of a perfect season in the 2008 Super Bowl.
+
+The average combined offensive and defensive ranking of Super Bowl winning teams is 16.6. Interestingly, the lowest combined ranking of 34 and the second-lowest combined ranking of 31 both come from the Giants. This could highlight the fact that some Super Bowl winning teams perform poorly in the regular season, only to “come alive” in the postseason.
+
+The lowest scoring Super Bowl of all time occurred in 2019 when the Patriots defeated the Rams 13-3. It might have come as a surprise to many that the seventh-ranked Patriots defense held the second-ranked Rams offense to three points. Or that the 20th ranked Rams defense held the fourth-ranked Patriots offense to 13 points. However, this is a prime example of games being unpredictable and teams being malleable. Injuries, questionable referee calls, and other random factors cause frequent upsets in the NFL.
+
+The Patriots’ Reign
+
+It is no secret that the Patriots are a repeat offender in Super Bowl victories over the past 20 years. Led by defensive-minded head coach Bill Belichick, with Tom Brady at quarterback, it is unclear whether their defense or offense can be credited with their dominance. In order to answer this question, we will take a look at all six Patriots’ Super Bowl wins in the Tom Brady, Bill Belichick era. The Patriots have an average offensive ranking of 5.5 in their six championship seasons, with an average defensive ranking of 4.3. However, with a p-value of 0.54, we are unable to conclude from this data whether the Patriots’ offense or defense deserves more credit for their six Super Bowl titles.
+
+After removing the Patriots from the Super Bowl winner data, the average offensive ranking of teams increases from 8.4 to 9.4. This means that the Patriots, in their championship seasons, generally had a higher ranked offense than other Super Bowl winners in the past 20 years. Additionally, the average defensive ranking of teams increases from 8.2 to 9.5. Therefore, the Patriots, in their championship seasons, also generally had a higher ranked defense than other Super Bowl winners in the past 20 years.
+
+Evolution of the League
+
+Nick Saban, Alabama’s seven-time championship-winning coaching mastermind, recently remarked, "It used to be that good defense beats good offense. Good defense doesn't beat good offense anymore."
+
+From the words of one Alabama coaching legend to the words of another, Saban’s admission begs the question: “How has the game evolved since Bryant’s famous declaration?”
+
+To answer this question, I will provide a brief timeline that includes key moments for NFL offenses over the past half-century. In 1978, the NFL made it illegal for defenders to make significant contact with a wide receiver once they were 5 yards past the line of scrimmage. In 1988, with the birth of the no-huddle offense, teams were able to wear down opposing defenses by not allowing them a chance to make substitutions. In 2000, Tom Brady entered the league. (No further context is needed here.)
+
+After the horse-collar tackle was responsible for inflicting numerous injuries in the 2004 season, it was finally banned in 2005. In 2009, new rules were introduced preventing defenders from going for the quarterback's legs. In 2018, the NFL eased the standards for a catch, scrapping the “survive the ground” requirement.
+
+The NFL is constantly expanding on its rules emphasizing player safety, in particular, hits to the quarterback and defenseless receivers. Considering the NFL has been around for over a century, it is no coincidence that 8 of the top 10 passing leaders of all time have played in the past decade. Additionally, 8 of the top 10 most all-purpose yards by an offense in one season have come in the last decade.
+
+But the rise of young offensive stars extends beyond the field. Super Bowl 56 featured the youngest head coaching matchup in history, with Rams head coach Sean McVay (age 36) defeating his protégé, Bengals head coach Zac Taylor (age 39). Both head coaches are former offensive assistants.
+
+Conclusion
+
+In this article, we aimed to assess the accuracy of Bryant’s claim that “defense wins championships” in the league today.
+
+We did not find that defensive ranking was a better indicator of a playoff berth than offensive ranking, and in fact, we found that a higher fraction of the league's top 5 offenses has made the playoffs over the past 20 years than the league's top 5 defenses. Based on our data, we are unable to conclude that defense is significantly more valuable than offense when it comes to winning championships. We were unable to find a significant difference in the offensive and defensive ranking of Super Bowl champions through the past 20 seasons. Throughout the Patriots’ reign, we did not find that they had a significantly better offense or defense in the years of their 6 Super Bowl victories.
+
+Overall, we did not find convincing evidence that “defense wins championships” rings true in the NFL over the past 20 seasons. It is plausible that the NFL’s offensive explosion can be attributed to recent rule changes and improved offensive schemes. With stars like Tom Brady and Drew Brees obliterating passing records set mere seasons prior by Peyton Manning, and young wizards like Patrick Mahomes knocking at the door, this offensive explosion doesn’t appear to be losing traction.
+
+Sources:
+
+https://www.espn.com/college-football/story/_/id/30177093/alabama-crimson-tide-nick-saban-concedes-defense-no-longer-key-victory
+
+https://www.pro-football-reference.com/
+
+https://www.footballdb.com/leaders/season-passing-yards
+
+http://www.espn.com/nfl/history/leaders/_/stat/passyards
+
+https://operations.nfl.com/the-rules/evolution-of-the-nfl-rules/

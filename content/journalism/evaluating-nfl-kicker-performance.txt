@@ -1,0 +1,79 @@
+Introduction
+
+Kicker Expected Points (xP) and Expected Points Added (xPA)
+
+Kickers are among the most overlooked, scrutinized, and peculiar players in the NFL. Yet, the outcome of a game often comes down to execution on special teams. This raises a key question of how we should judge a kicker’s performance in terms of contribution towards team success. The purpose of this article is to holistically evaluate kickers against each other to quantify how a kicker compares to the position average and to identify the top performers.
+
+A basic way to evaluate kickers is to look at field goal percentage (FG%). This can be the overall percentage, or the percentage from a certain distance range––such as 50+ yards kicks or kicks less than 40 yards. Other common metrics include point after touchdown percentage (PAT%), total points, and total field goals made. These metrics––available on Pro-Football Reference or ESPN––indicate a lot about kicker performance. However, statistics beyond these (at least in my experience) were difficult to find. For instance, game-winning kicks can be argued to be a major metric of kicker performance, yet the data for these situations was not easy to locate.
+
+To more holistically assess kickers, we calculated the expected points (xP) and the expected points added (xPA) for each kick. The intuition is that each field goal and PAT has a certain probability of being made. However, the likelihood of success depends on the distance, location on the field (where between the right or left hash), weather, wind, temperature, field surface, stadium type (dome/outdoor), elevation, home/away, and game situation. In other words, a kick’s success rate depends on its conditions. For example, distance is a factor that largely affects kick probability (refer to the graph below). Field goals from 20 yards are made 98.58% of the time, while field goals from 50 yards are converted at a 67.89% clip.
+
+With each kick’s probability of success, we can find the xP by multiplying that probability by its point value (3 for field goals and 1 for PATs). A field goal with a 90% probability has an xP of 2.7, while a PAT with a 95% probability has an xP of 0.95. xPA is an extension of xP in that it calculates how many points above expected each kick is worth. The equation is the following: [xPA = kick_result - xP], with kick_result being how many points the kick resulted in (3 for made field goals, 1 for made PATs, or 0 for misses). Returning to our earlier example, if a kicker makes a field goal with an xP of 2.7, the xPA will be 0.3. However, if he misses that same kick, the xPA becomes -2.7.
+
+xPA is a good holistic measure of kicker performance because it accounts for kick difficulty. Using xPA, kickers are rewarded more for making low-percentage kicks and punished less for missing them. Conversely, kickers are rewarded less for making high-percentage kicks and punished more for missing them. By adding each kicker’s total xPA, we can find which kicker provides the most value over the course of a season or career. This is similar to the idea of WAR (Wins Above Replacement) in baseball, as xPA quantifies cumulative kicker production as one number.
+
+The main issue with using FG% to evaluate kickers is that it does not take into account kick difficulty. If one kicker makes nine out of ten field goals, but they are all from within 30 yards, and another kicker makes eight out of ten field goals, but they are all 50+ yards, the second kicker likely performed better than expected despite having a lower FG%. That said, kickers with a higher total xPA will tend to be more accurate (in addition to attempting more kicks).
+
+Analysis
+
+Results using total career xPA to evaluate kickers
+
+Using play-by-play data from 2000 to 2023, we analyzed kickers who attempted at least 20 career field goals, resulting in a population of 117 kickers. We totaled each kicker’s career xPA from their field goals and PATs (including playoffs).
+
+The median total career xPA for a kicker is -5.72 with a normal-looking distribution around it. However, there is one major outlier on the positive end: Justin Tucker, with a total xPA of 116.42. Tucker is so far ahead of the other kickers that the three next-best kickers––Harrison Butker (36.02), Robbie Gould (35.34), and Chris Boswell (29.40)––have almost the same distance between them to Tucker as they do to the kicker with lowest total xPA, Billy Cundiff (-51.77).
+
+Between 2000 to 2023, Tucker was third in FG%, making 89.8% of his field got attempts. Only Brandon Aubrey (94.8%) and Cameron Dicker (93.2%) had a higher FG% in that timeframe. However, Aubrey and Dicker have only made 37 and 55 field goals, respectively. Meanwhile, Tucker has made 413 field goals, sustaining a high level of play since 2012. Among the next three highest xPA leaders, Butker has made 229 field goals at an 89.1% clip, Gould has made 476 field goals at an 87.1% clip, and Boswell has made 248 field goals at an 87.9% clip.
+
+Measuring total xPA in the playoffs
+
+Another way to evaluate kickers is to examine their playoff performance. Since the playoffs are a smaller sample size, we looked at kickers that had a minimum of 15 total playoff kicks (field goals and PATs combined).
+
+The biggest ‘risers’ in terms of FG% were Garrett Hartley, Martin Gramatica, Evan McPherson, Phil Dawson, and Jake Elliott. However, the worst playoff kicker was Nate Kaeding, who went 8 of 15 on field goals in the playoffs, 32.9% down from his regular season FG% of 86.1%. The smaller sample size of the playoffs made FG% much more volatile. This can be seen in the graph below, as the blue triangles (regular season FG%) have more variance than the green circles (postseason FG%).
+
+If we conduct the same xPA analysis on playoff performance, we find another extreme outlier. This time, it is Robbie Gould with a playoff xPA of 14.33. That’s more than double the next best three kickers––Evan McPherson (6.60), Steven Hauschka (6.23), and Jake Elliott (5.86). Over 40% of Gould’s total career xPA came in the playoffs, going a perfect 29-29 on field goals and 39-39 on PATs.
+
+Interestingly, too, we see Justin Tucker is not his elite self in the playoffs. Through the 2023 season, he was 18 of 22 on field goals with a slightly negative total xPA. Tucker has attempted 460 field goals in his career, so those 22 playoff field goals make up less than 5% of his career total. That said, it is still surprising to see him underperform in the playoffs despite the small sample size.
+
+Measuring total xPA in the ‘clutch’ moments
+
+A third way we can evaluate kickers is to see how they perform in clutch, high-pressure situations. Kicks have different levels of impact on the outcome of a game depending on the current score and time remaining. For instance, making a field goal in a 38-10 game in the third quarter is less impactful in terms of winning than making a field goal in a 24-24 game late in the fourth quarter.
+
+We define a ‘clutch kick’ as a game-tying or go-ahead attempt with fewer than five minutes left in the fourth quarter (or in overtime). For field goals, this is when the kicker’s team is tied or trailing by three points or fewer. For PATs, this is when the kicker’s team is down one point or tied. Let us call this the strict definition of clutchness.
+
+As shown above, Matt Prater has the highest xPA of 14.47. This is particularly impressive considering he has a career xPA of 13.49, meaning his total career xPA is -0.98 in ‘non-clutch’ situations. Prater has a career FG% of 83.5, with 415 makes on 497 attempts. However, Prater is 28 for 29 in the clutch, giving him a FG% of 96.6 in such moments. Justin Tucker is not far behind with an xPA of 13.96 in the clutch. He made 29 of his 33 field goal attempts, and would have generated more xPA than Prater if he had not missed one of his four clutch moment PAT attempts.
+
+Another observation is that Robbie Gould and Phil Dawson––two of the biggest playoff risers––have a clutch moment xPA of -4.91 and -4.31, respectively. Gould is 32 for 40 in clutch situations, a 7.2% drop from his career average. Dawson is 29 for 38 in clutch situations, an 8.2% drop from his career average. Gould and Dawson’s performance supports the idea that looking solely at playoff performance is not a great measure of evaluating kickers due to the small sample size.
+
+One potential issue with this definition of ‘clutchness’ is its rigidity. To accommodate a wider array of clutch kicks, we came up with a second, less strict definition. Here, we define a ‘clutch kick’ as occurring within a one-score game in the fourth quarter (or in overtime). For field goals, this is when the kicker’s team is down by eleven to up by eight. For PATs, it is from down nine to up by eight. The idea behind this definition is that it looks at kicks in close games in the 4th quarter rather than only game-tying or lead-taking opportunities. Let us call this the loose definition of clutchness.
+
+Here, we see a similar distribution to the strict definition of clutchness. Tucker is the top-performing kicker with an xPA of 31.75. Prater regresses more towards the average with a total xPA of 16.57 (still above his strict-definition clutchness xPA of 14.47) while Dustin Hopkins emerges as the second leading xPA getter at 16.74. Also, Stephen Gostkowski performed well with a total xPA of 16.07.
+
+Measuring kicker performance with total win probability added (WPA)
+
+Building upon clutchness, one might also consider how much a kicker contributes to game outcomes through win probability added (WPA) from their kicks. The intuition of using WPA is that a team’s win probability increases when a kicker makes a kick and decreases when a kicker misses a kick. Using WPA may be a better approach because it weighs more impactful kicks higher, instead of our previous methods of weighting all ‘clutch kicks’ the same.
+
+One potential issue with this definition is that a ‘clutch kick’ does not inherently add a lot to win probability (e.g., being down 10 with two minutes left in the fourth quarter). Also, WPA could be problematic to use because there is likely variance between kickers in terms of the opportunities they get to add to win probability. WPA depends on the context of a game, so different kickers will not get the same chances for high-leverage kicks.
+
+First off, when looking at the WPA distribution, there is a linear correlation between field goal attempts and WPA. This makes sense because most kicks contribute to win probability, and with an overall average FG% of 82.8 and PAT% of 97.0. Here, the gray dashed line represents the line of best fit for all the players. The more a kicker plays, the more he tends to accumulate WPA from his kicks. However, this could be a symptom of good kickers getting more field goal attempts because they are better and therefore stay in the NFL longer.
+
+A given play resulting in a WPA of 0.05 means the win probability has increased by 5%. If we add these plays (i.e., kicks for each kicker), we can estimate how many wins––in terms of probability added––a kicker contributed to. Justin Tucker and Robbie Gould have gathered the most total career WPA, with 6.05 and 5.65, respectively. That means Tucker has roughly contributed 6.05 wins from his kicks while Gould has contributed 5.65 wins. After that, the next highest kickers in terms of total career WPA are Josh Brown (5.25), Adam Vinatieri (4.91), Matt Prater (4.89), Sebastian Janikowski (4.70), and Matt Bryant (4.62).
+
+Limitations and other considerations
+
+One limitation of our findings is that we did not calculate the kick probability––a critical component of calculating xP––ourselves. Instead, we relied on nflfastR’s calculation. Ideally, a kick probability model would take into account the weather, stadium, and game conditions. However, we could not find documentation on nflfastR’s model, so we do not know what variables they considered. It is possible that their model with its corresponding kick probabilities could be improved upon. This is worth further exploration.
+
+Another limitation of our findings is that the data did not include the 2024 NFL season. For example, Justin Tucker went 24 for 32 on field goals in 2024 (including the playoffs), which is significantly down from his career average. Having last season’s data would alter our results and make our findings more up-to-date.
+
+Also, in our calculation of missed field goals, we include blocked kicks as misses. Sometimes blocked kicks are the kicker’s fault (i.e., a low kick), and sometimes they are the offensive linemen, long snapper, or holder’s fault (i.e., bad blocking, a bad snap, or a bad hold). Manually analyzing over 700 blocked kicks to determine the source of each blocked kick was not feasible. Therefore, we made the simplifying assumption to treat all blocked kicks as misses.
+
+Another thing to mention in evaluating kickers is that we only looked at field goals and PATs. We didn’t look at how they performed on kickoffs or trick plays (such as fake field goals).
+
+Finally, it should be noted that xPA is not a rate statistic. Kickers have different opportunities to kick PATs and field goals depending on their teams, coaches, and game situations. For instance, some kickers may get more chances to kick long field goals (e.g., due to game circumstances, coach’s trust, or coach’s aggressiveness on fourth down) while other kickers do not. It might be worth creating a true kicking percentage statistic––similar to true shooting percentage in basketball––which creates a single weighted metric that measures how efficiently a kicker makes their kicks while accounting for difficulty and point value.
+
+Conclusions
+
+Summarizing our findings, Justin Tucker is the best overall kicker. He has the by far highest total career xPA alongside the most WPA and xPA in clutch moments. Therefore, it should be no surprise that Tucker has three of the top ten highest xPA seasons (1st, 4th, and 9th). The graph below shows a normal distribution (around the mean -0.75) of kicker seasons between 2000 to 2023 in terms of total xPA. Between 2012 to 2023, Tucker had twelve seasons of a positive total xPA, including six seasons above a 10.0 xPA. To put into perspective how consistently impressive Tucker has been, the kicker with the second-most positive xPA seasons without a negative one is Cameron Dicker with two. The next best kicker (in terms of ratio) is Harrison Butker with six positive xPA seasons and one negative one.
+
+Robbie Gould and Matt Prater were also notable performers, with Gould being a perfect 58 for 58 on playoff kicks and Matt Prater being 33 for 34 in kicks in clutch moments. Perhaps surprisingly, David Akers (16-year NFL career) and Mason Crosby (17-year NFL career) were among the lowest performers. Akers had a total career xPA of -24.25 while Crosby had a total career xPA of -34.84. However, both spent the majority of their careers in cold-weather, outdoor stadiums, with Akers in Philadelphia and Crosby in Green Bay. It is possible that their performance was not as high because they had to kick in tougher environments.
+
+Although Tucker is the best-performing kicker, there are still many younger guys who have a chance to catch the 35-year-old. Cameron Dicker (age 24, 16.37 total career xPA), Harrison Butker (age 29, 36.02 xPA), Evan McPherson (age 25, 18.88 xPA), and Jake Elliott (age 30, 24.00 xPA) currently offer the best opportunity.

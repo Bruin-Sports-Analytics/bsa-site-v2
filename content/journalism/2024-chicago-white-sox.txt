@@ -1,0 +1,71 @@
+In recent history, there have been some historically bad sports teams. Just last year, the Detroit Pistons broke the record for the longest NBA single season losing streak by losing 28 games in a row. In 2017, the Cleveland Browns became the 2nd NFL team to go 0-16 in a season. While those are both equally impressive and terrible, there is one team that may surpass both of those seasons. In the 2024 MLB season, the Chicago White Sox broke the single season loss record for the MLB by going 41-121. In this article, I will be examining their season, stats, to answer the question, how historically bad were the 2024 White Sox, and why were they so bad?
+
+In order to answer this question, I will be using their team stats and comparing their performance to every single team in the 21st century. I will mainly be focusing on stats that are standardized throughout the years, to take into account stat inflation over the years. I will also be comparing their performance to other sports, such as the NFL and the NBA.
+
+Overall
+
+To start, let’s examine the obvious: How bad is 41-121? While a winning percentage of roughly .250 is nothing compared to an 0-16 Cleveland Browns, Baseball has considerably more variance than football. The 162 game season allows for the Law of Large numbers to reduce the game-to-game variance of a sport across an entire baseball season, while the 16, now 17, game football season allows for more extreme winning percentages. In addition, Baseball is considered to have the most variance out of any of the main American sports, where the worst teams in baseball always have a chance to win against the best teams, whereas in basketball or football, a bottom 5 team almost always loses against a top 5 team.
+
+In the MLB, the vast majority of win percentages are between .400 and .600, a pretty small window. Every single winning percentage is between .250 and .750, which means that the Chicago White Sox, shown by the red dot, is an outlier in terms of winning percentage. Now, to compare to the relative distributions of the NBA and NFL:
+
+The MLB has a significantly skinnier relative distribution, meaning less relative outliers compared to the other leagues. Meanwhile, the NBA has a significantly wider range of outcomes, and even more so is the NFL, which have had both a no-win season and an undefeated season. To compare sports, we use z-scores, a measure of how rare something is, assuming an approximately normally distributed set of data. Since winning percentages across seasons are approximately normally distributed across many seasons for each sport, we can use z-scores to calculate the NBA and NFL equivalent of 41-121.
+
+For the MLB, the average winning percentage is .500, and the average deviation from the mean winning percentage is .073 from the mean. This means that the Chicago White Sox, at a winning percentage of .253, is 3.39 standard deviations below the mean, or a z-score of -3.39. Applying this number to the other leagues, we find that no team has come close to a z-score of -3.39 for either the NBA or the NFL.
+
+For the NBA, the Chicago White Sox’s 41-121 season is equivalent to going winless in the NBA. To put that in perspective, the NBA record for consecutive losses was set by the Detroit Pistons last year, at 28 consecutive losses. In order to match the White Sox’s woes, one would have to almost triple that winless streak to reach that 0-82 threshold. The NFL is even more extreme, as it is literally impossible to be as bad as the 2024 Chicago White sox. There aren’t enough games to lose in the regular season for the season to become as rare as the White Sox’s Season. The NFL equivalent of 41-121 is (-2) - 18, which is absolutely crazy. That’s 2 more losses possible in an NFL season than can actually occur.
+
+Now that we know how historically terrible the white sox are, we will now explore what actually happened to make them this bad.
+
+Offense
+
+The most obvious part that contributed to the White Sox’s woes was their offense. To start with their superficial stats, their 3.13 Runs/Game is the least amount of runs scored by a team this century, and their slashline (Batting Average, On Base Percentage, Slugging Percentage) of .221/.278/.340 is most similar to Bryan De La Cruz, who had the 10th worst season this year out of all players by WAR (Wins Above Replacement). To really visualize exactly how bad the White Sox were this year, we will compare all teams’ seasons in this century by Runs/Game and OPS+. OPS is simply On base Plus Slugging, or your OBP, how often you get on base, plus Slugging, how many bases you get per at bat. The Plus means that the stat is standardized over park factors, years and a couple of other things, to where 100 is the average, and higher is better.
+
+In terms of runs per game, the 2024 White Sox are really only challenged by two other teams, the 2013 Miami Marlins and the 2010 Seattle Mariners. To compare to basketball and football, the White Sox scoring 3.13 R/G is equivalent to 10.5 P/G in Football and 84.8 P/G in Basketball, pretty atrociously bad. In terms of OPS+ The marlins are the only team with a lower team OPS+ at 73, compared to the White Sox at 77. Overall, it just helps to show how bad the White Sox were at offense. To accentuate this point, let’s look at the strikeout and walk rates for the teams:
+
+While the White Sox did not have the worst walk rate or highest strikeout rate, they were in the bottom 10 in walk rate, only walking in a measly 6.30% of their at bats, compared to the league average of around 8.50%. Meanwhile, their 23.81% strikeout rate puts them in the the top 10% of all seasons since 2000. In baseball, since strikeouts are bad and walks are good, teams want to minimize strikeouts and maximize walks. However, the White Sox were bad at both. They refused to take balls and instead swung at them, leading to unproductive outs, contributing to their unprecedented lack of success.
+
+Finally, to examine the hitting, we need to examine the WAR of the batters of the White Sox. WAR, or Wins Above Replacement, is the most widely accepted statistic in baseball in determining the true worth of a baseball player. It takes into account all the aspects of a player’s game, including their baserunning and fielding value. 0 is what is considered “replacement level”, or a player that you can get for a minimum value salary. Think of the top AAA players that aren’t prospects; that is, they are in AAA because of their skill, not their age. The average major league starting player has a WAR of 2.0, meaning that they are worth 2 more wins to their team above a replacement level player. The Chicago White Sox had 22 batters that got meaningful playing time, at least 50 plate appearances for the week. Below is a histogram of their WAR:
+
+The 2024 Chicago White Sox did not have a single league average batter this year. In fact, they only had 1 player that was even worth paying: Luis Robert Jr, who had the most disappointing season of his career, following a 5.0 WAR season in which he was 12th in MVP voting, an All Star, and a Silver Slugger award winner with an abysmal 2024 season. The next best batter on the team was a tie between Andrew Vaughn, Nicky Lopez, and Paul Dejong, with 0.2 WAR, barely better than replacement level. In fact, out of the 22 batters with over 50 plate appearances, 14 of them actually had negative WAR, meaning that none of them should be on an MLB roster for how they played this season.
+
+To summarize, the Chicago White Sox might have been the worst offensive team in the modern era, which contributed to their failure as a team. Every single player on their team  underperformed, and it all combined for them to score the least amount of runs in the 21st century for a full season. Now, let us examine their pitching, the other main aspect of baseball.
+
+Defense
+
+While the White Sox’s offense was historically abysmal, was their defense any better? We can split up defense into two categories: Fielding and Pitching. While people have long debated the importance of fielding in baseball, we now have metrics that give an approximate run value to fielding, or how many runs saved/given a defense gave up, regardless of the pitcher.
+
+To start, by combining both fielding and pitching, we get the base stat of runs allowed. When the goal of baseball is to score more runs than the other team, run prevention is tied for the most important stat to win.
+
+While the White Sox’s 5.02 runs allowed per game was the 3rd most out of any team, they were not quite as bad as 3/30, or in the bottom 10% in defenses, due to other years having more league-wide offensive success. In pure run prevention, the White Sox were actually barely out of the bottom 20% of all defenses, a stat that, while still very bad, is far from their historically bad offensive season.
+
+Pitching
+
+To examine a team’s pitching success, two of the most commonly used statistics used are ERA+ and FIP. ERA+ is like normal ERA, your earned run average, with a couple of differences. The + is used to indicate that the stat is standardized, meaning 100 is average and higher is better. By standardized, it means that it takes into account the offensive environment for the year and for the specific player. For example, if two players have a 3.00 ERA, but one pitches mainly is Coors Field, which is the most hitter friendly ballpark, and the other pitches in T-Mobile Park, which is the most pitcher friendly park, the pitcher that mainly pitches in Coors will have the higher ERA+ because in that environment, it is harder to achieve the same ERA. It also accounts for league wide differences in offensive production, such as the juiced ball years that inflated offensive production. FIP is Fielding Independent Pitching, which focuses on the 3 stats that a pitcher can effectively “control” completely, walks, strikeouts, and home runs. Essentially, it tries to rate a pitcher out of the things it has 100% control over, regardless of the fielding after the ball is put in play. Below is the ERA+ and FIP for every team since 2000:
+
+While both metrics aren’t the greatest, it does tell a story about the pitching and fielding of the team. While they were in the bottom 10% of ERA+, they were only in the bottom 25% of FIP for all teams since 2010. While the team wasn’t the best pitching team, they were certainly a much better pitching team than their Runs Allowed showed. Their fielding was definitely subpar, which we will explore later. However, their pitchers weren’t the worst. Below is a histogram of the WAR for the White Sox’s Pitchers, minimum 25 innings pitched:
+
+The lone bright spot of the 2024 White Sox was their starting pitching. They had 4 starters with over 1 WAR, and 2 pitchers with over 4 WAR, which is considered top 100 in the MLB. Garrett Crochet was a top pitcher in the MLB this year, striking out 209 in 146 innings and proving that he could be a top pitcher in the MLB. Erick Fedde was traded at the deadline, but his 3.11 ERA and his 7-4 record proved how consistent he was on a team that went 41-121. Chris Flexen and Jonathan Cannon were about league average pitchers, which says a lot for a team that had no league average hitters. The relievers weren’t great, with only 1 pitcher, Jared Schuster, that had 1 WAR, but the majority of their pitchers were above replacement level.
+
+Fielding
+
+When we try to analyze the effect of fielding on a defense, there are three main advanced statistics that most players and teams conventionally use: Ultimate Zone Rating (UZR), Defensive Runs Saved (DRS) and Outs Above Average (OAA). While UZR and DRS focus more on infield fielding and OAA for outfield fielding, teams tend to use UZR and DRS more for total team performance. While UZR and DRS typically are very similar in how they are calculated, their main difference is that DRS punishes and rewards players more severely for plays, leading to more variance in their ratings. Below is the UZR and DRS for every team since 2013, when teams first started using DRS to track fielding performance. For both metrics, 0 is average, or 0 runs saved over the average player:
+
+The White Sox’s fielding was absolutely terrible. They had the 3rd worst UZR and the 7th worst DRS out of every team since 2013. Strong starting pitching can only carry a defense so much through strikeouts and weak contact, but having a strong defense does matter for run prevention. Both metrics seem to agree that the White Sox defense was worth approximately -85 runs, or about 1 extra run given up due to defense every 2 games.
+
+Summary
+
+So, why were the Chicago White Sox so bad in 2024? Clearly, looking at the stats, it was
+
+because of their position players. While they had some strong pitching, when you combine the worst lineup in the past century, both fielding and hitting wise, you are set up to fail. The combination of a lack of production from veteran players, such as Andrew Benetindi, Luis Robert Jr, and Martin Maldonado, as well as a lack of young upcoming rising stars, combined to create a record breaking trash lineup.
+
+References
+
+Baseballreference.com
+
+pro-football-reference.com
+
+basketball-reference.com
+
+Fangraphs
+
+Baseball Savant

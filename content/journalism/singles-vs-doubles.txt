@@ -1,0 +1,51 @@
+Introduction
+
+Singles or doubles, tennis is tennis. But are they really the same?
+
+The addition of another player and the extension of the courts can change much more of the racket game than it initially appears. In singles, a player can only rely on themselves to cover the court. Precise strategy, endurance, and individual fortitude is necessary to win. In doubles, the introduction of a partner requires awareness of another. The game becomes more reliant on teamwork, communication, and reaction speed.
+
+Much of these claims, however, are substantiated by visual observations and personal anecdotes. Does hard, raw data tell the same story? And can it reveal more insights into how differences in key statistics affect match outcomes?
+
+Data and Methods
+
+The data used in this study was collected from the most recent Association of Tennis Professionals (ATP) matches available from 2019-2020 for singles and doubles. For every match, the losers and winners are denoted, as well as indicators reflecting their respective performances, including ace rate, game score, break points faced, as well as player characteristics. Many variables were converted into percentages to better compare across matches, which may differ in total shots hit, total serves played, total games won, and so on.
+
+To note, much of the data is highly right skewed (Figure 0). In place of the two-sample t tests used to compare statistics between two normally distributed groups, the nonparametric Wilcoxon Rank Sum Test is used instead to substantiate graphical differences with more rigid mathematical approaches, unless otherwise stated. Data will similarly be summarized by the median rather than the mean as a more steady center of distribution.
+
+Results
+
+Serves
+
+In tennis, every point played begins with a serve, which must fall into the square box diagonal of the serving player. If the player fails to do so within two attempts, the serve is considered a “double fault,” and the point is lost. As seen in Figure 1 (above), singles players tend to double fault less, regardless of the outcome of their match. And as seen in Figure 2 (below), singles players also double fault less regardless of court surface type. Though this difference may seem miniscule, hypothesis testing resulted in a p-value of 4.011x10-7, indicating sufficient evidence to claim that the double rate of singles players is significantly less than that of doubles players (assuming a critical value of 0.05).
+
+One potential reason may be that doubles players serve every 4 games due to the extra players, while singles players serve much more frequently in every other game. The serve often requires a different style of execution than regular rally shots, so the extra time in between serves may throw a player off their serving game. Moreover, there is a difference in positioning: doubles players tend to serve a few extra feet away from the center more than their singles counterparts. This wider angle may potentially contribute to a decrease in successful serves, as the net is relatively higher at the point in the time the ball crosses over.
+
+If the player successfully serves and the returning opponent fails to make contact with the ball before the second bounce, the winning serve is considered an “ace.” The ace rate of singles players, both losers and winners, are statistically significantly higher than doubles players across all court surfaces, as pictured in Figure 2. The difference is most pronounced amongst the winner groups, as singles’ winners average out to an 8% ace rate while doubles’ winners average 2.33% lower at 5.77% with a significant p-value of < 2.2x10-16 (Figure 1).
+
+Now, these numbers prove particularly interesting when combined with two additional statistics in Figure 4: the percentage of successful serves in the first attempt and the percentage of successful first serves won. Doubles players saw a significantly higher percentage (p-value < 2.2x10-16) of first serves successfully making it in than singles at 65.7% versus 61.3%, respectively. Additionally, out of the first serves that made it in, doubles players generally won 72.97% compared to singles at 70.18%. The juxtaposition of ace rates with first serves in and won suggest that singles players tend to go for faster, stronger shots that typically lead to aces on their first serves, while doubles players seem to aim to get a decently strong serve in instead. This strategy makes sense: in doubles, having a decently strong first serve would be preferred over a safer second serve in order to capitalize the net partner’s poaching abilities. In singles, without this partner at the net, trying to ace the first point would optimize winning chances instead.
+
+Rallies
+
+In singles, one player must cover all 27 feet of court themselves, requiring great physical strength to consistently hit strong shots while running from side to side. In doubles, two players cover 36 feet of court (18 feet each), which tends to demand less physical endurance in comparison. The difference in physical exertion necessary per sport is reflected in injury rates identified in the dataset as retired matches. For approximately every 1000 players, 20 singles players are injured and 5 doubles players are injured in a 4:1 ratio. This supports the idea that the fast-paced, individual nature of singles wears out the body a lot more harshly than doubles.
+
+Moreover, singles matches tend to last longer than doubles (p-value < 2.2×10-16), as marked in blue in Figure 5 above. On average, single matches last 107 minutes, whereas doubles matches tend to last around half an hour less at just 77 minutes. A factor for this may be that the addition of a player in doubles ends the game much faster. Particularly, volley players at the net can poach and intercept shots at the middle of the court, making contact with the ball much quicker than in singles, and are able to angle shots in a way more difficult to return than at the baseline.
+
+Singles also see greater score differences, calculated as the difference in games won by the winner and the loser, than doubles. This may be indicative of the more complex strategy and dynamics between four people in doubles that may cause scores to be much more neck to neck than the former.
+
+External
+
+Tennis, as all sports are, is not entirely reliant on game strategy. External, and in particular, physical attributes play a role in match outcomes as well. Between singles and doubles, there are no major height differences at play (with a p-value of 0.2333 based on a 2 sample independent t-test as samples were independent and approximately normal). More left-handed players appear in doubles, however, especially as the tournament progresses into the quarterfinals and beyond. Left handed players provide a unique advantage in doubles, especially when paired with a right-handed player. In this dataset, 99.85% of left-handed players paired with a right-handed one. This duo can make use of two forehands in their returning strategy, and lefty slice serves can prove much more difficult to return, resulting in easy poaching by a partner.
+
+Furthermore, there is a considerable age difference in the population of players that play doubles and singles. Singles players tend to be much younger than doubles players, as seen in the distribution shifts leftwards compared to doubles in Figure 6. Again, this backs up the idea that singles playing requires a tremendous amount of physical stamina that younger players are more capable of.
+
+Conclusion
+
+Ultimately, overall match statistics support the general consensus that players excelling in the singles game utilize a very different strategy than players familiar with the doubles game. As the only point entirely controlled by the serving player, the serve can provide differing competitive edges to singles and doubles. Analysis of ace rates and double fault rates across groups suggest that singles’ players go for aggressive first serves and safer second serves, while doubles’ players opt for decently strong first and second serves. In singles, rallies also tend to be longer and more physically wearing on the body, evidenced by higher injury rates, longer match durations, and a younger population. Meanwhile, being a leftie appears to give a bigger advantage in the doubles format of tennis than in singles.
+
+This analysis was significantly limited by the type of data publicly available. The variables were all generally a summarized number from the overall match results, providing little insights into the execution of individual points themselves. Further analysis could be done to study the positioning of players, specific classifications of winning shots, and even speed of serves to solidify the propositions made above.
+
+References
+
+[Tennis Racket and Balls]. (n.d.). [Photograph]. Retrieved March 22, 2024. Quora.
+
+https://www.quora.com/Why-isnt-doubles-tennis-a-more-popular-spectator-sport.

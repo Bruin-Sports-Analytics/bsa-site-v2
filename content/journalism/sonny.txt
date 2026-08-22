@@ -1,0 +1,43 @@
+Son Heung Min last season was one of the most prolific players in the English Premier League, EPL. With 23 goals and 7 assists and a joint-Golden Boot Winner, expectations were high for Son this 2022-2023 EPL season. However, as the season is coming to an end, his statistics are nowhere close to last season’s success. He has scored only 6 goals and 3 assists in 27 league appearances and his downfall is extremely astonishing for Son and Tottenham fans.
+
+Fans were frustrated by Son’s form and were curious what were the causes for such a rapid decline in his performance. Some may suggest injuries and fatigue since Son did suffer an early facial injury before the World Cup and he is in his 30s. He is captain of the Korean men’s football national team, so he has to travel the furthest compared to his club teammates for international friendlies. However, if injuries and fatigue were the reasons, why is he still struggling to score in the second half of the EPL season when the first half of the season included the EPL, Champions League, and the World Cup? To understand his performance, we will first analyze Son's attacking football statistics to determine the root of this issue.
+
+The parameters which we will be analyzing are average touch count in the middle third, attacking third, attacking penalty touches, average shot count and shots on target, average carries or progressive carries into the final third and penalty area, and progressive passes or passes received per 90 minutes this and last season.
+
+The reason we chose these statistics is to determine whether he is struggling to shoot accurately and score goals on the pitch or whether he is receiving less opportunities per 90 minutes. These two reasons are the most possible explanations for Son’s struggles on the pitch.
+
+Since we are utilizing possession in terms of placement on the field and carries, we will explain what the middle and attacking third are and what is the definition of a carry. The middle third is approximately the midfield area on the field while attacking third is the area beyond the middle third but behind the attacking penalty box. Carries can be simply described as the number of times a player has controlled the ball with their feet, while progressive carries are carries that move the ball inside the opposition’s penalty box.
+
+From the table above, we can conclude how few attacking chances he has received this season compared to last season. His average touch count in all areas of the pitch and the number of passes he has received per 90 minutes has decreased from his 2021-2022 season. All these signs prove less involvement with the team’s counterattack and that someone else is taking his opportunities. Son’s attacking, midfield, and defensive options have remained with the same tactics, play style, and players around him. However, Son’s wingback partner from last season, Sergio Reguilón has left on loan, and was replaced by Ivan Perisic.
+
+According to transfermarkt, Perisic’s main position is at left midfield, but he is capable of playing the left winger or right winger positions. Before playing for Tottenham, Perisic had 240 appearances as a left winger and 98 appearances as a left midfielder. He does not play as a traditional wingback so his play style differs from wingbacks whom Son was partnered with in previous seasons.
+
+In the 2022-2023 season, Tottenhm had Perisic, Davies, and Ryan Sessegnon on its active  roster. Davies played left center back and had less than 10 appearances in the left midfield position. Sessegnon is Perisic’s backup who has not started many matches. We will mainly focus on Ivan Perisic due to the number of starts Perisic had compared to Sessegnon and Davies. We will compare Son’s relationship with Perisic and argue that the reason Son’s form has declined may be due to Conte playing Perisic and Son on the same side of the field.
+
+To understand how Son’s form could potentially be impacted by just Perisic’s appearance, we have created a similar model to our first model above with the same parameters except for total shots and shots on target count since Perisic does not shoot as often as Son and has scored 1 goal for Tottenham this 2022-2023 season.
+
+From this table alone, we notice how staggeringly Son’s opportunities have declined compared to Perisic. Perisic has overtaken Son in many of the possession statistics. Since Conte’s formation heavily utilizes active wingback movement, Perisic having more average touches than Son per 90 minutes is not a surprise. However, the fact that Son has less touches in the attacking third, attacking penalty area, and with less carries is a concerning statistic for Son. His opportunities to attack and carry the ball into the oppositions’ defensive box has declined as Perisic has taken a majority of those opportunities.
+
+To prove how significant Ivan Perisic’s appearances in Tottenham’s formations have been to Son, we will compare Son’s statistics this season compared to previous Tottenham seasons with a one sample t test and analyze Son’s statistics with partnerships with last year’s wingbacks, Reguilon and Sessegnon
+
+From our t-test results, we observed that six of the ten parameters which we analyzed for Son prove a significant statistical decline compared to his Tottenham career. The only parameters which seem unaffected are his attacking third touches per 90 minutes, his progressive carries and carries into the final third per 90 minutes, and progressive passes received per 90 minutes. However, all these tests reveal that Son is only active up to the final third area of the pitch. This proves that Son is not approaching the attacking penalty box as much as he did before in previous years. Hence, he is receiving less passes, carries, and touches into the attacking penalty area.
+
+In our secondary model, we see how Reguilón and Sessegnon both have more average touches and carries, while Reguilón has received more passes compared to Son. However, we notice how Son’s touches and carries into the final third and penalty box were significantly greater than the two wing backs above. This data indicates how Son received many opportunities to be involved in Tottenham’s attack so he was able to receive more passes, dribble into the opposition’s half, and score as many goals as he could.
+
+We can state that this season was a significant decline compared to Son’s Tottenham career and how his wingback partnerships have heavily impacted Son’s involvement with his team’s build-up. While Reguilón and Sessegnon did not overtake Son’s attacking and possession statistics, Perisic, on the other hand, seems to limit Son’s opportunities.
+
+As the season is coming to an end, and with Conte no longer its team manager, Spurs have much work to complete with its squad. The team wants to qualify for the Champions League, but there have been many injuries including Bentancur, Sessegnon, Emerson Royal, and Davies. Along with the fact that Tottenham plans on signing additional athletes and a new manager to come at the beginning of next season, Tottenham’s play style and roster may heavily change.
+
+With new signee Destiny Odogie and the return of Reguilón from loan, Tottenham would have 4 left wing backs on its roster and will have to choose which player to start, keep, or potentially sell. Since there is much uncertainty for Spurs and Son, fans can only hope that the chairman Daniel Levy and the board would hire the right manager to revive Tottenham’s winning form and Son’s offensive capabilities.
+
+References:
+
+https://fbref.com/en/players/92e7e919/scout/11566/Son-Heung-min-Scouting-Report
+
+https://fbref.com/en/players/6fe90922/scout/11566/Ivan-Perisic-Scouting-Report
+
+https://www.transfermarkt.us/ivan-perisic/profil/spieler/42460
+
+GitHub Code:
+
+https://github.com/NathanKim0107/BSA_W23_Project

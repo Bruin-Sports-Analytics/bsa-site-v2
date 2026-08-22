@@ -1,0 +1,41 @@
+Introduction
+
+The serve is the shot used to initiate play in tennis, referring to the act of hitting the ball to start a point. The serve is a crucial part of tennis, as it can influence the dynamics of the entire match when setting up the next shot, putting pressure on the opponent, winning points through aces, or losing points through double faults. Players are allowed a second serve attempt if the first serve is a fault. Our article will analyze the importance of first serves to winning matches.
+
+Variables
+
+Simply stated, the serve can be considered the penultimate shot of the game, as every game will begin with a serve. The players involved in a given tennis match take turns serving first and second serves. The first serve represents the first attempt for a player to start a point, while a second serve allows a player another chance after a fault on the first serve. In our analysis, we examined several variables regarding first and second-serve success in tennis data from the ATP (Association of Tennis Professionals) World Tour website, which includes information about match scores and statistics from 1991 through 2016. Through this dataset, we were able to analyze the following variables:
+
+winner/loser_first_serves_in: number of first serves that fall inside the service box
+
+winner/loser_first_serves_total: number of first-serve chances
+
+winner/loser_first_serve_points_won: number of first-serve points won
+
+winner/loser_first_serve_points_total: number of first-serve points total
+
+winner/loser_second_serve_points_won: number of second-serve points won
+
+winner/loser_second_serve_points_total: number of second-serve points total
+
+First Serve and Second Serves
+
+First, we examined the proportion of first-serve points won between the winner and the loser of the matches of the dataset. As demonstrated by the boxplot, the winner of the matches tends to win a higher proportion of first-serve points compared to that of the losers, implying that first-serves strongly contribute to the outcome of a match.
+
+Next, we looked at the same proportion for second-serve points, and the same pattern for first-serve points won is witnessed for second-serves: winners also display a trend of higher points scored in their second serve when compared to losers. As a result, we can conclude that winners tend to experience more favorable outcomes in serves than losers do, no matter whether first or second. It is also worth noting that when comparing the two boxplots, both winners and losers share a higher proportion of first-serve points scored than second-serve points scored, suggesting that tennis players, in general, tend to fare better in their first serve than in their second serve.
+
+Inspired by the previous observation, we looked into first-serve and second-serve points won in each match, regardless of winner or loser. In the scatterplot above, we found that there is a strong positive correlation between first-serve and second-serve points in the dataset. Consequently, we can conclude that the longer the course of a match, the more serves played between the two players, resulting in more serves won. It is worth noting that the slope of the graph indicates that players tend to win more first-serve points per match than second-serve points.
+
+First Serves In vs. First Serve Points Won
+
+The scatterplot above displays the proportion of first serves in against the proportion of first serve points won. There is a random scatter above, demonstrating that there is not a strong correlation between the proportion of first serves in and the proportion of first serve points won. This suggests that hitting the first serve in does not lead to higher chances of winning the first serve point. To add on, the random scatter appears to centralize in the lower middle of the y-axis after 80% first-serve points in on the x-axis, suggesting that players who serve in at a higher percentage can win fewer first first-serve points than players who do not serve in the service box, implying that players can strategize winning more points by risking their serve.
+
+The boxplot on the left above displays the proportion of first-serve points in and the boxplot on the right displays the proportion of first-serve points won. The boxplots show a higher proportion of first serves in than first serve points won, demonstrating that serving the first serve in does not directly correspond to higher chances of winning the first serve point, but it allows players to attain most of those points.
+
+Conclusion
+
+Overall, serves are crucial to players’ success in tennis, as winners tend to score their first-serve and second-serve points in a higher proportion than losers do. Given that a player has won their first-serve points, they can also be fairly confident that they can win their second-serve points. Moreover, serving the first serve in and winning the first serve point do not display a strong correlation, but we discovered that risking an aggressive serve that may not hit the service box can be strategic for winning more first serve points.
+
+https://datahub.io/sports-data/atp-world-tour-tennis-data
+
+https://www.newyorker.com/sports/sporting-scene/how-serena-williams-used-the-most-beautiful-service-toss-in-tennis-to-beat-her-sister-venus-at-the-us-open

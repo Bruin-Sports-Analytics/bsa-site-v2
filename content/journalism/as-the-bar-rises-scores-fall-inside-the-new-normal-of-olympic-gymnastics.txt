@@ -1,0 +1,41 @@
+Introduction
+
+Here at UCLA, all it takes is a trip to Pauley Pavilion to see an Olympic athlete compete. Watching Jordan Chiles’ thrilling routines and dominant performance is exhilarating, and the many perfect “10s” (or scores very close) she has put up indicate judges are impressed, too.
+
+While Olympic scoring differs from collegiate, the historic performances of Chiles and many other current gymnasts inspired our questions: Has achieving high scores changed in difficulty over the last few Olympic championships? Which countries and athletes have enjoyed the most success at the Olympic level historically? Which apparatuses are most likely to see “high scores”?
+
+In Olympic gymnastics, the athlete’s score consists of two parts: the A score and the B score. The A score takes into account what the gymnast does, the difficulty, and the moves they perform. The B score is called the execution score, or how well they executed their routine (which is still out of ten). In our analysis, we quantify “high scores” as a score in a single event that receives above 15.000.
+
+Data
+
+The data we use comes from the 2012, 2016, 2021, and 2024 Olympic years, focusing on the top ten athletes from each year in the women’s all-around. (For clarification, the 2021 Olympics represent the 2020 Tokyo Olympics that were rescheduled due to COVID.) We manually parsed the website gymnasticsresults.com to gather each athlete's name, country, score for each event (vault, bars, beam, and floor), and year. Our analysis and conclusions are in reference to these apparatuses under the women’s all around event.
+
+Analysis
+
+By looking at the plot above, score distributions changed over the years. From 2012-2024, the respective medians of scores earned during the Olympic all-around in each event were 14.908, 14.699, 13.933, and 13.967. The medians drop and the spread of the scores increases from the 2012 to the 2024 Olympics. In 2012, the mean score earned was 14.800 with a standard deviation of 0.694 points, while in 2024 the mean was only 13.937 with a standard deviation of 0.732 points. Using a two sample t-test for difference in means between the 2012 and 2024 years with an alpha of 0.05, there is significant evidence associated with a difference in mean scores. These changes over the years could be caused by an adjustment to the new scoring system. When the scoring change occurred from being out of 10 to the current open ended scoring system in 2006, 2012 was the second year of Olympic gymnastics having this open ended scoring system. It may have taken judges time to readjust how they evaluated players and thus how they give high scores.
+
+The percentage of “high scores” earned by the top 10 women in the Olympic all-around final has steadily decreased over the last four Olympic games, from a whooping 42.5% of scores in 2012 to only 7.5% of scores in 2024. Additionally, while in 2012 and 2016, these athletes did not record a single score below 13.5, scores lower than 13.5 have made up a quarter or more of the scores earned in the last 2 Olympic games. In 2012, the largest percentage of scores out of these ranges were greater than 15, while in 2024, the largest percentage of scores were either less than 13.5 or between 13.5-14.0. This suggests that scores have fallen across the board over the last several Olympic championships. Attaining a higher score has increased in difficulty over the course of the past four Olympic games.
+
+While it has become more challenging throughout the years to achieve a higher score, do different apparatuses pose a bigger threat in attaining a high score? From the violin plot above, vault and bars have a smaller spread of scores (2.6 and 3 point spread, respectively) while beam and floor have a larger spread (3.967 and 3.7). There is more variability in the scoring of beam and floor than in that of vault and bars. Additionally, the average scoring for vault and bars appears higher than that of beam and floor. 32.5% and 27.5% of vault and beam scores were above 15 and only 17.5% and 10% of floor and beam scores were above 15.  This suggests that it is less likely to attain a high score in floor and beam than in vault and bars.
+
+The table above shows the two way comparisons for the different combinations of events and their significances. Like the violin plot showed, there was no significant difference between the beam-floor and vault-bar means. However, vault and bars had statistically significantly different means from the beam and floor. This supports the conclusions from above, as the average scores for vault and bars were higher than the other two. This distinction between these events could be explained by differences in judging standards or possibly where athletes choose to specify in their individual all around, but would require further analysis.
+
+Historically, the US and China have seen the most success in having athletes place within the top 10 for women’s all-around. Germany, Brazil, and Russia have seen a total of three placements each in the top 10 during these years. Only a total of 16 countries have at least one appearance over these years, and 68% have only had one or two appearances. This highlights the US and China’s dominance in the women’s all-around.
+
+Conclusion
+
+Gymnastics is considered one of the most athletic and difficult sports, and has produced world-renowned athletes like Simone Biles, Sunisa Lee, and UCLA’s own Jordan Chiles. These Olympians are rated on every detail, leading to slight differences in scores that affect one’s placement. This analysis has shown that getting a high score, something much needed to win in the Olympics, has become more difficult over time in the women’s all-around event. Similarly, certain events like vault and bars boast more consistent scores and higher boosts to an Olympian’s overall score. Additionally, the United States and China have dominated the top rankings, while most other countries have had only one or two athletes reach the top 10. These findings uncover event-level disparities, country dominance, and changing scoring over the years. Will these factors continue to remain the same or change yet again during the 2028 LA Olympics?
+
+Although our findings proved statistically significant, the data had some limitations. Since we parsed the web by hand, we were only able to obtain 40 observations across the four Olympic years. This is a smaller sample size than we would have liked, which also limited our analysis. In the future, we would aim to obtain all the data from all the events, including the scoring for A and B scores, to analyze how those factors affect overall performance.
+
+Sources
+
+https://themedalcount.com/data-hub/
+
+https://www.kaggle.com/code/jlove5/olympic-data-women-s-gymnastics
+
+https://www.flogymnastics.com/articles/5047179-a-decade-of-change
+
+https://gymnasticsresults.com/archive/
+
+https://thegymter.net/wp-content/uploads/2014/09/gymnastics-judges.jpg?w=640

@@ -1,0 +1,197 @@
+The NFL Draft is a nerve-wracking banquet of hope and strategy. Teams gamble on young talent, particularly quarterbacks, who can become the franchise's cornerstone for years to come. But what separates a Super Bowl-winning MVP QB drafted outside the first round from a high-profile bust? Traditional scouting methods rely heavily on physical attributes, college stats, game film, and their college team’s reputation. This article takes a different approach to the other side of the issue: the drafting team. For miscellaneous reasons, some teams have a longstanding reputation of developing great QBs, whereas some teams have the notorious tradition of ruining the rookie superstar. I leverage the power of data science, building a linear regression model to analyze historical quarterback statistics and draft position. Specifically, I focus on a few key metrics such as yard per attempt (YPA), touchdown-interception ratio, yard-per-year(YPA), and completion rate (comp%), and then explore how those variables depend upon the drafting statistics.
+
+In this article, I select the 6 quarterbacks who were drafted in the 1st round in the 2024 NFL Draft to analyze. For each of them I will dive into their team’s past QB statistics and draft data and record the performance expectancy of them in each key metric. Via the power of computational data analysis, we can come to an important aspect of the answers to the questions: can the past veterans’ numbers truly predict the rookie’s fit within a specific team's system? And what’s the general trend of it moving through the fit-to-unfit spectrum? We'll delve into the data, explore the limitations, and see if statistics can shed light on the age-old question: how well is this superstar going to be in his professional career?
+
+Method
+
+I first gathered the raw data from the Professional Football Reference (PFF), which contains all the drafting data for every NFL team. After collecting data in Excel spreadsheets, I added a few more columns at the end of it to compute some key measures of QB performance:
+
+Yard per attempt (YPA): obtained by total passing yards/total passing attempts. it gauges a QB’s ability to help the offense progress.
+
+Touchdown-interception ratio (td-int): obtained by total TDs/total INTs. It tells a QB’s efficiency—to score more while avoiding foolhardy moves that result in turnovers.
+
+Yard per Year: obtained by a total yards/career length. It explores a QB’s consistency over the years.
+
+Completion Rate (comp %): obtained by #completed passes/total attempts*100%. It uncovers a QB’s accuracy when making plays.
+
+Meanwhile, the “insignificant data points,” which refer to those who played 0 games and thus have 0 on one or more of the key metrics, are removed from the dataset.
+
+After setting up and computing those key performance indices. I imported all the data into Google Colab for further analysis. In short, I developed a linear regression model that correlates and visualizes the relationship between different key metrics and drafting statistics, one with draft round and the other with the specific pick number. Using this model, I inputted this year’s quarterback’s drafting detail: round, pick #, and drafting team; after doing this, the model gives back a performance expectancy in each of the key metrics, serving as a criteria to see if the rookie fits with this NFL team (if a quarterback’s actual performance is higher than the expectancy he is deemed as a good fit and a competent team player, otherwise he is not). The final expectancy value is chosen from the correlation model that has the smallest R^2 value.
+
+Caleb Williams—1st overall pick—USC/Oklahoma—Chicago Bears
+
+Seen as the most promising QB in the 2024 NFL draft and the cornerstone of rebuilding Chicago Bears, Caleb Williams is often compared to a popular predecessor Patrick Mahomes—in terms of arm talent, pass-making maneuver, creativity, and pro-readiness.
+
+Yetsome may argue that since the Bears failed to maximize the benefit of Justin Fields—another QB who used to be promising in the 2021 NFL draft—Williams’ professional prospect at the team has more uncertainty.
+
+Setting aside all the debates around him, I rather gather and analyze the past drafted QBs’ statistics at Chicago Bears. After going through the linear regression model, here are the findings:
+
+From the set of correlation graphs, we can see a clear linear relationship between QB’s performance metrics and the drafting round and picks. In general, in the Chicago Bears, a quarterback’s performance in each of the indices is better when the draft round and pick are higher. For this team, R^2 is always lower than the key metrics are plotted against draft picks than that of draft rounds. Based on the linear regression model, the performance expectancy for Caleb Williams:
+
+YPA
+
+td-int
+
+YPY
+
+Comp%
+
+7.775
+
+1.305
+
+1653
+
+65.753
+
+From the chart, his expected YPA is 7.775, which is significantly higher than that of previous Bears QB Justin Fields (6.9), around league average, just below another booming rookie QB C.J. Stroud(8.2). Touchdown interception ratio is 1.305, which is lower than the league average. This could be a point of unfit for him to be in Chicago Bears. Completion rate is 65.753%, which is about the same as Justin Herbert and Jimmy Garoppolo. Overall, the model returns a pretty high expectation for him, implying that he can be considered a good fit to Chicago Bears if he plays as the franchise-level QB of the team and make the team a playoff-contender.
+
+Jayden Daniels–2nd pick–LSU/ArizonaState–Washington Commanders
+
+After a blasting college season in Baton Rouge, Jayden Daniels has been well-known for his agility to move in and out of the pocket while reading the defense and executing the game plan. As the so-called future OROY finalist, he is expected to develop and solidify his pocket passing ability and avoid serious injuries. Tracking the records of past QBs drafted by Washington Commanders, a general trend is drawn:
+
+(on this and following sections, only the visualization models with notable characteristics are displayed)
+
+As indicated in the graphs, when the pick # goes up in some metrics goes up, the metrics rather go down. This is likely due to the fact that when the team’s performance is better, it gets a later first round pick, which may actually turn out to be better for rookie QBs to have good statistics.
+
+Based on the linear regression model, the performance expectancy for Jayden Daniels is shown below:
+
+YPA
+
+Td-int
+
+YPY
+
+Comp%
+
+6.715
+
+1.203
+
+1328
+
+56.51
+
+From the chart, his YPA expectancy is 6.715, which is about the same level as Gardner Minshew and Kyler Murray. His completion rate expectancy this relatively low expectancy in the performance metrics suggests that although he is making progress in his ability to make plays, Washington Commanders’ poor use of drafted QB in the past years, while lowering the bar of being “fit” with the team,  will be a considerable barrier for him to conquer.
+
+Drake Maye–3rd overall pick–UNC–New England Patriots
+
+Even though there has been rumors about Patriots trading down to let other teams to get Drake Maye, they still eventually selected this big arm from North Carolina. As a true leader on and off the field, he has amazing passing talent, incredible body strength, and playmaking acumen. Yet after wasting three years on a mediocre QB Mac Jones, whether NE will develop Maye into an elite QB remains a mystery.
+
+Unlike other teams that have a clearly sloped performance metrics vs. round graph, Patriots instead its high-performers spread out throughout the draft rounds, featuring some late-round stunners such as Tom Brady. Aside from that, when looking into its first-round drafting data, an inverse relationship is shown between draft pick and key metrics. This is likely because when the team strength is better, its good record results in a late first round slot; in turn, the drafted QB performs better with stronger assistance from OL and WRs than the one who is drafted in the underperforming era of the team.
+
+Therefore, the model suggests that this year might not be a good time for this team to draft a QB, especially in early first round, as it just finished last place in AFC East with the undesirable team buildout. Rather than spending a early-round slot to find a team saver, it may be preferred that NE uses a late-round pick to gamble on QB while using early-rounds to seek for other crucial elements to the team. Against this backdrop, Drake Maye’s performance expectancy is shown below:
+
+YPA
+
+td-int
+
+YPY
+
+comp%
+
+6.528
+
+1.168
+
+1440
+
+60.18
+
+Michael Penix Jr–8th overall pick–Washington–Atlanta Falcons
+
+As the starting QB who led Washington Huskies to Pac-12 champion and National Championship finalist in 2023/24 season, his composure and confidence become a key pitching point in the 2024 NFL Draft. However, his performance in a few pivotal dimensions (passing movement, offensive prospectiveness, and facing pressure) has been inconsistent. Meanwhile, as Atlanta Falcons just acquired an experienced professional QB Kirk Cousins 2 months ago, this pick of a 24-year-old becomes more controversial, getting deemed as the biggest surprise in the first round of the draft.
+
+Setting aside all the external voices, we will dive into the past data to seek some useful traces:
+
+The correlation model reveals that Falcons, contrary to the widespread criticism in this year’s draft, has a high tendency to draft successful QBs in early rounds, especially in early first-round picks. This result makes Falcon’s decision to draft Penix more reasonable, considering Kirk Cousins is already 35 years old. With such bright precedence, his performance expectancy is shown below:
+
+YPA
+
+td-int
+
+YPY
+
+comp%
+
+6.902
+
+1.39
+
+1585
+
+64.14
+
+His YPA expectancy is surprisingly high, only behind Caleb Williams so far. His completion rate is also second high among the 6 first round QBs. Therefore, considering its successful history of drafting early-round QBs, it can be a fair gamble for the Falcons to select him if he meets the expectancy in his rookie season, which can turn him into an important sub-level QB.
+
+JJ McCarthy–10th overall pick–Michigan–Minnesota Vikings
+
+After his national champion season at Michigan Wolverines and impressive performance at NFL Combine, Vikings seized the chance to pick this draft stock riser. Having an almost perfect body build with improving passing skills and pocket movement, various sources have faith in his professional prospect. While it takes time for him to grow fully fledged, Vikings’ past history of drafting QB may foretell a part of the story:
+
+Similar to New England Patriots, Vikings also has the flattened best-fit line for QB’s key performance metrics over the draft rounds and the inverse relationship between metrics and first-round picks. Likewise, this finding implies that it is not practically worthwhile to gamble on QB in early rounds and its QB’s success more depends on the team’s overall strength. With that being said, JJ McCarthy’s performance expectancy is below:
+
+YPA
+
+td-int
+
+YPY
+
+comp%
+
+6.271
+
+1.06
+
+1272
+
+60.61
+
+The linear regression model gives a gloomy performance expectancy, which is reasonable when it comes to the inverse relationship discussed above. Nevertheless, McCarthy can still have the potential to become a consistent throwing weapon with the aid of receiving talent like Justin Jefferson and running talent like Aaron Jones. Above all, his first priority will be beating the expectancy and competition with Sam Darnold to become Viking’s franchise QB.
+
+Bo Nix–12th overall pick–Oregon/Auburn–Denver Broncos
+
+Following the release of Russell Wilson–a record-breaking action that resulted in $85M dead money–the 6th-grade QB from Oregon seems to undertake the responsibility of rebuilding this broken team. Oftentimes compared to his Oregon predecessor Justin Herbert, his acumen in making passing decisions is appreciated by the team’s head coach Sean Payton, but his body build, professional compatibility, and future potential are major points of concern.
+
+From analyzing the past drafting data of Denver Broncos, it is not difficult to see that there is a positive relationship between the performance metrics and both draft round and pick. This, to some extent, accounts for the decision to draft QB in middle first round. At this time when they do need a starting QB to get through the hard time, it is worthwhile to make a move here.
+
+YPA
+
+td-int
+
+YPY
+
+comp%
+
+6.31
+
+1.22
+
+1036
+
+61.1
+
+With the bar set low for Bo Nix, this does not predicate that he is going into bust. If he manages to beat the performance expectancy and strives to take the Broncos out of the swamp, he still has the chance to be an average-level starting QB in the league.
+
+Conclusion & limitations
+
+In general, the linear regression model indicates that a QB’s performance metrics vary greatly against a team’s drafting data. The tendency and concentration of the data are distinct for each team: some teams’ QB performance metrics exhibit a clearer linear relationship with respect to the draft round, some others’  are more related to the specific first-round pick, and for some team there is no such correlation at all. Within the pairs that have a relatable relationship, some teams have their key QB metrics positively related to pick #(i.e. the pick is higher, the metrics are better), whereas some others draw the line inversely related. All those nuances offer a perspective into whether the team can utilize well their early-round on QBs and under which condition do they draft the QBs with the best performance.
+
+Admittedly, the linear regression model and the results it carried out have a number of flaws and biases.
+
+First, the model only gives a rough sketch of how each team’s track record in their history may affect or account for the present, but it ignores the QB’s own capability and potential, which could make a great difference and makes them outliers from the general historical trend. Plus, the model does not include the tactical context of each team: a QB’s performance may be dragged down if the coach focuses more on rushing attack. Due to the nature of lineart regression, the model’s performance may not be ideal for some teams’ QB performance metrics and fail to account for a more complicated  relationship (e.g. quadratic, inverse logistic) more than a linear one.
+
+Second, the model doesn’t consider potential QB trade and transfer. Sometimes a QB does not perform well in a team simply because the team is malfunctioned or he just doesn’t fit into the HC’s tactics. When they change teams to play, it may result in a significant change in their performance (e.g. Matthew Stafford and Jared Goff deal).
+
+Third, even though some QBs have great potential, the team management officials may have some other considerations that can change their fate. Likely due to general fanbase’s preference to chase the very cream of the crop or to the second-place effect of drafting QB, the percentage of first-round QB extension rate drops drastically after the first overall pick:
+
+This means that the first overall picks are “unique,” in a sense that they either perform significantly better than the following drafted rookies or they are granted more room to exercise their full potential. Such difference may require a different way to calculate the performance expectancy and figure out their fitness with the drafting team, which due to time and capacity restraint I wasn’t able to perform so.
+
+Despite all the imperfections, this article still gives a valid and unique perspective, a lens that dives into the NFL draft decision-making and rookie professional performance. I believe this way of analysis will become useful when it comes to further more complex analyses of QB performance.
+
+References
+
+Pro football stats, history, scores, standings, playoffs, schedule & records | Pro-Football-Reference.com. (n.d.). Pro-Football-Reference.com. https://www.pro-football-reference.com/
+
+Reid, J. (2024, March 31). 2024 NFL draft quarterback rankings: Williams, Maye, Daniels - ESPN. ESPN.com. https://www.espn.com/nfl/draft2024/insider/story/_/id/38496853/ranking-top-2024-nfl-draft-quarterbacks-hot-board-team-fits
+
+The Athletic - Sports news, stories, scores, schedules, podcasts, and more. (n.d.). The Athletic. https://www.nytimes.com/athletic

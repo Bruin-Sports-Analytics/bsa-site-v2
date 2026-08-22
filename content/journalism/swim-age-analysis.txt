@@ -1,0 +1,151 @@
+Performance in swimming is determined by a variety of factors – agility, muscular strength, experience, height, and many more. Of course, having an advantage in one area does not guarantee one’s success in swimming, but having a perfect blend of various different ones can be a huge benefit for athletes.
+
+Performance in Olympic swimming is no different, with the world’s most talented swimmers coming together to compete on the world stage. But, is it possible for often forgotten factors to also play a role in determining their success? For example, what about biological traits, like age, a factor that even impacts many of the components mentioned previously?
+
+In order to explore this peculiar relationship between age and Olympic swimming performance, I decided to analyze the average age of swimming gold medalists at the 2008, 2012, 2016, and 2020 Olympics. Another relationship that can be explored is if age is relevant in different ways, which sparks an additional question: How does age matter differently across races of different strokes versus across races of different lengths?
+
+To answer these questions, I utilized four graphs:
+
+Age of male gold medalists, sorted by distance
+
+Age of female gold medalists, sorted by distance
+
+Age of male gold medalists, sorted by stroke
+
+Age of female gold medalists, sorted by stroke
+
+Variations in the Age of Gold Medalists by Race Distance
+
+In the recent Olympics, there are typically races of six different lengths: 50 m, 100 m, 200 m, 400 m, 800 m, and 1500 m. However, it wasn’t until the 2020 Tokyo Olympics that all races occurred in both the male and female categories. Below is a list of what events male and female swimmers typically compete in in the Olympics.
+
+Freestyle (FS): 50 m, 100 m, 200 m, 400 m, 800 m* and 1500 m**
+
+Backstroke (BK): 100 m and 200 m
+
+Breaststroke (BRS): 100 m and 200 m
+
+Butterfly (B): 100 m and 200 m
+
+Individual Medley (IM) : 200 m and 400 m
+
+Freestyle relay: 4 x 100 m, 4 x 200 m
+
+Medley relay: 4 x 100 m (men, women, mixed)
+
+*800 m Freestyle was only a women’s race until 2020
+
+**1500 m Freestyle was only a men’s race until 2020
+
+For the purpose of my analysis, I excluded the 50 m, 800 m, and 1500 m length races from the graphs, since there would only be one gold medalist per Olympics for each of these distances, preventing me from obtaining an “average” age of the winners. I also only used individual events, or the first five listed above.
+
+We will first look at the average age of gold medalists for races that are 100 m, 200 m, and 400 m.
+
+Average Age of Male Gold Medalists by Distance
+
+There seems to be a slightly negative trend across the distances. At the greatest distance, the average of the gold medalists drops for all the Olympics except 2012.
+
+For the 50 m and 1500 m races, I calculated the average age of male gold medalists across all four Olympics:
+
+50 m: 25.25 years
+
+1500 m: 21.5 years
+
+And we can also look at the means for the races shown in our graph for comparison, since certain Olympics could have a lower/higher average age due to outliers. Using an average across the Olympics can help get a general idea of the typical ages of winners for races.
+
+100 m: 23.62
+
+200 m: 23.7
+
+400 m: 21.62
+
+Again, we see a similar trend – as the race distance increases, the average age of the gold medalists decreases. One possibility is that older sprinters have more time to build strength than younger swimmers, allowing them to perform better in shorter races. Another possibility is that  in terms of the endurance that is needed for longer races, younger swimmers can have an advantage since endurance gradually decreases as one ages.
+
+Regardless of the reason, the trend is clear: male winners of shorter races tend to be older, whereas male winners of longer races are younger, on average.
+
+Average Age of Female Gold Medalists by Distance
+
+Other than a slightly older average age in the 2016 and 2020 Olympics for the 200 m and 400 m, we don’t see any distinct trends in the ages of female winners by distance. One interesting thing to note is that for the 2008 Olympics, we see the same trend of age and distance being inversely correlated but for the other three Olympics, this is not the case.
+
+For the female races, I again calculated the mean of the 50 m winners across the Olympics, but not the 1500 m since that race has only occurred in the 2020 Olympics so far.
+
+50 m: 23.5 years
+
+Although not a clear indicator of any trend, the average age for the 50 m is greater than any of those for the 100 m races in our graph, which is similar to what we saw for the male swimmers.
+
+For the other races for comparison:
+
+100 m: 20.59
+
+200 m: 21.85
+
+400 m: 21
+
+800 m: 19.25
+
+With the exception of the 100 m, these averages follow the trend from above that as race distance increases, the average age of female gold medalists tends to decrease. The 100 m average probably strays from the trend due to a female race winner in 2008 that was just 15 years old.
+
+Variations in the Age of Gold Medalists by Stroke
+
+Now, we’ll take a look at the average age of gold medalists across the Olympics by stroke.
+
+As a reminder, here are the strokes:
+
+Freestyle (FS)
+
+Backstroke (BK)
+
+Breaststroke (BRS)
+
+Butterfly (B)
+
+Individual Medley (IM)
+
+Average Age of Male Gold Medalists by Stroke
+
+Upon first glance at the graph, we do not see a distinct relationship between the age of winners and what stroke they earned a gold medal in. The age of male individual medley winners does seem to be higher on average, while the age of male freestyle winners seems to be generally lower than the other four strokes.
+
+We can also look at the average male winner age by stroke through all the Olympics:
+
+Freestyle (FS): 22
+
+Backstroke (BK): 23.62
+
+Breaststroke (BRS): 23.37
+
+Butterfly (B): 23.75
+
+Individual Medley (IM): 25.75
+
+These numbers are relatively close together, but freestyle stands out as one of the lowest average ages and individual medley as the highest. This could say something about the nature of the stroke, and it’s possible that younger athletes are more likely to win freestyle races and older athletes individual medley races.
+
+Average Age of Female Gold Medalists by Stroke
+
+It’s hard to spot any direct correlation between age and type of stroke from these graphs. In general, we can see that the age of freestyle race winners might be typically lower on average and that there is a bit of an increase in winner ages for breaststroke and butterfly.
+
+Just like for shorter distances, it could be the extra strength of older competitors that allows older, and thus stronger, swimmers to excel greatly in shorter axis strokes like breaststroke and butterfly. Perhaps this means that in shorter axis strokes, strength matters highly, whereas in longer axis strokes like freestyle and backstroke, agility and speed matter a lot. Factors like agility and speed are closely related to endurance, which previously mentioned, decreases with age.
+
+We can also look at the average female winner age by stroke through all the Olympics:
+
+Freestyle (FS): 21.09
+
+Backstroke (BK): 20.37
+
+Breaststroke (BRS): 21.25
+
+Butterfly (B): 22.12
+
+Individual Medley (IM): 22
+
+Although these numbers are relatively close to each other, we do see that the average age is lower for freestyle and backstroke and higher for breaststroke, butterfly, and individual medley.
+
+Conclusion
+
+Although age plays a role, the variations throughout the graphs show that age is not the one single determining factor of a swimmer’s success, or even a large one. We can also see that trends vary across male and female swimmers and though they may be similar, they are not exactly the same.
+
+Overall, we do see some slight trends. For example, for longer distance races, it seems more advantageous to be younger. For shorter distances, the average age of gold medalists seems to be higher than for longer distances. Another possible trend is that the winners of short axis strokes like butterfly and breaststroke seem to be older, whereas those of freestyle are younger, on average.
+
+It’s important to note that the races in the graphs above are the Olympics, meaning they include the best of the best swimmers from each country. This could allow for outliers in terms of ages that might make it hard to see distinct trends. Exploring further data from other events like the  Olympic trials races, USA championships, and more would make it easier to discern the relationship between age and swimming performance. But until then, we can see that the impact of age on a swimmer’s success is by no means absent or nonexistent.
+
+Sources:
+
+2008, 2012, 2016, 2020

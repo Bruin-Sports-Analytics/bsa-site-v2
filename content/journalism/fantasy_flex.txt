@@ -1,0 +1,55 @@
+Introduction
+
+Every year, millions of football fans around the world attempt to assemble their perfect fantasy football team, pulling players from the 32 NFL teams to fill every spot on their roster. Every fantasy football manager has a standard set of positions to fill (one quarterback, two running backs, two wide receivers, etc.), but the FLEX position can be filled with a wide receiver, running back, or tight end. The best option of these three can vary based on how well a manager drafts players, injuries, bye weeks, and more, but we wanted to see generally whether a wide receiver, running back, or tight end made the best FLEX player.
+
+In order to compare the three positions, we set three metrics: highest-scoring, most consistently “good”, and most predictable. The highest-scoring position is the one that accumulates the highest median total points per player over the whole season. The most consistently “good” position is based on the proportion of players from each position that score higher than the median of all three positions from week to week. Finally, the most predictable position is the one that scores points closest to their projected points.
+
+We narrowed our focus to data from the 2021 NFL season. In addition, we limited our roster of players to those who played at least eight games and scored at least ten points total over the season. This eliminated players who may have rarely played or only played during “garbage” time – the time when teams are winning or losing by such large margins that they replace their best players.
+
+Highest-Scoring
+
+Perhaps the most obvious of the three metrics is the highest-scoring position. The goal of playing fantasy football is to score enough points to beat your opponent, so choosing the correct FLEX option to achieve that goal means choosing a high-scoring player.
+
+From our data, we found that wide receivers had a median season total of 67.8 points per player, running backs had 69.95, and tight ends had 46.05. After running a Kruskal-Wallis test, the difference between wide receivers and running backs is negligible.
+
+The highest-scoring player by over 50 points was a wide receiver, Cooper Kupp, with 272.9 points. This is to be expected, considering he’s widely known as one of the best players currently in the NFL. Many of the top running backs, however, seemed to have underperformed. Ezekiel Elliott, who played through injuries during the 2021 season, accumulated an underwhelming 131.3 points. In fact, four wide receivers scored more than 200 points over the season, while only one running back and no tight ends achieved the same feat. The apparent trend, then, is that a few wide receivers scored a lot of points, while running backs had more depth but less stand-out performances. This makes choosing a FLEX position interesting, because managers will typically pick their best players for their standard set of positions and fill the FLEX spot with their third-best wide receiver or running back (or their second-best tight end).
+
+It is useful, although maybe expected, to know that wide receivers and running backs score significantly more points over the season than tight ends, but because fantasy football is played on a week-by-week basis and a player’s scores can vary highly between weeks, it is important to look at other metrics of comparison.
+
+Most Consistently “Good”
+
+This measure is potentially more indicative of the week-to-week strength of a position. We took the median points scored of all three positions together week-by-week, then measured each position against that median. For example, in Week 1, the median points scored by wide receivers, running backs, and tight ends was 4.3. 101 wide receivers met our criteria to be included for Week 1, and of those, 59 scored more points than the median, leading to a proportion of 0.584. We did this each week for each position to receive the following results.
+
+In 12 out of 17 weeks, at least 50% of the week’s eligible receivers scored more than the median. On average, there were 51.9% of wide receivers above the median.
+
+In 14 weeks, at least 50% of the week’s eligible running backs scored more than that week’s median. The average overall was 56.1% of running backs above the median.
+
+Tight ends had zero weeks with at least 50% of players above the median, with an average of 38.9%.
+
+Week 9 is the only week that tight ends did not have the lowest percentage; 48.8% of tight ends scored above the weekly median of 4.6 points, while only 47.7% of wide receivers scored above the median. This is likely due to stand-out performances by Pat Freiermuth and George Kittle, who had their highest and second-highest scoring games of the season, respectively, during Week 9. On the wide receiver side, many of the typical stars like Cooper Kupp and Tyreek Hill vastly underperformed.
+
+Overall, running backs took the title of most consistently “good”, winning with the highest proportion of players above the median for 12 weeks, while wide receivers had the highest proportion the other five weeks. This corroborates the observation in the previous section that running backs have more depth than the other positions.
+
+Most Predictable
+
+Another useful metric to help fantasy managers decide which position to fill the FLEX spot with is predictability. In order to measure this, we took the difference between the projected (by numberFire) points and actual scored fantasy points for every player and totaled it over the whole season for each position.
+
+Surprisingly, running backs were massively overprojected, scoring 2041 less fantasy points over the season than they were projected. Typically, running backs are considered some of the highest-scoring players on fantasy teams, which may cause an inadvertent bias for a projector. Wide receivers were the most predictable, scoring only 40 points more than the projections. Tight ends were underpredicted, with a +260 point difference.
+
+This metric is incredibly important because many fantasy managers rely on the projections of professionals to build their roster each week. Knowing that the projections for wide receivers are typically very close to their actual points scored makes that position an attractive pick.
+
+Additionally, we charted the difference between the projected and actual points for each position by week to see how accurate the predictions were on a regular basis.
+
+While wide receivers had some weeks with significant differences, they evened out in the end. Tight ends straddled the line of zero difference pretty closely but trended above the line. Running backs, however, scored anywhere from approximately 50 to 200 points less than the projections every single week. It is important to note that this could very well be the fault of the algorithm used by numberFire to make their projections, but it is still a useful and interesting metric with which to compare the positions.
+
+Conclusion
+
+Each metric gave a potentially different result in terms of the winning FLEX position, but it can be summed up as the following: wide receivers make the most reliable pick in terms of predictability, while running backs are typically the highest-scoring and most consistently “good” option. It is ultimately up to the fantasy manager to decide between playing it safe with a wide receiver or risky with the potential for high reward with a running back. Although tight ends had the highest positive difference between their projected and actual points, they do not score nearly as many points as the other positions even when over-performing, so they are almost always not the best option.
+
+There are also limitations that need to be mentioned for this analysis of the FLEX position. In reality, fantasy football managers will typically fill their standard set of positions first and then fill their FLEX position with their second– or third-best wide receiver/running back/tight end. This complicates things, which is why we chose to focus on just comparing the three positions. Additionally, fantasy football lineups and rosters are ever-changing depending on injuries, projections, and what types of players managers have available. It’s impossible to know which position will perform the best in the drastically different weeks that professional football offers, but this analysis hopefully provides a better understanding.
+
+Sources
+
+http://www.fantasyaftermath.com/#
+
+https://www.numberfire.com/

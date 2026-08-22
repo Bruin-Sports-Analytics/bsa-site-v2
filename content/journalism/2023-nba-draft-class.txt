@@ -1,0 +1,89 @@
+Introduction
+
+The talent level in the National Basketball Association (NBA) only grows yearly, and this also seems to be the case for the upcoming draft class. With the unreal hype around this year’s top prospect, Victor Wembanyama, many expect him to make a significant impact in his first season in the NBA. After the San Antonio Spurs secured the first overall pick in this year's upcoming draft, many have placed immense pressure on Wembanyama to drastically change the team’s losing record.
+
+With that being said, however, many underrate the difficulty of the transition from the EuroLeague or college to the NBA, likely due to the success of recent young stars like Luka Doncic or Zion Williamson, who seamlessly transitioned to stardom in the best basketball league in the world. It is not uncommon to see players who were phenomenal college or European players struggle in their rookie seasons, as the transition is a significant leap, but we have also seen players shine as they step into the league. So, with that being said, the predictability of the performance of rookies in the league can be quite challenging, but by examining the relationship between college/professional statistics and NBA rookie year performance, we seek to forecast a player's first-year statistics based on their pre-NBA achievements, which can provide early indicators of player potential and help shape expectations for the next generation of NBA stars.
+
+Methodology
+
+We gathered the rookie and pre-NBA stats of the top 5 picks from the past 20 years and put them into a spreadsheet, displaying the variables defined below.
+
+Predictor Variables
+
+General Information: Draft pick, position played, height, weight.
+
+Pre-NBA Location: The college division or professional league each player played in the year prior to being drafted.
+
+PTS: Points per game the player averaged the year before they were drafted.
+
+REB: Rebounds per game the player averaged the year before they were drafted.
+
+AST: Assists per game the player averaged the year before they were drafted.
+
+STL: Steals per game the player averaged the year before they were drafted.
+
+BLK: Blocks per game the player averaged the year before they were drafted.
+
+TOV: Turnovers per game the player averaged the year before they were drafted.
+
+FG%: Field goal percentage the player averaged the year before they were drafted.
+
+3P%: Three point percentage the player averaged the year before they were drafted.
+
+Predicted Variables
+
+PTS: Points per game
+
+REB: Rebounds per game
+
+AST: Assists per game
+
+STL: Steals per game
+
+BLK: Blocks per game
+
+TOV: Turnovers per game
+
+FG%: Field goal percentage
+
+3P%: Three point percentage
+
+The Regression
+
+So, we developed a linear regression model to predict the rookie year stats of projected top 5 picks Victor Wembanyama, Scoot Henderson, Brandon Miller, Amen Thompson, and Jarace Walker by using the stats of the top 5 picks in the past 15 years as training data. Before developing the model, we first tried to see which variables we’re analyzing that possibly had the highest correlation to rookie year stats. In order to find any correlations between the predictor variables and the rookie year stats, we normalized the data, calculated the correlation coefficient, and mapped them out on a heatmap that looks like this:
+
+There were definitely some predictor variables that stood out in this map. For example, height and weight has a pretty high correlation with the amount of assists in their rookie season, which logically makes sense, as guards are usually shorter and smaller and they average more assists than big men, who are taller and bigger. However, it was pretty interesting to see that pre-nba location did not seem to have a huge correlation with the rookie year stats, as it might seem logical that if one played in a harder conference/league before the NBA, they might perform better in the league. The draft pick a player was selected by also had a decent correlation with the amount of points they would score in their rookie season, so these were all variables that we paid attention to when building our model.
+
+With that in mind, we then implemented our linear regression model for the projected top 5 picks in the 2023 NBA draft. The model produced a mean-squared error of 2.3 and a r-squared coefficient of 0.4. Mean-squared error measures the averaged squared difference between actual and predicted values, and the r-squared coefficient represents the proportion of variance in the dependent variable that can be explained by the independent variable. To get a better visualization of these numbers, here is a graph of our model predictions.
+
+We can see from the comparison of the blue points and the red points that there is a good amount of correlation between our predicted numbers and the actual numbers of past rookies.
+
+Moving onto the draft, here’s a little bit about these players if you aren’t familiar with them:
+
+Victor Wembanyama: The consensus number one pick, Victor Wembanyama is a 7’2’’ center that can seemingly do anything: shoot, playmake, create his own shot, protect the rim, and more. The main concern with him is his size, as he is only around 210 pounds.
+
+Scoot Henderson: Despite his height at 6’2”, Scoot Henderson is an explosive point guard with a 6’9” wingspan. A talented slasher, Scoot is also a good playmaker and has a very crafty handle. His jumpshot is still improving, and his defensive potential is sky high.
+
+Brandon Miller: Brandon Miller, a 6’9” small forward, is considered one of the best 3 point shooters in the draft. With his lanky frame, he can get his shot off over many players, but it will be interesting to see him develop his finishing at the rim as well as his handle to make plays off the dribble.
+
+Amen Thompson: Possibly the best athlete in the draft, Amen Thompson is a 6’7” shooting guard from Overtime Elite. He’s a great ball handler and playmaker, but his shooting is a concern, as he struggled from the 3 point and free throw line last season.
+
+Jarace Walker: At 6’8” 240 lbs, Jarace Walker enters the draft with a body and power to match current professionals. A great rebounder and slasher, Walker is also very quick on his feet, making him a very good defender as well. His jump shot shows promise, and his playmaking and isolation scoring are areas to improve.
+
+With this information in mind, here are the predictions of how these 5 will perform in their rookie seasons.
+
+Looking at these predictions, it seems that Wembanyama is the best player out of the projected top 5 picks. It seems like his size is the leading reason why he is the best statistical scorer and rebounder out of these 5 players. Interestingly enough, none of the top 5 picks really stood out in terms of shooting the ball, as none of them cracked 32% shooting from the 3 point line and only two of them shot the ball over 45% from the field. In terms of the 2nd best prospect in the draft, it seems like a toss up between Henderson and Miller, based on these stats. Both weren’t the best shooters; Henderson was significantly better in terms of assists, and Miller was slightly better in terms of rebounding and scoring. At the end of the day, it still seems like the original rankings of the 5 prospects will still stand, but the actual order in which they get drafted, besides Wembanyama, may depend on the positional needs of the team drafting.
+
+Conclusions and Limitations
+
+We must note that there are many other factors that influence the performance of a player once they enter the NBA. For instance, hyped prospect Chet Holmgren went and got drafted 2nd overall by the Oklahoma City Thunder in the 2022 draft but sat out the entire year due to a foot injury, thus giving zero data in our study for a valuable prospect. Or, a couple players like Joel Embiid or Ben Simmons sat out their first year, so their rookie year stats may feel slightly inflated due to the fact that they were practicing and training around real NBA players for a whole year. Additionally, the data we collected is not the largest, as we only collected the stats for around 100 players, so the predictions can be made more accurate with enlargement of the dataset, as they would help the model learn from more outliers in the data. Especially since we only extracted data from the top 5 picks, the database could definitely be enlarged if we collected more data from other prospects drafted, not just the top 5 picks. There were also some factors that we did not take into account, such as the team the player was drafted by, the offensive system said team uses, injuries during the season, etc. Overall, with the next generation of NBA stars entering the draft soon, we look forward to seeing how our predictions compare to the final stats of the top 5 picks in the 2023 NBA draft.
+
+Sources
+
+https://www.basketball-reference.com/draft/
+
+https://www.sports-reference.com/cbb/
+
+https://nbadraftroom.com/p/2023-nba-mock-draft/
+
+https://www.gettyimages.com/

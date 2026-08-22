@@ -1,0 +1,131 @@
+Introduction
+
+The English Premier League boasts some of the most intimidating stadiums in the world of football. No opposing team would fancy playing in Liverpool’s Anfield Stadium enveloped by an army of Red Kops, or on a cold, wet Tuesday night in Stoke City’s Britannia Stadium. Hence, a widely acknowledged concept in football is the phenomenon of home-field advantage - a tendency for teams to perform better when playing in their home stadium compared to playing away in an opposing team’s stadium.
+
+Various factors contribute to this phenomenon. First of all, since most games are played at home, teams are more accustomed to the playing conditions of their home stadium, ranging from weather to pitch dimensions to playing surfaces. Familiarity with their surroundings makes the players feel more at ease, which reduces tensions in their muscles, and hence, the likelihood of committing unforced errors. On the contrary, away teams are fatigued by long travel distances (and potentially jet lag from differing time zones). This leads to a diminished level of stamina, resulting in lethargic performances.
+
+Moreover, the presence of fans is arguably the primary contributing factor. Dubbed the 12th player in football, fans wield significant influence over the team they support. When teams play in their home stadium engulfed in the thunderous roars of their fans, not only does it boost team morale, which translates into more confident performances out on the pitch, it also instills a sense of nervousness in their opponents. A notable example occurred in the 2018-19 Champions League semi-finals. Overwhelmed by a rocking army of Liverpool supporters, even a superior Barcelona team led by a prime Lionel Messi crumbled under pressure, eventually succumbing to a humiliating 0-4 defeat.
+
+This raises the question: is this phenomenon an isolated incident, or does it represent a consistent trend? In this article, we will compare the home and away performances of the 20 teams in the 2022-23 Premier League season through insightful visualizations, unraveling both general and unexpected trends.
+
+Terms and Metrics
+
+There are 380 games played in total in the 2022-23 Premier League Season, with each of the 20 teams playing 19 home games and 19 away games respectively. These are the definitions and explanations to the terms and metrics we will be using in our analysis.
+
+Term / Metric
+
+Definition
+
+Home Team
+
+Team that is playing at their own stadium
+
+Away Team
+
+Team that is playing at the opponent's stadium
+
+Average Points Won per Game
+
+The winning team gains 3 points, while the losing team gains 0. In the event of a draw, both teams gain 1 point each. The average points won per game reflect a team’s average result across a season.
+
+Average Goals Scored per Game
+
+Measures a team’s offensive output across a season
+
+Goal Difference (GD)
+
+Number of Goals Scored - Number of Goals Conceded
+
+Average Goal Difference per Game
+
+Measures the difference between a team’s offensive output and defensive output across a season
+
+Expected Goal (XG)
+
+Probability of a shot resulting in a goal. If a team generates many high-quality goal-scoring chances but fails to convert most of them, their expected goal is high but number of goals scored is low, and vice versa. Since a team could struggle to score goals due to bad luck, low number of goals scored is not indicative of poor offensive performance. Instead, the team’s expected goal is used to measure their overall offensive performance.
+
+Expected Goal Difference (XGD)
+
+Sum of Expected Goals Scored - Sum of Expected Goals Conceded
+
+Average Expected Goal Difference per Game
+
+Measures the difference between a team’s offensive performance and defensive performance across a season
+
+Upset
+
+A lower-ranked team drawing or winning a higher-ranked team, with the two teams having a rank gap of at least 10 places in the final league standings. For example, 17th-placed Everton winning runners-up Arsenal.
+
+Overview of 2022-23 Season
+
+We web-scraped a dataset from FBref that comprises statistics from all the 380 games in the 2022-23 Premier League season. Based on existing features, we created new metrics such as Points Won and Expected Goal Difference, which are the key features that we will be analyzing.
+
+First, we plotted a bar chart illustrating the results of the home team across all 380 games. Impressively, close to half of the games ended with a victory for the home team, whereas the away team emerged victorious in merely a quarter of the games. This stark contrast perfectly underscores the phenomenon of home advantage, since the home team has almost double the chance of winning than the away team.
+
+Statistical Proof of Home Advantage
+
+To statistically prove the existence of home advantage, we performed a two-sample T-test based on the alternative hypothesis that a team wins more points at home than away. The first sample consists of the total home points won for each team, while the second sample consists of their total away points won.
+
+Before conducting the two-sample T-test, there are several assumptions that we have to verify. First of all, the density plot below indicates that both samples exhibit a normal distribution.
+
+However, given the relatively small sample size (20), relying solely on the density plot may not be sufficient to conclude that both samples are normally distributed. Fortunately, the results of the Shapiro-Wilk test align with our observations from the density plot. The p-values for each sample (0.96 and 0.40) are much larger than the significant value of 0.05, so we can conclude that the distribution of both samples are not significantly different from a normal distribution.
+
+In addition, we checked for homoscedasticity using the Bartlett test. Since the p-value of 0.41 is much larger than the significant value of 0.05, there is insufficient evidence to conclude that the two samples have different variances. With these assumptions validated, we proceeded with the two-sample T-test.
+
+After performing the T-test at a significance level of 0.05, a p-value of 0.000381 is obtained. Since the p-value is much smaller than the significance level, we reject the null hypothesis and conclude that there is sufficient evidence to support our hypothesis that a team wins more points at home than away. Therefore, both the bar chart and the subsequent T-test results corroborate our hypothesis, affirming the existence of home advantage.
+
+Team Breakdown - Attack
+
+Having obtained a broad overview of home advantage in the Premier League, our focus now shifts to a detailed examination at the team level. We measured each team’s offensive prowess based on the total number of goals scored in the season. Since 18 out of 20 teams scored more goals at home than away, it is apparent that teams attack more effectively at home than away, providing further proof of home advantage.
+
+Upon deeper analysis, one interesting trend comes to fore. In the bar chart above, teams are ranked based on their final league standings, from champion Manchester City to Southampton languishing last. While most teams scored significantly more goals at home than away, a distinct trend is observed among the bottom-ranked teams, with 5 out of 6 of them scoring about the same number of home and away goals.
+
+This trend could be attributed to the fact that no matter playing at home or away, the lower-ranked teams are often perceived to be the underdogs, so they tend to adopt a predominantly defensive strategy. Their primary objective is to secure a draw by maintaining defensive solidity rather than pursue an abundance of goals, with the hope of capitalizing on counter-attacking opportunities to score a solitary goal. Therefore, such defensive approaches result in a consistently low number of goals scored by these lower-ranked teams, irrespective of the venue, as seen in the bar chart.
+
+Team Breakdown - Defense
+
+In addition, we measured each team’s defensive solidity based on the total number of goals conceded in the season. Since 16 out of the 20 teams conceded fewer goals at home than away, it is evident that teams defend more effectively at home than away, which further reinforces the home advantage phenomenon.
+
+Surprisingly, the top two teams (Manchester City and Arsenal) conceded more goals at home than away. Albeit counter-intuitive, this trend can be attributed to their formidable home advantage. Fueled by overwhelming superiority and confidence when playing at home, both Man City and Arsenal adopt an aggressively attack-minded approach. As evident in the breakdown of total goals scored by teams, these two powerhouses scored double, or even triple, the number of home goals compared to other teams. Moreover, data from Markstats reveal that out of all 20 teams, they hold the highest defensive line at home (the only 2 teams that exceeded 50 meters). However, that leaves acres of space behind their defensive line for opponents to counter-attack, resulting in a higher chance of conceding goals at home.
+
+Another unexpected observation is the stark contrast between Manchester Utd’s home and away defensive records. While boasting the best home defensive record with a mere 10 goals conceded, their defensive resilience falters significantly when playing away, resulting in one of the leakiest defensive records on the road.
+
+Upon closer examination, 3 out of the 19 away games played by Man Utd contributed to 52% of the away goals conceded - 4 against Brentford, 6 against Man City and 7 against Liverpool. Excluding these outlier matches, Man Utd conceded an average of just 1 goal per away game, which is notably lower than the league average of 1.63. Hence, this is indicative of Man Utd’s defensive solidity for the majority of away games, which aligns with their exceptional home defensive record. This begs the question - what led to Man Utd’s appalling defensive performance in those 3 games?
+
+Fragile Mentality: In all 3 games, Man Utd conceded numerous goals in quick succession - 4 goals in 25 minutes against Brentford, 3 goals in 10 minutes against Man City and 3 goals in 7 minutes against Liverpool. These instances underscore the lack of mental resilience among Man Utd players when faced with setbacks. After conceding the first goal, self-doubt and panic creep in, which disrupts their ability to reorganize their defensive shape. Opponents would take advantage of this period of low confidence to mount even more pressure on the Man Utd defense, resulting in further chaos amongst the Man Utd defense and more goals conceded.
+
+Individual Errors: Some of the goals conceded were due to individual errors from Man Utd players, including inaccurate passes, poor positioning and lapses in concentration. Noteworthy examples include De Gea’s fumble that led to Brentford’s first goal and his misplaced pass that gifted Brentford their second, as well as Martinez’s uncharacteristic stumble in the lead-up to Liverpool’s third. There could be a plethora of factors behind these individual mistakes, such as a lack of confidence or ineffective communication among players on the pitch.
+
+These two factors are closely intertwined. When one player commits an individual error, it sends ripples throughout the entire team. Amplified by their fragile mentality, it casts a shadow of anxiety that unsettles the team’s collective composure, leading to a domino effect of defensive errors and additional goals conceded.
+
+Apart from the 3 anomalies, Man Utd’s defense showcased consistent solidity throughout the season, ending with a league-high 17 clean sheets (games with 0 goals conceded). Nonetheless, their defense remained superior at home compared to away, with only 10 home goals conceded and a whopping 11 clean sheets out of 19 home games.
+
+Upsets
+
+Not only does home advantage elevate team performances in general, it also increases the likelihood of lower-ranked teams securing wins or draws against higher-ranked teams, commonly known as upsets. In the 2022-23 Premier League season, there were a total of 31 upsets, comprising 10 wins and 21 draws. 70% of the wins (7/10) and 57% of the draws (12/21) occurred on home turf, indicating that playing at home boosts the chances of inferior teams achieving favorable results against superior opponents.
+
+Furthermore, we observe from the boxplot that lower-ranked teams are expected to score around 0.7 more goals in home upsets than away upsets, which shows that they attack more effectively at home. Intriguingly, in over half of the away upsets, lower-ranked teams are expected to score fewer than 1 goal. This suggests a markedly defensive approach when playing away, so the goals scored are often results of a solitary well-executed counterattack, a fortuitous finish, or the opponents committing a defensive howler. Thus, away upsets are more reliant on fortune than dominant performances, which is unsustainable in the long run.
+
+Stadium Attendance
+
+Next, we move on to analyzing how the number of fans attending a game influences the home performances of Premier League teams. Each data point in the scatter plots corresponds to 1 of the 20 teams, with its x-value representing the team’s average stadium attendance, and its y-value representing the team’s average per game of a particular performance metric. To illuminate the relationship between stadium attendance and the 4 performance metrics, we plotted linear regression lines that best fit the data points. The regression lines, along with their correlation coefficients, reveal a moderately positive relationship between stadium attendance and home team performance.
+
+However, it is crucial to note that correlation does not imply causation. A third variable may exist that positively correlates with both stadium attendance and home team performance, leading to simultaneous increases in both. A prime example is the financial power of Premier League teams. Wealthier teams can invest into constructing larger stadiums, resulting in a higher attendance. At the same time, their financial muscle allows them to acquire top-tier football talents through exorbitant transfer fees and lucrative salaries, which in turn attracts more fans to watch their games. Therefore, despite the observed positive correlation, we cannot definitively conclude that increased fan attendance directly causes improved home team performance. This leads us on to the following question, what if there are no fans at all?
+
+Importance of Fans
+
+The outbreak of Covid-19 compelled us to value many things that we used to take for granted. In the world of football, it was the fans. The restrictions on crowd gatherings, implemented to curb the spread of the virus, led to the exclusion of fans from stadiums throughout the 2020-21 season. This unprecedented circumstance dramatically transformed the football landscape, turning the once roaring stadiums into ghostly arenas. Without the burning passion of the fans, the value of playing at home diminished significantly. To highlight the irreplaceable role of fans, we conducted a comparative analysis of five performance metrics - Points Won, Goals Scored, Goals Conceded, Goal Difference, and Expected Goal Difference - across Premier League teams between the 2020-21 (Covid) and 2022-23 (Post-Covid) seasons.
+
+As depicted in the radar plot, teams fared poorer across all 5 metrics during the Covid season. Beyond securing fewer points, teams demonstrated subpar overall performances, which was indicated by a lower expected goal difference. The decline extended to both offensive and defensive aspects, with fewer goals scored and a higher number of goals conceded. Therefore, the empty stadiums undoubtedly contributed to the notable decline in the level of home performances.
+
+While it may be tempting to attribute the inferior home performances solely to the absence of fans, the radar chart does not paint the full picture. Apart from the absence of fans, there could be a myriad of underlying factors that contributed to this decline. For instance, the interruption of Premier League football between March - June 2020 disrupted the players’ competitive rhythm, preventing them from playing competitive football, let alone in their home stadiums. Upon the resumption of Premier League football, players need time to readjust and regain familiarity with the unique playing conditions of their home grounds. Furthermore, considering the tumultuous times during Covid, poorer performances might purely be a reflection of the mental and physical fatigue that not just the players, but all of us, were suffering from. With so much on their minds, it must have been tough for them to fully focus on playing football. Therefore, although the absence of fans is undoubtedly a pivotal factor in the decline of home performances, it is not the sole contributor.
+
+Conclusion
+
+The 0-4 humiliation that Barcelona suffered against Liverpool in the boisterous and hostile Anfield Stadium was definitely not a one-off event. Not only does home advantage elevate the attacking and defensive performances of Premier League teams, it also increases the likelihood of lower-ranked teams pulling off upsets against superior opponents. As proven by the analyses on stadium attendance and Covid vs Post-Covid performances, the presence of fans is the very essence that breathes life into the phenomenon of home-field advantage. Therefore, teams are splurging billions into stadium renovations and market expansion to attract more fans to attend games, thus transforming their stadiums into fortresses just like Anfield.
+
+We wish to express our sincerest gratitude to Rose Yang, Faderagao Vincent Ace Macaraig and Aaron Tan Keng Yik for their invaluable insights and advice.
+
+https://fbref.com/en/comps/9/schedule/Premier-League-Scores-and-Fixtures
+
+https://m.allfootballapp.com/news/EPL/Arsenal-2-0-Southampton-Lacazette-and-Mkhitaryan-send-Gunners-to-4th-place/1116435
