@@ -64,16 +64,80 @@ export function JournalismExplorer() {
   const startCount = filtered.length === 0 ? 0 : (page - 1) * ARTICLES_PER_PAGE + 1;
   const endCount = Math.min(page * ARTICLES_PER_PAGE, filtered.length);
 
-  const handlePageChange = (newPage: number) => {
+  const handlePageChange = (newPage: number, shouldScroll: boolean = true) => {
     if (newPage < 1 || newPage > totalPages || newPage === page) return;
     setCurrentPage(newPage);
-    if (explorerRef.current) {
+    if (shouldScroll && explorerRef.current) {
       const topOffset = explorerRef.current.getBoundingClientRect().top + window.scrollY - 100;
       window.scrollTo({ top: Math.max(0, topOffset), behavior: "smooth" });
     }
   };
 
   const pageNumbers = getPageNumbers(page, totalPages);
+
+  const renderPaginationNav = (isTop: boolean = false) => {
+    if (totalPages <= 1) return null;
+    return (
+      <nav
+        className={`${styles.pagination} ${isTop ? styles.topPagination : ""}`}
+        aria-label={`${isTop ? "Top" : "Bottom"} Pagination Navigation`}
+      >
+        <button
+          type="button"
+          className={`${styles.pageBtn} ${isTop ? styles.topPageBtn : ""}`}
+          onClick={() => handlePageChange(page - 1, !isTop)}
+          disabled={page === 1}
+          aria-label="Go to previous page"
+        >
+          <ChevronLeft size={isTop ? 16 : 18} aria-hidden />
+          <span className={styles.btnLabel}>Previous</span>
+        </button>
+
+        <div className={styles.pageNumbers}>
+          {pageNumbers.map((num, i) => {
+            if (typeof num === "string") {
+              return (
+                <span
+                  key={`ellipsis-${isTop ? "top" : "bot"}-${i}`}
+                  className={`${styles.ellipsis} ${isTop ? styles.topEllipsis : ""}`}
+                  aria-hidden
+                >
+                  {num}
+                </span>
+              );
+            }
+
+            const isCurrent = num === page;
+            return (
+              <button
+                key={`${isTop ? "top" : "bot"}-${num}`}
+                type="button"
+                className={`${styles.pageNumberBtn} ${isTop ? styles.topPageNumberBtn : ""} ${
+                  isCurrent ? styles.activePage : ""
+                }`}
+                onClick={() => handlePageChange(num, !isTop)}
+                aria-current={isCurrent ? "page" : undefined}
+                aria-label={`Page ${num}`}
+              >
+                {num}
+              </button>
+            );
+          })}
+        </div>
+
+        <button
+          type="button"
+          className={`${styles.pageBtn} ${isTop ? styles.topPageBtn : ""}`}
+          onClick={() => handlePageChange(page + 1, !isTop)}
+          disabled={page === totalPages}
+          aria-label="Go to next page"
+        >
+          <span className={styles.btnLabel}>Next</span>
+          <ChevronRight size={isTop ? 16 : 18} aria-hidden />
+        </button>
+      </nav>
+    );
+  };
 
   return (
     <div className={styles.explorer} ref={explorerRef}>
@@ -111,11 +175,7 @@ export function JournalismExplorer() {
             </>
           )}
         </span>
-        {totalPages > 1 && (
-          <span className={styles.pageIndicator}>
-            Page {page} of {totalPages}
-          </span>
-        )}
+        {totalPages > 1 && renderPaginationNav(true)}
       </div>
 
       {filtered.length === 0 ? (
@@ -128,57 +188,7 @@ export function JournalismExplorer() {
             ))}
           </div>
 
-          {totalPages > 1 && (
-            <nav className={styles.pagination} aria-label="Pagination Navigation">
-              <button
-                type="button"
-                className={styles.pageBtn}
-                onClick={() => handlePageChange(page - 1)}
-                disabled={page === 1}
-                aria-label="Go to previous page"
-              >
-                <ChevronLeft size={18} aria-hidden />
-                <span className={styles.btnLabel}>Previous</span>
-              </button>
-
-              <div className={styles.pageNumbers}>
-                {pageNumbers.map((num, i) => {
-                  if (typeof num === "string") {
-                    return (
-                      <span key={`ellipsis-${i}`} className={styles.ellipsis} aria-hidden>
-                        {num}
-                      </span>
-                    );
-                  }
-
-                  const isCurrent = num === page;
-                  return (
-                    <button
-                      key={num}
-                      type="button"
-                      className={`${styles.pageNumberBtn} ${isCurrent ? styles.activePage : ""}`}
-                      onClick={() => handlePageChange(num)}
-                      aria-current={isCurrent ? "page" : undefined}
-                      aria-label={`Page ${num}`}
-                    >
-                      {num}
-                    </button>
-                  );
-                })}
-              </div>
-
-              <button
-                type="button"
-                className={styles.pageBtn}
-                onClick={() => handlePageChange(page + 1)}
-                disabled={page === totalPages}
-                aria-label="Go to next page"
-              >
-                <span className={styles.btnLabel}>Next</span>
-                <ChevronRight size={18} aria-hidden />
-              </button>
-            </nav>
-          )}
+          {totalPages > 1 && renderPaginationNav(false)}
         </>
       )}
     </div>
