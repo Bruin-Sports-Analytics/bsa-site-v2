@@ -1450,10 +1450,10 @@ export const outcomes = [
   { name: "UCLA Athletics", category: "Sports", logo: "/assets/logos/ucla-athletics.png", logoLight: "/assets/logos/modes/ucla-athletics-light.svg", logoDark: "/assets/logos/modes/ucla-athletics-dark.svg", approvedForDisplay: true },
   { name: "Seattle Mariners", category: "Sports", logo: "/assets/logos/seattle-mariners.png", logoLight: "/assets/logos/modes/seattle-mariners-light.svg", logoDark: "/assets/logos/modes/seattle-mariners-dark.svg", approvedForDisplay: true, prestige: true },
   { name: "Miami Dolphins", category: "Sports", logo: "/assets/logos/miami-dolphins.svg", logoLight: "/assets/logos/modes/miami-dolphins-light.svg", logoDark: "/assets/logos/modes/miami-dolphins-dark.svg", approvedForDisplay: true, prestige: true },
-  { name: "Detroit Lions", category: "Sports", logo: "/assets/logos/detroit-lions.svg", logoLight: "/assets/logos/modes/detroit-lions-light.svg", logoDark: "/assets/logos/modes/detroit-lions-dark.svg", logoScale: 1.2, approvedForDisplay: true, prestige: true },
-  { name: "Chicago Cubs", category: "Sports", logo: "/assets/logos/chicago-cubs.svg", logoLight: "/assets/logos/modes/chicago-cubs-light.svg", logoDark: "/assets/logos/modes/chicago-cubs-dark.svg", logoScale: 1.15, approvedForDisplay: true, prestige: true },
+  { name: "Detroit Lions", category: "Sports", logo: "/assets/logos/detroit-lions.png", logoScale: 1.15, approvedForDisplay: true, prestige: true },
+  { name: "Chicago Cubs", category: "Sports", logo: "/assets/logos/chicago-cubs.png", logoScale: 1.15, approvedForDisplay: true, prestige: true },
   { name: "LA Galaxy", category: "Sports", logo: "/assets/logos/la-galaxy.svg", logoLight: "/assets/logos/modes/la-galaxy-light.svg", logoDark: "/assets/logos/modes/la-galaxy-dark.svg", logoScale: 1.15, approvedForDisplay: true, prestige: true },
-  { name: "Atlanta Braves", category: "Sports", logo: "/assets/logos/atlanta-braves.svg", logoLight: "/assets/logos/modes/atlanta-braves-light.svg", logoDark: "/assets/logos/modes/atlanta-braves-dark.svg", logoScale: 1.2, approvedForDisplay: true, prestige: true },
+  { name: "Atlanta Braves", category: "Sports", logo: "/assets/logos/atlanta-braves.png", logoScale: 1.15, approvedForDisplay: true, prestige: true },
   { name: "OKC Thunder", category: "Sports", logo: "/assets/logos/okc-thunder.png", logoLight: "/assets/logos/modes/okc-thunder-light.svg", logoDark: "/assets/logos/modes/okc-thunder-dark.svg", approvedForDisplay: true, prestige: true },
   { name: "PFF", category: "Sports Analytics", logo: "/assets/logos/pff.png", logoLight: "/assets/logos/modes/pff-light.svg", logoDark: "/assets/logos/modes/pff-dark.svg", logoScale: 1.8, approvedForDisplay: true },
   // Technology
