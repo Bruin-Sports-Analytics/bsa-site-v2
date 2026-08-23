@@ -252,8 +252,7 @@ export default function JournalismArticlePage({ params }: Props) {
           <span className="eyebrow">Data Journalism · {article.sport}</span>
           <h1 className={styles.title}>{article.title}</h1>
           <p className={styles.authors}>{formatAuthors(article.authors)}</p>
-          {article.summary && <p className={styles.summary}>{article.summary}</p>}
-          <div className="tag-row" style={{ marginTop: 10 }}>
+          <div className="tag-row" style={{ marginTop: 14 }}>
             <span className="tag">{article.date}</span>
             <span className="tag">{article.readTime} min read</span>
             {article.techStack?.map((item) => (

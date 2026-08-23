@@ -35,9 +35,7 @@
   align-items: baseline;
   justify-content: space-between;
   margin-bottom: 24px;
-  max-width: 840px;
-  margin-left: auto;
-  margin-right: auto;
+  width: 100%;
 }
 
 .externalLink {
@@ -60,8 +58,7 @@
 }
 
 .articleBody {
-  max-width: 840px;
-  margin: 0 auto;
+  width: 100%;
   color: var(--text-primary);
   text-align: left;
 }
