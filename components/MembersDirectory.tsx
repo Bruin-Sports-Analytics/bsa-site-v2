@@ -29,8 +29,8 @@ export function MembersDirectory() {
             <input value={query} onChange={(event) => setQuery(event.target.value)} placeholder="Search members" />
           </label>
           <select value={team} onChange={(event) => setTeam(event.target.value)} aria-label="Filter by team">
-            <option>All</option>
-            {teams.map((item) => <option key={item}>{item}</option>)}
+            <option value="All">All Teams</option>
+            {teams.map((item) => <option key={item} value={item}>{item}</option>)}
           </select>
         </div>
         <div className="grid five">

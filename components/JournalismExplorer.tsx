@@ -86,13 +86,13 @@ export function JournalismExplorer() {
           />
         </label>
         <select value={sport} onChange={(event) => setSport(event.target.value)} aria-label="Filter by sport">
-          <option>{ALL}</option>
+          <option value={ALL}>All Sports</option>
           {sportOptions.map((item) => (
-            <option key={item}>{item}</option>
+            <option key={item} value={item}>{item}</option>
           ))}
         </select>
         <select value={year} onChange={(event) => setYear(event.target.value)} aria-label="Filter by year">
-          <option>{ALL}</option>
+          <option value={ALL}>All Years</option>
           {yearOptions.map((item) => (
             <option key={item} value={String(item)}>{item}</option>
           ))}
