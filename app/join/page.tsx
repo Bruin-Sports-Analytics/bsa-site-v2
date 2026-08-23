@@ -79,7 +79,7 @@ export default function JoinPage() {
         </div>
       </section>
       <section className="section">
-        <div className="container grid two">
+        <div className="container grid two" style={{ alignItems: "start" }}>
           <article className="card glass glass--strong glass--radius-lg" style={{ padding: 28 }}>
             <span className="eyebrow">Reach out</span>
             <h2 className="section-title" style={{ fontSize: 34 }}>Questions about joining?</h2>

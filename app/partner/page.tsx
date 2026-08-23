@@ -52,7 +52,7 @@ export default function PartnerPage() {
         </div>
       </section>
       <section className="section">
-        <div className="container grid two">
+        <div className="container grid two" style={{ alignItems: "start" }}>
           <article className="card glass glass--strong glass--radius-lg" style={{ padding: 28 }}>
             <span className="eyebrow">Inquiry form</span>
             <h2 className="section-title" style={{ fontSize: 34 }}>Send us your project</h2>
