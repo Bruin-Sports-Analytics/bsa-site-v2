@@ -47,22 +47,22 @@ export function ArticleCard({ article, featured = false }: Props) {
           <div className={styles.thumbnailOverlay} />
         </div>
       ) : null}
-      <span className={styles.thumbnailSport}>{article.sport}</span>
-      <span className={styles.thumbnailMeta}>{article.readTime} min read</span>
     </div>
   );
 
   const bodyElement = (
     <div className={styles.body}>
+      <h3 className={`${styles.title}${featured ? ` ${styles.titleFeatured}` : ""}`}>{article.title}</h3>
+      <p className={styles.authors}>{formatAuthors(article.authors)}</p>
       <div className={styles.meta}>
         <span className={styles.metaLeft}>
+          <span className={styles.sportBadge}>{article.sport}</span>
+          <span className={styles.dot} aria-hidden />
           <span>{article.date}</span>
           <span className={styles.dot} aria-hidden />
           <span>{article.readTime} min read</span>
         </span>
       </div>
-      <h3 className={`${styles.title}${featured ? ` ${styles.titleFeatured}` : ""}`}>{article.title}</h3>
-      <p className={styles.authors}>{formatAuthors(article.authors)}</p>
       {article.summary && <p className={styles.summary}>{article.summary}</p>}
       {article.techStack && (
         <div className={styles.techRow}>
