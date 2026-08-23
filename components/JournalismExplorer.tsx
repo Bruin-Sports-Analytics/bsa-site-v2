@@ -7,7 +7,7 @@ import { ArticleCard } from "@/components/ArticleCard";
 import styles from "./JournalismExplorer.module.css";
 
 const ALL = "All";
-const ARTICLES_PER_PAGE = 30;
+const ARTICLES_PER_PAGE = 24;
 
 // Unique sports (alphabetical) and years (newest first), derived from the data
 const sportOptions = Array.from(new Set(articles.map((a) => a.sport))).sort((a, b) => a.localeCompare(b));
