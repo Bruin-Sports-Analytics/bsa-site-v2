@@ -21,17 +21,28 @@
   flex-direction: column;
   height: 100%;
   text-decoration: none !important;
+  text-decoration-line: none !important;
   color: inherit;
-  outline: none;
+  outline: none !important;
+  border: none;
   -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  user-select: none;
 }
 
+.cardLink,
+.cardLink *,
 .cardLink:hover,
+.cardLink:hover *,
 .cardLink:focus,
+.cardLink:focus *,
 .cardLink:active,
-.cardLink:visited {
+.cardLink:active *,
+.cardLink:visited,
+.cardLink:visited * {
   text-decoration: none !important;
-  outline: none;
+  text-decoration-line: none !important;
+  outline: none !important;
 }
 
 .thumbnail {
@@ -47,21 +58,26 @@
   justify-content: space-between;
   gap: 12px;
   overflow: hidden;
+  overflow: clip;
+  contain: paint;
   isolation: isolate;
   transform: translate3d(0, 0, 0);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
+  box-shadow: inset 0 -2px 0 0 #081726;
 }
 
 .thumbnailImgWrap {
   position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
+  inset: -1px;
+  width: calc(100% + 2px);
+  height: calc(100% + 2px);
   z-index: 0;
   background: #081726;
   border-radius: var(--radius-sm);
   overflow: hidden;
+  overflow: clip;
+  contain: paint;
   transform: translate3d(0, 0, 0);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
@@ -71,19 +87,21 @@
   object-fit: cover;
   object-position: center top;
   transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
-  transform: translate3d(0, 0, 0) scale(1);
+  transform: translate3d(0, 0, 0) scale(1.02);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   will-change: transform;
 }
 
 .card:hover .thumbnailImg {
-  transform: translate3d(0, 0, 0) scale(1.04);
+  transform: translate3d(0, 0, 0) scale(1.06);
 }
 
 .thumbnailOverlay {
   position: absolute;
-  inset: 0;
+  inset: -2px;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
   background: linear-gradient(
     180deg,
     rgba(6, 20, 36, 0.55) 0%,
