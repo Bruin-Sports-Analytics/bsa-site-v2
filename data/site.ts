@@ -1364,19 +1364,49 @@ export const recruitment = {
 
 export const faqs = [
   {
-    category: "Membership",
-    question: "Do I need sports analytics experience to join?",
-    answer: "No. Strong applicants show curiosity, follow-through, and a willingness to learn technical tools through real sports questions."
+    category: "Recruitment",
+    question: "What will I be doing at Bruin Sports Analytics?",
+    answer: "As a member of BSA, you’ll work with other students on sports analytics projects using real data. Most new members begin in Data Journalism, where they choose a research question and build a project with guidance from the Data Journalism leads. As you gain experience, you can transition to a sports team and contribute to larger club specfic projects or projects for outside clients through research, data cleaning, visualization, statistical analysis, dashboards, or machine learning."
   },
   {
     category: "Recruitment",
-    question: "When does Bruin Sports Analytics recruit?",
-    answer: "Our sports groups recruit exclusively in the fall. We accept applications for Data Journalism during winter and spring quarters. Check the Recruitment page for the current cycle's dates."
+    question: "How do project teams operate?",
+    answer: "Team members collaborate on larger-scale projects like those featured on our website. Tasks are assigned based on your skills and the team's needs and can range from research and data cleaning to building dashboards and machine learning models. Most work is completed independently, with weekly meetings to discuss progress, delegate tasks, collaborate, and catch up with teammates."
   },
   {
-    category: "Technical background",
-    question: "What tools do members use?",
-    answer: "Common tools include Python, R, SQL, Tableau, React, GitHub, and statistical modeling libraries. Project needs determine the stack. Experience with web development tools is also a plus."
+    category: "Recruitment",
+    question: "What is the difference between Data Journalism and joining a project team?",
+    answer: "In Data Journalism, you choose a group of roughly three members and develop your own research project on any sports-related topic. On a sports team, you are assigned to a group of roughly 5–10 members based on your preferences. Your team will either develop a new project or contribute to an ongoing project guided by your team lead."
+  },
+  {
+    category: "Recruitment",
+    question: "Will I be able to choose which projects I work on?",
+    answer: "Yes, to an extent. In Data Journalism, you have full control over your project's topic. For sports teams, you will be assigned based on your interests, skills, and team availability."
+  },
+  {
+    category: "Recruitment",
+    question: "Do I need previous data science or analytics experience to join?",
+    answer: "Not at all! We welcome students with an interest in sports, data science, and data analytics. If you have limited experience, we recommend starting in Data Journalism and attending our workshops to build your skills before joining a sports team."
+  },
+  {
+    category: "Recruitment",
+    question: "What is our tech stack, and how familiar do I need to be with it before joining?",
+    answer: "Common tools include Python, R, SQL, Tableau, React, GitHub, and statistical modeling libraries, though the exact stack depends on the project. Web development experience is also a plus. You do not need to be highly experienced with these tools before joining, we are looking for people who are eager to learn and contribute to an engaging club environment."
+  },
+  {
+    category: "Recruitment",
+    question: "What is the expected time commitment for members?",
+    answer: "Members should expect to commit 5+ hours per week, including project work, weekly team meetings, general member meetings, and workshops."
+  },
+  {
+    category: "Recruitment",
+    question: "What does the recruitment process look like?",
+    answer: "Recruitment begins at EAF, where you can meet current members and learn what BSA can offer you and what you can bring to BSA. Applications open after the Data Science Showcase, with strong applicants invited to coffee chats on Tuesday and Wednesday of Week 2. Our first workshop also takes place during this period and is strongly recommended for applicants. Final-round interviews are held Thursday and Friday of Week 2, followed by final decisions."
+  },
+  {
+    category: "Recruitment",
+    question: "When is recruitment?",
+    answer: "Our main recruitment period takes place during the first two weeks of Fall Quarter, with a smaller recruitment period during the first two weeks of Winter Quarter."
   },
   {
     category: "Partnerships",
