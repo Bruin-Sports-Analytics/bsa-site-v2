@@ -1,0 +1,108 @@
+## Introduction and Motivation
+
+Sports analytics is limited by what data can be recorded during a game. But as technology has advanced, so has the ability to find data in hard to reach places. For example, in basketball, defense had been a hard thing to measure - as the only defensive data recorded was blocks and steals - and of course defense in basketball is far more complicated than taking the ball away from an opponent. But through the invention of player tracking via cameras, new advanced data has been unlocked such as a defensive positioning variable and success rate in switching defenders. Similarly, in football, in prior years, attempting to analyze how strong a defensive or offensive lineman was was difficult, but new technologies have been developed to generate stats such as blocking engagement time and pushback force. Both of these examples show how technology creates new data that can lead to insights and analytics not previously known. However, the insights gained from sports analytics are limited by the data that can be measured. And while new measurements and methodologies are being developed all the time for popular sports like basketball, football, and baseball, less popular sports can often be left behind. A prime example of this is the sport of water polo.
+
+### Getting to Know Water Polo: Positions, Strategy, and the Center
+
+Water polo is a sport that is most common in Eastern Europe but has gained popularity in the West Coast of the United States in recent years. In water polo, each team has 6 players that play both offense and defense, in addition to a goalie. While the game at its base is simple - there are some nuances to it. First off, there are 6 offensive positions in water polo. Unlike sports such as basketball or football, player’s positions aren’t set in stone but are areas of the pool.
+
+![Figure 1](/assets/journalism/analytics-in-water-polo/figure-01.jpg)
+
+As shown in the diagram above, there are 6 offensive positions in the pool. These positions are fluid and a player can switch between multiple positions in a single offensive possession. For example, if the player at the 3-position swims to the player in the 2-position, they then become the 2-position player. So rather than having a set position such as point guard or wide receiver, the positions in water polo only refer to the location in the pool. Arguably the most important and unique position in water polo, is the 6-position (aka the center).
+
+**The center** , who is naturally in the center of the offense, is much like a center in basketball. Holding close to the goal, the center looks to gain position to either score or draw an exclusion. **An exclusion** is a common occurrence in water polo and is when a defensive player inhibits an offensive player from scoring in a certain area close to the goal. Like hockey, when a defensive player commits a serious foul, they are excluded from the game for 20 seconds, giving the offense time to attack the goal with 6 players, while the defense only has 5. This is the most important part of water polo in my opinion. Finally, when an outside player (any position but the center) passes the ball to the center it is referred to as an **entry pass** . Again, the center can be any player on any possession, as long as they are in the center of the pool as seen in the diagram.
+
+Simply put, water polo revolves around the center and exclusions. This is mainly because of the existence of a goalie. The farther away the shot from the goal, the more time the goalie has to react and move. So by being far closer to the goal, shots from the center are far more valuable. Of course, the shooters on the outside ring are crucial as well, but the objective of almost any offense in water polo is to enter the ball to the center so that they can score or draw an exclusion. In the highest levels of water polo, a shot from the outside player is often seen as a positive outcome in the eyes of the defense, as the goal of any defense is to take away the center’s opportunity to score.
+
+## Analytics in Water Polo: What’s Missing
+
+While water polo is a complex and nuanced sport, there are clear opportunities for growth in the field of data analytics. As with any sport, a deeper understanding of gameplay, offensive and defensive philosophies, and strategic tendencies can unlock more meaningful insights from the data collected. Unfortunately, the data currently recorded in water polo is extremely limited—and fails to capture the central role of the center position, which is often the focal point of a team’s offense. Below are examples of the typical variables recorded during a game.
+
+![Figure 2](/assets/journalism/analytics-in-water-polo/figure-02.png)
+
+While this data is certainly valuable—much like a basketball box score—it offers limited insight beyond the raw numbers. Sports analytics would remain stagnant if it relied solely on these surface-level stats. In more developed sports like basketball and football, analytics have evolved far beyond basic metrics, allowing teams to better analyze performance and strategy through advanced tools like player tracking, shot quality models, and situational efficiency.
+
+For less popular sports like water polo, however, that same evolution hasn’t happened. The statistics that are measured don’t capture the full complexity of the game—and relying on them alone makes it difficult to generate meaningful analysis. But with growing interest in analytics and improvements in data collection, there is now an opportunity to introduce more sophisticated measurements that better reflect how water polo is actually played.
+
+As someone who has played water polo for eight years—primarily at the center position—I’ve seen firsthand how critical that role is in shaping an offense. The center doesn’t just score; they create opportunities, draw exclusions, and force defenses to collapse.
+
+However, these current statistics fail to capture the sport’s strategic complexity - especially the role of the center position - and by introducing some advanced metrics, we can better employ commonly utilized analytic methods to bring water polo into the modern age of sports analytics.
+
+## New Metrics for Evaluating Water Polo Performance
+
+So, with that motivation, I have devised some meaningful statistics that can be calculated through measurable statistics in game:
+
+- **What position entry passes to the center come from** : when the center gets a pass, understanding where the pass comes from is important - especially if you can find the total proportion of entry passes from each position to see which positions could be vulnerable defensively
+- **What position shots/goals come from** : Unlike basketball, water polo positions aren't fixed to specific players—aside from the center (6 spot) and center guard (3 spot). The other positions (1, 2, 4, and 5) are more fluid, with right-handed players typically favoring the 1–2 side of the cage and left-handed players the 4–5 side. Because of this fluidity, shot location is tied more to areas of the pool than to player roles, making spatial shot data valuable for identifying offensive strengths and defensive vulnerabilities
+
+In addition to these statistics, I have some ideas for more advanced analytics
+
+that can be used for water polo:
+
+- **Expected goals per entry** : How many goals does a team get on average with each entry pass (taking into account how often the center scores along with how often the team scores on 6 on 5s that the center draws). This statistic determines how effective a center is at producing goals in addition to how efficient a team is on converting 6 on 5 opportunities drawn by the center.
+- **Center Usage Rate** : Percentage of possessions that end with a center shot, a turnover, or an exclusion draw. Similar to a basketball usage rate, this statistic measures how reliant a team is on their center, which can help determine the best defense to employ against an opponent
+- **Entry Pass Success Rate** : Measures how often an entry pass actually leads to a clean possession for the center (vs. being deflected, stolen, or forcing a bad pass).
+- **Expected Goal % by Position (xG%)** : Uses historical shooting data to determine if a shot from a certain location is  **high-percentage or low-percentage**  (similar to soccer's xG model)
+- **Possession Efficiency Rating (PERW)** : Measures how effective a team is on a per-possession basis (weighted by center play, outside shots, and counterattacks).
+
+Overall, being able to measure where entry passes come from and where shots come from is a valuable knowledge to have in water polo. Of course, these can be unreliable as they can be very personnel specific. Because players can move around, and of course shooters are naturally different from each other, this variable isn’t perfect. But with enough sample size, you could determine how efficient and effective each player is at each spot 1-6. This would allow for a better understanding of how goals are generated in the front court offense and allow for teams to understand how to better defend.
+
+### Expected Goals per Entry: Measuring Center Efficiency
+
+The most important statistic I believe that could be devised is **expected goals per entry.** This would allow for an accurate gauge of how well a team interacts with their center and performs in 6 on 5 situations. If a center can draw exclusions effectively but the team struggles to score, it may indicate that they need to improve their 6 on 5 offense, rather than their 6 on 6 offense. However, if a team has a low expected goals per entry but a high conversion rate on 6-on-5s, the issue may lie in the center’s inability to draw exclusions or score effectively. Alternatively, the defense may be collapsing on the center in what’s known as a zone — similar to basketball, where defenders guard an area rather than a specific player — in which case the offense may need to be adjusted to better counter this strategy.
+
+To better assess a center’s role and impact within a water polo offense, entry passes should be tracked — including where the pass originates and the outcome of the pass to the center. There are 5 possible results for an entry pass:
+
+1. **The center passes the ball back to the outside players**  - this is the least common result and would not need to be recorded as the center did not attempt a shot or draw an exclusion.
+2. **The defense steals the ball**  from the center resulting in a turnover
+3. **The center draws an exclusion**  or a 5-meter penalty shot (occurs when the foul is more severe than a typical exclusion foul)
+4. **The center shoots and misses**
+5. **The center shoots and scores a goal**
+
+So, with these outcomes we can generate an advanced statistic for how efficient center entry passes are where
+
+- P(Exclusion Draw) = Entry passes that result in exclusions / Total entry passes
+- P(Center Goal) = Entry passes that result in a goal by the center / Total entry passes
+- P(Penalty Draw) = Entry passes that result in a penalty shot drawn / Total entry passes
+
+And let the variable *C* stand for how often a team scores on a 6 on 5 possession and let *F* stand for how often a player scores on a penalty shot.
+
+So expected goals per entry can be calculated as follows:
+
+### =P( Center Goal ) + ( C X P( Exclusion Draw )) + ( F X P( Penalty Draw ))
+
+This number will be in the range of 0 and 1 and will be a metric of how well a center can contribute to a team’s offense. So for example, if a center scores on 40% of entry passes, draws an exclusion 30% of the time, and draws a penalty shot 10% of the time, and the team as a whole has a 50% conversion rate on 6 on 5 and a 70% conversion rate on penalty shots, the expected goals per entry would be 0.4 + ( 0.5 x 0.3 ) + ( 0.1 x 0.7 ) = 0.62
+
+So, this means the expected goals per entry in this example would be 0.62.
+
+## Using Shot Charts to Analyze Offense and Efficiency
+
+Another useful option for analyzing water polo offenses is through a shot chart. Like an NBA shot chart, a water polo shot chart could be used to determine where in a front court offense a team or a specific player is most effective at scoring.
+
+![Figure 3](/assets/journalism/analytics-in-water-polo/figure-03.png)
+
+This is an example of an NBA shooting chart. As seen above the court is divided into zones - and the same can be done with water polo. However, in the NBA this data is generated through overhead cameras that track players movements and locations on the court - which is not an available technology in water polo so there is going to have to be some changes.
+
+Below is my proposed example of a water polo shooting chart:
+
+![Figure 4](/assets/journalism/analytics-in-water-polo/figure-04.png)
+
+Of course, this has far less information than an NBA shooting chart because of the lack of technology or available shooting data. However, there is more nuance to this graphic than meets the eye. Because players can move around in water polo and a player can take a shot from the 2 spot then on the next possession take a shot from the center position (the 6 spot), this chart indicates not which players are most dangerous, but where an offense can succeed, or a defense can succeed.
+
+Not only can this heat map measure shooting output, but it can also visualize additional advanced statistics as well - such as expected goals per entry by position, entry pass success rate, and other position specific statistics. This will allow for a deeper analysis of strengths and weaknesses in an offense and defense - as teams would be able to understand how to better approach their offensive possessions, which areas to shoot from, and which positions result in the most effective entry passes.
+
+Together, these statistics—expected goals per entry, shot location data, and position-based metrics—offer a starting point for bringing more structure and insight into water polo analytics. By quantifying outcomes that were previously left to instinct or game film, coaches and analysts can begin to identify patterns, strengths, and inefficiencies in both offensive and defensive strategies. While these tools are still theoretical, they demonstrate how even basic tracking can open the door to a deeper, more data-driven understanding of the sport.
+
+## Limitations and Conclusion
+
+Of course, there are limitations. These stats are context-dependent and can be influenced by player matchups, coaching styles, team systems, and individual skill sets. A high center usage rate, for instance, might reflect a dominant offensive strategy—or simply a lack of confident outside shooters. Similarly, an entry pass that leads to a turnover might be the result of poor positioning, a well-timed steal, or even a miscommunication—not all of which are captured by the raw numbers. Additionally, these statistics rely on accurate and consistent data collection, which can be difficult without formal infrastructure or dedicated analysts on staff. While they highlight trends and outcomes, they don’t always explain why something is working or failing. For that, complementary tools like film analysis, qualitative scouting, and potentially more advanced tracking systems would be necessary to fully contextualize the numbers and translate them into actionable insight. Despite these challenges, the value in developing and exploring these metrics lies in their potential to push the sport forward. Even imperfect data can uncover patterns and inform better decisions—as we've seen in other sports where analytics have reshaped both strategy and philosophy.
+
+The rise of sports analytics in many respects has led us into the data-driven world we know today. From the controversial era of Moneyball in baseball, to the rise of the three-point shot in basketball, and the new aggressive fourth down strategies in football, data analytics has not only changed how these sports are played, but how they are understood. And that is what data analytics unlocks — a better understanding of what imperfections and inefficiencies exist beneath the surface of a game, and how they can be identified, measured, and ultimately improved.
+
+But not every sport has gotten a bump from this new data revolution; sports like water polo have found themselves behind the curve in this regard. Because the data being recorded is so basic, there is simply no place to grow. That’s why the introduction of new, real-time, easily collectible statistics—like expected goals per entry, entry pass success rate, and center usage rate—is so essential. These metrics don’t just fill in missing gaps in the box score; they offer a framework for how we might start to see the game differently.
+
+Water polo may never have the same mainstream visibility as basketball or football, but that doesn’t mean it should be left out of the analytics era. By tracking what truly drives offense—how the center is used, where shots come from, and what possessions produce results—we can elevate both how the sport is coached and how it’s understood.
+
+[https://6-8sports.com/](https://6-8sports.com/)
+
+[https://www.nba.com/stats](https://www.nba.com/stats)

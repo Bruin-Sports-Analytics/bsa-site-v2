@@ -1,0 +1,53 @@
+### By Atij Mahesh
+
+College football is typically a “testing ground” for specific NFL playbooks and playstyles. Since the 2000s, college football teams have molded their game in a variety of ways: more quarterback options, jet sweeps, and trick plays. These experimental game styles typically are weeded out in college before jumping to the NFL, where one wrong play call can cost teams games, which in turn, cost teams money and glory.
+
+Over the last two decades, some of these gameplay shifts appear to have transferred to the NFL. One noticeable trend is the adoption of designed quarterback runs, where mobile quarterbacks are utilized not only for their passing abilities but also as effective rushers, adding a new dimension to the offense. Another is jet sweeps, which involve a quick lateral handoff to a wide receiver running across the formation, creating opportunities for explosive plays and misdirection.
+
+Deebo Samuel, a wide receiver for the San Francisco 49ers, is a clear-cut example of how the NFL's approach to player positions has evolved over the years. In recent years, 49ers coach Kyle Shanahan has utilized Deebo Samuel as a running back in addition to his receiver responsibilities, which has worked to great success as Samuel is a physical and quick ball carrier. Over his four-year career, Deebo Samuel has over 3200 receiving yards and 12 receiving touchdowns, as well as over 750 rushing yards and 14 rushing touchdowns. As more teams have adopted this versatility, trends in out-of-position players reflect the evolution of the gridiron.
+
+With the remarkable surge in the implementation of designated quarterback run plays and jet sweeps in the 21st century, by examining the rushing data across various positions, we can discern the evolving dynamics and transformations in the utility of specific roles over time.
+
+![Figure 1](/assets/journalism/nfl-position-evolution/figure-01.jpg)
+
+![Figure 2](/assets/journalism/nfl-position-evolution/figure-02.jpg)
+
+The data unequivocally highlights a significant shift in the utilization of receivers in the running game, particularly evident from 2013 onwards. Previously, their involvement in rushing plays was meager, but since then, there has been a consistent rise in both rushing touchdowns and yards attributed to receivers. Interestingly, examining 1994, we observe that fullbacks were responsible for more than half of the yards and touchdowns among non-running backs. However, as the sport has evolved into a faster-paced, pass-oriented league, most teams have phased out fullbacks in today's game, which is why they are absent from the graph after 2013. Although the increased utilization of wide receivers in rushing plays accounts for a portion of the surge in non-running back rushing statistics, it does not solely explain the overall increase.
+
+Performing a standard statistical t-test reveals compelling trends in non-running-back performance over specific periods. In terms of yards gained, there was a notable increase from a mean of 9614.188 in group 1 (1994-2009) to 10139.538 in group 2 (2010-2022). Although the p-value (0.4279) is above the conventional threshold, the confidence interval (-1871.1450, 820.4431) suggests the potential for positive increases in non-running-back yards. Regarding touchdowns, the mean increased from 82.625 in group 1 to 91.69231 in group 2. The confidence interval (-28.28075, 10.14613) also implies the possibility of an increase in non-running back touchdowns. In summary, the overall trends indicate a significant statistical increase in non-running back performance over the specified periods. The observed improvements in non-running back yards and touchdowns, along with the widening confidence intervals, support the notion of a substantial increase in non-running back performance. Based on the available data, there is evidence to suggest a compelling rise in non-running back performance over the specified periods.
+
+![Figure 3](/assets/journalism/nfl-position-evolution/figure-03.jpg)
+
+![Figure 4](/assets/journalism/nfl-position-evolution/figure-04.png)
+
+The line plots also demonstrate an upwards trajectory of wide receivers rushing, however, the spike in non-running back rushing data is primarily due to an increase in quarterback rushing yards and touchdowns. Modern quarterbacks drafted after 2015, especially Lamar Jacskon, Jalen Hurts, and Josh Allen, have contributed greatly towards evolving the game and position. As edge rushers have become quicker, more athletic, and stronger, having an agile and mobile quarterback has proven successful for many teams. In 2022, the [first dual-threat quarterbacks](https://www.nytimes.com/2023/02/10/sports/football/super-bowl-quarterback-mahomes-hurts.html) faced each other in the Super Bowl, marking monumental progress for the position. On the other side of the playing style, most pure Pro Style quarterbacks, such as Drew Brees and Ben Rothlisberger, have struggled to find success in the modern era of the NFL. Additionally, teams such as the Philadelphia Eagles have begun utilizing the goal line quarterback sneak more in recent years, highlighting the massive jump in non-running back rushing touchdowns.
+
+In stark contrast, the surge in non-receiver receiving statistics has not exhibited the same remarkable growth as that of receivers in recent years. This disparity can be attributed to the relatively unchanged roles of tight ends and running backs over the past two decades. Most teams predominantly deploy tight ends for blocking purposes and rely on running backs for rushing duties, resulting in limited changes to their involvement in the passing game.
+
+![Figure 5](/assets/journalism/nfl-position-evolution/figure-05.jpg)
+
+![Figure 6](/assets/journalism/nfl-position-evolution/figure-06.jpg)
+
+Every increase in non-receiver receiving statistics has also been corroborated by an increase in receiver statistics. These plots show how receiving roles have stayed relatively similar from 1994 to 2022, and that wide receivers still dominate pass-catching in the NFL.
+
+In the broader scope of the evolving NFL landscape, it becomes evident that the roles of both quarterbacks and running backs have undergone substantial transformations in the 21st century. The advent and widespread adoption of designed quarterback runs have not only added a new dimension to offensive strategies but have also contributed to a notable upswing in non-running back rushing data.
+
+The emergence of mobile quarterbacks, who possess the ability to both pass and run effectively, has brought about a seismic shift in offensive schemes. These dynamic signal-callers have become pivotal playmakers, capable of exploiting rushing opportunities and extending plays with their agility and speed. Consequently, the statistical landscape has witnessed a surge in rushing yards and touchdowns accumulated by quarterbacks who actively participate in designed runs.
+
+Moreover, the utilization of receivers in the rushing game has played a supplementary role in augmenting the non-running back rushing data. While the increase in receiver involvement has been more gradual compared to quarterbacks, it serves as an additional contributing factor to the overall upward trend. As offenses continue to adapt and seek innovative strategies to maximize their effectiveness, the incorporation of receivers in rushing plays has become a tactical weapon employed by several teams.
+
+In the future, it appears as though receivers will become an increasing part of the rushing game, and quarterbacks of the future will be forced to possess mobility and the ability to extend plays. Even the best quarterbacks today: Patrick Mahomes, Josh Allen, Joe Burrow, and Jalen Hurts, are the best quarterbacks in the NFL at extending plays and improvising on broken plays. Meanwhile, more experimental NFL coaches have begun utilizing running back rushing plays more, especially Kyle Shanahan of the 49ers and Sean McVay of the Rams, adding another dimension to their offense.
+
+As the NFL enters a new era of evolving player positions, the trends in non-RB rushing statistics continue to shape the game. The increased involvement of receivers in the rushing game, coupled with the demand for mobile and versatile quarterbacks, reflects the ongoing transformation in offensive strategies.
+
+Looking ahead, the role of receivers in the rushing game will assume greater significance, propelling teams to explore innovative ways to maximize their impact. Meanwhile, quarterbacks of the future will be tasked with seamlessly blending passing proficiency with the ability to extend plays and exploit rushing opportunities. Notably, current standout quarterbacks like Patrick Mahomes, Josh Allen, Joe Burrow, and Jalen Hurts epitomize this shift, showcasing their adaptability and improvisational skills.
+
+Moreover, astute NFL coaches such as Kyle Shanahan of the San Francisco 49ers and Sean McVay of the Los Angeles Rams have embraced experimental approaches, harnessing the potential of non-RB rushing plays to add a dynamic dimension to their offensive arsenals. By strategically involving running backs and leveraging their unique skill sets, these forward-thinking coaches have reshaped offensive strategies and confounded opposing defenses.
+
+As we delve deeper into this exciting era of evolving player positions, the intricate interplay between rushing quarterbacks, receivers, and running backs promises to redefine the very fabric of offensive schemes. The fusion of mobility, versatility, and creative ingenuity will continue to steer the game's trajectory, presenting new challenges and opportunities for players and coaches alike. By embracing these changes, teams can unlock the full potential of their offensive units, propelling them toward success within the ever-evolving landscape of the NFL.
+
+Sources: NFL.com
+
+pro-football-reference.com
+
+GitHub[Link](https://github.com/atijmahesh/BSA_Spring2023/)

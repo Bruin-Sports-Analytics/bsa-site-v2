@@ -1,0 +1,73 @@
+### By: Abhinav Madabhushi and Andy Zhang
+
+As the NBA evolves, teams have started to play smaller and smaller. In the past, teams have built around their star centers, with players like Wilt Chamberlain, Kareem Abdul-Jabbar, and Shaquille O’Neal dominating the ball on both sides of the court. Now, teams are starting to play without a traditional center, instead running lineups that consist of players that can space the floor, shoot threes, and play perimeter defense. Players don’t have set positions anymore, as we’ve seen “forwards” such as LeBron James or Luka Dončić handling the ball, and “centers” that stay outside the three point line. This new trend is referred to as “small ball.”
+
+There are a variety of reasons why small ball is just recently becoming more popular. In the past, no team started a lineup where a 6 ‘7 forward was the tallest player on the court. Yet we saw Draymond Green starting at center in the 2015-2016 Finals just five years ago. Small ball offers up a number of advantages. Small ball creates mismatches for the opposing defense. When there are five players who can shoot from 20 feet away, it stretches out the defense, leaving holes and driving lines. These can then be exploited, and turned into quality shots for the offense, whether those be layups or wide open threes. Smaller players also tend to be faster, meaning that they can push the pace of the game and outrun opposing defenses, scoring more points on fast break or transition scenarios. Finally, teams play small ball because, put simply, three points is more than two points. If teams can hit the three pointer at a respectable rate, then this naturally means that they will score more points, and because small ball lineups are often filled with shooters, teams have started shooting more and more threes.
+
+Looking at specific teams who’ve made small ball incredibly successful, we can start with the 2012-2013 Miami Heat. After going down 2-1, they switched LeBron to power forward in the finals against the San Antonio Spurs, and won three out of the remaining four games to beat them in seven. LeBron at power forward provided a matchup nightmare for the Spurs, and allowed the Heat to get more shooting onto the floor in Ray Allen and Shane Battier. And while the lineup they started wasn’t exactly small, as they still had 6 ‘11 Chris Bosh as their starting center, he had the ability to stretch the floor and shoot threes, and it paved the way for other teams to take what they did to the next level.
+
+The team that really popularized the small ball movement was the Golden State Warriors. Between 2014-2019, they went to five straight finals, largely in part due to them using small ball lineups very effectively. In fact, their small ball lineup was so deadly, It got a nickname of its own: the Death Lineup. They were incredibly versatile, able to defend well enough against big men with Draymond Green, and the spacing provided by Stephen Curry and Klay Thompson was able to keep the defense spread out, leading to open looks. In 2014-2016, the tallest player in the lineup was 6 ‘8 Harrison Barnes. After Kevin Durant joined the team in 2016, the lineup wasn’t as small anymore, but the principles remained the same.
+
+The team that took small ball to the extreme however, was the 2019-2020 Houston Rockets. After trading away center Clint Capela, the team started 6 ‘5 P.J. Tucker at center for the 2nd half of the season. Having taken and made the most three pointers of any team that year, the Rockets tried to push small ball to its limits. However, they eventually lost in the Western Conference Semifinals to the Los Angeles Lakers, where Anthony Davis and LeBron dominated the Rockets inside the paint.
+
+With these teams setting the example, more and more teams are starting to play small ball. Down below is a graph that correlates the year with the frequency of small ball.
+
+![Figure 1](/assets/journalism/small-ball-analysis/figure-01.png)
+
+We measured this by looking at all 5 man lineups that were played, and determining how many of those were considered small ball lineups. We decided on a cutoff of 80 inches, where every player in that lineup must be 80 inches or shorter. Although not a perfect determination of whether a lineup would be considered small ball, this graph still shows a significant increase in the number of lineups that don’t have a traditional, seven foot center. This small ball revolution is taking over the NBA, but are small ball lineups actually more effective?
+
+## Small Ball’s Effectiveness
+
+As mentioned previously, one major advantage of small ball is that teams shoot more threes. We can clearly see that this is the case when looking over the data from the last 10 years. Small lineups both take and make more three pointers, as opposed to non-small ball lineups.
+
+![Figure 2](/assets/journalism/small-ball-analysis/figure-02.png)
+
+![Figure 3](/assets/journalism/small-ball-analysis/figure-03.png)
+
+There is a significant difference between the three point attempts and three pointers made, as small ball lineups tend to make around three more three pointers per 48 minutes on average. This trend continued into the playoffs as well.
+
+![Figure 4](/assets/journalism/small-ball-analysis/figure-04.png)
+
+![Figure 5](/assets/journalism/small-ball-analysis/figure-05.png)
+
+Note that the numbers for the playoffs are significantly higher, as there are less lineups and less data to draw from. This causes incredibly large variance. For example: a lineup might make two threes in a minute, which extends to 96 threes per 48 minutes, which is clearly not realistic.
+
+Not only is the three point differential significant, but many other stats show a significant difference as well. We might expect small ball lineups to have increased pace of play, points scored, and steals, while having less rebounds and blocks compared to non-small ball teams. However, as shown in the graphs below, small ball lineups had advantages in almost every major statistic.
+
+![Figure 6](/assets/journalism/small-ball-analysis/figure-06.png)
+
+![Figure 7](/assets/journalism/small-ball-analysis/figure-07.png)
+
+Pace of lineups is how fast that lineup played, or how many possessions they would typically have in a game. The data shows that there is no significant difference in pace between small ball and non-small ball lineups. However, the steals per 48 minutes told a different story, with small ball lineups averaging almost a steal more per 48 minutes compared to their counterparts.
+
+![Figure 8](/assets/journalism/small-ball-analysis/figure-08.png)
+
+![Figure 9](/assets/journalism/small-ball-analysis/figure-09.png)
+
+Again, we can clearly see that small ball lineups have a small advantage in blocks and assists. This is surprising, as one would expect non-small ball lineups with a traditional rim protecting center to average more blocks.
+
+![Figure 10](/assets/journalism/small-ball-analysis/figure-10.png)
+
+![Figure 11](/assets/journalism/small-ball-analysis/figure-11.png)
+
+There is a small difference in total rebounds and defensive rebounds between the two types of lineups, however this difference isn’t very significant. If small ball lineups are more efficient with their shooting, it makes sense that the opposing team would have less rebounding opportunities.
+
+![Figure 12](/assets/journalism/small-ball-analysis/figure-12.png)
+
+![Figure 13](/assets/journalism/small-ball-analysis/figure-13.png)
+
+![Figure 14](/assets/journalism/small-ball-analysis/figure-14.png)
+
+![Figure 15](/assets/journalism/small-ball-analysis/figure-15.png)
+
+All of these statistics are relatively similar for small ball and non-small ball lineups. Note that the data for small ball has a higher standard deviation, meaning that we had less data to draw from, as well as higher variation in that data. From this data, we can also see that both offensive and defensive ratings are more for teams that play small ball. A greater offensive rating is explained by the fact that small ball teams take and make more 3s on average, and they also push the pace more leading to more possessions. Defensively, small ball teams switch everything, and if the team has good one-on-one defenders, it is difficult to score on them. Small ball teams are also more agile defensively which explains the greater steals, blocks, and a overall better defensive rating.
+
+![Figure 16](/assets/journalism/small-ball-analysis/figure-16.png)
+
+![Figure 17](/assets/journalism/small-ball-analysis/figure-17.png)
+
+![Figure 18](/assets/journalism/small-ball-analysis/figure-18.png)
+
+As we can see, the only category where non-small ball lineups have an advantage is rebound percentage. And while some of these statistics make sense, it seems improbable that small ball lineups are getting more rebounds and blocks per 48 minutes than non-small ball lineups. There could be a couple reasons for this. In the early 2010s, not very many teams were playing small ball. This leads to a smaller sample size and more variance. Furthermore, the teams that were playing small ball were most likely very confident in their ability to outscore the opponents, perhaps leading to small ball lineups consisting of better players on average. Another potential reason is that in general, there are more chances to score than there were 10 years ago. The average amount of points a team scores in a game has increased around 12 points since the 2012-2013 season, and this increase in points naturally leads to more rebounds, assists, and every other stat. Coupled with the fact that the majority of these small ball lineups are from the last few years, this could skew the data into suggesting that small ball lineups are better, when in reality the NBA as a whole has just gotten better at offense. However, even with these caveats, small ball clearly works when it has the right personnel.
+
+In conclusion, like many other basketball strategies, small ball only works in some situations. It has its obvious downsides, and it’s clear that small ball lineups have less paint presence, and have a hard time defending against dominant big men. However, the fundamental idea of small ball is logical. Three points is more than two points, and by shooting enough threes at a good enough percentage, small ball lineups can just simply score more points than their opponents. Coupled with 3&D wings who can defend both guards and forwards, as well as hit corner triples, small ball lineups have the recipe for success in the modern NBA, and they are here to stay.

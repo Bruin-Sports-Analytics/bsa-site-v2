@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { readFileSync } from "node:fs";
+import { readFileSync, existsSync } from "node:fs";
 import path from "node:path";
 import Image from "next/image";
 import { notFound } from "next/navigation";
@@ -14,108 +14,210 @@ type Props = {
 
 const contentDirectory = path.join(process.cwd(), "content", "journalism");
 
-const sectionHeadings = [
-  "Background",
-  "Best of 3 Dominance",
-  "Grand Slam Disappointment",
-  "Time is the Enemy...",
-  "But Time is Also a Friend",
-  "Goal of this Article",
-  "Predicting NBA Free Agent Salaries",
-  "Introduction Relevance",
-  "Introduction",
-  "Terms to Know",
-  "It's more than just the goalkeeper",
-  "It's More Than Just the Goalkeeper",
-  "Understanding Contracts and Free Agency",
-  "Methodology Organizing the Data",
-  "Methodology and Rationale",
-  "Methodology",
-  "Interesting Notes",
-  "An Attempt to Create our Own Statistic",
-  "Final Variable Selection & Model Creation",
-  "Results",
-  "Some top performers:",
-  "Editor's Picks",
-  "Next Steps",
-  "Conclusion and Further Remarks",
-  "Conclusion",
-  "Why GameScore",
-  "Exploring the Data",
-  "Finding the Keys to Success",
-  "Other Issues and Future Plans",
-  "Sources and Credits",
-  "Measuring Performance of All Teams",
-  "Key for \"Stage Reached\" Variable",
-  "Analyzing the Performance of the Finalists",
-  "What is it?",
-  "StatsBomb"
-].sort((a, b) => b.length - a.length);
+function renderInline(text: string): React.ReactNode {
+  const tokens: React.ReactNode[] = [];
+  const regex = /(\*\*.*?\*\*|\*.*?\*|\[.*?\]\(.*?\))/g;
+  let lastIndex = 0;
+  let match: RegExpExecArray | null;
 
-const ignoredExtractedText = new Set([
-  "Subscribe to our newsletter!",
-  "email address Subscribe",
-  "via GIPHY"
-]);
+  while ((match = regex.exec(text)) !== null) {
+    if (match.index > lastIndex) {
+      tokens.push(text.slice(lastIndex, match.index));
+    }
+    const token = match[0];
+    if (token.startsWith("**") && token.endsWith("**")) {
+      tokens.push(<strong key={match.index}>{token.slice(2, -2)}</strong>);
+    } else if (token.startsWith("*") && token.endsWith("*")) {
+      tokens.push(<em key={match.index}>{token.slice(1, -1)}</em>);
+    } else if (token.startsWith("[") && token.includes("](")) {
+      const closingBracket = token.indexOf("](");
+      const linkText = token.slice(1, closingBracket);
+      const linkUrl = token.slice(closingBracket + 2, -1);
+      tokens.push(
+        <a
+          key={match.index}
+          href={linkUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className={styles.inlineLink}
+        >
+          {linkText}
+        </a>
+      );
+    }
+    lastIndex = match.index + token.length;
+  }
+  if (lastIndex < text.length) {
+    tokens.push(text.slice(lastIndex));
+  }
+  return tokens.length > 0 ? tokens : text;
+}
 
-function textToBlocks(text: string): ArticleBlock[] {
-  return text
-    .split(/\n{2,}/)
-    .map((value) => value.replace(/\s+/g, " ").trim())
-    .filter((value) => value && !ignoredExtractedText.has(value))
-    .flatMap((value) => {
-      const exactHeading = sectionHeadings.find((heading) => value === heading);
-      if (exactHeading) {
-        return [{ type: "heading", text: exactHeading } satisfies ArticleBlock];
+function parseMarkdownToBlocks(rawMd: string): ArticleBlock[] {
+  const lines = rawMd.split("\n");
+  const blocks: ArticleBlock[] = [];
+  let currentList: { ordered: boolean; items: string[] } | null = null;
+  let currentTable: { headers: string[]; rows: string[][] } | null = null;
+  let currentParagraph: string[] = [];
+
+  const flushParagraph = () => {
+    if (currentParagraph.length > 0) {
+      const text = currentParagraph.join(" ").trim();
+      if (text) {
+        blocks.push({ type: "paragraph", text });
       }
+      currentParagraph = [];
+    }
+  };
 
-      const leadingHeading = sectionHeadings.find((heading) => value.startsWith(`${heading} `));
-      if (leadingHeading) {
-        const paragraph = value.slice(leadingHeading.length).trim();
-        return [
-          { type: "heading", text: leadingHeading } satisfies ArticleBlock,
-          { type: "paragraph", text: paragraph } satisfies ArticleBlock
-        ];
+  const flushList = () => {
+    if (currentList) {
+      blocks.push({ type: "list", ordered: currentList.ordered, items: currentList.items });
+      currentList = null;
+    }
+  };
+
+  const flushTable = () => {
+    if (currentTable && currentTable.headers.length > 0) {
+      blocks.push({ type: "table", columns: currentTable.headers, rows: currentTable.rows });
+      currentTable = null;
+    }
+  };
+
+  for (let i = 0; i < lines.length; i++) {
+    const line = lines[i].trim();
+
+    if (!line) {
+      flushParagraph();
+      flushList();
+      flushTable();
+      continue;
+    }
+
+    // Embedded Markdown Image: ![alt](src)
+    const imgMatch = line.match(/^!\[(.*?)\]\((.*?)\)$/);
+    if (imgMatch) {
+      flushParagraph();
+      flushList();
+      flushTable();
+      blocks.push({
+        type: "image",
+        src: imgMatch[2],
+        alt: imgMatch[1] || "Figure",
+        caption: imgMatch[1] || undefined,
+        width: 1200,
+        height: 700
+      });
+      continue;
+    }
+
+    if (
+      line.startsWith("By:") ||
+      line.startsWith("### By:") ||
+      line.startsWith("## By:") ||
+      line.startsWith("Written by") ||
+      line.startsWith("### Written by") ||
+      line.startsWith("Subscribe") ||
+      line.startsWith("Published:")
+    ) {
+      continue;
+    }
+
+    // Headings
+    if (line.startsWith("### ")) {
+      flushParagraph();
+      flushList();
+      flushTable();
+      blocks.push({ type: "heading", level: 3, text: line.slice(4).trim() });
+      continue;
+    }
+    if (line.startsWith("## ")) {
+      flushParagraph();
+      flushList();
+      flushTable();
+      blocks.push({ type: "heading", level: 2, text: line.slice(3).trim() });
+      continue;
+    }
+    if (line.startsWith("# ")) {
+      flushParagraph();
+      flushList();
+      flushTable();
+      blocks.push({ type: "heading", level: 2, text: line.slice(2).trim() });
+      continue;
+    }
+
+    // Blockquote
+    if (line.startsWith("> ")) {
+      flushParagraph();
+      flushList();
+      flushTable();
+      blocks.push({ type: "blockquote", text: line.slice(2).trim() });
+      continue;
+    }
+
+    // Lists
+    if (line.startsWith("- ") || line.startsWith("* ")) {
+      flushParagraph();
+      flushTable();
+      if (!currentList || currentList.ordered) {
+        flushList();
+        currentList = { ordered: false, items: [] };
       }
+      currentList.items.push(line.slice(2).trim());
+      continue;
+    }
+    const olMatch = line.match(/^(\d+)\.\s+(.*)$/);
+    if (olMatch) {
+      flushParagraph();
+      flushTable();
+      if (!currentList || !currentList.ordered) {
+        flushList();
+        currentList = { ordered: true, items: [] };
+      }
+      currentList.items.push(olMatch[2].trim());
+      continue;
+    }
 
-      return [{ type: "paragraph", text: value } satisfies ArticleBlock];
-    });
+    // Tables
+    if (line.startsWith("|") && line.endsWith("|")) {
+      flushParagraph();
+      flushList();
+      const cells = line.slice(1, -1).split("|").map((c) => c.trim());
+      if (cells.every((c) => /^---+$/.test(c))) {
+        continue;
+      }
+      if (!currentTable) {
+        currentTable = { headers: cells, rows: [] };
+      } else {
+        currentTable.rows.push(cells);
+      }
+      continue;
+    }
+
+    // Normal paragraph line
+    currentParagraph.push(line);
+  }
+
+  flushParagraph();
+  flushList();
+  flushTable();
+
+  return blocks;
 }
 
 function fileContentBlocks(article: JournalismArticle): ArticleBlock[] {
   if (!article.contentFile) return [];
 
   try {
-    const filePath = path.join(contentDirectory, article.contentFile);
-    const rawBlocks = textToBlocks(readFileSync(filePath, "utf8"));
-    if (!article.images?.length) return rawBlocks;
+    const mdPath = path.join(contentDirectory, article.contentFile.replace(/\.txt$/, ".md"));
+    const txtPath = path.join(contentDirectory, article.contentFile);
+    const targetPath = existsSync(mdPath) ? mdPath : txtPath;
 
-    const imagesToInsert = [...article.images].sort((a, b) => b.afterParagraph - a.afterParagraph);
-    const finalBlocks = [...rawBlocks];
+    if (!existsSync(targetPath)) return [];
 
-    for (const img of imagesToInsert) {
-      let count = 0;
-      let targetIndex = finalBlocks.length;
-      for (let i = 0; i < finalBlocks.length; i++) {
-        if (finalBlocks[i].type === "paragraph" || finalBlocks[i].type === "heading") {
-          count++;
-          if (count === img.afterParagraph) {
-            targetIndex = i + 1;
-            break;
-          }
-        }
-      }
-      finalBlocks.splice(targetIndex, 0, {
-        type: "image",
-        src: img.src,
-        alt: img.alt,
-        caption: img.caption,
-        width: img.width,
-        height: img.height
-      });
-    }
-
-    return finalBlocks;
+    const raw = readFileSync(targetPath, "utf8");
+    const blocks = parseMarkdownToBlocks(raw);
+    return blocks;
   } catch {
     return [];
   }
@@ -185,19 +287,46 @@ export default function JournalismArticlePage({ params }: Props) {
                     : <h2 key={`${block.text}-${index}`}>{block.text}</h2>;
                 }
 
+                if (block.type === "blockquote") {
+                  return (
+                    <blockquote className={styles.blockquote} key={`quote-${index}`}>
+                      <p>{renderInline(block.text)}</p>
+                    </blockquote>
+                  );
+                }
+
+                if (block.type === "list") {
+                  if (block.ordered) {
+                    return (
+                      <ol key={`list-${index}`}>
+                        {block.items.map((item, i) => (
+                          <li key={`${item.slice(0, 16)}-${i}`}>{renderInline(item)}</li>
+                        ))}
+                      </ol>
+                    );
+                  }
+                  return (
+                    <ul key={`list-${index}`}>
+                      {block.items.map((item, i) => (
+                        <li key={`${item.slice(0, 16)}-${i}`}>{renderInline(item)}</li>
+                      ))}
+                    </ul>
+                  );
+                }
+
                 if (block.type === "table") {
                   return (
                     <div className={styles.tableWrap} key={`table-${index}`}>
                       <table>
                         <thead>
                           <tr>
-                            {block.columns.map((column) => <th key={column}>{column}</th>)}
+                            {block.columns.map((column, i) => <th key={`${column}-${i}`}>{column}</th>)}
                           </tr>
                         </thead>
                         <tbody>
-                          {block.rows.map((row) => (
-                            <tr key={row.join("-")}>
-                              {row.map((cell, cellIndex) => <td key={`${cell}-${cellIndex}`}>{cell}</td>)}
+                          {block.rows.map((row, rIdx) => (
+                            <tr key={`row-${rIdx}`}>
+                              {row.map((cell, cellIndex) => <td key={`${cell}-${cellIndex}`}>{renderInline(cell)}</td>)}
                             </tr>
                           ))}
                         </tbody>
@@ -229,7 +358,7 @@ export default function JournalismArticlePage({ params }: Props) {
                   );
                 }
 
-                return <p key={`${block.text.slice(0, 32)}-${index}`}>{block.text}</p>;
+                return <p key={`${block.text.slice(0, 32)}-${index}`}>{renderInline(block.text)}</p>;
               })
             ) : (
               <>

@@ -1,0 +1,143 @@
+In March of 2023, Shohei Ohtani faced down Mike Trout. The count was 3-2, in a 3-2 ballgame. While Ohtani and Trout were teammates for the Angels at the time, this game was in a different setting: the World Baseball Classic. Ohtani, of Team Japan, went on to strike out Trout, of Team USA, to win the WBC. Although Ohtani, the MLB superstar who recently signed a 10-year, 700 million-dollar contract, got the final out, his teammates were the ones who won the game. Shota Imanaga started the game for the Japanese team, and corner infielders Munetaka Murakami and Kazuma Okomoto propelled the offense with their home runs. If you don’t recognize these players, it’s because none of them have played in the MLB. Nippon Professional Baseball, or the NPB, is widely regarded as the 2nd biggest baseball league in the world behind the MLB, featuring Japanese players. Since the league’s inception, a total of 61 players from the NPB have played in the MLB, with varying degrees of success, from superstars of Hideo Nomo and Ichiro Suzuki to one-year and out players. In this data study, I will be analyzing these 61 players in order to determine which statistics in the NPB translate the best to MLB Success, and then use my findings to predict the success of NPB players that are expected to transfer to the MLB.
+
+## What Determines the Success of a Baseball Player?
+
+Out of the 61 baseball players from the NPB, there are 45 pitchers and 17 hitters. If you are wondering why that doesn’t add to 61, it’s because Ohtani does both. In order to determine the success of a baseball player, we need to split the group of players into hitters and pitchers. For both pitchers and hitters, we will be using some form of WAR, or Wins Above Replacement. WAR is basically how many wins any player generates for their team compared to the average “replacement level” player. The more WAR you have, the better the player is. WAR is the most complete stat out of all stats to determine a player’s success because it takes into account how long a player has played and how well they played during their years. It is one of the most widely used statistics to determine the value of a player, so we will be using WAR as well. This is the distribution of WAR by position.
+
+![Figure 1](/assets/journalism/npb-to-mlb/figure-01.png)
+
+Hitters from the NPB tend to be more consistent in their success, but pitchers tend to have higher ceilings. However, we will not use just normal WAR for either position, as current players disrupt WAR as a true evaluation of one’s success in the MLB.
+
+### Pitchers
+
+![Figure 2](/assets/journalism/npb-to-mlb/figure-02.png)
+
+For pitchers, you can tell that the distribution of WAR is heavily right-skewed. The best pitchers have significantly more WAR than the rest of the pack, so when we are trying to calculate correlation coefficients, it will be heavily skewed. We also have to take into account that there are still active players like Shohei Ohtani and Kodai Senga, whose career WAR is not representative of their success because they haven’t had the longevity to accumulate career war. In the end, I decided to use the log of (MLB WAR + 1). The use of the Log function is that it standardizes large distances and small distances, so the difference between top players and average players is the same distance between average players and bad players. The reason for the +1 is that you cannot take the log of a negative number, so it turns all WAR values positive. The values of the calculation are shown below:
+
+![Figure 3](/assets/journalism/npb-to-mlb/figure-03.png)
+
+As you can see, the distribution of values is no longer right skewed, and although players like Shohei Ohtani and Kodai Senga should be higher, they still have solid above-average numbers that indicate positive success in the MLB.
+
+### Batters
+
+Since there are more active Japanese batters in the MLB than pitchers, as well as a smaller sample size, I decided to use a more proportionate stat for success in the MLB for hitters. I decided to use the stat WAR/PA, or WAR divided by plate appearances. This stat basically determines how good the average plate appearance of a batter is. I decided it was best for determining the success of the batter because the best hitters have the best WAR/PAs. This is the dot chart for the stat:
+
+![Figure 4](/assets/journalism/npb-to-mlb/figure-04.png)
+
+As you can see, superstars like Ichiro and Shohei are the leaders of this stat, while all the other players are somewhat in the middle. There was one outlier in Norihiro Nakamura, whose WAR/PA was so bad it single-handedly skewed the entire data, due to Nakamura having only 17 games played. I decided to modify it to -0.003, which is still the worst WAR/PA of all hitters, but at a much less outlier number.
+
+## Which NPB Stats Correlate the Highest to MLB Stats?
+
+In order to determine which statistics of NPB players translated best to the MLB, I calculated the correlation coefficients for every NPB stat and the desired metric of MLB success. A correlation of 1 means perfect positive correlation, -1 means perfect negative correlation, and 0 means no correlation at all. The following pages will summarize my findings for both pitchers and hitters. Typically, overall good players in the NPB correlate to better players in the MLB, but I will try to find more specific stats that correlate higher.
+
+### Pitchers
+
+This finding surprised me initially, as less experience typically doesn’t correlate to higher success. However, when I looked at the data, everything made a lot more sense.
+
+![Figure 5](/assets/journalism/npb-to-mlb/figure-05.png)
+
+Most players pitched at least upwards of 150 games in the NPB. The way that the NPB transfer system works is that an NPB player must play 9 years in the NPB to become unrestricted in the money that they gain from signing a foreign contract. Anyone who decides to come earlier is subject to the international amateur budget, which for most players is a lot less money than what they could get. This means that the players with the least amount of games played (Ohtani and Hideo Nomo are 2 notable ones) had to be really confident in their talent to bet on themselves in the MLB and take less money. In addition to that, the correlation is very simple: the more games you play in the NPB, either a.) you are a reliever, and relievers tend to not be as effective in the MLB as starters, or b.) you are older, and you have fewer years in your prime to play in the MLB with. The best players from the MLB tend to come to the States when they are young and in their prime.
+
+Being able to go deep into games, or being a “workhorse” is a valuable trait of a pitcher. It means that pitchers have the stamina to go deep into games without losing effectiveness. This is especially true in the NPB, where being able to pitch deep into games translates very well.
+
+![Figure 6](/assets/journalism/npb-to-mlb/figure-06.png)
+
+Consistently throwing deep into games means that you have to be consistently dominating the opposing lineup, a sign of a very good pitcher. In addition, being able to throw many innings translates well to the workload of an MLB pitcher. While NPB pitchers only pitch once a week, the typical workload of a starter in the MLB is one game every 5 days, a significant increase in workload. Being able to throw deep into games in the NPB translates to being able to keep up with the demanding workload of an MLB starter. Again, relievers don’t typically play as well in the MLB, although some have success.
+
+Unsurprisingly, being able to contribute to your team’s wins translates very well to playing well in the MLB. Being Good in the NPB translates to being good in the MLB: great insight! Wins Above Average (WAA) and Wins Above Replacement (WAR) are basically the same statistics, although WAA is less subjective and 0 means good, unlike WAR.
+
+![Figure 7](/assets/journalism/npb-to-mlb/figure-07.png)
+
+![Figure 8](/assets/journalism/npb-to-mlb/figure-08.png)
+
+WAA correlates slightly more because it accounts for longevity better: more games played does not necessarily mean better WAA compared to WAR, and as we have seen earlier, more games played does not equal better MLB performance.
+
+Finally, being able to strike out players and not walk them translates well to MLB success. For many players, this indicates the movement and stuff to finish off batters, as well as having the control to not walk them.
+
+![Figure 9](/assets/journalism/npb-to-mlb/figure-09.png)
+
+While there is an outlier in Koji Uehara, who had K/BB ratio of 6.64, and having a low K/BB ratio doesn’t equate to no success in the MLB (Case in Point: Tomukazu Oka, who had a NPB low 1.42 K/BB ratio out of all players), having a high K/BB ratio, for the most part, indicates a predictor for success in the MLB.
+
+### Batters
+
+As with the pitchers, the same insight can be brought to the batters as well with longevity: Playing fewer games in the NPB is good for their success in the NPB. For the exact same reason: More prime years in the MLB and players who leave early tend to be better, albeit with a smaller sample size.
+
+![Figure 10](/assets/journalism/npb-to-mlb/figure-10.png)
+
+As with pitchers, the same theory of “good play in the NPB leads to good play in the MLB” exists. Many of the statistics that managers in the MLB use to determine the strength of a hitter, Batting Average, On Base Plus Slugging (OPS), and Weighted Runs Created + (standardized), correlate well to a player’s success, although not quite as well as the next couple of statistics.
+
+![Figure 11](/assets/journalism/npb-to-mlb/figure-11.png)
+
+![Figure 12](/assets/journalism/npb-to-mlb/figure-12.png)
+
+Even more impactful than being a solid hitter is hitting the ball hard. BABIP is your Batting Average on Balls In Play, which is exactly what it says. While most players regress to the mean BABIP, consistently making hard contact will increase your BABIP significantly. In the case of Japanese Players, hitting the ball hard translates well to the MLB, as solid contact produces extra-base hits, which is what SLG measures. This one also makes sense in translating to MLB success, because making solid contact is a skill that translates fluidly no matter what league you play in.
+
+![Figure 13](/assets/journalism/npb-to-mlb/figure-13.png)
+
+![Figure 14](/assets/journalism/npb-to-mlb/figure-14.png)
+
+Finally, the most impactful stat for NPB hitters is SB% and SB%+, which are different versions of stolen base percentage, how successful a player is at stealing bases. Not only is a high stolen base percentage indicative of a fast player, which Japanese baseball players are known for. However, a high stolen base percentage is also a big indicator of a good base runner and a smart player. Not putting yourself in situations where it is easy to get thrown out (stealing on a fastball, stealing on fast pitchers and/or strong catchers), is connected to pure baseball IQ. A main example of this is Freddie Freeman, who isn’t fast, but has a high sb% and a lot of sbs due to his intellect. Intellect is something that doesn’t diminish with age, and therefore translates very well from the NPB to the MLB.
+
+![Figure 15](/assets/journalism/npb-to-mlb/figure-15.png)
+
+![Figure 16](/assets/journalism/npb-to-mlb/figure-16.png)
+
+## Predicting the Success of NPB Stars
+
+With the insights that the data has revealed, we can now look at current stars in the NPB who have either just signed with an MLB team or are very likely to sign with an MLB team in the coming years to predict their success in the MLB. Currently, there are 3 players that have just signed with an MLB team. I will be case-studying those players, as well as 4 more up-and-coming NPB stars who have expressed their desire to play in the MLB. 6 of them are pitchers, and one of them is a hitter. Using their stats, we will try to predict the amount of success they will have in the MLB. For these predictions, I will be using z-scores, which are ways of standardizing statistics. 0 is the league average, and each 1 above or below represents one standard deviation, the average amount the individual statistic deviates from the mean. Basically, 0 is average, and higher is better, anything above 2 being the top 3%.
+
+Starting off, we have Yoshinobu Yamamoto, who recently signed a monster 12-year, $325 million dollar contract with the Los Angeles Dodgers this offseason, the most guaranteed for a pitcher of all time. There’s good reason for this as well: Yamamoto has won the MVP award in the NPB for the past 3 years as the most dominant pitcher the NPB has ever seen, boasting a 1.65 ERA in those seasons.
+
+![Figure 17](/assets/journalism/npb-to-mlb/figure-17.png)
+
+Statistically, Yamamoto seems primed to deserve every single dollar that was spent on him. For his longevity in the NPB, his 172 games played are low and even is inflated by the two seasons he played as a reliever in the NPB. At 24 years of age, he will enter the MLB at his peak physical prime. As for dealing with the harsher MLB workload, disregarding his relief seasons, his 7.26 IP/G as a pitcher would rank 4th among MLB-bound NPB pitchers, trailing only Masahiro Tanaka, Hideo Nomo, and Yu Darvish, all who found great success in the MLB. As for his success in the NPB, there’s not much to dislike. His 14.3 WAA, not even including his 2023 MVP season, is already spectacular, and would likely be in the 20s if I could find his WAA for that season. Considering that he did it all before his age-25 season when most pitchers play until their late 20s before transferring to the MLB, makes that number even more impressive. In addition, his 4.48 K/BB Ratio would rank 2nd only to Koji Uehara, who produced a mind-bending 6.64 K/BB in the NPB. Overall, Yamamoto seems primed for stardom in the MLB, where it seems like only freak injury can stop his dominance.
+
+The next pitcher on the list is reliever Yuki Matsui, who signed a 5 year, $28 million dollar contract with the San Diego Padres this offseason.
+
+![Figure 18](/assets/journalism/npb-to-mlb/figure-18.png)
+
+Matsui has been one of the NPB’s premier closers, boasting a 2.40 ERA and 236 saves in his 10-year career. Historically, NPB relievers have not performed well in the NPB, but that doesn’t mean that Matsui won’t succeed in the MLB. His 501 games played and his 1.32 G/IP are on the low side of correlated success, but his 2.92 K/BB rate is slightly above MLB-bound NPB average and his 10.2 WAA is quite impressive for a reliever. Matsui isn’t going to be a star in the MLB, but he will most likely be a solid reliever in the MLB for the next decade.
+
+Shota Imanaga recently signed a 4 year, $53 million dollar deal with the Chicago Cubs that includes a 5th-year option with a maximum dollar value of $80 million. The lefty veteran boasted a 3.18 ERA in 8 seasons in the NPB.
+
+![Figure 19](/assets/journalism/npb-to-mlb/figure-19.png)
+
+Imanaga’s stat line doesn’t show the stardom of an Ohtani or a Yamamoto, but they are indicative of a very strong MLB starter. Only 165 games is a plus, but entering his year 30 season doesn’t spell longevity for Imanaga. His 6.07 IP/G is relatively average for an NPB starter, and his 4.7 WAA in 8 seasons isn’t indicative of an MLB superstar. However, his 3.65 K/BB ratio is quite respectable. I predict that Imanaga will be a solid 3 pitcher in the Cubs’ rotation for his contract, but I wouldn’t be surprised if he exceeds expectations in the MLB.
+
+Moving onto players who are predicted to try to transfer to the MLB, Kona Takahashi is a 27-year-old starter who is expected to be posted for MLB teams next season.
+
+![Figure 20](/assets/journalism/npb-to-mlb/figure-20.png)
+
+After having a shaky start to his career, Kona has had 2 breakout seasons in the past years, sporting a 2.21 ERA over his last 2 seasons. Statistically, Takahashi is at the best age of his career to find success in the MLB. Entering his age 28 season, Takahashi will have at least 5 more years of his prime before age starts to take a toll. His 6.17 IP/G shows that he can take on an MLB workload. However, Takahashi has dealt with inconsistency with his pitches over the years. His 2.01 K/BB ratio is very low and even in his breakout seasons, it has been a problem. That doesn’t mean that he will not perform in the MLB; Blake Snell won the Cy Young Award last year while also having the most walks in the MLB. However, it does mean that Takahashi has less room for error when taking the mound. If he can improve his inconsistency, he will be a strong starter in the MLB. If he can’t, he will have trouble finding a rotation spot.
+
+Naoyuki Uwasawa is a 29-year-old pitcher from the Nippon Ham Fighters who signed with the Tampa Bay Rays on a minor league deal.
+
+![Figure 21](/assets/journalism/npb-to-mlb/figure-21.png)
+
+While Uwasawa doesn’t have the flashy stats or stuff, he has pitched well in the NPB, posting a 3.19 ERA through 9 seasons. He shows upside as a pitcher with 7 different pitches. Statistically, Uwasawa is nothing special. Most of his statistics are around MLB-bound average. For a starter, his 173 games played and 6.46 IP/G are around average, and his 2.62 K/BB ratio and his 2.60 WAA are not particularly spectacular. Uwasawa will get a chance in the MLB, but I don’t believe he will be a spectacular pitcher there.
+
+Dubbed the “Babe Ruth of Japan,” 23-year-old Munetaka Murakami is primed for a gigantic contract in the MLB when he is posted in the 2025-2026 offseason. The 2-time MVP has dominated the NPB in his career, with 191 Home Runs in his 6-year tenure.
+
+![Figure 22](/assets/journalism/npb-to-mlb/figure-22.png)
+
+Statistically, Murakami is almost your ideal Japanese hitter. He’s a young superstar, entering his year 23 season and being posted at 25, with a career .965 OPS and .566 SLG, both well over MLB-bound average. The only concerning part is his SB% at 63.38%, slightly below average. While this isn’t great, Murakami doesn’t attempt many stolen bases, only 71 in 6 years, so it won’t hurt him as much on the basepaths. He isn’t the fastest, but you don’t need to be when you are the best pure hitter in the NPB since Shohei Ohtani. When Murakami signs an MLB contract, expect him to be a household name as one of the best hitters in the world.
+
+The last player on this list is 21-year-old Roki Sasaki. One of the youngest pitchers that pitched for Team Japan, Sasaki wowed spectators with his semifinal performance against Team Mexico, with his fastball that AVERAGED 100.5 MPH and peaked at 102. The scariest part? That’s not even Sasaki’s best pitch. His splitter, which comes in at 92 MPH, looks exactly like his fastball but with almost 2 more feet of vertical drop. These two pitches combined made Sasaki one of the most dangerous pitchers in the NPB.
+
+![Figure 23](/assets/journalism/npb-to-mlb/figure-23.png)
+
+His 6.71 K/BB ratio is the highest K/BB out of all MLB-bound pitchers, which indicates that the young starter has control as well as his nasty arsenal of pitches. At only 21 years old, Sasaki will not be posted to the MLB anytime soon. The only concern regarding Sasaki is his arm health. His 6.16 IP/G is quite average for a starter, and anyone who throws as fast as he does runs into arm problems. His upside rivals those of Spencer Strider and Jacob Degrom, two of the best pitchers in recent history, but like Degrom, arm health will mainly determine his success in the MLB.
+
+## Conclusion
+
+Many people believe that the NPB is far inferior to the MLB. While it is true that MLB is the pinnacle of baseball leagues, we have to keep in mind that the player pool in the MLB is much higher than in the NPB. The stars of the NPB have proved that they can compete and even supersede the talents of the top MLB players. While most NPB players who move to the MLB are pitchers, the NPB still produces many strong hitters who have found success. Overall, success from the NPB to the MLB is quite simple: the best players in the NPB play great in the MLB. Moving to the MLB in the prime of their career helps, as well as being able to handle the increased workload of a full MLB season. Overall, Japan arguably produces stars at a higher level than the United States, and with the recent success of the Japanese team, they are only going to get more funding and more talent. Even other Asian leagues, like the KBO, are starting to get more international attention. While baseball is the “American Pastime”, Asian leagues are starting to make names for themselves.
+
+### Sources:
+
+[https://en.wikipedia.org/wiki/List_of_Major_League_Baseball_players_from_Japan#Baserunning](https://en.wikipedia.org/wiki/List_of_Major_League_Baseball_players_from_Japan#Baserunning)
+
+[https://www.mlbtraderumors.com/2023/04/npb-players-japan-coming-mlb.html](https://www.mlbtraderumors.com/2023/04/npb-players-japan-coming-mlb.html)
+
+[http://npbstats.com/eng/](http://npbstats.com/eng/)
+
+[https://www.baseball-reference.com/](https://www.baseball-reference.com/)

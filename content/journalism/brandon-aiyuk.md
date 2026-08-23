@@ -1,0 +1,81 @@
+### By: Sofia Jain
+
+## Introduction
+
+The San Francisco 49ers have a stacked roster, featuring players like Christian McCaffrey, George Kittle, Trent Williams, Deebo Samuel and many more. With such a roster, it’s easy for a player to go underrated when it comes to receiving credit for the team’s successes. One such player is the 49ers wide receiver Brandon Aiyuk, the 25th pick of the 2020 draft, who had a phenomenal 2023 season, but seemed to receive little attention from the media for much of the year. For instance, a 2023 article from Fox Sports titled “Are we watching the greatest collection of wide receiver talent in NFL history?” highlighted wide receivers such as Tyreek Hill, Justin Jefferson, Stefon Diggs, Puka Nacua, yet made no mention of Aiyuk.
+
+Despite the lack of media attention, Aiyuk’s contributions to the 49ers cannot be overlooked. While much of the talk about the 49ers understandably surrounds Christian McCaffrey and Brock Purdy, I argue that Brandon Aiyuk plays an essential role in the success of the 49ers offense and was instrumental in getting to the Super Bowl. I will analyze Aiyuk’s career progression and compare his performance in the 2023 season with that of top wide receivers like Tyreek Hill and CeeDee Lamb. Specifically, I'll assess Aiyuk's performance against those who, unlike him, earned Pro Bowl recognition this year to see if Aiyuk was potentially robbed of a pro-bowl selection.
+
+## Terminology
+
+Before my analysis, I will describe certain statistics that are commonly referenced for wide receivers.
+
+**Yards (Yds)** - Yards Gained on a Reception
+
+**Targets (Tgts)** - Number of times the ball is thrown to the wide receiver.
+
+**Receptions (Rec)** - Number of successful catches of a forward pass.
+
+**Catch %** - Receptions/Targets
+
+**Receiving Success Rate** - For this statistic, a reception is “successful” when a player gains at least 40% of yards-to-go on first down, 60% of yards-to-go on second down and 100% of yards-to-go on third or fourth down.
+
+## Analysis of Aiyuk’s Career
+
+Looking at specific wide receiver statistics throughout Aiyuk’s career, we can see how he has continually improved in multiple categories and consistently contributes to team success.
+
+Aiyuk has steadily improved in receiving yards per game throughout his career. Each football game is different so it is unreasonable to expect a constant upward trend in yards every game, but overall, Aiyuk is trending towards at least 50 yards per game in most cases and almost as much as 150 yards in recent ones. This is verified when looking at his yearly average yards per game which shows a 40.5% increase from 2022 to 2023 and an overall increase of 34.6% from the beginning of his career.
+
+![Figure 1](/assets/journalism/brandon-aiyuk/figure-01.png)
+
+![Figure 2](/assets/journalism/brandon-aiyuk/figure-02.jpg)
+
+A possible contributor to Aiyuk’s gradual increase in receiving yards is his improvement in catch percentage throughout his career. In four years, his catch percentage has increased by 9%, one again demonstrating his consistent improvement and ability to put the team in successful situations.
+
+![Figure 3](/assets/journalism/brandon-aiyuk/figure-03.png)
+
+Along with putting the team in successful situations, Aiyuk’s trend in receiving yards per reception while the team is trailing with less than 4 minutes to go shows his reliability in late game situations. Having a wide receiver who can gain crucial yardage to set up a field goal or a late-game touchdown is extremely valuable. We see Aiyuk has been reliable from the start of his career in these situations, with 15.2 and 14.3 receiving yards per reception. There was a dip in the 2022 season to 9 yards, which could be attributed to factors such as the team rarely being in this situation. Despite this, he set a career high in this statistic in 2023 with 16 yards, well over a first down.
+
+![Figure 4](/assets/journalism/brandon-aiyuk/figure-04.png)
+
+The final category I will analyze is the characteristics of the receptions Aiyuk completes. This category is crucial in showing how a wide receiver impacts the game. Are they producing mostly first downs, touchdowns or other plays that don’t have as much impact, like gains of less than 10 yards or negative yardage gain? Aiyuk has always been a huge first-down weapon as each year, over 60% of his receptions are 1st downs. His touchdown percentage has been around 8-10%, but with the team he is on, first downs hold greater significance, as the 49ers have many players who can score touchdowns. What stands out the most is that in the most recent season, 91.6% of Aiyuk’s receptions were either first downs or touchdowns. In previous years, he had around 25% of his receptions not resulting in a first down or touchdown. This drastic improvement highlights how Aiyuk helps his team advance down the field with the most beneficial plays: first downs and touchdowns.
+
+![Figure 5](/assets/journalism/brandon-aiyuk/figure-05.png)
+
+## Comparing Aiyuk to Other Top 2023 Wide Receivers
+
+Aiyuk has indeed shown improvement in specific categories throughout his career so far, but how does he stack up against other wide receivers, particularly Pro Bowlers, this season? Despite being named second-team All-Pro, Aiyuk did not secure a Pro Bowl selection for this year. It's worth noting that Aiyuk is ranked 36th in targets, the lowest among all Pro Bowl wide receivers this year, and the 49ers' offense leans heavily towards the run game. Considering these factors and examining the following graphs, we can understand why he was overlooked for a Pro Bowl spot.
+
+First, Aiyuk was ranked 2nd in receiving yards per reception, which is higher than any of the Pro Bowl wide receivers this year. For this stat, each of the top 10 played 10 games or more.
+
+![Figure 6](/assets/journalism/brandon-aiyuk/figure-06.png)
+
+Secondly, Aiyuk was ranked 2nd in receiving yards per target, which is also higher than any of the Pro Bowl wide receivers this year. Additionally, since he is getting fewer targets than the other Pro Bowlers, this high average is even more impressive.
+
+![Figure 7](/assets/journalism/brandon-aiyuk/figure-07.png)
+
+Third, he ranked 7th in total receiving yards with 1342 yards. Every one ranked above him in this category were Pro Bowlers besides D.J Moore, but Mike Evans and Amari Cooper were selected to the Pro Bowler despite ranking lower in this category than Aiyuk. While this stat doesn’t solely determine who gets to be a Pro Bowler, Aiyuk has proven he is up there with the other top wide receivers despite having fewer targets and being in an offense more geared toward the run.
+
+![Figure 8](/assets/journalism/brandon-aiyuk/figure-08.png)
+
+Lastly, Aiyuk has a 70.5% receiving success rate, higher than any of the wide receiver Pro Bowlers this year. This further proves how efficient Aiyuk is in his receptions, as he has a high percentage of catches that convert 3rd and 4th downs, gain substantial yardage on 2nd down, or positively contribute on first downs. He was ranked 3rd in this category among wide receivers this year, and the only Pro Bowl or All-Pro wide receiver in the top 10 was CeeDee Lamb.
+
+![Figure 9](/assets/journalism/brandon-aiyuk/figure-09.png)
+
+## Conclusion
+
+Aiyuk is truly a weapon for his team, as he consistently demonstrates high efficiency as a receiver, providing his team with opportunities to advance down the field and score. While he may not put up as many rushing yards as Tyreek Hill or as many show-stopping catches as Justin Jefferson, he remains a crucial component of the 49ers' offense, adept at keeping drives alive. This season, he has proven himself worthy of being mentioned alongside other top wide receivers. His success should be even more impressive to the media and NFL followers as he is getting less targets in the star-studded and run-heavy 49ers offense.
+
+One limitation of my study is that I have not analyzed every single statistic for wide receivers and ranked them all this year. There are areas of weakness in Aiyuk’s game where other receivers have excelled. However, overall, my analysis demonstrates the significant impact Aiyuk has on his team. Possible expansions to my study could involve delving deeper into the careers of other top wide receivers and comparing them to Aiyuk’s.
+
+Aiyuk is an efficient, consistent and valuable wide receiver that any team would gladly have. He continues to improve in all aspects of the receiving games and after this breakout season, he will hopefully get the flowers he deserves.
+
+### Sources
+
+[https://www.pro-football-reference.com/players/A/AiyuBr00.htm?__hstc=205977932.dde69f31ae2c06c4aa5adc416592b030.1706210440533.1706210440533.1706210440533.1&__hssc=205977932.19.1706210440533&__hsfp=3857295638#all_detailed_receiving_and_rushing](https://www.pro-football-reference.com/players/A/AiyuBr00.htm?__hstc=205977932.dde69f31ae2c06c4aa5adc416592b030.1706210440533.1706210440533.1706210440533.1&__hssc=205977932.19.1706210440533&__hsfp=3857295638#all_detailed_receiving_and_rushing)
+
+[https://www.nfl.com/players/brandon-aiyuk/](https://www.nfl.com/players/brandon-aiyuk/)
+
+[https://stathead.com/football/player-season-finder.cgi?request=1&order_by=rec_success&year_min=2023&year_max=2023&positions%5B%5D=wr](https://stathead.com/football/player-season-finder.cgi?request=1&order_by=rec_success&year_min=2023&year_max=2023&positions%5B%5D=wr)
+
+[https://stathead.com/football/](https://stathead.com/football/)

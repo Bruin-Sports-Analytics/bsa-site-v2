@@ -162,6 +162,63 @@
   line-height: 1.55;
 }
 
+.articleBody strong {
+  color: var(--text-primary);
+  font-weight: 700;
+}
+
+.articleBody em {
+  font-style: italic;
+  color: var(--text-primary);
+}
+
+.articleBody ul,
+.articleBody ol {
+  margin: 0 0 24px;
+  padding-left: 28px;
+  color: var(--text-secondary);
+  font-size: clamp(1.02rem, 1.4vw, 1.12rem);
+  line-height: 1.8;
+}
+
+.articleBody li {
+  margin-bottom: 8px;
+}
+
+.blockquote {
+  border-left: 4px solid var(--ucla-gold);
+  padding: 16px 24px;
+  margin: 28px 0;
+  background: rgba(255, 209, 0, 0.06);
+  border-radius: 0 8px 8px 0;
+  font-style: italic;
+}
+
+.blockquote p {
+  margin: 0;
+  color: var(--text-primary);
+  font-size: clamp(1.05rem, 1.5vw, 1.18rem);
+}
+
+.inlineLink {
+  color: var(--ucla-blue-light);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: color 0.16s ease;
+}
+
+.inlineLink:hover {
+  color: var(--ucla-gold);
+}
+
+:global(html[data-theme="light"]) .inlineLink {
+  color: #0d5ea6;
+}
+
+:global(html[data-theme="light"]) .inlineLink:hover {
+  color: #b57a00;
+}
+
 .tableWrap {
   width: 100%;
   margin: 32px 0;
@@ -196,6 +253,11 @@
   font-size: 13.5px;
   text-transform: uppercase;
   letter-spacing: 0.04em;
+}
+
+:global(html[data-theme="light"]) .tableWrap th {
+  background: #f0f7ff;
+  color: #0c3e6d;
 }
 
 .tableWrap td:first-child {

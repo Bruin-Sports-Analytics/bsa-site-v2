@@ -1,0 +1,69 @@
+### By: Ryan Quach
+
+Basketball is traditionally a game of five positions: the point guard, shooting guard, small forward, power forward, and center. But in recent years, specifically with respect to the NBA, the sport has become more and more positionless. To explain, it has become more common for players of a certain position to play the role of other positions. For instance, Luka Doncic has the body of a forward but can play the role of a playmaker as well, making him a suitable fit for a point guard. The same can be said for Lebron James, whose court vision and physical strength enable him to play as both a point guard and even as a center, thereby making him a versatile and difficult opponent to play against.
+
+Arguably the biggest signs of this development in the NBA can be seen in the modern big man. While the term “big man” is somewhat general given that it includes both the power forward and center position, it can be said that the traditional big man is someone who excels at both defending and scoring in the post, which is the painted area that is directly near the basket. These include players such as Dwight Howard and Andrew Bynum, who were the most dominant big men by the end of the 2000s. As for shooting and defending near the perimeter, it is simply not something that these players are traditionally expected to do.
+
+By the end of the 2010s, however, the situation had completely changed. No longer would it be a strange and fascinating sight to see big men shooting from the perimeter—and being effective at it—as well as protecting the perimeter as help defenders. Along with other metrics, it was becoming quite obvious that the big man of 2020 was drastically different from the big man of 2010. In this article, we will discuss the extent to which this development can be seen, as well as the different ways that the modern big man has evolved over the last decade. These include but are not limited to their physical build, shooting, and playing efficiency, all of which have been supported by data from Kaggle.
+
+## Physical Build
+
+By virtue of their position, both power forwards and centers are generally the tallest and biggest players on the court. Their superior size is not that surprising considering that the traditional playstyle of big men requires those who are strong enough and tall enough to fight in the paint, whether it be through posting up an opposing player or fighting for a rebound. Examples of such players include Shaquille O’Neal and Dwight Howard.
+
+![Figure 1](/assets/journalism/bigmen_nba/figure-01.png)
+
+But although it is still true that power forwards and centers are much bigger than other NBA positions, their size has changed to a somewhat significant extent, specifically with regards to weight. In terms of height, as the graph to the left shows, it has remained generally the same at about 6 foot 11 inches from 2010 to 2020, with minor fluctuations occurring in this timespan. Therefore, we can conclude that there generally has not been much difference or development in this regard.
+
+For weight, however, the story is completely different. From 2010 to 2020, the average big man in the NBA decreased his weight from about 252 pounds to approximately 241 pounds. When one takes into account their stable height, the result is that big men have become much lighter over the course of the 2010s, which can be seen in a decreased BMI from 25.7 to 24.6.
+
+![Figure 2](/assets/journalism/bigmen_nba/figure-02.png)
+
+What has been the reason for this decline in weight? It all has to do with the new role those big men are expected to fulfill in the modern NBA. Today, teams value players that are able to space the floor as perimeter shooting threats and those who are quick enough to rotate on defense, the latter of which have become more important due to the fact that they have to guard a larger total area with the addition of the perimeter.
+
+## Shooting
+
+From a certain perspective, big men in the NBA are traditionally not supposed to do any shooting at all, if one defines shooting as any attempts past the key. While there were exceptions in the past such as Toni Kukoc and Dirk Nowitzki, big men were and technically are supposed to go down low and make layups or any other close shots. Given their superior size and strength over other positions, this strategy makes sense, as they would simply overpower any player who was not big or strong enough to hold them back. And in regards to the data, one can see that this playstyle is still used today given that the majority of big men’s shots are currently two-pointers. Indeed, in 2022, the percent of attempts that came within the three-point line for big men was about 71%, which makes up a very high proportion of their shots. Although this measure is not completely accurate due to the possibility of long-range two-pointers, it is still a good metric to quantify the extent to which big men play around the rim.
+
+![Figure 3](/assets/journalism/bigmen_nba/figure-03.png)
+
+![Figure 4](/assets/journalism/bigmen_nba/figure-04.png)
+
+However, one ought to notice that even though the proportion is still quite high, it has declined over the last few years. Indeed, it can be deduced from this picture that big men are now taking more and more three-pointers, which is what another piece of the data directly confirms. It shows that in 2010, big men had 7,094 three-point attempts in total. But by 2022, big men were collectively taking 23,143 three-point attempts, which is more than a three-fold increase.
+
+![Figure 5](/assets/journalism/bigmen_nba/figure-05.png)
+
+It should be clear that big men are taking more three-point shots, but has there been a corresponding efficiency increase? From 2010 to 2022, the graph to the left shows that the three-point field goal percentage among big men remained generally the same, with some fluctuation within the time period. So it is not as if big men have become more accurate at shooting three-pointers; they are merely attempting more of these shots.
+
+## Rebounding
+
+Even when one takes into account certain trends in the modern NBA, it is still difficult to deduce whether rebounding has fallen or risen among big men over the last decade or so. Although big men are lighter now, meaning that they have less physical prowess, one must also take into account that they have become more skilled. Additionally, other positions have gotten lighter as well to some degree, which does make the job easier for big men all other things being equal. Put together, these factors combined mean that the ultimate impact on rebounding is still somewhat unclear.
+
+What the statistics say is that rebounding has not really shifted over the past decade, which matches our initial conclusions to some extent. Although there has been some fluctuation over this time period, the number of rebounds per game for the average big man remained stable at about 5.6 to 5.7 rebounds per game. As such, one cannot really conclude that there has been significant change with respect to rebounding among big men.
+
+![Figure 6](/assets/journalism/bigmen_nba/figure-06.png)
+
+## Efficiency
+
+Another question that some may have regarding the modern evolution of the big man would be whether or not they have improved in efficiency over the past decade. Indeed, ten years is a sufficient amount of time for there to be changes in this regard, so it may be possible that the big man today is much better than the big man ten years ago.
+
+![Figure 7](/assets/journalism/bigmen_nba/figure-07.png)
+
+To answer this question, this article uses VORP, which is the value that a certain player brings over a generic replacement player that would hypothetically be on the bench. As the figure below shows, from 2010 to 2022, the VORP of the average big man increased from approximately 0.49 to about 0.58. While this increase may be impressive in other contexts, this specific figure essentially means that the big man today usually contributes to 0.58 more points per 100 possessions than the average replacement player. When one takes into account this definition of the efficiency metric, it is clear that the increase is not that substantial with respect to effect size.
+
+Just as a caveat, however, it should be noted that given the nature of VORP and most other statistics, it is nearly impossible to effectively compare players of different years. This difficulty is simply due to the fact that many of the best efficiency metrics are relative measures, not absolute ones. So even if the average player improves, this increase would not be detected by statistics such as VORP.
+
+## Playmaking
+
+![Figure 8](/assets/journalism/bigmen_nba/figure-08.png)
+
+Given the different roles that big men are expected to play in the modern game, it would not be surprising to hear that they have a larger playmaking role as well. One way to measure the extent to which they have this role is by looking at their APG, or assists per game. The data show that from 2010 to 2022, the APG among big men increased from 1.15 to 1.61, meaning that per game, they are making 0.46 more assists than they were ten years prior. While this statistic has indeed increased, the effect size is quite insubstantial, as they are still making relatively few passes.
+
+Usage rates are also another way to measure playmaking. Although it is a somewhat imperfect way to measure this factor given that just because one has the ball does not mean that they are in the act of playmaking, it still serves as a useful metric in addition to APG. What the data show is that from 2010 to 2022, the usage rate among big men actually decreased from about 18.0% to approximately 17.3%. This statistic means that today, big men on average only have the ball 17.3% of the time, which means that there has been a 0.7 percentage-point reduction over the last decade.
+
+![Figure 9](/assets/journalism/bigmen_nba/figure-09.png)
+
+Based on these two metrics, one cannot really conclude that the average big man has become more of a playmaker. Of course, there are exceptions to this result such as Nikola Jokic, who is arguably the greatest big man playmaker of all time. In addition, Giannis Antetokoumpo is also a competent playmaker, which complements his ability to attack the rim effectively. However, one cannot simply use individual players to make generalizing claims about a much broader population, in this case being the collective group of power forwards and centers that do not necessarily play like the two aforementioned players.
+
+## Conclusion
+
+Overall, it is probably an exaggeration to suggest that big men have completely changed from 2010 to the present day. Indeed, their rebounding and playmaking have generally remained the same with respect to frequency, and their shooting efficiency has remained quite stable over the past decade. However, there have been some noteworthy changes that make the big men of today at least somewhat different from the big men of prior times. For instance, the average big man today is much leaner, which makes sense in today’s faster game that is more oriented around the three-point line. Additionally, while their three-point shooting efficiency has not improved, the extent to which they shoot three-pointers has increased dramatically, meaning that big men shooting three-pointers is no longer something to be surprised about. Therefore, it can be concluded that while there has been a great deal of continuity, there has been some development in the modern big man of the NBA.

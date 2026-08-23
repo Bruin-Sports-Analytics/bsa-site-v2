@@ -1,0 +1,75 @@
+## Introduction
+
+In the realm of football, where competition ignites passion and stirs fervor like no other sport, few events command the reverence and awe inspired by the UEFA European Championship. For over six decades, this illustrious tournament has embodied the pinnacle of footballing excellence, drawing together the finest national teams on the planet in a quest for glory. Yet, amid the illustrious history and hallowed tradition, only a select few have ascended to the summit and hoisted the coveted trophy aloft. As the tournament's legacy continues to unfold, narratives abound with speculation and anticipation. Can Mbappé lead France to another triumph? Will England finally bring it home? And could Ronaldo conjure magic once more for Portugal? With all eyes fixed firmly on the horizon, anticipation mounts for the forthcoming chapter of European football, centered around Germany as host. As the final three spots hang in the balance, the stage is nearly set for a spectacle of unparalleled drama and excitement. The burning question lingers in the hearts of fans and pundits alike: Who will etch their name into the annals of football history and emerge as European champions of 2024?
+
+## Methodology
+
+A total of 24 teams will be competing in this year’s European championship. These teams will be split into 6 groups of 4 teams each, where each team plays every other team in its group. The top two teams per group and the four best third-place teams will qualify for the knockout stage. Teams in the group are ranked according to points earned, where a win is worth 3 points, a draw is worth 1 point, and a loss is worth 0 points.
+
+We gathered data from each team’s Euro qualifying campaign, where teams are also split into different groups and play every team in their group. So, we collected data from all national teams’ qualifying campaigns and put them into a spreadsheet, displaying the variables defined below:
+
+### Predictor Variables
+
+**GPG:** Goals per game in the qualifiers.
+
+**GAPG:** Goals allowed per game in the qualifiers.
+
+**PPG:** Points per game attained by each team in the qualifying campaign.
+
+**Average Opponent Ranking:** This is the average FIFA world ranking of a given team’s opponents during the Euro qualifiers. For instance, during the qualifiers, Spain’s group contained Scotland, Norway, Georgia, and Cyprus, so Spain’s average opponent ranking would be the average of Scotland’s, Norway’s, Georgia’s, and Cyprus’s 4 teams' FIFA world ranking. Note that in the qualifying campaign, not all groups have the same number of teams, so we decided to use the average in order to lower biases and get a more accurate representation of the teams.
+
+In this study, we aggregated the aforementioned statistics for all the teams under consideration, believing them to have the strongest correlation with a national team's performance in the Euros. Our aim was to gauge the variables that would best encapsulate the form of national teams during the Euro qualifiers, thus focusing on these four key metrics. Firstly, in terms of general variables, we deemed average goals scored and allowed per game crucial indicators. This provides a straightforward measure of a team's success, as it offers insight into their ability to both attack and defend effectively. We selected both metrics as scoring a high number of goals does not guarantee victory if goals are conceded at a similar rate. However, this ratio alone may not provide a comprehensive assessment, prompting us to include the average points obtained by each team. This metric offers a clearer indication of a team's overall performance, whether they are securing wins, suffering defeats, or playing to draws against other nations. Lastly, we consider the average opponent ranking in the team's group during the qualifiers as a pivotal factor. This metric offers valuable insight into the caliber of competition faced by each team, providing context to their performance. By considering these factors collectively, we believe we can gain a more well-rounded understanding of each team's form, as the combination of goal-scoring prowess and the quality of opposition encountered offers valuable insights into their overall performance level.
+
+Here is an example of the goals per game scored by some of the teams that qualified for the Euros. There are a number of teams that average a lot of goals per match, but this doesn’t necessarily tell the whole story, as some countries were in harder groups compared to others. Additionally, the style of play for each country does also have a strong influence on the number of goals scored as well, where some nations, like England or France, play very aggressively and are stronger on the attack, whereas others play more defensively, like Croatia, as you can see in the graph.
+
+![Figure 1](/assets/journalism/2024-euros-prediction/figure-01.jpg)
+
+### Predicted Variables
+
+Group Rank: The rank of each team in their group in the European championship. Since three of the teams have not been determined yet, there were three groups where we only predicted the results for three teams.
+
+![Figure 2](/assets/journalism/2024-euros-prediction/figure-02.png)
+
+The heatmap illustrates the correlations among all variables. Since we are trying to understand how each variable relates to the Group Rank, which is our target for prediction, we examine the rightmost column of the heatmap. In this column, we observe that Goals per Game and Points per Game have a moderate negative correlation with the resulting group rank. This is because higher goal-scoring and points gained per game are associated with lower group ranks, indicating better performance. Additionally, the heatmap reveals a slight positive correlation of 0.16 between Goals Allowed per Game and the resulting Group Rank of a team. A higher number of goals allowed per game is linked to higher group ranks, suggesting a poorer defensive performance. Interestingly, the heatmap indicates a very low correlation between the average ranking of a team's opponents and the resulting group rank. However, we believe that when looking at the average opponent ranking in conjunction with the other variables: goals scored per game, points obtained per game, and goals allowed per game, could influence the group ranking significantly. Therefore, we will include this variable in our prediction model for group rankings.
+
+## The Model
+
+To predict the group stages, we deployed a Neural Network model. Unlike traditional linear models, neural networks, inspired by the structure of the human brain, are highly flexible, with the ability to recognize complex patterns and thus generate more accurate predictions. Through a process of consensus and aggregation, the model leverages the diverse perspectives of individual trees to arrive at a final prediction with enhanced accuracy and reliability. This ensemble approach not only mitigates the risk of overfitting but also enables the model to capture complex nonlinear relationships and interactions within the data. Additionally, Neural Networks boast inherent mechanisms for feature selection and handling missing values, further enhancing their effectiveness in modeling real-world datasets. The model designed for predicting group stage rankings in the Euro Qualifiers utilizes a neural network architecture, incorporating a custom loss function that combines mean squared error (MSE) with a penalty for predicting duplicate rankings within groups, ensuring the model's predictions align with the logical constraints of the group stage format. The training process involves splitting the historical data into training and validation sets, optimizing with the Adam optimizer, and iterating over a specified number of epochs. Then, the model learns patterns from past qualifiers' data, including average goals scored, average goals allowed, average points per game, and average opponent ranking, to make accurate predictions about teams' rankings in the upcoming qualifiers. We simulated the model for 50 epochs, allowing the model to achieve 90% accuracy.
+
+![Figure 3](/assets/journalism/2024-euros-prediction/figure-03.png)
+
+This graph illustrates the accuracy of our model across 50 iterations. We tested the model’s accuracy using the training dataset and repeated the process 50 times to assess the model's true accuracy. Then, we stored each iteration’s accuracy in an array, which we were then able to use to plot the moving average of all the accuracies. Finally, we plotted the model's accuracy after each iteration, revealing that it consistently converged to a value above 90%, as depicted in the visualization.
+
+### Results
+
+![Figure 4](/assets/journalism/2024-euros-prediction/figure-04.png)
+
+### Key Takeaways
+
+**Group A:** Germany tops their group, which might be slightly surprising, as the national team has not performed well at all over the past few years, but perhaps the return of Toni Kroos might propel the team. However, Switzerland on the other hand, surprisingly actually finish last in the group
+
+**Group B:** The defending champions Italy top the group of death, with Spain finishing in 2nd place. Croatia suffers a bitter defeat, crashing out in last place. Although perhaps a bit surprising to some, the competitive nature of Group B underscores the unpredictability of football at the highest level
+
+**Group C:** Serbia qualifies for the knockout stages for the first time since 2000 by finishing 2nd in the group, with England unsurprisingly finishing first.
+
+**Group D:** Despite being the favorites to win this competition, France finished 2nd in their group. To be fair, teams in the past have still barely qualified for the knockout round and still have won the entire tournament, like Portugal in 2016. Austria finished 1st and Netherlands 3rd, which is a bit surprising, since Netherlands and France are the two teams many predict to finish in the top 2 of this group.
+
+**Group E:** Belgium, as they did last tournament, top the group, with Romania finishing second and Slovakia third.
+
+**Group F:** In the final group, Portugal finish in 1st place, their first time since 2008, and Turkey follow in second and Czechia in third.
+
+### Potential Limitations
+
+The outcomes produced by our model are valuable, yet it's essential to acknowledge their inherent imperfections. External factors such as unforeseen injuries can significantly impact team performance, a variable we couldn't incorporate into our analysis. While some of our predictions align closely with the expectations of fans and analysts, there are instances where our model diverges from conventional views. A prime example is Austria's unexpected triumph in a group stacked with powerhouses like France and the Netherlands. Such surprises aren't unprecedented though, as Belgium shockingly failed to advance past the group stage in the previous World Cup despite being touted as contenders for the title. Moreover, it's crucial to recognize the temporal constraints of our data collection process. The dataset we utilized primarily comprised statistics from teams' qualifying campaigns, commencing approximately a year before the tournament. Consequently, changes in team compositions, coaching staff, and other influential factors occurring post-qualification were beyond the scope of our analysis. This limitation underscores the dynamic nature of football and emphasizes the need for ongoing refinement and adaptation in predictive modeling approaches. Finally, there are still three teams that have not been determined yet for the tournament, and they might end up making a tremendous run in the tournament, which we have not considered here. Although unlikely, these sorts of runs have happened in the past, as for example, the previous World Cup saw big underdogs Japan and Morocco finish at the top of their group, with Morocco even making history and finishing in fourth place at the tournament.
+
+## Conclusion
+
+While our model provides valuable insights into team performance and tournament outcomes, it is imperative to approach its results with a degree of caution. Unforeseen variables such as injuries and evolving team dynamics can influence the course of events in unpredictable ways, as demonstrated by past instances of unexpected outcomes in major tournaments. Despite the limitations inherent in our data collection process, our analysis underscores the dynamic nature of football and the need for ongoing adaptation and refinement in predictive modeling techniques. Moving forward, continued efforts to enhance our understanding of the game and refine our analytical methodologies will be crucial in maximizing the accuracy and reliability of future predictions.
+
+[https://inside.fifa.com/fifa-world-ranking/men](https://inside.fifa.com/fifa-world-ranking/men)
+
+[https://www.uefa.com/european-qualifiers/fixtures-results/](https://www.uefa.com/european-qualifiers/fixtures-results/)
+
+[https://www.national-football-teams.com/continent/1/Europe.html](https://www.national-football-teams.com/continent/1/Europe.html)
+
+[https://fbref.com](https://fbref.com)

@@ -1,0 +1,67 @@
+## Introduction
+
+Across all professional sports leagues, the National Basketball Association is notorious for demanding one of the more backbreaking schedules, requiring its teams to play in an 82-game regular season over just 6 months. Because of the large number of games played in a relatively short amount of time, teams are often scheduled to play in “back to backs”, having to play two games in two days, oftentimes in entirely different locations. The reality of back-to-backs has caused controversy, especially with the emergence of “load management” in the past decade, in which teams will decide not to play their star players out of fear of injury risk. Teams, players, and fans alike worry about the side effects of playing in back-to-back games, and wonder if they ask too much of NBA athletes physically, which can lead to a decrease in individual and team performance. To test the real effects of back-to-backs on team performance, we examine and analyze a dataset with games from 2002 to 2022 to see how these games have affected team performance, including metrics such as points per game, field goal percentage, and winning rates. Diving into and visualizing this data allows us to conclude the real effect of back-to-backs on NBA teams to determine if the controversy stirred by these games is supported by the data.
+
+Our main terms are:
+
+- Back to Back: 2 games played in 2 days
+- Home Back to Backs: Home team is playing their 2nd leg of a back-to-back
+- Away back-to-backs: Away team is playing their 2nd leg of a back-to-back
+- Winning percentage: games won / games played
+- Field goal percentage: field goals made divided by field goals attempted
+- Three-point field goal percentage: three-point field goals made divided by three-point field goals attempted
+- Free throw percentage: free throws made divided by free throws divided
+- Rebound: when a player grabs the ball after it bounces back from a missed shot
+- Assist: when a player passes the ball to a teammate who then scores a field goal, and this pass is the last pass before the field goal
+
+## Teams:
+
+We began by examining the number of back-to-backs each team played to see which team was at a disadvantage in having to play the most back-to-back games. Our results showed that the Los Angeles Clippers (238 games), Golden State Warriors (209 games), and Portland Trailblazers (199 games) played the most amount of total back-to-back games. What’s important to note is that these three teams also played the most amount of back-to-back games on the road with the Warriors playing 182, the Clippers playing 180 games, and the Trailblazers playing 169. At home, however, the Warriors and Trailblazers fell in the middle of the pack while the Clippers sat at the top of the NBA with 58 home back-to-back games, significantly greater than the next two closest teams, the Chicago Bulls and Minnesota Timberwolves who each played 33. Part of the reason for the immense difference between the amount of home back-to-backs for the Clippers and the rest of the NBA is because of their arena. For all the games in our dataset, the Clippers played at the [Crypto.com](http://Crypto.com) Area (formerly known as Staples Center). They shared that arena with the Lakers and the Los Angeles Kings of the NHL. This forced limited availability for the arena which caused the Clippers to have to cram more games in at home.
+
+On the flip side, the 4 teams with the least amount of back-to-back games were the Atlanta Hawks (116 games), Milwaukee Bucks (117), Charlotte Hornets (119 games), and Indiana Pacers (119 games). All of these teams fell in the bottom 7 of the NBA in terms of a number of away back-to-back games while were more dispersed in the number of home games played.
+
+The 4 teams with the least amount of back-to-backs played all play in the Eastern Conference. On average teams in the East had a total of 136.93 back-to-back games while Western conference teams played an average of 180.467 total back-to-back games played. The reason for this difference is the geographical distance between teams. The Eastern Conference is more condensed and has to travel shorter distances while the Western Conference teams normally have to travel longer distances to play games. To make up for this travel distance, the NBA has teams in the West that have more road trips to minimize travel distance which includes a significant number of back-to-backs.
+
+![Figure 1](/assets/journalism/how-does-back-to-backs-impact-the-nba/figure-01.png)
+
+![Figure 2](/assets/journalism/how-does-back-to-backs-impact-the-nba/figure-02.png)
+
+## Wins:
+
+Back-to-backs have always had a reputation for being hard to win because of the travel and stress on the body that playing two games in a row requires. Based on the reputation of back-to-back games, we expect that teams playing back-to-back games should be losing more than average. To best measure if this fact is true, we looked at the winning percentage of every team in our dataset to see if this is true.
+
+At home, the Milwaukee Bucks (75% winning percentage), Washington Wizards (75%) Phoenix Suns (69%) were the best teams when playing back-to-back. The worst home back-to-back teams were the Charlotte Hornets (39%), Toronto (40%), and Oklahoma City Thunder (41%). The mean winning percentage for home back-to-backs was 54% which was 5% less than the mean winning percentage for home teams in the whole dataset (59%).
+
+On the road, The Sacramento Kings (55%), Dallas Mavericks (52%), and Boston Celtics (51%) were the winningest back-to-back road teams while the Minnesota Timberwolves (23%), Brooklyn Nets (26%), and Orlando Magic (28%) were the least winningest teams. Away back-to-backs also back up our theory that back-to-backs are harder to win as the mean winning percentage on road back-to-backs was 38% while the mean winning percentage for road games in general was 41%.
+
+Overall, the best teams in back-to-backs were the Sacramento Kings (55%), Phoenix Suns (52%), and Boston Celtics (52%). The worst back-to-back teams were the Minnesota Timberwolves (28%), Orlando Magic (31%), and Brooklyn Nets (32%). In total, the average winning percentage for back-to-back games was 41.4% which was significantly less than the overall mean win percentage of 50%. The team's win rates at home, on the road, and overall show that back-to-backs are indeed harder to win.
+
+![Figure 3](/assets/journalism/how-does-back-to-backs-impact-the-nba/figure-03.png)
+
+## Metrics
+
+The main metrics that show the performance differences across game types are points, rebounds, assists, and shooting percentages (field goal, three-point, and free throw percentages). By examining these metrics, we can evaluate how playing at home, away, or during back-to-back games impacts team and player efficiency.
+
+![Figure 4](/assets/journalism/how-does-back-to-backs-impact-the-nba/figure-04.png)
+
+This graph shows some interesting trends across game types. For points, back-to-back home games show the highest averages, followed by regular home games, with away games slightly lower and back-to-back away games the lowest. This suggests that playing at home, even during a back-to-back, may provide a boost to scoring performance, potentially due to familiarity with the court and crowd support. For assists, the trends are similar, with back-to-back home games leading the way. This could indicate that teams playing at home during back-to-backs rely more on ball movement and teamwork to maintain offensive efficiency. Interestingly, rebounds remain consistent across all game types, showing minimal variation. This suggests that rebounding—a mix of effort and positioning—is less influenced by fatigue or game location.
+
+![Figure 5](/assets/journalism/how-does-back-to-backs-impact-the-nba/figure-05.png)
+
+The second graph reveals very slight differences in shooting efficiency across game types. Field goal percentage (FG%) is highest in regular home games, followed closely by back-to-back home games, with back-to-back away and regular away games trailing slightly. This indicates that teams shoot better at home overall but still maintain strong efficiency during back-to-backs. For a three-point percentage (FG3%), regular home games again lead, but back-to-back away games surprisingly outperform regular away games and back-to-back home games. This may reflect a focus on perimeter shooting during challenging road conditions. Finally, free throw percentage (FT%) is more stagnant, showing that it is less influenced by game type or conditions such as back-to-back schedules. This consistency likely reflects the nature of free throws as uncontested shots, which rely more on muscle memory and focus rather than physical exertion or fatigue, allowing players to maintain similar performance regardless of the game situation.
+
+One limitation of this analysis is that it does not account for the strength of opponents faced during back-to-backs, which could play a significant role in determining game outcomes and influencing performance metrics beyond fatigue-related effects.
+
+However, overall, our analysis suggests that shooting efficiency, which relies heavily on skill and repetition rather than physical endurance, is not significantly impacted by the demands of consecutive games.
+
+## Conclusion
+
+The data we analyzed allowed for insight into the distribution of back-to-back games across NBA teams, leading us to conclude that Western Conference teams tend to be scheduled for more back-to-backs due to geographical differences, which could be grounds for valid criticism. However, the data suggests that the more important factor in metrics such as shooting efficiency, or the rate at which teams make the baskets they are attempting, is whether or not they are playing at home or on the road, not necessarily if it is part of a back to back. Furthermore, free-throw shooting remains fairly constant across all conditions, as does rebounding. In conclusion, the data does not indicate that teams playing on a back-to-back have a significant negative correlation with team performance as measured by shooting efficiency, but does strengthen the popular idea that the home team has an advantage.
+
+## Sources
+
+**Kaggle:** [**https://www.kaggle.com/datasets/nathanlauga/nba-games?select=games.csv**](https://www.kaggle.com/datasets/nathanlauga/nba-games?select=games.csv)
+
+**Hashtag Basketball:** [**https://hashtagbasketball.com/advanced-nba-schedule-grid**](https://hashtagbasketball.com/advanced-nba-schedule-grid)
+
+**Stat Muse:** [**https://www.statmuse.com/nba/ask/which-team-has-the-most-back-to-back-games-for-this-season**](https://www.statmuse.com/nba/ask/which-team-has-the-most-back-to-back-games-for-this-season)

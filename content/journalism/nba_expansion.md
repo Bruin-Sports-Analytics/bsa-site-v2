@@ -1,0 +1,91 @@
+### By: Franklin Liang
+
+We hear it every year.
+
+“Seattle deserves an NBA team again.”
+
+“Las Vegas will be the next NBA team.”
+
+“(Insert your hometown) should definitely have an NBA team!”
+
+We also often hear the inverse versions of these claims. Fans question why cities such as Memphis or Oklahoma City, which admittedly have smaller markets and economies, have NBA teams. They instead wonder why larger cities with more development don’t have an NBA team to cultivate the potentially larger fanbase. It’s been a question that hasn’t yet found its answer for years.
+
+As a league that’s been growing in popularity in both the domestic and international markets, the question of expansion has become more a question of “when,” not “if.” Roughly 215 countries around the world can watch NBA games in over 50 languages, per [CNBC](https://www.cnbc.com/2019/01/18/nba-steps-up-its-global-plans-to-take-basketball-to-new-markets.html), which demonstrates the NBA’s global reach. More talented players are competing to be drafted and signed by teams each year. With burgeoning fanbases yearning for their own teams, the NBA has a cornucopia of options to pick as their next NBA expansion team.
+
+Of course, there are some conditions that the next NBA city has to satisfy to be the prime target for expansion. Like any business, there needs to be a market to establish a solid customer base and earn consistent revenue from ticket sales and merchandise. This city should have a high population to maximize as many new fans as possible while also having a strong and well-developed economy and TV market to stimulate business growth in a continuous feedback loop. Let’s find some possible choices for the next NBA expansion team for the future.
+
+## Narrowing it Down
+
+Like any sports league, the NBA is driven and sustained by *fans* . The key factor in determining the next expansion team is population: a new team needs a strong foundation to develop their franchise. All cities will be considered in the selection process, including popular choices such as Las Vegas and Seattle. In addition, cities that already have a team could be a target for an expansion team as their market could sustain the growth.
+
+To be more representative of an expansion team’s potential market, I will first find the most populous counties that do not currently have an NBA team. I used counties over cities as counties would be a better indicator of a potential market size. For example, the Los Angeles Lakers don’t just service the people in the immediate city area; they also bring in people outside of the municipal borders. In addition, this data was more readily available for other variables such as GDP per capita which would allow for more uniformity. After I found ideal counties for expansion teams, I will hone in on target cities that could host an expansion team for that city.
+
+After gathering data on population by county (the most recent being 2019), I found the 25 most populous counties without NBA teams. Figure 1 displays this data in a table depicting the counties in order from most populous to least populous as well as the state.
+
+![Figure 1](/assets/journalism/nba_expansion/figure-01.png)
+
+Based on Figure 1, just from a population standpoint, California and New York have the most counties in the top 25 at 7 and 4 counties respectively. The top 3 counties are all based in California. Additionally, the counties that include Seattle (King County) and Las Vegas (Clark County) are both in the top 6.
+
+Figure 2 displays the data of the counties with NBA teams ordered from most popular to least populous as well. Comparing the two tables, it’s clear that some populous counties from Figure 1 are more populous than those in Figure 2. The top 4 most populous counties in the United States all have NBA teams while there are some counties in Figure 2 who bring up the question mentioned in the beginning: Why do some smaller markets have NBA teams?
+
+Some comparisons clearly stand out such as San Diego County’s population of 3,338,330 compared to Shelby County’s (Memphis Grizzlies) population of 937,166 people. In fact, the bottom nine counties all belong to NBA counties with teams such as Denver Nuggets, Washington Wizards, and Oklahoma City Thunder among the bottom three. It’s obvious that the top 30 counties in population do not immediately translate to 30 counties with NBA teams, demonstrating that other factors contribute to being a location with an NBA team.
+
+![Figure 2](/assets/journalism/nba_expansion/figure-02.png)
+
+The next factors to analyze are GDP per capita by county and the number of TV homes in the DMA (Designated Market Area) that service the county. GDP per capita is an indicator of a county’s economy which is vital for establishing a strong foundation for a budding franchise’s brand as a team will want to make profit to be economically sustainable. One of the NBA’s main revenue streams comes from television as the NBA signs contracts with both local and national television stations to televise NBA games for fans to view games from home. DMA’s are often used by new businesses to analyze the television market and gauge their potential market size.
+
+Gathering the number of TV homes for each county’s DMA and GDP per capita for each county (both metrics being from 2019 for uniformity), I constructed a scatter plot to visualize the data to see any noticeable trends or outliers. Figure 3 visualizes this data looking at all of the counties with or without NBA teams with GDP per capita on the X-axis and TV homes on the Y-axis.
+
+![Figure 3](/assets/journalism/nba_expansion/figure-03.png)
+
+Based on Figure 3, the point at the top right with the highest GDP per capita at $390,048.61 and one of the highest TV homes in their DMA is New York County (New York Knicks) at 7,100,300. On the other hand, the point with the most TV homes in their DMA is York Municipality (Toronto Raptors) with over 8,100,000. In a vacuum, the only ideal spot for an expansion team would be New York County with the highest GDP per capita and second highest TV homes.
+
+Comparing Non-NBA counties with NBA counties, teams (other than the Knicks) such as the Golden State Warriors, Washington Wizards, and Atlanta Hawks sit in the top 5 in total GDP per capita at $202,490.91, $175,599.64, $150,320.6, respectively. The only Non-NBA county in the top 5 in GDP per capita is neighboring Santa Clara County in the Bay Area with a GDP per capita of $165,002.31. On the other end, three of the bottom five counties are New York counties including Bronx, Queens, and Kings. The other two are Californian: San Bernardino and Riverside counties.
+
+Looking at TV homes, the second largest DMA outside of the Toronto Raptors would be the New York region which encompasses six counties including four Non-NBA counties: Queens, Suffolk, Bronx, and Nassau counties. With 7,100,300 TV homes, New York City is more than capable of sustaining high viewership amongst local TV stations even if another team were to be established in the region. The third largest DMA is the Los Angeles region at 5,276,600 which includes three Non-NBA counties: Orange, Riverside, and San Bernardino counties. Towards the end of the list, the bottom three are all NBA counties which include the Oklahoma City Thunder, New Orleans Pelicans, and Memphis Grizzlies at 676,720, 624,020, and 623,390 TV homes, respectively.
+
+The next step is to find possible options for NBA expansion teams from these counties and honing in on potential cities in those counties.
+
+## Contenders for the Next NBA Expansion Team
+
+### Santa Clara County - San Jose
+
+With a GDP per capita of $165,002.31 (the highest among Non-NBA counties), Santa Clara has the most established economy amongst its competitors. It rests within the ninth largest DMA in the data with a total number of TV homes of 2,414,470. Even though it shares a DMA with the Golden States Warriors, the Bay Area is a thriving and dynamic market that can support another team in the same region. The NBA could establish a new team in San Jose to create a crosstown rivalry with the Warriors while also bringing in new fans from areas such as Santa Cruz. San Jose also has existing sports teams with the San Jose Sharks being the most prominent sports team in the city. As a result, an NBA expansion team would most likely not need to build a stadium or expend as much capital to build from the ground up. Additionally, adding another sports team to a city with both a professional and semi-professional scene further buds interest amongst sports fans to support local teams, continuing in a feedback loop.
+
+However, the NBA might also shy away from San Jose due to its proximity to Sacramento and San Francisco. Additionally, this would be the 5th team in California, potentially oversaturating the market as there could be better opportunities in untouched regions. If the NBA were to expand to new areas, the Midwest or Southwest would be prime targets to balance out the market.
+
+### King County - Seattle
+
+With the sixth highest population among Non-NBA counties at 2,252,728, Seattle making this list is no surprise. In addition to having the second highest GDP per capita among Non-NBA counties and seventh highest overall at $130,651.69, Seattle has the stats but also the narrative of being the city that has waited long enough for an NBA team. Unlike other locations, Seattle has a slightly different situation as the fanbase and infrastructure needed to support the growth of a developing NBA franchise already exists. Furthermore, the NBA would be bringing a team to a profitable city with a strong TV market of 1,854,810 TV homes in a state that doesn’t already have a NBA team. Bringing a team back to Seattle would revitalize the city with nostalgia for the game of basketball while also bringing in younger audiences to the sport. Additionally, Seattle already has their own NFL, MLB, NHL, and WNBA teams so an expansion NBA team would thrive in a city with a strong local sports culture. Seattle is currently constructing the Climate Pledge Arena for both the Seattle Kraken and Storm as their brand new home stadium with an estimated audience of 18,100, so a new NBA expansion team wouldn’t have to invest in a new venue and facilities.
+
+However, the funding issues that moved the Seattle Supersonics to OKC in the first place could still be the same deterrence preventing a new team from coming back to Washington. A new franchise will need consistent funding sources to sustain the growth expected in a new business.
+
+### Travis County - Austin
+
+Travis County has the fifth highest GDP per capita among Non-NBA counties at $88,656.93 and is situated in Texas, arguably the state’s second strongest economy after California. Having an NBA team in Austin would create a dynamic rivalry network among the San Antonio Spurs, Dallas Mavericks, and Houston Rockets. The NBA is a league driven by narratives and fans would revel in a four-way state rivalry to be the very best team in the state. At the same time, they are spaced far enough away from each other to develop their own unique and individual identities. Additionally, Austin doesn’t have a sports team that belongs to one of the four major professional leagues in the United States outside of the San Antonio Spurs’ G-League team. Bringing an expansion NBA team to Austin would give a profitable city with a strong economic base a business that would easily expand exponentially.
+
+However, Travis County has a weaker TV market than other counties with the fourth lowest sized DMA at 751,650, which may make it difficult to build a fanbase in Austin. Additionally, the NBA might be hesitant to build another team in Texas for the same reason that they’d be hesitant to expand to California.
+
+### Middlesex County - Cambridge
+
+Middlesex County has the third highest GDP per capita among its competitors at $101,438.94 and would establish another NBA team in the Boston area. With the tenth largest DMA among all counties at 2,364,870 TV homes, Cambridge has a burgeoning economy that can also create a crosstown rivalry with the neighboring Boston Celtics. As one of the oldest teams in the NBA, Boston’s franchise is well-developed and has strong infrastructure that a team in Cambridge could also share. Similar to the Los Angeles Lakers and Clippers, Cambridge is close enough to the city of Boston to share a stadium, which would help a budding NBA franchise with their expenses.
+
+However, Boston sports teams have always been a hub for fans throughout the New England area so adding a team in Cambridge may not be necessary. Speaking from an analogy, the New England Patriots are physically located in Boston, but the team represents fans from the whole New England region and isn’t limited to just Massachusetts.
+
+### Fairfax County - Alexandria
+
+The smallest county by population amongst the contenders at 1,147,532, Fairfax County is comparable to smaller markets such as Charlotte or Salt Lake City, which have similarly sized populations at 1,110,356 and 1,160,437, respectively. However, it boasts the fourth highest GDP per capita amongst its competitors at 96,200.26 and would establish another NBA team in the Washington metropolitan area. This would create a new team that would share a stadium with the neighboring Washington Wizards. Additionally, the Washington area is home to multiple professional and semi professional sports teams and houses one team from each of the four professional leagues. D.C. has a proven track record in supporting the growth and expansion of local sports franchises. Alexandria has only owned one professional or semi professional sports in a minor league baseball back in the 1980’s so an expansion team in Alexandria would grow the sports market in the immediate area.
+
+However, Fairfax County lacks a strong urban center and might struggle to find a tight-knit population to establish a fanbase. Additionally, the fact that Alexandria has only owned one sports team in the city is both an opportunity and a risk as there aren’t other sports teams in the city to support the growth of a new NBA franchise. Being near Washington D.C. might hinder a new team from creating a separate identity from the Washington Wizards.
+
+## Conclusion
+
+There is no specific model to find the perfect NBA expansion city as there are a multitude of factors that would influence such a decision. Some counties have both a thriving economy and TV market but are in oversaturated markets such as San Bernardino, Orange, and Riverside counties, which all share a DMA with Los Angeles and could compete with both the Lakers and Clippers. Additionally, the same applies for Bronx, Suffolk, Nassau, and Queens counties of New York which could oversaturate a market that already has the Nets and Knicks. Las Vegas has long been a fan favorite pick for the next NBA expansion team but ranked bottom eight in both GDP per capita and TV homes at $48,573.76 and 766,500 TV homes, respectively. As a result, it was not a favorable selection based on the data.
+
+The five contenders that were selected aren’t independent players in their respective sports markets. San Jose is nestled in the Bay Area, the home of the Golden States Warriors and multiple professional sports teams. Seattle owns multiple professional and semiprofessional teams as well as a previous team in the Supersonics. Austin is surrounded by Dallas, Houston, and San Antonio—each of which have their own strong sports scene. Cambridge borders Boston with all of its historic sports franchises. Lastly, Alexandria is near the nation’s capital Washington D.C., home to the Washington Wizards and multiple professional sports teams.
+
+None of these locations are uncharted territory as sports markets since franchises are extensions of the NBA’s brand and business. The NBA wants to entertain its fans while also earning revenue in sustainably profitable markets. All of the selected candidates had established sports markets with infrastructure such as stadiums that would help the financial situation of a budding sports franchise.
+
+The five contenders above are not static as other statistics such as density could change the selections. Additionally, broadening the choices to include international cities such as Montreal or Mexico City would also change which cities would be top contenders. The NBA had planned for a new expansion team to be established during the 2020’s decade. As the league continues to grow and expand, the NBA will have to make a decision that balances profit, market interest, and geography while also expanding its reach to untapped markets.
+
+*Sources:* [*bea.gov*](https://www.bea.gov/data/gdp/gdp-county-metro-and-other-areas) *,* [*census.gov*](https://www.census.gov/data/tables/time-series/demo/popest/2010s-counties-total.html) *,* [*mediatracks.com*](https://mediatracks.com/resources/nielsen-dma-rankings-2019/)

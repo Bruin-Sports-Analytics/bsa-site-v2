@@ -1,0 +1,65 @@
+### By Nathan Wetmore
+
+## Punching it In
+
+We’ve all seen it happen to our team: the offense marches down the field expertly moving the chains until they arrive at the ten yard line and proceed to run the ball three times into a brick wall or throw three terrible incompletions in the end zone and are forced to settle for an unfortunate field goal. Any coach in the history of football goes mad just thinking of this situation. So what causes this anti-climactic finish to a drive? More specifically, what factors lead to teams having as high a red zone percentage as possible? Red zone percentage, for those unfamiliar, is defined as the proportion of instances a team is inside the twenty yard line of their opponent and comes away with a touchdown. I intend to use a linear regression analysis to analyze a data set with many different variables to determine just this.
+
+## Assembling Data
+
+To begin, I went to find each team’s red zone percentage over the last 6 years, as well as many common data metrics through the NFL’s website. I used Python with the data processing package pandas to read in these tables on the website and convert them to pandas DataFrames. Then I merged all the years together as well as merged it with the table of red zone percentages with all the other variables. Below is the resulting data table I was using throughout this process:
+
+![Figure 1](/assets/journalism/analytical-red-zone-percentage/figure-01.png)
+
+Present are each team from each year dating from 2017-2022, with their Red Zone Percentage and
+
+- Pass Att: total pass attempts on the year
+- Cmp: completions on the year
+- Pass Yds: total passing touchdowns
+- INT: total interceptions
+- Passer Rate: an NFL defined statistic calculated using calculated using a player's passing attempts, completions, passing yards, passing touchdowns, and interceptions normally on a scale of 0 to 158.3
+- Pass 1sts: the number of first downs obtained by the team by passing
+- Pass 1st%: the percentage of passing plays resulting in a first down
+- Rush Att: total rushing attempts
+- YPC: yards per carry
+- Rush TD: total rushing touchdowns
+- Rush 1sts: the number of first downs created by running the ball
+- Rush 1st%: the percentage of rushing plays resulting in a first down
+- Rush FUM: the amount of fumbles lost on rushing plays
+
+Note all values besides the percentages which naturally fall between 0 and 1 are normalized to fall between 0 and 1. This is because if you are comparing numbers of yards in the thousands to single digit interceptions, the coefficients can become very exaggerated, and we want every factor to have an equal potential weight. Next I performed some exploratory analysis to see if there were any potential relationships in the data. First up are some scatter plot graphs of Red Zone Percentage:
+
+![Figure 2](/assets/journalism/analytical-red-zone-percentage/figure-02.png)
+
+Here a slightly positive correlation can be seen between Red Zone Percentage and Passer Rate. This makes sense logically since better quarterback play overall should lead to more touchdowns.
+
+![Figure 3](/assets/journalism/analytical-red-zone-percentage/figure-03.png)
+
+The graph of interceptions is a little less clear. While logic would dictate that with more interceptions comes a lower red zone percentage, this is not necessarily the case in this graph. Interceptions are a highly variable statistic since there are so few of them in a season, typically less than 20, and they can be caused by much more than poor quarterback play, including simple bad luck on a tipped ball.
+
+![Figure 4](/assets/journalism/analytical-red-zone-percentage/figure-04.png)
+
+When comparing rushing first down percentage with red zone percentage, another positive correlation can be seen. Again this makes sense since a strong rushing attack would likely be able to cover the ten or twenty yards needed for a touchdown once a team is already in the red zone. We can analyze the relationship red zone percentage has with each metric by using a heatmap that can be seen below:
+
+![Figure 5](/assets/journalism/analytical-red-zone-percentage/figure-05.png)
+
+Comparing each feature individually to red zone percentage, we can easily see which ones have the strongest relationship to red zone percentage both positive and negative.
+
+## Creating A Model
+
+What happens however, if we compare all features *simultaneously* to red zone percentage? I used a linear regression model to take the data fit a linear equation combining all the features to predict red zone percentage, and here are the results:
+
+![Figure 6](/assets/journalism/analytical-red-zone-percentage/figure-06.png)
+
+There’s a lot to take away from this. Firstly, just because some coefficients are negative doesn't imply anything about their importance, that’s just how the balance between the factors worked out. What should be analyzed is the magnitude of the coefficients. With that being said, let’s take a look. The clearly most important factor in predicting red zone percentage is rushing first down percentage. Quite interestingly, YPC is almost negligible. One possible explanation for this is that the space a running back has in the middle of the field allows for lots of yards after contact or more open holes, increasing YPC. However, in the red zone that space is suddenly gone so the ability of a back to find the first down marker or the goal line in tight spots becomes far more important. The same ratio can be applied to the pass game. Pass first down percentage is a far more meaningful statistic than any other passing feature. We may apply the same train of thought: In open field there tends to be more wide open receivers and easier completions, but in the red zone quarterback accuracy is put under a magnifying glass. Passing first down percentage perhaps shows off this accuracy as it reflects a quarterback’s ability to hit his man right where the sticks are and his awareness of how many yards are needed.
+
+Another interesting component of this chart is how little impact turnovers (Rush FUM and INT) make when predicting red zone percentage. Perhaps these events are too infrequent to make a large enough impact on a season-wide scale. Alternatively, teams that commit many turnovers may not even get to the red zone enough to have the turnovers be what is stopping them from scoring, it may just be indicative of overall bad offense.
+
+## Wrapping Up
+
+If I were an NFL coach trying to design a lethal red zone offense, here is what I would do after reading this information. I would find a quarterback who has high-level accuracy on throws of 15 or fewer yards, and doesn’t have eyes too big for his stomach but knows where the ball needs to be. I would find a running back who can slip gaps for a few yards and fall forward for more yards rather than a back who waits for a home run shot. However, what this data does not show is the impact of coaching, play calling, and play design. Red zone plays are an entirely separate section of a coach’s playbook since the space is much more crammed; only a subset of route trees can work. However, as long as players are in place and the importance of the features mentioned earlier in this article are kept in mind, any team will have a good shot of scoring a touchdown anytime they hit the twenty.
+
+### Sources
+
+[https://www.teamrankings.com/nfl/stat/red-zone-scoring-pct?date=2023-02-13](https://www.teamrankings.com/nfl/stat/red-zone-scoring-pct?date=2023-02-13)
+
+[https://www.nfl.com/stats/team-stats/offense/passing/2020/reg/all](https://www.nfl.com/stats/team-stats/offense/passing/2020/reg/all)

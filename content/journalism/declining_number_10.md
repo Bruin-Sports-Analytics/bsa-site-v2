@@ -1,0 +1,69 @@
+### By: Shiyu Murashima
+
+From Diego Maradona to Mesut Ozil, the center attacking midfielder (CAM) position - better known as the “Number 10” - has seen the most creative players of all time. Arguably the most desired position in football for years, now it is nearly a position of the past.
+
+The role of the CAM is to link the midfield and forwards: essentially, the position provides forwards with opportunities to score. CAMs usually position themselves higher up the pitch without dropping as deep as a regular center midfielder would.
+
+## Mesut Özil: The Classic Number 10
+
+The above image is Arsenal’s lineup in the 2016/17 season, with Ozil playing as the CAM. Here, Ozil’s role is to provide support for the striker (Giroud) and facilitate passes for the wingers (Sanchez and Ramsey). Cazorla generally played as a free center midfielder helping both offensively and defensively while Xhaka controlled the midfield. In this formation, Ozil did not provide much defensively, but generally made up for it by contributing a large amount in the offense.
+
+![Figure 1](/assets/journalism/declining_number_10/figure-01.png)
+
+The line graph above compares Ozil’s average goals and assists per game to his respective teams’ average goals per game. In general, Ozil has consistently contributed on average 25% of the goals scored by his teams throughout the last decade, proving his capabilities to provide the final pass and even scoring the goals himself. Ozil’s average G/A per game has declined over the years, but his team’s scoring has also declined at a similar rate.
+
+![Figure 2](/assets/journalism/declining_number_10/figure-02.png)
+
+The proportion of goals and assists provided by Ozil hit a peak in his third season at Arsenal, contributing to over 43% of the team’s total goals. However, his arguably best season was followed with a steep decline simultaneously with less and less playing time over the last five years.
+
+![Figure 3](/assets/journalism/declining_number_10/figure-03.png)
+
+In addition to goals and assists, shot-creating actions (SCA) are another major component to the offensive creativity needed from CAMs. The above bar chart focuses on the 2017/18 to 2019/20 seasons at Arsenal, displaying Ozil’s proportion of SCA per game. Across the three seasons, Ozil provided around 22% of all SCA per game, contributing a significant amount as a single player to create chances for the team. In the 2019/20 season, despite a decrease in total SCA per game compared to the previous season, Ozil still provided the exact same amount of SCA per game.
+
+A lack of offensive contribution is almost never brought up in the conversation of the decline in use of CAMs by managers of top teams around the world. On the other hand, their lack of defensive contribution and work rate is consistently talked about especially in modern football.
+
+![Figure 4](/assets/journalism/declining_number_10/figure-04.png)
+
+The chart above compares Ozil’s total tackles won to the team’s average total tackles won through the 2017/18 to 2019/20 seasons. Of course, goalkeepers and players with less playing time lowered the team’s average, but we can still see in the 2017/18 season that Ozil was able to provide about an average amount of defensive contribution in terms of tackles. Ozil’s total tackles won dropped significantly in the 2018/19 season, which could be due to his dropping work rate that many criticized or because of his lack of playing time and re-positioning to the wings.
+
+![Figure 5](/assets/journalism/declining_number_10/figure-05.png)
+
+Additionally, throughout the 2017/18 to 2019/20 seasons, the total amount of times Ozil pressured an opponent with the ball was significantly higher than the team’s average number of total pressures. When looking at these statistics, it is difficult to conclude that Ozil’s lack of defensive work rate led to his declining playing time.
+
+Both offensive and defensive contributions do not show a defining factor in why Mesut Ozil or the Number 10 in general have seen a significant decline in use. However, one interesting factor that may have directly contributed to this decline, is the fullback (FB) takeover of the creative position.
+
+## Creativity Takeover: The Role of the Fullback
+
+The above image is Liverpool’s lineup in the 2021/22 season. In this formation, the FBs Alexander-Arnold and Robertson are the key creative playmakers as they consistently make runs up to the attacking third and provide goal scoring chances. Fabinho sits between the center backs and the two side-by-side center midfielders while Firmino drops back as a false 9, completely erasing the need for a center attacking midfielder.
+
+The role of the traditional fullback was mainly to provide the first layer of defense, preventing crosses into the box by opposing wingers and closing gaps unable to be covered by the center backs. Rarely did anyone see FBs pushing forward past wingers. Starting with the likes of Dani Alves, Marcelo, and Philipp Lahm, we began to see FBs acting almost as midfielders, sometimes contributing more on the offense than defense. The role of the fullback today has now completely changed to become more of a creative position that creates chances offensively through decisive crosses and overlapping runs around the wingers to intrude the opposing box. Defense has almost become a secondary role as the midfielders now cover for the spaces left open by the fullbacks.
+
+![Figure 6](/assets/journalism/declining_number_10/figure-06.png)
+
+The chart above focuses on five CAMs who have fallen out of favor in their respective clubs and five FBs who are the most talked about recently for their attacking threats. Taking data from each player’s best three performing seasons, each are ranked by their average shot creating actions per 90 across those three seasons. The CAMs still dominate these rankings with the exception of Alexander-Arnold who slides into 4th place.
+
+![Figure 7](/assets/journalism/declining_number_10/figure-07.png)
+
+Using the same five CAMs and FBs, the above graph focuses on the average goals and assists per game by these players throughout the last five seasons. We can clearly see that CAMs have seen a steep decline in average G/A per game from 2016/17 to 2018/19. At the same time, FBs have seen an incredible increase, demonstrating the possible takeover of the most creative position. In recent seasons however, both CAMs and FBs have averaged around the same G/A per game.
+
+![Figure 8](/assets/journalism/declining_number_10/figure-08.jpg)
+
+![Figure 9](/assets/journalism/declining_number_10/figure-09.jpg)
+
+*Source: SofaScore*
+
+The two spider charts above compares the performances by arguably the best CAM and FB in the world as of now, Kevin De Bruyne (in green) and Alexander-Arnold (in blue) in March 2019 (left) and March 2022 (right). De Bruyne’s performances have not had any significant changes over the course of two years, but Alexander-Arnold on the other hand has had a massive increase in all performances other than defending, ironically. The largest increase is seen in the creativity (CRE) performance, with Alexander-Arnold nearly catching up to De Bruyne with a score of 92. This may not apply to all CAMs and FBs in the world, but it is prevalent that the charts of these two players here have started to look more and more similar in recent times.
+
+![@joel_archie, Twitter](/assets/journalism/declining_number_10/figure-10.png)
+
+In fact, even their heat maps seem to match one another. At first glance, it is nearly impossible to clearly pick out which heat map is for who. If you haven’t guessed already, the left map is for Alexander-Arnold, while the right is for De Bruyne. Of course, this is a special case as De Bruyne tends to drift to the right to provide his signature cross across the box.
+
+Overall, the declining presence of the Number 10 cannot be explained with a few statistics, but through a number of different comparisons, such as the evolving role of the fullback in modern football. It is a shame to see the once most desired position in football with the most creative playmakers of all time, gradually disappearing. Nonetheless, with many creative fullbacks on the rise and former center attacking midfielders re-positioning to the wings, it will be interesting to see how football will develop in the future.
+
+### Sources
+
+- [FBref](https://www.google.com/url?q=https://fbref.com/en/&sa=D&source=editors&ust=1647877967223802&usg=AOvVaw34gldrrlSMwL1JjUbiLpmV)
+- [Build Lineup](https://www.google.com/url?q=https://www.buildlineup.com/&sa=D&source=editors&ust=1647877967224224&usg=AOvVaw37qN4AKQyN9yDBFDRC2oto)
+- [SofaScore](https://www.google.com/url?q=https://www.sofascore.com/&sa=D&source=editors&ust=1647877967224527&usg=AOvVaw2eonTVGaMCad_vRODnb7A1)
+- [Last](https://www.google.com/url?q=https://lastwordonsports.com/football/2019/09/04/the-decline-of-the-number-ten-role-in-modern-football/&sa=D&source=editors&ust=1647877967224889&usg=AOvVaw2mn4R44W8Yx7zw_c4zLG6l)[Wordon](https://www.google.com/url?q=https://lastwordonsports.com/football/2019/09/04/the-decline-of-the-number-ten-role-in-modern-football/&sa=D&source=editors&ust=1647877967225193&usg=AOvVaw2_V200NqVqbuL1zRGC2aUf)[Sports](https://www.google.com/url?q=https://lastwordonsports.com/football/2019/09/04/the-decline-of-the-number-ten-role-in-modern-football/&sa=D&source=editors&ust=1647877967225453&usg=AOvVaw1bs7rDIsfUYbfxUyhkdbRY)
+- [Total Football Analysis](https://www.google.com/url?q=https://totalfootballanalysis.com/tactical-theory/tactical-theory-the-death-of-the-number-10-tactical-analysis-tactics&sa=D&source=editors&ust=1647877967225850&usg=AOvVaw16YtvxtShQUmaamI93XMZN)

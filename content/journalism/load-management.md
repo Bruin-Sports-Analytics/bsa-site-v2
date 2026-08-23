@@ -1,0 +1,73 @@
+### By: Abel Lula
+
+Just like all other professional sports, the National Basketball Association (NBA) have had their fair share of injury dilemmas. In the last decade, NBA teams have done a plethora of things to attempt to decrease and prevent the amount of injuries that NBA players sustain. Some of these things include new advanced technology, more improved and advanced medical staff, etc. However, one of the more polarizing practices that NBA teams are doing to preserve NBA players’ bodies is a term called load management, in which teams would rest their players in the regular season to ensure that their bodies would be relatively healthy come playoffs. The concept of load management, which became widely used by most NBA teams from 2018 onwards and is used frequently in present day, is already controversial because NBA fans show up to games to watch their favorite players play, but these players do not play because of “rest”, “soreness”, or “management”. Anthony Edwards, one of the few NBA stars who played most of his games and does not “rest”, has a problem with players resting. He said to the media after practice that, “If there’s anything I could change anything about the league to make it better, probably just all the guys sitting in resting. That’s the only thing I probably don’t like. Just play, man. If you 80%, you’ve got to play. I don’t like all the sitting, missing games.” NBA fans share the same frustration on the widely used ideology of load management.
+
+The question that is more interesting to think about is if load management is actually helping NBA players stay healthy and stay on the court. Paul George, an 8x NBA All-Star, essentially said in an interview that load management is hurting more than it’s helping NBA players and he believes that the old school way of practicing is better than load management saying, “Teams don’t really practice, you know we’re not getting up and down….they think by giving us time off it’s helped managing our bodies but it’s really making us weaker as players.” With this in mind, we will compare the 2003 NBA All-Stars to the 2023 NBA-All Stars and look at how many injuries and missed games that they had over a 3-season span (2000-2003 and 2020-2023) to see if load management has actually helped or harmed NBA players. I chose the 2000s to ensure that there is no player overlap and there was definitely no such thing as load management in the NBA during that time. We will find the averages for games missed and injuries in a season and use each player’s average to see if there is a significant difference between the two eras.
+
+To compare both of these eras, we first look at the 25 2003 NBA All-Stars, who were Kevin Garnett, Tim Duncan, Kobe Bryant, Steve Francis, Yao Ming, Shaquille O'Neal, Shawn Marion, Dirk Nowiztki, Steve Nash, Gary Payton, Stephon Marbury, Peja Stojakovic, Allen Iverson, Tracy McGrady, Michael Jordan, Jermaine O'Neal, Ben Wallace, Jason Kidd, Vince Carter, Paul Pierce, Brad Miller, Jamal Mashburn, Antoine Walker, Zydrunas Ilgauskas, and Chris Webber.
+
+Using the Pro Sports Transactions Archive and Basketball Reference, I will check how many games these players missed due to an injury and what exact injury they had in the regular season for 3 seasons; 2000-01, 2001-02, and 2002-03. Some players have also missed games due to suspensions, being traded, funerals, personal reasons, and illnesses, and Shaq even missed a game for his college graduation. All of these will not be included in the analysis since these different instances are not injury based. Also, there were two specific players that did not have data for all 3 seasons; Yao Ming only has 1 season because his first NBA season was 2002-2003, and Michael Jordan only has 2 seasons since he was “retired” in the 2000-2001 season. We end up having 25 players and 72 seasons worth of data for this era.
+
+We will then look at the 27 2023 NBA All-Stars, who were Jayson Tatum, Donovan Mitchell, Lauri Markkanen, Ja Morant, Giannis Antetokounmpo, Bam Adebayo, Damian Lillard, Demar Derozan, Pascal Siakam, Domantas Sabonis, Shai Gilgeous-Alexander, Jrue Holiday, Kyrie Irving, Joel Embiid, Nikola Jokic, Luka Doncic, Lebron James, Jaylen Brown, Julius Randle, Paul George, Anthony Edwards, Tyrese Haliburton, De'Aaron Fox, Jaren Jackson Jr., Kevin Durant, Stephen Curry, and Zion Williamson. This does not even include Kawhi Leonard, who is infamous for popularizing load management in 2019.
+
+Similar to the 2003 All-Stars, we will use the same sources to check how many games these players missed due to an injury in the regular season for 3 seasons; 2020-21, 2021-22, and 2022-23. We will remove the non-injury related absences that were explained in the prior paragraph on top of players missing games for COVID Health and Safety Protocols. In order to show the true amount of games missed, I will also count games where players would be out for rest and if players miss 1 game for soreness and injury management. This will ensure that I will not have games missed that include non-injury related reasons and load management reasons. We end up having 27 players and 81 seasons worth of data for this era.
+
+Another thing to account for is that usually, an NBA season is 82 games long. However, due to COVID, the 2020-2021 season ended up only being 72 games. The best way to ensure that this does not affect the variables is by normalizing each of the data points that I collected. Now some of the data has to be divided by 72 if the season is the 2020-2021 season and the rest will be divided by 82. This will calculate the percentage of games missed and percentage of number of injuries in 1 season, and this makes sure all of our numbers are of equal weight. Now, we can look at the data that I collected and compare both eras.
+
+Before we begin, there are some limitations to the data I collected, as the data showed all of the games that the NBA All-Star missed for any reason and the reason why they missed the game. This means that I had to determine which absences were due to a legitimate injury and which ones were non-injury related. Essentially, all of the data that I collected is based on my judgment which might not be 100% accurate. However, I believe that I removed almost all of the games that player due to non-injury reasons
+
+First, we will look at the average number of games missed per season due to injury in both eras. This is very important because NBA teams are trying to minimize the number of games their best players miss, and a lot of teams believe that load management can help.
+
+Here are 2 histograms that show the All-Stars’ average number of games missed per season.
+
+![Figure 1](/assets/journalism/load-management/figure-01.png)
+
+![Figure 2](/assets/journalism/load-management/figure-02.png)
+
+Looking at both of these histograms, it is quite fascinating to note that 12 out of the 25 2003 All-Stars on average only missed between 0%-5% of each season. Only 3 out of the 27 2023 All-Stars were able to do that. These 3 players were Anthony Edwards, Demar Derozan, and Jayson Tatum. Also, Zydrunas Ilgauskas was the only 2003 All-Star to on average miss 30% or more of the season, while 7 of the 2023 All-Stars surpassed 30%. These players were Damian Lillard, Jaren Jackson Jr., Kevin Durant, Lebron James, Paul George, Shai-Gilgeous Alexander, and Zion Williamson.
+
+![Figure 3](/assets/journalism/load-management/figure-03.png)
+
+![Figure 4](/assets/journalism/load-management/figure-04.png)
+
+These scatterplots show the actual percentages of average number of games missed by each All-Star per season. For the 2003 All-Stars, Yao Ming averaged the lowest percentage of number of games missed with 0% in his only season, while Zydrunas Ilgauskas averaged the highest percentage of games missed per season with being just above 30%. However, for the 2023 All-Stars, Anthony Edwards averaged the lowest percentage of games missed per season only missing on average about 2% of the season, while Zion Williamson has the most by on average, missing almost 60% of the season! This was due to Zion missing the whole 2021-2022 due to having a fractured foot.
+
+Here’s a side-by-side boxplot comparing the percentages of average games missed per season by the 2003 and 2023 All-Stars:
+
+![Figure 5](/assets/journalism/load-management/figure-05.png)
+
+The median of the 2003 All-Stars’ percentage of averaged games missed per season is almost 10% more than the median of the 2023 All-Stars, and the most fascinating part is that most of the averages of the 2003 All-Stars are below the median of the 2023 All-Stars’ averages. In fact, this shows that the 2003 All-Stars are actually missing way less games due to injury than the 2023 All-Stars, even to the point that the percentages of averages of games missed in the 2003 All-Stars are statistically significant when compared to 2023. To test this, we will create a t-test where the null hypothesis is that the difference in means for average games missed between 2003 and 2023 will equal 0.
+
+The t test shows the means of average of the percentage of average games missed for both 2003 and 2023 all-stars, those percentages being about 8.7% and 18.1% respectively. The main thing that this shows is that the p-value is really low and the Confidence Interval does not include 0 in it, therefore the difference cannot become 0. This says that the 2003 All-Stars missed significantly less games than the 2023 All-Stars. It is quite shocking that this does not involve any of the games missed due to “rest”, “soreness” or “load management” as that would only increase the gap between these means.
+
+We can also do a similar thing when looking at the percentage of average number of injuries per season. There is not a way to really quantify the percentage of number of injuries, however, the number of injuries a player has in a season is very important because NBA teams are also trying to limit the number of injuries their players sustain throughout a season.
+
+![Figure 6](/assets/journalism/load-management/figure-06.png)
+
+Looking at these 2 histograms, it is interesting to see that 20 of the 25 2003 All-Stars had a percentage of average number of injuries between 0% and 3%. The only players to have higher than 3% were Brad Miller, Chris Webber, Steve Francis, Tracy McGrady, and Vince Carter. while only 4 out of the 27 2023 All-Stars were able to have that percentage; Anthony Edwards, Demar Derozan, Julius Randle and Kevin Durant. Kevin Durant had one of the highest percentage of average games missed per season with 34% (only Paul George and Zion Williamson had higher percentages), so him having one of the lowest percentage of average number of injuries means he’s mainly sustained injuries with longer recovery time. In fact, 4 out of his 6 injuries required him to miss 10+ games and 3 out of 6 required him to miss 20+ games.
+
+![Figure 7](/assets/journalism/load-management/figure-07.png)
+
+![Figure 8](/assets/journalism/load-management/figure-08.png)
+
+When comparing both scatterplots, it is evident that other than Vince Carter, every 2003 All-Stars’ percentage for average number of injuries is at or below 4%, while only 15 of the 27 2023 All-Stars were able to have a percentage at or below 4%.
+
+![Figure 9](/assets/journalism/load-management/figure-09.png)
+
+Looking at the side-by-side boxplot, almost all of the averages of the percentage of injuries for the 2003 era (except Vince Carter as we just saw), is less than the median of all the 2023 averages. This shows that the 2023 All-Stars are on average getting injured more often than the 2003 All-Stars.
+
+Since the groups are so different from each other, this most likely means that these means are significantly different from each other, but we will check with a t test to make sure.
+
+The average percentage of average number of injuries for the 2003 All-Stars was 1.9% and was 4.6% for the 2023 All-Stars. The p-value is basically 0 and the 95% Confidence Interval was from 0.017 to 0.038, and since it does not include 0 in it, the difference cannot become 0. This shows how different these means are and it shows that the 2023 All-Stars are on average getting injured significantly more than the 2003 All-Stars. If we added the additional games that the 2023 All-Stars were injured due to load management would only widen the gap that is already significant.
+
+After looking at all of this data, we can conclude that load management is bad for the NBA, let alone it does not minimize player injuries. However, we cannot say that load management is the cause for why players are getting injured more often. Load management is already disliked by the majority of fans due to superstar players missing games and the fact that it is not helping NBA players stay on the court is concerning. If the NBA really wanted players to stay healthy and minimize injuries, they could shorten the regular season and/or the playoffs or make sure teams do not play on back-to-back days. However, at the end of the day, the NBA is a business and NBA owners will lose money if they actually shortened the regular season. For now, all we can do is hope that a solution arises to prevent all of these injuries.
+
+References:
+
+[https://www.fox9.com/sports/timberwolves-star-anthony-edwards-calls-out-teams-for-load-management](https://www.fox9.com/sports/timberwolves-star-anthony-edwards-calls-out-teams-for-load-management)
+
+[https://www.youtube.com/watch?v=IplP4bZzCds](https://www.youtube.com/watch?v=IplP4bZzCds)
+
+[https://www.basketball-reference.com/](https://www.basketball-reference.com/)
+
+[https://www.prosportstransactions.com/](https://www.prosportstransactions.com/)

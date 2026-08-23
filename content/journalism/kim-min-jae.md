@@ -1,0 +1,148 @@
+### By: Kevin Kim
+
+## Introduction
+
+First of all, congratulations to Napoli for their magical campaign this season. They have been delightful to watch, and have been crowned the champions of the 2022/23 Serie A. Many fans and pundits accredit star players such as Victor Osimhen and Khvicha Kvaratskhelia as the key to Napoli’s successful run for the title. While those players have definitely played a huge role for the team, it is crucial to remember what Bear Bryant once said: “Offense sells tickets, but defense wins championships”.
+
+Behind the offensive firepower stood Napoli’s study line of defense. They remained solid at all times, allowing the menacing forwards to wreak havoc on the opponents freely. This article will explore in particular the role of Korean center-back Kim Min-Jae in Napoli’s accomplishments. Due to his outstanding performance, many clubs are rumoured to be interested in signing him in the upcoming transfer market. Based on comparison with himself in the past seasons and with other defenders, we will understand how he was able to contribute to Napoli’s glory, and explore where he would be the best fit if he were to move.
+
+## Brief Player Profile
+
+- Date of birth: Nov 15, 1996
+- Place of birth: Tongyeong, Republic of Korea
+- Height: 1.90 m
+- Weight: 88 kg
+- Dominant foot: Right
+- Current market value: €50.00m
+- Played for:Gyeongju Korea Hydro & Nuclear Power (2016)Jeonnbuk Hyundai (2017 - 2018)Beijing Guoan (2019 - 2021)Fenerbahce (2021 - 2022)SSC Napoli (2022 - current)
+- Gyeongju Korea Hydro & Nuclear Power (2016)
+- Jeonnbuk Hyundai (2017 - 2018)
+- Beijing Guoan (2019 - 2021)
+- Fenerbahce (2021 - 2022)
+- SSC Napoli (2022 - current)
+- Other information:His contract includes an exit clause of 45 million euros, which will apply exclusively to foreign clubs from summer 2024 on.2017 K League Rookie of the Year2018 K League Team of the YearBecause he entered the game and won a gold medal in 2018 Asian Games, he received military privileges.
+- His contract includes an exit clause of 45 million euros, which will apply exclusively to foreign clubs from summer 2024 on.
+- 2017 K League Rookie of the Year
+- 2018 K League Team of the Year
+- Because he entered the game and won a gold medal in 2018 Asian Games, he received military privileges.
+
+- Gyeongju Korea Hydro & Nuclear Power (2016)
+- Jeonnbuk Hyundai (2017 - 2018)
+- Beijing Guoan (2019 - 2021)
+- Fenerbahce (2021 - 2022)
+- SSC Napoli (2022 - current)
+
+- His contract includes an exit clause of 45 million euros, which will apply exclusively to foreign clubs from summer 2024 on.
+- 2017 K League Rookie of the Year
+- 2018 K League Team of the Year
+- Because he entered the game and won a gold medal in 2018 Asian Games, he received military privileges.
+
+## Data & Analysis
+
+### Definition
+
+Data was taken from Opta Sports, thus definitions of terms were taken from the Opta website. Definitions of terms that are not self-explanatory were included on this list. Definitions for self-explanatory terms, such as tackles and passes, were excluded.
+
+*Recovery* : where a player recovers the ball in a situation where neither team has possession or where the ball has been played directly to him by an opponent, thus securing possession for their team.
+
+*Clearance* : a defensive action where a player kicks the ball away from his own goal with no intended recipient.
+
+*Duel* : A 50-50 contest between two players of opposing sides in the match. For every duel won there is a corresponding duel lost depending on the outcome of the contest.
+
+More definitions can be found in the link below:
+
+[https://www.statsperform.com/opta-event-definitions/](https://www.statsperform.com/opta-event-definitions/)
+
+### Methodology
+
+The initial dataset contains individual data for center-backs in the first-team squad for the clubs that are rumored to be interested in signing Kim Min-Jae. Those clubs are: Manchester United, Newcastle, Manchester City, and Liverpool. The data was filtered so that only data for the league games were included, and was last updated on June 7th, 2023. Statistic per game was calculated using the cumulative data throughout the season until the date of data collection. The formula used was:
+
+Individual Statistic= Cumulative StatisticPlaying Time in Minutes90.
+
+By processing the data as such, it allowed room for a more objective comparison. Because some players played more games than others, using the cumulative statistic may lead to players who simply played more games having higher statistics.
+
+To compare the defensive abilities of the centre-backs, an arbitrary Defensive Index has been calculated. The formula used to calculate this score was:
+
+Tackles made, clearances, interceptions and blocks are direct defensive actions taken during the game to stop the opponent’s attack. Recoveries and duels, as explained in the definition section, reveals how often a defender won the possession back for his team. The subtraction of possession lost reveals how often the player made a mistake and allowed attacking opportunities for the opponent. Legendary Italian defender Paolo Maldini once said, "If I have to make a tackle then I have already made a mistake." Therefore, ironically a good defender is also one that does not create situations that he has to deal with in the first place.
+
+On another note, players who have either played less than 20 games or had less than 1600 minutes of playing time were excluded from the analysis. Even if the player had good statistics, if he was missing out on games it would mean he was injured often or was not a regular starter throughout the season i.e. on the bench often. In any sport, injury-prone players are not the most ideal players to have on the team. Kim Min-Jae played 35 games (3054 minutes) so far this season, which was among the highest values in the dataset.
+
+## Visualization
+
+![Figure 1](/assets/journalism/kim-min-jae/figure-01.jpg)
+
+Before comparison with other players, let’s examine Kim Min-Jae’s growth over the years. Within the past 3 seasons, Kim Min-Jae played for 3 different teams, all from different leagues. The visualization above shows the evolution of Kim Min-Jae in defense and in possession of the ball in the past 3 seasons.
+
+At a glance, his defense statistics do not show a clear upwards trend. There is a linear increase in his average number of tackles, but other statistics do not have a clear pattern. However, there is no clear decrease. In fact, he contested in more duels than previously, and the success rate of his aerial duels increased gradually from 55% to 63%, and his ground duel success rate remained relatively equal at 60%. Overall, statistics reveal that despite playing for more elite clubs, in leagues of higher competitiveness, Kim Min-Jae maintained the same level of defensive performance.
+
+The right half displays the changes in his touches, pass accuracy and types of passes. These statistics are related to the ball possession of the team - players with higher contribution and/or more influence in the game tend to have higher statistics. Most of these statistics show an upwards trend, proving that on average, he had more time on the ball during the game than he did for his previous team. For example, from an average of 64.3 touches per game at Beijing, he averaged 93.6 touches per game at Napoli, demonstrating an astonishing 45% increase. His number of passes attempted per game also increased at a similar rate. Additionally, his number of passes in the opponent’s half went from 11.2 per game to 26.2, giving us a bewildering increase of 133%.
+
+Such trends indicate he gradually played a larger role in maintaining possession for his team. The increase in forward passes and passes attempted in the opponent’s half also reveals how he played further up on the pitch and provided more direct passes to his teammates up front, suggesting that although he is a centre-back, his participation in the team’s offense also increased. This is more extraordinary as it shows his importance in the team’s build-up of became greater, despite playing for more elite clubs, in leagues of higher competitiveness. Another interesting fact is that although he attempted more passes, his pass accuracy actually improved.
+
+![Figure 2](/assets/journalism/kim-min-jae/figure-02.jpg)
+
+The graph above compares the Defensive Index (explained in the Methodology section) for centre-backs that played for teams that finished in the top 3 position in the Premier League, La Liga, Bundesliga and Serie A in the 22/23 season. Out of these players, Kim Min-Jae is placed 7th on the list.
+
+Building on the previous visualization, let’s take a look at a graph comparing the number of touches per game against the defensive index. Out of all the players on the list, only Dayot Upamecano (Bayern Munich) managed to accomplish a higher number of touches while contributing to more defensive actions per game. Also incorporated in the visualization is pass accuracy. Plots with darker blue colors indicate that the player has had a higher pass accuracy. Players with higher defensive index scores than Kim Min-Jae, such as Mats Hummels (Dortmund) and Lisandro Martinez (Manchester United), had less touches and/or lower pass accuracy. On the other hand, only 4 players had more touches than Kim Min-Jae: Ruben Dias, Nathan Ake, Joško Gvardiol and Upamecano. Apart from Upamecano, the other players had a lower defensive index score. Players with higher pass accuracy like Akanji, Stones, Dias (interestingly enough, lots of players from Manchester City - a team renowned for their style of play with high ball possession), also scored less on the defensive index.
+
+Other centre-backs we can see on the graph include but is not limited to: Matthijs de Ligt (Bayern Munich), Antonio Rudiger (Real Madrid), and William Saliba (Arsenal), who are some of the most highly regarded players this season. From this comparison, we can observe that Kim Min-Jae’s performance this season, in both defense and offense, does not fall behind the world-class centre-backs at all; in fact, his statistics surpassed the vast majority of theirs.
+
+## Potential Transfer
+
+Several clubs are rumoured to be interested in bringing in Kim Min-Jae. His contract with Napoli includes a release clause, where a club outside of Serie A can sign him for a fee of €45,000,000. Let’s consider the teams’ situations and apply the same comparison matrix to their current centre-backs to determine whether he is a good fit for each team. The teams chosen for comparison are: Manchester United, Newcastle, PSG, Chelsea and Liverpool.
+
+![Figure 3](/assets/journalism/kim-min-jae/figure-03.jpg)
+
+![Figure 4](/assets/journalism/kim-min-jae/figure-04.jpg)
+
+A comparison of the players’ defensive actions.
+
+![Figure 5](/assets/journalism/kim-min-jae/figure-05.jpg)
+
+A comparison of possession statistics.
+
+A comparison of the success rate of defensive actions and pass accuracy.
+
+## Manchester United
+
+At the time of writing (June 10th), Manchester United is mostly strongly rumoured to be interested in signing Kim Min-Jae. Their first team centre-backs are Lissandro Martinez and Raphael Varane, with Harry Maguire and Victor Lindelof as backup. Martinez can be seen to have a more aggressive style of defense, contesting in an average of 5.4 ground duels per game, which is the highest number in this comparison. He also made about 7 ball recoveries per game, whereas Varane made about 4.7. His number of intercepts (1.2), blocks (1.5) and tackles (2.3) is higher than Varane’s figures, at 0.6, 0.8 and 1.2 respectively. Martinez also averages 0.3 yellow cards per game, which is one of the highest on the list, representing his aggressiveness.
+
+From the data, Kim Min-Jae proves to form a solid partnership with either of them. His statistics lay in between theirs, meaning that he is a good mix of their style of play. He can also help United in winning headers. His average of 4.4 aerial duels per game surpasses that of Varane and Martinez, at 2.8 and 2.7 respectively. In addition, his pass attempts and accuracy is higher than theirs, indicating that his passing ability would offer United better options to play out from the back.
+
+## Newcastle
+
+The two centre-backs in the data, Botman and Schar, also show an interesting difference in their style of play. Botman could be compared to Varane, choosing to be more careful in his attempts, with Schar being more proactive. Botman has a higher success rate in ground duels (67.12%) than both Schar (62.20%) and Kim Min-Jae (59.09%). Schar, on the other hand, surpasses Botman in numbers of defensive actions such as tackles, interceptions and ball recovery. Nevertheless, Schar lost possession about 12.9 times per game, which was the highest frequency on the list. This is much more than the averages of Botman (7.2) and Kim Min-Jae (8.4), hinting that Schar’s style of play makes it quite dangerous for his team if he is not more careful. While he attempts the most long passes (9.8 per game), only 45.09% of those are successful, which adds to my point. He also has the lowest pass accuracy on the list with 77.74% - he is the only one with a pass accuracy lower than 80% .
+
+Kim Min-Jae has more recoveries than both of them with 6.3 per game, where as Botman has 5.3 and Schar has 5.9. Kim also is a better passer than both of them, attempting about 30 more passes than either of them during the game, with higher accuracy. Kim Min-Jae seems to offer more stability at the back than Schar, and is very likely to replace him to play alongside Botman.
+
+## Liverpool
+
+Apart from Virgil Van Dijk, Liverpool’s centre-backs are notorious to be injury-prone. In the graphs, only Van Dijk was included - none of the other centre-backs played more than 1600 minutes, meaning that they were unable to play for even half of the total games. Therefore, if Kim Min-Jae were to join Liverpool he would most definitely be guaranteed playing time. From the graph, we can see that Van Dijk has played an average of 80 passes per game, which is second after Kim Min-Jae. Van Dijk’s long passing ability, attempting 8 per game with an accuracy of 59.36%, is an essential part of Liverpool’s build-up play. Kim Min-Jae’s long passes can help lessen the burden on Van Dijk in this aspect.
+
+Liverpool is also known to play with a high line of defense, with fullbacks such as Trent Alexander-Arnold being positioned higher up on the pitch. Kim Min-Jae’s ability to cover a lot of ground would prove valuable to this team. A drawback would be that they will not play in the Champions League next season. Unless they are able to make an offer that Kim cannot refuse, it is unlikely that they can appeal to Kim.
+
+## PSG
+
+Just like Liverpool, only one player managed to remain on the list for the analysis. With Sergio Ramos officially departing the club, it is essential for PSG to reinforce their squad with a solid centre-back. Marquinhos, the only one on this list, showcases the best ball retention abilities. He has the highest pass accuracy in the comparison (95.40% overall, 69.57% for long passes), and lost possessions least frequently (only 4.3 times per game). Nevertheless, his defensive actions are not among the best on the list. He contested in the fewest aerial duels (2.1) and has a relative low success rate (55.56%), with intercepts (0.8), tackles (1.2) and ball recoveries (5.2) all on the lower half of the scale. Kim Min-Jae would defnitely augment PSG’s defense, covering Marquinhos’ weaknesses, while helping Marquinhos out in playing from the back.
+
+## Chelsea
+
+Personally, it is somewhat a mystery that Chelsea is on this list. They already have 5 centre-backs (Thiago Silva, Badiashile, Fofana, Koulibaly, and Chalobah), and adding Kim to the list would result in an overload in the squad. Nonetheless, with Thiago Silva almost reaching the age of 40, considered to be one of the oldest in the industry, and players like Badiashile and Chalobah are not exactly considered world-class, it is understandable that they aim to upgrade their defense. The players on this list are Chalobah, Koulibaly and Thiago Silva.
+
+Firstly, let’s take a look at Thiago Silva’s statistics. He makes 3.3 aerial duels and wins 72.94%, placing him as the second most likely to win headers, and contests an average of 3 ground duels, with a success rate of 72.37%. These numbers place him on the top of the list in terms of probability of winning duels. In terms of possession and build-up, he attempts 77.8 passes per game, with 8 of them being long passes, with an accuracy of 91.29% and 56.04% respectively, which is among the highest figures in this comparison. He also only loses possession 7.4 times per game, making him second least likely to lose the ball among the Premier League centre-backs on this list. He also has the highest number of blocks per game (1.2). Overall, he turns out to be a solid defender and a stable passer. His only drawback is his age.
+
+On the other hand, Chalobah contests about 3.6 aerial duels and 4.3 ground duels per game, with a success rate of 49.21% and 62.67% respectively. His number of attempts are on the middle of the scale, although his aerial duel success rate (49.21%) is the lowest on the list. Koulibaly contests in the last aerial duels among Chelsea’s defenders (3.1) with 54.10% win rate, but attempts the most on the ground (4.9) and wins 58.16% of them. In other words, he makes the second most ground duel attempts but has the second lowest success rate. An interesting statistic he has is that he made about 0.2 last-man tackles (tackle made in a situation where an attacking player is in possession, with only one opposing defender between the ball and the goal), and he is the only one on this list aside from Kim Min-Jae to have this data. He also has the most recoveries out of the Chelsea players, but loses possession second most frequently on the list.
+
+From looking at the statistics, it can be said that Thiago Silva provides stability, with Koulibaly and Chalobah adopting a more aggressive style of defense. Apart from Silva, Chelsea’s two other defenders also seem to have a relatively low long pass accuracy and loses the ball more frequently. The two also collect an average of 0.3 yellow cards per game, meaning that they would receive a warning once every 3 games. The data tells us that Kim Min-Jae would increase the stability at the back, both in winning duels and in keeping possession. Alongside Thiago Silva, Kim Min-Jae would definitely show a very stable defense, covering the others’ relatively unreliable style of play. Wih Silva’s age as a potential upcoming issue, Kim could grow to be the core of the team’s defense.
+
+## Past Rumors
+
+Another team previously rumored to be interested was Manchester City, in an effort to replace Aymeric Laporte who is rumoured to move out in the upcoming transfer market. As one of the teams who play with an extremely high line of defense, Kim’s quick pace and ability to cover a lot of space would be a valuable asset in their style of play. However, the manager Pep Guardiola would prefer a left-footed centre-back, as Laporte was. Guardiola is well known for his preference of left-footed centre-backs playing alongside a right-footed centre-back, which offers a better environment for possession play. Moreover, there are already a lot of centre-backs in their squad, including left-footed Nathan Ake, who has also shown an exceptional performance this season. It is unlikely for Manchester City to prioritize Kim as a target.
+
+## Conclusion
+
+Based on the analysis, Kim Min-Jae proves to be a worthy player to have on any team. His fast pace and ability to cover lots of ground are assets that any manager would want on the squad. The statistics showed that the team can depend on him to keep possession safely, utilizing his passing skills. His defensive acumen allows him to break down the opponent’s attack and win the majority of duels. SSC Napoli most certainly made one of the best decisions in their club history by signing him last summer - if not for him, their glory this season could not have been guaranteed. He was one of the most essential parts for their campaign.
+
+Statistics showed that his performance this season places him right up on top of the list of the most wanted players this transfer market. As one of the world’s best centre-backs, he has a lot of options to choose from. From the analysis, Liverpool may be the best option if he is in search of a club that guarantees him a spot on the starting lineup. However, he may be more attracted to Manchester United or PSG, if he is eager to play in the Champions League in the upcoming season. News sources claim that it is most likely he will join Manchester United. He would definitely upgrade the team, allowing manager Erik Ten Hag a pleasant dilemma of having to choose from 3 solid defenders. As seen from the analysis, Kim Min-Jae has the capability to provide the Red Devils a valid chance in winning the title race. Who knows where his destination will be? All we know is that he if continues his current run of form, he will prosper anywhere, no matter what.
+
+[https://squawka.com/](https://squawka.com/)
