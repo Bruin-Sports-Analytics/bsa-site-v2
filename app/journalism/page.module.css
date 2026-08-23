@@ -1,3 +1,8 @@
+.heroSection {
+  position: relative;
+  z-index: 30;
+}
+
 .heroRow {
   display: flex;
   align-items: flex-start;

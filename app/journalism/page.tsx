@@ -18,7 +18,7 @@ export default function JournalismPage() {
 
   return (
     <main>
-      <section className="page-hero">
+      <section className={`page-hero ${styles.heroSection}`}>
         <div className={`container ${styles.heroRow}`}>
           <div className={styles.heroText}>
             <h1>Data Journalism</h1>

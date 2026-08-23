@@ -5,6 +5,28 @@
 
 .trigger {
   white-space: nowrap;
+  background: #0e2238;
+  border: 1px solid rgba(139, 203, 255, 0.3);
+  color: var(--text-primary);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.28);
+  cursor: pointer;
+}
+
+.trigger:hover {
+  background: #143152;
+  border-color: rgba(139, 203, 255, 0.55);
+}
+
+:global(html[data-theme="light"]) .trigger {
+  background: #ffffff;
+  border-color: rgba(34, 86, 124, 0.3);
+  color: #102235;
+  box-shadow: 0 4px 14px rgba(16, 42, 73, 0.08);
+}
+
+:global(html[data-theme="light"]) .trigger:hover {
+  background: #f4f8fc;
+  border-color: rgba(34, 86, 124, 0.55);
 }
 
 .caret {
@@ -15,22 +37,20 @@
   transform: rotate(180deg);
 }
 
-/* Glass popover anchored beneath the button */
+/* Opaque popover anchored beneath the button */
 .menu {
   position: absolute;
   top: calc(100% + 8px);
   right: 0;
-  z-index: 200;
-  min-width: 232px;
+  z-index: 500;
+  min-width: 240px;
   display: flex;
   flex-direction: column;
   padding: 6px;
-  border: 1px solid var(--glass-border, rgba(139, 203, 255, .14));
+  border: 1px solid rgba(139, 203, 255, 0.28);
   border-radius: var(--radius-sm, 12px);
-  background-color: var(--glass-regular-fill, rgba(12, 24, 42, .82));
-  -webkit-backdrop-filter: blur(var(--glass-regular-blur)) saturate(var(--glass-saturation));
-  backdrop-filter: blur(var(--glass-regular-blur)) saturate(var(--glass-saturation));
-  box-shadow: 0 16px 40px rgba(0, 0, 0, .4);
+  background-color: #0b1a2e;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.7);
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
@@ -58,24 +78,25 @@
   align-items: center;
   justify-content: space-between;
   gap: 14px;
-  padding: 10px 12px;
-  border-radius: 0;
+  padding: 10px 14px;
+  border-radius: 4px;
   color: var(--text-primary);
   font-size: 14px;
   font-weight: 700;
+  text-decoration: none !important;
   transition: background .15s ease, color .15s ease;
 }
 
 .item:hover,
 .item:focus-visible {
-  background: rgba(139, 203, 255, .1);
+  background: rgba(139, 203, 255, 0.14);
   color: var(--ucla-gold);
 }
 
 :global(html[data-theme="light"]) .menu {
   background-color: #ffffff;
-  border-color: rgba(34, 86, 124, 0.22);
-  box-shadow: 0 16px 40px rgba(16, 42, 73, 0.16);
+  border-color: rgba(34, 86, 124, 0.28);
+  box-shadow: 0 16px 40px rgba(16, 42, 73, 0.18);
 }
 
 :global(html[data-theme="light"]) .item {
@@ -90,7 +111,7 @@
 
 .item svg {
   flex-shrink: 0;
-  opacity: .7;
+  opacity: .8;
 }
 
 @media (prefers-reduced-motion: reduce) {
