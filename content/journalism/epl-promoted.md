@@ -8,7 +8,7 @@ The EFL Championship is the second tier of English soccer. At the end of every s
 
 The Premier League is the 1st tier of English soccer, and at the end of every season, the bottom 3 teams in the league (the teams ranked 18th to 20th) are relegated to the EFL Championship.
 
-## Definitions
+## Core Metrics
 
 **Null Hypothesis** : The null hypothesis is the claim that no relationship exists between the variables that we are examining. So if we reject the null hypothesis, it would follow that a relationship does in fact exist. Rejecting the null hypothesis is the same as accepting the “alternative hypothesis”, which is the claim that a certain relationship does exist (opposite of the null hypothesis).
 

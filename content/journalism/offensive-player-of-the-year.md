@@ -4,7 +4,7 @@ Ever since the 1983 season, the NBA has awarded the Defensive Player of the Year
 
 ## Methodology
 
-### Definitions:
+## Core Metrics
 
 Before delving into who the candidates for Offensive Player of the Year are, we must first understand the terminologies of the sport.
 
@@ -34,7 +34,7 @@ A composite offensive score is then calculated for each player, providing a comp
 
 The weights we used are as shown below:
 
-| **Metrics** | **Weights** |
+| Metrics | Weights |
 | --- | --- |
 | eFG% | 10% |
 | Assists | 20% |

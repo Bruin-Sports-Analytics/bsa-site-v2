@@ -153,7 +153,7 @@ For example, if I selected the top 25 teams in the NFL, the model has an accurac
 
 Raw Scaled Data (Ranked):
 
-| **Team** | **Average Score** |
+| Team | Average Score |
 | --- | --- |
 | Arizona | 0.53108 |
 | Atlanta | 0.277542 |
@@ -192,7 +192,7 @@ Raw Scaled Data (Ranked):
 
 ## Top 10 Teams in Rankings (Chances of Winning):
 
-| **Team** | **Chances of Winning (%)** |
+| Team | Chances of Winning (%) |
 | --- | --- |
 | Detroit | 7.60% |
 | Baltimore | 6.52% |

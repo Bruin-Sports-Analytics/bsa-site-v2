@@ -2,7 +2,7 @@
 
 In the cutthroat world of F1 racing, every millisecond matters. A team of twenty-three aim to change tires, clean the driver's visor, fix mechanical issues, and make other adjustments in under two seconds. While the quickness of a pit stop is essential, what adjustments are made, when they are made, and how consistently they are done in speedily fashion all factor into a team’s likelihood of winning. In this article, we will examine the relationship between pit-stop length and race outcome. Shorter pit stops are undeniably beneficial, but are pit stops a consistent prediction of a win or loss? Or, is a team’s experience more significant in determining race placement?
 
-## Understanding Terminology
+## Scoring & Race Concepts
 
 In our examination of Formula 1 racing, we will be focusing the driver as opposed to the constructor or team affiliated with the driver for the highest accuracy when analyzing pit stop time. If you’re unfamiliar with the logistics of F1 racing, each **driver** drives for a team and each team can enter 2 drivers per race. The builder of the car that the drivers use is known as the **constructor** . As expected, the driver that places first is the winner of the races, meaning that there are 19 losers for every 1 winner in a race. Each driver is awarded points for how high they place with the winner earning 25 points, second place earning 18, and decreasing until 11th place. In this article, these points will be referred to as **points earned** by a driver. The core of this article will focus on the **pit-stop** , a very quick refresh of fuel, tires, and other equipment during a race that can add time to a driver’s lap and decrease their place in the race. Pit stops can be seen as a necessary evil that takes time out of the race but can significantly increase a car’s performance during a race and also prevent fatal crashes during a race.
 
@@ -40,4 +40,4 @@ Overall, pit-stop times are an important factor in a driver’s chances of winni
 
 Data: [https://www.kaggle.com/datasets/rohanrao/formula-1-world-championship-1950-2020](https://www.kaggle.com/datasets/rohanrao/formula-1-world-championship-1950-2020)
 
-Terminology: [https://f1chronicle.com/a-beginners-guide-to-formula-1/](https://f1chronicle.com/a-beginners-guide-to-formula-1/)
+Source: [https://f1chronicle.com/a-beginners-guide-to-formula-1/](https://f1chronicle.com/a-beginners-guide-to-formula-1/)

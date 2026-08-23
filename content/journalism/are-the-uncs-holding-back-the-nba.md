@@ -6,9 +6,9 @@ The Houston Rockets were the second-youngest team in the 2022-2023 season, with 
 
 To explore this question, we analyze data from the 2021-2022, 2022-2023, and 2023-2024 NBA seasons.
 
-## Terms to Know
+## Metrics Analyzed
 
-| **Term** | **Definition** |
+| Metric | Description |
 | --- | --- |
 | **Average Team Age** | Mean age of all players on the roster |
 | **Win Percentage** | Total wins divided by total games played |

@@ -24,7 +24,7 @@ Without going over too much of the technical stuff, here’s what we did:
 
 ## Methodology
 
-These are the explanatory variables that we tested for our model and their definitions:
+These are the explanatory variables tested for our model:
 
 1. GP: Number of games played
 2. DIST. MILES: Average distance travelled a player runs per game in miles

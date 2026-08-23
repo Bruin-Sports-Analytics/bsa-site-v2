@@ -4,9 +4,9 @@ In the modern NFL, play-calling success on both sides of the ball is often decid
 
 This article examines quarterback efficiency and performance against the blitz from 2016 through 2024 to determine which players truly thrive when facing a blitz. By analyzing QB processing efficiency metrics, decision-making archetypes, sack rate statistics, and offensive line scores, we will try to determine which quarterbacks are actually finding success against the blitz.
 
-### Key Terms and Metrics:
+## Key Variables & Metrics
 
-| **Term** | **Definition** |
+| Metric | Description |
 | --- | --- |
 | **Blitz** | For our analysis, we defined the blitz as any plays where the number of pass rushers was greater than 4 |
 | **Expected Points Added (EPA)** | Measures the value of a play by comparing the expected points before and after the snap |

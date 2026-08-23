@@ -6,7 +6,7 @@ One of the biggest debates among analysts, coaches, players, and fans is: Which 
 
 In this article, we’ll explore the 2023-2024 NBA season and analyze which NBA statistic has the strongest impact on a team's success.
 
-## Definitions
+## Core Metrics
 
 - Field Goal Percentage (FG%): The percentage of shots made from the field (two-pointers and three-pointers) out of all attempted shots.
 - Three-Point Percentage (3P%): The percentage of three-point shots made out of all attempted three-point shots.

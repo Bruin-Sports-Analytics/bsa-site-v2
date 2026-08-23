@@ -135,12 +135,12 @@ To achieve this, I will create two statistics, Expected Field Goal WPA (eFGWPA) 
 
 Expected Field Goal WPA (eFGWPA):
 
-- Definition: Expected WPA if a team attempts a field goal
+- Description: Expected WPA if a team attempts a field goal
 - Equation: (WPA if FGM x FGM Prob) + (WPA if FG Miss x (1 - FGM Prob))
 
 Expected Attempt WPA (eAWPA)
 
-- Definition: Expected WPA if a team goes for it on 4th down
+- Description: Expected WPA if a team goes for it on 4th down
 - Equation: (WPA if Conv x Conv Prob) + (WPA if Failed x (1 - Conv Prob))
 
 In short, these statistics represent weighted averages for expected WPA on field goals and 4th down attempts separately. To present an example of how eAWPA and eFGWPA change with a statistic contributing to WPA, here is a graph of both statistics plotted against score differential:

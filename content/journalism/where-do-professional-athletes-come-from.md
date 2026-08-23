@@ -2,7 +2,7 @@
 
 As sports are a very prevalent aspect in a child's upbringing it has come to wonder whether a child's hometown has an impact on their probability of becoming a professional athlete. This sports article looks into the frequency of professional athletes based on their hometown state and what other factors may be correlated or a result of their upbringing environment.
 
-## Definitions
+## Core Metrics
 
 - NBA: National Basketball Association
 - NFL: National Football League

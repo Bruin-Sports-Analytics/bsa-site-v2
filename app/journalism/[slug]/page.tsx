@@ -152,21 +152,24 @@ function parseMarkdownToBlocks(rawMd: string): ArticleBlock[] {
       flushParagraph();
       flushList();
       flushTable();
-      blocks.push({ type: "heading", level: 3, text: line.slice(4).trim() });
+      const headingText = line.slice(4).trim().replace(/^\*\*|\*\*$/g, "").trim();
+      blocks.push({ type: "heading", level: 3, text: headingText });
       continue;
     }
     if (line.startsWith("## ")) {
       flushParagraph();
       flushList();
       flushTable();
-      blocks.push({ type: "heading", level: 2, text: line.slice(3).trim() });
+      const headingText = line.slice(3).trim().replace(/^\*\*|\*\*$/g, "").trim();
+      blocks.push({ type: "heading", level: 2, text: headingText });
       continue;
     }
     if (line.startsWith("# ")) {
       flushParagraph();
       flushList();
       flushTable();
-      blocks.push({ type: "heading", level: 2, text: line.slice(2).trim() });
+      const headingText = line.slice(2).trim().replace(/^\*\*|\*\*$/g, "").trim();
+      blocks.push({ type: "heading", level: 2, text: headingText });
       continue;
     }
 
@@ -211,7 +214,7 @@ function parseMarkdownToBlocks(rawMd: string): ArticleBlock[] {
         continue;
       }
       if (!currentTable) {
-        currentTable = { headers: cells, rows: [] };
+        currentTable = { headers: cells.map(c => c.replace(/^\*\*|\*\*$/g, "").trim()), rows: [] };
       } else {
         currentTable.rows.push(cells);
       }
@@ -341,7 +344,9 @@ export default function JournalismArticlePage({ params }: Props) {
                       <table>
                         <thead>
                           <tr>
-                            {(block.columns || block.headers || []).map((column, i) => <th key={`${column}-${i}`}>{column}</th>)}
+                            {(block.columns || block.headers || []).map((column, i) => (
+                              <th key={`${column}-${i}`}>{renderInline(column.replace(/^\*\*|\*\*$/g, "").trim())}</th>
+                            ))}
                           </tr>
                         </thead>
                         <tbody>

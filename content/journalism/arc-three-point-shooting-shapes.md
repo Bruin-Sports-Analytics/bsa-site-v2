@@ -2,7 +2,7 @@
 
 The modern NBA is a game of spacing, shooting, and efficiency, where the three-point shot has revolutionized how teams approach success. From the dominance of the Golden State Warriors to the rise of analytically driven offenses, three-point shooting has become a defining factor in determining a team’s fate. But just how important is it? Do teams with higher three-point percentages automatically achieve greater success in the playoffs, or is there more to the story? By analyzing the relationship between three-point percentage and both regular-season and playoff performance, we can uncover whether three-point efficiency is the key to winning or just one piece of a larger puzzle. Through data visualizations, this study explores the trends, correlations, and outliers that shape the impact of three-point shooting on a team's success.
 
-## Key Terms
+## Key Variables & Metrics
 
 - Three-Point Percentage (3P%) – The percentage of three-point shots made by a team or player, indicating long-range shooting efficiency.
 - Field Goal Percentage (FG%) – The overall shooting efficiency of a team or player, including all field goal attempts (two-pointers and three-pointers).

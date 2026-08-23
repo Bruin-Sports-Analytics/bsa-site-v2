@@ -2,9 +2,9 @@
 
 While basketball coaches preach a variety of different concepts, one is consistently harped on at all levels: hustle. Coaches love players that “do the little things”, such as playing hard defense, boxing out, and grabbing loose balls. Unfortunately, players that hustle in the NBA fly under the radar of the public eye. We hypothesize that there is an association between hustling and winning in the league. By conducting data analysis on the NBA’s hustle stats, we plan on shining a light on the important attributes of hustling in the NBA, and bring certain players to the forefront that exhibit strong tendencies to hustle, all through a statistical lens.
 
-### Terminology:
+## Key Concepts
 
-Hustle can be challenging to define statistically, since it is difficult to measure effort. Additionally, an interpretation of “hustle” can differ drastically person to person. Luckily, the NBA tracks “hustle stats.” These stats include deflections, loose balls recovered, screen assists, charges drawn, and box outs. These six statistical points will be our means of investigation. Below will be definitions of each stat to provide a clearer understanding of what we are analyzing.
+Hustle can be challenging to define statistically, since it is difficult to measure effort. Additionally, an interpretation of “hustle” can differ drastically person to person. Luckily, the NBA tracks “hustle stats.” These stats include deflections, loose balls recovered, screen assists, charges drawn, and box outs. These six statistical points will be our means of investigation. Below is an overview of each metric to provide context for our analysis.
 
 - Deflection (DEF): When a defensive player is able to make contact with the ball, excluding shot attempts
 - Loose Ball Recovery (LBR): When a player is able to gain possession for his team during when a ball is considered “loose” (no team has possession of it)

@@ -90,17 +90,17 @@ Next, we also understand that the outcome, goals scored itself, apart from facto
 
 ### 1. Expected Goals (xG):
 
-- **Definition:**  A statistical measure that estimates the probability of a shot resulting in a goal, based on factors like shot location, angle, type of shot, and defensive pressure.
+- **Description:** A statistical measure that estimates the probability of a shot resulting in a goal, based on factors like shot location, angle, type of shot, and defensive pressure.
 - **Purpose:**  xG quantifies the quality of scoring chances and predicts how many goals a team or player  *should*  score on average.
 
 ### 2. Goals Per Match:
 
-- **Definition:**  The average number of goals scored by a player or team per game.
+- **Description:** The average number of goals scored by a player or team per game.
 - **Purpose:**  A straightforward metric to assess scoring output, reflecting actual performance on the field.
 
 ### 3. xG - Goals Per Match:
 
-- **Definition:**  The difference between expected goals (xG) and actual goals scored per match.
+- **Description:** The difference between expected goals (xG) and actual goals scored per match.
 - **Purpose:** A positive value (xG > Goals Per Match) suggests underperformance (missed chances or poor finishing).A negative value  (xG < Goals Per Match) suggests overperformance (clinical finishing or exceptional skill/luck).
 - A positive value (xG > Goals Per Match) suggests underperformance (missed chances or poor finishing).
 - A negative value  (xG < Goals Per Match) suggests overperformance (clinical finishing or exceptional skill/luck).

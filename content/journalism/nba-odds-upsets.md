@@ -4,7 +4,7 @@ Sports betting has surged into popularity in recent years after its legalization
 
 To start, we need to define what an underdog is. Underdogs teams are the teams that are favored to lose in betting websites, where the spread is positive. The spread is defined as the winning margin, the expected number of points one team will win by. In **figure 1,** a -5 spread for the Celtics means they need to win by at least 5 points to meet expectations, while a +5 spread for the New York Knicks implies they can either win outright or lose by no more than 5 points to meet the spread. Spreads bring teams to an even playing field, we can think of it as a handicap in golf. A small spread from +1 to +5 means the 2 teams are pretty evenly matched. However, the study will focus on teams with bigger spreads, to truly highlight how often an underdog wins.
 
-### Figure 1. Example and Definition Spread
+### Figure 1. Example Spread and Point Breakdown
 
 ![Figure Notes: Displayed in the figure above is the example of the spread for a game between the New York Knicks and the Boston Celtics](/assets/journalism/nba-odds-upsets/figure-01.png)
 
@@ -86,7 +86,7 @@ A factor that could be important for the outcomes of most NBA games is home cour
 
 **Table 1. Win and Loss Totals for Home and Away Games From 2012-13 to 2018-19 season**
 
-| **Category** | **Wins** | **Losses** | **Total** | **Win Proportion** |
+| Category | Wins | Losses | Total | Win Proportion |
 | --- | --- | --- | --- | --- |
 | **Home** | 306 | 921 | 1227 | 0.249 |
 | **Away** | 771 | 2756 | 3527 | 0.219 |

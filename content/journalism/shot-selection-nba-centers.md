@@ -28,7 +28,7 @@ Above is a comparison between the two-point and three-point attempts from 2004 a
 
 Our dataset provided in-depth information on the different shot types of each shot taken. Every shot had a descriptor associated with it, which ranged from “Driving Reverse Layup Shot” to “Floating Hook Shot.” A quick look at the data shows some expected results. For example, different types of Dunk Shots were the most efficient shots in terms of percentage made and more difficult shots like Fadeaway Jump Shots had a much lower percentage made.
 
-| **Shot Type** | **Percentage Made** | **Attempts** |
+| Shot Type | Percentage Made | Attempts |
 | --- | --- | --- |
 | Dunk Shot | 97.71% | 127,484 |
 | Layup Shot | 51.53% | 108,760 |

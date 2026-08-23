@@ -8,9 +8,9 @@ In this article, we identified every game result from the 2025–26 season, pull
 
 ![Figure 2: Western Conference Seeding Trajectory for the top 8 seeds (as of March 2026)](/assets/journalism/beyond-the-standings-using-data-to-predict-the-nba-playoff-race/figure-02.png)
 
-## Key Terms and Metrics
+## Key Variables & Metrics
 
-| **Key Term** | **Definition** |
+| Metric | Description |
 | --- | --- |
 | **Net Rating (NRtg)** | Points scored minus points allowed per 100 possessions. The single best measurement of how good a team actually is, independent of pace. A team with a +10 NRtg outscores opponents by 10 points every 100 possessions |
 | **Offensive Rating (ORtg) / Defensive Rating (DRtg)** | The offensive and defensive components of Net Rating. ORtg measures points scored and DRtg measures points allowed per 100 possessions. Lower DRtg = better defense. |

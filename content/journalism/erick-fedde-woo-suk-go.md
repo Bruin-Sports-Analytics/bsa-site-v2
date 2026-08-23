@@ -12,7 +12,7 @@ Other than the standard for the selection of season that players played, players
 
 We collected raw pitching tracking data of players like ball spin rate and movement to estimate the pitching statistics such as ERA and WHIP.. The tracking data that we collected are spin rate, vertical movement, horizontal movement, exit velocity, and hard-hit rate. We chose these specific data because they represent the crucial modern sabermetrics data among statistics that Sports2i provided. These data are modern pitching data and are used by MLB scouts and experts frequently. To make the prediction general, we mostly tracked fastballs as almost all the pitchers have fastballs in their repertoire.
 
-Here are the key definitions of the tracking data:
+Here are the tracking metrics analyzed:
 
 - Spin rate (rpm): How much the ball that pitchers throw spins until the catchers catch it.
 - Vertical movement (cm): The difference in distance vertically between the hypothetical trajectory of the ball when there is no spin of the ball and the actual trajectory of the ball as it passes through the strike zone.

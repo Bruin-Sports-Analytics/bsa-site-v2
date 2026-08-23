@@ -4,7 +4,7 @@ The San Francisco 49ers have a stacked roster, featuring players like Christian 
 
 Despite the lack of media attention, Aiyuk’s contributions to the 49ers cannot be overlooked. While much of the talk about the 49ers understandably surrounds Christian McCaffrey and Brock Purdy, I argue that Brandon Aiyuk plays an essential role in the success of the 49ers offense and was instrumental in getting to the Super Bowl. I will analyze Aiyuk’s career progression and compare his performance in the 2023 season with that of top wide receivers like Tyreek Hill and CeeDee Lamb. Specifically, I'll assess Aiyuk's performance against those who, unlike him, earned Pro Bowl recognition this year to see if Aiyuk was potentially robbed of a pro-bowl selection.
 
-## Terminology
+## Key Concepts
 
 Before my analysis, I will describe certain statistics that are commonly referenced for wide receivers.
 

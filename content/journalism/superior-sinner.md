@@ -2,7 +2,7 @@
 
 Italian professional tennis player and current ATP world number 1, Jannik Sinner, has completely dominated the start 2024 season. He has won 28 out of 30 matches from January to May of 2024. Even a two-set deficit couldn’t prevent Sinner from winning his first Grand Slam at the 2024 Australian Open. An apt quote to sum up Sinner’s performance comes from another ATP player, Alexander Bublik, who, after losing to Sinner in 2021, told him “You're not human.” Since late 2022, when Jannik hired his coach Darren Cahill, his game has simply improved in every possible facet. In this article I will go deeper into Sinner’s improvements and see where he stacks up against other current ATP players in certain statistical categories. The analysis following the description of Sinner’s rise in ATP ranking involves statistics before Roland Garros 2024 where Sinner lost in the Semi Final to Carlos Alcaraz.
 
-## Terminology
+## Key Concepts
 
 **Forehand** - A racket swing where the palm of the player holding the racket faces the same direction as the hit.
 

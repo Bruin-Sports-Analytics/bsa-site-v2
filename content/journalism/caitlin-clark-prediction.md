@@ -2,7 +2,7 @@
 
 From March Madness until the WNBA draft, one name emerges time and time again: Caitlin Clark. In her senior season, Clark averaged 31.6 points, 8.9 assists and 7.4 rebounds per game, leading Division I in scoring and assists. She finished with the highest career scoring average (28.42) in Division I history. Beyond the numbers, many credit Clark for revolutionizing women’s college basketball. In a historic moment, during Clark’s senior year, the viewership for the WNCAA finals surpassed that of the men’s final for the first time. As Caitlin Clark transitions into the WNBA as the first overall pick, this begs the question: Will she be able to live up to the hype, or falter under pressure?
 
-## Definitions
+## Core Metrics
 
 Before trying to predict Caitlin Clark’s career trajectory, one must first understand the terminologies of the sport.
 

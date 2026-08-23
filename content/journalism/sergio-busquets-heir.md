@@ -6,13 +6,13 @@ Sergio Busquets’ illustrious career commenced in 2008 when he broke into Pep G
 
 Lamentably, Sergio Busquets never received the accolades that he truly deserves, perhaps due to his simplistic playing style. In fact, towards the end of his Barcelona career, he often became the scapegoat for Barcelona’s shambolic defensive performances due to his deteriorating pace. Yet, Busquets’ indispensable worth finally became apparent this season. Without him this season, Barcelona has conceded the same amount of goals as last season in half the number of games. Barcelona has especially struggled in transition defense against counter-attacking teams, as well as building out from the back, both of which are Busquets’ areas of expertise. Hence, the Barcelona management has been scrambling in the transfer market hoping to find a world-class defensive midfielder, but tight finances and a lack of quality replacements have hampered their progress. Therefore, in this article, we will first analyze the importance of Busquets to Barcelona, before identifying similar players among midfielders in the top 5 European Leagues who can potentially serve as an ideal replacement for Busquets in the current Barcelona team.
 
-## Key Terms and Metrics
+## Key Variables & Metrics
 
 In football, midfielders serve as the vital bridge between attack and defense. Not only must they excel in progressing the ball up the pitch, they must also act as the shield in front of their team’s defensive line. This entails disrupting the opponent's buildup play through well-timed tackles, vigilant tracking of opponents’ movements, and proactive closing down of space. Therefore, in our analysis of Sergio Busquets and other midfielders, we evaluate their abilities based on 6 skill categories, each supported by carefully selected metrics from FBref. These metrics are chosen to best represent the specific attributes of each category, as detailed in the table below. The first 3 categories focus on ball progression, while the last 3 focus on defense and regaining possession.
 
 ![Playing Thirds in Football [Source: SportSessionPlanner]](/assets/journalism/sergio-busquets-heir/figure-01.jpg)
 
-| **Skill Category** | **Definition** | **Metrics Used** |
+| Skill Category | Description | Metrics Used |
 | --- | --- | --- |
 | **P1:** Defensive 3rd Progression | Player’s ability to progress the ball from the defensive 3rd to the middle 3rd, also known as “ **playing out from the back** ”. Players should be able to receive the ball with their back to goal, retain the ball under pressure, and complete passes consistently. Play with **caution** . | Total passes completedPass completion rateNumber of miscontrolsTouches in defensive penalty areaTouches in defensive third |
 | **P2:** Middle 3rd Progression | Player’s ability to progress the ball from the middle 3rd to the attacking 3rd. While keeping possession, players should also seek chances to **break into opposition territory** via **passes** or **carries** . Requires a delicate balance between caution and creativity. | Progressive carriesProgressive passesPasses into final thirdNumber of times dispossessedTouches in middle third |

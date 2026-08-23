@@ -72,7 +72,7 @@ Although we don’t have a glaring trend here, the clear outliers are shots from
 
 My takeaway from all of this is that Tiger can, in fact, get his game back. Despite what you may think, Tiger’s game doesn’t appear to be limited or constrained by his injuries -- the longer shots don’t seem to pose an issue for him at all. There are no glaring red flags that would indicate any sort of ceiling for his future. Instead, we see some random patterns and inconsistencies that likely are products of a lack of recent tournament experience. So, only time will tell. As he plays in more tournaments, he’ll get back into the competitive swing of things. More likely than not, Tiger will tighten up his game back with, the data suggesting that the greatest of all time still has plenty of greatness left to show.
 
-## Some stats definitions for the data nerds…
+## Statistical Methodology
 
 To reach my conclusions in this article, I ran several “two-sample t-tests”. A two-sample t-test is a type of statistical test that can compare two samples of data and evaluate if their true averages are different from each other.
 

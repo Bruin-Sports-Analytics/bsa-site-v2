@@ -69,7 +69,7 @@ Data of player profiles were obtained from [transfermart.us](http://transfermart
 
 ## Data & Analysis
 
-### Definitions:
+## Core Metrics
 
 Data on player statistics were obtained from [footystat.org](http://footystat.org). Terms that are not self-explanatory will be defined here.
 

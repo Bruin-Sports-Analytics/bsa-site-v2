@@ -4,7 +4,7 @@ In the 2019 NFL season, the Kansas City Chiefs demonstrated the potential power 
 
 So, do bye weeks help teams perform better? Or are stories like the Chiefs’ just exceptions? In this article, we’ll examine the recent 2023-2024 NFL season and analyze how these professional football teams performed in areas like scoring, yards, and injuries before and after their bye week.
 
-## Definitions
+## Core Metrics
 
 Before breaking down the data, we will first define some important terms:
 

@@ -6,7 +6,7 @@ Women’s sports continue to grow at an incredible rate, and the NWSL has been n
 
 Throughout this article, we will analyze the driving factors behind recent interest increases across the NWSL, how we can measure this increase in interest, and how we anticipate these changes to be reflected in the future. Our data stems from many credible online sources including the NWSL website, ESPN, The New York Times, and more.
 
-## Definitions
+## Core Metrics
 
 - Interest: measured based on factors including attendance, viewership, social media engagement rates, and league expansion
 - Net-new expansion teams: new teams added to a sports league after its initial founding due to increased demand in a new areaExpansion teams in the NWSL consist of 7 of the 14 teams. Those teams, and the years they began play, are as follows: Houston Dash (2014), Orlando Pride (2016), Racing Louisville FC (2021), Angel City FC (2022), San Diego Wave FC (2022), Utah Royals (2024), Bay FC (2024)

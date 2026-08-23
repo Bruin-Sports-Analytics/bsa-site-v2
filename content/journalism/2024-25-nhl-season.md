@@ -64,7 +64,7 @@ Florida Panthers vs Toronto Maple Leafs
 
 For the playoffs, I used a different approach because of the format of the NHL playoffs. Since playoffs series are best of 7, oftentimes the playoffs are about how each team's matchup head to head. To accommodate for the playoff format, I used a logistic regression model to find the probability of a team winning. The variables I used were home or away, Corsi %, faceoff win %, penalty minutes %, High danger shots %, and expected goals %.
 
-### Variable Definitions:
+## Variable Breakdown
 
 - Home or away: 1 denotes the team plays at home, 0 denotes the team plays on the road
 - Corsi%: shot attempts for / (shot attempts for + shot attempts against),

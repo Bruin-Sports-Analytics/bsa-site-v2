@@ -8,7 +8,7 @@ As people can clearly observe significant changes in a number of stolen bases fr
 
 For the data analysis, we referenced [MLB.com](http://MLB.com) and Statcast. We collected data from the 2022 and 2023 seasons to make a direct comparison. Moreover, we gathered data from each team to easily link with the winning percentage. The categories that we checked are the difference in number of stolen bases, the difference in stolen base success rate, the difference in caught stealing rate, and the difference in winning percentage. Then, we measured the correlation coefficient between the two variables, one variable regarding stolen base against winning percentage. When the correlation coefficient is near zero, then we can not claim an association between the two variables. In contrast, as the correlation coefficient gets closer to positive 1 or negative 1, there is a stronger correlation between the two variables. We referenced linear, quadratic, and exponential correlation coefficients. In other words, we measured linear, quadratic, and exponential correlations between the two variables.
 
-Here are the key definitions of the tracking data:
+Here are the tracking metrics analyzed:
 
 - OPS (On-base Plus Slugging): It is a statistic that combines the on-base percentage and the slugging percentage which is commonly used to evaluate a batter’s performance. It can show a player’s power, batting eye, and contact skills simultaneously.
 - Stolen base success rate: It is a success rate calculated by the number of stolen bases divided by stolen base attempts.

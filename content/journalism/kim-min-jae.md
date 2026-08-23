@@ -37,9 +37,9 @@ Behind the offensive firepower stood Napoli’s study line of defense. They rema
 
 ## Data & Analysis
 
-### Definition
+## Core Metrics
 
-Data was taken from Opta Sports, thus definitions of terms were taken from the Opta website. Definitions of terms that are not self-explanatory were included on this list. Definitions for self-explanatory terms, such as tackles and passes, were excluded.
+Data was sourced from Opta Sports, focusing on key defensive performance metrics.
 
 *Recovery* : where a player recovers the ball in a situation where neither team has possession or where the ball has been played directly to him by an opponent, thus securing possession for their team.
 
@@ -47,7 +47,7 @@ Data was taken from Opta Sports, thus definitions of terms were taken from the O
 
 *Duel* : A 50-50 contest between two players of opposing sides in the match. For every duel won there is a corresponding duel lost depending on the outcome of the contest.
 
-More definitions can be found in the link below:
+More Opta metrics information can be found below:
 
 [https://www.statsperform.com/opta-event-definitions/](https://www.statsperform.com/opta-event-definitions/)
 

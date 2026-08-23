@@ -19,7 +19,7 @@ Given the inherent subjectivity of how one can determine whether or not an NBA p
 
 *Figure 1: Metrics and Average Values*
 
-### Important Definitions
+## Key Metrics
 
 [Win shares](https://www.thesportster.com/confusing-stats-metrics-nba-fans-understand-explained/) per 48 minutes is a statistic that weighs a player’s contribution to a win for a set number of wins every 48 minutes played. A win share is an indicative index that divides a team’s success among each member, computing the wins produced by one specific player by taking their offensive and defensive numbers and comparing them to team and league statistics.
 

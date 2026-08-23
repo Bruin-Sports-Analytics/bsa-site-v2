@@ -30,7 +30,7 @@ Players like Bryson DeChambeau, known for his exceptional power, demonstrated ho
 
 Evidently, while Rory McIlroy’s impressive average driving distance of 326.30 yards correlates with his dominance on the leaderboard and championship points tally of 8,536,500, this trend does not hold universally. Brandon Matthews, despite having a similar driving distance of 321.30 yards, has significantly fewer championship points at only 15,762. In contrast, the Tour Median driving distance of 300.05 yards corresponds to a middle-ground performance, with a more substantial 711,949.5 championship points. This comparison highlights that while driving distance is an important factor, other elements such as consistency, short game, and putting play equally critical roles in determining overall success on the leaderboard.
 
-## Definitions
+## Core Metrics
 
 **United States Golf Association (USGA)** : The organisation that governs golf in the United States and Mexico. USGA creates the rules, runs major tournaments like the U.S. Open, and works to grow and protect the game.
 
