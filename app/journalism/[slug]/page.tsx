@@ -252,31 +252,29 @@ export default function JournalismArticlePage({ params }: Props) {
           <span className="eyebrow">Data Journalism · {article.sport}</span>
           <h1 className={styles.title}>{article.title}</h1>
           <p className={styles.authors}>{formatAuthors(article.authors)}</p>
-          <div className="tag-row" style={{ marginTop: 14 }}>
+          <div className="tag-row" style={{ marginTop: 14, alignItems: "center" }}>
             <span className="tag">{article.date}</span>
             <span className="tag">{article.readTime} min read</span>
             {article.techStack?.map((item) => (
               <span className="tag" key={item}>{item}</span>
             ))}
-          </div>
-        </div>
-      </section>
-
-      <section className={styles.paperSection}>
-        <div className="container">
-          <div className={styles.paperHeader}>
-            <span className="eyebrow">Article</span>
             {article.paperUrl ? (
               <a
                 href={article.paperUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 className={styles.externalLink}
+                style={{ marginLeft: "auto" }}
               >
                 Open original PDF <ArrowUpRight size={14} aria-hidden />
               </a>
             ) : null}
           </div>
+        </div>
+      </section>
+
+      <section className={styles.paperSection}>
+        <div className="container">
           <article className={styles.articleBody}>
             {content.length ? (
               content.map((block, index) => {

@@ -1,5 +1,5 @@
 .header {
-  padding: 154px 0 28px;
+  padding: 144px 0 20px;
 }
 
 .title {
@@ -27,15 +27,7 @@
 }
 
 .paperSection {
-  padding: 0 0 64px;
-}
-
-.paperHeader {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-  margin-bottom: 24px;
-  width: 100%;
+  padding: 8px 0 64px;
 }
 
 .externalLink {
@@ -43,9 +35,9 @@
   align-items: center;
   gap: 6px;
   color: var(--ucla-gold);
-  font-size: 13.5px;
+  font-size: 13px;
   font-weight: 700;
-  padding: 6px 14px;
+  padding: 5px 12px;
   border-radius: 20px;
   border: 1px solid rgba(255, 215, 0, 0.25);
   background: rgba(255, 215, 0, 0.06);
@@ -61,6 +53,10 @@
   width: 100%;
   color: var(--text-primary);
   text-align: left;
+}
+
+.articleBody > :first-child {
+  margin-top: 0;
 }
 
 .articleLead {
