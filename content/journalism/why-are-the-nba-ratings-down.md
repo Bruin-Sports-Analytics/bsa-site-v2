@@ -1,5 +1,3 @@
-### By: Charlie Wang
-
 ## Introduction
 
 The NBA, home to over 500 elite players across 30 teams, offers an 82-game regular season followed by a high-stakes playoff run. In recent decades, fans were captivated by iconic showdowns—LeBron vs. Curry, Kobe vs. the Celtics. But recently, that excitement has faded. Fans report a declining sense of joy when tuning in, and the numbers back it up: TV ratings have dropped significantly from their highs in the 2000s.

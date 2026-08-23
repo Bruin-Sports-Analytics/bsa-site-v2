@@ -1,5 +1,3 @@
-### By: Allen Chun
-
 Just before the NBA was preparing to resume the 2019-2020 season at the Orlando Disney bubble, there were four teams that were favorites to win the championship in the betting markets: the Los Angeles Lakers, the Los Angeles Clippers, the Milwaukee Bucks, and the Houston Rockets. Analysts such as ESPN’s Ryan Clark and Golden State Warrior Draymond Green picked the Rockets to win the West due to the Rockets acquisition of former MVP Russell Westbrook and what he brought to the floor on both ends every night. With two of the best players in the league and a squad of well-rounded shooters, it certainly seemed as if the Rockets were gearing up for a serious run in the playoffs.
 
 However, as teams were heading into the All-Star break, the Houston Rockets made a surprising move to trade their starting center Clint Capela away to the Atlanta Hawks in order to receive Robert Covington in a four team trade agreement.

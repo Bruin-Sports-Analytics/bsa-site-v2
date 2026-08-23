@@ -1,5 +1,3 @@
-### By: Taylor Fenton, Aahil Ali, Ethan Diana
-
 ### Introduction:
 
 On April 7th, for the first time in NCAA history, more fans tuned in to watch the Women’s March Madness championship game than the Men’s March Madness game the following day. The record breaking game, in which the South Carolina Gamecocks defeated the Iowa Hawkeyes 87-75 to remain undefeated, followed on the heels of a long string of records broken in women’s college basketball this season. Many of those records include games attracting unprecedented numbers of audience members.

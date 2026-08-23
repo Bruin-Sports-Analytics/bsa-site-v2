@@ -1,5 +1,3 @@
-### By: Jong Hyun Cha
-
 As the modern game of soccer evolves, the roles of central defensive midfielders have increased significantly. They are expected not only to provide defensive support and stability, but also to facilitate offensively. Teams in the Premier League have been on the search for players that are able to do both. With so many different standards to the way defensive midfielders were being assessed, I wanted to make a standardized criteria to rank the defensive midfielders in the Premier League.
 
 I chose to evaluate players from the 2020-2021 season, as they would have more games and a complete set of statistics to analyse. I picked out one player from every team, excluding those that have been relegated as they would not be relevant for the current season. I’ve also excluded players from teams that have just been promoted to the Premier League for the 2021-2022 season, as the statistics from the Championship would not be an accurate representation for the standards of the Premier League.

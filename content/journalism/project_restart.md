@@ -1,5 +1,3 @@
-### By: Ethan Allavarpu
-
 After a hiatus of around three months, the English Premier League resumed its season in mid-June in an all-out sprint to the finish line. Most of the league’s fans knew which team would hoist the trophy around a month later on the last weekend of July: the Liverpool Reds. Nonetheless, there was still a cornucopia of reasons for the season to play to its conclusion: would Liverpool continue on its historic march, shattering previous records? Which teams would play in Europe next season? Which unfortunate three clubs would be relegated to the Championship? How would home-pitch advantage manifest, if at all?
 
 ![Figure 1](/assets/journalism/project_restart/figure-01.jpg)

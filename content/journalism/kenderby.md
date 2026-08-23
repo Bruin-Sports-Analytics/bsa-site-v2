@@ -1,5 +1,3 @@
-### By: Joey Maurer
-
 Described as “The Most Exciting Two Minutes in Sports”, the Kentucky Derby never fails to capture the attention of sports and gambling enthusiasts alike each May. First held in 1875, the world famous race at Churchill Downs has become ingrained in American sports culture. Thoroughbreds that have gone on to become immortalized in history used the Derby as a stepping stone to greatness. The 144th Kentucky Derby will take place on Saturday, May 5.
 
 The 2018 field is shaping up to be a strong one. Two horses will come in undefeated. A few others come from notable pedigrees. Qualification for the Derby nowadays is based on a points system implemented in 2012. *The Road to the Kentucky Derby* is a series of 30-40 prep races that begin in late September and conclude in April. Each is worth a certain amount of points (i.e. 10-4-2-1 for 1st-2nd-3rd-4th place). The races become more valuable deeper into the season (50-20-10-5). Winning one of these will typically cement a horse’s spot in the field.

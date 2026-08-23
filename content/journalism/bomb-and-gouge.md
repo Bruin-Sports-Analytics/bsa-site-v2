@@ -1,5 +1,3 @@
-### By: Max Wimmer
-
 ## Intro
 
 In recent years, a noticeable shift has swept through the ranks of professional golfers on the PGA Tour: a dramatic increase in swing speed. This evolution is a testament to the fusion of dynamic speed training, athleticism, skill, and technology. As players refine their training regimens and as equipment undergoes continuous innovation, distances off the tee have surged, reshaping the very fabric of the game. This newfound emphasis on distance has sparked discussion, debate, and a fascinating journey into the future of golf.

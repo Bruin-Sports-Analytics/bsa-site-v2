@@ -1,5 +1,3 @@
-### By: Jared Fong, Tyler Taylor, Bryan Kwan, Marilyn Infante
-
 ## Introduction:
 
 The National Football League (NFL) teams are notorious for paying their quarterbacks big money, becoming the top 10 paid in the NFL. Being the brain of a team, the quarterback position is the most important in a team. Having to be the primary decision-makers and first to be in contact with the football every offensive snap, quarterbacks are one of many contributors to a team's success on the field. The quarterback's ranking is a statistical overview of factors such as completion percentage, passing yards, win-loss record, rushing yards, and fumbles, just to name a few, that measure the performance of a QB. One of many factors as to why, in general, Quarterbacks are the highest-paid football players on a team. But not limited to the time a QB is out during a season due to an injury. This raises the question: What should determine the amount of money a quarterback should be paid?

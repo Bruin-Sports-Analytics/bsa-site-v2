@@ -1,5 +1,3 @@
-### By: Anthony Rio and Kyle Ritscher
-
 ## Introduction
 
 Veteran presence is a frequently used term referring to the impact that veteran players have on a team, whether that be on or off the court. Generally, it is assumed that veterans are both more effective on the court themselves, and that their teammates feed off of their knowledge and individually improve. However, veteran presence can look different depending on the player. For example, 20 year tenured Miami Heat big man Udonis Haslem brings toughness, knowledge, and leadership, but close to zero on-court individual impact. Conversely, Warrior’s 10th year forward Draymond Green’s veteran savvy is not just his wealth of knowledge and leadership, but also his generation ability and IQ on the defensive end that only has grown over his career. Green’s defensive wizardry and unorthodox help-rotations cover up the mistakes of teammates and anchor his team’s defensive units, vaulting them into the upper echelon of the league year in and year out. In Green’s case, his veteran presence is not only helping improve other teammates in the long-run, but also making a very tangible impact on the court in the present.

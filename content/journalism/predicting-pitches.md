@@ -1,5 +1,3 @@
-### By: Alisha Dhar
-
 The MLB has been the leading sport to utilize analytics in recent years. From deciding where to place fielders in a shift to predicting which prospects are going to be successful in the major leagues, data analytics is incorporated into all aspects of the game. A few years ago, the Houston Astros were caught using a camera system in game to steal signs which were relayed to batters. While this was clearly a violation of rules and a blatant act of immorality, pitch prediction using analytics morally is still a huge asset to MLB teams and a lineup’s ability to succeed off of pitchers. So, is it possible to predict pitches?
 
 This article will take a look at the use of different pitches in different scenarios and attempt to determine patterns in discerning which pitch will be thrown next. In each visualization the following key will apply.

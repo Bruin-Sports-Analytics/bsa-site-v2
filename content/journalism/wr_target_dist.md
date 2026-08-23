@@ -1,5 +1,3 @@
-### By: Kiel Messinger and Zayne Kratz
-
 ## Introduction
 
 As the NFL continues becoming a more pass-happy league, we have seen even more value being placed on its top quarterbacks, and as a result, their primary pass-catchers. Elite wide receivers can make upwards of $20 million a year, and even replacement-level receivers like Nelson Agholor received $10+ million dollars contracts this past offseason. The league’s promotion of these pass-catchers raises questions on not only how valuable these receivers are, but if teams should be targeting a single elite one, or multiple solid ones.

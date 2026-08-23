@@ -1,5 +1,3 @@
-### By: William Pan
-
 For most of the time in soccer history, goalkeepers are the most overlooked players on the field. They spend most of the game inside the penalty area, and you can only see them making actions when the opponents are shooting or during goal kicks. However, in the game of Germany vs. Algeria at the 2014 World Cup, many people were amazed by the performance of Manuel Neuer due to his very unconventional playing style. You could see him rushing out of the penalty area and winning the ball from the opponent or making numerous passes to his teammates like a midfielder. This kind of playing style that lasted throughout his entire career is not only regarded as bold, but also effective and now very popular in the soccer world. This article is aimed to demonstrate this revolutionizing style statistically and in order to accomplish that, we will compare the statistics of Manuel Neuer and Gianluigi Buffon, one of the best goalkeepers in history but more of a traditional style player.
 
 ## Sweeper-Keeper

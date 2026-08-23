@@ -1,5 +1,3 @@
-### By: Cole Hannum
-
 ## Introduction
 
 The NBA stands as a testament to the global appeal and impact of basketball, adorned with international stars who've etched their names into its history. From the prolific scoring of Dirk Nowitzki to the awareness and ball handling of Steve Nash, the craftiness of Tony Parker, and the unyielding spirit of Manu Ginobili, these legends have woven an intricate story of success. Today, the league shines with the brilliance of current MVP contenders like Giannis Antetokounmpo, Luka Doncic, and Nikola Jokic, each adding a new chapter to the narrative of international excellence.

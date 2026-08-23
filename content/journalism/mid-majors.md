@@ -1,5 +1,3 @@
-### By: Memphis Lau
-
 Every year, once March comes around, we all fill out our brackets, most of us doing so blindly and without knowledge of how exactly the tournament works. This article aims to explain how conferences play into the tournament, determine which conferences are worth watching, and explore trends between high-major conferences and mid-major conferences. Our dataset contains data on the last 9 tournaments (10 seasons, because there was no 2020 tournament).
 
 ## How Do Conferences Work?

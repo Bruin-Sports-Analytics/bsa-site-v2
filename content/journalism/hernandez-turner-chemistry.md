@@ -1,5 +1,3 @@
-### By: Sofia Villalpando
-
 Baseball is one of the sports that draws fans in because of friendship, love, and inclusivity. In Major League
 
 Baseball, there are thirty teams with 40-man rosters who interact for 189 days of the year, where many teammates and competitors create friendships and bonds that last throughout their time spent in the league.

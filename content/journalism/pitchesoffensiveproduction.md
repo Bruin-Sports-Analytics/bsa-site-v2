@@ -1,5 +1,3 @@
-### By: Max Blane and Borna Nazari
-
 Due to the effects of a major knee surgery suffered during a September 2016 matchup vs. the *Toronto Blue Jays* , and a reinjury that was followed by a second surgery in April of 2017, the 2018 season came and went with Boston Red Sox second baseman Dustin Pedroia compiling thirteen total plate appearances; he accumulated just a single hit.
 
 Though the Boston Red Sox went on to capture their 9th World Series Championship, the team's first since 2013 and 4th since 2000, they had to do so without contributions from the 2007 American League Rookie of the Year and 2008 AL MVP.

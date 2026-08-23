@@ -1,5 +1,3 @@
-### By:  Soomedha Vasudevan and Nick Chu
-
 ## Introduction
 
 In the competitive world of professional tennis a player’s success goes beyond their raw talent; they must also navigate several different external and internal challenges. A prominent external factor that significantly influences player performance is the variety of playing surfaces–clay, hard, and grass. Each surface poses distinct challenges, demanding different skill sets and highlighting adaptability as the key to success. As the Association of Tennis Professionals (ATP) tournaments unfolded, certain players demonstrated a notable edge in win percentages, prompting a crucial question: What skills drive these players to success on specific court types?

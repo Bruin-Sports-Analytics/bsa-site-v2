@@ -1,5 +1,3 @@
-### By: Anthony Rio
-
 Adem Bona is a 19 year old freshman who has started every game in his one season at UCLA. He will likely be a pro soon, but while he’s at UCLA, he is and will continue to be a difference maker for his team. Bona was a highly touted recruit coming out of high school, ranking 18th overall as a 5-star in his 2022 high school class (via 247 Sports Composite Rankings). Despite this and being a McDonald's All-American selection, he still somewhat flew under the radar.
 
 Bona grew up in Nigeria playing soccer before being convinced to try basketball. After a year of playing basketball in Nigeria, he moved to Turkey with his mother to pursue the opportunities the sport presented. After five years in Turkey he moved to the USA, playing at national powerhouse, Prolific Prep in Napa, CA, for his last two years of high school. From the onset of his college career, his play has caught the eyes of many and garnered plenty of attention.

@@ -1,5 +1,3 @@
-## By Billy Peir
-
 The 2024 World Chess Championship, held from November 25 to December 12 in Singapore, Was one of the most exciting world chess championships in recent history. The challenger, Gukesh Dommaraju, is a young indian prodigy who won the fabled Candidates, beating out other top competitors like Hikaru Nakamura and Fabiano Caruana for the chance at the crown. At the young age of 18 years old, Gukesh would become the youngest undisputed world champion ever. The defending champion, Ding Liren, was one of the few chess players to ever reach a 2800 FIDE rating, an official rating by the chess federation of a player’s skill. Ding had recently beat Ian Nepomniachtchi for the title of World Champion in 2022, winning in tiebreakers after tying 7-7 in classical matches.
 
 In the end, Gukesh defeated Ding by a score of 7.5-6.5, winning on the final game of the series, with the black pieces, to become the youngest world champion in the history of Chess. This article delves into a comprehensive analysis of the 2024 World Chess Championship, examining key statistics, game strategies, and pivotal moments that defined this historic match.

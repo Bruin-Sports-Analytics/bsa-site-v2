@@ -1,5 +1,3 @@
-### By: Joshua Sujo
-
 Masters, PGA Championship, US Open, and The Open. These are the four most important events in the golfing year. Winning one of these tournaments cements a golfer’s place in history. On the other hand, without winning one, a successful career will always have a gaping hole. What does it take to win one of these tournaments? In this article, we will use past majors to find what skills are needed to win each of these four tournaments. Using the results, we will predict the 2024 Major Champions!
 
 ## Golf’s Four Major Championships

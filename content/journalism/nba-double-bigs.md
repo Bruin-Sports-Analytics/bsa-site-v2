@@ -1,5 +1,3 @@
-### By: Nadeev Alam
-
 ## Introduction
 
 As a Minnesota native, I was devastated on July 1, 2022, when I saw the Utah Jazz were trading Rudy Gobert to the Minnesota Timberwolves. After making the playoffs for the first time since 2018, Timberwolves nonsensically sent away players that were critical to that run and a slew of draft capital to place Gobert, a center that lacks any significant offensive repertoire, next to Karl-Anthony Towns, Minnesota’s star big man that has shined the brightest when he has other offensive talents on the floor alongside him. I did not see how this move would work, and unfortunately, I was proven right. Gobert and Towns only played 27 games together during the regular season, finished eighth in the western conference, lost a game in the play-in tournament, lost in five games in the first round of the 2023 playoffs, and have an uncertain future headed into this offseason. Minnesota’s double big-man experiment, a win-now move, has not bore fruit.

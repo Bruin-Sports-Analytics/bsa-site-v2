@@ -1,5 +1,3 @@
-### By: Joshua Susanto
-
 ## Introduction
 
 A breakout season is a phenomenon where a player, seemingly out of nowhere, performs to a much greater standard than previously believed to be within their capabilities. This is not exclusive to a specific sport as most, if not all, recorded competitive sports have seen an athlete “breakout” and achieve a much higher level of competition.

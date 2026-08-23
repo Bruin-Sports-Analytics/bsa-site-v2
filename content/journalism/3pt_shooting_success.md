@@ -1,5 +1,3 @@
-### By: Ryan Quach and Surya Dham
-
 ### Introduction
 
 To an NBA fan from 1946, today’s shooting would be completely unrecognizable. Whether one considers the volume, the form, or the type of shot, we have seen a dramatic shift from the origins. The focus of this article will be on the latter of these aspects, specifically the three-point shot.

@@ -1,5 +1,3 @@
-### By: Wilson Yu, Jaden Nguyen, and Pieter van Tol
-
 In the 2013 NBA Finals, Ray Allen hit arguably one of the most significant shots of the decade. With the rival San Antonio Spurs just seconds away from another NBA championship, Allen converted an offensive rebound into a 3 point shot to tie the game, send it to overtime and eventually secure a vital win. The Heat ended up winning the series and the championship and as a result, Ray Allen's three became one of the most memorable shots in recent history.
 
 Not only did that shot change the outcome of the series, but it also fundamentally altered the narrative surrounding Lebron James "taking his talents to South beach", creating the Big three, and marking the beginning of the superteam era. Without that shot, that "superteam" , having already fallen short once to an underdog Dallas Mavericks team, would once and for all have been labelled an underwhelming, failed endeavor.

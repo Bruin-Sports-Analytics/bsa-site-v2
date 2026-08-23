@@ -1,5 +1,3 @@
-### By: Franklin Liang
-
 If the NBA is one big show, then its superstars are the main actors. We gravitate towards their talent, highlights, and accolades because greatness is simply second nature to them. If I said, “LeBron James,” you’d probably tell me, “3-time champ, 4-time MVP, and arguable GOAT” before I could blink.
 
 We can’t help but categorize players: the best ball-handlers, the best centers, the best playmakers—you name it. It also works the other way around; we often analyze the worst defenders, 3-pt shooters, and free agency contracts.

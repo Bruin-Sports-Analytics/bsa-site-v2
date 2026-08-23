@@ -1,5 +1,3 @@
-### By: Sofia Jain
-
 ## Introduction
 
 The San Francisco 49ers have a stacked roster, featuring players like Christian McCaffrey, George Kittle, Trent Williams, Deebo Samuel and many more. With such a roster, it’s easy for a player to go underrated when it comes to receiving credit for the team’s successes. One such player is the 49ers wide receiver Brandon Aiyuk, the 25th pick of the 2020 draft, who had a phenomenal 2023 season, but seemed to receive little attention from the media for much of the year. For instance, a 2023 article from Fox Sports titled “Are we watching the greatest collection of wide receiver talent in NFL history?” highlighted wide receivers such as Tyreek Hill, Justin Jefferson, Stefon Diggs, Puka Nacua, yet made no mention of Aiyuk.

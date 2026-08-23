@@ -1,5 +1,3 @@
-### By: Joshua Susanto
-
 ## Introduction
 
 Basketball is an electrifying sport, with millions of players around the planet constantly honing their skills for the game they love. Throughout the many years of the sport’s existence, only a select few have been able to compete among the greatest and rise to basketball stardom. The title of “The Greatest” has been a topic long debated over since the conception of the NBA; however, in any conversation there is one who sticks out above the rest. One man somehow transcends this debate entirely; some call him the GOAT, most call him Michael Jordan.

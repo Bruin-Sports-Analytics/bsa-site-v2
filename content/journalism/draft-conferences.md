@@ -1,5 +1,3 @@
-### By Matthew Sasaki
-
 Part of what makes the NBA Draft so special is the controversy and disagreements that arise over player evaluations. In ranking players, draftniks rely primarily on easily quantifiable metrics like college statistics and measurables. In general, players that put up bigger numbers tend to go higher in the draft. Also, we tend to see a large number of players from certain colleges like Kentucky, Duke and Kansas enter the draft and get drafted in the early lottery. However, every year we see exceptions to both these rules. For example, this year, Antoine Davis, a senior guard for Detroit Mercy, is set to enter the NBA draft. Davis, who is approaching the all time collegiate scoring record, can’t even be found on most draft boards. Why is this?
 
 ![Figure 1](/assets/journalism/draft-conferences/figure-01.jpg)

@@ -1,5 +1,3 @@
-### By: Faraz Murshed
-
 As the most-watched sports league on the planet, the English Premier League (EPL) prides itself on being a fiercely contested competition. Analysts and pundits generally believe that any of the clubs in the table are capable of taking points off another. Furthermore, financial investments in the EPL dwarf the numbers of all the other top leagues. According to [transfermarkt.us](https://www.transfermarkt.us/), the estimated total market value of the league for the 2020-21 season is an impressive $9.8 billion, with the Italian Serie A coming in 2nd with a $5.6 billion valuation. These figures are based off of the estimated transfer values of the league’s players, which implies that the EPL is filled to the brim with raw talent.
 
 In this lucrative competition with teams of similar caliber, the play style of a club plays a role in separating themselves from the pack. As a result, we will take a look at how different tactical approaches can contribute to success in the EPL and which, if any, is the key to success.

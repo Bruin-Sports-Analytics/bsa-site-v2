@@ -1,5 +1,3 @@
-### By: Uzair Shaikh
-
 ### Introduction
 
 Having just exited in what may have been his final French Open with a first round loss, the future of Rafael Nadal is uncertain, even from the perspective of Nadal himself. With retirement likely looming by the end of this season, Nadal will go down as one of the greatest tennis players of all time, alongside Novak Djokovic and Roger Federer. However, a key statistic that sets the three apart is Nadal’s stellar performance on the clay surface. Clay courts are the slowest type of courts, as the ball bounces higher compared to hard courts and grass courts. This makes for longer rallies and matches which in turn demands player focus and stamina. With a record 14 French Open titles to his name, Nadal is highly regarded as the “King of Clay,” as he won his first one at just 18 years old and won his record 14th in 2022 at the age of 36. For over 20 years, Nadal has dominated the tour on clay, a surface that allows him to utilize his game most effectively.

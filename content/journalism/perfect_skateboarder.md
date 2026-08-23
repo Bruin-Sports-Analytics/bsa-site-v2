@@ -1,5 +1,3 @@
-### By: Daniel Wang and Robin Lee
-
 Throughout the 2010s, skateboarding as a sport swelled exponentially, not only in its popularity and viewership, but also cultural impact—subtly influencing various aspects of day-to-day life around the world. Through iconic brands like Supreme and Stussy, skateboarding’s ostentatious style and propensity for controversy kickstarted the so-called “streetwear” fashion trend in the 2010s, and inspired acclaimed musical artists such as Tyler the Creator.
 
 With such an explosive growth in popularity, it came to no one’s surprise that skateboarding eventually wormed its way into mainstream media, making an Olympic debut in Tokyo’s 2020 Summer competitions. However, as a newly-established “sport” in the Olympics, we quickly noticed that the specifics of skateboarding still remained largely unknown to the general public.

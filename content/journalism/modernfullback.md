@@ -1,5 +1,3 @@
-### By: Ishaan Shah
-
 When one hears the word defender, what comes to one's mind? A defender's main job is to prevent the opposition from scoring and stays back while the rest of the team attacks. Straightforward, right?
 
 The modern fullback is way more than just a defender. Their duties and expectations have evolved as the game has changed over these past decades. Earlier, their main duties were to prevent opposition wingers from giving crosses, supporting the centre backs while defending and maintaining a good defensive shape. Fullbacks were famed by their defensive qualities and many greats such as Zanetti and Petit are still known for it. However, modern day fullbacks have to do all this and much more. They are now a vital cog to the team's attacking play, putting more emphasis on controlling the game in the attacking third and helping in the team's build up play. It is almost weird that sometimes their defensive duties become their second priority.

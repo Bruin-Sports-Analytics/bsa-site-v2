@@ -1,5 +1,3 @@
-### By: Allen Chun
-
 Last season, the New York Knicks won 21 of 66 games, putting them in 12th place in the Eastern Conference and missing the playoffs for the seventh straight year. With mediocre offseason signings and unlucky draft pick positions, it certainly seemed as if the Knicks were headed towards another typical year of losses.
 
 But as we speak today, the Knicks are currently 6th in the Eastern Conference through 36 games and find themselves bouncing around the 4th to 9th seed. There are still 36 games left in the season, but it does seem like the Knicks have made a proper step forward. With the play-in tournament for the 7th through 10th seeds, almost every team could make the argument for how they could make the playoffs. Let’s take a look at what changes the Knicks made this season to exceed everyone’s expectations and throw their name in the ring.

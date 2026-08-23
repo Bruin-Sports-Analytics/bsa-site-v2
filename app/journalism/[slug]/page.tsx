@@ -111,16 +111,40 @@ function parseMarkdownToBlocks(rawMd: string): ArticleBlock[] {
       continue;
     }
 
+    // Filter out author bylines, subscribe CTAs, and publication metadata
     if (
-      line.startsWith("By:") ||
-      line.startsWith("### By:") ||
-      line.startsWith("## By:") ||
-      line.startsWith("Written by") ||
-      line.startsWith("### Written by") ||
-      line.startsWith("Subscribe") ||
-      line.startsWith("Published:")
+      /^(by:|written\s+by:|authors?:|published:|subscribe\b)/i.test(line) ||
+      /^(\*\*|\*)(by:|written\s+by:|authors?:)/i.test(line)
     ) {
       continue;
+    }
+
+    // Headings that are author bylines e.g. "## By Billy Peir", "### By Nathan Wetmore"
+    const headingPrefixMatch = line.match(/^#{1,6}\s+(.*)$/);
+    if (headingPrefixMatch) {
+      const headingText = headingPrefixMatch[1].trim();
+      if (/^(by:|written\s+by:|authors?:|published:|subscribe\b)/i.test(headingText)) {
+        continue;
+      }
+      if (/^by\s+/i.test(headingText)) {
+        const rest = headingText.slice(3).trim();
+        if (!/^(age|position|year|sport|team|tier|category|conference|round|metric|season|decade|country|player\s+type)\b/i.test(rest)) {
+          continue;
+        }
+      }
+    }
+
+    // Top-of-article standalone byline e.g. "By Billy Peir" or "**By Billy Peir**"
+    if (i <= 6) {
+      const clean = line.replace(/^(\*\*|\*)|(\*\*|\*)$/g, "").trim();
+      if (/^by\s+[A-Z]/i.test(clean)) {
+        const rest = clean.slice(3).trim();
+        if (!/^(the|this|a|an|studying|analyzing|comparing|using|calculating|examining|looking|virtue|isolating|contrast|understanding|taking|plotting|measuring|evaluating|determining|diving)\b/i.test(rest)) {
+          if (!/^(age|position|year|sport|team|tier|category|conference|round|metric|season)\b/i.test(rest)) {
+            continue;
+          }
+        }
+      }
     }
 
     // Headings

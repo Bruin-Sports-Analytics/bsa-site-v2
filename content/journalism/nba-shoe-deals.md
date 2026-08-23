@@ -1,5 +1,3 @@
-### By Tom Seifert and Eric Huang
-
 ## Introduction
 
 The NBA has a long history of players securing lucrative shoe deals with top brands, but what factors determine which players are chosen to represent these brands with their own signature shoes? While some may assume that the biggest stars with the most impressive stats automatically get the deals, the reality is much more complex. In this article, we will explore the many factors that can impact a player's ability to earn a signature shoe deal and aim to identify which of these factors is the most important.

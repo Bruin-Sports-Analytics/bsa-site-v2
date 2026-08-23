@@ -1,5 +1,3 @@
-### By: Aaron Phung and Matthew Sasaki
-
 ## Introduction
 
 There are seasons when we feel like a sports team is guaranteed to win the championship no matter what due to the overwhelming amount of strength in their players. We often call these teams “superteams”. However, some of these superteams still find a way to lose a lot of games, and fans are left in shock. It logically doesn’t make sense that even with superior talent on one roster, superteams can struggle to stay in the middle of the pack of their league. There must be some other factors that cannot be seen in accolades or box score stats that account for their disappointing performance.

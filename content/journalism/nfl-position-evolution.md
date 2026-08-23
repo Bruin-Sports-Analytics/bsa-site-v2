@@ -1,5 +1,3 @@
-### By Atij Mahesh
-
 College football is typically a “testing ground” for specific NFL playbooks and playstyles. Since the 2000s, college football teams have molded their game in a variety of ways: more quarterback options, jet sweeps, and trick plays. These experimental game styles typically are weeded out in college before jumping to the NFL, where one wrong play call can cost teams games, which in turn, cost teams money and glory.
 
 Over the last two decades, some of these gameplay shifts appear to have transferred to the NFL. One noticeable trend is the adoption of designed quarterback runs, where mobile quarterbacks are utilized not only for their passing abilities but also as effective rushers, adding a new dimension to the offense. Another is jet sweeps, which involve a quick lateral handoff to a wide receiver running across the formation, creating opportunities for explosive plays and misdirection.

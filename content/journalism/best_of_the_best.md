@@ -1,5 +1,3 @@
-### By: Ryan Quach
-
 The NBA Draft—it is one of the most exciting moments of professional basketball. Not only do worse-performing teams gain an opportunity to improve themselves by selecting a worthy prospect among lottery picks, but all teams involved also seek to strengthen their position in the league through late-round picks and/or beneficial trade acquisitions. But arguably the most exciting element of this event is the anticipation over who will be selected with the first overall pick.
 
 Given that these players are chosen first, it is assumed by most that they are the best players of their respective draft classes and that they will generally outperform the average NBA player over the course of their careers. After all, it would be unreasonable for teams with the first pick to *not* choose whom they see as the best fit/player for their team.

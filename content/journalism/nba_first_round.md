@@ -1,5 +1,3 @@
-### By: Kiel Messinger and Zayne Kratz
-
 ## Introduction
 
 Draft picks are as important as ever in today’s NBA. From the Sam Hinkie 76ers introducing the idea of “tanking” to mainstream NBA media under the name of “The Process,” to the Thunder collecting draft picks like they’re Anthony Davis injuries, teams are building more and more for the future using these lottery tickets. But how valuable are these tickets, and what are their chances of cashing at each pick? How much are picks really worth in relation to each other, and players in the league?

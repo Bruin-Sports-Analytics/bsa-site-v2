@@ -1,5 +1,3 @@
-### By: Abhinav Madabhushi
-
 ## Introduction to playstyles
 
 The NBA has 30 different teams spread across 2 conferences, each with its own coaching staff and players. Each team is composed of players with different abilities and physiques, and each team has a head coach with different methods and strategies in mind. The NBA is as much a mental game as it is a physical one. The strategies teams use are essential to the teams’ success. In this article, I will mainly focus on offensive strategies. More precisely, I will talk about the different playstyles NBA teams use and through my analysis, I will answer the question: “Is there a particular playstyle(s) in the NBA that leads to success?”

@@ -1,5 +1,3 @@
-### By: Anthony Rio
-
 In the past decade, wingspans have become all the rage in the NBA. Particularly, starting with the John Hammond-constructed Milwaukee Bucks in the early 2010s, the general manager who infamously drafted a skinny Greek teenager with a 7’3” wingspan who would change the franchise as well as the landscape of the NBA for years to come.
 
 The logic of drafting a player with long arms is pretty simple: the longer a player's arms are, the more space they can cover, the more passing lanes they can get their hands in, and the closer they can vertically get to the basket. Another perk a player with a long wingspan possesses is that their added size doesn’t come at the cost of less mobility and lateral quickness, like a purely taller player with longer legs would normally face. In targeting players with long wingspans, the theory was that this would obviously bolster a team's defense solely based on physical characteristics- a “longer” team would never be physically overmatched or dominated.

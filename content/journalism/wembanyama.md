@@ -1,5 +1,3 @@
-### By: Tony Jeon
-
 ## Background
 
 Considered the greatest basketball prospect since Lebron James, Victor Wembanyama has NBA teams desperate to tank in hopes of landing the first overall pick at the upcoming 2023 NBA draft. Despite other elite prospects such as Scoot Henderson being part of a stacked draft, there is absolutely no doubt that Wembanyama will be the first name called on June 22.

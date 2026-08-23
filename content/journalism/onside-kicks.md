@@ -1,5 +1,3 @@
-### By: Leonardo Cardozo
-
 In the 2023 Super Bowl, the Eagles led by 10 points at halftime. After scoring on two of their three second half drives, averaging over a field goal a drive, they ended up losing by 3 points. Simply put, the Eagles could not stop the Kansas City Chiefs and Patrick Mahomes, as so many teams have failed to do since he entered the league in 2018.
 
 Dominant offenses that can score a touchdown nearly every drive can almost always win the game in today’s NFL. With five years of evidence that defenses will not be able to stop Patrick Mahomes effectively, I propose an alternate solution: preventing him from getting the ball altogether.

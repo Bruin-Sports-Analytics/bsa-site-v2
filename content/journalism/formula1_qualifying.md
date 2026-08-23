@@ -1,5 +1,3 @@
-### By: Ishika Sanghi and Jed Miguel
-
 ## Intro
 
 While Formula 1 is relatively unknown in the United States, F1 possesses a small but dedicated following. Newcomers to the sport, especially those with previous racing knowledge, often compare NASCAR to F1. At their core, both are very similar sports, but they do have their differences. One of the biggest differences between the two actually doesn’t occur during the race, rather it occurs before the race. For qualifying, NASCAR drivers go all out and perform one “flying lap” in order to set the grid for the upcoming race. For F1, qualifying is split into three parts. During Q1, the first part, drivers have 20 minutes on the track to set a fast lap time. The interesting part of qualifying is that every driver shares their 20 minutes with everyone, so there could be zero drivers or twenty drivers on the track at one time. The five slowest drivers are eliminated and make up the last five places on the grid. Q2 comes after, determining the eleventh through sixteenth places on the grid. Finally, Q3 determines the rest of the grids over a 10-minute period.

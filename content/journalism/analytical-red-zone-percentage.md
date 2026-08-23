@@ -1,5 +1,3 @@
-### By Nathan Wetmore
-
 ## Punching it In
 
 We’ve all seen it happen to our team: the offense marches down the field expertly moving the chains until they arrive at the ten yard line and proceed to run the ball three times into a brick wall or throw three terrible incompletions in the end zone and are forced to settle for an unfortunate field goal. Any coach in the history of football goes mad just thinking of this situation. So what causes this anti-climactic finish to a drive? More specifically, what factors lead to teams having as high a red zone percentage as possible? Red zone percentage, for those unfamiliar, is defined as the proportion of instances a team is inside the twenty yard line of their opponent and comes away with a touchdown. I intend to use a linear regression analysis to analyze a data set with many different variables to determine just this.

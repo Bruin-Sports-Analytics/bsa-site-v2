@@ -1,5 +1,3 @@
-### By: Victor Li
-
 Arguably the most unique down in American football is the fourth down. While teams get to attempt another play (as long as they maintain control of the football) after the first three downs, the fourth one is the last. If a team maintains control of the football after a fourth down but does not get another first down or score, they turn the ball over.
 
 ## The Main Fourth Down Decisions

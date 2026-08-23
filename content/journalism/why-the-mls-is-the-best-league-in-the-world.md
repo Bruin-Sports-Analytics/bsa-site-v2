@@ -1,5 +1,3 @@
-### By: Bennett Kedrosky
-
 MLS is the best league in the world. But best doesn’t mean it has the greatest players, coaches, or even the highest quality of play. As a sporting spectacle, however, MLS has the most compelling combination of competitive parity, coaching, and quality of play.
 
 Consider other top leagues in world soccer. For example, the Bundesliga, a top 5 league worldwide, is dominated by Bayern which has won the league every year for the past decade. Then at the other end of the league are a handful of teams that will never make it out of the bottom positions.

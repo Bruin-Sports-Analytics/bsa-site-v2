@@ -1,5 +1,3 @@
-### By: Vedant Sahu
-
 With the Indian Premier League wrapped up and the ICC World Cup just on the horizon, the cricket fever is definitely reaching its peak. As more and more people turn towards cricket to keep themselves entertained over the summer, it is probably safe to say that people who have been newly introduced to the sport won’t find it particularly easy to follow. While cricket is an already complicated game to begin with, there is one notorious component of the game that even most seasoned cricket fans fail to completely grasp - the Duckworth-Lewis-Stern (DLS) method.
 
 ## What is the Duckworth-Lewis-Stern Method?

@@ -1,5 +1,3 @@
-### By: Johan Chua
-
 ## Introduction
 
 On an April 5 matchup between the Los Angeles Lakers and Phoenix Suns, Lakers’ announcer Stu Lantz was caught on a hot microphone pre-game telling the Lakers, “Let’s get this over with. Put us out of our misery”—a plea that seemingly reflected the overall sentiment of the Lakers’ drained fanbase who were enduring one of their most tumultuous seasons in a while, to say the least.

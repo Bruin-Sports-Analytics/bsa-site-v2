@@ -1,5 +1,3 @@
-### By: Kevin Kim
-
 ## Introduction
 
 First of all, congratulations to Napoli for their magical campaign this season. They have been delightful to watch, and have been crowned the champions of the 2022/23 Serie A. Many fans and pundits accredit star players such as Victor Osimhen and Khvicha Kvaratskhelia as the key to Napoli’s successful run for the title. While those players have definitely played a huge role for the team, it is crucial to remember what Bear Bryant once said: “Offense sells tickets, but defense wins championships”.

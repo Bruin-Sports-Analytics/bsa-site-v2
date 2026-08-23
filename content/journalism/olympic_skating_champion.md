@@ -1,5 +1,3 @@
-### By: Nora Liu
-
 Yuzuru Hanyu, two-time Olympic Champion in men’s figure skating, two-time world champion, and 4 time champion of GPF, is by all means a great skater. He is the first skater to land a clean quadruple loop, and the first skater to surpass a total score of 300 points. Other than technical skills, Hanyu also excels in his performance. He gives us new interpretations of music every season, proving that technical and artistic perfection are compatible. Hanyu is the first man since Dick Button to win back-to-back Olympic gold medals, and this article analyzes how he got to this point.
 
 ### Lead in Junior Group

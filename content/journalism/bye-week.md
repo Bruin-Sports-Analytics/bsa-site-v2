@@ -1,5 +1,3 @@
-### By: Raja Kavasseri
-
 ## Introduction
 
 The NFL recently increased the number of games per team from 16 to 17. A 17th game makes sense - more football is great for fans and for profits. But an extra game also means more physical stress, and therefore more injuries for players. There is no NFL without the players, and their health needs to remain a priority. This is not lost on the NFL, as many features of the league, like helmets and the bye week, are set up to minimize injuries. There are also constant rule and equipment changes implemented to decrease injury risk. Despite such a heavy focus on preventing injuries, there have been many conversations about extending the NFL season even further to 18 games. Will increasing the number of games create more injuries, counteracting all the work done to prevent them? Throughout this article, we will look at the effects of adding an 18th game and try to determine if we can make this addition safely by adding a second bye week. Can we maximize fan entertainment while preserving the well-being of NFL players?

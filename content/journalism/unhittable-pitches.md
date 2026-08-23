@@ -1,5 +1,3 @@
-### By: Brandon Louie and Robert Reyes
-
 ## Introduction
 
 The hardest thing to do in sports: hitting a baseball. However, this does not make pitching the easiest thing in sports. To put it as simply as possible, the job of a pitcher is to get opposing batters out, and the best way to do this is to get batters to swing and miss (whiff) at pitches. There are two important aspects to a whiff: “you have to get them to swing *and* to miss” (FanGraphs). A pitcher who gets batters to swing at a majority of pitches is not successful if batters hit a large number of those pitches, nor is the pitcher successful if every time a batter swings, they miss but they rarely swing at the pitch. Thus, it is crucial to get batters to miss a high percentage of both pitches swung at and the total.

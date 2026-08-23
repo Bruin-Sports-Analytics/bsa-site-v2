@@ -1,5 +1,3 @@
-### By: Kailani Hoang and Lila Midyett
-
 ## Introduction
 
 NCAA D1 Men’s Volleyball is a growing sport, attracting greater audiences every season. Collegiate volleyball matches consist of a best-of-five sets. Teams must win 3 sets to win the match, with sets going to 25 points, except for fifth sets, which are played to 15. In these tie-breaking sets, what statistics and skills determine the winner? Is there a home court advantage in fifth sets? How does serving and attacking affect the outcome of a fifth set? Do metrics that determine a winner change when a match goes to a fifth set?

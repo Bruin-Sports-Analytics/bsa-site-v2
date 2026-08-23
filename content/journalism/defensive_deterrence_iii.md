@@ -1,5 +1,3 @@
-### By: Ian Geertsen
-
 ## Analyzing the Metric
 
 While we’ve been able to take a look at how the defensive deterrence metric analyzes players, it is equally important to analyze the metric itself to check for accuracy and validity. There are many ways we could go about doing this, ranging from more empirical to more subjective; hopefully you looked at the metric’s rankings among my sample with a critical eye yourself. One of the simplest and most effective ways of testing the validity of a metric, though, is by comparing it to other known and reliable metrics.

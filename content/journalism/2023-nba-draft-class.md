@@ -1,5 +1,3 @@
-### By: Ryan Liu and Ashton Chung
-
 ### Introduction
 
 The talent level in the National Basketball Association (NBA) only grows yearly, and this also seems to be the case for the upcoming draft class. With the unreal hype around this year’s top prospect, Victor Wembanyama, many expect him to make a significant impact in his first season in the NBA. After the San Antonio Spurs secured the first overall pick in this year's upcoming draft, many have placed immense pressure on Wembanyama to drastically change the team’s losing record.

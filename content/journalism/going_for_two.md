@@ -1,5 +1,3 @@
-### By: Ryan Dunker and Tommy Schilder
-
 ## Introduction
 
 Among the most pivotal moments in a football game is the two point conversion. Whether it’s necessary to tie the game, or a bold move to take the lead, it’s hard to find a two yard play that is more consequential than the two point conversion.

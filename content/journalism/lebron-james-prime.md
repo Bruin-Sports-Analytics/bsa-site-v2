@@ -1,5 +1,3 @@
-### By: Brian Mualim
-
 ## Introduction
 
 In any sport, a player’s prime is defined as the peak their career. Due to basketball’s unforgiving nature as a sport, where the slightest misstep could injure and derail your whole career, a basketball player’s prime usually lasts around 5 years. We see this phenomenon happen in superstar caliber players like Russell Westbrook and James Harden, both of whom were superstar players who had their prime during their time in OKC Thunder and the Houston Rockets respectively, and experienced a decline in production as soon as they left those cities.

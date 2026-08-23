@@ -1,5 +1,3 @@
-### By: Eduard Bueno
-
 ## Introduction:
 
 In recent years, the landscape of the NBA has undergone a remarkable transformation, marked by a significant influx of international talent onto its courts. From seasoned veterans to rising stars, players from across the globe have been making their mark in the world's premier basketball league like never before. As of 2022, this trend reached new heights, with the NBA boasting an uptrend with the number of international players in its history, counting to 125 players from all around the globe. This surge in international presence not only speaks to the league's global appeal but also underscores the growing talent pool and the increasing competitiveness on a global scale.

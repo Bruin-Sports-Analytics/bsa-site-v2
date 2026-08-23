@@ -1,5 +1,3 @@
-### By: Vishal Sundaram
-
 ## Process
 
 With the NFL draft having recently concluded, many fans and outlets have been releasing draft grades, as per the annual tradition. While the grades vary from A's down to the occasional F, there's really very little analysis put into deriving these letters; these outlets often base their grades on the pre-draft reputations of the players picked, only considering whether they themselves believe these players are "good value" and not really taking into account scheme fit and other underlying factors that could sway the odds of success in the team's favor. My goal in this article was to look into external cues of player success. The three main factors I decided to focus on to attempt to find indicators of this year's most successful draft were combine data, strength of conference, and team history of drafting success.

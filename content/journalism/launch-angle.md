@@ -1,5 +1,3 @@
-### By:  Steven Lu Chen
-
 ## Introduction
 
 Hitting a baseball is often agreed upon to be among the most difficult feats to perform in sports. Consequently, over professional baseball’s decades of history, there has been no shortage of coaches and players advocating for an endless variety of approaches to hitting. In recent years, hitters have begun to place a significant emphasis on optimizing launch angle: defined by MLB Statcast as “the vertical angle at which the ball leaves a player’s bat after being struck.” In other words, the launch angle is the angle formed by the trajectory of the struck baseball and the plane parallel to the ground and passing through the point of contact; a fly ball would have a relatively high launch angle, while a grounder would likely have a negative launch angle. While the true “ideal” launch angle differs slightly from hitter to hitter based on their respective skill sets, Jeff Zimmerman of RotoGraphs identifies the general range of optimal launch angles to be between 15 and 20 degrees. In this article, we examine the launch angle and its effectiveness as a predictor of the success of a hitter.

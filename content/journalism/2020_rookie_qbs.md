@@ -1,5 +1,3 @@
-### By:  Dean Jones
-
 ## Introduction
 
 The 2020 NFL season was unlike any other. The threat of coronavirus constantly loomed, causing absences of key players and coaching staff and even forcing multiple games to be rescheduled. The playoff field was expanded from 12 to 14 teams, and teams like the Cleveland Browns, Buffalo Bills, and Washington Football Team rode inspiring performances to the postseason. The Tampa Bay Buccaneers ultimately became the first team to win the Super Bowl at their home stadium, with Tom Brady at the helm after his league-altering departure from the New England Patriots’ 6-championship dynasty.

@@ -1,5 +1,3 @@
-### By Memphis Lau
-
 Seemingly every game, fans of a losing team will blame the referees. But, how true can that statement really be? The role referees play in any sport, and especially the sport of American football, is crucial. A single call, whether correct or incorrect, can change an entire game, shifting momentum or even deciding the outcome. Just in the most recent SuperBowl this February, in the most important third down of the game, the refs called a pass-interference on Eagles CB James Bradberry. As a result, the Chiefs extended their drive and were able to win the game. Referees have the power to influence so much in the sport. This article explores referees of the National Football League: all that were active for the most recent 2022-2023 season. We examine all of the games ever reffed by them, finding patterns and giving betting tips.
 
 ### About the Data

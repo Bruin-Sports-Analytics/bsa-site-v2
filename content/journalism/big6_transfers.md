@@ -1,5 +1,3 @@
-### By: Nikhil Isukapalli
-
 There is arguably no bigger or more popular soccer league in the world than the English Premier League. With the effects of the COVID-19 pandemic on stadium attendance and league procedures making the 2020-21 Premier League extremely unpredictable and taxing on players and teams as a whole, fans will be expecting the 2021-22 season to mark a return to the normality of pre-COVID times. This season is especially crucial for the traditional Big Six clubs (Liverpool, Manchester United, Arsenal, Chelsea, Manchester City, and Tottenham Hotspur), as they restore their public perception among their own supporters and other soccer fans worldwide following their failed attempt to create a breakaway European Super League in April 2021. In this article, I will be looking back on each Big Six team’s individual 2020-21 season and their areas of concern going into the summer transfer window. I will then assess their player recruitment and team performance as of November 19, 2021, after 11 gameweeks, and offer a prediction of how well they will do for the rest of the season.
 
 ## Metrics Explained

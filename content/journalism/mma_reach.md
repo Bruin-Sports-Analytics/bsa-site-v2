@@ -1,5 +1,3 @@
-### By: Akilan Arunachalam
-
 Throughout the history of combat sports, there have always been a few key statistics shared about each fighter to help set the scene of a fight. Of course, the fighter’s age and the weight class they compete with is shared, but there is one statistic that has variability: reach. We often hear that fighter X has a reach advantage over fighter Y, but exactly how much advantage does reach truly give? Is reach an important factor to consider when choosing a winner of a fight or is it just a meaningless statistic that just helps set the stage?
 
 ![Figure 1](/assets/journalism/mma_reach/figure-01.png)

@@ -1,5 +1,3 @@
-### By: Leonardo Cardozo
-
 The selection and seeding of college basketball teams for the NCAA tournament has been a complaint among college basketball teams and fans ever since the tournament expanded to 64 teams in 1985. With the combined seeds of the men’s 2023 final four adding up to 23 (5.75 seed average), many have suggested that the seeding system needs an overhaul, as the committee tends to give higher seeds to major conference teams with worse records than teams that come from worse conferences.
 
 ![Figure 1](/assets/journalism/fixing-net/figure-01.png)

@@ -1,5 +1,3 @@
-### By: Shail Mirpuri
-
 Every year over 6 million soccer fanatics take part in the biggest fantasy soccer league in the world: The Fantasy Premier League (FPL). Players face tough dilemmas when selecting their squads by considering where they should allocate their budgets, when they should make transfers, and ultimately whom they should select to lead them to glory. We can make these decisions with greater certainty if we take a deep dive into the data from previous seasons to uncover some fascinating trends. By looking at various performance influencing factors such as form, fixtures, price and position, this article aims to uncover some useful tips and tricks to allow you to gain an edge over your rivals, and rise up the fantasy premier league leaderboard. Not only will we explore the valuable insights derived from analyzing past seasonal data, but we will also demonstrate how statistical methods can actually be applied to test various different ‘theories’ within the fantasy soccer realm.
 
 ## The Dataset

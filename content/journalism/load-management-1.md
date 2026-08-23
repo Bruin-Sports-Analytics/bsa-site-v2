@@ -1,5 +1,3 @@
-### By: Aaron Ho
-
 ## Introduction
 
 Heading into the 2023-2024 NBA season, the NBA has made numerous attempts to deter load management, pushing for players to hit the court more frequently. But what exactly is load management, and does it deliver on its promise to keep players fresh and elevate their performance in the playoffs?

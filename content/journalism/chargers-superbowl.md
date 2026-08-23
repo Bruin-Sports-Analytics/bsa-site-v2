@@ -1,5 +1,3 @@
-### By: Sofia Villalpando
-
 Over the past five seasons, the Chargers have made the playoffs twice, but have not had a Super Bowl appearance since 1994. With two stellar quarterbacks and an incredible offense, it has been a shock to Chargers fans along the coast why the team hasn’t progressed as far as they should. Phillip Rivers spent an incredible 2018 season with the Chargers, and this past 2022 season, Justin Herbert dominated the league. In both of these years, despite their successful regular seasons, the Chargers fell short of a Super Bowl appearance. What went wrong?
 
 The Chargers won a total of 12 games in 2018 and 10 in 2022, but barely clinched a playoff spot in both seasons. They played a total of 17 games with 131 reported injuries throughout the season, playing more than half of the season they were forced to play without a reliable offensive line. With the upward trend of teams relying on running plays, the Chargers hit an all-time low.

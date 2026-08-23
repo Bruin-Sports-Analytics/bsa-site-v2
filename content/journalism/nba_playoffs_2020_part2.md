@@ -1,5 +1,3 @@
-### By: Wilson Yu, Dean Jones, and Lia Bergman-Turnbull
-
 In the first part of our article, we discussed the statistical background of the model that we have used to project the 2020 NBA Playoffs. In this second part, we will proceed to discuss all the match-ups with an emphasis on some of the more intense and interesting matchups, such as the 7-game series, the Los Angeles match, and the Finals, in greater detail.
 
 ## Western Conference First Round

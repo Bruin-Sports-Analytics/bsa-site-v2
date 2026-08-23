@@ -1,5 +1,3 @@
-### By: Sofia Jain and Angelina Muliadi
-
 ## Introduction
 
 In the dynamic world of women’s tennis, a standout personality has captured the spotlight in recent years–Cori ‘Coco’ Gauff. Born in Delray Beach, Florida, in 2004, Gauff entered the tennis scene as a child prodigy. Yet, it was not until her breakthrough season in 2019 that she found herself in the spotlight for her first Grand Slam appearance at Wimbledon, at the young age of 15. As with many athletes’ stories, Gauff’s journey has not always been easy, which was marked by a challenging period in her career where she lacked consecutive wins and was not dominating her opponents like she had been earlier in her career. This “slump” occurred early in 2023 and even resulted in a coaching change. With her new coach, Brad Gilbert, Coco Gauff resurrected her tennis season and in this article, we will explore how she went from this period in her career to becoming a Grand Slam champion in a matter of a year.

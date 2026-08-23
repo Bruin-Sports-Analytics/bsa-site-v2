@@ -1,5 +1,3 @@
-### By: Jerry Shi
-
 With the ascension of Roger Federer to the throne as ATP World No.1 in 2004, only the Big Three—Roger Federer, Novak Djokovic, and Rafael Nadal—and Andy Murrary have been able to reach the No.1 Ranking in the past 18 years. However in 2022, with Federer’s retirement, Nadal’s injuries, and Djokovic’s inability to get vaccinated, there was plenty of room for two new players to join the group of becoming the “best player in the world”: Daniil Medvedev (26yr) and Carlos Alcaraz (19yr). At the time of writing this article, December 2022, Alcaraz is currently still the World No.1, and the only teenager to accomplish this feat. Is he as talented as his age suggests, and how does he compare the other 27 previous World No.1’s?
 
 ![Includes the age upon reaching World No.1 for all 28 players](/assets/journalism/carlos_alcaraz_no1/figure-01.png)

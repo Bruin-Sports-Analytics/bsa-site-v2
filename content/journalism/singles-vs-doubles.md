@@ -1,5 +1,3 @@
-### By: Stella Koh
-
 ### Introduction
 
 Singles or doubles, tennis is tennis. But are they really the same?

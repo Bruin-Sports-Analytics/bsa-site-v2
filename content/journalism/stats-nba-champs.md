@@ -1,5 +1,3 @@
-### By: Ryan Kawamura
-
 ## Introduction
 
 With a new stream of talent coming from college and across the world to the NBA, basketball is and forever will be a constantly changing game. However, is there a statistic that proves to be the most important and indicative of a championship caliber team? In this project, I researched the statistics of all of the NBA teams over the past decade in an attempt to find whether there is a statistic that is common among winning basketball teams.

@@ -1,5 +1,3 @@
-### By: Kathir Ilango
-
 After finishing the 2010 NFL season with a losing record yet again, the San Francisco 49ers finally decided it was time for a new head coach. They needed to win games to become relevant again and, more importantly, they needed to bring life back to a fan base that had not had a winning team since 2002. So they went with a man whom they thought could bring all of that to the table: Jim Harbaugh.
 
 Having coached a dominant Stanford football team for years in the Pac-12, the former quarterback was primed for a head coaching job in the NFL. He brought an energy and intensity that the Forty-Niner Faithful had not seen for a very long time and in his first season, he took the Niners to the playoffs with a record of 13-3. They ultimately lost the NFC championship game to the New York Giants, but Harbaugh was the Coach of the Year and the Niners were once again in the mix of legitimate contenders.

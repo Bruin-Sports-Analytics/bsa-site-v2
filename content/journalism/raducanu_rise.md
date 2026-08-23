@@ -1,5 +1,3 @@
-### By: Steven Lu Chen and Aarushi Verma
-
 ## Introduction
 
 In September 2021, eighteen-year-old Emma Raducanu took the tennis world by storm by dominating that year’s U.S. Open, winning the entire tournament without dropping a single set and becoming the first British woman in half a century to lift the trophy. Previously ranked as the world’s 150th best women’s tennis player by the Women’s Tennis Association (WTA), her ranking rocketed to 23rd as a result of her win. Seemingly out of nowhere, Raducanu rose from a rising tennis starlet into an international pop culture icon, appearing at the 2021 Met Gala in New York, and inking endorsements not just with sports manufacturers Nike and Wilson, but also luxury brands Tiffany & Co. and Dior.

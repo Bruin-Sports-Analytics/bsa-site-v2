@@ -1,5 +1,3 @@
-### By: Trent Bellinger and Derek Nakagawa
-
 ## Introduction:
 
 Since 1959, the Naismith Memorial Basketball Hall of Fame has honored and celebrated some of the game’s greatest moments and brightest stars. To be nominated and selected to be in the Hall of Fame is not only a huge honor for the player, but also a sign to know that they were one of the best players to ever play basketball. Many of these players were role models, inspirations, and key figures in the NBA that shaped how the game is played today. Less than 5% of the players to ever play in the NBA ever get nominated, and even less get selected to be part of this elite group.

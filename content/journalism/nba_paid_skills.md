@@ -1,5 +1,3 @@
-### By: Arvind Kalyan
-
 It’s no secret that the NBA has gone through its fair share of radical upheavals over the last few years. From the start of the small-ball Warriors dynasty to the revolution of the big man over these past two seasons, the game—and how front offices decide on building teams—continues to change.
 
 In my previous article, I took a look at the most and least valuable skills for getting paid in today’s NBA. Now, following up on one of the future works mentioned, I’ll be conducting a similar analysis spanning the last six seasons of the NBA.

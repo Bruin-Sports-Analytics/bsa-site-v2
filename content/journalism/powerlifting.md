@@ -1,5 +1,3 @@
-### By: Qi Jing Yap
-
 ## Introduction to the sport
 
 On first glance, powerlifting appears to be a sport destined for greatness, featuring incredible feats of strength through the squat, bench, and deadlift, some of the most ubiquitous exercises in the gym. In addition to that, the basic rules of the sport are mind-numbingly simple to understand - the best of three attempts at each lift are added together to form a total, which is then compared among competitors in the same weight class. In the right moments, the battle to become the strongest lifter can play out in dramatic conditions, such as John Haack's 315kg (694lb) pull at 83kg (183lb) to secure the IPF World Classic Powerlifting Championships title.

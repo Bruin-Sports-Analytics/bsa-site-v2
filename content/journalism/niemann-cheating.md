@@ -1,5 +1,3 @@
-### By: Bennett Kedrosky
-
 ## The Drama
 
 On September 4, 2022, Hans Niemann shocked the chess world by defeating the world chess champion Magnus Carlsen in the 3rd round of the Sinquefield Cup. Coming off of a 53-game unbeaten streak of in-person (called “over-the-board” by chess players) matches, nobody expected Carlsen to lose to Niemann — the lowest-ranked player in the tournament.

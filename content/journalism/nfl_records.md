@@ -1,5 +1,3 @@
-### By: Arnav Saxena
-
 ## Introduction
 
 In the 2020 NFL season, Tennessee Titans running back Derrick Henry finished with 2,027 rushing yards, just 79 yards short of breaking the thirty-six year old rushing record set by Los Angeles Rams legend Eric Dickerson. Two years prior, Pittsburgh Steelers quarterback Ben Roethlisberger threw for 5,129 yards, 349 yards away from breaking Peyton Manning’s single-season passing yards record. Over the course of recent NFL history, many players have come close to breaking long-lasting single season records, but fall short for one reason or another, an annual reminder of how impressive some of these records are.

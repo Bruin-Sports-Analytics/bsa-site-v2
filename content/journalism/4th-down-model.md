@@ -1,5 +1,3 @@
-### By: Tom Seifert
-
 ## Introduction
 
 Throughout a football game, each coach is faced with many decisions about what to do on 4th down plays. While converting a 1st down on a 4th down undoubtedly improves a team’s likelihood of scoring on a given offensive drive, the possibility of failing to convert a 4th down introduces a significant risk in 4th down conversion attempts. When the offensive team is backed up in their own territory, for example, failing to convert on 4th down would put the opposing offense in an opportune position to score. When the offensive team is instead deep in opponent territory, failing to convert on 4th down results in a missed opportunity to score 3 points by settling for a field goal attempt.

@@ -1,5 +1,3 @@
-### By: Krish Jain and Shubhan Yenuganti
-
 ## Introduction
 
 Over the years, the NBA has grown from a measly peach basket into a worldwide sensation, with millions of people around the globe tuning in daily to watch NBA players streak back and forth across the court, raining threes on each other in high-scoring affairs. However, the NBA used to consist of slow-paced possessions, grueling and physical post-specialists, and heavy isolation, with the three-point shot a rarity. In the modern NBA, players have broken out of their traditional roles for their size and build. We have 7-footers who can shoot from behind the arc and guards capable of scoring 70 points in a game. As it appears that the NBA is becoming increasingly positionless, we want to analyze how the positions of the NBA have changed over time. For this analysis, we opted to research the last thirty years of the NBA, as it included many years before the emergence of the three-point shooting era, making it easier to depict changes for each position.

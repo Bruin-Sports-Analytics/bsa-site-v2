@@ -1,5 +1,3 @@
-### By: Ishika Sanghi and William Pan
-
 ## Introduction
 
 Soccer is a sport played by over 250 million people from more than 200 different countries. The level of competition ranges from children playing in a field to the World Cup and each one is supported and played with more fervor and passion than the next. It is the predominant sport in terms of popularity in Europe, which has [38 different professional leagues that are played by over 1000 clubs from 31 different countries](https://www.google.com/url?q=https://europeanleagues.com/%23:~:text%3DThe%2520European%2520Leagues%2520gather%252038,in%252031%2520countries%2520across%2520Europe.&sa=D&source=editors&ust=1648489418946836&usg=AOvVaw2b3GvZiwpN_VPGjpkNmnKX).

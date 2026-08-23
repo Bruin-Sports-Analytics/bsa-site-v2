@@ -1,5 +1,3 @@
-### By: Devon Yu, Nathan Yee, Ethan Chan, and Evan Mock
-
 ## Introduction
 
 In the modern NFL, play-calling success on both sides of the ball is often decided within seconds of the ball being snapped. For a defensive coordinator, the blitz is the ultimate gamble. Bringing an extra pass rusher offers a chance to blow up the play early, but risks leaving a man open, leading to a chunk play. It’s the quarterback’s job to identify and dissect the blitz, punishing the defense before the pocket collapses. As NFL defenses become more complex, the ability to remain efficient while under pressure has become a crucial trait of elite quarterback talent.

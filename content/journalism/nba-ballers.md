@@ -1,5 +1,3 @@
-### By: Andrew Weiner
-
 ## Introduction
 
 Lebron James dropped $36.8 million on his latest house in Beverly Hills in 2020, which included two guesthouses, a tennis court, and a movie theater. Fast forward to the NBA 2023-24 season, and the league’s highest earner is none other than Steph Curry, with a salary of over $50 million. It’s no secret that playing in the NBA is synonymous with fame and fortune, where the average player salary is just over $10 million this season. Franchises are willing to shell out hundreds of millions of dollars in player salaries every year to secure the assets they need for a good season. The most elite players receive huge contracts aimed at beating out competing offers.

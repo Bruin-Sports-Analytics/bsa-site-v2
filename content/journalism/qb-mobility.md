@@ -1,5 +1,3 @@
-### By: Chinmay Varshneya
-
 ## Introduction
 
 In American Football, the quarterback is the leader of the offense, and they traditionally facilitate production through passing. But, with time, a greater emphasis has been placed on a quarterback’s ability to make plays in more ways than one. We can thus introduce some terminology. Less mobile quarterbacks are generally referred to as pocket passing or pro-style quarterbacks. Current examples include Matt Stafford and Joe Burrow. They traditionally stay within the pocket, which is the area formed by the offensive linemen when guarding the quarterback, and they throw the ball from there. They rely on accurate passing to make plays.

@@ -1,5 +1,3 @@
-### By: Matthew Li and Jed Miguel
-
 ## Intro
 
 Volleyball is a relatively young sport, being introduced to the Olympics in 1964. With its unique rotation system, there are many factors that affect how volleyball is played. But what factors, specifically what statistics, make a winner in volleyball?

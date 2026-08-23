@@ -1,5 +1,3 @@
-### By: Ethan Allavarpu and Kyle Boal
-
 ## Introduction
 
 A coin toss is just a flip of the coin, but in recent years-especially during the NFL playoffs-it has seemingly gained heightened importance. A prime example of this is the coin toss of the Super Bowl: in the early years, only the select few captains and a single referee met at midfield in a very quick exchange. Today, however, things are drastically different, as a small village of camera crews and important individuals accompany the captains to film the result of the coin toss. Moreover, mantras about which option to choose ("tails never fails") have emerged, the coin is specially engraved for the occasion, and Las Vegas sportsbooks create a prop bet on whether the result of the coin toss will be *heads* or *tails* , indicating the grandiosity of what should be an insignificant event.

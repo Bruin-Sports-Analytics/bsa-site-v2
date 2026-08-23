@@ -1,5 +1,3 @@
-### By: Nathan Kim
-
 As Asian stars in the MLB continue to proliferate, stars like Shohei Ohtani, Kim Ha Seong, Bae Ji Hwan, and Kodai Senga are able to garner increased attention from international fanbases.
 
 However before these players were able to display their talents on the field, many other Asian baseball pioneers such as Yu Darvish and Ryu Hyun-Jin paved a path for these players to come to the MLB today. These players were able to transition to the MLB through the MLB posting system, which allows Asian athletes an opportunity to advertise their talents to MLB organizations, and sign through free agency.

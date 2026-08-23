@@ -1,5 +1,3 @@
-### By Tom Seifert and Ronan Nayak
-
 ## Intro
 
 The game of football consists of three phases: offense, defense, and special teams. In the NFL, the highest level of football in the world, a player usually only significantly contributes to one phase of the game. Some skill position players, like running backs, wide receivers and defensive backs, manage make contributions on special teams as returners along with their primary roles on offense or defense. Rarely does any player cross the boundary between offense and defense, and even more rarely does a player manage to contribute in all three phases of the game.

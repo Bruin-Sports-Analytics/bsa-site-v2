@@ -1,5 +1,3 @@
-### By: Stanley Hsu
-
 ### Introduction:
 
 The categories that come up when one thinks of a good baseball team are pitching categories such as ERA (earned run average), strikeouts, and WHIP (walks, hits per inning). Some important batting categories are batting average, on-base percentage, slugging percentage, on-base plus slugging, runs scored, and home runs. The best team must be near the top at most if not almost all of these categories. However, it will be interesting to see where the 2023 World Series Champions, the Texas Rangers, rank in the different categories. Since they are the champions, we would expect for them to be near the top for most of the statistical categories, since they are winning so many games. There are 30 teams in the MLB, so all of the rankings will be between 1 and 30.

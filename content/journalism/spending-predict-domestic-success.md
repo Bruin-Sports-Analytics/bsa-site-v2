@@ -1,5 +1,3 @@
-### By Donovan Rimer
-
 ## Introduction
 
 Last summer, premier league clubs spent a combined 2.9 billion euros, shattering the record for transfer spending during just one window. This figure, significantly bolstered by contributions from the burgeoning Saudi Pro league, highlights the EPL's status as the biggest spender in global football. The core of the investigation revolves around the impact of these lavish expenditures. Specifically, it examines whether the hefty transfer spending by EPL clubs correlates with improved performances in key areas: goal difference, table position, and point total over the past five seasons.

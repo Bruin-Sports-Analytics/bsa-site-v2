@@ -1,5 +1,3 @@
-### By: Ian Turner
-
 ## Introduction
 
 Every NFL drive starts with a first down and ten. While third down conversions are much more crucial to overall offensive success, play calls on first downs impact how many yards a team has to gain on second or third down. Of course, there is no one "right" play call on first down. Both running and passing plays have benefits and drawbacks - and how the two are used together in offensive play calling are crucial to offensive success. Every team, from the 2007-2008 Patriots to the 2017-2018 Browns, have strengths and weaknesses. A team's ability to play into their strengths and address weaknesses can make all the difference. For this article, we will dive into how teams with strong or weak pass and run games play call on first down and which play call strategies are the most effective.

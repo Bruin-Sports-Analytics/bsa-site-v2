@@ -1,5 +1,3 @@
-### By: Aaron Phung and Matthew Sasaki
-
 ## Introduction
 
 Analysts tend to emphasize box score statistics such as points and rebounds when assessing the greatness of an NBA player. Because they are the only objective pieces of information recorded, statistics overshadow other methods of determining a player’s value. However, there are many ways to contribute to an NBA game that do not show up on the box score. Setting screens, hustling for loose balls, and boosting team morale during critical moments of the game are also essential to team success and can turn the tide of the game. Factors like these that are not tracked as stats are called intangibles.

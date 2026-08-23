@@ -1,5 +1,3 @@
-### By: Angelina Muliadi and Brian Mualim
-
 ## Introduction
 
 Ever since the 1983 season, the NBA has awarded the Defensive Player of the Year award to the best defensive player of the regular season. That begs the question, who would be the Offensive Player of the Year? The player that dominates the court with unparalleled scoring ability, strategic playmaking, and an innate understanding of the game's nuances. The (theoretical) Offensive Player of the Year embodies the essence of offensive excellence, embodying precision, creativity, and sheer determination in every aspect of their game. Through the use of statistics, we aim to embark on this exploration, seeking to uncover the player whose offensive contributions transcend mere numbers, leaving an indelible mark on the court and inspiring generations of basketball enthusiasts worldwide.

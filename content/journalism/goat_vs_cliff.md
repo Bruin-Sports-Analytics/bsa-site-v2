@@ -1,5 +1,3 @@
-### By: Erik Chen
-
 ## Introduction
 
 Max Kellerman, a famous sports commentator and co-host of ESPN’s First Take show, in 2016 famously made his Tom Brady cliff prediction. Specifically this is what Kellerman said: “Tom Brady’s just about done. It could be his next game. It could be a year from now. But he is going to fall off a cliff. Tom Brady is going to be a bum in short order.” Kellerman made his prediction right before the 2016 season, during which Tom Brady was suspended for the first 4 games due to the Deflategate scandal.

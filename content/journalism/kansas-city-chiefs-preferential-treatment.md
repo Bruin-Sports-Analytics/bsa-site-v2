@@ -1,5 +1,3 @@
-## By Kevin Li and Jason Cheung
-
 ## Introduction
 
 For the past few years, controversy has surrounded the Kansas City Chiefs and the way they are officiated. The Chiefs have been dominating the NFL, winning three of the last six Super Bowls and appearing in all but one in that span, and the relationship between tight end Travis Kelce and superstar artist Taylor Swift has cemented them as the league’s media darlings. With their repeated playoff success, many fans have pointed out what they believe to be favorable treatment of the team from NFL referees. Countless video clips have circulated around social media showing examples of missed holding calls, phantom pass interferences, ridiculous roughing-the-passers, questionable ball placements, and more. In this article, we aim to analyze from a statistical standpoint whether these conspiracies may actually have merit, or if they are simply America’s way of coping with the Chiefs’ greatness.

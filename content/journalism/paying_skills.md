@@ -1,5 +1,3 @@
-### By: Arvind Kalyan
-
 Following the age of Big 3’s in Miami, Los Angeles, and Golden State, a sort of staple has emerged amongst title-contending NBA teams: two superstars, occupying max contract slots in a team’s salary table, complemented by a remaining twelve players composed of exceptions, draft picks, and veteran-minimum salaries. With such limited resources to fill out an adequate supporting cast around their superstars, the hunt for cheap production each offseason can place the front offices who adopt this top-heavy model in quite a bind.
 
 We can quantify the construction of that supporting cast as a construction of skills—3-point shot making, rim protection, athleticism, etc. In the process of roster construction with a budget dominated by max contracts, it becomes crucial for general managers to collect these skills in as cost-efficient a manner as possible. Thus, the question is posed: what are the most and least valued skills in today’s NBA?

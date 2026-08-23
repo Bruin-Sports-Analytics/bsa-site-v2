@@ -1,5 +1,3 @@
-### By: Max Wimmer
-
 *Editorial note: This article was written before the 2024 U.S. Open. As it turns out, its findings were confirmed by Tiger’s performance that week. He performed well off the tee, yet he struggled approaching and around the greens.*
 
 With the US Open right around the corner, all eyes are on golf’s biggest names. And as has been the case for over two decades, no player will be in the spotlight more than Tiger Woods. The 48-year-old will be teeing it up at Pinehurst this week, hoping to add a 16th major trophy to his impressive collection.

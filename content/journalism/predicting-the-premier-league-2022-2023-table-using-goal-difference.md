@@ -1,5 +1,3 @@
-### By: Hashim Bhat and Daniel (Seungmo) Lee
-
 ## Introduction
 
 It’s a well-known fact that soccer is the most popular sport worldwide, bringing together billions of fans from all over the world to enjoy the beautiful game. The English Premier League, founded in 1992, boasts the most viewership out of any professional soccer league, with a total social media following of over 1 billion people. For those of us who are die-hard fans, this comes as no surprise as the league is known for its unmatched competitiveness, physicality, and unpredictability. Although it could be argued that Manchester City has been the main dominating force in the league over the past decade, fans are still overjoyed with excitement and anticipation at the beginning of every season. After all, a lot of things can change over the summer break and a successful transfer window can make all the difference when it comes to a team’s chances of succeeding in a particular season.

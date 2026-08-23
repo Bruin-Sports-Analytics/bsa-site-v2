@@ -1,5 +1,3 @@
-### By: Tony Jeon
-
 ## Background
 
 For the past few seasons, the conversation of the best right back in the Premier League has been dominated by Chelsea’s Reece James and Liverpool’s Trent Alexander-Arnold. As a product of the Liverpool youth system, Alexander-Arnold made his senior debut in 2016 and eventually earned his spot in Jurgen Klopp’s starting XI from the 2017/18 campaign and beyond. Similarly, Reece James came through the Chelsea academy ranks and broke into the first team under Frank Lampard in the 2019/20 season following a season-long loan spell at Wigan Athletic. Ever since the appointment of Thomas Tuchel following Lampard’s sacking, Reece James’ rise to the top has been nothing short of meteoric.

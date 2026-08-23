@@ -1,5 +1,3 @@
-### By: Derek Diaz and Elly Goan
-
 Aston Villa is a European football club, specifically based in Birmingham, England that is currently on the rise in the English Premier League. In the 2021/22 season the club finished in 14th place with 20 total clubs in the league. The following season, 2022/23, Aston Villa finished in 7th place and finally in the most recent, 2023/24, season Aston Villa has improved, as of the middle of March standing in 4th place with only 10 games remaining. Their recent success was not strongly expected. Given this surprising success, what are the key factors that have led to Aston Villa's success this season, or overall improvement in standings in the league?
 
 ![Figure 1](/assets/journalism/aston-villa/figure-01.jpg)

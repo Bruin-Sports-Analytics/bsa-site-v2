@@ -1,5 +1,3 @@
-### By: Aarnav Dharia, Aditya Malhotra, and Samir Joshi
-
 ## Introduction
 
 With about 20 games left in the 2025–26 NBA regular season, the standings and data reveal contrary tales. More specifically, two teams have distinguished themselves from the rest of the competition, and several others are winning games their numbers say they shouldn't. Among both conferences, a handful of aspirant teams are separated by just five games or fewer. These teams will battle over the next six weeks for a spot in the playoffs, who survives the play-in, and who goes home.

@@ -1,5 +1,3 @@
-### By: Faraz Murshed and Vishal Narayan
-
 The UCLA Men’s Basketball (MBB) team has experienced some turbulence over the last few years, following the departure of Lonzo Ball to the NBA at the culmination of the 2016-17 season. That year, the team exited the NCAA tournament in the Sweet Sixteen and had finished at the 8th spot of the final AP Poll. Since then, UCLA had failed to end a season in the AP Top-25 and had only managed one qualification for March Madness, which was a First Four loss.
 
 This period of poor performances resulted in the termination of two head coaches: Murry Bartow and Steve Alford. However, in the past two seasons the team seems to have turned things around. Enter: Mick Cronin.

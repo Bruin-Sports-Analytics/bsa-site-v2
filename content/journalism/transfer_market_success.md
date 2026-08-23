@@ -1,5 +1,3 @@
-### By Trent Bellinger and Derek Nakagawa
-
 ## Introduction
 
 Often referred to as the most competitive league in world soccer, the English Premier League is home to many of soccer’s best teams. Many of these teams have experienced great successes over the years and are now massively successful businesses, earning hundreds of millions of dollars every year. Success for these teams, however, is often extremely expensive. Along with the many costs associated with running the teams successfully, these teams often spend massive amounts of money on the players that compete for their team. The transfer market is a market in world soccer where teams can pay each other in exchange for players. This market has become increasingly expensive, and many Premier League teams have become extremely involved, often spending millions of dollars every year on players. But is this spending worth it?

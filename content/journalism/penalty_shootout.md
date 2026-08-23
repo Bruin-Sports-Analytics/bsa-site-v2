@@ -1,5 +1,3 @@
-### By: Anish Ravilla and Ishika Sanghi
-
 ## Introduction
 
 In soccer, the penalty shootout is one of those monumental events that can make or break the history of an entire team and everything it stands for, especially when this shootout occurs during a high-profile tournament. The mental contest between the penalty kick taker and the goalkeeper is one that has feature-length articles written about it, as for many of these players, it is a dream to be on this stage -- a dream that rewards many years of hidden sweat and tears. Indeed, for each penalty shootout, players will have prepared with countless hours of rewatching goalkeeper/kick taker footage and shooting/diving practice: all in preparation for one spot kick.

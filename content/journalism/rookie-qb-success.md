@@ -1,5 +1,3 @@
-### By: Amaeya Deshpande
-
 ## Introduction:
 
 Over the last few years, football fans have commonly formed the notion that teams with a quarterback on a rookie deal are at an advantage due to their low cap hit. While some quarterbacks consume nearly a quarter of the salary cap, quarterbacks on rookie deals take a much smaller fraction of a team’s cap space. Thus, some teams can utilize this additional money to improve other positions and create a more well-rounded roster. While this is certainly appealing, it neglects the fact that quarterbacks on rookie deals are no sure thing and that quarterbacks on large contracts tend to be those with successful track records. Despite the widespread belief that NFL teams are in their optimal Super Bowl window while their quarterback is on a rookie deal, there is little evidence used to support this claim. In reality, data suggests that there is no association between a quarterback’s salary and their team’s regular season success, postseason success, and Super Bowl chances.

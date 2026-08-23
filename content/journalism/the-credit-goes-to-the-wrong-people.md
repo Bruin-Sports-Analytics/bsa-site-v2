@@ -1,5 +1,3 @@
-### By: Van Avanesian, Ricky Cai, Jayden Kim, and Justin Herr
-
 > Two seasons. Eight Western Conference teams. One question: when you measure not just what happened while a player was on the floor, but how much of the offense he was running and how efficiently he ran it — does the player the league celebrates match the player the data identifies? Usually, it doesn’t
 
 ### WESTERN CONFERENCE TOP 8 · TWO-SEASON EFFICIENCY ANALYSIS

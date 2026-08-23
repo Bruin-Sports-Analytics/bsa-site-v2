@@ -1,5 +1,3 @@
-### By: Akilan Arunachalam and Zayne Kratz
-
 Jalen Ramsey, Stefon Diggs, Khalil Mack, Matthew Stafford. These are all elite players, but interestingly enough, they were all traded. Each year, the NFL experiences blockbuster trades, and often the price to acquire these top talents are draft picks. The LA Rams have taken this strategy to its limit, owning zero first round draft picks till the year 2024. This begs the question as to whether or not it is better to trade for players or for picks. To answer this question, we decided to examine all players traded for pick selections from the year 2010 to 2018. We wanted to focus on trades for high-caliber players so we restricted it to 1st to 5th round draft picks. To determine who “won” each trade, we looked at the percentage of games started for each player. If the percentage was within ten, the trades were marked as even. However, for a majority of the trades there was a clear winner and loser as shown in the graph below.
 
 ![Figure 1](/assets/journalism/players_vs_picks/figure-01.png)

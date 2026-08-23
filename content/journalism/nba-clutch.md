@@ -1,5 +1,3 @@
-### By: Andrew Weiner and Eric Zhou
-
 ### Introduction:
 
 The air within Cleveland’s Richfield Coliseum was thick with anticipation, and the deafening roar of the crowd echoed like thunder as the shot clock ticked away with mere seconds left in the game. The Chicago Bulls were trailing by one point to the heavily favored Cleveland Cavaliers in the final second of the final game in their 1989 NBA playoff series. It was either score or go home for the Bulls. Yet, amidst the chaos of competition, Michael Jordan remained a solitary figure, hanging in the air, ball-in-hand and poised for greatness. With the weight of the entire season bearing down upon Jordan’s shoulders, he released the ball, and for an eternal second, the world held its breath.

@@ -1,5 +1,3 @@
-### By: Ryan Dunker
-
 ## Introduction
 
 Running is a sport like no other. It was the core of the first Olympics in 776 BCE which included four different kinds of running events. The physical act of running for humans dates back even further to our early human ancestors who would run from predators or after prey while hunting.

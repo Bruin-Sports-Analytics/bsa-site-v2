@@ -1,5 +1,3 @@
-### By: Nilay Patel
-
 Magnus Carlsen is arguably the greatest chess player to have ever lived. He holds the record for the highest Elo rating ever achieved (the rating system used in chess). However, the Elo system is necessarily inflationary; as technology improves and computer engines like Stockfish and Leela increase their already-substantial edge over humans in the game, new levels of play and computer-inspired ideas enter the human game. It was previously unthinkable that a computer could beat a human in chess, until 1997, when engine Deep Blue beat world champion (and arguably one of the strongest players of chess ever) Garry Kasparov in a match.
 
 However, the game is not solved by computers; top grandmasters (GMs) devote their whole lives to chess, and it’s not like engines are allowable in any competitive form of human chess; Carlsen is still undeniably a chess wizard, and it raises the question: just how good is Magnus Carlsen, really?

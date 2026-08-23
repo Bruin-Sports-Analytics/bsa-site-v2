@@ -1,5 +1,3 @@
-### By: Derek Nakagawa and Trent Bellinger
-
 ## Introduction
 
 There have been many great soccer players throughout history including Ronaldo, Messi, Maradona, Pele, and the list goes on. But what many fans don’t realize is how important managers are to these winning teams. The manager’s role is to sign new players, coach the practices, create team formations, sub players in and out of the game, and select the players who are going to play the game. However, many fans of the sport sometimes don’t believe that the manager has that big of a role in the team. For this article, we are going to look at one of the best managers in history, Jose Mourinho, and see how much of an impact he has made on the teams he has coached by comparing him to the previous and subsequent managers of those teams. We chose him because he has coached seven teams over the course of over 20 years and is known for being one of the best to do it. Throughout this article, we are going to explore how much of a difference managers can make on a team and if it is their great coaching that makes a team or if it is the players themselves that make the difference.

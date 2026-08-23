@@ -1,5 +1,3 @@
-### By: Erik Chen and Taiyo Keilin
-
 ## Introduction
 
 Driving distance has been at the forefront of golf fans’ minds since the 1997 season when a young Tiger Woods was outdriving the average PGA Tour pro by over 25 yards while also winning many tournaments by lopsided margins. At the time he was the game’s second-longest hitter, averaging nearly 300 yards per drive, 10% farther than the average Tour player. Now, Woods still drives the ball about the same length – picking up about five yards on his 1997 performance – but he is suddenly only hovering around Tour average.

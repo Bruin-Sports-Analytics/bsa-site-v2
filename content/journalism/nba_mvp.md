@@ -1,5 +1,3 @@
-### By: Dean Jones and Vishal Narayan
-
 ## Introduction
 
 Since the 1955-56 season, the National Basketball Association Most Valuable Player Award has sought to honor the best performing player of the regular season. Every winner eligible for the Hall of Fame has been inducted. Triumphantly punctuating a career year with the Maurice Podoloff Trophy is a dream of basketball players around the world and often a fiercely competitive race among whoever is dominating the league at the moment.

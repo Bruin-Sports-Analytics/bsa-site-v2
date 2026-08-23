@@ -1,5 +1,3 @@
-### By: Abhinav Madabhushi and Anish Deshpande
-
 ## Introduction
 
 The game of cricket has been changing over the years, just like every other sport. There are changes in the way the game is played, in the way the players approach the game, and sometimes changes in even the rules. Cricket was originally only played in the test format, where teams would get 2 innings each to bat and the match would go on for 3-5 days (Test matches are played for 5 days today). Eventually, in the 1960s, cricket was played in the limited-overs format where each team got to face 50 overs of bowling. Finally, in 2004, the first-ever T20 match was played, and as everyone knows now, it is the most popular format in cricket. The shorter format made the game more exciting to watch for the general population, as it involved “big hitting” and shorter game time. Batters were forced to maximize the runs scored in every ball, making boundaries a more frequent occurrence.

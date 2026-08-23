@@ -1,5 +1,3 @@
-### By: Stanley Hsu and Joshua Sujo
-
 ## Introduction:
 
 Nikola Jokic is the star player of the Denver Nuggets, the most recent NBA Champions. He is arguably the best player in the league, having won the Most Valuable Player award in two of the past three years. In this article, we use Jokic’s stats from the 2022-2023 season, as well as stats from his Nuggets teammates throughout the season. In that season, the Nuggets coasted to the best record in the Western Conference and won the franchise’s first-ever championship.

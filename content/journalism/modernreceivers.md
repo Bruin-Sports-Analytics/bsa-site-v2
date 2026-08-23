@@ -1,5 +1,3 @@
-### By: Kathir Ilango
-
 Much like what has happened to basketball during Stephen Curry's career, the offensive philosophy of football has changed over the last few years. The traditional usage of wide receivers that has been around for decades is slowly fading away as football enters a new era of play calling and receivers in general are becoming far more versatile. Given all of this, I decided to look into how the tiers of receivers in the modern NFL can be better classified and how different they are from the traditional roles we have known for years. With the help of some analysis I did to classify advanced receiver data, I was able to find some pretty interesting things.
 
 ## The Basics

@@ -1,5 +1,3 @@
-### By: Shail Mirpuri
-
 In the sport of Tennis, there are very few things discussed more than a player's serve. The serve helps a player dictate the flow of a particular point, and can be crucial in determining a player’s overall success within a Grand Slam. With a rise in point-level data collection over the last few years, we have seen a lot more thought going into the serve. From considering the surface being played on, to the level of risk taken on each serve, tactical services rule modern men’s tennis. In this article we will analyze the change in service statistics over a 15 year period from 2000 to 2015 to see if there have been any notable impacts of serve analytics. Apart from this, we will look at how the importance of the serve varies on each surface in order to gauge any surface-specific tactical insights that tennis players should adopt. Finally, we will analyze the overall importance of the serve to a player’s success in tennis by applying unsupervised machine learning, and comparing the serves of the Big Three (Rafael Nadal, Roger Federer, Novak Djokovic) with other seeded and non-seeded players.
 
 ## The Dataset

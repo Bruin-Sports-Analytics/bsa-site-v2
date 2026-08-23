@@ -1,5 +1,3 @@
-### By: Aashna Sibal
-
 Performance in swimming is determined by a variety of factors – agility, muscular strength, experience, height, and many more. Of course, having an advantage in one area does not guarantee one’s success in swimming, but having a perfect blend of various different ones can be a huge benefit for athletes.
 
 Performance in Olympic swimming is no different, with the world’s most talented swimmers coming together to compete on the world stage. But, is it possible for often forgotten factors to also play a role in determining their success? For example, what about biological traits, like age, a factor that even impacts many of the components mentioned previously?

@@ -1,5 +1,3 @@
-### By: Ian Geertsen
-
 Who are the greatest players of all time, and how are they ranked? These are timeless questions asked by every fan of every sport, and quite frankly are questions that I can not hope to answer. What I do hope, though, is that this piece adds a new perspective for how we look at the best players in the game of basketball by taking advantage of the advanced era we live in today.
 
 For years, the ‘eye test’ was the only test; today, things are different. Never before has there been so much data readily available, and even if only a portion is available to the common man, it’s still enough to make your head spin. Through this analysis, I plan to compare these two lenses of viewing players—impression vs impact metric, man vs machine—and see how they rank the greatest players in NBA history.

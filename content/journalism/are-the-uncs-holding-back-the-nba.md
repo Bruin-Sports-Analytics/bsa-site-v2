@@ -1,5 +1,3 @@
-### By: Yuri Jung, Evana Sharma, Chloe Lee
-
 ## Introduction
 
 Over the recent decades, the National Basketball Association (NBA) has evolved in its pace, playing style, and athlete development. NBA team rosters are built with players of different ages, ranging from rookies to veterans, and each group brings different skills to the team. Veteran players bring leadership, decision-making, and playoff experience, while younger players contribute speed and versatility. Some franchises prioritize youth development and athleticism, while others target veterans for a more reliable, skilled core. In a league that continues to focus on the younger generation, can older players still keep up with the changing pace of the game?

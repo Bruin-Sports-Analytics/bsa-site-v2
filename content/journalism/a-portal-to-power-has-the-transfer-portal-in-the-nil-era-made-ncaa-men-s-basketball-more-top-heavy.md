@@ -1,5 +1,3 @@
-By Kevin Li and Jason Cheung
-
 ## Introduction
 
 Over the past few years, the landscape of college basketball has shifted dramatically. Since the NCAA implemented the one-time transfer rule and the Name, Image, and Likeness (NIL) era began in July 2021, student-athletes have gained unprecedented flexibility and financial opportunity. As a result, the transfer portal has exploded in activity, particularly benefiting the biggest programs in the sport. Critics argue that high-major programs, already dominant in recruiting and resources, have now added another tool to poach top players from smaller schools. Meanwhile, mid-major programs struggle to keep their talent, watching their best athletes leave for a shot at brighter lights and bigger paydays.

@@ -1,5 +1,3 @@
-### By: Ella Hinkle and Taylor Fenton
-
 ## Introduction
 
 Here at UCLA, all it takes is a trip to Pauley Pavilion to see an Olympic athlete compete. Watching Jordan Chiles’ thrilling routines and dominant performance is exhilarating, and the many perfect “10s” (or scores very close) she has put up indicate judges are impressed, too.

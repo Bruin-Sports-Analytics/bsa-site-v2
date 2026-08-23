@@ -1,5 +1,3 @@
-### By: Victor Li
-
 ## Premise
 
 Professional League of Legends is one of the largest esports in the world. One of the most important parts of any professional League of Legends game is the draft, where teams systematically select which champions (characters) they will play and which they will forbid the opponent from playing. The selection of these champions are commonly referred to as “picks,” and how strong people perceive a champion to be drastically impacts how often they are picked. Oftentimes, empirical win rate (percentage of how much a champion wins when it is picked) is cited as a simple, one-number, “top-down” metric that reflects champion performance.

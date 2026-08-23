@@ -1,5 +1,3 @@
-### By: Ethan Allavarpu and Kyle Boal
-
 ## Introduction
 
 The NFL combine garners popularity among football fans across the country. Players boost themselves into the public spotlight after a spectacular combine (i.e. D.K. Metcalf blew up on social media after his phenomenal combine results). The combine can affect draft stock, causing players to rise—or fall—depending on their performance. However, quantifying the "success" of players in the NFL based on the output of their physical characteristics is difficult due to the nature of the draft. Top players go early to teams who had the worst record the year before, thereby diminishing their ability to be influential on the stat sheet.

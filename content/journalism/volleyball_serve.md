@@ -1,5 +1,3 @@
-### By: Paige Lee and Bryan Palmero
-
 Volleyball is a sport defined by its mistakes.
 
 Hitting a ball into a net, sailing a serve out of bounds or failing to receive - simply put, errors are woven into the fabric of the 128-year old game. They’re terminal actions, and mark the end of rallies.

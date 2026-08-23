@@ -1,5 +1,3 @@
-### By: Pranov Suresh
-
 ## Introduction
 
 Who is the modern full-back? Is it he who marauds forward at every opportunity, bursting his lung to overlap and support his winger? Is it he who patrols the touchline, enforcing defensive discipline upon the best of opposition wingers? Is it he who stands in unison with his centre-backs, creating a formidable and intimidating defensive line?

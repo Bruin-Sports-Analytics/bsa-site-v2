@@ -1,5 +1,3 @@
-### By: Nikhil Sharma
-
 *If you haven't read my first article on the topic, check it out* [*here*](https://www.google.com/url?q=http://www.bruinsportsanalytics.com/kmeansallnba&sa=D&ust=1547585749397000) *!*
 
 A few months ago, I wrote an article where I used k-means clustering to help choose five NBA players from 1980 to the present to constitute an all-time starting lineup.

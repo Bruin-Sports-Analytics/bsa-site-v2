@@ -1,5 +1,3 @@
-### By: Jun Yu Chen
-
 ## Introduction
 
 Navigating the crossroads of machine learning and professional sports forecasting, this article delves into the innovative utilization of Neural Network models for predicting the annual champion of the NBA. We intricately weave the narrative, taking the reader through the step-by-step construction of the Neural Network model, and shedding light on the process of NBA data aggregation and implementation. Our focus then transitions to the real-world application of our finely tuned model. Its impressive prediction accuracy, as evidenced in the successful forecasting of this year's top contenders and ultimate champion, attests to the potency of Neural Network models. This exploratory exercise illuminates the potential of such predictive models and opens up an avenue for future enhancements. The profound insights garnered from our research hold the potential to further refine and advance the sphere of sports forecasting.

@@ -1,5 +1,3 @@
-### By: Shiyu Murashima
-
 From Diego Maradona to Mesut Ozil, the center attacking midfielder (CAM) position - better known as the “Number 10” - has seen the most creative players of all time. Arguably the most desired position in football for years, now it is nearly a position of the past.
 
 The role of the CAM is to link the midfield and forwards: essentially, the position provides forwards with opportunities to score. CAMs usually position themselves higher up the pitch without dropping as deep as a regular center midfielder would.

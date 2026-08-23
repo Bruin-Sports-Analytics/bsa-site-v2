@@ -1,5 +1,3 @@
-### By: Amaeya Deshpande
-
 ## Introduction
 
 There is no doubt that team-building is one of the primary factors in launching a team to the Super Bowl. That final destination in February cannot be reached without successful windows from March to April in the years prior. The free agency period and the NFL Draft are critical. They highlight the risk taken by an organization by enlisting their trust into a player, hoping that the player can match or exceed their expectations. Sometimes these risks hit, but sometimes they miserably fail. This element of risk is maybe highest in trades in the NFL Draft. In draft trades, teams who trade up often give up valuable picks in later rounds of the draft and sometimes high picks in future years’ drafts to move to their ideal selection. All of this additional draft capital for the team trading down is valuable, but only data can tell whether or not it is worth trading for.

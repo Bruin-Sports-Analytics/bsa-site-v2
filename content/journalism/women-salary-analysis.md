@@ -1,5 +1,3 @@
-### By: Sreya Muppalla and Zoe Powers
-
 Me: “List 5 players who are or who have been on the Los Angeles Lakers without using the internet:”
 
 *Some Sports Analyst: “LeBron James, Kobe Bryant, Shaq, Anthony Davis, and Kareem-Abdul Jabbar.”*

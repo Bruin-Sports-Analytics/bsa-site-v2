@@ -1,5 +1,3 @@
-### By: Kaylee Diller and Avery Robinson
-
 In elite gymnastics, a gymnast’s score is broken up into two components: execution and difficulty. The execution score is out of ten, and can be thought of as a grade of how perfectly the routine was performed. Introduced after the 2004 Athens Olympic Games, the difficulty score is the summation of the difficulty value of each skill in the gymnast’s routine, and technically has no limit. The final score a gymnast receives is the sum of the two components.
 
 Given that both components contribute to the final score, a gymnast will want to optimize both scores as they approach the pinnacle of a gymnastics quad -- the four years leading up to an Olympic Games -- in hopes of gaining a coveted spot on an Olympic gymnastics team. Consequently, elite gymnasts will attempt to perform harder, and more perfect, routines.

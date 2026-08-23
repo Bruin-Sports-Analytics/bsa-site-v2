@@ -1,5 +1,3 @@
-### By: Brendan Zytowski
-
 ## Introduction
 
 Hockey is often described as the most violent of the most followed global team sports. This is in part due to the constant rough-housing and physical nature of professional hockey. A common myth parroted by hockey analysts, scouts, coaches, and even General Managers, is that size trumps all. The saying, "you can't teach size" is a double edged sword; it holds truth on the surface level as big, strong players are tough to duel, but physical abilities are only a part of what makes a great player great. Great players are evaluated by their success in the playoffs and how important they were to their teams’ success.

@@ -1,5 +1,3 @@
-### By: Divik Chotani, Siddharth Singh, and Shawn Reznikov
-
 ### Intro:
 
 How to win a soccer game? Simple, score goals. It goes without saying that to score a goal, a team must be in possession of the soccer ball. But how much does the possession of the ball throughout the game impact a team’s standing at the end of the season? Is there a positive correlation between possession and points earned? Our investigation attempts to answer these questions and break down the influence of possession on the game of soccer.

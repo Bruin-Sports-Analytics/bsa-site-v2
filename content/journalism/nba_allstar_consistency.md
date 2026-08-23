@@ -1,5 +1,3 @@
-### By: Terrence Liu and Oscar O'Brien
-
 ## Introduction:
 
 The National Basketball Association (NBA) selects all-star players every year to highlight the success of individual players. Players are named all-stars through voting from fans, current NBA players, and the media. Looking over the list of this year’s all-stars, every player has a respectable surface-level stat line of points, rebounds, and assists per game. However, per-game averages may not tell the whole story about a player because they may lack consistency: a player could be a shooter that only gets hot for a short time and average the same number of points as a player that has very little variation in scoring. For example, Zach Lavine on the Bulls has scored more than 30 points in 24 games this season, but he averages fewer than 30 points per game, so he must have games where he scores less than his average to balance out his high scoring nights.

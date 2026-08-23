@@ -1,5 +1,3 @@
-### By: Tianyi Su and Christine Ahn
-
 ## Introduction
 
 Figure skating is one of the sport programs that requires not only athletic abilities but also artistic components. The sport was created in the 18th century and popularized in the Western world. The sport originally only focused on the artistic aspect, thus having the name “Ballet on ice.” However, in recent years, more athletes started to incorporate more athletic aspects into their programs. The first quadruple jump in the men’s single competition was landed in 1988 by a Canadian skater and the first quadruple jump in the women’s single competition was landed in 2002. Ever since then, more and more athletes have been attempting harder jumps. Athletes such as Yuzuru Hanyu, Ilia Mallinin, and Alexandra Trusova were relatively consistent with the quadruple jumps.

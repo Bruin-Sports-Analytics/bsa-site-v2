@@ -1,5 +1,3 @@
-### By: Nathan Kim
-
 ### 39 Games, 13 Wins & 13 Losses, ERA 4.49
 
 The numbers are Kershaw’s career postseason stats. His nightmare in October repeated against the D-Backs this year, and some extreme fans are asking him to retire. We got used to seeing Kershaw frustrated at the bench after he messed up the big games. We can easily see comments on social media blaming Kershaw after his games. Then, did Kershaw always hurt the Dodgers in October?

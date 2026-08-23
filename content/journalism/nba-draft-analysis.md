@@ -1,5 +1,3 @@
-### By: Alvin Huang, Chloe Kim, Kristen Ng, Selena Lam
-
 ## Introduction
 
 Every year, the National Basketball Association (NBA) holds an annual player draft. Through this annual draft, teams can increase their chances of winning a championship by drafting players who can help the team. As franchises meticulously select emerging talents, the question arises: does a player's draft ranking correlate with their subsequent performance on the court? In the following analysis, we embark on a journey through the annals of draft history, spanning multiple seasons to unravel the intricate relationship between draft ranking and player performance.

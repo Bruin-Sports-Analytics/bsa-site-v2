@@ -1,5 +1,3 @@
-### By: Ian Turner
-
 ## Introduction
 
 On a late night in 1998, the Arizona Diamondbacks led the San Francisco Giants 8 to 6 in the bottom of the ninth inning with two outs and the bases loaded. A Giants batter stepped up to the plate and was walked by the Diamondbacks pitcher, cutting the Diamondback's lead to 8 to 7. Now you do not need to be a baseball expert or professional statistician to know that walking a batter with the bases loaded is not a good idea. But this walk wasn't just any walk, it was an intentional walk. And this batter wasn't just any batter, it was Barry Bonds. The decision to intentionally walk Barry Bonds with the bases loaded ultimately worked, as the Diamondbacks pitcher retired the following batter, giving the Diamondbacks the 8 to 7 victory. Now one may look at the statistics and say, "well Barry Bonds is an incredible hitter but you are still more likely to get him out than not. Why walk him?"; and the answer is something that cannot be measured by any statistic in baseball. The answer is *fear* .

@@ -1,5 +1,3 @@
-### By: Zayne Kratz
-
 ## Intro:
 
 In baseball, pitchers and hitters alike are always looking for ways to improve. For a while, pitchers have been putting different substances on their hands, including rosin, pine tar and sunscreen in order to help them get a better grip in the baseball to get more spin on their pitches. In turn, this leads to more movement, making their pitches harder to hit. On June 21st, 2021, the MLB banned this “sticky stuff”. The reason behind this ban was to combat rising spin rates which had led to lower batting averages by hitters, which is illustrated in a graphic below. As a general rule, baseball viewers like to see higher scoring games with more action, and banning the sticky stuff is a way to give the viewers what they want. With the new rule in place, pitchers can be subject to inspection at any point in the game and if they are found to be using sticky stuff they are ejected from the current game and given a 10 game suspension. It remains to be seen whether or not this will have the desired effect, and we will explore this within the article.

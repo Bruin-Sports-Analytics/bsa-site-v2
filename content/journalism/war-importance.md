@@ -1,5 +1,3 @@
-### By: Bryan Kwan and Amay Jain
-
 Every year when it comes down to MVP voting in the NL and AL leagues, we always hear fans and media clamor over every last bit of WAR when trying to decide between the finalists. As a reference, WAR stands for Wins Above Replacement and is a single number that tries to encompass how well a player does on both offense and defense (for pitchers, it is just their pitching and there are better statistics to evaluate how well someone pitches) given the various metrics of hitting, fielding, base running, etc. For the most part, WAR is typically one of the first go to numbers one would take a look at when trying to see how well a player performs aside from the famous triple slash line.
 
 Now of course, WAR is important at an individual level for player success but how does WAR seem to fare across teams and the league as a whole when it comes to team success? For our purposes we will be using fWAR as calculated by FanGraphs, but there are other sources such as Baseball Reference that also calculate WAR in a slightly different way.

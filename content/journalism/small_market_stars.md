@@ -1,5 +1,3 @@
-### By: Kaizen Schanz and Yusei Fujikura
-
 The All-Star Game is a way of representing the league’s best players in the flashiest way possible. In the MLB, the players put everything on the line, giving the fans a glimpse of what could be. In the NBA, a more casual, yet just as entertaining show unfolds as an array of high flying dunks, coma inducing crossovers, and unworldly three point shots are made. To determine who gets to show off their skillset, fans from all over the world get to speak their mind about who is truly the best of the best.
 
 ![Figure 1](/assets/journalism/small_market_stars/figure-01.jpg)

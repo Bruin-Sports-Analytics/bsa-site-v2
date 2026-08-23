@@ -1,5 +1,3 @@
-### By: Erik Chen and Brendan Zytowski
-
 ## Introduction
 
 The Masters Tournament, traditionally held in the first week of April, is one of the most important tournaments every golf season. It is extremely prestigious because of the tournament's long history and pedigree as well as the signature green jacket for the winners. Interestingly, the Masters is the only major tournament every year that is held at the same golf course. Therefore, it can be extremely valuable for professional players to analyze which aspects of golf are the most important to winning the tournament.

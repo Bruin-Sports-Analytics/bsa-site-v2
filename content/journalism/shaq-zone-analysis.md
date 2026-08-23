@@ -1,5 +1,3 @@
-### By: Ryan Quach
-
 ## Introduction
 
 In his prime, Shaquille O’Neal had no equal. Weighing 325 pounds at 7’1, O’Neal would utilize his sheer physical advantage in conjunction with his post skills to become arguably the most dominant center in NBA history. The disparity between O’Neal and other players in the league was so great, in fact, that teams would literally fill their rosters with big men of similar physiques just to minimize his effectiveness.

@@ -1,5 +1,3 @@
-### By: Jared Fong and Harrison Jones
-
 ## Introduction:
 
 Predicting the success of college prospects in the NFL has been a difficult task for professional scouts and league analysts, and a perfect formula for evaluating talent has yet to be created. However, as there has become an even higher emphasis set on data analytics within the sports realm, there has been a shift in the focus of player analysis from primarily depending upon seasoned scouting veterans to analyze game film to incorporating a significant amount of statistics and advanced data into the decision making process on draft day. Still, every year, there are seemingly draft busts and steals that seem to make every model and draft analysis tool look useless. In hopes of identifying what collegiate statistic is the best indicator of professional success, we developed a model based on NFL offensive skill position players drafted in the past several years that factors in each player's college statistical performance and also their level of success in the NFL. In this article, we will use this model to predict the future success of the newest draft class of the NFL, that being the 2025 NFL draft class.

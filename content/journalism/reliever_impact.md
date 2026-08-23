@@ -1,5 +1,3 @@
-### By: Alisha Dhar and Zayne Kratz
-
 In most sports, postseason gameplay does not drastically differ in comparison to regular season gameplay. Sure, there is an increased intensity given the stakes – a single postseason loss in any sport could decide whether a team still has a chance at a national championship. In the MLB, however, gameplay is significantly different. In recent years especially, we have seen a significant increase in the use of relievers: pitchers that enter the game after the starting pitcher is removed (due to the starting pitcher’s ineffectiveness or injury, or a change in strategy by the coach). The charts below, for example, show the difference in innings pitched for starters in the regular season versus the postseason in both the American League and National League.
 
 ![Figure 1](/assets/journalism/reliever_impact/figure-01.png)

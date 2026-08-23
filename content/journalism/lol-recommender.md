@@ -1,5 +1,3 @@
-### By: Jun Yu Chen and Eric Xia
-
 ## Introduction:
 
 Picture yourself on the battlefield of Summoner's Rift, your heart racing with anticipation and your fingers poised to unleash a torrent of devastating abilities on your adversaries. As you gaze upon the vast array of champions before you, a daunting question arises: which champion should you choose? This critical decision can mean the difference between a triumphant victory and a bitter defeat. In an attempt to address this challenge, we present a novel approach aimed at enhancing your champion selection process.

@@ -1,5 +1,3 @@
-### By: Anvesha Dutta and Nikhil Isukapalli
-
 ## Introduction
 
 In 2021, Lionel Messi beat Robert Lewandowski to win his seventh Ballon d’Or, the most of any footballer in history. Messi’s victory has sparked much debate as to whether he truly deserved the award, though. Many fans argue that he has benefited from his reputation as one of the greatest players of all time and that Lewandowski was the worthy recipient after being denied the 2020 Ballon d’Or due to the COVID-19 pandemic.

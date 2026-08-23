@@ -1,5 +1,3 @@
-### By: Franklin Liang
-
 We hear it every year.
 
 “Seattle deserves an NBA team again.”

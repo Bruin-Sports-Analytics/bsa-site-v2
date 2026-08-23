@@ -1,5 +1,3 @@
-### By: Joshua Sujo and Max Wimmer
-
 ## Introduction:
 
 Scottie Scheffler is the best golfer on Earth right now. He currently ranks first in the Official World Golf Rankings and is a serious contender in every tournament he plays. Scheffler excelled tee-to-green this year, leading the PGA Tour’s 2022-2023 ball-striking (how good a player is at hitting the ball) leaderboards by historic margins. Yet, amidst his ball-striking brilliance, a conspicuous anomaly emerges—his below-average putting (see image).

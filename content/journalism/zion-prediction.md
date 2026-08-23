@@ -1,5 +1,3 @@
-### By: Jun Yu Chen and Eric Xia
-
 ## Introduction
 
 We all know that injury is an inevitable, yet unforeseeable part of basketball. In particular, in a professional league that is as competitive and physical as the NBA, we have witnessed career-ending injuries that ruin the bright future of many rising elites. On the other hand, we also see superstars who overcome severe injuries with unbelievable comebacks. One question naturally arises: what factors determine players’ injury comeback performances? The obvious observation is that injury comebacks depend on many explicit and implicit features such as Age, Injury type, Rehabilitation, Height, and even psychological factors like confidence level. Such complexity and interactions of different factors make it manually impossible to derive or hypothesize a straightforward relationship about injury comeback performances. But in real life, as passionate NBA fans, we always wonder how well popular NBA players come back from injuries.

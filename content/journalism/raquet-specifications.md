@@ -1,5 +1,3 @@
-### By: Rosie Chen and Stella Koh
-
 ### Intro
 
 The first thing you need when playing tennis is the racquet. And while the racquet may seem to be merely a tool to ricochet a ball back and forth the court, it can be–and is–a customizable tool. Differences in length, size, weight, and stiffness amongst others of tennis racquet specifications can lead to varying levels of power and comfort. In this article, we aim to isolate and identify the effects of changing racquet specifications on power potential levels. We will also compare the known racquet specs of professional ATP players to our findings in corroboration of their playing styles.

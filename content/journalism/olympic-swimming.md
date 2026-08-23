@@ -1,5 +1,3 @@
-### By: Jodie Chen
-
 ## Intro
 
 With its blend of power, endurance, and precision, the sport of swimming pushes athletes to their physical and mental limits, leaving spectators awestruck as records are shattered and new champions emerge.

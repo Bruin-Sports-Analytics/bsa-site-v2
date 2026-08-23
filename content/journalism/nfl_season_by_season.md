@@ -1,5 +1,3 @@
-### By: Jasmine Jungreis
-
 ## Introduction
 
 In any given NFL matchup, random factors such as poor officiating, unforeseen injuries, or dropped passes have a substantial impact on the outcome of the game. In the last NFL season, underdogs won nearly 36% of games. This gives teams and fans hope, even when facing unfavorable matchups. Following the conclusion of a season, NFL teams hope to improve upon their records through off-season roster moves and coaching hires. But are these adjustments sufficient to transform a losing team into a Superbowl contender? How drastically can a team improve from one season to the next?

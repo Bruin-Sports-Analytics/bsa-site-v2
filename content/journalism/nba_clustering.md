@@ -1,5 +1,3 @@
-### By: Arvind Kalyan and Ben Goldblatt
-
 ## Introduction
 
 In the last few decades, the NBA has seen rapid evolution. The three point shot becomes more frequent every year and offenses like the Warriors have modernized the game with a “small ball” offense built around guards rather than centers. Recently, young guards and ball handlers of large stature have been brought in, tall guards like Luka Doncic and LaMelo Ball and ball handlers like Lebron James and Zion are redefining what it means to be a guard or offensive leader. With all this change, the question is, where are offenses today? Is the Warriors model as commonplace or effective as the media makes it seem? Which offensive archetypes are most similar or efficient? The goal in this article is to cluster different offenses together and to analyze the efficiencies of these different clusters, while keeping in mind the general trends of the game.

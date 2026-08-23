@@ -1,5 +1,3 @@
-### By: Ethan Allavarpu and Kyle Boal
-
 The Free Throw: the only shot in basketball that is theoretically free, but players continue to show that it's more difficult than it originally appears. In the early 2000's, the idea of "hack-a-shaq" was introduced. This strategy had players intentionally foul poor free throw shooters, such as Shaquille O'Neal to send them to the charity line. The hope: at least one missed free throw, and an opportunity to seize possession once more. However, as this strategy became popular, teams sent their poor foul shooters to the bench at late moments in a game. Fast forward to 2015: Stephen Curry became the eighth player to join the 50/40/90 club (50% field goal, 40% three-point, 90% free throw), and many shooters began to score at an all-time high rate. With shooting success becoming fundamental to an increasingly offensive game, we thought it would be interesting to look at how the free throw differs from years, stars, position, and three-point shooting.
 
 ## PROCEDURE

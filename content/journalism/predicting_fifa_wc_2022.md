@@ -1,5 +1,3 @@
-### By: Steven Lu Chen and Anvesha Dutta
-
 ## Introduction
 
 Amongst the world’s seemingly endless number of competitions in the beautiful game, there is absolutely no greater prize than the FIFA World Cup. In the competition’s nearly one hundred years of history, just eight nations and 445 players have earned the title of world champions. This fall, the world’s eyes will turn to Qatar as the tiny Middle Eastern nation plays host to the twenty-second edition of the World Cup. With the final two spots in the tournament having been decided this month, the stage appears to be entirely set. In this article, we aim to provide an empirical answer to the question on everybody’s minds: who will be making it to the knockout stages?

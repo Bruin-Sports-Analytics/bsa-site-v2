@@ -1,5 +1,3 @@
-### By: Claire Jiang and Wilson Yu
-
 The NBA Draft is a highly anticipated annual event where teams get the chance to recruit top talent in hopes of building a dynasty and making championship runs. For organizations that have not performed so well, this is their chance to level out the playing field by establishing a young core for future success or by targeting a specific player that fulfills their missing piece. Teams cross their fingers to win the lottery and may even be incentivized to “tank” in order to secure a top pick for the upcoming season.
 
 With all the buzz on draft night every year, we want to evaluate just how important these picks are by assessing the historical successes of players at each draft pick. Will a team’s luck in the lottery make or break the team’s foreseeable future? How many 2nd round picks are reasonable to trade for a higher pick? To help resolve these questions, we will look at the average value of each pick and analyze the frequencies at which they appear in all-star games and later rounds of the playoffs.
