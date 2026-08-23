@@ -44,7 +44,6 @@ export function ArticleCard({ article, featured = false }: Props) {
             sizes="(max-width: 600px) 100vw, (max-width: 980px) 50vw, 33vw"
             className={styles.thumbnailImg}
           />
-          <div className={styles.thumbnailOverlay} />
         </div>
       ) : null}
     </div>
