@@ -121,18 +121,15 @@ export function Navigation() {
                         </div>
                       </>
                     ) : (
-                      <div className={styles.peopleGrid}>
-                        <Link href="/people/board" className={styles.peopleCard} onClick={() => setOpenMenu(null)}>
-                          <span className={styles.peopleTitle}>Board</span>
-                          <span className={styles.peopleDesc}>Leadership, founders, and directors shaping BSA.</span>
+                      <div className={styles.menuColumn}>
+                        <Link href="/people/board" onClick={() => setOpenMenu(null)}>
+                          Board <small>Leadership and directors</small>
                         </Link>
-                        <Link href="/people/members" className={styles.peopleCard} onClick={() => setOpenMenu(null)}>
-                          <span className={styles.peopleTitle}>Current Members</span>
-                          <span className={styles.peopleDesc}>Analysts, engineers, and writers across all teams.</span>
+                        <Link href="/people/members" onClick={() => setOpenMenu(null)}>
+                          Current Members <small>Teams and contributors</small>
                         </Link>
-                        <Link href="/people/alumni" className={styles.peopleCard} onClick={() => setOpenMenu(null)}>
-                          <span className={styles.peopleTitle}>Alumni</span>
-                          <span className={styles.peopleDesc}>Where our graduates build careers across sports & tech.</span>
+                        <Link href="/people/alumni" onClick={() => setOpenMenu(null)}>
+                          Alumni <small>Former members</small>
                         </Link>
                       </div>
                     )}
