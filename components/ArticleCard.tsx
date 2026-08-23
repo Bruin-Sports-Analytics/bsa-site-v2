@@ -1,5 +1,5 @@
+import Image from "next/image";
 import Link from "next/link";
-import { ArrowUpRight } from "lucide-react";
 import type { JournalismArticle } from "@/data/journalism";
 import { slugify } from "@/lib/utils";
 import { formatAuthors } from "@/lib/utils";
@@ -27,68 +27,64 @@ type Props = {
 export function ArticleCard({ article, featured = false }: Props) {
   const tone = getSportTone(article.sport);
   const readHref = article.paperUrl || article.content?.length || article.contentFile ? `/journalism/${slugify(article.title)}` : null;
+  const thumbnailImg = article.images && article.images.length > 0 ? article.images[0] : null;
+
+  const thumbnailElement = (
+    <div
+      className={styles.thumbnail}
+      aria-hidden
+      style={{ "--tone-top": tone.top, "--tone-bottom": tone.bottom } as React.CSSProperties}
+    >
+      {thumbnailImg ? (
+        <div className={styles.thumbnailImgWrap}>
+          <Image
+            src={thumbnailImg.src}
+            alt={thumbnailImg.alt || article.title}
+            fill
+            sizes="(max-width: 600px) 100vw, (max-width: 980px) 50vw, 33vw"
+            className={styles.thumbnailImg}
+          />
+          <div className={styles.thumbnailOverlay} />
+        </div>
+      ) : null}
+      <span className={styles.thumbnailSport}>{article.sport}</span>
+      <span className={styles.thumbnailMeta}>{article.readTime} min read</span>
+    </div>
+  );
+
+  const bodyElement = (
+    <div className={styles.body}>
+      <div className={styles.meta}>
+        <span className={styles.metaLeft}>
+          <span>{article.date}</span>
+          <span className={styles.dot} aria-hidden />
+          <span>{article.readTime} min read</span>
+        </span>
+      </div>
+      <h3 className={`${styles.title}${featured ? ` ${styles.titleFeatured}` : ""}`}>{article.title}</h3>
+      <p className={styles.authors}>{formatAuthors(article.authors)}</p>
+      {article.summary && <p className={styles.summary}>{article.summary}</p>}
+      {article.techStack && (
+        <div className={styles.techRow}>
+          {article.techStack.slice(0, 3).map((item) => (
+            <span key={item}>{item}</span>
+          ))}
+        </div>
+      )}
+    </div>
+  );
 
   return (
     <article className={`${styles.card}${featured ? ` ${styles.featured}` : ""}`}>
       {readHref ? (
         <Link href={readHref} className={styles.cardLink}>
-          <div
-            className={styles.thumbnail}
-            aria-hidden
-            style={{ "--tone-top": tone.top, "--tone-bottom": tone.bottom } as React.CSSProperties}
-          >
-            <span className={styles.thumbnailSport}>{article.sport}</span>
-            <span className={styles.thumbnailMeta}>{article.readTime} min read</span>
-          </div>
-          <div className={styles.body}>
-            <div className={styles.meta}>
-              <span className={styles.metaLeft}>
-                <span>{article.date}</span>
-                <span className={styles.dot} aria-hidden />
-                <span>{article.readTime} min read</span>
-              </span>
-            </div>
-            <h3 className={`${styles.title}${featured ? ` ${styles.titleFeatured}` : ""}`}>{article.title}</h3>
-            <p className={styles.authors}>{formatAuthors(article.authors)}</p>
-            {article.summary && <p className={styles.summary}>{article.summary}</p>}
-            {article.techStack && (
-              <div className={styles.techRow}>
-                {article.techStack.slice(0, 3).map((item) => (
-                  <span key={item}>{item}</span>
-                ))}
-              </div>
-            )}
-          </div>
+          {thumbnailElement}
+          {bodyElement}
         </Link>
       ) : (
         <>
-          <div
-            className={styles.thumbnail}
-            aria-hidden
-            style={{ "--tone-top": tone.top, "--tone-bottom": tone.bottom } as React.CSSProperties}
-          >
-            <span className={styles.thumbnailSport}>{article.sport}</span>
-            <span className={styles.thumbnailMeta}>{article.readTime} min read</span>
-          </div>
-          <div className={styles.body}>
-            <div className={styles.meta}>
-              <span className={styles.metaLeft}>
-                <span>{article.date}</span>
-                <span className={styles.dot} aria-hidden />
-                <span>{article.readTime} min read</span>
-              </span>
-            </div>
-            <h3 className={`${styles.title}${featured ? ` ${styles.titleFeatured}` : ""}`}>{article.title}</h3>
-            <p className={styles.authors}>{formatAuthors(article.authors)}</p>
-            {article.summary && <p className={styles.summary}>{article.summary}</p>}
-            {article.techStack && (
-              <div className={styles.techRow}>
-                {article.techStack.slice(0, 3).map((item) => (
-                  <span key={item}>{item}</span>
-                ))}
-              </div>
-            )}
-          </div>
+          {thumbnailElement}
+          {bodyElement}
         </>
       )}
     </article>

@@ -10177,7 +10177,155 @@ export const articles: JournalismArticle[] = [
     "sport": "Basketball",
     "readTime": 3,
     "summary": "Decoding the Game: Forecasting NBA Champions with Neural Network Algorithms by Bruin Sports Analytics.",
-    "contentFile": "nba-champs-neural-network.txt"
+    "contentFile": "nba-champs-neural-network.txt",
+    "images": [
+      {
+        "src": "/assets/journalism/nba-champs-neural-network/figure-01.png",
+        "alt": "logo_1_edited.png",
+        "caption": "logo_1_edited.png",
+        "width": 1200,
+        "height": 700,
+        "afterParagraph": 3
+      },
+      {
+        "src": "/assets/journalism/nba-champs-neural-network/figure-02.png",
+        "alt": "Instagram",
+        "caption": "Instagram",
+        "width": 1200,
+        "height": 700,
+        "afterParagraph": 6
+      },
+      {
+        "src": "/assets/journalism/nba-champs-neural-network/figure-03.png",
+        "alt": "LinkedIn",
+        "caption": "LinkedIn",
+        "width": 1200,
+        "height": 700,
+        "afterParagraph": 9
+      },
+      {
+        "src": "/assets/journalism/nba-champs-neural-network/figure-04.jpg",
+        "alt": "Writer: Bruin Sports Analytics",
+        "caption": "Writer: Bruin Sports Analytics",
+        "width": 1200,
+        "height": 700,
+        "afterParagraph": 12
+      },
+      {
+        "src": "/assets/journalism/nba-champs-neural-network/figure-05.png",
+        "alt": "Figure 5",
+        "width": 1200,
+        "height": 700,
+        "afterParagraph": 15
+      },
+      {
+        "src": "/assets/journalism/nba-champs-neural-network/figure-06.png",
+        "alt": "Figure 6",
+        "width": 1200,
+        "height": 700,
+        "afterParagraph": 18
+      },
+      {
+        "src": "/assets/journalism/nba-champs-neural-network/figure-07.png",
+        "alt": "Figure 7",
+        "width": 1200,
+        "height": 700,
+        "afterParagraph": 21
+      },
+      {
+        "src": "/assets/journalism/nba-champs-neural-network/figure-08.png",
+        "alt": "Figure 8",
+        "width": 1200,
+        "height": 700,
+        "afterParagraph": 24
+      },
+      {
+        "src": "/assets/journalism/nba-champs-neural-network/figure-09.png",
+        "alt": "Figure 9",
+        "width": 1200,
+        "height": 700,
+        "afterParagraph": 27
+      },
+      {
+        "src": "/assets/journalism/nba-champs-neural-network/figure-10.png",
+        "alt": "Figure 10",
+        "width": 1200,
+        "height": 700,
+        "afterParagraph": 30
+      },
+      {
+        "src": "/assets/journalism/nba-champs-neural-network/figure-11.png",
+        "alt": "Figure 11",
+        "width": 1200,
+        "height": 700,
+        "afterParagraph": 33
+      },
+      {
+        "src": "/assets/journalism/nba-champs-neural-network/figure-12.png",
+        "alt": "Figure 12",
+        "width": 1200,
+        "height": 700,
+        "afterParagraph": 36
+      },
+      {
+        "src": "/assets/journalism/nba-champs-neural-network/figure-13.png",
+        "alt": "Figure 13",
+        "width": 1200,
+        "height": 700,
+        "afterParagraph": 39
+      },
+      {
+        "src": "/assets/journalism/nba-champs-neural-network/figure-14.png",
+        "alt": "Figure 14",
+        "width": 1200,
+        "height": 700,
+        "afterParagraph": 42
+      },
+      {
+        "src": "/assets/journalism/nba-champs-neural-network/figure-15.png",
+        "alt": "Figure 15",
+        "width": 1200,
+        "height": 700,
+        "afterParagraph": 45
+      },
+      {
+        "src": "/assets/journalism/nba-champs-neural-network/figure-16.png",
+        "alt": "Figure 16",
+        "width": 1200,
+        "height": 700,
+        "afterParagraph": 48
+      },
+      {
+        "src": "/assets/journalism/nba-champs-neural-network/figure-17.jpg",
+        "alt": "Figure 17",
+        "width": 1200,
+        "height": 700,
+        "afterParagraph": 51
+      },
+      {
+        "src": "/assets/journalism/nba-champs-neural-network/figure-18.png",
+        "alt": "Figure 18",
+        "width": 1200,
+        "height": 700,
+        "afterParagraph": 54
+      },
+      {
+        "src": "/assets/journalism/nba-champs-neural-network/figure-19.png",
+        "alt": "Instagram",
+        "caption": "Instagram",
+        "width": 1200,
+        "height": 700,
+        "afterParagraph": 57
+      },
+      {
+        "src": "/assets/journalism/nba-champs-neural-network/figure-20.png",
+        "alt": "LinkedIn",
+        "caption": "LinkedIn",
+        "width": 1200,
+        "height": 700,
+        "afterParagraph": 60
+      }
+    ]
   },
   {
     "title": "Evolution of the game of cricket: IPL",
@@ -22099,7 +22247,64 @@ export const articles: JournalismArticle[] = [
     "sport": "Basketball",
     "readTime": 41,
     "summary": "Who are the greatest players of all time, and how are they ranked? These are timeless questions asked by every fan of every sport, and quite frankly are questions that I can not hope to answer. What I do hope, though, is that this piece adds a new perspective for how we look...",
-    "contentFile": "man_vs_machine.txt"
+    "contentFile": "man_vs_machine.txt",
+    "images": [
+      {
+        "src": "/assets/journalism/man_vs_machine/figure-01.png",
+        "alt": "logo_1_edited.png",
+        "caption": "logo_1_edited.png",
+        "width": 1200,
+        "height": 700,
+        "afterParagraph": 3
+      },
+      {
+        "src": "/assets/journalism/man_vs_machine/figure-02.png",
+        "alt": "Instagram",
+        "caption": "Instagram",
+        "width": 1200,
+        "height": 700,
+        "afterParagraph": 6
+      },
+      {
+        "src": "/assets/journalism/man_vs_machine/figure-03.png",
+        "alt": "LinkedIn",
+        "caption": "LinkedIn",
+        "width": 1200,
+        "height": 700,
+        "afterParagraph": 9
+      },
+      {
+        "src": "/assets/journalism/man_vs_machine/figure-04.jpg",
+        "alt": "Writer: Bruin Sports Analytics",
+        "caption": "Writer: Bruin Sports Analytics",
+        "width": 1200,
+        "height": 700,
+        "afterParagraph": 12
+      },
+      {
+        "src": "/assets/journalism/man_vs_machine/figure-05.png",
+        "alt": "Figure 5",
+        "width": 1200,
+        "height": 700,
+        "afterParagraph": 15
+      },
+      {
+        "src": "/assets/journalism/man_vs_machine/figure-06.png",
+        "alt": "Instagram",
+        "caption": "Instagram",
+        "width": 1200,
+        "height": 700,
+        "afterParagraph": 18
+      },
+      {
+        "src": "/assets/journalism/man_vs_machine/figure-07.png",
+        "alt": "LinkedIn",
+        "caption": "LinkedIn",
+        "width": 1200,
+        "height": 700,
+        "afterParagraph": 21
+      }
+    ]
   },
   {
     "title": "Project Restart: Winners and Losers of the EPL’s Return",
