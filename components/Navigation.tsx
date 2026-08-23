@@ -5,7 +5,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { ChevronDown, Menu, X } from "lucide-react";
 import { useState } from "react";
-import { navItems, projectLifecycleStatus, projects, sports } from "@/data/site";
+import { navItems, sports } from "@/data/site";
 import { ThemeToggle } from "@/components/ThemeToggle";
 import { useScrolledState } from "@/hooks/useScrolledState";
 import { cn } from "@/lib/cn";
@@ -18,10 +18,6 @@ export function Navigation() {
   const [mobileTeamsOpen, setMobileTeamsOpen] = useState(false);
   const [mobilePeopleOpen, setMobilePeopleOpen] = useState(false);
   const scrolled = useScrolledState();
-  const recentProjects = [...projects]
-    .filter((project) => project.visibility !== "hidden")
-    .sort((a, b) => Date.parse(b.lastUpdated) - Date.parse(a.lastUpdated))
-    .slice(0, 3);
 
   const teamLinks = [
     ...sports.map((sport) => ({
@@ -54,7 +50,7 @@ export function Navigation() {
         <nav className={styles.desktop} aria-label="Primary navigation">
           {navItems.map((item) => {
             const active = item.href === "/" ? pathname === "/" : pathname.startsWith(item.href);
-            const hasMenu = item.label === "People" || item.label === "Teams" || item.label === "Projects";
+            const hasMenu = item.label === "People" || item.label === "Teams";
             return (
               <div
                 className={cn(
@@ -97,29 +93,6 @@ export function Navigation() {
                           );
                         })}
                       </div>
-                    ) : item.label === "Projects" ? (
-                      <>
-                        <div className={styles.menuColumn}>
-                          <span className="eyebrow">Project Dashboard</span>
-                          <Link href="/projects">
-                            Browse all projects
-                            <small>Search, filter, and sort the full index</small>
-                          </Link>
-                          <Link href="/teams">
-                            Explore by sport
-                            <small>Baseball, volleyball, basketball, football, and tennis</small>
-                          </Link>
-                        </div>
-                        <div className={styles.menuColumn}>
-                          <span className="eyebrow">Recently updated</span>
-                          {recentProjects.map((project) => (
-                            <Link href={`/projects/${project.slug}`} key={project.slug}>
-                              {project.title}
-                              <small>{project.projectType} · {projectLifecycleStatus(project)}</small>
-                            </Link>
-                          ))}
-                        </div>
-                      </>
                     ) : (
                       <div className={styles.menuColumn}>
                         <Link href="/people/board" onClick={() => setOpenMenu(null)}>
