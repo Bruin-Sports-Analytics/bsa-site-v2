@@ -78,48 +78,6 @@ However, it should also noted that this model has a particularly high mean squar
 | FG% | 38.5 | 62.90 |
 | 3FG% | 32.42 | 52.64 |
 
-Statistical Metric
-
-Predicted Stat
-
-MSE
-
-APG
-
-1.95
-
-0.35
-
-RPG
-
-2.59
-
-15.53
-
-STPG
-
-0.53
-
-0.16
-
-BKPG
-
-0.41
-
-1.38
-
-FG%
-
-38.5
-
-62.90
-
-3FG%
-
-32.42
-
-52.64
-
 As seen from the table above, the metrics that are most accurately predicted according to the model are Clark’s APG, STPG, and BKPG as they all have low MSE. While FG% and 3FG% have high MSEs, it should be noted that these metrics have generally more variance than the rest of the metrics as they’re percentages and not raw numbers. The worst-performing metric is the RPG with an MSE of 15.53. This is probably due to some guards being taller than others, which means that they are more likely to receive rebounds than shorter ones.
 
 ## Conclusions/Improvements/Limitations

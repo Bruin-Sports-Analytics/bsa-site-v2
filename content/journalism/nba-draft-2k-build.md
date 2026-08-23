@@ -14,65 +14,11 @@ One of the key goals of this project is to classify player builds as either "bus
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | Jaylen Brown | 3 | 2016 | 18.6 | 5.3 | 2.4 | 9.7 | 540 |
 
-Name
-
-Pick Overall
-
-Year
-
-PPG
-
-RPG
-
-APG
-
-VORP
-
-Games
-
-Played
-
-Jaylen Brown
-
-3
-
-2016
-
-18.6
-
-5.3
-
-2.4
-
-9.7
-
-540
-
 Now, compare Brown’s career statistics to the average statistics of the third overall pick from 2010 to 2023:
 
 | PPG | RPG | APG | VORP | Games Played |
 | --- | --- | --- | --- | --- |
 | 17.4 | 6.6 | 3.3 | 12 | 420 |
-
-PPG
-
-RPG
-
-APG
-
-VORP
-
-Games Played
-
-17.4
-
-6.6
-
-3.3
-
-12
-
-420
 
 Among players of the same draft position, Jaylen Brown is above average in points per game, but below average in rebounds per game, assists per game, and Value Over Replacement.
 

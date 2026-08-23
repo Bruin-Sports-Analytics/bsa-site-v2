@@ -21,67 +21,6 @@ In football, midfielders serve as the vital bridge between attack and defense. N
 | **D2:** Ball-Winning | Responsibilities include covering expansive areas of the field effectively: **pressing** opponents, making **tackles** , and consistently regaining possession in middle 3rd. Enhance defensive stability by prevailing in midfield duels. | TacklesTackles wonInterceptions |
 | **D3:** High Press | Aims to **swiftly regain possession** of the ball by exerting pressure in the opponent’s defensive zone. **Aggressively challenge** opponent players, forcing them into errors and haphazard decisions. When executed effectively with precise timing and coordination, the team gains an immediate advantage as they secure possession close to the opponent’s goal. | Tackles in attacking third |
 
-### Skill Category
-
-### Definition
-
-### Metrics Used
-
-**P1:** Defensive 3rd Progression
-
-Player’s ability to progress the ball from the defensive 3rd to the middle 3rd, also known as “ **playing out from the back** ”. Players should be able to receive the ball with their back to goal, retain the ball under pressure, and complete passes consistently. Play with **caution** .
-
-1. Total passes completed
-2. Pass completion rate
-3. Number of miscontrols
-4. Touches in defensive penalty area
-5. Touches in defensive third
-
-**P2:** Middle 3rd Progression
-
-Player’s ability to progress the ball from the middle 3rd to the attacking 3rd. While keeping possession, players should also seek chances to **break into opposition territory** via **passes** or **carries** .
-
-Requires a delicate balance between caution and creativity.
-
-1. Progressive carries
-2. Progressive passes
-3. Passes into final third
-4. Number of times dispossessed
-5. Touches in middle third
-
-**P3:** Attacking 3rd Progression
-
-Player’s ability to turn possession into **scoring chances** . Unlock opposition defense with killer passes, find teammates in shooting positions, move into dangerous positions and score goals. Requires **creativity** and quick reactions to seize opportunities.
-
-1. Non-penalty expected goals + assisted goals
-2. Key passes
-3. Shot-creating actions
-4. Goal-creating actions
-5. Passes into penalty area
-6. Touches in attacking third
-
-**D1:** Transition Defence
-
-Player’s ability to defend against swift **transitions** and counter-attacks. Requires elite **positioning** , astute understanding of time and space, and fast anticipation of opponents’ movements.
-
-1. Number of dribblers tackled
-2. Percentage of dribblers tackled
-3. Number of passes blocked
-
-**D2:** Ball-Winning
-
-Responsibilities include covering expansive areas of the field effectively: **pressing** opponents, making **tackles** , and consistently regaining possession in middle 3rd. Enhance defensive stability by prevailing in midfield duels.
-
-1. Tackles
-2. Tackles won
-3. Interceptions
-
-**D3:** High Press
-
-Aims to **swiftly regain possession** of the ball by exerting pressure in the opponent’s defensive zone. **Aggressively challenge** opponent players, forcing them into errors and haphazard decisions. When executed effectively with precise timing and coordination, the team gains an immediate advantage as they secure possession close to the opponent’s goal.
-
-1. Tackles in attacking third
-
 (Inspired by [https://thedevilsdna.com/?p=273944](https://thedevilsdna.com/?p=273944))
 
 ## Importance of Busquets to Barcelona

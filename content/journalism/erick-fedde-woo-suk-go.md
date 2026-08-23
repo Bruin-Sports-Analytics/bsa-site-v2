@@ -210,20 +210,6 @@ WHIP: 0.83
 | --- | --- | --- |
 | Average | ERA: 4.04WHIP: 1.29 | ERA: 4.23WHIP: 1.23 |
 
-Erick Fedde
-
-Woo Suk Go
-
-Average
-
-ERA: 4.04
-
-WHIP: 1.29
-
-ERA: 4.23
-
-WHIP: 1.23
-
 The tables above are the tables regarding players with the most similar tracking data and the average of them. We predict that Erick Fedde will result in an ERA of 4.04 and WHIP of 1.29 while Go will hold an ERA of 4.23 and WHIP of 1.23. As ERA and WHIP represent the most important pitching outcome, being directly connected with runs, we confidently say that those estimations will help predict the performances of Erick Fedde and Woo Suk Go
 
 ## Comparison with Other Models
@@ -239,42 +225,7 @@ Woo Suk Go FanGraphs prediction →
 | ATC | 4.07 | 1.38 |
 | Steamer | 3.83 | 1.31 |
 
-ERA
-
-WHIP
-
-ZiPS DC
-
-5.49
-
-1.55
-
-THE BAT
-
-3.06
-
-1.11
-
-ATC
-
-4.07
-
-1.38
-
-Steamer
-
-3.83
-
-1.31
-
 | Average | 4.11 | 1.34 |
-| --- | --- | --- |
-
-Average
-
-4.11
-
-1.34
 
 Erick Fedde FanGraphs prediction →
 
@@ -285,42 +236,7 @@ Erick Fedde FanGraphs prediction →
 | ATC | 4.92 | 1.37 |
 | Steamer | 5.14 | 1.47 |
 
-ERA
-
-WHIP
-
-ZiPS DC
-
-4.86
-
-1.36
-
-THE BAT
-
-4.81
-
-1.36
-
-ATC
-
-4.92
-
-1.37
-
-Steamer
-
-5.14
-
-1.47
-
 | Average | 4.93 | 1.39 |
-| --- | --- | --- |
-
-Average
-
-4.93
-
-1.39
 
 Our own prediction and AI prediction are somewhat similar. AI predictions gave a relatively lower ERA to Woo Suk Go and a relatively higher ERA to Erick Fedder than our own prediction model. In addition, AI predictions gave similar WHIP predictions and gave relatively higher WHIP than our own prediction model.
 

@@ -36,42 +36,6 @@ Our dataset provided in-depth information on the different shot types of each sh
 | Hook Shot | 45.44% | 38,062 |
 | Jump Shot | 34.64% | 207,760 |
 
-### Shot Type
-
-### Percentage Made
-
-### Attempts
-
-Dunk Shot
-
-97.71%
-
-127,484
-
-Layup Shot
-
-51.53%
-
-108,760
-
-Tip Shot
-
-47.43%
-
-19,315
-
-Hook Shot
-
-45.44%
-
-38,062
-
-Jump Shot
-
-34.64%
-
-207,760
-
 To make the data easier to scrutinize, we cluster similar types of shots together, resulting in the five categories of shot types above. For example, Reverse Layup Shots, Alley Oop, and Finger Roll Layup Shot would all be clustered in the Layup Shot shot type. The results displayed in the column are not notably unexpected. The average weight and height of an NBA center are about 250 pounds and 6 foot 11 inches, allowing for dominance in the paint, which would explain the high dunk attempts and percentage. On the other hand, since centers spend less of their time working on their jumper, they are among the lowest percentage shooters, which explains their low percentage of Jump Shots made.
 
 ### Top-Scoring Center

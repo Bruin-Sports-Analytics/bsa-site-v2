@@ -16,30 +16,6 @@ To categorize quarterbacks, we used rushing yards and rushing attempts per game 
 | Hybrid | 10-30 | 2.5-4 |
 | Pocket Passer | 0-10 | 0-2.5 |
 
-### Archetype
-
-Rushing Yards Per Game
-
-Rushing Attempts Per game
-
-Scrambler
-
-30+
-
-4+
-
-Hybrid
-
-10-30
-
-2.5-4
-
-Pocket Passer
-
-0-10
-
-0-2.5
-
 **Note:** Each quarterback's name is labeled, and different colors indicate their playing style.
 
 ### Comparison 1: Rush Yards vs Passer Rating

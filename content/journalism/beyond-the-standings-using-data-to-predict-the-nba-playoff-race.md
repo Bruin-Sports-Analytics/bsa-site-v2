@@ -21,34 +21,6 @@ In this article, we identified every game result from the 2025–26 season, pull
 | **Win Percentage (Last 15 Games)** | A team's win rate over their most recent 15 games. Win percentage (Last 15 Games) is true to recent performance rather than season-long win percentage as it reflects current roster health, momentum, and form. |
 | **Regression Model** **(R²)** | A measure of how well a statistical model explains the data. Our model achieves R² = 0.942, meaning it accounts for 94.2% of the variation in team win totals using just six metrics: Net Rating, Offensive Rating, Defensive Rating, Pace, SoS, and Point Differential. |
 
-### Key Term
-
-### Definition
-
-### Net Rating (NRtg)
-
-Points scored minus points allowed per 100 possessions. The single best measurement of how good a team actually is, independent of pace. A team with a +10 NRtg outscores opponents by 10 points every 100 possessions
-
-### Offensive Rating (ORtg) / Defensive Rating (DRtg)
-
-The offensive and defensive components of Net Rating. ORtg measures points scored and DRtg measures points allowed per 100 possessions. Lower DRtg = better defense.
-
-### Simple Rating System (SRS)
-
-A Basketball Reference metric that combines a team's average point differential with strength of schedule in its assessment of team success. It accounts for the quality of opponents, paints a clearer picture than a win-loss record for comparing teams across conferences.
-
-### Strength of Schedule (SoS)
-
-The average win percentage of a team's remaining opponents. A higher SoS means a harder road to the end of the regular season.
-
-### Win Percentage (Last 15 Games)
-
-A team's win rate over their most recent 15 games. Win percentage (Last 15 Games) is true to recent performance rather than season-long win percentage as it reflects current roster health, momentum, and form.
-
-**Regression Model** **(R²)**
-
-A measure of how well a statistical model explains the data. Our model achieves R² = 0.942, meaning it accounts for 94.2% of the variation in team win totals using just six metrics: Net Rating, Offensive Rating, Defensive Rating, Pace, SoS, and Point Differential.
-
 ## Net Rating vs. Wins: What the Standings Aren't Telling You
 
 ![Figure 3: Predicted vs. Actual Wins Model for both conferences](/assets/journalism/beyond-the-standings-using-data-to-predict-the-nba-playoff-race/figure-03.png)

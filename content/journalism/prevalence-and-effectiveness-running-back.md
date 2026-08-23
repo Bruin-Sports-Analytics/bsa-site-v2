@@ -47,9 +47,6 @@ On average, teams with a higher splitness showed more regular season success tha
 ![Figure 7](/assets/journalism/prevalence-and-effectiveness-running-back/figure-07.png)
 
 | **Stat to know:** In the 2025 NFL playoffs, the team with the lower splitness won 10/13 games, including a 3-0 record in both Conference Championship games and the Super Bowl. |
-| --- |
-
-**Stat to know:** In the 2025 NFL playoffs, the team with the lower splitness won 10/13 games, including a 3-0 record in both Conference Championship games and the Super Bowl.
 
 When it comes to games under the spotlight of the playoffs in the 2024-25 NFL season, it is more important to have a reliable RB1. Being able to divvy up the running back load may be more useful over the stretch of an entire season, but come the postseason, the best players need to play the most. Other major American sports reflect this trend of limiting playing time to only the best players during the playoffs. Examples of this include the NBA teams who will shorten their rotation from an average of about ten players down to eight. In the MLB, starting pitcher rotations are cut down from about five or six to four. In the NFL, when teams have been used to splitting carries more, this shift to a higher focus on one running back may throw off how a team has been accustomed to playing for the past four months. On the other hand, if teams choose not to make this switch, they will find themselves at an inherent talent disadvantage if they cannot send their star players out nearly every play.
 

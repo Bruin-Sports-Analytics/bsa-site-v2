@@ -92,46 +92,6 @@ A factor that could be important for the outcomes of most NBA games is home cour
 | **Away** | 771 | 2756 | 3527 | 0.219 |
 | **All Games** | 1077 | 3677 | 4754 | 0.227 |
 
-### Category
-
-### Wins
-
-### Losses
-
-### Total
-
-### Win Proportion
-
-### Home
-
-306
-
-921
-
-1227
-
-0.249
-
-### Away
-
-771
-
-2756
-
-3527
-
-0.219
-
-### All Games
-
-1077
-
-3677
-
-4754
-
-0.227
-
 Table Notes: The table above displays the win and loss totals of underdog teams for home games, away games, and all games.
 
 We have the null and alternate hypothesis of

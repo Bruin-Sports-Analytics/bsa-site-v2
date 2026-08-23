@@ -46,38 +46,6 @@ The weights we used are as shown below:
 | BPM | 10% |
 | VORP | 10% |
 
-### Metrics
-
-### Weights
-
-eFG%
-
-10%
-
-Assists
-
-20%
-
-Points
-
-30%
-
-Non-TOV%
-
-10%
-
-WS
-
-10%
-
-BPM
-
-10%
-
-VORP
-
-10%
-
 Due to the initial standardization of each metric, we were able to make a system that grades players on a 100 point scale.
 
 Additionally, the “assists” metric was slightly modified to account for the difference in each player’s positional responsibilities. Point guards had their assists cut down by 20%, while Centers had their assists increased by 20%.

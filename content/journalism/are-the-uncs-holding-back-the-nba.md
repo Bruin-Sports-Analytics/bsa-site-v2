@@ -20,38 +20,6 @@ To explore this question, we analyze data from the 2021-2022, 2022-2023, and 202
 | **Defensive Rating/Efficiency (DRtg)** | Points allowed per 100 possessions |
 | **Pace** | Estimated possessions per game |
 
-### Term
-
-### Definition
-
-### Average Team Age
-
-Mean age of all players on the roster
-
-### Win Percentage
-
-Total wins divided by total games played
-
-### Field Goal Percentage (FG%)
-
-Total two and three pointers made divided by total attempted (excluding Free Throws)
-
-### Three Point Percentage (3P%)
-
-Total three pointers made divided by attempted
-
-### Offensive Rating/Efficiency (ORtg)
-
-Points scored per 100 possessions
-
-### Defensive Rating/Efficiency (DRtg)
-
-Points allowed per 100 possessions
-
-### Pace
-
-Estimated possessions per game
-
 ## Age's Effect on Win Percentage
 
 ![Figure 1: Average Team Age vs. Win Percentage by Season (2021 - 2024)](/assets/journalism/are-the-uncs-holding-back-the-nba/figure-01.png)

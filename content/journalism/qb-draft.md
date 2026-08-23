@@ -50,22 +50,6 @@ From the set of correlation graphs, we can see a clear linear relationship betwe
 | --- | --- | --- | --- |
 | 7.775 | 1.305 | 1653 | 65.753 |
 
-YPA
-
-td-int
-
-YPY
-
-Comp%
-
-7.775
-
-1.305
-
-1653
-
-65.753
-
 From the chart, his expected YPA is 7.775, which is significantly higher than that of previous Bears QB Justin Fields (6.9), around league average, just below another booming rookie QB C.J. Stroud(8.2). Touchdown interception ratio is 1.305, which is lower than the league average. This could be a point of unfit for him to be in Chicago Bears. Completion rate is 65.753%, which is about the same as Justin Herbert and Jimmy Garoppolo. Overall, the model returns a pretty high expectation for him, implying that he can be considered a good fit to Chicago Bears if he plays as the franchise-level QB of the team and make the team a playoff-contender.
 
 ### Jayden Daniels–2nd pick–LSU/ArizonaState–Washington Commanders
@@ -87,22 +71,6 @@ Based on the linear regression model, the performance expectancy for Jayden Dani
 | YPA | Td-int | YPY | Comp% |
 | --- | --- | --- | --- |
 | 6.715 | 1.203 | 1328 | 56.51 |
-
-YPA
-
-Td-int
-
-YPY
-
-Comp%
-
-6.715
-
-1.203
-
-1328
-
-56.51
 
 From the chart, his YPA expectancy is 6.715, which is about the same level as Gardner Minshew and Kyler Murray. His completion rate expectancy this relatively low expectancy in the performance metrics suggests that although he is making progress in his ability to make plays, Washington Commanders’ poor use of drafted QB in the past years, while lowering the bar of being “fit” with the team, will be a considerable barrier for him to conquer.
 
@@ -130,22 +98,6 @@ Therefore, the model suggests that this year might not be a good time for this t
 | --- | --- | --- | --- |
 | 6.528 | 1.168 | 1440 | 60.18 |
 
-YPA
-
-td-int
-
-YPY
-
-comp%
-
-6.528
-
-1.168
-
-1440
-
-60.18
-
 ### Michael Penix Jr–8th overall pick–Washington–Atlanta Falcons
 
 As the starting QB who led Washington Huskies to Pac-12 champion and National Championship finalist in 2023/24 season, his composure and confidence become a key pitching point in the 2024 NFL Draft. However, his performance in a few pivotal dimensions (passing movement, offensive prospectiveness, and facing pressure) has been inconsistent. Meanwhile, as Atlanta Falcons just acquired an experienced professional QB Kirk Cousins 2 months ago, this pick of a 24-year-old becomes more controversial, getting deemed as the biggest surprise in the first round of the draft.
@@ -165,22 +117,6 @@ The correlation model reveals that Falcons, contrary to the widespread criticism
 | YPA | td-int | YPY | comp% |
 | --- | --- | --- | --- |
 | 6.902 | 1.39 | 1585 | 64.14 |
-
-YPA
-
-td-int
-
-YPY
-
-comp%
-
-6.902
-
-1.39
-
-1585
-
-64.14
 
 His YPA expectancy is surprisingly high, only behind Caleb Williams so far. His completion rate is also second high among the 6 first round QBs. Therefore, considering its successful history of drafting early-round QBs, it can be a fair gamble for the Falcons to select him if he meets the expectancy in his rookie season, which can turn him into an important sub-level QB.
 
@@ -206,22 +142,6 @@ Similar to New England Patriots, Vikings also has the flattened best-fit line fo
 | --- | --- | --- | --- |
 | 6.271 | 1.06 | 1272 | 60.61 |
 
-YPA
-
-td-int
-
-YPY
-
-comp%
-
-6.271
-
-1.06
-
-1272
-
-60.61
-
 The linear regression model gives a gloomy performance expectancy, which is reasonable when it comes to the inverse relationship discussed above. Nevertheless, McCarthy can still have the potential to become a consistent throwing weapon with the aid of receiving talent like Justin Jefferson and running talent like Aaron Jones. Above all, his first priority will be beating the expectancy and competition with Sam Darnold to become Viking’s franchise QB.
 
 ### Bo Nix–12th overall pick–Oregon/Auburn–Denver Broncos
@@ -241,22 +161,6 @@ From analyzing the past drafting data of Denver Broncos, it is not difficult to 
 | YPA | td-int | YPY | comp% |
 | --- | --- | --- | --- |
 | 6.31 | 1.22 | 1036 | 61.1 |
-
-YPA
-
-td-int
-
-YPY
-
-comp%
-
-6.31
-
-1.22
-
-1036
-
-61.1
 
 With the bar set low for Bo Nix, this does not predicate that he is going into bust. If he manages to beat the performance expectancy and strives to take the Broncos out of the swamp, he still has the chance to be an average-level starting QB in the league.
 

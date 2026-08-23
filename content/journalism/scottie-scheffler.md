@@ -107,46 +107,6 @@ Each bar on this graph represents the average SG: tee-to-green for every season 
 | 2015 | Jason Day | 5 | 1.56 |
 | 2016 | Justin Thomas | 5 | 1.46 |
 
-Year
-
-Player
-
-Wins
-
-SG: tee-to-green
-
-2013
-
-Tiger Woods
-
-5
-
-2.04
-
-2014
-
-Jordan Spieth
-
-5
-
-1.63
-
-2015
-
-Jason Day
-
-5
-
-1.56
-
-2016
-
-Justin Thomas
-
-5
-
-1.46
-
 Bar [#2](https://www.bruinsportsanalytics.com/blog/hashtags/2) is highlighted in red because that is the category into which Scheffler’s season falls. His true SG: T2G data for this season is plotted far above his group. It is clear that Scheffler does not belong in this group. If you were to draw a line horizontally to the right of his dot, it would fall around 8 or 9 wins. This is a sign of a letdown.
 
 ![Figure 9](/assets/journalism/scottie-scheffler/figure-09.png)

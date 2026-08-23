@@ -17,62 +17,6 @@ Given the inherent subjectivity of how one can determine whether or not an NBA p
 | Assists Per Game | 1.347 | Field Goal Percentage | 0.378 |
 | Box Plus Minus | -2.006 | VORP | 3.824 |
 
-Metric
-
-Average Value
-
-Metric
-
-Average Value
-
-Years Played
-
-5.499
-
-Win Shares Per 48 Min
-
-0.054
-
-Minutes Played
-
-15.747
-
-Games Played
-
-302.228
-
-Points Per Game
-
-6.318
-
-Three Point Percentage
-
-0.219
-
-Rebounds Per Game
-
-2.774
-
-Free Throw Percentage
-
-0.609
-
-Assists Per Game
-
-1.347
-
-Field Goal Percentage
-
-0.378
-
-Box Plus Minus
-
--2.006
-
-VORP
-
-3.824
-
 *Figure 1: Metrics and Average Values*
 
 ### Important Definitions

@@ -82,46 +82,6 @@ The NBA's Defensive Player of the Year (DPOY) award has displayed a notable bala
 | International | 3 | 4 | 5 | 5 | 6 | 5 |
 | US-born | 12 | 11 | 10 | 10 | 9 | 10 |
 
-2018
-
-2019
-
-2020
-
-2021
-
-2022
-
-2023
-
-International
-
-3
-
-4
-
-5
-
-5
-
-6
-
-5
-
-US-born
-
-12
-
-11
-
-10
-
-10
-
-9
-
-10
-
 The All-NBA team selection stands as a crucial benchmark for assessing player excellence in the NBA. Each season, the league identifies the top 15 performers based on their exceptional contributions throughout the campaign. Notably, since 2018, US-born players still maintain a dominant presence in the majority of slots. There has been a noticeable rise in the representation of international players among these selections: with players from diverse backgrounds leaving significant marks on the court. Among the standout international selections are renowned players such as Nikola Jokic, Giannis Antetokounmpo, and Joel Embiid. Furthermore, newer talents like Luka Dončić from Slovenia, Shai Gilgeous-Alexander from Canada and Domantas Sabonis, an American with Lithuanian ties, are also making notable contributions, adding to the rich tapestry of global talent in the NBA.
 
 ### All-Star Game Selection
@@ -142,46 +102,6 @@ An increasingly notable measure of the growing influence of international player
 | --- | --- | --- | --- | --- | --- | --- |
 | International | **16.3367** | **16.3476** | **16.2592** | **16.6571** | **16.7444** | **16.7209** |
 | US-Born | **16.8268** | **17.01510** | **17.22348** | **17.46812** | **17.69586** | **18.06446** |
-
-2018
-
-2019
-
-2020
-
-2021
-
-2022
-
-2023
-
-International
-
-### 16.3367
-
-### 16.3476
-
-### 16.2592
-
-### 16.6571
-
-### 16.7444
-
-### 16.7209
-
-US-Born
-
-### 16.8268
-
-### 17.01510
-
-### 17.22348
-
-### 17.46812
-
-### 17.69586
-
-### 18.06446
 
 Player Efficiency Rating or PER is a statistical rating for basketball where it sums up all of a player’s positive impact and subtracts their negative impact and returns a rating that can quantify how good a player is. This is a value that is adjusted to a per-minute basis so that it is applicable to compare players who play in games longer versus to those who do not. A slightly above-average player in the league would average around a rating of 15, these would be the players that you would see starting on an NBA roster on game night.
 

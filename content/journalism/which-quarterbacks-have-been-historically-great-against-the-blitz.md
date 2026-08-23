@@ -16,30 +16,6 @@ This article examines quarterback efficiency and performance against the blitz f
 | **Simulated Pressure** | Plays in which there are more than 7 defenders in the box pre-snap, but the defense only brings a 4-man rush |
 | **Completion Percentage over Expected (CPoE)** | Measures accuracy and catchability relative to the difficulty of the throw |
 
-### Term
-
-### Definition
-
-### Blitz
-
-For our analysis, we defined the blitz as any plays where the number of pass rushers was greater than 4
-
-### Expected Points Added (EPA)
-
-Measures the value of a play by comparing the expected points before and after the snap
-
-### Success Rate
-
-The percentage of plays that result in a positive EPA, measuring quarterback consistency
-
-### Simulated Pressure
-
-Plays in which there are more than 7 defenders in the box pre-snap, but the defense only brings a 4-man rush
-
-### Completion Percentage over Expected (CPoE)
-
-Measures accuracy and catchability relative to the difficulty of the throw
-
 ### Data Foundations and Scope
 
 Our data was extracted from the nflverse dataset, specifically the participation and play-by-play data from the 2016-17 through 2024-25. This period spans 9 seasons and includes a sample size of over 430,000 plays.

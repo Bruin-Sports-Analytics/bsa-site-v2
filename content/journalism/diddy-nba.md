@@ -15,42 +15,6 @@ In light of the allegations against Diddy, a clip of this livestream resurfaced 
 | Diddy | 32.7 | 8.0 | 7.7 | 1.5 | 1.3 |
 | Career | 27.1 | 7.5 | 7.4 | 1.5 | 0.7 |
 
-Game Type
-
-Points
-
-Rebounds
-
-Assists
-
-Steals
-
-Blocks
-
-Diddy
-
-32.7
-
-8.0
-
-7.7
-
-1.5
-
-1.3
-
-Career
-
-27.1
-
-7.5
-
-7.4
-
-1.5
-
-0.7
-
 With seemingly such a drastic difference between Diddy-games and games without Diddy in attendance, it begged the question: was this pattern in data exclusive to Lebron James or were other players in cahoots with the Puff Daddy?
 
 ## Diddy’s Favorites
@@ -323,65 +287,11 @@ Finally, we calculated the distance (Mahalanobis Distance) of the simulated and 
 | --- | --- | --- | --- | --- | --- | --- |
 | 0.1 | -0.1 | 0.0 | 0.0 | 0.1 | -0.1 |  |
 
-Points
-
-Rebounds
-
-Assists
-
-Blocks
-
-Steals
-
-TOV
-
-Fouls
-
-0.1
-
--0.1
-
-0.0
-
-0.0
-
-0.1
-
--0.1
-
 And if the player’s Diddy differential looked like the following table, then the distance would be pretty high. To test for a significant difference, we calculated the p-values using the chi-squared test.
 
 | Points | Rebounds | Assists | Blocks | Steals | TOV | Fouls |
 | --- | --- | --- | --- | --- | --- | --- |
 | 5.1 | 4.1 | 2.2 | 0.8 | 1 | 0 | 0.5 |
-
-Points
-
-Rebounds
-
-Assists
-
-Blocks
-
-Steals
-
-TOV
-
-Fouls
-
-5.1
-
-4.1
-
-2.2
-
-0.8
-
-1
-
-0
-
-0.5
 
 Considering what we have seen already, we performed these simulations on Dwyane Wade, Paul Pierce, Kevin Garnett, Rajon Rondo, and Pau Gasol. Lebron James was also tested in the simulator.
 

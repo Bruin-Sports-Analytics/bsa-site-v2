@@ -104,40 +104,6 @@ Let’s look at how each of Jokic’s common stats affects game differential and
 | Steals | 0.0423 | 0.2091 |
 | Blocks | -0.0522 | 0.0494 |
 
-Game Differential
-
-Plus-Minus
-
-Points
-
--0.0842
-
-0.0834
-
-Assists
-
-0.4928
-
-0.5524
-
-Rebounds
-
-0.1331
-
-0.2795
-
-Steals
-
-0.0423
-
-0.2091
-
-Blocks
-
--0.0522
-
-0.0494
-
 Correlation Coefficients between two variables range from -1 to 1, with 1 indicating a perfect correlation, -1 indicating a perfect inverse correlation, and 0 indicating no correlation.
 
 From this, we can see minimal correlations for points and blocks, slightly positive correlations for rebounds and steals, and strong positive correlations for assists.
