@@ -31,7 +31,7 @@ export function ArticleCard({ article, featured = false }: Props) {
 
   const thumbnailElement = (
     <div
-      className={styles.thumbnail}
+      className={`${styles.thumbnail}${thumbnailImg ? ` ${styles.thumbnailHasImg}` : ""}`}
       aria-hidden
       style={{ "--tone-top": tone.top, "--tone-bottom": tone.bottom } as React.CSSProperties}
     >
@@ -44,11 +44,13 @@ export function ArticleCard({ article, featured = false }: Props) {
             sizes="(max-width: 600px) 100vw, (max-width: 980px) 50vw, 33vw"
             className={styles.thumbnailImg}
           />
-          <div className={styles.thumbnailOverlay} />
         </div>
-      ) : null}
-      <span className={styles.thumbnailSport}>{article.sport}</span>
-      <span className={styles.thumbnailMeta}>{article.readTime} min read</span>
+      ) : (
+        <>
+          <span className={styles.thumbnailSport}>{article.sport}</span>
+          <span className={styles.thumbnailMeta}>{article.readTime} min read</span>
+        </>
+      )}
     </div>
   );
 
