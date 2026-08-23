@@ -11,7 +11,9 @@ const ARTICLES_PER_PAGE = 30;
 
 // Unique sports (alphabetical) and years (newest first), derived from the data
 const sportOptions = Array.from(new Set(articles.map((a) => a.sport))).sort((a, b) => a.localeCompare(b));
-const yearOptions = Array.from(new Set(articles.map((a) => a.year))).sort((a, b) => b - a);
+const yearOptions = Array.from(
+  new Set(articles.map((a) => a.year).filter((y): y is number => typeof y === "number"))
+).sort((a, b) => b - a);
 
 function getPageNumbers(current: number, total: number): (number | string)[] {
   if (total <= 7) {

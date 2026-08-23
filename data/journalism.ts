@@ -1,34 +1,23 @@
-export type ArticleBlock =
-  | { type: "heading"; level?: 2 | 3; text: string }
-  | { type: "paragraph"; text: string }
-  | { type: "image"; src: string; alt: string; caption?: string; width?: number; height?: number }
-  | { type: "table"; columns: string[]; rows: string[][] }
-  | { type: "list"; ordered?: boolean; items: string[] }
-  | { type: "blockquote"; text: string };
+import type { LucideIcon } from "lucide-react";
 
-export type ArticleImage = {
+export type ImageAsset = {
   src: string;
-  alt: string;
+  alt?: string;
   caption?: string;
-  width: number;
-  height: number;
-  afterParagraph: number;
+  width?: number;
+  height?: number;
+  afterParagraph?: number;
 };
 
-export type JournalismArticle = {
-  title: string;
-  authors: string[];
-  date: string;
-  year: number;
-  sport: string;
-  readTime: number;
-  summary?: string;
-  techStack?: string[];
-  paperUrl?: string;
-  contentFile?: string;
-  images?: ArticleImage[];
-  content?: ArticleBlock[];
-};
+export type ArticleBlock =
+  | { type: "heading"; level: 2 | 3; text: string }
+  | { type: "paragraph"; text: string }
+  | { type: "quote"; text: string }
+  | { type: "blockquote"; text: string }
+  | { type: "callout"; title?: string; text: string }
+  | { type: "image"; src: string; alt?: string; caption?: string; width?: number; height?: number }
+  | { type: "table"; headers?: string[]; columns?: string[]; rows: string[][] }
+  | { type: "list"; ordered?: boolean; items: string[] };
 
 export type DjResource = { label: string; href: string };
 
@@ -40,6 +29,22 @@ export const djResources: DjResource[] = [
   { label: "Guidelines", href: `${DJ_RESOURCES_BASE}/guidelines.pdf` },
   { label: "Example Timeline", href: `${DJ_RESOURCES_BASE}/example-timeline.pdf` }
 ];
+
+export type JournalismArticle = {
+  title: string;
+  authors: string[];
+  date: string;
+  year?: number;
+  sport: string;
+  readTime: number;
+  summary?: string;
+  paperUrl?: string;
+  contentFile?: string;
+  images?: ImageAsset[];
+  content?: ArticleBlock[];
+  techStack?: string[];
+  featured?: boolean;
+};
 
 export const articles: JournalismArticle[] = [
   {
@@ -1262,18 +1267,18 @@ export const articles: JournalismArticle[] = [
     "contentFile": "nba-hustle.md",
     "images": [
       {
-        "src": "/assets/journalism/nba-hustle/figure-01.png",
-        "alt": "Figure 1",
-        "width": 1200,
-        "height": 700,
-        "afterParagraph": 15
-      },
-      {
         "src": "/assets/journalism/nba-hustle/figure-02.png",
         "alt": "Figure 2",
         "width": 1200,
         "height": 700,
         "afterParagraph": 22
+      },
+      {
+        "src": "/assets/journalism/nba-hustle/figure-01.png",
+        "alt": "Figure 1",
+        "width": 1200,
+        "height": 700,
+        "afterParagraph": 15
       },
       {
         "src": "/assets/journalism/nba-hustle/figure-03.png",
@@ -1792,11 +1797,11 @@ export const articles: JournalismArticle[] = [
     "contentFile": "superstar-duos-vs-big-threes.md",
     "images": [
       {
-        "src": "/assets/journalism/superstar-duos-vs-big-threes/figure-01.png",
-        "alt": "Figure 1",
+        "src": "/assets/journalism/superstar-duos-vs-big-threes/figure-03.png",
+        "alt": "Figure 3",
         "width": 1200,
         "height": 700,
-        "afterParagraph": 17
+        "afterParagraph": 30
       },
       {
         "src": "/assets/journalism/superstar-duos-vs-big-threes/figure-02.png",
@@ -1806,11 +1811,11 @@ export const articles: JournalismArticle[] = [
         "afterParagraph": 29
       },
       {
-        "src": "/assets/journalism/superstar-duos-vs-big-threes/figure-03.png",
-        "alt": "Figure 3",
+        "src": "/assets/journalism/superstar-duos-vs-big-threes/figure-01.png",
+        "alt": "Figure 1",
         "width": 1200,
         "height": 700,
-        "afterParagraph": 30
+        "afterParagraph": 17
       },
       {
         "src": "/assets/journalism/superstar-duos-vs-big-threes/figure-04.png",
@@ -2450,6 +2455,13 @@ export const articles: JournalismArticle[] = [
     "contentFile": "nba-odds-upsets.md",
     "images": [
       {
+        "src": "/assets/journalism/nba-odds-upsets/figure-06.png",
+        "alt": "Figure 6",
+        "width": 1200,
+        "height": 700,
+        "afterParagraph": 25
+      },
+      {
         "src": "/assets/journalism/nba-odds-upsets/figure-01.png",
         "alt": "Figure Notes: Displayed in the figure above is the example of the spread for a game between the New York Knicks and the Boston Celtics",
         "caption": "Figure Notes: Displayed in the figure above is the example of the spread for a game between the New York Knicks and the Boston Celtics",
@@ -2488,13 +2500,6 @@ export const articles: JournalismArticle[] = [
         "width": 1200,
         "height": 700,
         "afterParagraph": 22
-      },
-      {
-        "src": "/assets/journalism/nba-odds-upsets/figure-06.png",
-        "alt": "Figure 6",
-        "width": 1200,
-        "height": 700,
-        "afterParagraph": 25
       },
       {
         "src": "/assets/journalism/nba-odds-upsets/figure-07.png",
@@ -2998,11 +3003,11 @@ export const articles: JournalismArticle[] = [
     "contentFile": "caitlin-clark-prediction.md",
     "images": [
       {
-        "src": "/assets/journalism/caitlin-clark-prediction/figure-01.png",
-        "alt": "Figure 1",
+        "src": "/assets/journalism/caitlin-clark-prediction/figure-00-infographic.png",
+        "alt": "Caitlin Clark: College Stats vs Linear Model Prediction vs Actual Rookie WNBA Stats",
+        "caption": "Caitlin Clark: College Stats vs Linear Model Prediction vs Actual Rookie WNBA Stats",
         "width": 1200,
-        "height": 700,
-        "afterParagraph": 32
+        "height": 675
       },
       {
         "src": "/assets/journalism/caitlin-clark-prediction/figure-02.png",
@@ -3010,6 +3015,13 @@ export const articles: JournalismArticle[] = [
         "width": 1200,
         "height": 700,
         "afterParagraph": 43
+      },
+      {
+        "src": "/assets/journalism/caitlin-clark-prediction/figure-01.png",
+        "alt": "Figure 1",
+        "width": 1200,
+        "height": 700,
+        "afterParagraph": 32
       },
       {
         "src": "/assets/journalism/caitlin-clark-prediction/figure-03.png",
@@ -3032,6 +3044,13 @@ export const articles: JournalismArticle[] = [
     "summary": "In football, being a \"merchant\" means being so reliant on a particular asset that despite not being genuinely good at his position, a player appears to be good due to external factors rather than his own merits. Rather than contributing to his team, a \"merchant\" is the...",
     "contentFile": "how-top-receivers-contribute-qb-stats.md",
     "images": [
+      {
+        "src": "/assets/journalism/how-top-receivers-contribute-qb-stats/figure-08.png",
+        "alt": "Figure 8",
+        "width": 1200,
+        "height": 700,
+        "afterParagraph": 33
+      },
       {
         "src": "/assets/journalism/how-top-receivers-contribute-qb-stats/figure-01.png",
         "alt": "Figure 1",
@@ -3080,13 +3099,6 @@ export const articles: JournalismArticle[] = [
         "width": 1200,
         "height": 700,
         "afterParagraph": 29
-      },
-      {
-        "src": "/assets/journalism/how-top-receivers-contribute-qb-stats/figure-08.png",
-        "alt": "Figure 8",
-        "width": 1200,
-        "height": 700,
-        "afterParagraph": 33
       }
     ]
   },
@@ -3153,18 +3165,18 @@ export const articles: JournalismArticle[] = [
     "contentFile": "predicting-major-champions.md",
     "images": [
       {
-        "src": "/assets/journalism/predicting-major-champions/figure-01.png",
-        "alt": "Figure 1",
-        "width": 1200,
-        "height": 700,
-        "afterParagraph": 17
-      },
-      {
         "src": "/assets/journalism/predicting-major-champions/figure-02.png",
         "alt": "Figure 2",
         "width": 1200,
         "height": 700,
         "afterParagraph": 25
+      },
+      {
+        "src": "/assets/journalism/predicting-major-champions/figure-01.png",
+        "alt": "Figure 1",
+        "width": 1200,
+        "height": 700,
+        "afterParagraph": 17
       },
       {
         "src": "/assets/journalism/predicting-major-champions/figure-03.png",
@@ -3506,18 +3518,18 @@ export const articles: JournalismArticle[] = [
     "contentFile": "bye-week.md",
     "images": [
       {
-        "src": "/assets/journalism/bye-week/figure-01.png",
-        "alt": "Figure 1",
-        "width": 1200,
-        "height": 700,
-        "afterParagraph": 6
-      },
-      {
         "src": "/assets/journalism/bye-week/figure-02.png",
         "alt": "Figure 2",
         "width": 1200,
         "height": 700,
         "afterParagraph": 14
+      },
+      {
+        "src": "/assets/journalism/bye-week/figure-01.png",
+        "alt": "Figure 1",
+        "width": 1200,
+        "height": 700,
+        "afterParagraph": 6
       },
       {
         "src": "/assets/journalism/bye-week/figure-03.png",
@@ -4068,6 +4080,14 @@ export const articles: JournalismArticle[] = [
     "contentFile": "nba-draft-2k-build.md",
     "images": [
       {
+        "src": "/assets/journalism/nba-draft-2k-build/figure-04.png",
+        "alt": "Derrick White shot distribution (Source: https://barttorvik.com/playerstat.php?p=Derrick+White) ",
+        "caption": "Derrick White shot distribution (Source: https://barttorvik.com/playerstat.php?p=Derrick+White)",
+        "width": 1200,
+        "height": 700,
+        "afterParagraph": 56
+      },
+      {
         "src": "/assets/journalism/nba-draft-2k-build/figure-01.png",
         "alt": "MyCAREER image from NBA 2K24 (Source: Joshua Moy)",
         "caption": "MyCAREER image from NBA 2K24 (Source: Joshua Moy)",
@@ -4088,14 +4108,6 @@ export const articles: JournalismArticle[] = [
         "width": 1200,
         "height": 700,
         "afterParagraph": 51
-      },
-      {
-        "src": "/assets/journalism/nba-draft-2k-build/figure-04.png",
-        "alt": "Derrick White shot distribution (Source: https://barttorvik.com/playerstat.php?p=Derrick+White) ",
-        "caption": "Derrick White shot distribution (Source: https://barttorvik.com/playerstat.php?p=Derrick+White)",
-        "width": 1200,
-        "height": 700,
-        "afterParagraph": 56
       },
       {
         "src": "/assets/journalism/nba-draft-2k-build/figure-05.png",
@@ -5106,6 +5118,14 @@ export const articles: JournalismArticle[] = [
     "contentFile": "sergio-busquets-heir.md",
     "images": [
       {
+        "src": "/assets/journalism/sergio-busquets-heir/figure-06.png",
+        "alt": "Cosine Similarity [Source: AI-ContentLab]",
+        "caption": "Cosine Similarity [Source: AI-ContentLab]",
+        "width": 1200,
+        "height": 700,
+        "afterParagraph": 79
+      },
+      {
         "src": "/assets/journalism/sergio-busquets-heir/figure-01.jpg",
         "alt": "Playing Thirds in Football [Source: SportSessionPlanner]",
         "caption": "Playing Thirds in Football [Source: SportSessionPlanner]",
@@ -5140,14 +5160,6 @@ export const articles: JournalismArticle[] = [
         "width": 1200,
         "height": 700,
         "afterParagraph": 77
-      },
-      {
-        "src": "/assets/journalism/sergio-busquets-heir/figure-06.png",
-        "alt": "Cosine Similarity [Source: AI-ContentLab]",
-        "caption": "Cosine Similarity [Source: AI-ContentLab]",
-        "width": 1200,
-        "height": 700,
-        "afterParagraph": 79
       },
       {
         "src": "/assets/journalism/sergio-busquets-heir/figure-07.png",
@@ -5378,6 +5390,13 @@ export const articles: JournalismArticle[] = [
     "contentFile": "what-wins-ball-games.md",
     "images": [
       {
+        "src": "/assets/journalism/what-wins-ball-games/figure-04.png",
+        "alt": "Figure 4",
+        "width": 1200,
+        "height": 700,
+        "afterParagraph": 18
+      },
+      {
         "src": "/assets/journalism/what-wins-ball-games/figure-01.png",
         "alt": "Figure 1",
         "width": 1200,
@@ -5397,13 +5416,6 @@ export const articles: JournalismArticle[] = [
         "width": 1200,
         "height": 700,
         "afterParagraph": 12
-      },
-      {
-        "src": "/assets/journalism/what-wins-ball-games/figure-04.png",
-        "alt": "Figure 4",
-        "width": 1200,
-        "height": 700,
-        "afterParagraph": 18
       },
       {
         "src": "/assets/journalism/what-wins-ball-games/figure-05.jpg",
@@ -6454,18 +6466,18 @@ export const articles: JournalismArticle[] = [
     "contentFile": "offensive-player-of-the-year.md",
     "images": [
       {
-        "src": "/assets/journalism/offensive-player-of-the-year/figure-01.png",
-        "alt": "Figure 1",
-        "width": 1200,
-        "height": 700,
-        "afterParagraph": 53
-      },
-      {
         "src": "/assets/journalism/offensive-player-of-the-year/figure-02.png",
         "alt": "Figure 2",
         "width": 1200,
         "height": 700,
         "afterParagraph": 56
+      },
+      {
+        "src": "/assets/journalism/offensive-player-of-the-year/figure-01.png",
+        "alt": "Figure 1",
+        "width": 1200,
+        "height": 700,
+        "afterParagraph": 53
       },
       {
         "src": "/assets/journalism/offensive-player-of-the-year/figure-03.png",
@@ -6496,19 +6508,19 @@ export const articles: JournalismArticle[] = [
     "contentFile": "200-freestyle-king.md",
     "images": [
       {
-        "src": "/assets/journalism/200-freestyle-king/figure-01.png",
-        "alt": "Figure 1",
-        "width": 1200,
-        "height": 700,
-        "afterParagraph": 4
-      },
-      {
         "src": "/assets/journalism/200-freestyle-king/figure-02.png",
         "alt": "Note: the black dots represent Popovici's best swims",
         "caption": "Note: the black dots represent Popovici's best swims",
         "width": 1200,
         "height": 700,
         "afterParagraph": 7
+      },
+      {
+        "src": "/assets/journalism/200-freestyle-king/figure-01.png",
+        "alt": "Figure 1",
+        "width": 1200,
+        "height": 700,
+        "afterParagraph": 4
       },
       {
         "src": "/assets/journalism/200-freestyle-king/figure-03.png",
@@ -7921,6 +7933,13 @@ export const articles: JournalismArticle[] = [
     "contentFile": "march-madness-metrics.md",
     "images": [
       {
+        "src": "/assets/journalism/march-madness-metrics/figure-03.png",
+        "alt": "Figure 3",
+        "width": 1200,
+        "height": 700,
+        "afterParagraph": 80
+      },
+      {
         "src": "/assets/journalism/march-madness-metrics/figure-01.jpg",
         "alt": "Figure 1",
         "width": 1200,
@@ -7933,13 +7952,6 @@ export const articles: JournalismArticle[] = [
         "width": 1200,
         "height": 700,
         "afterParagraph": 78
-      },
-      {
-        "src": "/assets/journalism/march-madness-metrics/figure-03.png",
-        "alt": "Figure 3",
-        "width": 1200,
-        "height": 700,
-        "afterParagraph": 80
       },
       {
         "src": "/assets/journalism/march-madness-metrics/figure-04.png",
@@ -8166,6 +8178,13 @@ export const articles: JournalismArticle[] = [
     "contentFile": "test-cricket-new-generation-batters.md",
     "images": [
       {
+        "src": "/assets/journalism/test-cricket-new-generation-batters/figure-03.png",
+        "alt": "Figure 3",
+        "width": 1200,
+        "height": 700,
+        "afterParagraph": 40
+      },
+      {
         "src": "/assets/journalism/test-cricket-new-generation-batters/figure-01.png",
         "alt": "Off spin ball (Source: wikipedia.com)",
         "caption": "Off spin ball (Source: wikipedia.com)",
@@ -8180,13 +8199,6 @@ export const articles: JournalismArticle[] = [
         "width": 1200,
         "height": 700,
         "afterParagraph": 16
-      },
-      {
-        "src": "/assets/journalism/test-cricket-new-generation-batters/figure-03.png",
-        "alt": "Figure 3",
-        "width": 1200,
-        "height": 700,
-        "afterParagraph": 40
       },
       {
         "src": "/assets/journalism/test-cricket-new-generation-batters/figure-04.png",
@@ -8645,6 +8657,14 @@ export const articles: JournalismArticle[] = [
     "contentFile": "scottie-scheffler.md",
     "images": [
       {
+        "src": "/assets/journalism/scottie-scheffler/figure-04.png",
+        "alt": "This graph shows Total Strokes Gained: tee-to-green vs. the amount of victories that player had that year.",
+        "caption": "This graph shows Total Strokes Gained: tee-to-green vs. the amount of victories that player had that year.",
+        "width": 1200,
+        "height": 700,
+        "afterParagraph": 35
+      },
+      {
         "src": "/assets/journalism/scottie-scheffler/figure-01.png",
         "alt": "Figure 1",
         "width": 1200,
@@ -8665,14 +8685,6 @@ export const articles: JournalismArticle[] = [
         "width": 1200,
         "height": 700,
         "afterParagraph": 26
-      },
-      {
-        "src": "/assets/journalism/scottie-scheffler/figure-04.png",
-        "alt": "This graph shows Total Strokes Gained: tee-to-green vs. the amount of victories that player had that year.",
-        "caption": "This graph shows Total Strokes Gained: tee-to-green vs. the amount of victories that player had that year.",
-        "width": 1200,
-        "height": 700,
-        "afterParagraph": 35
       },
       {
         "src": "/assets/journalism/scottie-scheffler/figure-05.png",
@@ -9366,6 +9378,14 @@ export const articles: JournalismArticle[] = [
     "contentFile": "diamondbacks-world-series.md",
     "images": [
       {
+        "src": "/assets/journalism/diamondbacks-world-series/figure-06.png",
+        "alt": "This linear regression model strongly validates the above statement, showing a strong positive correlation between a team’s total wins and their pitchers’ LOB%. It has an R-squared value of 0.54.",
+        "caption": "This linear regression model strongly validates the above statement, showing a strong positive correlation between a team’s total wins and their pitchers’ LOB%. It has an R-squared value of 0.54.",
+        "width": 1200,
+        "height": 700,
+        "afterParagraph": 16
+      },
+      {
         "src": "/assets/journalism/diamondbacks-world-series/figure-01.png",
         "alt": "Figure 1",
         "width": 1200,
@@ -9399,14 +9419,6 @@ export const articles: JournalismArticle[] = [
         "width": 1200,
         "height": 700,
         "afterParagraph": 14
-      },
-      {
-        "src": "/assets/journalism/diamondbacks-world-series/figure-06.png",
-        "alt": "This linear regression model strongly validates the above statement, showing a strong positive correlation between a team’s total wins and their pitchers’ LOB%. It has an R-squared value of 0.54.",
-        "caption": "This linear regression model strongly validates the above statement, showing a strong positive correlation between a team’s total wins and their pitchers’ LOB%. It has an R-squared value of 0.54.",
-        "width": 1200,
-        "height": 700,
-        "afterParagraph": 16
       }
     ]
   },
@@ -10945,19 +10957,19 @@ export const articles: JournalismArticle[] = [
     "contentFile": "marcus-jones.md",
     "images": [
       {
+        "src": "/assets/journalism/marcus-jones/figure-02.png",
+        "alt": "Figure 2",
+        "width": 1200,
+        "height": 700,
+        "afterParagraph": 14
+      },
+      {
         "src": "/assets/journalism/marcus-jones/figure-01.png",
         "alt": "Source: https://www.statmuse.com/nfl",
         "caption": "Source: https://www.statmuse.com/nfl",
         "width": 1200,
         "height": 700,
         "afterParagraph": 7
-      },
-      {
-        "src": "/assets/journalism/marcus-jones/figure-02.png",
-        "alt": "Figure 2",
-        "width": 1200,
-        "height": 700,
-        "afterParagraph": 14
       },
       {
         "src": "/assets/journalism/marcus-jones/figure-03.png",
@@ -11774,6 +11786,14 @@ export const articles: JournalismArticle[] = [
     "contentFile": "lol-recommender.md",
     "images": [
       {
+        "src": "/assets/journalism/lol-recommender/figure-07.png",
+        "alt": "Figure 9: Neural Network Diagram ",
+        "caption": "Figure 9: Neural Network Diagram",
+        "width": 1200,
+        "height": 700,
+        "afterParagraph": 37
+      },
+      {
         "src": "/assets/journalism/lol-recommender/figure-01.jpg",
         "alt": "Figure 2:  first 10 columns of player_df",
         "caption": "Figure 2:  first 10 columns of player_df",
@@ -11820,14 +11840,6 @@ export const articles: JournalismArticle[] = [
         "width": 1200,
         "height": 700,
         "afterParagraph": 26
-      },
-      {
-        "src": "/assets/journalism/lol-recommender/figure-07.png",
-        "alt": "Figure 9: Neural Network Diagram ",
-        "caption": "Figure 9: Neural Network Diagram",
-        "width": 1200,
-        "height": 700,
-        "afterParagraph": 37
       },
       {
         "src": "/assets/journalism/lol-recommender/figure-08.jpg",
@@ -12242,18 +12254,18 @@ export const articles: JournalismArticle[] = [
     "contentFile": "chargers-superbowl.md",
     "images": [
       {
-        "src": "/assets/journalism/chargers-superbowl/figure-01.jpg",
-        "alt": "Figure 1",
-        "width": 1200,
-        "height": 700,
-        "afterParagraph": 6
-      },
-      {
         "src": "/assets/journalism/chargers-superbowl/figure-02.png",
         "alt": "Figure 2",
         "width": 1200,
         "height": 700,
         "afterParagraph": 7
+      },
+      {
+        "src": "/assets/journalism/chargers-superbowl/figure-01.jpg",
+        "alt": "Figure 1",
+        "width": 1200,
+        "height": 700,
+        "afterParagraph": 6
       },
       {
         "src": "/assets/journalism/chargers-superbowl/figure-03.png",
@@ -13882,6 +13894,13 @@ export const articles: JournalismArticle[] = [
     "contentFile": "pl_best_right_back.md",
     "images": [
       {
+        "src": "/assets/journalism/pl_best_right_back/figure-06.png",
+        "alt": "Figure 6",
+        "width": 1200,
+        "height": 700,
+        "afterParagraph": 36
+      },
+      {
         "src": "/assets/journalism/pl_best_right_back/figure-01.png",
         "alt": "Figure 1",
         "width": 1200,
@@ -13915,13 +13934,6 @@ export const articles: JournalismArticle[] = [
         "width": 1200,
         "height": 700,
         "afterParagraph": 32
-      },
-      {
-        "src": "/assets/journalism/pl_best_right_back/figure-06.png",
-        "alt": "Figure 6",
-        "width": 1200,
-        "height": 700,
-        "afterParagraph": 36
       }
     ]
   },
@@ -13989,18 +14001,18 @@ export const articles: JournalismArticle[] = [
     "contentFile": "zion-prediction.md",
     "images": [
       {
-        "src": "/assets/journalism/zion-prediction/figure-01.png",
-        "alt": "Figure 1",
-        "width": 1200,
-        "height": 700,
-        "afterParagraph": 27
-      },
-      {
         "src": "/assets/journalism/zion-prediction/figure-02.jpg",
         "alt": "Figure 2",
         "width": 1200,
         "height": 700,
         "afterParagraph": 31
+      },
+      {
+        "src": "/assets/journalism/zion-prediction/figure-01.png",
+        "alt": "Figure 1",
+        "width": 1200,
+        "height": 700,
+        "afterParagraph": 27
       },
       {
         "src": "/assets/journalism/zion-prediction/figure-03.jpg",
@@ -15019,6 +15031,13 @@ export const articles: JournalismArticle[] = [
     "contentFile": "predicting_fifa_wc_2022.md",
     "images": [
       {
+        "src": "/assets/journalism/predicting_fifa_wc_2022/figure-03.png",
+        "alt": "Figure 3",
+        "width": 1200,
+        "height": 700,
+        "afterParagraph": 58
+      },
+      {
         "src": "/assets/journalism/predicting_fifa_wc_2022/figure-01.png",
         "alt": "Figure 1",
         "width": 1200,
@@ -15031,13 +15050,6 @@ export const articles: JournalismArticle[] = [
         "width": 1200,
         "height": 700,
         "afterParagraph": 44
-      },
-      {
-        "src": "/assets/journalism/predicting_fifa_wc_2022/figure-03.png",
-        "alt": "Figure 3",
-        "width": 1200,
-        "height": 700,
-        "afterParagraph": 58
       },
       {
         "src": "/assets/journalism/predicting_fifa_wc_2022/figure-04.png",
@@ -16610,18 +16622,18 @@ export const articles: JournalismArticle[] = [
     "contentFile": "paying_skills.md",
     "images": [
       {
-        "src": "/assets/journalism/paying_skills/figure-01.png",
-        "alt": "Figure 1",
-        "width": 1200,
-        "height": 700,
-        "afterParagraph": 35
-      },
-      {
         "src": "/assets/journalism/paying_skills/figure-02.png",
         "alt": "Figure 2",
         "width": 1200,
         "height": 700,
         "afterParagraph": 36
+      },
+      {
+        "src": "/assets/journalism/paying_skills/figure-01.png",
+        "alt": "Figure 1",
+        "width": 1200,
+        "height": 700,
+        "afterParagraph": 35
       },
       {
         "src": "/assets/journalism/paying_skills/figure-03.png",
@@ -18111,7 +18123,15 @@ export const articles: JournalismArticle[] = [
     "readTime": 18,
     "summary": "Within the last decade, the term ‘gravity’ has entered the basketball lexicon as a means of describing the noticeable and substantial impact that players can have on offense without even touching the ball. Inspired by the play of today’s perimeter superstars—chief among them...",
     "contentFile": "defensive_deterrence_i.md",
-    "images": []
+    "images": [
+      {
+        "src": "/assets/journalism/defensive_deterrence_i/figure-01.png",
+        "alt": "NBA Rim Protectors: Defensive Deterrence Index",
+        "caption": "NBA Rim Protectors: Defensive Deterrence Index",
+        "width": 1200,
+        "height": 675
+      }
+    ]
   },
   {
     "title": "Clustering NBA Offensive Styles",
@@ -18660,6 +18680,13 @@ export const articles: JournalismArticle[] = [
     "contentFile": "nba_intangibles.md",
     "images": [
       {
+        "src": "/assets/journalism/nba_intangibles/figure-04.png",
+        "alt": "Figure 4",
+        "width": 1200,
+        "height": 700,
+        "afterParagraph": 19
+      },
+      {
         "src": "/assets/journalism/nba_intangibles/figure-01.png",
         "alt": "Figure 1",
         "width": 1200,
@@ -18679,13 +18706,6 @@ export const articles: JournalismArticle[] = [
         "width": 1200,
         "height": 700,
         "afterParagraph": 17
-      },
-      {
-        "src": "/assets/journalism/nba_intangibles/figure-04.png",
-        "alt": "Figure 4",
-        "width": 1200,
-        "height": 700,
-        "afterParagraph": 19
       },
       {
         "src": "/assets/journalism/nba_intangibles/figure-05.png",
@@ -19512,18 +19532,18 @@ export const articles: JournalismArticle[] = [
     "contentFile": "2020_rookie_qbs.md",
     "images": [
       {
-        "src": "/assets/journalism/2020_rookie_qbs/figure-01.jpg",
-        "alt": "Figure 1",
-        "width": 1200,
-        "height": 700,
-        "afterParagraph": 10
-      },
-      {
         "src": "/assets/journalism/2020_rookie_qbs/figure-02.png",
         "alt": "Figure 2",
         "width": 1200,
         "height": 700,
         "afterParagraph": 49
+      },
+      {
+        "src": "/assets/journalism/2020_rookie_qbs/figure-01.jpg",
+        "alt": "Figure 1",
+        "width": 1200,
+        "height": 700,
+        "afterParagraph": 10
       },
       {
         "src": "/assets/journalism/2020_rookie_qbs/figure-03.jpg",
@@ -19666,6 +19686,13 @@ export const articles: JournalismArticle[] = [
     "contentFile": "compare_nba_eras.md",
     "images": [
       {
+        "src": "/assets/journalism/compare_nba_eras/figure-03.png",
+        "alt": "Figure 3",
+        "width": 1200,
+        "height": 700,
+        "afterParagraph": 12
+      },
+      {
         "src": "/assets/journalism/compare_nba_eras/figure-01.png",
         "alt": "Figure 1",
         "width": 1200,
@@ -19678,13 +19705,6 @@ export const articles: JournalismArticle[] = [
         "width": 1200,
         "height": 700,
         "afterParagraph": 7
-      },
-      {
-        "src": "/assets/journalism/compare_nba_eras/figure-03.png",
-        "alt": "Figure 3",
-        "width": 1200,
-        "height": 700,
-        "afterParagraph": 12
       },
       {
         "src": "/assets/journalism/compare_nba_eras/figure-04.png",
@@ -20859,20 +20879,20 @@ export const articles: JournalismArticle[] = [
     "contentFile": "nba_average_team.md",
     "images": [
       {
-        "src": "/assets/journalism/nba_average_team/figure-01.jpg",
-        "alt": "Figure 1: Average Stats by Position Table",
-        "caption": "Figure 1: Average Stats by Position Table",
-        "width": 1200,
-        "height": 700,
-        "afterParagraph": 10
-      },
-      {
         "src": "/assets/journalism/nba_average_team/figure-02.png",
         "alt": "Figure 2: Average Stats by Position",
         "caption": "Figure 2: Average Stats by Position",
         "width": 1200,
         "height": 700,
         "afterParagraph": 11
+      },
+      {
+        "src": "/assets/journalism/nba_average_team/figure-01.jpg",
+        "alt": "Figure 1: Average Stats by Position Table",
+        "caption": "Figure 1: Average Stats by Position Table",
+        "width": 1200,
+        "height": 700,
+        "afterParagraph": 10
       },
       {
         "src": "/assets/journalism/nba_average_team/figure-03.png",
@@ -21791,6 +21811,14 @@ export const articles: JournalismArticle[] = [
     "contentFile": "olympic_skating_champion.md",
     "images": [
       {
+        "src": "/assets/journalism/olympic_skating_champion/figure-04.png",
+        "alt": "Fig 3: Plot of PCS against TES in 2014 Sochi Olympics Men’s Figure Skating Free Program. The red line is the best fit line. The linear model can be used to predict PCS. The P-value of the variable TES is 0.046 which is smaller than 0.05 suggesting that the variable TES is statistically significant. This model has R^2 value at 0.2387, which is understandably low since there are multiple other factors that might influence one’s PCS, including the performance itself, skaters’ starting order, nationality, etc. But this model tells us that there is a valid positive relationship between PCS and TES.",
+        "caption": "Fig 3: Plot of PCS against TES in 2014 Sochi Olympics Men’s Figure Skating Free Program. The red line is the best fit line. The linear model can be used to predict PCS. The P-value of the variable TES is 0.046 which is smaller than 0.05 suggesting that the variable TES is statistically significant. This model has R^2 value at 0.2387, which is understandably low since there are multiple other factors that might influence one’s PCS, including the performance itself, skaters’ starting order, nationality, etc. But this model tells us that there is a valid positive relationship between PCS and TES.",
+        "width": 1200,
+        "height": 700,
+        "afterParagraph": 11
+      },
+      {
         "src": "/assets/journalism/olympic_skating_champion/figure-01.png",
         "alt": "Figure 1",
         "width": 1200,
@@ -21812,14 +21840,6 @@ export const articles: JournalismArticle[] = [
         "width": 1200,
         "height": 700,
         "afterParagraph": 9
-      },
-      {
-        "src": "/assets/journalism/olympic_skating_champion/figure-04.png",
-        "alt": "Fig 3: Plot of PCS against TES in 2014 Sochi Olympics Men’s Figure Skating Free Program. The red line is the best fit line. The linear model can be used to predict PCS. The P-value of the variable TES is 0.046 which is smaller than 0.05 suggesting that the variable TES is statistically significant. This model has R^2 value at 0.2387, which is understandably low since there are multiple other factors that might influence one’s PCS, including the performance itself, skaters’ starting order, nationality, etc. But this model tells us that there is a valid positive relationship between PCS and TES.",
-        "caption": "Fig 3: Plot of PCS against TES in 2014 Sochi Olympics Men’s Figure Skating Free Program. The red line is the best fit line. The linear model can be used to predict PCS. The P-value of the variable TES is 0.046 which is smaller than 0.05 suggesting that the variable TES is statistically significant. This model has R^2 value at 0.2387, which is understandably low since there are multiple other factors that might influence one’s PCS, including the performance itself, skaters’ starting order, nationality, etc. But this model tells us that there is a valid positive relationship between PCS and TES.",
-        "width": 1200,
-        "height": 700,
-        "afterParagraph": 11
       },
       {
         "src": "/assets/journalism/olympic_skating_champion/figure-05.png",
@@ -22842,19 +22862,19 @@ export const articles: JournalismArticle[] = [
     "contentFile": "modernfullback.md",
     "images": [
       {
-        "src": "/assets/journalism/modernfullback/figure-01.png",
-        "alt": "Figure 1",
-        "width": 1200,
-        "height": 700,
-        "afterParagraph": 7
-      },
-      {
         "src": "/assets/journalism/modernfullback/figure-02.png",
         "alt": "Source: Statsbomb",
         "caption": "Source: Statsbomb",
         "width": 1200,
         "height": 700,
         "afterParagraph": 14
+      },
+      {
+        "src": "/assets/journalism/modernfullback/figure-01.png",
+        "alt": "Figure 1",
+        "width": 1200,
+        "height": 700,
+        "afterParagraph": 7
       },
       {
         "src": "/assets/journalism/modernfullback/figure-03.png",
@@ -22950,6 +22970,13 @@ export const articles: JournalismArticle[] = [
     "contentFile": "freethrow.md",
     "images": [
       {
+        "src": "/assets/journalism/freethrow/figure-06.png",
+        "alt": "Figure 6",
+        "width": 1200,
+        "height": 700,
+        "afterParagraph": 28
+      },
+      {
         "src": "/assets/journalism/freethrow/figure-01.png",
         "alt": "Figure 1",
         "width": 1200,
@@ -22983,13 +23010,6 @@ export const articles: JournalismArticle[] = [
         "width": 1200,
         "height": 700,
         "afterParagraph": 26
-      },
-      {
-        "src": "/assets/journalism/freethrow/figure-06.png",
-        "alt": "Figure 6",
-        "width": 1200,
-        "height": 700,
-        "afterParagraph": 28
       },
       {
         "src": "/assets/journalism/freethrow/figure-07.png",

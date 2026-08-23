@@ -84,7 +84,7 @@
 
 .thumbnailImg {
   object-fit: cover;
-  object-position: center top;
+  object-position: center center;
   transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
   transform: translate3d(0, 0, 0) scale(1);
   -webkit-backface-visibility: hidden;

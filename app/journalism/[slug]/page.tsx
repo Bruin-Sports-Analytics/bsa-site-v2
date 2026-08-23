@@ -341,7 +341,7 @@ export default function JournalismArticlePage({ params }: Props) {
                       <table>
                         <thead>
                           <tr>
-                            {block.columns.map((column, i) => <th key={`${column}-${i}`}>{column}</th>)}
+                            {(block.columns || block.headers || []).map((column, i) => <th key={`${column}-${i}`}>{column}</th>)}
                           </tr>
                         </thead>
                         <tbody>
@@ -362,7 +362,7 @@ export default function JournalismArticlePage({ params }: Props) {
                       <div className={styles.imageContainer}>
                         <Image
                           src={block.src}
-                          alt={block.alt}
+                          alt={block.alt || article.title}
                           width={block.width ?? 1200}
                           height={block.height ?? 760}
                           sizes="(max-width: 860px) 100vw, 860px"
