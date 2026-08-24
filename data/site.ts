@@ -1354,10 +1354,11 @@ export const recruitment = {
   timelineEvents: [
     { date: "Sep 22", title: "EAF", detail: "Enormous Activities Fair - Meet the club and learn about our projects.", status: "Awareness" },
     { date: "TBD", title: "Data Science Showcase", detail: "Learn more about UCLA's data science organizations.", status: "Awareness" },
-    { date: "TBD", title: "Applications Released", detail: "Application form goes live. Check our Slack, Instagram, and email for updates.", status: "Application" },
     { date: "TBD", title: "BSA Info Session", detail: "What research, consulting, and competitions actually look like day to day, plus open Q&A.", status: "Application" },
-    { date: "TBD", title: "Coffee Chats", detail: "Get to know other prospective members and let them learn more about member experiences.", status: "Application" },
+    { date: "TBD", title: "Applications Released", detail: "Application form goes live. Check our Slack, Instagram, and email for updates.", status: "Application" },
     { date: "TBD", title: "Application Deadline", detail: "Applications close; interviews invites are sent out after reviewing submissions.", status: "Application" },
+    {date: "TBD", title: "EDA Workshop", detail: "Learn about the latest tools and techniques in data analysis.", status: "Application" },
+    { date: "TBD", title: "Coffee Chats", detail: "Get to know other prospective members and let them learn more about member experiences.", status: "Application" },
     { date: "TBD", title: "Final Interviews", detail: "In-person interviews where possible with chairs & returning members", status: "Selection" }
   ]
 };
