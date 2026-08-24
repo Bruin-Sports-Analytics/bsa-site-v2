@@ -959,7 +959,7 @@ export const articles: JournalismArticle[] = [
     "contentFile": "can-you-predict-sean-mcvay-s-play-calling-inside-the-mind-of-a-genius.md",
     "images": [
       {
-        "src": "/assets/journalism/can-you-predict-sean-mcvay-s-play-calling-inside-the-mind-of-a-genius/figure-01.png",
+        "src": "/assets/journalism/can-you-predict-sean-mcvay-s-play-calling-inside-the-mind-of-a-genius/figure-02.png",
         "alt": "Figure 1",
         "width": 1200,
         "height": 700,
@@ -1274,7 +1274,7 @@ export const articles: JournalismArticle[] = [
         "afterParagraph": 22
       },
       {
-        "src": "/assets/journalism/nba-hustle/figure-01.png",
+        "src": "/assets/journalism/nba-hustle/figure-02.png",
         "alt": "Figure 1",
         "width": 1200,
         "height": 700,
@@ -2382,7 +2382,7 @@ export const articles: JournalismArticle[] = [
     "contentFile": "nba-load-management-injury.md",
     "images": [
       {
-        "src": "/assets/journalism/nba-load-management-injury/figure-01.png",
+        "src": "/assets/journalism/nba-load-management-injury/figure-07.png",
         "alt": "Figure 1",
         "width": 1200,
         "height": 700,
@@ -2676,7 +2676,7 @@ export const articles: JournalismArticle[] = [
     "contentFile": "predicting-nfl-winner.md",
     "images": [
       {
-        "src": "/assets/journalism/predicting-nfl-winner/figure-01.png",
+        "src": "/assets/journalism/predicting-nfl-winner/figure-03.png",
         "alt": "Source: Towards Ai",
         "caption": "Source: Towards Ai",
         "width": 1200,
@@ -4080,7 +4080,7 @@ export const articles: JournalismArticle[] = [
     "contentFile": "nba-draft-2k-build.md",
     "images": [
       {
-        "src": "/assets/journalism/nba-draft-2k-build/figure-04.png",
+        "src": "/assets/journalism/nba-draft-2k-build/figure-05.png",
         "alt": "Derrick White shot distribution (Source: https://barttorvik.com/playerstat.php?p=Derrick+White) ",
         "caption": "Derrick White shot distribution (Source: https://barttorvik.com/playerstat.php?p=Derrick+White)",
         "width": 1200,
@@ -5986,7 +5986,16 @@ export const articles: JournalismArticle[] = [
     "readTime": 6,
     "summary": "On March 6, 2000, the Los Angeles Lakers and the Los Angeles Clippers matched up in the Staples Center for what seemed to be any other regular season game.  However, it was Shaquille O’Neal’s 28th birthday that day.  To celebrate, Shaq proceeded to drop a career-high 61...",
     "contentFile": "shot-selection-nba-centers.md",
-    "images": []
+    "images": [
+      {
+        "src": "/assets/journalism/shot-selection-nba-centers/figure-01.png",
+        "alt": "Figure 1: Evolution of NBA Center Shot Selection (2004 - 2023)",
+        "caption": "Figure 1: Evolution of NBA Center Shot Selection (2004 - 2023)",
+        "width": 1200,
+        "height": 675,
+        "afterParagraph": 25
+      }
+    ]
   },
   {
     "title": "How does Nikola Jokic power the Nuggets’ Elite Offense?",
@@ -6304,7 +6313,7 @@ export const articles: JournalismArticle[] = [
     "contentFile": "2024-euros-prediction.md",
     "images": [
       {
-        "src": "/assets/journalism/2024-euros-prediction/figure-01.jpg",
+        "src": "/assets/journalism/2024-euros-prediction/figure-03.png",
         "alt": "Figure 1",
         "width": 1200,
         "height": 700,
@@ -8185,7 +8194,7 @@ export const articles: JournalismArticle[] = [
         "afterParagraph": 40
       },
       {
-        "src": "/assets/journalism/test-cricket-new-generation-batters/figure-01.png",
+        "src": "/assets/journalism/test-cricket-new-generation-batters/figure-03.png",
         "alt": "Off spin ball (Source: wikipedia.com)",
         "caption": "Off spin ball (Source: wikipedia.com)",
         "width": 1200,
@@ -9843,7 +9852,7 @@ export const articles: JournalismArticle[] = [
     "contentFile": "home-advantage-in-premier-league.md",
     "images": [
       {
-        "src": "/assets/journalism/home-advantage-in-premier-league/figure-01.png",
+        "src": "/assets/journalism/home-advantage-in-premier-league/figure-07.png",
         "alt": "logo_1_edited.png",
         "caption": "logo_1_edited.png",
         "width": 1200,
@@ -10531,7 +10540,7 @@ export const articles: JournalismArticle[] = [
     "contentFile": "mlb-asian-sensations.md",
     "images": [
       {
-        "src": "/assets/journalism/mlb-asian-sensations/figure-01.png",
+        "src": "/assets/journalism/mlb-asian-sensations/figure-02.png",
         "alt": "Figure 1",
         "width": 1200,
         "height": 700,
@@ -12894,7 +12903,7 @@ export const articles: JournalismArticle[] = [
     "contentFile": "star-usage-analysis.md",
     "images": [
       {
-        "src": "/assets/journalism/star-usage-analysis/figure-01.png",
+        "src": "/assets/journalism/star-usage-analysis/figure-02.png",
         "alt": "Figure 1",
         "width": 1200,
         "height": 700,
@@ -16107,7 +16116,7 @@ export const articles: JournalismArticle[] = [
     "contentFile": "championship_win_shares.md",
     "images": [
       {
-        "src": "/assets/journalism/championship_win_shares/figure-01.png",
+        "src": "/assets/journalism/championship_win_shares/figure-07.png",
         "alt": "logo_1_edited.png",
         "caption": "logo_1_edited.png",
         "width": 1200,
@@ -17211,7 +17220,7 @@ export const articles: JournalismArticle[] = [
     "contentFile": "penalty_shootout.md",
     "images": [
       {
-        "src": "/assets/journalism/penalty_shootout/figure-01.png",
+        "src": "/assets/journalism/penalty_shootout/figure-02.png",
         "alt": "Source: Kaggle",
         "caption": "Source: Kaggle",
         "width": 1200,
@@ -19539,7 +19548,7 @@ export const articles: JournalismArticle[] = [
         "afterParagraph": 49
       },
       {
-        "src": "/assets/journalism/2020_rookie_qbs/figure-01.jpg",
+        "src": "/assets/journalism/2020_rookie_qbs/figure-17.jpg",
         "alt": "Figure 1",
         "width": 1200,
         "height": 700,
@@ -22229,7 +22238,7 @@ export const articles: JournalismArticle[] = [
     "contentFile": "modernreceivers.md",
     "images": [
       {
-        "src": "/assets/journalism/modernreceivers/figure-01.png",
+        "src": "/assets/journalism/modernreceivers/figure-03.png",
         "alt": "Figure 1",
         "width": 1200,
         "height": 700,
@@ -22434,7 +22443,7 @@ export const articles: JournalismArticle[] = [
     "contentFile": "michaelphelps.md",
     "images": [
       {
-        "src": "/assets/journalism/michaelphelps/figure-01.png",
+        "src": "/assets/journalism/michaelphelps/figure-02.png",
         "alt": "Figure 1",
         "width": 1200,
         "height": 700,
@@ -22554,7 +22563,7 @@ export const articles: JournalismArticle[] = [
     "contentFile": "kyleshanahan.md",
     "images": [
       {
-        "src": "/assets/journalism/kyleshanahan/figure-01.jpg",
+        "src": "/assets/journalism/kyleshanahan/figure-04.jpg",
         "alt": "Figure 1",
         "width": 1200,
         "height": 700,
@@ -23160,7 +23169,7 @@ export const articles: JournalismArticle[] = [
     "contentFile": "atptour.md",
     "images": [
       {
-        "src": "/assets/journalism/atptour/figure-01.png",
+        "src": "/assets/journalism/atptour/figure-07.png",
         "alt": "logo_1_edited.png",
         "caption": "logo_1_edited.png",
         "width": 1200,
@@ -23454,7 +23463,7 @@ export const articles: JournalismArticle[] = [
     "contentFile": "andy_murray.md",
     "images": [
       {
-        "src": "/assets/journalism/andy_murray/figure-01.png",
+        "src": "/assets/journalism/andy_murray/figure-03.png",
         "alt": "Figure 1",
         "width": 1200,
         "height": 700,
