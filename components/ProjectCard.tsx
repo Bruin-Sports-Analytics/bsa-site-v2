@@ -95,6 +95,9 @@ export function ProjectCard({ project, active, onActivate, onDeactivate }: Props
                 <span className="tag" key={tech}>{tech}</span>
               ))}
             </div>
+            <div className={styles.classificationRow}>
+              <span className={styles.classificationBadge}>{project.projectType}</span>
+            </div>
             <div className={styles.action}>
               {isPrivate ? (
                 <span className={styles.private}><LockKeyhole size={14} aria-hidden /> Approved summary only</span>

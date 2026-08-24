@@ -85,6 +85,34 @@
   overflow: hidden;
 }
 
+.classificationRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.classificationBadge {
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  padding: 3px 8px;
+  border-radius: var(--radius-sm);
+  border: 1px solid rgba(255, 209, 0, 0.35);
+  background: rgba(255, 209, 0, 0.10);
+  color: var(--ucla-gold);
+  font-family: var(--font-mono), monospace;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+:global(html[data-theme="light"]) .classificationBadge {
+  border: 1px solid rgba(39, 116, 174, 0.40);
+  background: rgba(39, 116, 174, 0.08);
+  color: #1a6cb0;
+}
+
 .action {
   margin-top: auto;
   display: flex;

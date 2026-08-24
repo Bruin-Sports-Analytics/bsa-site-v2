@@ -30,7 +30,6 @@ export function ProjectVisual({ project }: { project: Project }) {
         </div>
       )}
       <div className={styles.overlay} aria-hidden />
-      <span className={styles.badge}>{project.projectType}</span>
     </div>
   );
 }
