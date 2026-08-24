@@ -1458,6 +1458,7 @@ export const outcomes = [
   { name: "PFF", category: "Sports Analytics", logo: "/assets/logos/pff.png", logoLight: "/assets/logos/modes/pff-light.svg", logoDark: "/assets/logos/modes/pff-dark.svg", logoScale: 1.8, approvedForDisplay: true },
   // Technology
   { name: "Google", category: "Technology", logo: "/assets/logos/google.svg", logoLight: "/assets/logos/modes/google-light.svg", logoDark: "/assets/logos/modes/google-dark.svg", approvedForDisplay: true, prestige: true },
+  { name: "Google DeepMind", category: "AI", logo: "/assets/logos/google-deepmind.png", approvedForDisplay: true, prestige: true },
   { name: "Meta", category: "Technology", logo: "/assets/logos/meta.svg", logoLight: "/assets/logos/modes/meta-light.svg", logoDark: "/assets/logos/modes/meta-dark.svg", logoScale: 1.05, approvedForDisplay: true, prestige: true },
   { name: "Amazon", category: "Technology", logo: "/assets/logos/amazon.svg", logoLight: "/assets/logos/modes/amazon-light.svg", logoDark: "/assets/logos/modes/amazon-dark.svg", approvedForDisplay: true, prestige: true },
   { name: "Oracle", category: "Technology", logo: "/assets/logos/oracle.svg", logoLight: "/assets/logos/modes/oracle-light.svg", logoDark: "/assets/logos/modes/oracle-dark.svg", approvedForDisplay: true, prestige: true },
@@ -1489,6 +1490,7 @@ export const outcomes = [
   { name: "EY-Parthenon", category: "Consulting", logo: "/assets/logos/ey-parthenon.svg", logoLight: "/assets/logos/modes/ey-parthenon-light.svg", logoDark: "/assets/logos/modes/ey-parthenon-dark.svg", approvedForDisplay: true },
   // Schools (last)
   { name: "UCLA Anderson", category: "Graduate Program", logo: "/assets/logos/ucla-anderson.png", logoLight: "/assets/logos/modes/ucla-anderson-light.svg", logoDark: "/assets/logos/modes/ucla-anderson-dark.svg", logoScale: 1.3, approvedForDisplay: true },
+  { name: "Stanford", category: "University", logo: "/assets/logos/stanford.png", logoScale: 1.35, approvedForDisplay: true, prestige: true },
   { name: "MIT", category: "University", logo: "/assets/logos/mit.svg", logoLight: "/assets/logos/modes/mit-light.svg", logoDark: "/assets/logos/modes/mit-dark.svg", approvedForDisplay: true, prestige: true },
   { name: "Harvard", category: "University", logo: "/assets/logos/harvard.svg", logoLight: "/assets/logos/modes/harvard-light.svg", logoDark: "/assets/logos/modes/harvard-dark.svg", approvedForDisplay: true, prestige: true },
   { name: "Columbia", category: "University", logo: "/assets/logos/columbia.png", logoLight: "/assets/logos/modes/columbia-light.svg", logoDark: "/assets/logos/modes/columbia-dark.svg", approvedForDisplay: true },
