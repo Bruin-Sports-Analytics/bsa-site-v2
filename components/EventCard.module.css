@@ -48,13 +48,13 @@
 }
 
 :global(html[data-theme="light"]) .soonestCard {
-  border: 2px solid #2774ae !important;
-  box-shadow: 0 0 24px rgba(39, 116, 174, 0.20), 0 4px 20px rgba(16, 42, 73, 0.08);
+  border: 2px solid #0c283b !important;
+  box-shadow: 0 0 24px rgba(12, 40, 59, 0.18), 0 4px 20px rgba(16, 42, 73, 0.08);
 }
 
 :global(html[data-theme="light"]) .soonestCard:hover {
-  border-color: #1a6cb0 !important;
-  box-shadow: 0 0 32px rgba(39, 116, 174, 0.30), 0 8px 28px rgba(16, 42, 73, 0.12);
+  border-color: #061622 !important;
+  box-shadow: 0 0 32px rgba(12, 40, 59, 0.28), 0 8px 28px rgba(16, 42, 73, 0.12);
 }
 
 .soonestBadge {
@@ -74,9 +74,9 @@
 }
 
 :global(html[data-theme="light"]) .soonestBadge {
-  background: rgba(39, 116, 174, 0.12);
-  border: 1px solid rgba(39, 116, 174, 0.50);
-  color: #1a6cb0;
+  background: rgba(12, 40, 59, 0.08);
+  border: 1px solid rgba(12, 40, 59, 0.45);
+  color: #0c283b;
 }
 
 .card h3 {

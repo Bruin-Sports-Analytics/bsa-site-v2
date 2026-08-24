@@ -21,7 +21,7 @@ export function EventCard({ event, isSoonest = false }: Props) {
     >
       <div className={styles.headerRow}>
         <span className={styles.type}>{event.type}</span>
-        {isSoonest && <span className={styles.soonestBadge}>Soonest Event</span>}
+        {isSoonest && <span className={styles.soonestBadge}>Next Event</span>}
       </div>
       <h3>{event.title}</h3>
       <p>{event.description}</p>
