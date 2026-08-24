@@ -759,8 +759,8 @@
   box-shadow: 0 4px 14px rgba(39, 116, 174, 0.12) !important;
 }
 
-:global(html[data-theme="light"]) .home :global(.card),
-:global(html[data-theme="light"]) .home :global(.glass) {
+:global(html[data-theme="light"]) .home :global(.card:not([class*="soonestCard"])),
+:global(html[data-theme="light"]) .home :global(.glass:not([class*="soonestCard"])) {
   background: #ffffff !important;
   background-color: #ffffff !important;
   border-color: rgba(34, 86, 124, 0.18) !important;
@@ -769,8 +769,8 @@
   backdrop-filter: none !important;
 }
 
-:global(html[data-theme="light"]) .home :global(.card:hover),
-:global(html[data-theme="light"]) .home :global(.glass--interactive:hover) {
+:global(html[data-theme="light"]) .home :global(.card:not([class*="soonestCard"]):hover),
+:global(html[data-theme="light"]) .home :global(.glass--interactive:not([class*="soonestCard"]):hover) {
   background: #f7fbff !important;
   background-color: #f7fbff !important;
   border-color: rgba(39, 116, 174, 0.35) !important;

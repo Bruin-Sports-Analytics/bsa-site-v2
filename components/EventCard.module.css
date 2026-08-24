@@ -38,23 +38,30 @@
 /* Soonest / Highlighted Card */
 .soonestCard {
   border: 2px solid var(--ucla-gold) !important;
-  box-shadow: 0 0 24px rgba(255, 209, 0, 0.22), var(--glass-shadow-sm);
+  box-shadow: 0 0 24px rgba(255, 209, 0, 0.22), var(--glass-shadow-sm) !important;
 }
 
 .soonestCard:hover {
   border-color: #ffe04d !important;
-  box-shadow: 0 0 32px rgba(255, 209, 0, 0.35), var(--glass-shadow-md);
+  box-shadow: 0 0 32px rgba(255, 209, 0, 0.35), var(--glass-shadow-md) !important;
   transform: translateY(-2px);
 }
 
-:global(html[data-theme="light"]) .soonestCard {
-  border: 2px solid #2774ae !important;
-  box-shadow: 0 0 24px rgba(39, 116, 174, 0.22), 0 4px 20px rgba(16, 42, 73, 0.08);
+:global(html[data-theme="light"]) .soonestCard,
+:global(html[data-theme="light"]) :global(.glass).soonestCard,
+:global(html[data-theme="light"]) article.soonestCard {
+  border: 2px solid #0d4782 !important;
+  border-color: #0d4782 !important;
+  background: #ffffff !important;
+  background-color: #ffffff !important;
+  box-shadow: 0 0 24px rgba(13, 71, 130, 0.20), 0 4px 20px rgba(16, 42, 73, 0.10) !important;
 }
 
-:global(html[data-theme="light"]) .soonestCard:hover {
-  border-color: #1b6399 !important;
-  box-shadow: 0 0 32px rgba(39, 116, 174, 0.32), 0 8px 28px rgba(16, 42, 73, 0.12);
+:global(html[data-theme="light"]) .soonestCard:hover,
+:global(html[data-theme="light"]) :global(.glass).soonestCard:hover,
+:global(html[data-theme="light"]) article.soonestCard:hover {
+  border-color: #062344 !important;
+  box-shadow: 0 0 32px rgba(13, 71, 130, 0.30), 0 8px 28px rgba(16, 42, 73, 0.15) !important;
 }
 
 .soonestBadge {
@@ -74,9 +81,9 @@
 }
 
 :global(html[data-theme="light"]) .soonestBadge {
-  background: rgba(39, 116, 174, 0.10);
-  border: 1px solid rgba(39, 116, 174, 0.50);
-  color: #1a6cb0;
+  background: rgba(13, 71, 130, 0.08);
+  border: 1px solid rgba(13, 71, 130, 0.50);
+  color: #0d4782;
 }
 
 .card h3 {
