@@ -2,6 +2,7 @@
 
 import { useState, useRef } from "react";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { ArrowUpRight, LockKeyhole } from "lucide-react";
 import { GlassSurface } from "@/components/ui/GlassSurface";
 import type { Project } from "@/data/site";
@@ -17,6 +18,7 @@ type Props = {
 };
 
 export function ProjectCard({ project, active, onActivate, onDeactivate }: Props) {
+  const router = useRouter();
   const controlled = active !== undefined;
   const [internalExpanded, setInternalExpanded] = useState(false);
   const [internalVisible, setInternalVisible] = useState(false);
@@ -44,7 +46,7 @@ export function ProjectCard({ project, active, onActivate, onDeactivate }: Props
 
     // Navigate to project page if not private
     if (!isPrivate) {
-      window.location.href = `/projects/${project.slug}`;
+      router.push(`/projects/${project.slug}`);
       return;
     }
 
