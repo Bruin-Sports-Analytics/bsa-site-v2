@@ -26,7 +26,7 @@ export default function JournalismPage() {
           </div>
           <div className={styles.heroRight}>
             <div className={styles.chairGrid}>
-              {djChairs.map((m) => <MemberCard member={m} key={m.slug} />)}
+              {djChairs.map((m) => <MemberCard member={m} key={m.slug} priority />)}
             </div>
             <div style={{ width: "100%", display: "flex", justifyContent: "center" }}>
               <ViewResourcesButton resources={djResources} />

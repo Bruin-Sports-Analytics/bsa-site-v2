@@ -22,9 +22,10 @@ function getSportTone(sport: string) {
 type Props = {
   article: JournalismArticle;
   featured?: boolean;
+  priority?: boolean;
 };
 
-export function ArticleCard({ article, featured = false }: Props) {
+export function ArticleCard({ article, featured = false, priority = false }: Props) {
   const tone = getSportTone(article.sport);
   const readHref = article.paperUrl || article.content?.length || article.contentFile ? `/journalism/${slugify(article.title)}` : null;
   const thumbnailImg = article.images && article.images.length > 0 ? article.images[0] : null;
@@ -43,6 +44,8 @@ export function ArticleCard({ article, featured = false }: Props) {
             fill
             sizes="(max-width: 600px) 100vw, (max-width: 980px) 50vw, 33vw"
             className={styles.thumbnailImg}
+            priority={priority}
+            loading={priority ? "eager" : "lazy"}
           />
         </div>
       ) : null}

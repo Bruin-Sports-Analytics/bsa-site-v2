@@ -1,0 +1,6048 @@
+// Generated lightweight article summaries for JournalismExplorer
+import type { JournalismArticle } from "./journalism";
+
+export const articleSummaries: JournalismArticle[] = [
+  {
+    "title": "Are the \"Uncs\" Holding Back the NBA?",
+    "authors": [
+      "Yuri Jung",
+      "Evana Sharma",
+      "Chloe Lee"
+    ],
+    "date": "Mar 27, 2026",
+    "year": 2026,
+    "sport": "Basketball",
+    "readTime": 9,
+    "summary": "Over the recent decades, the National Basketball Association (NBA) has evolved in its pace, playing style, and athlete development. NBA team rosters are built with players of different ages, ranging from rookies to veterans, and each group brings different skills to the team....",
+    "contentFile": "are-the-uncs-holding-back-the-nba.md",
+    "images": [
+      {
+        "src": "/assets/journalism/are-the-uncs-holding-back-the-nba/figure-01.png",
+        "alt": "Figure 1: Average Team Age vs. Win Percentage by Season (2021 - 2024)"
+      }
+    ]
+  },
+  {
+    "title": "The Credit Goes to the Wrong People",
+    "authors": [
+      "Van Avanesian",
+      "Ricky Cai",
+      "Jayden Kim",
+      "Justin Herr"
+    ],
+    "date": "Mar 27, 2026",
+    "year": 2026,
+    "sport": "General",
+    "readTime": 12,
+    "summary": "WESTERN CONFERENCE TOP 8 · TWO-SEASON EFFICIENCY ANALYSIS Kawhi Leonard played 68 games last season. He averaged 23.5 points. He was the best player on a team that won 50 games. And the dominant frame around him, in every national conversation, was durability: injury history,...",
+    "contentFile": "the-credit-goes-to-the-wrong-people.md",
+    "images": [
+      {
+        "src": "/assets/journalism/the-credit-goes-to-the-wrong-people/figure-01.jpg",
+        "alt": "Figure 1: Efficiency Rankings (2024 - 25)"
+      }
+    ]
+  },
+  {
+    "title": "Which Quarterbacks have been Historically Great against the Blitz?",
+    "authors": [
+      "Devon Yu",
+      "Nathan Yee",
+      "Ethan Chan",
+      "Evan Mock"
+    ],
+    "date": "Mar 27, 2026",
+    "year": 2026,
+    "sport": "Football",
+    "readTime": 16,
+    "summary": "In the modern NFL, play-calling success on both sides of the ball is often decided within seconds of the ball being snapped. For a defensive coordinator, the blitz is the ultimate gamble. Bringing an extra pass rusher offers a chance to blow up the play early, but risks...",
+    "contentFile": "which-quarterbacks-have-been-historically-great-against-the-blitz.md",
+    "images": [
+      {
+        "src": "/assets/journalism/which-quarterbacks-have-been-historically-great-against-the-blitz/figure-01.png",
+        "alt": "Figure 1: QB Processing Efficiency vs. The Blitz (2016 - 2024)"
+      }
+    ]
+  },
+  {
+    "title": "Beyond the Standings: Using Data to Predict the NBA Playoff Race",
+    "authors": [
+      "Aarnav Dharia",
+      "Aditya Malhotra",
+      "Samir Joshi"
+    ],
+    "date": "Mar 27, 2026",
+    "year": 2026,
+    "sport": "Basketball",
+    "readTime": 6,
+    "summary": "With about 20 games left in the 2025–26 NBA regular season, the standings and data reveal contrary tales. More specifically, two teams have distinguished themselves from the rest of the competition, and several others are winning games their numbers say they shouldn't. Among...",
+    "contentFile": "beyond-the-standings-using-data-to-predict-the-nba-playoff-race.md",
+    "images": [
+      {
+        "src": "/assets/journalism/beyond-the-standings-using-data-to-predict-the-nba-playoff-race/figure-01.png",
+        "alt": "Figure 1: Eastern Conference Seeding Trajectory for the top 8 seeds (as of March 2026)"
+      }
+    ]
+  },
+  {
+    "title": "As the Bar Rises, Scores Fall: Inside the New Normal of Olympic Gymnastics",
+    "authors": [
+      "Ella Hinkle",
+      "Taylor Fenton"
+    ],
+    "date": "Jan 2, 2026",
+    "year": 2026,
+    "sport": "Gymnastics",
+    "readTime": 6,
+    "summary": "Here at UCLA, all it takes is a trip to Pauley Pavilion to see an Olympic athlete compete. Watching Jordan Chiles’ thrilling routines and dominant performance is exhilarating, and the many perfect “10s” (or scores very close) she has put up indicate judges are impressed, too....",
+    "contentFile": "as-the-bar-rises-scores-fall-inside-the-new-normal-of-olympic-gymnastics.md",
+    "images": [
+      {
+        "src": "/assets/journalism/as-the-bar-rises-scores-fall-inside-the-new-normal-of-olympic-gymnastics/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "The Master Foul Baiters of the NBA",
+    "authors": [
+      "Nicholas Shinghal",
+      "Colin Granger",
+      "Moulik Chatterjee"
+    ],
+    "date": "Jan 1, 2026",
+    "year": 2026,
+    "sport": "Basketball",
+    "readTime": 16,
+    "summary": "Controversy surrounding “foul-baiting” in the NBA perennially permeates discourse around the Association, especially in the late spring, when MVP awards are allocated and playoff competition stiffens. With the increased defensive intensity of playoff basketball and the lower...",
+    "contentFile": "the-master-foul-baiters-of-the-nba.md",
+    "images": [
+      {
+        "src": "/assets/journalism/the-master-foul-baiters-of-the-nba/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "Why are the NBA ratings down?",
+    "authors": [
+      "Charlie Wang"
+    ],
+    "date": "Jan 1, 2026",
+    "year": 2026,
+    "sport": "Basketball",
+    "readTime": 16,
+    "summary": "The NBA, home to over 500 elite players across 30 teams, offers an 82-game regular season followed by a high-stakes playoff run. In recent decades, fans were captivated by iconic showdowns—LeBron vs. Curry, Kobe vs. the Celtics. But recently, that excitement has faded. Fans...",
+    "contentFile": "why-are-the-nba-ratings-down.md",
+    "images": [
+      {
+        "src": "/assets/journalism/why-are-the-nba-ratings-down/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "Predicting the 2025 NFL Draft Class",
+    "authors": [
+      "Jared Fong",
+      "Harrison Jones"
+    ],
+    "date": "Dec 31, 2025",
+    "year": 2025,
+    "sport": "Football",
+    "readTime": 6,
+    "summary": "Predicting the success of college prospects in the NFL has been a difficult task for professional scouts and league analysts, and a perfect formula for evaluating talent has yet to be created. However, as there has become an even higher emphasis set on data analytics within...",
+    "contentFile": "predicting-the-2025-nfl-draft-class.md",
+    "images": [
+      {
+        "src": "/assets/journalism/predicting-the-2025-nfl-draft-class/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "Where Do Professional Athletes Come From?",
+    "authors": [
+      "Anika Soitkar",
+      "Elly Goan"
+    ],
+    "date": "Dec 30, 2025",
+    "year": 2025,
+    "sport": "Basketball",
+    "readTime": 6,
+    "summary": "As sports are a very prevalent aspect in a child's upbringing it has come to wonder whether a child's hometown has an impact on their probability of becoming a professional athlete. This sports article looks into the frequency of professional athletes based on their hometown...",
+    "contentFile": "where-do-professional-athletes-come-from.md",
+    "images": [
+      {
+        "src": "/assets/journalism/where-do-professional-athletes-come-from/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "Fifth Set Factors: What determines a team’s success in close NCAA D1 Men’s Volleyball matches?",
+    "authors": [
+      "Kailani Hoang",
+      "Lila Midyett"
+    ],
+    "date": "Dec 29, 2025",
+    "year": 2025,
+    "sport": "Volleyball",
+    "readTime": 5,
+    "summary": "NCAA D1 Men’s Volleyball is a growing sport, attracting greater audiences every season. Collegiate volleyball matches consist of a best-of-five sets. Teams must win 3 sets to win the match, with sets going to 25 points, except for fifth sets, which are played to 15. In these...",
+    "contentFile": "fifth-set-factors-what-determines-a-team-s-success-in-close-ncaa-d1-men-s-volleyball-matches.md",
+    "images": [
+      {
+        "src": "/assets/journalism/fifth-set-factors-what-determines-a-team-s-success-in-close-ncaa-d1-men-s-volleyball-matches/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "A Portal to Power: Has the Transfer Portal in the NIL Era Made NCAA Men’s Basketball More Top-Heavy?",
+    "authors": [
+      "Kevin Li",
+      "Jason Cheung"
+    ],
+    "date": "Dec 28, 2025",
+    "year": 2025,
+    "sport": "Basketball",
+    "readTime": 9,
+    "summary": "By Kevin Li and Jason Cheung Over the past few years, the landscape of college basketball has shifted dramatically. Since the NCAA implemented the one-time transfer rule and the Name, Image, and Likeness (NIL) era began in July 2021, student-athletes have gained unprecedented...",
+    "contentFile": "a-portal-to-power-has-the-transfer-portal-in-the-nil-era-made-ncaa-men-s-basketball-more-top-heavy.md",
+    "images": [
+      {
+        "src": "/assets/journalism/a-portal-to-power-has-the-transfer-portal-in-the-nil-era-made-ncaa-men-s-basketball-more-top-heavy/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "Who Shows More Consistency Across Rounds in Women's Gymnastics?",
+    "authors": [
+      "Maya Thompson",
+      "Christina Uong",
+      "Nicole Chan",
+      "Rachel Choi"
+    ],
+    "date": "Dec 27, 2025",
+    "year": 2025,
+    "sport": "Gymnastics",
+    "readTime": 7,
+    "summary": "In elite women's gymnastics, athletes typically compete either as all-around gymnasts, participating in all four apparatus events, or as specialists, focusing on excelling in one or two apparatuses. In this article, we explore how these two competitive pathways influence...",
+    "contentFile": "who-shows-more-consistency-across-rounds-in-women-s-gymnastics.md",
+    "images": [
+      {
+        "src": "/assets/journalism/who-shows-more-consistency-across-rounds-in-women-s-gymnastics/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "Behind the Board: A Statistical Deep Dive into NBA Draft Performance",
+    "authors": [
+      "Lucas Pichardo"
+    ],
+    "date": "Dec 26, 2025",
+    "year": 2025,
+    "sport": "Basketball",
+    "readTime": 9,
+    "summary": "The NBA infamously played a Taco Bell commercial during the Denver Nuggets’ selection of Nikola Jokic with the 41st overall pick in the 2013. The Washington Wizards called Tyrese Haliburton on draft night in 2020 to tell him they would select him with the 9th overall pick,...",
+    "contentFile": "behind-the-board-a-statistical-deep-dive-into-nba-draft-performance.md",
+    "images": [
+      {
+        "src": "/assets/journalism/behind-the-board-a-statistical-deep-dive-into-nba-draft-performance/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "Can You Predict Sean McVay's Play Calling? Inside the Mind of a Genius",
+    "authors": [
+      "Raja Kavasseri",
+      "Ryan Ralph",
+      "Tony Lomeli"
+    ],
+    "date": "Dec 25, 2025",
+    "year": 2025,
+    "sport": "Football",
+    "readTime": 8,
+    "summary": "Few roles in football are as scrutinized—or as celebrated—as that of the play caller, and the NFL has seen its share of legendary minds orchestrating games like grandmasters. From the great Bill Belichick to the unpredictable Andy Reid, great play callers have shaped eras,...",
+    "contentFile": "can-you-predict-sean-mcvay-s-play-calling-inside-the-mind-of-a-genius.md",
+    "images": [
+      {
+        "src": "/assets/journalism/can-you-predict-sean-mcvay-s-play-calling-inside-the-mind-of-a-genius/figure-02.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "Do Bigger Pockets Lead to Greater Success?",
+    "authors": [
+      "Shayne Gangle",
+      "Danny Lenney",
+      "Eddie Mendel"
+    ],
+    "date": "Dec 24, 2025",
+    "year": 2025,
+    "sport": "Basketball",
+    "readTime": 10,
+    "summary": "College basketball is in the midst of a transformation. The NCAA’s introduction of the transfer portal in 2018 gave players more control over their careers, making it easier to move from team to team with little consequence. Then, in 2021, the introduction of Name, Image, and...",
+    "contentFile": "do-bigger-pockets-lead-to-greater-success.md",
+    "images": [
+      {
+        "src": "/assets/journalism/do-bigger-pockets-lead-to-greater-success/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "Evaluating NFL Kicker Performance",
+    "authors": [
+      "Sam Lieberman",
+      "Bethany Kim"
+    ],
+    "date": "Apr 8, 2025",
+    "year": 2025,
+    "sport": "Football",
+    "readTime": 13,
+    "summary": "Kickers are among the most overlooked, scrutinized, and peculiar players in the NFL. Yet, the outcome of a game often comes down to execution on special teams. This raises a key question of how we should judge a kicker’s performance in terms of contribution towards team...",
+    "contentFile": "evaluating-nfl-kicker-performance.md",
+    "images": [
+      {
+        "src": "/assets/journalism/evaluating-nfl-kicker-performance/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "What We’re Not Measuring: Reimagining Analytics in Water Polo",
+    "authors": [
+      "Ian Turner"
+    ],
+    "date": "Apr 6, 2025",
+    "year": 2025,
+    "sport": "Basketball",
+    "readTime": 14,
+    "summary": "Sports analytics is limited by what data can be recorded during a game. But as technology has advanced, so has the ability to find data in hard to reach places. For example, in basketball, defense had been a hard thing to measure - as the only defensive data recorded was...",
+    "contentFile": "analytics-in-water-polo.md",
+    "images": [
+      {
+        "src": "/assets/journalism/analytics-in-water-polo/figure-01.jpg",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "Is the traditional pocket passer dead? : An in-depth analysis",
+    "authors": [
+      "Brandon Lim",
+      "Ethan Chan",
+      "Nathan Yee",
+      "Devon Yu"
+    ],
+    "date": "Apr 6, 2025",
+    "year": 2025,
+    "sport": "Football",
+    "readTime": 6,
+    "summary": "The “pocket passer” refers to a quarterback who excels from throwing behind the offensive line, relying on their accuracy and strong decision-making abilities rather than mobility. Historically, the traditional quarterback has been modeled around the pocket passer archetype,...",
+    "contentFile": "pocket-passer.md",
+    "images": [
+      {
+        "src": "/assets/journalism/pocket-passer/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "NBA Hustle: A Deep Dive",
+    "authors": [
+      "Grant Boydell",
+      "Lucas Pichardo"
+    ],
+    "date": "Apr 6, 2025",
+    "year": 2025,
+    "sport": "Basketball",
+    "readTime": 15,
+    "summary": "While basketball coaches preach a variety of different concepts, one is consistently harped on at all levels: hustle. Coaches love players that “do the little things”, such as playing hard defense, boxing out, and grabbing loose balls. Unfortunately, players that hustle in...",
+    "contentFile": "nba-hustle.md",
+    "images": [
+      {
+        "src": "/assets/journalism/nba-hustle/figure-02.png",
+        "alt": "Figure 2"
+      }
+    ]
+  },
+  {
+    "title": "Hidden Gems or Long Shots?",
+    "authors": [
+      "Philbert Fan",
+      "Naman Satija",
+      "Stanley Xu"
+    ],
+    "date": "Apr 6, 2025",
+    "year": 2025,
+    "sport": "Basketball",
+    "readTime": 8,
+    "summary": "The National Basketball Association (NBA) draft is an annual event where teams select eligible players to join their rosters. Among the pool of talents, certain NBA teams have drafted prodigies that have defined dynasties—take, for example, the drafting of Tim Duncan by the...",
+    "contentFile": "hidden-gems-long-shots.md",
+    "images": [
+      {
+        "src": "/assets/journalism/hidden-gems-long-shots/figure-01.png",
+        "alt": "Figure 2: Number of Successful Players in Each Round"
+      }
+    ]
+  },
+  {
+    "title": "Analyzing the New-Look NFL Kickoff",
+    "authors": [
+      "Michael Zheng",
+      "Michael Ji"
+    ],
+    "date": "Apr 6, 2025",
+    "year": 2025,
+    "sport": "Football",
+    "readTime": 9,
+    "summary": "In an effort to increase player safety and enhance game excitement, the NFL introduced a new set of kickoff rules for the 2024 season. Per the NFL rulebook, the major changes include: All players on the kicking team, except the kicker, must line up with one foot on the...",
+    "contentFile": "new-look-nfl-kickoff.md",
+    "images": [
+      {
+        "src": "/assets/journalism/new-look-nfl-kickoff/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "Saquon Crushed the Records. Are Running Backs “Back?”: An Analysis of the Prevalence and Effectiveness of Running-Back-By-Committee in the NFL",
+    "authors": [
+      "Nicholas Shinghal",
+      "Colin Granger",
+      "Moulik Chatterjee"
+    ],
+    "date": "Apr 3, 2025",
+    "year": 2025,
+    "sport": "Football",
+    "readTime": 18,
+    "summary": "Saquon Barkley’s dominant 2024-25 NFL season has turned heads and significantly changed the discourse surrounding the running back position at the professional level. His season, alongside the campaigns of other ball-carriers including Derrick Henry and Josh Jacobs, has in...",
+    "contentFile": "prevalence-and-effectiveness-running-back.md",
+    "images": [
+      {
+        "src": "/assets/journalism/prevalence-and-effectiveness-running-back/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "How does Back to Backs impact the NBA?",
+    "authors": [
+      "Jared Fong",
+      "Shawn Reznikov",
+      "Harrison Jones"
+    ],
+    "date": "Apr 3, 2025",
+    "year": 2025,
+    "sport": "Basketball",
+    "readTime": 8,
+    "summary": "Across all professional sports leagues, the National Basketball Association is notorious for demanding one of the more backbreaking schedules, requiring its teams to play in an 82-game regular season over just 6 months. Because of the large number of games played in a...",
+    "contentFile": "how-does-back-to-backs-impact-the-nba.md",
+    "images": [
+      {
+        "src": "/assets/journalism/how-does-back-to-backs-impact-the-nba/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "Superstar Duos vs. Big Threes: Which Formation is More Effective in Winning NBA Championships?",
+    "authors": [
+      "Charlie Wang"
+    ],
+    "date": "Apr 2, 2025",
+    "year": 2025,
+    "sport": "Basketball",
+    "readTime": 7,
+    "summary": "Throughout NBA history, teams have done everything they can to win the elusive NBA championship. Whether it’s tanking for a possible championship in the future, reworking the front office by hiring a new general manager, or reconstructing the roster to a more win-now...",
+    "contentFile": "superstar-duos-vs-big-threes.md",
+    "images": [
+      {
+        "src": "/assets/journalism/superstar-duos-vs-big-threes/figure-03.png",
+        "alt": "Figure 3"
+      }
+    ]
+  },
+  {
+    "title": "Beyond the Arc: How Three-Point Shooting Shapes—But Doesn’t Dictate—NBA Playoff Success",
+    "authors": [
+      "Allison Seteono",
+      "Chloe Sun"
+    ],
+    "date": "Apr 2, 2025",
+    "year": 2025,
+    "sport": "Basketball",
+    "readTime": 6,
+    "summary": "The modern NBA is a game of spacing, shooting, and efficiency, where the three-point shot has revolutionized how teams approach success. From the dominance of the Golden State Warriors to the rise of analytically driven offenses, three-point shooting has become a defining...",
+    "contentFile": "arc-three-point-shooting-shapes.md",
+    "images": [
+      {
+        "src": "/assets/journalism/arc-three-point-shooting-shapes/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "World Chess Championship 2024: How one mistake decided a world champion",
+    "authors": [
+      "Billy Peir"
+    ],
+    "date": "Apr 2, 2025",
+    "year": 2025,
+    "sport": "General",
+    "readTime": 15,
+    "summary": "The 2024 World Chess Championship, held from November 25 to December 12 in Singapore, Was one of the most exciting world chess championships in recent history. The challenger, Gukesh Dommaraju, is a young indian prodigy who won the fabled Candidates, beating out other top...",
+    "contentFile": "world-chess-championship-2024.md",
+    "images": [
+      {
+        "src": "/assets/journalism/world-chess-championship-2024/figure-01.png",
+        "alt": "The French Defense"
+      }
+    ]
+  },
+  {
+    "title": "Does Height Equal Victory in Volleyball? Analyzing the VNL to Uncover the Role of Height in Team Success",
+    "authors": [
+      "Selina Cheng",
+      "Emery Lee",
+      "Anika Malapati",
+      "Joshua Park"
+    ],
+    "date": "Apr 1, 2025",
+    "year": 2025,
+    "sport": "Basketball",
+    "readTime": 7,
+    "summary": "It’s no secret that height is an athletic advantage across numerous sports—towering professional and college basketball, football, water polo, and volleyball athletes bear witness. But at the professional or college level when everyone is relatively tall, how much does height...",
+    "contentFile": "height-importance-volleyball.md",
+    "images": [
+      {
+        "src": "/assets/journalism/height-importance-volleyball/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "Resilience on Return: Hyeon Chung’s Journey Back to the Top of the ATP Rankings",
+    "authors": [
+      "Bethany Kim",
+      "Rose Bonhomme",
+      "Faith Satrya",
+      "Edin Le"
+    ],
+    "date": "Jan 21, 2025",
+    "year": 2025,
+    "sport": "Tennis",
+    "readTime": 9,
+    "summary": "Hyeon Chung, a rising tennis star from South Korea, captured the world’s attention during his run at the 2018 Australian Open. His stunning performance all the way until the semifinals competing against Roger Federer, where he even defeated tennis legends like Novak Djokovic,...",
+    "contentFile": "hyeon-chung-comeback.md",
+    "images": [
+      {
+        "src": "/assets/journalism/hyeon-chung-comeback/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "Which fighter in the UFC FeatherWeight has the hardest “chin”?",
+    "authors": [
+      "Jaewook Cho"
+    ],
+    "date": "Jan 21, 2025",
+    "year": 2025,
+    "sport": "General",
+    "readTime": 5,
+    "summary": "Max Holloway, known to be the most resilient fighter in the Featherweight division, recently got knocked out by the undefeated champion Illia Topuria in the UFC 310 Featherweight Title Match. It was his first time being knocked out in his entire fighting career. Even though...",
+    "contentFile": "featherweight-hardest-chin.md",
+    "images": [
+      {
+        "src": "/assets/journalism/featherweight-hardest-chin/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "Is Load Management a Good Thing? Finding the Correlation between a Player’s Usage and their Length of Injury",
+    "authors": [
+      "Brian Mualim",
+      "Victoria Vivian Chan"
+    ],
+    "date": "Jan 14, 2025",
+    "year": 2025,
+    "sport": "Basketball",
+    "readTime": 6,
+    "summary": "Whether players and fans like it or not, injuries are an unavoidable part of the game of basketball. As most players will get injured at some point within their career, the question isn’t if it will happen, but how long will they be sidelined for? To combat this, teams have...",
+    "contentFile": "nba-load-management-injury.md",
+    "images": [
+      {
+        "src": "/assets/journalism/nba-load-management-injury/figure-07.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "Against All Odds: A Statistical Look at NBA Upsets",
+    "authors": [
+      "Richard Li",
+      "Daniel Hu",
+      "Grant Boydell",
+      "Adya Ganti"
+    ],
+    "date": "Jan 6, 2025",
+    "year": 2025,
+    "sport": "Basketball",
+    "readTime": 12,
+    "summary": "Sports betting has surged into popularity in recent years after its legalization in 2018 in the United States. Although it’s not legalized in all 50 states, there are still 25.02 million users in 2024 in the booming industry, posting a 11 billion revenue in the year 2023 for...",
+    "contentFile": "nba-odds-upsets.md",
+    "images": [
+      {
+        "src": "/assets/journalism/nba-odds-upsets/figure-06.png",
+        "alt": "Figure 6"
+      }
+    ]
+  },
+  {
+    "title": "Scoring Big: Analyzing the Growth of the NWSL",
+    "authors": [
+      "Ella Hinkle",
+      "Taylor Fenton"
+    ],
+    "date": "Dec 24, 2024",
+    "year": 2024,
+    "sport": "Soccer",
+    "readTime": 11,
+    "summary": "Since the establishment of the National Women’s Soccer League (NWSL) in 2012, the league has taken off. Initially made up of just 8 teams, the NWSL now boasts 14 highly competitive teams– as of the recent addition of two more teams this season– with concrete plans to continue...",
+    "contentFile": "growth-of-nwsl.md",
+    "images": [
+      {
+        "src": "/assets/journalism/growth-of-nwsl/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "Predicting Glory: Who Will Claim the 2024 NFL Crown?",
+    "authors": [
+      "Sankeerth Gandhari"
+    ],
+    "date": "Dec 24, 2024",
+    "year": 2024,
+    "sport": "Football",
+    "readTime": 8,
+    "summary": "The National Football League (NFL) season is an annual spectacle that captures the attention of millions of fans and analysts alike. Predicting the season’s outcome, particularly identifying the team most likely to win, is a complex and challenging task. This paper uses...",
+    "contentFile": "predicting-nfl-winner.md",
+    "images": [
+      {
+        "src": "/assets/journalism/predicting-nfl-winner/figure-03.png",
+        "alt": "Source: Towards Ai"
+      }
+    ]
+  },
+  {
+    "title": "Why Steph Curry Is Arguably the Most Valuable Offensive Player Ever",
+    "authors": [
+      "Sai Karthik Magham",
+      "Michael Zheng"
+    ],
+    "date": "Dec 24, 2024",
+    "year": 2024,
+    "sport": "Basketball",
+    "readTime": 8,
+    "summary": "Stephen Curry is one of the most prolific players in NBA history. His offensive brilliance has not only redefined the role of a point guard but has also transformed the Golden State Warriors into a dynasty His unparalleled shooting range, combined with his exceptional...",
+    "contentFile": "steph-offensive-player.md",
+    "images": [
+      {
+        "src": "/assets/journalism/steph-offensive-player/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "Tee it High, Let it Fly: Exploring the Impact of Distance in Modern Golf",
+    "authors": [
+      "Kristofer Tsai"
+    ],
+    "date": "Dec 24, 2024",
+    "year": 2024,
+    "sport": "Golf",
+    "readTime": 11,
+    "summary": "In the world of professional golf, there is a common belief that distance off the tee can be a significant advantage, giving players a closer approach to the hole and thus a better chance of scoring. As Tiger Woods famously remarked, \"The most important club in the bag is the...",
+    "contentFile": "distance-golf.md",
+    "images": [
+      {
+        "src": "/assets/journalism/distance-golf/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "Predicting the 2024-25 NHL Season",
+    "authors": [
+      "Jared Fong"
+    ],
+    "date": "Dec 18, 2024",
+    "year": 2024,
+    "sport": "Hockey",
+    "readTime": 7,
+    "summary": "Just past the quarter mark of the 2024-25 NHL season, we have seen some crazy things already happen. The Winnipeg Jets, Washington Capitals, and Minnesota Wild have exceeded everyone’s preseason expectations and ascended to the top of the NHL standings. On the flip side, the...",
+    "contentFile": "2024-25-nhl-season.md",
+    "images": [
+      {
+        "src": "/assets/journalism/2024-25-nhl-season/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "The Impact of Bye Weeks on a NFL Team Performance",
+    "authors": [
+      "Elly Goan",
+      "Anika Soitkar"
+    ],
+    "date": "Dec 15, 2024",
+    "year": 2024,
+    "sport": "Football",
+    "readTime": 7,
+    "summary": "In the 2019 NFL season, the Kansas City Chiefs demonstrated the potential power of a bye week. Sitting at 7 wins and 4 losses before their break, the team seemed solid but still had room for improvement. After their week off they returned with renewed intensity, closing out...",
+    "contentFile": "nfl-bye-weeks.md",
+    "images": [
+      {
+        "src": "/assets/journalism/nfl-bye-weeks/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "New Face of the WNBA? Predicting Caitlin Clark’s Rookie Season Statistics",
+    "authors": [
+      "Angelina Muliadi",
+      "Brian Mualim",
+      "Victoria Vivian Chan"
+    ],
+    "date": "Sep 11, 2024",
+    "year": 2024,
+    "sport": "Basketball",
+    "readTime": 6,
+    "summary": "From March Madness until the WNBA draft, one name emerges time and time again:  Caitlin Clark. In her senior season, Clark averaged 31.6 points, 8.9 assists and 7.4 rebounds per game, leading Division I in scoring and assists. She finished with the highest career scoring...",
+    "contentFile": "caitlin-clark-prediction.md",
+    "images": [
+      {
+        "src": "/assets/journalism/caitlin-clark-prediction/figure-00-infographic.png",
+        "alt": "Caitlin Clark: College Stats vs Linear Model Prediction vs Actual Rookie WNBA Stats"
+      }
+    ]
+  },
+  {
+    "title": "How Much Do Top Receivers Contribute to QB Stats?",
+    "authors": [
+      "Eric Chu"
+    ],
+    "date": "Sep 1, 2024",
+    "year": 2024,
+    "sport": "Football",
+    "readTime": 9,
+    "summary": "In football, being a \"merchant\" means being so reliant on a particular asset that despite not being genuinely good at his position, a player appears to be good due to external factors rather than his own merits. Rather than contributing to his team, a \"merchant\" is the...",
+    "contentFile": "how-top-receivers-contribute-qb-stats.md",
+    "images": [
+      {
+        "src": "/assets/journalism/how-top-receivers-contribute-qb-stats/figure-08.png",
+        "alt": "Figure 8"
+      }
+    ]
+  },
+  {
+    "title": "Is the “Sophomore Slump” Real in the NBA?",
+    "authors": [
+      "Dhruv Patel",
+      "Daniel Yeo"
+    ],
+    "date": "Jul 4, 2024",
+    "year": 2024,
+    "sport": "Basketball",
+    "readTime": 7,
+    "summary": "The “sophomore slump” is a commonly believed NBA phenomenon that suggests that rookies often face a decline in performance during their second season. This article will examine the validity of this argument by looking broadly at 2018-2023 rookies and their development from...",
+    "contentFile": "sophomore-slump-nba.md",
+    "images": [
+      {
+        "src": "/assets/journalism/sophomore-slump-nba/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "Predicting Major Champions: Do Certain Majors Suit Different Golf Skill Sets?",
+    "authors": [
+      "Joshua Sujo"
+    ],
+    "date": "Jun 26, 2024",
+    "year": 2024,
+    "sport": "Tennis",
+    "readTime": 10,
+    "summary": "Masters, PGA Championship, US Open, and The Open. These are the four most important events in the golfing year. Winning one of these tournaments cements a golfer’s place in history. On the other hand, without winning one, a successful career will always have a gaping hole....",
+    "contentFile": "predicting-major-champions.md",
+    "images": [
+      {
+        "src": "/assets/journalism/predicting-major-champions/figure-02.png",
+        "alt": "Figure 2"
+      }
+    ]
+  },
+  {
+    "title": "Performing Sports: An Analysis on Recent Trends of Figure Skating",
+    "authors": [
+      "Tianyi Su",
+      "Christine Ahn"
+    ],
+    "date": "Jun 22, 2024",
+    "year": 2024,
+    "sport": "General",
+    "readTime": 10,
+    "summary": "Figure skating is one of the sport programs that requires not only athletic abilities but also artistic components. The sport was created in the 18th century and popularized in the Western world. The sport originally only focused on the artistic aspect, thus having the name...",
+    "contentFile": "recent-trends-figure-skating.md",
+    "images": [
+      {
+        "src": "/assets/journalism/recent-trends-figure-skating/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "Effect of Racquet Specifications on Tennis Performance",
+    "authors": [
+      "Rosie Chen",
+      "Stella Koh"
+    ],
+    "date": "Jun 22, 2024",
+    "year": 2024,
+    "sport": "Tennis",
+    "readTime": 12,
+    "summary": "The first thing you need when playing tennis is the racquet. And while the racquet may seem to be merely a tool to ricochet a ball back and forth the court, it can be–and is–a customizable tool.  Differences in length, size, weight, and stiffness amongst others of tennis...",
+    "contentFile": "raquet-specifications.md",
+    "images": [
+      {
+        "src": "/assets/journalism/raquet-specifications/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "Who is the best team in Baseball?",
+    "authors": [
+      "Stanley Hsu"
+    ],
+    "date": "Jun 21, 2024",
+    "year": 2024,
+    "sport": "Baseball",
+    "readTime": 11,
+    "summary": "The categories that come up when one thinks of a good baseball team are pitching categories such as ERA (earned run average), strikeouts, and WHIP (walks, hits per inning). Some important batting categories are batting average, on-base percentage, slugging percentage, on-base...",
+    "contentFile": "best-team-in-baseball.md",
+    "images": [
+      {
+        "src": "/assets/journalism/best-team-in-baseball/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "Injuries and the NFL Bye Week: Safely Adding an 18th Game",
+    "authors": [
+      "Raja Kavasseri"
+    ],
+    "date": "Jun 20, 2024",
+    "year": 2024,
+    "sport": "Football",
+    "readTime": 8,
+    "summary": "The NFL recently increased the number of games per team from 16 to 17. A 17th game makes sense - more football is great for fans and for profits. But an extra game also means more physical stress, and therefore more injuries for players. There is no NFL without the players,...",
+    "contentFile": "bye-week.md",
+    "images": [
+      {
+        "src": "/assets/journalism/bye-week/figure-02.png",
+        "alt": "Figure 2"
+      }
+    ]
+  },
+  {
+    "title": "Candidates Chess 2024: Why the Most Accurate Chess Player Doesn’t Always Win",
+    "authors": [
+      "Billy Peir"
+    ],
+    "date": "Jun 19, 2024",
+    "year": 2024,
+    "sport": "General",
+    "readTime": 12,
+    "summary": "During the entire month of April 2024, 8 of the top chess players in the world competed for one of the most prestigious opportunities in the chess world: to challenge the current world champion, Ding Liren, for the title of world champion. The tournament featured a grueling,...",
+    "contentFile": "candidates-chess-2024.md",
+    "images": [
+      {
+        "src": "/assets/journalism/candidates-chess-2024/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "Superior Sinner: Jannik Sinner’s Dominant Start to 2024",
+    "authors": [
+      "Sofia Jain"
+    ],
+    "date": "Jun 19, 2024",
+    "year": 2024,
+    "sport": "Tennis",
+    "readTime": 9,
+    "summary": "Italian professional tennis player and current ATP world number 1, Jannik Sinner, has completely dominated the start 2024 season. He has won 28 out of 30 matches from January to May of 2024. Even a two-set deficit couldn’t prevent Sinner from winning his first Grand Slam at...",
+    "contentFile": "superior-sinner.md",
+    "images": [
+      {
+        "src": "/assets/journalism/superior-sinner/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "Depth is Overrated: Using NBA Bench Statistics To Predict Wins",
+    "authors": [
+      "Nadeev Alam"
+    ],
+    "date": "Jun 19, 2024",
+    "year": 2024,
+    "sport": "Basketball",
+    "readTime": 9,
+    "summary": "Depth is overrated. That is what I always believed when it came to the NBA. I think that if depth, the strength of a basketball team outside of its star players, is the highlight of your NBA team, they will never be a true championship contender. By this, I mean that you...",
+    "contentFile": "depth-is-overrated.md",
+    "images": [
+      {
+        "src": "/assets/journalism/depth-is-overrated/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "Speed vs. Control: How to Win the Oldest International Trophy",
+    "authors": [
+      "Brayden Yee"
+    ],
+    "date": "Jun 18, 2024",
+    "year": 2024,
+    "sport": "Olympics",
+    "readTime": 7,
+    "summary": "The America’s Cup is the oldest contested trophy in international sporting history. Dating back to 1851 and containing 36 editions, the sport of competitive sailing has certainly seen its evolutions, both strategically, and technologically. The 35th America’s Cup in 2017...",
+    "contentFile": "speed-vs-control-sailing.md",
+    "images": [
+      {
+        "src": "/assets/journalism/speed-vs-control-sailing/figure-01.png",
+        "alt": "Average Speed Over Ground. The dotted line represents the winner of each race"
+      }
+    ]
+  },
+  {
+    "title": "What Made Bayer Leverkusen So Successful This Season?",
+    "authors": [
+      "Divik Chotani",
+      "Shawn Reznikov",
+      "Siddharth Singh"
+    ],
+    "date": "Jun 18, 2024",
+    "year": 2024,
+    "sport": "Soccer",
+    "readTime": 5,
+    "summary": "Bayer Leverkusen thrived this season, as their goals for and against in their league season rivaled the champions of the Premier League (Manchester City), Serie A (Inter Milan), and La Liga (Real Madrid). It is noticeable that there are drastic changes between the previous...",
+    "contentFile": "leverkusen-success.md",
+    "images": [
+      {
+        "src": "/assets/journalism/leverkusen-success/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "How Effective is La Masia?",
+    "authors": [
+      "Derek Diaz",
+      "Elly Goan"
+    ],
+    "date": "Jun 18, 2024",
+    "year": 2024,
+    "sport": "Football",
+    "readTime": 7,
+    "summary": "Football Club Barcelona is one of the most well-known teams across the world. Barcelona is well known for their superstar Lionel Messi who played and dominated the La Liga league from 2004 and finally leaving the club in 2021. Even with the absence of their superstar, the...",
+    "contentFile": "la-masia.md",
+    "images": [
+      {
+        "src": "/assets/journalism/la-masia/figure-01.jpg",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "Who Had the Greatest Scoring Season In The NBA?",
+    "authors": [
+      "Ryan Liu",
+      "Shaash Sivakumar"
+    ],
+    "date": "Jun 18, 2024",
+    "year": 2024,
+    "sport": "Basketball",
+    "readTime": 7,
+    "summary": "In the world of professional basketball, individual performance and team success are often inextricably linked. Understanding a player's true impact requires delving beyond traditional statistics to uncover deeper insights into their influence on the court. This article will...",
+    "contentFile": "nba-greatest-scoring-season.md",
+    "images": [
+      {
+        "src": "/assets/journalism/nba-greatest-scoring-season/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "Predicting NBA Draft Pick Success Based on 2K Build",
+    "authors": [
+      "Anthony Zhao"
+    ],
+    "date": "Jun 18, 2024",
+    "year": 2024,
+    "sport": "Basketball",
+    "readTime": 14,
+    "summary": "We don’t see many Derrick Whites out there: 6 foot 4 tall, 190 lb, bald players with incredible defensive instincts and a silky smooth three-point jumper. Neither do we see many Victor Wembanyamas: 7 foot 4 giants that can create off the dribble, drill shots from beyond the...",
+    "contentFile": "nba-draft-2k-build.md",
+    "images": [
+      {
+        "src": "/assets/journalism/nba-draft-2k-build/figure-05.png",
+        "alt": "Derrick White shot distribution (Source: https://barttorvik.com/playerstat.php?p=Derrick+White) "
+      }
+    ]
+  },
+  {
+    "title": "As Big Ten Goes Bi-Coastal, PAC-12 Alums Face Travel Troubles",
+    "authors": [
+      "Blair Warren"
+    ],
+    "date": "Jun 1, 2024",
+    "year": 2024,
+    "sport": "Football",
+    "readTime": 5,
+    "summary": "College football debates once focused on the major conferences were nearly as intense as those surrounding individual team dominance. Prior to Texas and Oklahoma agreeing to join the Southeastern Conference (SEC) in July of 2021, conference realignment was no more than...",
+    "contentFile": "big-10-pac-12-football.md",
+    "images": [
+      {
+        "src": "/assets/journalism/big-10-pac-12-football/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "Boom or Bust: Insights Into the 2024 NFL QB Draft Driven by Data",
+    "authors": [
+      "Yuxing Ji"
+    ],
+    "date": "Jun 1, 2024",
+    "year": 2024,
+    "sport": "Football",
+    "readTime": 13,
+    "summary": "The NFL Draft is a nerve-wracking banquet of hope and strategy. Teams gamble on young talent, particularly quarterbacks, who can become the franchise's cornerstone for years to come. But what separates a Super Bowl-winning MVP QB drafted outside the first round from a...",
+    "contentFile": "qb-draft.md",
+    "images": [
+      {
+        "src": "/assets/journalism/qb-draft/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "From Korea to Major League; Predicting Performances of Erick Fedde and Woo Suk Go in 2024 Season",
+    "authors": [
+      "Nathan Kim",
+      "Aiden Lee"
+    ],
+    "date": "Jun 1, 2024",
+    "year": 2024,
+    "sport": "Baseball",
+    "readTime": 12,
+    "summary": "Seoul, Gocheok Sky Dome, is the place where the MLB opening game was held this year. Recently, in the 21st century, the MLB has been putting effort into globalizing baseball, and more players from Asian leagues, such as KBO (Korea) and NPB (Japan), are arriving in the United...",
+    "contentFile": "erick-fedde-woo-suk-go.md",
+    "images": [
+      {
+        "src": "/assets/journalism/erick-fedde-woo-suk-go/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "Who Diddy do it with? NBA Edition",
+    "authors": [
+      "Anthony Zhao"
+    ],
+    "date": "Jun 1, 2024",
+    "year": 2024,
+    "sport": "Basketball",
+    "readTime": 20,
+    "summary": "The following claims are based on observations we have made with data and other sources, and are not indicative of real relationships between NBA Players and Sean “Diddy” Combs. Sean John Combs is an American rapper and producer, commonly known by his stage name, Diddy....",
+    "contentFile": "diddy-nba.md",
+    "images": [
+      {
+        "src": "/assets/journalism/diddy-nba/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "How I Finished in Last Place in 2023 BSA Fantasy",
+    "authors": [
+      "Arvind Kalyan"
+    ],
+    "date": "May 3, 2024",
+    "year": 2024,
+    "sport": "Football",
+    "readTime": 6,
+    "summary": "There are only a handful of things more ignominious than finishing last in a fantasy football league. One of those few, unfortunately, is finishing in last place in a fantasy football league as the president of your sports analytics club. I’ll come to my own defense just...",
+    "contentFile": "last-place-fantasy-football.md",
+    "images": [
+      {
+        "src": "/assets/journalism/last-place-fantasy-football/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "Analyzing the 2024 NBA DPOY Race",
+    "authors": [
+      "Tyler Chia",
+      "Aidan Horng"
+    ],
+    "date": "Apr 16, 2024",
+    "year": 2024,
+    "sport": "Basketball",
+    "readTime": 10,
+    "summary": "As the 2023–2024 NBA regular season comes to an end, we will take a look at one of the most talked about awards for this year — The NBA Defensive Player of the Year Award. According to most NBA analysts and sports betting books, Rudy Gobert is the clear frontrunner for the...",
+    "contentFile": "2024-nba-dpoy.md",
+    "images": [
+      {
+        "src": "/assets/journalism/2024-nba-dpoy/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "Passing the Torch: Quest for the Heir to Sergio Busquets",
+    "authors": [
+      "Mingyang Li",
+      "Junying Li",
+      "Haoji Wang",
+      "Yuhan Xie"
+    ],
+    "date": "Apr 6, 2024",
+    "year": 2024,
+    "sport": "Football",
+    "readTime": 19,
+    "summary": "Spanish National Team head coach Vicente Del Bosque once claimed, “You watch the game, you don’t see Busquets. You watch Busquets, you see the whole game.” This quote perfectly encapsulates Sergio Busquets as a football player – the master of simplicity. Unlike typical...",
+    "contentFile": "sergio-busquets-heir.md",
+    "images": [
+      {
+        "src": "/assets/journalism/sergio-busquets-heir/figure-06.png",
+        "alt": "Cosine Similarity [Source: AI-ContentLab]"
+      }
+    ]
+  },
+  {
+    "title": "Swinging For The Fences: Does The “Bomb and Gouge” Style of Golf Provide a Statistical Advantage?",
+    "authors": [
+      "Max Wimmer"
+    ],
+    "date": "Apr 2, 2024",
+    "year": 2024,
+    "sport": "Golf",
+    "readTime": 13,
+    "summary": "In recent years, a noticeable shift has swept through the ranks of professional golfers on the PGA Tour: a dramatic increase in swing speed. This evolution is a testament to the fusion of dynamic speed training, athleticism, skill, and technology. As players refine their...",
+    "contentFile": "bomb-and-gouge.md",
+    "images": [
+      {
+        "src": "/assets/journalism/bomb-and-gouge/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "Unlocking the Defensive Code: Exploring the Impact of Physical Attributes on NBA Rookie Defense",
+    "authors": [
+      "Soomedha Vasudevan",
+      "Nick Chu"
+    ],
+    "date": "Apr 2, 2024",
+    "year": 2024,
+    "sport": "Basketball",
+    "readTime": 7,
+    "summary": "With the NBA playoffs just around the corner and only a handful of games remaining in the regular season, basketball fans eagerly anticipate which players will rise to the top. In this analysis, we aim to explore the key traits that distinguish top-performing players and...",
+    "contentFile": "unlocking-the-defensive-code.md",
+    "images": [
+      {
+        "src": "/assets/journalism/unlocking-the-defensive-code/figure-01.png",
+        "alt": "Figure 1: Scatter Plot of Weight Height Ratio vs Steals Across Positions"
+      }
+    ]
+  },
+  {
+    "title": "What Wins Ball Games?",
+    "authors": [
+      "Tom Seifert"
+    ],
+    "date": "Apr 2, 2024",
+    "year": 2024,
+    "sport": "Baseball",
+    "readTime": 8,
+    "summary": "In Major League Baseball, a wide array of traditional and advanced statistics can be used to evaluate players, teams, or the league as a whole. With such a diverse set of metrics to evaluate performance, there is no consensus among players, executives, or fans about which of...",
+    "contentFile": "what-wins-ball-games.md",
+    "images": [
+      {
+        "src": "/assets/journalism/what-wins-ball-games/figure-04.png",
+        "alt": "Figure 4"
+      }
+    ]
+  },
+  {
+    "title": "How Important is Possession in the English Premier League?",
+    "authors": [
+      "Divik Chotani",
+      "Siddharth Singh",
+      "Shawn Reznikov"
+    ],
+    "date": "Apr 1, 2024",
+    "year": 2024,
+    "sport": "Soccer",
+    "readTime": 9,
+    "summary": "How to win a soccer game? Simple, score goals. It goes without saying that to score a goal, a team must be in possession of the soccer ball. But how much does the possession of the ball throughout the game impact a team’s standing at the end of the season? Is there a positive...",
+    "contentFile": "possession-english-premier.md",
+    "images": [
+      {
+        "src": "/assets/journalism/possession-english-premier/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "Gridiron Dementia: Analyzing the toll of football’s head-to-head action on the neurophysiology of NFL players. Are there potential solutions that prioritize the long-term health of athletes?",
+    "authors": [
+      "Kushal Chatterjee"
+    ],
+    "date": "Mar 29, 2024",
+    "year": 2024,
+    "sport": "Football",
+    "readTime": 13,
+    "summary": "February 11, 2024 - Super Bowl Sunday. An audience of nearly 125 million watched Patrick Mahomes and the Kansas City Chiefs topple Brock Purdy’s San Francisco 49ers in overtime on a late February evening. Super Bowl LVIII shattered all previous TV viewership records,...",
+    "contentFile": "gridiron-dementia.md",
+    "images": [
+      {
+        "src": "/assets/journalism/gridiron-dementia/figure-01.png",
+        "alt": "Source: CNN - Results of Dr. Gary Small’s brain study in Semel Institute for Neuroscience and Human Behavior at UCLA"
+      }
+    ]
+  },
+  {
+    "title": "The Impact of International Players in the NBA",
+    "authors": [
+      "Eduard Bueno"
+    ],
+    "date": "Mar 29, 2024",
+    "year": 2024,
+    "sport": "Basketball",
+    "readTime": 8,
+    "summary": "In recent years, the landscape of the NBA has undergone a remarkable transformation, marked by a significant influx of international talent onto its courts. From seasoned veterans to rising stars, players from across the globe have been making their mark in the world's...",
+    "contentFile": "international-players-nba.md",
+    "images": [
+      {
+        "src": "/assets/journalism/international-players-nba/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "The Dark Horse: Aston Villa",
+    "authors": [
+      "Derek Diaz",
+      "Elly Goan"
+    ],
+    "date": "Mar 29, 2024",
+    "year": 2024,
+    "sport": "Football",
+    "readTime": 5,
+    "summary": "Aston Villa is a European football club, specifically based in Birmingham, England that is currently on the rise in the English Premier League. In the 2021/22 season the club finished in 14th place with 20 total clubs in the league. The following season, 2022/23, Aston Villa...",
+    "contentFile": "aston-villa.md",
+    "images": [
+      {
+        "src": "/assets/journalism/aston-villa/figure-01.jpg",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "Ball to Ball Contact: Which Sports Out Everything on the Line?",
+    "authors": [
+      "May Chan",
+      "Deshna Govil"
+    ],
+    "date": "Mar 29, 2024",
+    "year": 2024,
+    "sport": "Basketball",
+    "readTime": 6,
+    "summary": "Which sports put everything on the line? Some may say the NBA and others believe the NFL. However, these two sports or leagues involve different factors such as the uniform or gear they wear, the game rules, or the conditions of the stadium. Therefore, the prevalence of...",
+    "contentFile": "injuries.md",
+    "images": [
+      {
+        "src": "/assets/journalism/injuries/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "Recognizing Brandon Aiyuk’s Growth as a Wide Receiver and His 2023 Success",
+    "authors": [
+      "Sofia Jain"
+    ],
+    "date": "Mar 28, 2024",
+    "year": 2024,
+    "sport": "Football",
+    "readTime": 7,
+    "summary": "The San Francisco 49ers have a stacked roster, featuring players like Christian McCaffrey, George Kittle, Trent Williams, Deebo Samuel and many more. With such a roster, it’s easy for a player to go underrated when it comes to receiving credit for the team’s successes. One...",
+    "contentFile": "brandon-aiyuk.md",
+    "images": [
+      {
+        "src": "/assets/journalism/brandon-aiyuk/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "Big Money or Not? How much Should Quarterbacks get Paid?",
+    "authors": [
+      "Jared Fong",
+      "Tyler Taylor",
+      "Bryan Kwan",
+      "Marilyn Infante"
+    ],
+    "date": "Mar 28, 2024",
+    "year": 2024,
+    "sport": "Football",
+    "readTime": 17,
+    "summary": "The National Football League (NFL) teams are notorious for paying their quarterbacks big money, becoming the top 10 paid in the NFL. Being the brain of a team, the quarterback position is the most important in a team. Having to be the primary decision-makers and first to be...",
+    "contentFile": "big-money.md",
+    "images": [
+      {
+        "src": "/assets/journalism/big-money/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "How Is the Shot Selection of NBA Centers Changing?",
+    "authors": [
+      "Jeffrey Liu"
+    ],
+    "date": "Mar 28, 2024",
+    "year": 2024,
+    "sport": "Basketball",
+    "readTime": 6,
+    "summary": "On March 6, 2000, the Los Angeles Lakers and the Los Angeles Clippers matched up in the Staples Center for what seemed to be any other regular season game.  However, it was Shaquille O’Neal’s 28th birthday that day.  To celebrate, Shaq proceeded to drop a career-high 61...",
+    "contentFile": "shot-selection-nba-centers.md",
+    "images": [
+      {
+        "src": "/assets/journalism/shot-selection-nba-centers/figure-01.png",
+        "alt": "Figure 1: Evolution of NBA Center Shot Selection (2004 - 2023)"
+      }
+    ]
+  },
+  {
+    "title": "How does Nikola Jokic power the Nuggets’ Elite Offense?",
+    "authors": [
+      "Stanley Hsu",
+      "Joshua Sujo"
+    ],
+    "date": "Mar 28, 2024",
+    "year": 2024,
+    "sport": "Basketball",
+    "readTime": 8,
+    "summary": "Nikola Jokic is the star player of the Denver Nuggets, the most recent NBA Champions. He is arguably the best player in the league, having won the Most Valuable Player award in two of the past three years. In this article, we use Jokic’s stats from the 2022-2023 season, as...",
+    "contentFile": "jokic-offense.md",
+    "images": [
+      {
+        "src": "/assets/journalism/jokic-offense/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "Should Jonathan Kuminga Start for the Warriors?",
+    "authors": [
+      "Benjamin Sloutsky"
+    ],
+    "date": "Mar 27, 2024",
+    "year": 2024,
+    "sport": "Basketball",
+    "readTime": 6,
+    "summary": "At the start of the 2023-2024 season, Jonathan Kuminga was constantly frustrated at the Warriors coaching system for benching him. However, Kuminga is very efficient and averages significant points sometimes. However, he can mess up occasionally when it comes to defense or...",
+    "contentFile": "jonathan-kuminga-start-or-bench.md",
+    "images": [
+      {
+        "src": "/assets/journalism/jonathan-kuminga-start-or-bench/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "Predicting the Group Stage of the 2024 EUROs",
+    "authors": [
+      "Shaashwath Sivakumar",
+      "Ryan Liu"
+    ],
+    "date": "Mar 27, 2024",
+    "year": 2024,
+    "sport": "Football",
+    "readTime": 10,
+    "summary": "In the realm of football, where competition ignites passion and stirs fervor like no other sport, few events command the reverence and awe inspired by the UEFA European Championship. For over six decades, this illustrious tournament has embodied the pinnacle of footballing...",
+    "contentFile": "2024-euros-prediction.md",
+    "images": [
+      {
+        "src": "/assets/journalism/2024-euros-prediction/figure-03.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "Back to the Future: What Former NBA Players Would Be Best Suited to the Modern League?",
+    "authors": [
+      "Jared Gode"
+    ],
+    "date": "Mar 27, 2024",
+    "year": 2024,
+    "sport": "Basketball",
+    "readTime": 7,
+    "summary": "The modern NBA is a game built off the league’s past, but the style and skills demanded of today’s play differ greatly from the NBA of the 80s, 90s, and even as recent as the 2000s. Aspects like scoring, pace of play, and even the average heights of NBA players differ between...",
+    "contentFile": "back-to-the-future-nba.md",
+    "images": [
+      {
+        "src": "/assets/journalism/back-to-the-future-nba/figure-01.jpg",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "How Fear Can Be Measured in Baseball",
+    "authors": [
+      "Ian Turner"
+    ],
+    "date": "Mar 27, 2024",
+    "year": 2024,
+    "sport": "Baseball",
+    "readTime": 11,
+    "summary": "On a late night in 1998, the Arizona Diamondbacks led the San Francisco Giants 8 to 6 in the bottom of the ninth inning with two outs and the bases loaded. A Giants batter stepped up to the plate and was walked by the Diamondbacks pitcher, cutting the Diamondback's lead to 8...",
+    "contentFile": "_fear.md",
+    "images": [
+      {
+        "src": "/assets/journalism/_fear/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "NBA What-Ifs: Finding the Offensive Player of the Year",
+    "authors": [
+      "Angelina Muliadi",
+      "Brian Mualim"
+    ],
+    "date": "Mar 26, 2024",
+    "year": 2024,
+    "sport": "Basketball",
+    "readTime": 6,
+    "summary": "Ever since the 1983 season, the NBA has awarded the Defensive Player of the Year award to the best defensive player of the regular season. That begs the question, who would be the Offensive Player of the Year? The player that dominates the court with unparalleled scoring...",
+    "contentFile": "offensive-player-of-the-year.md",
+    "images": [
+      {
+        "src": "/assets/journalism/offensive-player-of-the-year/figure-02.png",
+        "alt": "Figure 2"
+      }
+    ]
+  },
+  {
+    "title": "Who Will Be the 200 Freestyle King?",
+    "authors": [
+      "Edi Zhang"
+    ],
+    "date": "Mar 26, 2024",
+    "year": 2024,
+    "sport": "General",
+    "readTime": 4,
+    "summary": "While even Michael Phelps’s legendary 400-meter IM record has been broken, one record continues to stand strong and has gained a reputation as one of the hardest world records to break. In fact, until 2022, no one has even come close to the controversial men’s 200-meter...",
+    "contentFile": "200-freestyle-king.md",
+    "images": [
+      {
+        "src": "/assets/journalism/200-freestyle-king/figure-02.png",
+        "alt": "Note: the black dots represent Popovici's best swims"
+      }
+    ]
+  },
+  {
+    "title": "The Battle of North London",
+    "authors": [
+      "Matthew Chuang"
+    ],
+    "date": "Mar 26, 2024",
+    "year": 2024,
+    "sport": "Football",
+    "readTime": 10,
+    "summary": "The historic rivalry between football clubs Arsenal and Tottenham Hotspur, spanning back to 1913, continues to be a nail-biting spectacle every year. The stadiums being just four miles apart, these two Premier League powerhouse teams battle it out multiple times yearly for...",
+    "contentFile": "the-battle-of-north-london.md",
+    "images": [
+      {
+        "src": "/assets/journalism/the-battle-of-north-london/figure-01.jpg",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "From the NPB to the MLB: What Makes a Great Japanese Baseball Player?",
+    "authors": [
+      "Billy Peir"
+    ],
+    "date": "Mar 25, 2024",
+    "year": 2024,
+    "sport": "Baseball",
+    "readTime": 17,
+    "summary": "In March of 2023, Shohei Ohtani faced down Mike Trout. The count was 3-2, in a 3-2 ballgame. While Ohtani and Trout were teammates for the Angels at the time, this game was in a different setting: the World Baseball Classic. Ohtani, of Team Japan, went on to strike out Trout,...",
+    "contentFile": "npb-to-mlb.md",
+    "images": [
+      {
+        "src": "/assets/journalism/npb-to-mlb/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "Refs Vs. Teams: How Have Penalties Changed the NFL Over the Years?",
+    "authors": [
+      "Atij Mahesh"
+    ],
+    "date": "Mar 25, 2024",
+    "year": 2024,
+    "sport": "Football",
+    "readTime": 5,
+    "summary": "Over the years in the NFL, penalties have shaped the game tremendously. Whether determining playoff seeding, game outcomes, or fines, players and franchise fans suffer from the curse of player penalization. Although always part of the game, many argue that penalties have...",
+    "contentFile": "nfl-penalties.md",
+    "images": [
+      {
+        "src": "/assets/journalism/nfl-penalties/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "Isolation Vs. Teamwork: Exploring NBA Clutch Performance",
+    "authors": [
+      "Ian Turner",
+      "Alexander Maguire"
+    ],
+    "date": "Jan 1, 2024",
+    "year": 2024,
+    "sport": "Basketball",
+    "readTime": 12,
+    "summary": "Basketball is a team game at its core, relying on the coordinated efforts of all five players on the court. While every team has a star player, it stands to reason that offenses are most effective when they involve movement, passing, and collective decision-making. Yet, in...",
+    "contentFile": "isolation-vs-teamwork-nba.md",
+    "images": [
+      {
+        "src": "/assets/journalism/isolation-vs-teamwork-nba/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "A Swift Path to Success: Do the Kansas City Chiefs Receive Preferential Treatment from NFL Referees?",
+    "authors": [
+      "Kevin Li",
+      "Jason Cheung"
+    ],
+    "date": "Jan 1, 2024",
+    "year": 2024,
+    "sport": "Football",
+    "readTime": 6,
+    "summary": "For the past few years, controversy has surrounded the Kansas City Chiefs and the way they are officiated. The Chiefs have been dominating the NFL, winning three of the last six Super Bowls and appearing in all but one in that span, and the relationship between tight end...",
+    "contentFile": "kansas-city-chiefs-preferential-treatment.md",
+    "images": [
+      {
+        "src": "/assets/journalism/kansas-city-chiefs-preferential-treatment/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "Rafael Nadal: the Undisputed King of Clay",
+    "authors": [
+      "Uzair Shaikh"
+    ],
+    "date": "Jan 1, 2024",
+    "year": 2024,
+    "sport": "Tennis",
+    "readTime": 5,
+    "summary": "Having just exited in what may have been his final French Open with a first round loss, the future of Rafael Nadal is uncertain, even from the perspective of Nadal himself. With retirement likely looming by the end of this season, Nadal will go down as one of the greatest...",
+    "contentFile": "king-of-clay.md",
+    "images": [
+      {
+        "src": "/assets/journalism/king-of-clay/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "The Statistic That Wins NBA Games",
+    "authors": [
+      "Anika Soitkar",
+      "Elly Goan"
+    ],
+    "date": "Jan 1, 2024",
+    "year": 2024,
+    "sport": "Basketball",
+    "readTime": 6,
+    "summary": "The National Basketball Association, more commonly known as the NBA, consists of 20 teams across the continent of North America, featuring arguably the most competitive basketball league in the world. Each team plays through a regular season, in which they play 82 games...",
+    "contentFile": "the-statistic-that-wins-nba-games.md",
+    "images": [
+      {
+        "src": "/assets/journalism/the-statistic-that-wins-nba-games/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "What Happened To Tiger?: A Statistical Review",
+    "authors": [
+      "Max Wimmer"
+    ],
+    "date": "Jan 1, 2024",
+    "year": 2024,
+    "sport": "Tennis",
+    "readTime": 8,
+    "summary": "Editorial note: This article was written before the 2024 U.S. Open. As it turns out, its findings were confirmed by Tiger’s performance that week. He performed well off the tee, yet he struggled approaching and around the greens. With the US Open right around the corner, all...",
+    "contentFile": "what-happened-to-tiger.md",
+    "images": [
+      {
+        "src": "/assets/journalism/what-happened-to-tiger/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "What Factors Affect Tiebreaker Win Percentage in Professional Tennis?",
+    "authors": [
+      "Albert Carreno"
+    ],
+    "date": "Jan 1, 2024",
+    "year": 2024,
+    "sport": "Tennis",
+    "readTime": 10,
+    "summary": "In the world of sports, it feels like it really is better to be lucky than good sometimes. But is there an underlying reason a player in a certain sport seems to be “luckier” than another? Or is it just a matter of skill? Professional tennis, like most sports, tends to have...",
+    "contentFile": "tiebreaker.md",
+    "images": [
+      {
+        "src": "/assets/journalism/tiebreaker/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "Is it already over? Examining F1 Pit Stop times for their impact on a team’s chances of winning",
+    "authors": [
+      "Kiersten Roth",
+      "Emery Lee"
+    ],
+    "date": "Jan 1, 2024",
+    "year": 2024,
+    "sport": "Motorsports",
+    "readTime": 5,
+    "summary": "In the cutthroat world of F1 racing, every millisecond matters. A team of twenty-three aim to change tires, clean the driver's visor, fix mechanical issues, and make other adjustments in under two seconds. While the quickness of a pit stop is essential, what adjustments are...",
+    "contentFile": "f1-pitstops-time.md",
+    "images": [
+      {
+        "src": "/assets/journalism/f1-pitstops-time/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "What Factors Best Explain a Pitcher’s WAR in the 2024 Season?",
+    "authors": [
+      "Selina Cheng"
+    ],
+    "date": "Jan 1, 2024",
+    "year": 2024,
+    "sport": "Baseball",
+    "readTime": 9,
+    "summary": "In baseball analytics, few statistics have revolutionized player evaluation more than Wins Above Replacement (WAR). This comprehensive metric attempts to capture a player's total contribution to their team by estimating how many more wins they provide compared to a...",
+    "contentFile": "pitcher-s-war-2024.md",
+    "images": [
+      {
+        "src": "/assets/journalism/pitcher-s-war-2024/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "Speed vs Physicality in the Modern NHL",
+    "authors": [
+      "Jared Fong"
+    ],
+    "date": "Jan 1, 2024",
+    "year": 2024,
+    "sport": "Hockey",
+    "readTime": 13,
+    "summary": "The game of hockey is ever-evolving. Teams in the sport’s best league the National Hockey League (NHL) are scoring at a much higher rate than in years prior. In the past 3 seasons, teams have averaged 3.15 goals per game, up 13% from 10 years ago. This past season saw Nikita...",
+    "contentFile": "speed-vs-physicality-nhl.md",
+    "images": [
+      {
+        "src": "/assets/journalism/speed-vs-physicality-nhl/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "Is Stealing Bases an Effective Strategy for Teams to Win?",
+    "authors": [
+      "Nathan Kim",
+      "Aiden Lee"
+    ],
+    "date": "Jan 1, 2024",
+    "year": 2024,
+    "sport": "Baseball",
+    "readTime": 11,
+    "summary": "A sensational young player Elly De La Cruz from Cincinnati Reds is dominating the MLB with his baserunning and not showing signs of a sophomore slump. He has 31 stolen base bases in his 55 game appearances (5/28/2024). His stolen base stat is currently ranked in 1st place in...",
+    "contentFile": "stealing-bases.md",
+    "images": [
+      {
+        "src": "/assets/journalism/stealing-bases/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "An NFL Star’s Call of Duty Addiction: Does Gaming Truly Have An Effect on this QB’s Performance?",
+    "authors": [
+      "Felipe Dueñas",
+      "Kevin Li"
+    ],
+    "date": "Jan 1, 2024",
+    "year": 2024,
+    "sport": "Football",
+    "readTime": 10,
+    "summary": "Two years ago, a Reddit post titled “A statistical analysis of Kyler Murray’s performance on COD double XP weekends” went viral, making waves in online NFL circles. It claimed that the Arizona Cardinals’ young quarterback performed worse on the field during weekends when...",
+    "contentFile": "nfl-kyler-cod-performance.md",
+    "images": [
+      {
+        "src": "/assets/journalism/nfl-kyler-cod-performance/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "What Makes Coaching Changes in the NHL Effective?",
+    "authors": [
+      "Albert Carreno"
+    ],
+    "date": "Jan 1, 2024",
+    "year": 2024,
+    "sport": "Basketball",
+    "readTime": 8,
+    "summary": "Being the head coach of a professional sports team is no easy task. It requires the ability to manage different personalities, make decisions under pressure that will be heavily scrutinized no matter what, instill discipline and better habits in players, and be the scapegoat...",
+    "contentFile": "coaching-changes-nhl.md",
+    "images": [
+      {
+        "src": "/assets/journalism/coaching-changes-nhl/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "Singles vs Doubles: What Does It Take To Succeed In Each?",
+    "authors": [
+      "Stella Koh"
+    ],
+    "date": "Jan 1, 2024",
+    "year": 2024,
+    "sport": "Tennis",
+    "readTime": 7,
+    "summary": "Singles or doubles, tennis is tennis. But are they really the same? The addition of another player and the extension of the courts can change much more of the racket game than it initially appears. In singles, a player can only rely on themselves to cover the court. Precise...",
+    "contentFile": "singles-vs-doubles.md",
+    "images": [
+      {
+        "src": "/assets/journalism/singles-vs-doubles/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "NBA Clutch-Factor: Analyzing Game-Winning Plays and Players",
+    "authors": [
+      "Andrew Weiner",
+      "Eric Zhou"
+    ],
+    "date": "Jan 1, 2024",
+    "year": 2024,
+    "sport": "Basketball",
+    "readTime": 9,
+    "summary": "The air within Cleveland’s Richfield Coliseum was thick with anticipation, and the deafening roar of the crowd echoed like thunder as the shot clock ticked away with mere seconds left in the game. The Chicago Bulls were trailing by one point to the heavily favored Cleveland...",
+    "contentFile": "nba-clutch.md",
+    "images": [
+      {
+        "src": "/assets/journalism/nba-clutch/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "The League Factor: How Different Fútbol Competitions Shape Player Success",
+    "authors": [
+      "Alexander Maguire"
+    ],
+    "date": "Jan 1, 2024",
+    "year": 2024,
+    "sport": "Football",
+    "readTime": 22,
+    "summary": "Fútbol is the world's most popular sport and for good reason- the skill, tactics, and unwavering passion of both players and fans make it a thrilling spectacle for all to enjoy. Its history is deep rooted and its evolution is nothing short of a total transformation. Figures...",
+    "contentFile": "different-football-competitions-shape-players.md",
+    "images": [
+      {
+        "src": "/assets/journalism/different-football-competitions-shape-players/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "Do Transfer Fees Predict Player Performance in the English Premier League?",
+    "authors": [
+      "Sean Gee",
+      "Praharsh Mehrotra"
+    ],
+    "date": "Jan 1, 2024",
+    "year": 2024,
+    "sport": "Football",
+    "readTime": 20,
+    "summary": "The English Premier League (EPL) stands as one of the most competitive and financially lucrative football leagues globally, attracting top talent with record-breaking transfer fees. Clubs invest heavily in players, banking on their ability to perform and transform team...",
+    "contentFile": "fees-performance-premier-league.md",
+    "images": [
+      {
+        "src": "/assets/journalism/fees-performance-premier-league/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "March Madness Metrics: What Makes a Champion?",
+    "authors": [
+      "Ella Hinkle",
+      "Taylor Fenton"
+    ],
+    "date": "Jan 1, 2024",
+    "year": 2024,
+    "sport": "General",
+    "readTime": 8,
+    "summary": "Every year, tens of millions of March Madness brackets are constructed to predict the outcome of the NCAA tournament. Out of the 68 teams, only one dominates the court. What makes these title-winning teams come out on top? Are all of their stats outperforming the average D1...",
+    "contentFile": "march-madness-metrics.md",
+    "images": [
+      {
+        "src": "/assets/journalism/march-madness-metrics/figure-03.png",
+        "alt": "Figure 3"
+      }
+    ]
+  },
+  {
+    "title": "How Manuel Neuer Revolutionized the Role of No. 1",
+    "authors": [
+      "William Pan"
+    ],
+    "date": "Jan 1, 2024",
+    "year": 2024,
+    "sport": "Soccer",
+    "readTime": 5,
+    "summary": "For most of the time in soccer history, goalkeepers are the most overlooked players on the field. They spend most of the game inside the penalty area, and you can only see them making actions when the opponents are shooting or during goal kicks. However, in the game of...",
+    "contentFile": "neuer_role_no1.md",
+    "images": [
+      {
+        "src": "/assets/journalism/neuer_role_no1/figure-01.jpg",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "The 2024 Chicago White Sox: A Dive into the Worst Team in Recent Sports History",
+    "authors": [
+      "Billy Peir"
+    ],
+    "date": "Jan 1, 2024",
+    "year": 2024,
+    "sport": "Basketball",
+    "readTime": 12,
+    "summary": "In recent history, there have been some historically bad sports teams. Just last year, the Detroit Pistons broke the record for the longest NBA single season losing streak by losing 28 games in a row. In 2017, the Cleveland Browns became the 2nd NFL team to go 0-16 in a...",
+    "contentFile": "2024-chicago-white-sox.md",
+    "images": [
+      {
+        "src": "/assets/journalism/2024-chicago-white-sox/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "Test Cricket's New Generation of Batters",
+    "authors": [
+      "Brayden Yee"
+    ],
+    "date": "Jan 1, 2024",
+    "year": 2024,
+    "sport": "General",
+    "readTime": 11,
+    "summary": "In cricket, specifically test match cricket, the better part of the last decade has been dominated by what is known as the “Fab Four” batters of Steve Smith (Aus), Joe Root (Eng), Virat Kohli (Ind), and Kane Williamson (NZL). Predicted by Martin Crowe back in 2014, the call...",
+    "contentFile": "test-cricket-new-generation-batters.md",
+    "images": [
+      {
+        "src": "/assets/journalism/test-cricket-new-generation-batters/figure-03.png",
+        "alt": "Figure 3"
+      }
+    ]
+  },
+  {
+    "title": "How to See Normal Kershaw in October",
+    "authors": [
+      "Nathan Kim"
+    ],
+    "date": "Dec 29, 2023",
+    "year": 2023,
+    "sport": "Baseball",
+    "readTime": 6,
+    "summary": "39 Games, 13 Wins & 13 Losses, ERA 4.49 The numbers are Kershaw’s career postseason stats. His nightmare in October repeated against the D-Backs this year, and some extreme fans are asking him to retire. We got used to seeing Kershaw frustrated at the bench after he messed up...",
+    "contentFile": "kershaw.md",
+    "images": [
+      {
+        "src": "/assets/journalism/kershaw/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "Team Letdown or Personal Setback? The Mystery Behind Justin Herbert's Fading Stardom",
+    "authors": [
+      "Krithik Jatavallabhula"
+    ],
+    "date": "Dec 27, 2023",
+    "year": 2023,
+    "sport": "Football",
+    "readTime": 10,
+    "summary": "When looking at NFL quarterbacks, we assess their performance through many different metrics: passer rating, passing yards, touchdowns, interceptions, etc. However, while the quarterback skill is relevant for the following metrics, we should also look at external factors,...",
+    "contentFile": "herbert-stardom.md",
+    "images": [
+      {
+        "src": "/assets/journalism/herbert-stardom/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "LeBron James: Which Era is His True Prime?",
+    "authors": [
+      "Brian Mualim"
+    ],
+    "date": "Dec 25, 2023",
+    "year": 2023,
+    "sport": "Basketball",
+    "readTime": 11,
+    "summary": "In any sport, a player’s prime is defined as the peak their career. Due to basketball’s unforgiving nature as a sport, where the slightest misstep could injure and derail your whole career, a basketball player’s prime usually lasts around 5 years. We see this phenomenon...",
+    "contentFile": "lebron-james-prime.md",
+    "images": [
+      {
+        "src": "/assets/journalism/lebron-james-prime/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "The Rise of the Inverted Full-Back: How Oleksandr Zinchenko Reveals the Future of Football Tactics",
+    "authors": [
+      "Pranov Suresh"
+    ],
+    "date": "Dec 23, 2023",
+    "year": 2023,
+    "sport": "Football",
+    "readTime": 15,
+    "summary": "Who is the modern full-back? Is it he who marauds forward at every opportunity, bursting his lung to overlap and support his winger? Is it he who patrols the touchline, enforcing defensive discipline upon the best of opposition wingers? Is it he who stands in unison with his...",
+    "contentFile": "zinchenko.md",
+    "images": [
+      {
+        "src": "/assets/journalism/zinchenko/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "Is Scottie Scheffler a Waste of Ball-Striking Talent?",
+    "authors": [
+      "Joshua Sujo",
+      "Max Wimmer"
+    ],
+    "date": "Dec 23, 2023",
+    "year": 2023,
+    "sport": "Golf",
+    "readTime": 14,
+    "summary": "Scottie Scheffler is the best golfer on Earth right now. He currently ranks first in the Official World Golf Rankings and is a serious contender in every tournament he plays. Scheffler excelled tee-to-green this year, leading the PGA Tour’s 2022-2023 ball-striking (how good a...",
+    "contentFile": "scottie-scheffler.md",
+    "images": [
+      {
+        "src": "/assets/journalism/scottie-scheffler/figure-04.png",
+        "alt": "This graph shows Total Strokes Gained: tee-to-green vs. the amount of victories that player had that year."
+      }
+    ]
+  },
+  {
+    "title": "Examining the Dying Breed of Small Guards in the NBA",
+    "authors": [
+      "Anthony Rio"
+    ],
+    "date": "Dec 22, 2023",
+    "year": 2023,
+    "sport": "Basketball",
+    "readTime": 11,
+    "summary": "The NBA has undergone a shift in which positions are valued. It’s similar to the NFL devaluing running backs, but the reasoning is completely different. In the 2010s decade of NBA basketball, teams like the Warriors popularized “small-ball”. What “small-ball” hinges on is...",
+    "contentFile": "nba-small-guards.md",
+    "images": [
+      {
+        "src": "/assets/journalism/nba-small-guards/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "How Much Does WAR Really Matter?",
+    "authors": [
+      "Bryan Kwan",
+      "Amay Jain"
+    ],
+    "date": "Dec 22, 2023",
+    "year": 2023,
+    "sport": "Baseball",
+    "readTime": 8,
+    "summary": "Every year when it comes down to MVP voting in the NL and AL leagues, we always hear fans and media clamor over every last bit of WAR when trying to decide between the finalists. As a reference, WAR stands for Wins Above Replacement and is a single number that tries to...",
+    "contentFile": "war-importance.md",
+    "images": [
+      {
+        "src": "/assets/journalism/war-importance/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "Decoding Surface Dominance: The Skills Behind Tennis Triumphs",
+    "authors": [
+      "Soomedha Vasudevan",
+      "Nick Chu"
+    ],
+    "date": "Dec 22, 2023",
+    "year": 2023,
+    "sport": "Tennis",
+    "readTime": 10,
+    "summary": "In the competitive world of professional tennis a player’s success goes beyond their raw talent; they must also navigate several different external and internal challenges. A prominent external factor that significantly influences player performance is the variety of playing...",
+    "contentFile": "surface-dominance.md",
+    "images": [
+      {
+        "src": "/assets/journalism/surface-dominance/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "Navigating the NBA Load Management Maze: Impact on Player Performance",
+    "authors": [
+      "Aaron Ho"
+    ],
+    "date": "Dec 22, 2023",
+    "year": 2023,
+    "sport": "Basketball",
+    "readTime": 4,
+    "summary": "Heading into the 2023-2024 NBA season, the NBA has made numerous attempts to deter load management, pushing for players to hit the court more frequently. But what exactly is load management, and does it deliver on its promise to keep players fresh and elevate their...",
+    "contentFile": "load-management-1.md",
+    "images": [
+      {
+        "src": "/assets/journalism/load-management-1/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "NBA Ballers: What Determines NBA Salary and Who’s Really the Most Valuable in the League?",
+    "authors": [
+      "Andrew Weiner"
+    ],
+    "date": "Dec 22, 2023",
+    "year": 2023,
+    "sport": "Basketball",
+    "readTime": 13,
+    "summary": "Lebron James dropped $36.8 million on his latest house in Beverly Hills in 2020, which included two guesthouses, a tennis court, and a movie theater. Fast forward to the NBA 2023-24 season, and the league’s highest earner is none other than Steph Curry, with a salary of over...",
+    "contentFile": "nba-ballers.md",
+    "images": [
+      {
+        "src": "/assets/journalism/nba-ballers/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "The Phasing Out of the Drop Goal",
+    "authors": [
+      "Brayden Yee"
+    ],
+    "date": "Dec 21, 2023",
+    "year": 2023,
+    "sport": "Football",
+    "readTime": 5,
+    "summary": "The sport of Rugby has evolved over the years, with one of the methods to scoring largely falling out of favor in recent times. Similar to American Football, there are 3 main ways of scoring. Tries are similar to touchdowns, though they only score 5 points, where the player...",
+    "contentFile": "drop-goal.md",
+    "images": [
+      {
+        "src": "/assets/journalism/drop-goal/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "Rookie Impact: Unraveling the Immediate Influence of International Talent in the NBA",
+    "authors": [
+      "Cole Hannum"
+    ],
+    "date": "Dec 20, 2023",
+    "year": 2023,
+    "sport": "Basketball",
+    "readTime": 9,
+    "summary": "The NBA stands as a testament to the global appeal and impact of basketball, adorned with international stars who've etched their names into its history. From the prolific scoring of Dirk Nowitzki to the awareness and ball handling of Steve Nash, the craftiness of Tony...",
+    "contentFile": "rookie-impact-nba.md",
+    "images": [
+      {
+        "src": "/assets/journalism/rookie-impact-nba/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "How to Score Touchdowns: An Analytical Approach to Perfecting Red Zone Percentage",
+    "authors": [
+      "Nathan Wetmore"
+    ],
+    "date": "Dec 20, 2023",
+    "year": 2023,
+    "sport": "Football",
+    "readTime": 6,
+    "summary": "We’ve all seen it happen to our team: the offense marches down the field expertly moving the chains until they arrive at the ten yard line and proceed to run the ball three times into a brick wall or throw three terrible incompletions in the end zone and are forced to settle...",
+    "contentFile": "analytical-red-zone-percentage.md",
+    "images": [
+      {
+        "src": "/assets/journalism/analytical-red-zone-percentage/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "The Evolution of the NBA: A Statistical Analysis of the Growth of NBA Positions",
+    "authors": [
+      "Krish Jain",
+      "Shubhan Yenuganti"
+    ],
+    "date": "Dec 20, 2023",
+    "year": 2023,
+    "sport": "Basketball",
+    "readTime": 9,
+    "summary": "Over the years, the NBA has grown from a measly peach basket into a worldwide sensation, with millions of people around the globe tuning in daily to watch NBA players streak back and forth across the court, raining threes on each other in high-scoring affairs. However, the...",
+    "contentFile": "nba-positional-evolution.md",
+    "images": [
+      {
+        "src": "/assets/journalism/nba-positional-evolution/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "The Impact of First Down Play Calling",
+    "authors": [
+      "Ian Turner"
+    ],
+    "date": "Dec 20, 2023",
+    "year": 2023,
+    "sport": "Football",
+    "readTime": 9,
+    "summary": "Every NFL drive starts with a first down and ten. While third down conversions are much more crucial to overall offensive success, play calls on first downs impact how many yards a team has to gain on second or third down. Of course, there is no one \"right\" play call on first...",
+    "contentFile": "first-down-play-calling.md",
+    "images": [
+      {
+        "src": "/assets/journalism/first-down-play-calling/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "How the Arizona Diamondbacks Reached the World Series Against All Odds",
+    "authors": [
+      "Albert Carreno"
+    ],
+    "date": "Dec 20, 2023",
+    "year": 2023,
+    "sport": "Baseball",
+    "readTime": 10,
+    "summary": "Since official playoff odds came into existence for major league baseball in 2014, there have been 160 teams that were given less than a 30% chance of making the playoffs before the start of the season. Out of these 160 teams, only 7 have defied the odds to make the playoffs,...",
+    "contentFile": "diamondbacks-world-series.md",
+    "images": [
+      {
+        "src": "/assets/journalism/diamondbacks-world-series/figure-06.png",
+        "alt": "This linear regression model strongly validates the above statement, showing a strong positive correlation between a team’s total wins and their pitchers’ LOB%. It has an R-squared value of 0.54."
+      }
+    ]
+  },
+  {
+    "title": "How Do Serves Shape the Trajectory of a Tennis Match?",
+    "authors": [
+      "Millie Huang",
+      "Heidi Yu"
+    ],
+    "date": "Dec 20, 2023",
+    "year": 2023,
+    "sport": "Tennis",
+    "readTime": 4,
+    "summary": "The serve is the shot used to initiate play in tennis, referring to the act of hitting the ball to start a point. The serve is a crucial part of tennis, as it can influence the dynamics of the entire match when setting up the next shot, putting pressure on the opponent,...",
+    "contentFile": "tennis-serves-analysis.md",
+    "images": [
+      {
+        "src": "/assets/journalism/tennis-serves-analysis/figure-01.png",
+        "alt": "logo_1_edited.png"
+      }
+    ]
+  },
+  {
+    "title": "Coco Gauff's 2023 Breakthrough",
+    "authors": [
+      "Sofia Jain",
+      "Angelina Muliadi"
+    ],
+    "date": "Dec 20, 2023",
+    "year": 2023,
+    "sport": "Tennis",
+    "readTime": 10,
+    "summary": "In the dynamic world of women’s tennis, a standout personality has captured the spotlight in recent years–Cori ‘Coco’ Gauff. Born in Delray Beach, Florida, in 2004, Gauff entered the tennis scene as a child prodigy. Yet, it was not until her breakthrough season in 2019 that...",
+    "contentFile": "coco-breakthrough.md",
+    "images": [
+      {
+        "src": "/assets/journalism/coco-breakthrough/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "When Should NFL Teams Go For It On 4th Down?",
+    "authors": [
+      "Tom Seifert"
+    ],
+    "date": "Dec 20, 2023",
+    "year": 2023,
+    "sport": "Football",
+    "readTime": 17,
+    "summary": "Throughout a football game, each coach is faced with many decisions about what to do on 4th down plays. While converting a 1st down on a 4th down undoubtedly improves a team’s likelihood of scoring on a given offensive drive, the possibility of failing to convert a 4th down...",
+    "contentFile": "4th-down-model.md",
+    "images": [
+      {
+        "src": "/assets/journalism/4th-down-model/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "Financial Breakdown of Championship-Caliber Teams: Which Positions Do the Best NFL Teams Invest in the Most?",
+    "authors": [
+      "Atij Mahesh"
+    ],
+    "date": "Dec 20, 2023",
+    "year": 2023,
+    "sport": "Football",
+    "readTime": 7,
+    "summary": "In the ever-evolving landscape of the NFL, success on the field is attributed to a combination of skillful player performance, strategic coaching, and astute financial management. As teams strive for championship glory, allocating financial resources becomes critical in their...",
+    "contentFile": "nfl-positional-spending.md",
+    "images": [
+      {
+        "src": "/assets/journalism/nfl-positional-spending/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "Predicting Career Lifespans of the NBA’s Best Players",
+    "authors": [
+      "Ryan Liu",
+      "Shaash Sivakumar"
+    ],
+    "date": "Dec 20, 2023",
+    "year": 2023,
+    "sport": "Basketball",
+    "readTime": 8,
+    "summary": "In an era marked by the relentless progress of modern technology and advancements in healthcare, professional athletes, particularly in the realm of the National Basketball Association (NBA), are defying the conventional limits of career longevity. The intersection of...",
+    "contentFile": "predicting-nba-career-lifespans.md",
+    "images": [
+      {
+        "src": "/assets/journalism/predicting-nba-career-lifespans/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "Home Advantage in the English Premier League – Myth or Reality?",
+    "authors": [
+      "Mingyang Li",
+      "Junying Li"
+    ],
+    "date": "Dec 19, 2023",
+    "year": 2023,
+    "sport": "Football",
+    "readTime": 14,
+    "summary": "The English Premier League boasts some of the most intimidating stadiums in the world of football. No opposing team would fancy playing in Liverpool’s Anfield Stadium enveloped by an army of Red Kops, or on a cold, wet Tuesday night in Stoke City’s Britannia Stadium. Hence, a...",
+    "contentFile": "home-advantage-in-premier-league.md",
+    "images": [
+      {
+        "src": "/assets/journalism/home-advantage-in-premier-league/figure-07.png",
+        "alt": "logo_1_edited.png"
+      }
+    ]
+  },
+  {
+    "title": "Messi Mania: Analyzing the Effects of Lionel Messi’s Arrival in Miami on American Soccer",
+    "authors": [
+      "Kushal Chatterjee"
+    ],
+    "date": "Dec 18, 2023",
+    "year": 2023,
+    "sport": "Basketball",
+    "readTime": 10,
+    "summary": "Arguably the greatest soccer player of all time, Lionel Messi, fresh off a World Cup win with Argentina, decided to take his talents to Major League Soccer (MLS) and join David Beckham’s Inter Miami CF in the summer of 2023. The now eight-time Ballon d’Or winner and one of...",
+    "contentFile": "messi-mania.md",
+    "images": [
+      {
+        "src": "/assets/journalism/messi-mania/figure-01.jpg",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "Do NFL Referees Affect Games?",
+    "authors": [
+      "Memphis Lau"
+    ],
+    "date": "Sep 16, 2023",
+    "year": 2023,
+    "sport": "Football",
+    "readTime": 7,
+    "summary": "Seemingly every game, fans of a losing team will blame the referees. But, how true can that statement really be? The role referees play in any sport, and especially the sport of American football, is crucial. A single call, whether correct or incorrect, can change an entire...",
+    "contentFile": "nfl-refs.md",
+    "images": [
+      {
+        "src": "/assets/journalism/nfl-refs/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "Decoding the Game: Forecasting NBA Champions with Neural Network Algorithms",
+    "authors": [
+      "BSA Team"
+    ],
+    "date": "Sep 16, 2023",
+    "year": 2023,
+    "sport": "Basketball",
+    "readTime": 3,
+    "summary": "Decoding the Game: Forecasting NBA Champions with Neural Network Algorithms by Bruin Sports Analytics.",
+    "contentFile": "nba-champs-neural-network.md",
+    "images": [
+      {
+        "src": "/assets/journalism/nba-champs-neural-network/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "Evolution of the game of cricket: IPL",
+    "authors": [
+      "Abhinav Madabhushi",
+      "Anish Deshpande"
+    ],
+    "date": "Sep 7, 2023",
+    "year": 2023,
+    "sport": "General",
+    "readTime": 14,
+    "summary": "The game of cricket has been changing over the years, just like every other sport. There are changes in the way the game is played, in the way the players approach the game, and sometimes changes in even the rules. Cricket was originally only played in the test format, where...",
+    "contentFile": "cricket-ipl-evolution.md",
+    "images": [
+      {
+        "src": "/assets/journalism/cricket-ipl-evolution/figure-01.png",
+        "alt": "Source: YouGov Sports"
+      }
+    ]
+  },
+  {
+    "title": "The Hidden Dynamics Beneath Olympic Swimming",
+    "authors": [
+      "Jodie Chen"
+    ],
+    "date": "Sep 6, 2023",
+    "year": 2023,
+    "sport": "Gymnastics",
+    "readTime": 6,
+    "summary": "With its blend of power, endurance, and precision, the sport of swimming pushes athletes to their physical and mental limits, leaving spectators awestruck as records are shattered and new champions emerge. However, beneath the surface of this impressive spectacle lies an...",
+    "contentFile": "olympic-swimming.md",
+    "images": [
+      {
+        "src": "/assets/journalism/olympic-swimming/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "Which Sport Do Women Make The Most Money In?",
+    "authors": [
+      "Sreya Muppalla",
+      "Zoe Powers"
+    ],
+    "date": "Aug 7, 2023",
+    "year": 2023,
+    "sport": "Basketball",
+    "readTime": 7,
+    "summary": "Me: “List 5 players who are or who have been on the Los Angeles Lakers without using the internet:” Some Sports Analyst: “LeBron James, Kobe Bryant, Shaq, Anthony Davis, and Kareem-Abdul Jabbar.”",
+    "contentFile": "women-salary-analysis.md",
+    "images": [
+      {
+        "src": "/assets/journalism/women-salary-analysis/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "A Lost Art? Exploring the NBA's Double-Big Lineups",
+    "authors": [
+      "Nadeev Alam"
+    ],
+    "date": "Aug 7, 2023",
+    "year": 2023,
+    "sport": "Basketball",
+    "readTime": 13,
+    "summary": "As a Minnesota native, I was devastated on July 1, 2022, when I saw the Utah Jazz were trading Rudy Gobert to the Minnesota Timberwolves. After making the playoffs for the first time since 2018, Timberwolves nonsensically sent away players that were critical to that run and a...",
+    "contentFile": "nba-double-bigs.md",
+    "images": [
+      {
+        "src": "/assets/journalism/nba-double-bigs/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "Predicting how Kike Hernandez and Justin Turner’s Chemistry will Help the Red Sox this Season",
+    "authors": [
+      "Sofia Villalpando"
+    ],
+    "date": "Aug 7, 2023",
+    "year": 2023,
+    "sport": "Baseball",
+    "readTime": 3,
+    "summary": "Baseball is one of the sports that draws fans in because of friendship, love, and inclusivity. In Major League Baseball, there are thirty teams with 40-man rosters who interact for 189 days of the year, where many teammates and competitors create friendships and bonds that...",
+    "contentFile": "hernandez-turner-chemistry.md",
+    "images": [
+      {
+        "src": "/assets/journalism/hernandez-turner-chemistry/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "How Much of an Impact Has the College Football Transfer Portal Really Made?",
+    "authors": [
+      "Trent Bellinger"
+    ],
+    "date": "Aug 7, 2023",
+    "year": 2023,
+    "sport": "Football",
+    "readTime": 5,
+    "summary": "The college football transfer portal made its introduction in 2018, and has since revolutionized the way that college football teams recruit players. All of the best college football teams are using the transfer portal as a way to strengthen their rosters, often bringing in...",
+    "contentFile": "cfb-transfer-impact.md",
+    "images": [
+      {
+        "src": "/assets/journalism/cfb-transfer-impact/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "Predicting the Rookie Year Stats of the Top Prospects in the 2023 NBA Draft Class",
+    "authors": [
+      "Ryan Liu",
+      "Ashton Chung"
+    ],
+    "date": "Aug 7, 2023",
+    "year": 2023,
+    "sport": "Basketball",
+    "readTime": 8,
+    "summary": "The talent level in the National Basketball Association (NBA) only grows yearly, and this also seems to be the case for the upcoming draft class. With the unreal hype around this year’s top prospect, Victor Wembanyama, many expect him to make a significant impact in his first...",
+    "contentFile": "2023-nba-draft-class.md",
+    "images": [
+      {
+        "src": "/assets/journalism/2023-nba-draft-class/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "The Next MLB Asian Sensations",
+    "authors": [
+      "Nathan Kim"
+    ],
+    "date": "Aug 7, 2023",
+    "year": 2023,
+    "sport": "Baseball",
+    "readTime": 11,
+    "summary": "As Asian stars in the MLB continue to proliferate, stars like Shohei Ohtani, Kim Ha Seong, Bae Ji Hwan, and Kodai Senga are able to garner increased attention from international fanbases. However before these players were able to display their talents on the field, many other...",
+    "contentFile": "mlb-asian-sensations.md",
+    "images": [
+      {
+        "src": "/assets/journalism/mlb-asian-sensations/figure-02.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "Shohei Ohtani and the Emergence of Japanese Talent in the MLB",
+    "authors": [
+      "Jason Vo"
+    ],
+    "date": "Aug 7, 2023",
+    "year": 2023,
+    "sport": "Basketball",
+    "readTime": 11,
+    "summary": "On March 21, 2023, in the 9th inning of the World Baseball Classic Championship with 2 outs and no runners on base, Team USA’s Mike Trout came up to bat against Team Japan’s Shohei Ohtani representing the tying run. Both were teammates on the Los Angeles Angels, and the...",
+    "contentFile": "shohei-ohtani-and-the-emergence-of-japanese-talent-in-the-mlb.md",
+    "images": [
+      {
+        "src": "/assets/journalism/shohei-ohtani-and-the-emergence-of-japanese-talent-in-the-mlb/figure-01.png",
+        "alt": "logo_1_edited.png"
+      }
+    ]
+  },
+  {
+    "title": "Kim Min-Jae: The Great Wall of Napoli",
+    "authors": [
+      "Kevin Kim"
+    ],
+    "date": "Aug 7, 2023",
+    "year": 2023,
+    "sport": "General",
+    "readTime": 17,
+    "summary": "First of all, congratulations to Napoli for their magical campaign this season. They have been delightful to watch, and have been crowned the champions of the 2022/23 Serie A. Many fans and pundits accredit star players such as Victor Osimhen and Khvicha Kvaratskhelia as the...",
+    "contentFile": "kim-min-jae.md",
+    "images": [
+      {
+        "src": "/assets/journalism/kim-min-jae/figure-01.jpg",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "Debunking the Ranked System: Is Ranked Based on Luck or Skill?",
+    "authors": [
+      "Krithik Jatavallabhula"
+    ],
+    "date": "Aug 7, 2023",
+    "year": 2023,
+    "sport": "General",
+    "readTime": 12,
+    "summary": "There have been a lot of talks about changing the ranked system in the popular game, League of Legends. Popular LoL players such as Tyler1 have made complaints about this, especially in a game where his teammate purposefully cost their team the game and Tyler1’s rank went...",
+    "contentFile": "ranked-lol.md",
+    "images": [
+      {
+        "src": "/assets/journalism/ranked-lol/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "How Can We Predict a Breakout NBA Season?",
+    "authors": [
+      "Joshua Susanto"
+    ],
+    "date": "Aug 7, 2023",
+    "year": 2023,
+    "sport": "Basketball",
+    "readTime": 8,
+    "summary": "A breakout season is a phenomenon where a player, seemingly out of nowhere, performs to a much greater standard than previously believed to be within their capabilities. This is not exclusive to a specific sport as most, if not all, recorded competitive sports have seen an...",
+    "contentFile": "nba-breakouts.md",
+    "images": [
+      {
+        "src": "/assets/journalism/nba-breakouts/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "How Has MLB’s New Pitch Clock Affected the Slowest Pitchers?",
+    "authors": [
+      "Daniel Wang"
+    ],
+    "date": "Aug 6, 2023",
+    "year": 2023,
+    "sport": "Baseball",
+    "readTime": 6,
+    "summary": "New this season, the MLB implemented a pitch clock with a 15-second timer between pitches with the bases empty and a 20-second timer between pitches with runners on base. The pitcher must begin his delivery before the clock expires, or else he will be assessed with an...",
+    "contentFile": "pitch-clock-effects.md",
+    "images": [
+      {
+        "src": "/assets/journalism/pitch-clock-effects/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "The Anomaly of Marcus Jones",
+    "authors": [
+      "Tom Seifert",
+      "Ronan Nayak"
+    ],
+    "date": "Aug 6, 2023",
+    "year": 2023,
+    "sport": "Football",
+    "readTime": 8,
+    "summary": "The game of football consists of three phases: offense, defense, and special teams. In the NFL, the highest level of football in the world, a player usually only significantly contributes to one phase of the game. Some skill position players, like running backs, wide...",
+    "contentFile": "marcus-jones.md",
+    "images": [
+      {
+        "src": "/assets/journalism/marcus-jones/figure-02.png",
+        "alt": "Figure 2"
+      }
+    ]
+  },
+  {
+    "title": "Do Quarterbacks on Rookie Contracts Allow for Greater Team Success?",
+    "authors": [
+      "Amaeya Deshpande"
+    ],
+    "date": "Jul 22, 2023",
+    "year": 2023,
+    "sport": "Football",
+    "readTime": 9,
+    "summary": "Over the last few years, football fans have commonly formed the notion that teams with a quarterback on a rookie deal are at an advantage due to their low cap hit. While some quarterbacks consume nearly a quarter of the salary cap, quarterbacks on rookie deals take a much...",
+    "contentFile": "rookie-qb-success.md",
+    "images": [
+      {
+        "src": "/assets/journalism/rookie-qb-success/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "Fixing the NET: Building a New Men’s College Basketball Ranking System",
+    "authors": [
+      "Leonardo Cardozo"
+    ],
+    "date": "Jul 17, 2023",
+    "year": 2023,
+    "sport": "Basketball",
+    "readTime": 7,
+    "summary": "The selection and seeding of college basketball teams for the NCAA tournament has been a complaint among college basketball teams and fans ever since the tournament expanded to 64 teams in 1985. With the combined seeds of the men’s 2023 final four adding up to 23 (5.75 seed...",
+    "contentFile": "fixing-net.md",
+    "images": [
+      {
+        "src": "/assets/journalism/fixing-net/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "How MLB Got Its Groove Back: Examining How The Rule Changes Have Affected MLB",
+    "authors": [
+      "Robert Reyes"
+    ],
+    "date": "Jul 17, 2023",
+    "year": 2023,
+    "sport": "Baseball",
+    "readTime": 7,
+    "summary": "The MLB has had a problem in recent years, with games dragging on longer and longer and fan attendance decreasing. This offseason, the MLB made several changes to its rules with the goal of making games shorter and more interesting by providing more concentrated action. They...",
+    "contentFile": "mlb-rule-changes.md",
+    "images": [
+      {
+        "src": "/assets/journalism/mlb-rule-changes/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "Do Season Series Always Determine the Outcome of First Round Playoff Series?",
+    "authors": [
+      "Rik Mukherjee"
+    ],
+    "date": "Jul 6, 2023",
+    "year": 2023,
+    "sport": "Basketball",
+    "readTime": 12,
+    "summary": "Every year when the first round of the NBA Playoffs come around, basketball fans rejoice, as the regular season ends and the “important” part of the season begins. During the playoffs, stars are made or broken, narratives are built, drama is felt. It is meant to be the...",
+    "contentFile": "season-series-playoffs.md",
+    "images": [
+      {
+        "src": "/assets/journalism/season-series-playoffs/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "A New Era in Westwood",
+    "authors": [
+      "Nathan Wetmore"
+    ],
+    "date": "Jul 1, 2023",
+    "year": 2023,
+    "sport": "Football",
+    "readTime": 9,
+    "summary": "For the past five seasons, Chip Kelly has been trying to revive football here in Westwood. The three years immediately before Kelly’s arrival was the Josh Rosen era, a period with a less-than-encouraging number of wins even with a projected first-round NFL quarterback...",
+    "contentFile": "bruins-big-ten.md",
+    "images": [
+      {
+        "src": "/assets/journalism/bruins-big-ten/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "How Much Does Defense Affect Goaltending in the NHL?",
+    "authors": [
+      "Albert Carreno"
+    ],
+    "date": "Jul 1, 2023",
+    "year": 2023,
+    "sport": "Hockey",
+    "readTime": 9,
+    "summary": "A hotly debated question in hockey is how can the defense around a goaltender impact his performance? The answer to this question may seem to be fairly intuitive. If a goaltender is surrounded by a stronger defense, they will perform better according to goaltending metrics...",
+    "contentFile": "nhl-defense-goalies.md",
+    "images": [
+      {
+        "src": "/assets/journalism/nhl-defense-goalies/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "NFL Player Position Evolution: Impact of Non-WRs Receiving and Non-RBs Rushing",
+    "authors": [
+      "Atij Mahesh"
+    ],
+    "date": "Jun 23, 2023",
+    "year": 2023,
+    "sport": "Football",
+    "readTime": 7,
+    "summary": "College football is typically a “testing ground” for specific NFL playbooks and playstyles. Since the 2000s, college football teams have molded their game in a variety of ways: more quarterback options, jet sweeps, and trick plays. These experimental game styles typically are...",
+    "contentFile": "nfl-position-evolution.md",
+    "images": [
+      {
+        "src": "/assets/journalism/nfl-position-evolution/figure-01.jpg",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "Is Load Management doing more harm than good to NBA players?",
+    "authors": [
+      "Abel Lula"
+    ],
+    "date": "Jun 23, 2023",
+    "year": 2023,
+    "sport": "Basketball",
+    "readTime": 11,
+    "summary": "Just like all other professional sports, the National Basketball Association (NBA) have had their fair share of injury dilemmas. In the last decade, NBA teams have done a plethora of things to attempt to decrease and prevent the amount of injuries that NBA players sustain....",
+    "contentFile": "load-management.md",
+    "images": [
+      {
+        "src": "/assets/journalism/load-management/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "How Do Serve Errors Impact UCLA Men's vs. Women's Volleyball Performance?",
+    "authors": [
+      "Paige Lee",
+      "Bryan Palmero"
+    ],
+    "date": "Apr 24, 2023",
+    "year": 2023,
+    "sport": "Volleyball",
+    "readTime": 5,
+    "summary": "Volleyball is a sport defined by its mistakes. Hitting a ball into a net, sailing a serve out of bounds or failing to receive - simply put, errors are woven into the fabric of the 128-year old game. They’re terminal actions, and mark the end of rallies.",
+    "contentFile": "volleyball_serve.md",
+    "images": [
+      {
+        "src": "/assets/journalism/volleyball_serve/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "College Basketball Conferences",
+    "authors": [
+      "Memphis Lau"
+    ],
+    "date": "Apr 5, 2023",
+    "year": 2023,
+    "sport": "Basketball",
+    "readTime": 11,
+    "summary": "Every year, once March comes around, we all fill out our brackets, most of us doing so blindly and without knowledge of how exactly the tournament works. This article aims to explain how conferences play into the tournament, determine which conferences are worth watching, and...",
+    "contentFile": "mid-majors.md",
+    "images": [
+      {
+        "src": "/assets/journalism/mid-majors/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "The Battle for Jude Bellingham",
+    "authors": [
+      "Phillip Jong Min Lee"
+    ],
+    "date": "Apr 5, 2023",
+    "year": 2023,
+    "sport": "Soccer",
+    "readTime": 10,
+    "summary": "As the biggest and most widely played sport this world has ever seen, the soccer industry involves frequent transfers with big money throughout the summer and winter transfer windows. During this passing 2022-23 season, English Premier League clubs alone have spent over 3...",
+    "contentFile": "bellingham.md",
+    "images": [
+      {
+        "src": "/assets/journalism/bellingham/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "League of Legends: Championing the Rift with Deep Learning Recommendations",
+    "authors": [
+      "Jun Yu Chen",
+      "Eric Xia"
+    ],
+    "date": "Apr 3, 2023",
+    "year": 2023,
+    "sport": "Motorsports",
+    "readTime": 21,
+    "summary": "Picture yourself on the battlefield of Summoner's Rift, your heart racing with anticipation and your fingers poised to unleash a torrent of devastating abilities on your adversaries. As you gaze upon the vast array of champions before you, a daunting question arises: which...",
+    "contentFile": "lol-recommender.md",
+    "images": [
+      {
+        "src": "/assets/journalism/lol-recommender/figure-07.png",
+        "alt": "Figure 9: Neural Network Diagram "
+      }
+    ]
+  },
+  {
+    "title": "Have powerlifters become stronger in terms of their one-rep max squat over the course of the sport’s",
+    "authors": [
+      "Ryan Quach"
+    ],
+    "date": "Apr 3, 2023",
+    "year": 2023,
+    "sport": "General",
+    "readTime": 10,
+    "summary": "Given that the standard of living has generally improved worldwide over the past few decades, it would stand to reason that performances in the more physical sports would also improve as well. And in these sports, athletes also use knowledge and experience from previous...",
+    "contentFile": "__1rm.md",
+    "images": [
+      {
+        "src": "/assets/journalism/__1rm/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "The Game and Impact of Adem Bona",
+    "authors": [
+      "Anthony Rio"
+    ],
+    "date": "Apr 3, 2023",
+    "year": 2023,
+    "sport": "Basketball",
+    "readTime": 8,
+    "summary": "Adem Bona is a 19 year old freshman who has started every game in his one season at UCLA. He will likely be a pro soon, but while he’s at UCLA, he is and will continue to be a difference maker for his team. Bona was a highly touted recruit coming out of high school, ranking...",
+    "contentFile": "adem-bona.md",
+    "images": [
+      {
+        "src": "/assets/journalism/adem-bona/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "Can We Predict the Success of Newly Promoted Teams in the English Premier League?",
+    "authors": [
+      "Hashim Bhat"
+    ],
+    "date": "Apr 3, 2023",
+    "year": 2023,
+    "sport": "Soccer",
+    "readTime": 7,
+    "summary": "The English Premier League is the most watched soccer league in the world, boasting a global audience of 3.2 billion people worldwide. The overwhelming majority of fans who support a team in the EPL root for one of the “Big 6” and, every year, they bite their nails as they...",
+    "contentFile": "epl-promoted.md",
+    "images": [
+      {
+        "src": "/assets/journalism/epl-promoted/figure-01.jpg",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "Quarterback Mobility and Longevity",
+    "authors": [
+      "Chinmay Varshneya"
+    ],
+    "date": "Apr 1, 2023",
+    "year": 2023,
+    "sport": "Football",
+    "readTime": 8,
+    "summary": "In American Football, the quarterback is the leader of the offense, and they traditionally facilitate production through passing. But, with time, a greater emphasis has been placed on a quarterback’s ability to make plays in more ways than one. We can thus introduce some...",
+    "contentFile": "qb-mobility.md",
+    "images": [
+      {
+        "src": "/assets/journalism/qb-mobility/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "Another Playoff Season Gone: What the Chargers Need To Do To Make It to the Super Bowl",
+    "authors": [
+      "Sofia Villalpando"
+    ],
+    "date": "Apr 1, 2023",
+    "year": 2023,
+    "sport": "Football",
+    "readTime": 3,
+    "summary": "Over the past five seasons, the Chargers have made the playoffs twice, but have not had a Super Bowl appearance since 1994. With two stellar quarterbacks and an incredible offense, it has been a shock to Chargers fans along the coast why the team hasn’t progressed as far as...",
+    "contentFile": "chargers-superbowl.md",
+    "images": [
+      {
+        "src": "/assets/journalism/chargers-superbowl/figure-02.png",
+        "alt": "Figure 2"
+      }
+    ]
+  },
+  {
+    "title": "What’s Happened to Son Heung Min and Ivan Perisic this season?",
+    "authors": [
+      "Nathan Kim"
+    ],
+    "date": "Apr 1, 2023",
+    "year": 2023,
+    "sport": "Football",
+    "readTime": 6,
+    "summary": "Son Heung Min last season was one of the most prolific players in the English Premier League, EPL. With 23 goals and 7 assists and a joint-Golden Boot Winner, expectations were high for Son this 2022-2023 EPL season. However, as the season is coming to an end, his statistics...",
+    "contentFile": "sonny.md",
+    "images": [
+      {
+        "src": "/assets/journalism/sonny/figure-01.png",
+        "alt": "logo_1_edited.png"
+      }
+    ]
+  },
+  {
+    "title": "What Gets You a Shoe Deal In the NBA?",
+    "authors": [
+      "Tom Seifert",
+      "Eric Huang"
+    ],
+    "date": "Apr 1, 2023",
+    "year": 2023,
+    "sport": "Basketball",
+    "readTime": 15,
+    "summary": "The NBA has a long history of players securing lucrative shoe deals with top brands, but what factors determine which players are chosen to represent these brands with their own signature shoes? While some may assume that the biggest stars with the most impressive stats...",
+    "contentFile": "nba-shoe-deals.md",
+    "images": [
+      {
+        "src": "/assets/journalism/nba-shoe-deals/figure-01.png",
+        "alt": "Source: https://www.popularbasketballers.com/ (as of January 2023)"
+      }
+    ]
+  },
+  {
+    "title": "How Important is the Quarterback Position for Winning a Super Bowl?",
+    "authors": [
+      "Daniel Wang"
+    ],
+    "date": "Apr 1, 2023",
+    "year": 2023,
+    "sport": "Football",
+    "readTime": 6,
+    "summary": "To state the obvious, the NFL is a quarterback-centric league. Quarterbacks are the heart of a football team and lead the offense, more often than not dictating their team’s performance. With that being said, how important is the QB position really for winning a Super Bowl?...",
+    "contentFile": "nfl-qb-importance.md",
+    "images": [
+      {
+        "src": "/assets/journalism/nfl-qb-importance/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "Analysis of the NBA Hall of Fame",
+    "authors": [
+      "Trent Bellinger",
+      "Derek Nakagawa"
+    ],
+    "date": "Apr 1, 2023",
+    "year": 2023,
+    "sport": "Basketball",
+    "readTime": 9,
+    "summary": "Since 1959, the Naismith Memorial Basketball Hall of Fame has honored and celebrated some of the game’s greatest moments and brightest stars.  To be nominated and selected to be in the Hall of Fame is not only a huge honor for the player, but also a sign to know that they...",
+    "contentFile": "nba-hof-analysis.md",
+    "images": [
+      {
+        "src": "/assets/journalism/nba-hof-analysis/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "Victor Wembanyama: Destined for Greatness or Premature Retirement?",
+    "authors": [
+      "Tony Jeon"
+    ],
+    "date": "Apr 1, 2023",
+    "year": 2023,
+    "sport": "Basketball",
+    "readTime": 9,
+    "summary": "Considered the greatest basketball prospect since Lebron James, Victor Wembanyama has NBA teams desperate to tank in hopes of landing the first overall pick at the upcoming 2023 NBA draft. Despite other elite prospects such as Scoot Henderson being part of a stacked draft,...",
+    "contentFile": "wembanyama.md",
+    "images": [
+      {
+        "src": "/assets/journalism/wembanyama/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "Why MLS is the Best League in the World",
+    "authors": [
+      "Bennett Kedrosky"
+    ],
+    "date": "Mar 31, 2023",
+    "year": 2023,
+    "sport": "Soccer",
+    "readTime": 6,
+    "summary": "MLS is the best league in the world. But best doesn’t mean it has the greatest players, coaches, or even the highest quality of play. As a sporting spectacle, however,  MLS has the most compelling combination of competitive parity, coaching, and quality of play. Consider...",
+    "contentFile": "why-the-mls-is-the-best-league-in-the-world.md",
+    "images": [
+      {
+        "src": "/assets/journalism/why-the-mls-is-the-best-league-in-the-world/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "Predicting the 2023 NHL Stanley Cup Winner",
+    "authors": [
+      "Albert Carreno"
+    ],
+    "date": "Mar 31, 2023",
+    "year": 2023,
+    "sport": "Baseball",
+    "readTime": 18,
+    "summary": "As we reach the end of winter and enter the start of spring, hockey fans only have one thing on their minds: the NHL Stanley Cup playoffs. In 1917, the NHL was established as a professional sports league, but only included six Canadian teams. 106 years later, the league has...",
+    "contentFile": "predicting-nhl.md",
+    "images": [
+      {
+        "src": "/assets/journalism/predicting-nhl/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "An overview of NBA offenses: playstyles that work",
+    "authors": [
+      "Abhinav Madabhushi"
+    ],
+    "date": "Mar 31, 2023",
+    "year": 2023,
+    "sport": "Basketball",
+    "readTime": 17,
+    "summary": "The NBA has 30 different teams spread across 2 conferences, each with its own coaching staff and players. Each team is composed of players with different abilities and physiques, and each team has a head coach with different methods and strategies in mind. The NBA is as much...",
+    "contentFile": "nba-playstyles.md",
+    "images": [
+      {
+        "src": "/assets/journalism/nba-playstyles/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "Examining the Biggest 2023 MLB Position Player Contracts",
+    "authors": [
+      "Robert Reyes"
+    ],
+    "date": "Mar 31, 2023",
+    "year": 2023,
+    "sport": "Baseball",
+    "readTime": 12,
+    "summary": "Every year, contracts handed out to MLB players rise in value. Millions and millions of dollars are thrown at free agents by teams in hopes to sign the biggest names on the market. This year was no different, as Aaron Judge (9 years, $360 million, $40 Annual Average Value),...",
+    "contentFile": "mlb-contract-analysis.md",
+    "images": [
+      {
+        "src": "/assets/journalism/mlb-contract-analysis/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "Is the Onside Kick an Effective Strategy?",
+    "authors": [
+      "Leonardo Cardozo"
+    ],
+    "date": "Mar 31, 2023",
+    "year": 2023,
+    "sport": "Football",
+    "readTime": 5,
+    "summary": "In the 2023 Super Bowl, the Eagles led by 10 points at halftime. After scoring on two of their three second half drives, averaging over a field goal a drive, they ended up losing by 3 points. Simply put, the Eagles could not stop the Kansas City Chiefs and Patrick Mahomes, as...",
+    "contentFile": "onside-kicks.md",
+    "images": [
+      {
+        "src": "/assets/journalism/onside-kicks/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "Shooting For the Stars: Increasing Usage Rates in the NBA",
+    "authors": [
+      "Nadeev Alam",
+      "Nathan Wetmore"
+    ],
+    "date": "Mar 31, 2023",
+    "year": 2023,
+    "sport": "Basketball",
+    "readTime": 9,
+    "summary": "There is no doubt that today’s NBA is a stars’ league. Star players have unprecedented control over all levels of their basketball team. Today, the league’s superstars often give significant input on their team’s roster and coaching staff decisions. NBA fans commonly refer to...",
+    "contentFile": "star-usage-analysis.md",
+    "images": [
+      {
+        "src": "/assets/journalism/star-usage-analysis/figure-02.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "The Effect of College Conference on an NBA Prospect’s Draft Perception",
+    "authors": [
+      "Matthew Sasaki"
+    ],
+    "date": "Mar 31, 2023",
+    "year": 2023,
+    "sport": "Basketball",
+    "readTime": 5,
+    "summary": "Part of what makes the NBA Draft so special is the controversy and disagreements that arise over player evaluations. In ranking players, draftniks rely primarily on easily quantifiable metrics like college statistics and measurables. In general, players that put up bigger...",
+    "contentFile": "draft-conferences.md",
+    "images": [
+      {
+        "src": "/assets/journalism/draft-conferences/figure-01.jpg",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "Who is the Most ‘Like Mike’: A Statistical Breakdown",
+    "authors": [
+      "Joshua Susanto"
+    ],
+    "date": "Mar 30, 2023",
+    "year": 2023,
+    "sport": "Basketball",
+    "readTime": 12,
+    "summary": "Basketball is an electrifying sport, with millions of players around the planet constantly honing their skills for the game they love. Throughout the many years of the sport’s existence, only a select few have been able to compete among the greatest and rise to basketball...",
+    "contentFile": "like-mike.md",
+    "images": [
+      {
+        "src": "/assets/journalism/like-mike/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "Predicting the 2023 Formula One Season",
+    "authors": [
+      "Ella Hinkle",
+      "Taylor Fenton"
+    ],
+    "date": "Mar 25, 2023",
+    "year": 2023,
+    "sport": "Motorsports",
+    "readTime": 9,
+    "summary": "Predicting the 2023 Formula One Season With the help of the Netflix docuseries Drive to Survive, Formula One is quickly rising in popularity and gaining a new audience outside of its typically European viewership. Formula One is the highest-class international open-wheel...",
+    "contentFile": "f1-preds.md",
+    "images": [
+      {
+        "src": "/assets/journalism/f1-preds/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "The Statistics that Help Win NBA Championships",
+    "authors": [
+      "Ryan Kawamura"
+    ],
+    "date": "Feb 13, 2023",
+    "year": 2023,
+    "sport": "Basketball",
+    "readTime": 12,
+    "summary": "With a new stream of talent coming from college and across the world to the NBA, basketball is and forever will be a constantly changing game. However, is there a statistic that proves to be the most important and indicative of a championship caliber team? In this project, I...",
+    "contentFile": "stats-nba-champs.md",
+    "images": [
+      {
+        "src": "/assets/journalism/stats-nba-champs/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "Predicting the Premier League 2022-2023 Table Using Goal Difference",
+    "authors": [
+      "Hashim Bhat",
+      "Daniel (Seungmo) Lee"
+    ],
+    "date": "Jan 5, 2023",
+    "year": 2023,
+    "sport": "Soccer",
+    "readTime": 6,
+    "summary": "It’s a well-known fact that soccer is the most popular sport worldwide, bringing together billions of fans from all over the world to enjoy the beautiful game. The English Premier League, founded in 1992, boasts the most viewership out of any professional soccer league, with...",
+    "contentFile": "predicting-the-premier-league-2022-2023-table-using-goal-difference.md",
+    "images": [
+      {
+        "src": "/assets/journalism/predicting-the-premier-league-2022-2023-table-using-goal-difference/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "The Return of the No.9",
+    "authors": [
+      "Phillip Jong Min Lee"
+    ],
+    "date": "Dec 31, 2022",
+    "year": 2022,
+    "sport": "Basketball",
+    "readTime": 10,
+    "summary": "In any popular sport in the modern era, the main stars are often those who are responsible for the offensive part of the game. Basketball fans point to players like Michael Jordan and Lebron James when asked to choose the greatest basketball player of all time. Football fans...",
+    "contentFile": "the-return-of-the-no-9.md",
+    "images": [
+      {
+        "src": "/assets/journalism/the-return-of-the-no-9/figure-01.png",
+        "alt": "xG vs goals broken down by each player"
+      }
+    ]
+  },
+  {
+    "title": "Is Trading Down in the First Round of the NFL Draft Beneficial?",
+    "authors": [
+      "Amaeya Deshpande"
+    ],
+    "date": "Dec 17, 2022",
+    "year": 2022,
+    "sport": "Football",
+    "readTime": 13,
+    "summary": "There is no doubt that team-building is one of the primary factors in launching a team to the Super Bowl. That final destination in February cannot be reached without successful windows from March to April in the years prior. The free agency period and the NFL Draft are...",
+    "contentFile": "nfl_trading_down.md",
+    "images": [
+      {
+        "src": "/assets/journalism/nfl_trading_down/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "Predicting Pitches",
+    "authors": [
+      "Alisha Dhar"
+    ],
+    "date": "Dec 16, 2022",
+    "year": 2022,
+    "sport": "Baseball",
+    "readTime": 8,
+    "summary": "The MLB has been the leading sport to utilize analytics in recent years. From deciding where to place fielders in a shift to predicting which prospects are going to be successful in the major leagues, data analytics is incorporated into all aspects of the game. A few years...",
+    "contentFile": "predicting-pitches.md",
+    "images": [
+      {
+        "src": "/assets/journalism/predicting-pitches/figure-01.jpg",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "Success and Aggression on the Serve",
+    "authors": [
+      "Chinmay Varshneya",
+      "Leo Cardozo"
+    ],
+    "date": "Dec 15, 2022",
+    "year": 2022,
+    "sport": "Tennis",
+    "readTime": 6,
+    "summary": "There’s only one stroke in tennis which a player can entirely control, the serve. With the serve, players have the ability to finish a point without hitting another shot. As a result, being on serve poses a tremendous advantage, as the average professional servers hold serve...",
+    "contentFile": "serve_success.md",
+    "images": [
+      {
+        "src": "/assets/journalism/serve_success/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "Did the legalization of zone defense in 2002 cause Shaquille O’Neal’s scoring to decline?",
+    "authors": [
+      "Ryan Quach"
+    ],
+    "date": "Dec 15, 2022",
+    "year": 2022,
+    "sport": "Basketball",
+    "readTime": 8,
+    "summary": "In his prime, Shaquille O’Neal had no equal. Weighing 325 pounds at 7’1, O’Neal would utilize his sheer physical advantage in conjunction with his post skills to become arguably the most dominant center in NBA history. The disparity between O’Neal and other players in the...",
+    "contentFile": "shaq-zone-analysis.md",
+    "images": [
+      {
+        "src": "/assets/journalism/shaq-zone-analysis/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "How Does Age Impact Swimming Performance?",
+    "authors": [
+      "Aashna Sibal"
+    ],
+    "date": "Dec 15, 2022",
+    "year": 2022,
+    "sport": "Gymnastics",
+    "readTime": 7,
+    "summary": "Performance in swimming is determined by a variety of factors – agility, muscular strength, experience, height, and many more. Of course, having an advantage in one area does not guarantee one’s success in swimming, but having a perfect blend of various different ones can be...",
+    "contentFile": "swim-age-analysis.md",
+    "images": [
+      {
+        "src": "/assets/journalism/swim-age-analysis/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "How Does a Coach’s Gender Impact Their Team’s Olympic Curling Performance?",
+    "authors": [
+      "Paige Lee",
+      "Shuqin (Sue) Tang"
+    ],
+    "date": "Dec 14, 2022",
+    "year": 2022,
+    "sport": "Gymnastics",
+    "readTime": 6,
+    "summary": "Historically, there has been a disproportionate number of male coaches in the Olympic Games. In the Tokyo 2020 Summer Olympics, only 13% of the coaches were females. Given that a record number of female athletes competed in the Beijing 2022 Winter Olympics (constituting 45%...",
+    "contentFile": "olympic_curling.md",
+    "images": [
+      {
+        "src": "/assets/journalism/olympic_curling/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "The Premier League’s Best Right Back: Reece James vs. Trent Alexander-Arnold",
+    "authors": [
+      "Tony Jeon"
+    ],
+    "date": "Dec 14, 2022",
+    "year": 2022,
+    "sport": "Soccer",
+    "readTime": 8,
+    "summary": "For the past few seasons, the conversation of the best right back in the Premier League has been dominated by Chelsea’s Reece James and Liverpool’s Trent Alexander-Arnold. As a product of the Liverpool youth system, Alexander-Arnold made his senior debut in 2016 and...",
+    "contentFile": "pl_best_right_back.md",
+    "images": [
+      {
+        "src": "/assets/journalism/pl_best_right_back/figure-06.png",
+        "alt": "Figure 6"
+      }
+    ]
+  },
+  {
+    "title": "Carlos Alcaraz, Tennis’ Youngest World No. 1",
+    "authors": [
+      "Jerry Shi"
+    ],
+    "date": "Dec 14, 2022",
+    "year": 2022,
+    "sport": "Tennis",
+    "readTime": 5,
+    "summary": "With the ascension of Roger Federer to the throne as ATP World No.1 in 2004, only the Big Three—Roger Federer, Novak Djokovic, and Rafael Nadal—and Andy Murrary have been able to reach the No.1 Ranking in the past 18 years. However in 2022, with Federer’s retirement, Nadal’s...",
+    "contentFile": "carlos_alcaraz_no1.md",
+    "images": [
+      {
+        "src": "/assets/journalism/carlos_alcaraz_no1/figure-01.png",
+        "alt": "Includes the age upon reaching World No.1 for all 28 players"
+      }
+    ]
+  },
+  {
+    "title": "Predictions For Zion Williamson In The 2022 NBA Season",
+    "authors": [
+      "Jun Yu Chen",
+      "Eric Xia"
+    ],
+    "date": "Dec 14, 2022",
+    "year": 2022,
+    "sport": "Basketball",
+    "readTime": 16,
+    "summary": "We all know that injury is an inevitable, yet unforeseeable part of basketball. In particular, in a professional league that is as competitive and physical as the NBA, we have witnessed career-ending injuries that ruin the bright future of many rising elites. On the other...",
+    "contentFile": "zion-prediction.md",
+    "images": [
+      {
+        "src": "/assets/journalism/zion-prediction/figure-02.jpg",
+        "alt": "Figure 2"
+      }
+    ]
+  },
+  {
+    "title": "Which Position is the Best Fantasy Football FLEX Option?",
+    "authors": [
+      "Caitlin Ree"
+    ],
+    "date": "Dec 14, 2022",
+    "year": 2022,
+    "sport": "Football",
+    "readTime": 7,
+    "summary": "Every year, millions of football fans around the world attempt to assemble their perfect fantasy football team, pulling players from the 32 NFL teams to fill every spot on their roster. Every fantasy football manager has a standard set of positions to fill (one quarterback,...",
+    "contentFile": "fantasy_flex.md",
+    "images": [
+      {
+        "src": "/assets/journalism/fantasy_flex/figure-01.png",
+        "alt": "logo_1_edited.png"
+      }
+    ]
+  },
+  {
+    "title": "Should NFL Teams Have Hope After Disappointing Seasons?",
+    "authors": [
+      "Jasmine Jungreis"
+    ],
+    "date": "Dec 14, 2022",
+    "year": 2022,
+    "sport": "Football",
+    "readTime": 6,
+    "summary": "In any given NFL matchup, random factors such as poor officiating, unforeseen injuries, or dropped passes have a substantial impact on the outcome of the game. In the last NFL season, underdogs won nearly 36% of games. This gives teams and fans hope, even when facing...",
+    "contentFile": "nfl_season_by_season.md",
+    "images": [
+      {
+        "src": "/assets/journalism/nfl_season_by_season/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "How to Build the Perfect Skateboarder",
+    "authors": [
+      "Daniel Wang",
+      "Robin Lee"
+    ],
+    "date": "Dec 14, 2022",
+    "year": 2022,
+    "sport": "Gymnastics",
+    "readTime": 6,
+    "summary": "Throughout the 2010s, skateboarding as a sport swelled exponentially, not only in its popularity and viewership, but also cultural impact—subtly influencing various aspects of day-to-day life around the world. Through iconic brands like Supreme and Stussy, skateboarding’s...",
+    "contentFile": "perfect_skateboarder.md",
+    "images": [
+      {
+        "src": "/assets/journalism/perfect_skateboarder/figure-01.png",
+        "alt": "The park course for Tokyo 2020 ©California Skateparks"
+      }
+    ]
+  },
+  {
+    "title": "Butt Plugs And Blunders: Did Hans Niemann Cheat Or Is Magnus Carlsen A Sore Loser?",
+    "authors": [
+      "Bennett Kedrosky"
+    ],
+    "date": "Dec 14, 2022",
+    "year": 2022,
+    "sport": "General",
+    "readTime": 6,
+    "summary": "On September 4, 2022, Hans Niemann shocked the chess world by defeating the world chess champion Magnus Carlsen in the 3rd round of the Sinquefield Cup. Coming off of a 53-game unbeaten streak of in-person (called “over-the-board” by chess players) matches, nobody expected...",
+    "contentFile": "niemann-cheating.md",
+    "images": [
+      {
+        "src": "/assets/journalism/niemann-cheating/figure-01.png",
+        "alt": "Source: Magnus Carlsen on Twitter"
+      }
+    ]
+  },
+  {
+    "title": "How Effective is Small Ball?",
+    "authors": [
+      "Abhinav Madabhushi",
+      "Andy Zhang"
+    ],
+    "date": "Dec 14, 2022",
+    "year": 2022,
+    "sport": "Basketball",
+    "readTime": 8,
+    "summary": "As the NBA evolves, teams have started to play smaller and smaller. In the past, teams have built around their star centers, with players like Wilt Chamberlain, Kareem Abdul-Jabbar, and Shaquille O’Neal dominating the ball on both sides of the court. Now, teams are starting...",
+    "contentFile": "small-ball-analysis.md",
+    "images": [
+      {
+        "src": "/assets/journalism/small-ball-analysis/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "What Does it Take to Win the FIFA World Cup",
+    "authors": [
+      "Ella Hinkle",
+      "Taylor Fenton"
+    ],
+    "date": "Dec 14, 2022",
+    "year": 2022,
+    "sport": "Football",
+    "readTime": 7,
+    "summary": "The FIFA World Cup is where dreams are made. The golden trophy from this most prestigious tournament in the world is what every soccer player looks up to and dedicates their lives for. Numerous players across the globe gather to compete in this tournament to represent their...",
+    "contentFile": "win_world_cup.md",
+    "images": [
+      {
+        "src": "/assets/journalism/win_world_cup/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "Which Yankee Had The Best 60 Home Run Season?",
+    "authors": [
+      "Albert Carreno",
+      "Anish Deshpande"
+    ],
+    "date": "Dec 13, 2022",
+    "year": 2022,
+    "sport": "Baseball",
+    "readTime": 22,
+    "summary": "Let’s be honest: when people go to baseball games, they are anticipating action mostly in the form of home runs. These exciting incidents of baseballs being seemingly sent to outer space sometimes by these muscular, powerful hitters are what make baseball exciting and worth...",
+    "contentFile": "yankees-sixty-homers.md",
+    "images": [
+      {
+        "src": "/assets/journalism/yankees-sixty-homers/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "How Can We Accurately Compare NBA Players Across Different Eras?",
+    "authors": [
+      "Daniel Wang"
+    ],
+    "date": "Dec 13, 2022",
+    "year": 2022,
+    "sport": "Basketball",
+    "readTime": 10,
+    "summary": "Jordan or LeBron: Who is the “GOAT”? Cross-era comparisons are often at the center of NBA discussions, but the style of play in the NBA has changed drastically over time, making it nearly impossible to directly compare players from different eras. In this article, I will...",
+    "contentFile": "nba-era-comparisons.md",
+    "images": [
+      {
+        "src": "/assets/journalism/nba-era-comparisons/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "Analyzing the MLB \"Sticky Stuff” Ban",
+    "authors": [
+      "Zayne Kratz"
+    ],
+    "date": "Dec 13, 2022",
+    "year": 2022,
+    "sport": "Baseball",
+    "readTime": 5,
+    "summary": "In baseball, pitchers and hitters alike are always looking for ways to improve.  For a while, pitchers have been putting different substances on their hands, including rosin, pine tar and sunscreen in order to help them get a better grip in the baseball to get more spin on...",
+    "contentFile": "mlb-sticky-stuff.md",
+    "images": [
+      {
+        "src": "/assets/journalism/mlb-sticky-stuff/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "Edwin Diaz: How \"Narco\" Helped Him Become One Of The Most Effective Closers In Baseball",
+    "authors": [
+      "Sofia Villalpando"
+    ],
+    "date": "Dec 12, 2022",
+    "year": 2022,
+    "sport": "Baseball",
+    "readTime": 4,
+    "summary": "Over the past few years, closers have been more frequently rotated within bullpens across all teams in the MLB. Edwin Diaz, a 28-year-old right-hand Mets reliever, struck baseball fans across the country during the 2022 MLB season with his consistent saves and high pitch...",
+    "contentFile": "edwin-diaz-analysis.md",
+    "images": [
+      {
+        "src": "/assets/journalism/edwin-diaz-analysis/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "The Most Unhittable Pitches in Baseball (2022)",
+    "authors": [
+      "Brandon Louie",
+      "Robert Reyes"
+    ],
+    "date": "Dec 12, 2022",
+    "year": 2022,
+    "sport": "Baseball",
+    "readTime": 15,
+    "summary": "The hardest thing to do in sports: hitting a baseball. However, this does not make pitching the easiest thing in sports. To put it as simply as possible, the job of a pitcher is to get opposing batters out, and the best way to do this is to get batters to swing and miss...",
+    "contentFile": "unhittable-pitches.md",
+    "images": [
+      {
+        "src": "/assets/journalism/unhittable-pitches/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "Centers and NBA Championship Contending Centers. What do you need from your Center to Contend?",
+    "authors": [
+      "Aditya Mehta"
+    ],
+    "date": "Jun 22, 2022",
+    "year": 2022,
+    "sport": "Basketball",
+    "readTime": 7,
+    "summary": "The past two years have seen a type of renaissance in the center position in the NBA with the spectacular play of Nikola Jokic and Joel Embiid. Jokic’s playmaking ability and pace control make him a trailblazer in a new “Point Center” position where a 7-footer controls the...",
+    "contentFile": "nba_contending_centers.md",
+    "images": [
+      {
+        "src": "/assets/journalism/nba_contending_centers/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "Predicting the Group Stages of the 2022 FIFA World Cup",
+    "authors": [
+      "Steven Lu Chen",
+      "Anvesha Dutta"
+    ],
+    "date": "Jun 22, 2022",
+    "year": 2022,
+    "sport": "Soccer",
+    "readTime": 11,
+    "summary": "Amongst the world’s seemingly endless number of competitions in the beautiful game, there is absolutely no greater prize than the FIFA World Cup. In the competition’s nearly one hundred years of history, just eight nations and 445 players have earned the title of world...",
+    "contentFile": "predicting_fifa_wc_2022.md",
+    "images": [
+      {
+        "src": "/assets/journalism/predicting_fifa_wc_2022/figure-03.png",
+        "alt": "Figure 3"
+      }
+    ]
+  },
+  {
+    "title": "How much does qualifying affect the actual race in Formula 1?",
+    "authors": [
+      "Ishika Sanghi",
+      "Jed Miguel"
+    ],
+    "date": "Jun 17, 2022",
+    "year": 2022,
+    "sport": "Motorsports",
+    "readTime": 7,
+    "summary": "While Formula 1 is relatively unknown in the United States, F1 possesses a small but dedicated following. Newcomers to the sport, especially those with previous racing knowledge, often compare NASCAR to F1. At their core, both are very similar sports, but they do have their...",
+    "contentFile": "formula1_qualifying.md",
+    "images": [
+      {
+        "src": "/assets/journalism/formula1_qualifying/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "Is It Possible to Predict March Madness Cinderella Stories?",
+    "authors": [
+      "Alisha Dhar"
+    ],
+    "date": "Jun 15, 2022",
+    "year": 2022,
+    "sport": "Basketball",
+    "readTime": 10,
+    "summary": "Sports at different levels all across the world draw in increased excitement during the playoffs: players and fans are always on edge to see if their team has what it takes to take home a championship. The mens’ college basketball playoffs, however, draw in a different level...",
+    "contentFile": "predict_march_madness_cinderella.md",
+    "images": [
+      {
+        "src": "/assets/journalism/predict_march_madness_cinderella/figure-01.jpg",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "The Skills That Will (and Won't) Get You Paid In The NBA: Year-to-Year Analysis",
+    "authors": [
+      "Arvind Kalyan"
+    ],
+    "date": "Jun 13, 2022",
+    "year": 2022,
+    "sport": "Basketball",
+    "readTime": 8,
+    "summary": "It’s no secret that the NBA has gone through its fair share of radical upheavals over the last few years. From the start of the small-ball Warriors dynasty to the revolution of the big man over these past two seasons, the game—and how front offices decide on building...",
+    "contentFile": "nba_paid_skills.md",
+    "images": [
+      {
+        "src": "/assets/journalism/nba_paid_skills/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "Analyzing the True Value of the Triple Double in the Modern NBA",
+    "authors": [
+      "Alex Guo",
+      "Darren Sohn"
+    ],
+    "date": "Jun 12, 2022",
+    "year": 2022,
+    "sport": "Basketball",
+    "readTime": 8,
+    "summary": "Using the stat sheet in the NBA is often an accurate measurement of how well an NBA performs on a game-to-game basis. Perhaps the most coveted statistic a player can record is the “triple-double”, an instance in which a player tallies double digits in three categories, with...",
+    "contentFile": "triple_double_value.md",
+    "images": [
+      {
+        "src": "/assets/journalism/triple_double_value/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "Height and Weight: The Backhand Shot",
+    "authors": [
+      "Pedram Bazargani",
+      "Manav Chadha"
+    ],
+    "date": "Jun 11, 2022",
+    "year": 2022,
+    "sport": "Tennis",
+    "readTime": 7,
+    "summary": "No shot in tennis shows off a player’s basic skill better than their backhand. The difficult shot is subdivided into two main types: one-handed and two-handed. Plenty of the world’s top players, from Rafael Nadal to Novak Djokovic, make use of the two-handed shot, but the...",
+    "contentFile": "the_backhand.md",
+    "images": [
+      {
+        "src": "/assets/journalism/the_backhand/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "The Most Disappointing Superteams in the NBA",
+    "authors": [
+      "Aaron Phung",
+      "Matthew Sasaki"
+    ],
+    "date": "Jun 9, 2022",
+    "year": 2022,
+    "sport": "Basketball",
+    "readTime": 8,
+    "summary": "There are seasons when we feel like a sports team is guaranteed to win the championship no matter what due to the overwhelming amount of strength in their players. We often call these teams “superteams”. However, some of these superteams still find a way to lose a lot of...",
+    "contentFile": "disappointing_superteams.md",
+    "images": [
+      {
+        "src": "/assets/journalism/disappointing_superteams/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "The Evolution of the Big Man over the Past Decade",
+    "authors": [
+      "Ryan Quach"
+    ],
+    "date": "Jun 7, 2022",
+    "year": 2022,
+    "sport": "Basketball",
+    "readTime": 9,
+    "summary": "Basketball is traditionally a game of five positions: the point guard, shooting guard, small forward, power forward, and center. But in recent years, specifically with respect to the NBA, the sport has become more and more positionless. To explain, it has become more common...",
+    "contentFile": "bigmen_nba.md",
+    "images": [
+      {
+        "src": "/assets/journalism/bigmen_nba/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "Put us out of our misery: How the LA Lakers Missed the Playoffs Just Two Years After Winning It All",
+    "authors": [
+      "Johan Chua"
+    ],
+    "date": "Jun 7, 2022",
+    "year": 2022,
+    "sport": "Basketball",
+    "readTime": 10,
+    "summary": "On an April 5 matchup between the Los Angeles Lakers and Phoenix Suns, Lakers’ announcer Stu Lantz was caught on a hot microphone pre-game telling the Lakers, “Let’s get this over with. Put us out of our misery”—a plea that seemingly reflected the overall sentiment of the...",
+    "contentFile": "lakers_misery.md",
+    "images": [
+      {
+        "src": "/assets/journalism/lakers_misery/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "Does Defense Win Championships in the NFL?",
+    "authors": [
+      "Jasmine Jungreis"
+    ],
+    "date": "Jun 7, 2022",
+    "year": 2022,
+    "sport": "Football",
+    "readTime": 8,
+    "summary": "Since being coined by Alabama coaching legend Bear Bryant in the 70s, the phrase “defense wins championships” has been taken as doctrine through the NFL (and the entire realm of sports). It was easier to accept this idea in the era of the “Steel Curtain” and their four Super...",
+    "contentFile": "defense_wins.md",
+    "images": [
+      {
+        "src": "/assets/journalism/defense_wins/figure-01.png",
+        "alt": "logo_1_edited.png"
+      }
+    ]
+  },
+  {
+    "title": "How NBA Basketball Changes in the Postseason",
+    "authors": [
+      "Anthony Rio"
+    ],
+    "date": "Jun 6, 2022",
+    "year": 2022,
+    "sport": "Basketball",
+    "readTime": 9,
+    "summary": "In the NBA postseason, the game changes drastically as compared to the regular season. As Draymond Green puts it, “Everyone [is] not made for the playoffs.” What he means by this is that all players will not maintain their regular season level of play during the playoffs due...",
+    "contentFile": "nba_postseason_change.md",
+    "images": [
+      {
+        "src": "/assets/journalism/nba_postseason_change/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "Just how good is Magnus Carlsen, Really?",
+    "authors": [
+      "Nilay Patel"
+    ],
+    "date": "May 25, 2022",
+    "year": 2022,
+    "sport": "General",
+    "readTime": 15,
+    "summary": "Magnus Carlsen is arguably the greatest chess player to have ever lived. He holds the record for the highest Elo rating ever achieved (the rating system used in chess). However, the Elo system is necessarily inflationary; as technology improves and computer engines like...",
+    "contentFile": "magnus_carlsen.md",
+    "images": [
+      {
+        "src": "/assets/journalism/magnus_carlsen/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "Do Small Market Stars Get Snubbed?",
+    "authors": [
+      "Kaizen Schanz",
+      "Yusei Fujikura"
+    ],
+    "date": "Apr 17, 2022",
+    "year": 2022,
+    "sport": "Basketball",
+    "readTime": 5,
+    "summary": "The All-Star Game is a way of representing the league’s best players in the flashiest way possible. In the MLB, the players put everything on the line, giving the fans a glimpse of what could be. In the NBA, a more casual, yet just as entertaining show unfolds as an array of...",
+    "contentFile": "small_market_stars.md",
+    "images": [
+      {
+        "src": "/assets/journalism/small_market_stars/figure-01.jpg",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "Hot or Cold: A Look at NBA Pacing",
+    "authors": [
+      "Wyatt Stone"
+    ],
+    "date": "Apr 4, 2022",
+    "year": 2022,
+    "sport": "Basketball",
+    "readTime": 9,
+    "summary": "When looking generally at the NBA, it is commonplace to see the differences between certain offenses, particularly between those of slower offenses versus their faster counterparts. Gregg Popovich, head coach of the San Antonio Spurs for over two decades, has piloted his...",
+    "contentFile": "nba_pacing.md",
+    "images": [
+      {
+        "src": "/assets/journalism/nba_pacing/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "Which of the top five European leagues is truly a “farmer’s league”?",
+    "authors": [
+      "Surya Dham",
+      "Nilay Patel"
+    ],
+    "date": "Apr 2, 2022",
+    "year": 2022,
+    "sport": "General",
+    "readTime": 12,
+    "summary": "Debates rage endlessly over Twitter across fans of every European league, proclaiming that their own league is the best. This is usually defined by having teams that tend to do well in Europe while simultaneously having a competitive domestic league that often has...",
+    "contentFile": "farmers_league.md",
+    "images": [
+      {
+        "src": "/assets/journalism/farmers_league/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "Win Share Distributions on Championship-Winning NBA Teams",
+    "authors": [
+      "Matthew Sasaki",
+      "Aaron Phung"
+    ],
+    "date": "Apr 2, 2022",
+    "year": 2022,
+    "sport": "Basketball",
+    "readTime": 10,
+    "summary": "It is difficult to predict the NBA champion each year. Take it from Stephen A. Smith, who incorrectly guessed the NBA champion 6 years in a row from 2011 to 2016. His guesses were also right before the NBA Finals began. We can’t blame him, though. There are simply too many...",
+    "contentFile": "championship_win_shares.md",
+    "images": [
+      {
+        "src": "/assets/journalism/championship_win_shares/figure-07.png",
+        "alt": "logo_1_edited.png"
+      }
+    ]
+  },
+  {
+    "title": "Call to the Bullpen: The Increase in MLB Reliever Usage",
+    "authors": [
+      "Marcus Orwin",
+      "Caden Tien"
+    ],
+    "date": "Mar 31, 2022",
+    "year": 2022,
+    "sport": "Baseball",
+    "readTime": 7,
+    "summary": "On October 29, 2021, Ian Anderson was dealing. The 23-year-old Braves pitcher had carried a no-hitter through 5 innings in Game 3 of the World Series, stunning Astros hitters along the way. Throughout most of baseball history, this would have been a chance at glory – if...",
+    "contentFile": "mlb_relievers.md",
+    "images": [
+      {
+        "src": "/assets/journalism/mlb_relievers/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "Tall, Long, and Lanky: The Effect of Reach Advantages in MMA",
+    "authors": [
+      "Akilan Arunachalam"
+    ],
+    "date": "Mar 28, 2022",
+    "year": 2022,
+    "sport": "General",
+    "readTime": 6,
+    "summary": "Throughout the history of combat sports, there have always been a few key statistics shared about each fighter to help set the scene of a fight. Of course, the fighter’s age and the weight class they compete with is shared, but there is one statistic that has variability:...",
+    "contentFile": "mma_reach.md",
+    "images": [
+      {
+        "src": "/assets/journalism/mma_reach/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "How Impactful Are Quality Relievers in MLB Playoff Runs?",
+    "authors": [
+      "Alisha Dhar",
+      "Zayne Kratz"
+    ],
+    "date": "Mar 28, 2022",
+    "year": 2022,
+    "sport": "Baseball",
+    "readTime": 6,
+    "summary": "In most sports, postseason gameplay does not drastically differ in comparison to regular season gameplay. Sure, there is an increased intensity given the stakes – a single postseason loss in any sport could decide whether a team still has a chance at a national championship....",
+    "contentFile": "reliever_impact.md",
+    "images": [
+      {
+        "src": "/assets/journalism/reliever_impact/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "How Significant is Age in Soccer?",
+    "authors": [
+      "Rohan Saklani"
+    ],
+    "date": "Mar 28, 2022",
+    "year": 2022,
+    "sport": "Soccer",
+    "readTime": 11,
+    "summary": "There are many attributes a soccer player holds that make them great and successful in the sport. Speed, endurance, strength, acceleration, agility, ball control, and pure power are a few but they all can change with the most important underlying factor in any sport that can...",
+    "contentFile": "ageinsoccer.md",
+    "images": [
+      {
+        "src": "/assets/journalism/ageinsoccer/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "Which is the Most Competitive League in Europe?",
+    "authors": [
+      "Ishika Sanghi",
+      "William Pan"
+    ],
+    "date": "Mar 28, 2022",
+    "year": 2022,
+    "sport": "Soccer",
+    "readTime": 10,
+    "summary": "Soccer is a sport played by over 250 million people from more than 200 different countries. The level of competition ranges from children playing in a field to the World Cup and each one is supported and played with more fervor and passion than the next. It is the predominant...",
+    "contentFile": "most_competitive_league.md",
+    "images": [
+      {
+        "src": "/assets/journalism/most_competitive_league/figure-01.jpg",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "The NFL Combine: Does It Predict Quarterback Success in the NFL?",
+    "authors": [
+      "Shayan Ghafoori",
+      "Andrew Schweitzer"
+    ],
+    "date": "Mar 28, 2022",
+    "year": 2022,
+    "sport": "Football",
+    "readTime": 4,
+    "summary": "The controversy surrounding the validity of the National Football League (NFL) combine and its role in predicting a prospective player’s success is a debate so old that it has become a cliche. Yet, each spring, the NFL continues to conduct a series of standardized tests...",
+    "contentFile": "qb_combine.md",
+    "images": [
+      {
+        "src": "/assets/journalism/qb_combine/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "The Statistical Validity of \"Veteran Presence\" in the NBA",
+    "authors": [
+      "Anthony Rio",
+      "Kyle Ritscher"
+    ],
+    "date": "Mar 28, 2022",
+    "year": 2022,
+    "sport": "Basketball",
+    "readTime": 19,
+    "summary": "Veteran presence is a frequently used term referring to the impact that veteran players have on a team, whether that be on or off the court. Generally, it is assumed that veterans are both more effective on the court themselves, and that their teammates feed off of their...",
+    "contentFile": "vet_presence.md",
+    "images": [
+      {
+        "src": "/assets/journalism/vet_presence/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "The Skills That Will (and Won't) Get You Paid In The NBA",
+    "authors": [
+      "Arvind Kalyan"
+    ],
+    "date": "Mar 28, 2022",
+    "year": 2022,
+    "sport": "Basketball",
+    "readTime": 10,
+    "summary": "Following the age of Big 3’s in Miami, Los Angeles, and Golden State, a sort of staple has emerged amongst title-contending NBA teams: two superstars, occupying max contract slots in a team’s salary table, complemented by a remaining twelve players composed of exceptions,...",
+    "contentFile": "paying_skills.md",
+    "images": [
+      {
+        "src": "/assets/journalism/paying_skills/figure-02.png",
+        "alt": "Figure 2"
+      }
+    ]
+  },
+  {
+    "title": "Cristiano Ronaldo: Worth or Flop?",
+    "authors": [
+      "Manav Chadha",
+      "Jong Hyun Cha"
+    ],
+    "date": "Mar 28, 2022",
+    "year": 2022,
+    "sport": "Soccer",
+    "readTime": 7,
+    "summary": "Cristiano Ronaldo was a relatively unknown teenager when he first signed for Manchester United in 2003. Since then, he has developed to become one of the most coveted players in soccer history. During his first stint at Manchester United, Ronaldo won 3 Premier League titles,...",
+    "contentFile": "cristiano_ronaldo.md",
+    "images": [
+      {
+        "src": "/assets/journalism/cristiano_ronaldo/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "Did Lionel Messi Deserve to Win the 2021 Ballon d’Or?",
+    "authors": [
+      "Anvesha Dutta",
+      "Nikhil Isukapalli"
+    ],
+    "date": "Mar 28, 2022",
+    "year": 2022,
+    "sport": "Soccer",
+    "readTime": 7,
+    "summary": "In 2021, Lionel Messi beat Robert Lewandowski to win his seventh Ballon d’Or, the most of any footballer in history. Messi’s victory has sparked much debate as to whether he truly deserved the award, though. Many fans argue that he has benefited from his reputation as one of...",
+    "contentFile": "messi_ballon.md",
+    "images": [
+      {
+        "src": "/assets/journalism/messi_ballon/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "FIFA's Team of the Season Strikers",
+    "authors": [
+      "Derek Nakagawa",
+      "Anish Ravilla"
+    ],
+    "date": "Mar 28, 2022",
+    "year": 2022,
+    "sport": "Soccer",
+    "readTime": 9,
+    "summary": "FIFA’s Team of the Season (TOTS) consists of the best players from every team consolidated into one from the previous season. But it’s important to note that the previous season spans the months from August of the previous year to June of the year the TOTS players are...",
+    "contentFile": "fifa_strikers.md",
+    "images": [
+      {
+        "src": "/assets/journalism/fifa_strikers/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "The Best of the Best: How well do first overall picks perform after entering the league?",
+    "authors": [
+      "Ryan Quach"
+    ],
+    "date": "Mar 21, 2022",
+    "year": 2022,
+    "sport": "Basketball",
+    "readTime": 9,
+    "summary": "The NBA Draft—it is one of the most exciting moments of professional basketball. Not only do worse-performing teams gain an opportunity to improve themselves by selecting a worthy prospect among lottery picks, but all teams involved also seek to strengthen their position in...",
+    "contentFile": "best_of_the_best.md",
+    "images": [
+      {
+        "src": "/assets/journalism/best_of_the_best/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "The Declining Presence of the Number 10",
+    "authors": [
+      "Shiyu Murashima"
+    ],
+    "date": "Mar 21, 2022",
+    "year": 2022,
+    "sport": "Football",
+    "readTime": 6,
+    "summary": "From Diego Maradona to Mesut Ozil, the center attacking midfielder (CAM) position - better known as the “Number 10” - has seen the most creative players of all time. Arguably the most desired position in football for years, now it is nearly a position of the past. The role of...",
+    "contentFile": "declining_number_10.md",
+    "images": [
+      {
+        "src": "/assets/journalism/declining_number_10/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "Taking Center Stage: How Caitlin Clark Propelled Women’s College Basketball into the Spotlight",
+    "authors": [
+      "Taylor Fenton",
+      "Aahil Ali",
+      "Ethan Diana"
+    ],
+    "date": "Feb 1, 2022",
+    "year": 2022,
+    "sport": "Basketball",
+    "readTime": 7,
+    "summary": "On April 7th, for the first time in NCAA history, more fans tuned in to watch the Women’s March Madness championship game than the Men’s March Madness game the following day. The record breaking game, in which the South Carolina Gamecocks defeated the Iowa Hawkeyes 87-75 to...",
+    "contentFile": "caitlin-clark-spotlight.md",
+    "images": [
+      {
+        "src": "/assets/journalism/caitlin-clark-spotlight/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "Transfer Market Effect on Team Success",
+    "authors": [
+      "Trent Bellinger",
+      "Derek Nakagawa"
+    ],
+    "date": "Jan 1, 2022",
+    "year": 2022,
+    "sport": "Soccer",
+    "readTime": 7,
+    "summary": "Often referred to as the most competitive league in world soccer, the English Premier League is home to many of soccer’s best teams. Many of these teams have experienced great successes over the years and are now massively successful businesses, earning hundreds of millions...",
+    "contentFile": "transfer_market_success.md",
+    "images": [
+      {
+        "src": "/assets/journalism/transfer_market_success/figure-01.jpg",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "Deciding Where to Finish: The Math Behind the Penalty Shootout",
+    "authors": [
+      "Anish Ravilla",
+      "Ishika Sanghi"
+    ],
+    "date": "Jan 1, 2022",
+    "year": 2022,
+    "sport": "Soccer",
+    "readTime": 9,
+    "summary": "In soccer, the penalty shootout is one of those monumental events that can make or break the history of an entire team and everything it stands for, especially when this shootout occurs during a high-profile tournament. The mental contest between the penalty kick taker and...",
+    "contentFile": "penalty_shootout.md",
+    "images": [
+      {
+        "src": "/assets/journalism/penalty_shootout/figure-02.png",
+        "alt": "Source: Kaggle"
+      }
+    ]
+  },
+  {
+    "title": "The Mystery That is the NFL Draft",
+    "authors": [
+      "Andrew Schweitzer",
+      "Wyatt Stone"
+    ],
+    "date": "Dec 21, 2021",
+    "year": 2021,
+    "sport": "Football",
+    "readTime": 7,
+    "summary": "The first round of the NFL Draft is a major conundrum to many franchises around the league. While many of the best college players are drafted in the first round, it can be very difficult to determine whether they will succeed at the professional level. Even players like 2012...",
+    "contentFile": "positional_value.md",
+    "images": [
+      {
+        "src": "/assets/journalism/positional_value/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "The Rise of Neo-Positions in Basketball",
+    "authors": [
+      "Ved Phadke",
+      "Ollie Pai"
+    ],
+    "date": "Dec 19, 2021",
+    "year": 2021,
+    "sport": "Basketball",
+    "readTime": 19,
+    "summary": "Basketball is a game of constant evolution. The sport itself has undergone so many changes since its inception that it’s unlikely that James Naismith would even recognize it from watching a March Madness game. This evolution is ever-present within the NBA, as each season...",
+    "contentFile": "neo_positions.md",
+    "images": [
+      {
+        "src": "/assets/journalism/neo_positions/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "What Makes a Winner in Volleyball",
+    "authors": [
+      "Matthew Li",
+      "Jed Miguel"
+    ],
+    "date": "Dec 18, 2021",
+    "year": 2021,
+    "sport": "Volleyball",
+    "readTime": 7,
+    "summary": "Volleyball is a relatively young sport, being introduced to the Olympics in 1964. With its unique rotation system, there are many factors that affect how volleyball is played. But what factors, specifically what statistics, make a winner in volleyball? For our data, we chose...",
+    "contentFile": "volleyball_winner.md",
+    "images": [
+      {
+        "src": "/assets/journalism/volleyball_winner/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "Analyzing Fourth Down Decisions in the 2021 NFL Season",
+    "authors": [
+      "Victor Li"
+    ],
+    "date": "Dec 17, 2021",
+    "year": 2021,
+    "sport": "Football",
+    "readTime": 15,
+    "summary": "Arguably the most unique down in American football is the fourth down. While teams get to attempt another play (as long as they maintain control of the football) after the first three downs, the fourth one is the last. If a team maintains control of the football after a...",
+    "contentFile": "fourth_downs.md",
+    "images": [
+      {
+        "src": "/assets/journalism/fourth_downs/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "Defensive Deterrence II: Player Analysis",
+    "authors": [
+      "Ian Geertsen"
+    ],
+    "date": "Dec 16, 2021",
+    "year": 2021,
+    "sport": "General",
+    "readTime": 10,
+    "summary": "So, how does our sample of players shake out according to this metric? Let’s take a look: Coming in at number one on our list, we have…Jonas Valančiūnas. Ummm, okay? Occupying the next five spots, however, are Rudy Gobert, Jakob Poeltl, Brook Lopez, Myles Turner, and Clint...",
+    "contentFile": "defensive_deterrence_ii.md",
+    "images": [
+      {
+        "src": "/assets/journalism/defensive_deterrence_ii/figure-01.png",
+        "alt": "logo_1_edited.png"
+      }
+    ]
+  },
+  {
+    "title": "The Effects of Target Distribution in the NFL",
+    "authors": [
+      "Kiel Messinger",
+      "Zayne Kratz"
+    ],
+    "date": "Dec 15, 2021",
+    "year": 2021,
+    "sport": "Football",
+    "readTime": 5,
+    "summary": "As the NFL continues becoming a more pass-happy league, we have seen even more value being placed on its top quarterbacks, and as a result, their primary pass-catchers. Elite wide receivers can make upwards of $20 million a year, and even replacement-level receivers like...",
+    "contentFile": "wr_target_dist.md",
+    "images": [
+      {
+        "src": "/assets/journalism/wr_target_dist/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "CDM: An Analysis of Central Defensive Midfielders in the Premier League",
+    "authors": [
+      "Jong Hyun Cha"
+    ],
+    "date": "Dec 15, 2021",
+    "year": 2021,
+    "sport": "Soccer",
+    "readTime": 4,
+    "summary": "As the modern game of soccer evolves, the roles of central defensive midfielders have increased significantly. They are expected not only to provide defensive support and stability, but also to facilitate offensively. Teams in the Premier League have been on the search for...",
+    "contentFile": "cdm_analysis.md",
+    "images": [
+      {
+        "src": "/assets/journalism/cdm_analysis/figure-01.jpg",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "The Rapid Rise of Emma Raducanu",
+    "authors": [
+      "Steven Lu Chen",
+      "Aarushi Verma"
+    ],
+    "date": "Dec 15, 2021",
+    "year": 2021,
+    "sport": "Tennis",
+    "readTime": 8,
+    "summary": "In September 2021, eighteen-year-old Emma Raducanu took the tennis world by storm by dominating that year’s U.S. Open, winning the entire tournament without dropping a single set and becoming the first British woman in half a century to lift the trophy. Previously ranked as...",
+    "contentFile": "raducanu_rise.md",
+    "images": [
+      {
+        "src": "/assets/journalism/raducanu_rise/figure-01.jpg",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "The Effect of Wingspans on Shooting and Offensive Proficiency",
+    "authors": [
+      "Anthony Rio"
+    ],
+    "date": "Dec 15, 2021",
+    "year": 2021,
+    "sport": "Basketball",
+    "readTime": 11,
+    "summary": "In the past decade, wingspans have become all the rage in the NBA. Particularly, starting with the John Hammond-constructed Milwaukee Bucks in the early 2010s, the general manager who infamously drafted a skinny Greek teenager with a 7’3” wingspan who would change the...",
+    "contentFile": "wingspan_effect.md",
+    "images": [
+      {
+        "src": "/assets/journalism/wingspan_effect/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "Players vs Picks: Which Side Wins More in NFL Trades?",
+    "authors": [
+      "Akilan Arunachalam",
+      "Zayne Kratz"
+    ],
+    "date": "Dec 14, 2021",
+    "year": 2021,
+    "sport": "Football",
+    "readTime": 6,
+    "summary": "Jalen Ramsey, Stefon Diggs, Khalil Mack, Matthew Stafford. These are all elite players, but interestingly enough, they were all traded. Each year, the NFL experiences blockbuster trades, and often the price to acquire these top talents are draft picks. The LA Rams have taken...",
+    "contentFile": "players_vs_picks.md",
+    "images": [
+      {
+        "src": "/assets/journalism/players_vs_picks/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "To what extent does three-point shooting predict the success of NBA teams?",
+    "authors": [
+      "Ryan Quach",
+      "Surya Dham"
+    ],
+    "date": "Dec 13, 2021",
+    "year": 2021,
+    "sport": "Basketball",
+    "readTime": 9,
+    "summary": "To an NBA fan from 1946, today’s shooting would be completely unrecognizable. Whether one considers the volume, the form, or the type of shot, we have seen a dramatic shift from the origins. The focus of this article will be on the latter of these aspects, specifically the...",
+    "contentFile": "3pt_shooting_success.md",
+    "images": [
+      {
+        "src": "/assets/journalism/3pt_shooting_success/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "The Evolution of UFC",
+    "authors": [
+      "Jake Brophy",
+      "Manav Chadha"
+    ],
+    "date": "Dec 13, 2021",
+    "year": 2021,
+    "sport": "General",
+    "readTime": 7,
+    "summary": "Mixed Martial Arts, better known by the abbreviation MMA, is an extreme combat sport which incorporates the fighting techniques utilised in boxing, wrestling, kickboxing, jiu jitsu, judo, and karate. While many companies host and broadcast fights, the most popular is the...",
+    "contentFile": "mma_evolution.md",
+    "images": [
+      {
+        "src": "/assets/journalism/mma_evolution/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "How to Win the Ballon d’Or",
+    "authors": [
+      "Rohan Saklani"
+    ],
+    "date": "Dec 13, 2021",
+    "year": 2021,
+    "sport": "Football",
+    "readTime": 8,
+    "summary": "The Ballon d'Or (translated Golden Ball) is a yearly soccer award regarded as the pinnacle of individual greatness for soccer players. A Ballon d'Or is given to a player who had a remarkable calendar year (January to October), whether helping their team to glory with trophies...",
+    "contentFile": "ballon_dor.md",
+    "images": [
+      {
+        "src": "/assets/journalism/ballon_dor/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "Analyzing the Premier League Big Six Teams’ Transfer Activity and Start to the 2021-22 Season",
+    "authors": [
+      "Nikhil Isukapalli"
+    ],
+    "date": "Dec 13, 2021",
+    "year": 2021,
+    "sport": "Soccer",
+    "readTime": 19,
+    "summary": "There is arguably no bigger or more popular soccer league in the world than the English Premier League. With the effects of the COVID-19 pandemic on stadium attendance and league procedures making the 2020-21 Premier League extremely unpredictable and taxing on players and...",
+    "contentFile": "big6_transfers.md",
+    "images": [
+      {
+        "src": "/assets/journalism/big6_transfers/figure-01.png",
+        "alt": "Source: Experimental 3-6-1"
+      }
+    ]
+  },
+  {
+    "title": "Defensive Deterrence III: Analyzing the Metric",
+    "authors": [
+      "Ian Geertsen"
+    ],
+    "date": "Dec 13, 2021",
+    "year": 2021,
+    "sport": "General",
+    "readTime": 9,
+    "summary": "While we’ve been able to take a look at how the defensive deterrence metric analyzes players, it is equally important to analyze the metric itself to check for accuracy and validity. There are many ways we could go about doing this, ranging from more empirical to more...",
+    "contentFile": "defensive_deterrence_iii.md",
+    "images": [
+      {
+        "src": "/assets/journalism/defensive_deterrence_iii/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "Defensive Deterrence I: Quantifying Defenders’ Off-ball Impact at the Rim and Beyond",
+    "authors": [
+      "Ian Geertsen"
+    ],
+    "date": "Dec 13, 2021",
+    "year": 2021,
+    "sport": "Basketball",
+    "readTime": 18,
+    "summary": "Within the last decade, the term ‘gravity’ has entered the basketball lexicon as a means of describing the noticeable and substantial impact that players can have on offense without even touching the ball. Inspired by the play of today’s perimeter superstars—chief among them...",
+    "contentFile": "defensive_deterrence_i.md",
+    "images": [
+      {
+        "src": "/assets/journalism/defensive_deterrence_i/figure-01.png",
+        "alt": "NBA Rim Protectors: Defensive Deterrence Index"
+      }
+    ]
+  },
+  {
+    "title": "Clustering NBA Offensive Styles",
+    "authors": [
+      "Arvind Kalyan",
+      "Ben Goldblatt"
+    ],
+    "date": "Dec 13, 2021",
+    "year": 2021,
+    "sport": "Basketball",
+    "readTime": 13,
+    "summary": "In the last few decades, the NBA has seen rapid evolution. The three point shot becomes more frequent every year and offenses like the Warriors have modernized the game with a “small ball” offense built around guards rather than centers. Recently, young guards and ball...",
+    "contentFile": "nba_clustering.md",
+    "images": [
+      {
+        "src": "/assets/journalism/nba_clustering/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "Which NBA Player Provides the Most Intangible Value?",
+    "authors": [
+      "Aaron Phung",
+      "Matthew Sasaki"
+    ],
+    "date": "Dec 12, 2021",
+    "year": 2021,
+    "sport": "Basketball",
+    "readTime": 12,
+    "summary": "Analysts tend to emphasize box score statistics such as points and rebounds when assessing the greatness of an NBA player. Because they are the only objective pieces of information recorded, statistics overshadow other methods of determining a player’s value. However, there...",
+    "contentFile": "nba_intangibles.md",
+    "images": [
+      {
+        "src": "/assets/journalism/nba_intangibles/figure-04.png",
+        "alt": "Figure 4"
+      }
+    ]
+  },
+  {
+    "title": "Are the Best MLB Teams Winning More Games?",
+    "authors": [
+      "Marcus Orwin"
+    ],
+    "date": "Dec 12, 2021",
+    "year": 2021,
+    "sport": "Baseball",
+    "readTime": 6,
+    "summary": "When the Los Angeles Dodgers fell just short of the San Francisco Giants in the 2021 MLB regular season, they made history -- no team had ever won 106 games and lost their division. This occurred at a time in which each MLB division contains just 5 teams in comparison to the...",
+    "contentFile": "best_mlb_teams_win.md",
+    "images": [
+      {
+        "src": "/assets/journalism/best_mlb_teams_win/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "16 Going on 17: The Soundness of Various NFL Records",
+    "authors": [
+      "Arnav Saxena"
+    ],
+    "date": "Dec 12, 2021",
+    "year": 2021,
+    "sport": "Football",
+    "readTime": 11,
+    "summary": "In the 2020 NFL season, Tennessee Titans running back Derrick Henry finished with 2,027 rushing yards, just 79 yards short of breaking the thirty-six year old rushing record set by Los Angeles Rams legend Eric Dickerson. Two years prior, Pittsburgh Steelers quarterback Ben...",
+    "contentFile": "nfl_records.md",
+    "images": [
+      {
+        "src": "/assets/journalism/nfl_records/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "What will the U.S. Sports Betting Market be in 2025?",
+    "authors": [
+      "Garrett Malone"
+    ],
+    "date": "Dec 12, 2021",
+    "year": 2021,
+    "sport": "Football",
+    "readTime": 12,
+    "summary": "When the NFL partnered with gambling conglomerates DraftKings, FanDuel, and Caesars Entertainment to make them the official sports betting partners of the NFL, it was made clear to sports fans and stakeholders across the world that sports betting is here to stay. What once...",
+    "contentFile": "sports_betting.md",
+    "images": [
+      {
+        "src": "/assets/journalism/sports_betting/figure-01.png",
+        "alt": "Source: Action Network"
+      }
+    ]
+  },
+  {
+    "title": "The Launch Angle Revolution",
+    "authors": [
+      "Steven Lu Chen"
+    ],
+    "date": "Oct 1, 2021",
+    "year": 2021,
+    "sport": "Baseball",
+    "readTime": 16,
+    "summary": "Hitting a baseball is often agreed upon to be among the most difficult feats to perform in sports. Consequently, over professional baseball’s decades of history, there has been no shortage of coaches and players advocating for an endless variety of approaches to hitting. In...",
+    "contentFile": "launch-angle.md",
+    "images": [
+      {
+        "src": "/assets/journalism/launch-angle/figure-01.jpg",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "Does Money Mean Success in the English Premier League?",
+    "authors": [
+      "Wyan Wan",
+      "Joshua Gunawan"
+    ],
+    "date": "Jun 15, 2021",
+    "year": 2021,
+    "sport": "Soccer",
+    "readTime": 8,
+    "summary": "Since its inception, the English Premier League has grown massively in wealth. In terms of revenue, the Premier League has generated €6.2 billion in revenue (compared to €3.7 billion for Spain’s LaLiga, €3.2 billion for Germany’s Bundesliga, €2.7 for Italy’s Serie A, and €2.3...",
+    "contentFile": "money_in_epl.md",
+    "images": [
+      {
+        "src": "/assets/journalism/money_in_epl/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "Running over the Ages",
+    "authors": [
+      "Ryan Dunker"
+    ],
+    "date": "Jun 15, 2021",
+    "year": 2021,
+    "sport": "Gymnastics",
+    "readTime": 10,
+    "summary": "Running is a sport like no other. It was the core of the first Olympics in 776 BCE which included four different kinds of running events. The physical act of running for humans dates back even further to our early human ancestors who would run from predators or after prey...",
+    "contentFile": "running_over_the_ages.md",
+    "images": [
+      {
+        "src": "/assets/journalism/running_over_the_ages/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "Using Drafts to Adjust Pro League of Legends Win Rates",
+    "authors": [
+      "Victor Li"
+    ],
+    "date": "Jun 14, 2021",
+    "year": 2021,
+    "sport": "General",
+    "readTime": 16,
+    "summary": "Professional League of Legends is one of the largest esports in the world. One of the most important parts of any professional League of Legends game is the draft, where teams systematically select which champions (characters) they will play and which they will forbid the...",
+    "contentFile": "league_win_rates.md",
+    "images": [
+      {
+        "src": "/assets/journalism/league_win_rates/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "Player Efficiency Rating in the AUDL: Developing an Impact Metric for Ultimate Frisbee",
+    "authors": [
+      "Ian Geertsen"
+    ],
+    "date": "Jun 10, 2021",
+    "year": 2021,
+    "sport": "Basketball",
+    "readTime": 30,
+    "summary": "One of the most interesting and challenging aspects of sports analytics is developing single-number metrics, or metrics that attempt to look at a player holistically by boiling their value down to just one number. One such example of this is John Hollinger’s Player Efficiency...",
+    "contentFile": "ultimate_per.md",
+    "images": [
+      {
+        "src": "/assets/journalism/ultimate_per/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "Who is the Most Consistent NBA All-Star?",
+    "authors": [
+      "Terrence Liu",
+      "Oscar O'Brien"
+    ],
+    "date": "Jun 9, 2021",
+    "year": 2021,
+    "sport": "Basketball",
+    "readTime": 20,
+    "summary": "The National Basketball Association (NBA) selects all-star players every year to highlight the success of individual players. Players are named all-stars through voting from fans, current NBA players, and the media. Looking over the list of this year’s all-stars, every player...",
+    "contentFile": "nba_allstar_consistency.md",
+    "images": [
+      {
+        "src": "/assets/journalism/nba_allstar_consistency/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "What Makes a Master?",
+    "authors": [
+      "Erik Chen",
+      "Brendan Zytowski"
+    ],
+    "date": "Jun 8, 2021",
+    "year": 2021,
+    "sport": "Golf",
+    "readTime": 10,
+    "summary": "The Masters Tournament, traditionally held in the first week of April, is one of the most important tournaments every golf season. It is extremely prestigious because of the tournament's long history and pedigree as well as the signature green jacket for the winners....",
+    "contentFile": "what_makes_a_master.md",
+    "images": [
+      {
+        "src": "/assets/journalism/what_makes_a_master/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "Could the NBA Introduce a 4 point Line?",
+    "authors": [
+      "Arnav Saxena"
+    ],
+    "date": "Jun 8, 2021",
+    "year": 2021,
+    "sport": "Basketball",
+    "readTime": 11,
+    "summary": "In November of 1967, the Dallas Chaparrals led the Indiana Pacers 118-116 in a midseason American Basketball Association matchup. With only one second left of regulation, Indiana inbounded the ball to Jerry Harkness, who launched a desperation hook shot at the buzzer. From 92...",
+    "contentFile": "nba_4pt_line.md",
+    "images": [
+      {
+        "src": "/assets/journalism/nba_4pt_line/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "Modeling the 2021 Indian Premier League",
+    "authors": [
+      "Shail Mirpuri"
+    ],
+    "date": "Jun 2, 2021",
+    "year": 2021,
+    "sport": "Soccer",
+    "readTime": 22,
+    "summary": "In the realm of franchise T20 cricket, there is no bigger league than the Indian Premier League (IPL). Touted as a competition where ‘talent meets opportunity’, the IPL is watched by over 100 million people around the globe. One thing that makes the IPL so entertaining is its...",
+    "contentFile": "ipl_2021.md",
+    "images": [
+      {
+        "src": "/assets/journalism/ipl_2021/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "Analyzing the Value of Each First Round Pick in the NBA Draft",
+    "authors": [
+      "Kiel Messinger",
+      "Zayne Kratz"
+    ],
+    "date": "Jun 1, 2021",
+    "year": 2021,
+    "sport": "Basketball",
+    "readTime": 9,
+    "summary": "Draft picks are as important as ever in today’s NBA. From the Sam Hinkie 76ers introducing the idea of “tanking” to mainstream NBA media under the name of “The Process,”  to the Thunder collecting draft picks like they’re Anthony Davis injuries, teams are building more and...",
+    "contentFile": "nba_first_round.md",
+    "images": [
+      {
+        "src": "/assets/journalism/nba_first_round/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "Is UCLA MBB on the Rise?",
+    "authors": [
+      "Faraz Murshed",
+      "Vishal Narayan"
+    ],
+    "date": "Apr 12, 2021",
+    "year": 2021,
+    "sport": "Basketball",
+    "readTime": 18,
+    "summary": "The UCLA Men’s Basketball (MBB) team has experienced some turbulence over the last few years, following the departure of Lonzo Ball to the NBA at the culmination of the 2016-17 season. That year, the team exited the NCAA tournament in the Sweet Sixteen and had finished at the...",
+    "contentFile": "ucla_mbb_rise.md",
+    "images": [
+      {
+        "src": "/assets/journalism/ucla_mbb_rise/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "Rookie QBs: The 2020 Class",
+    "authors": [
+      "Dean Jones"
+    ],
+    "date": "Apr 9, 2021",
+    "year": 2021,
+    "sport": "Football",
+    "readTime": 31,
+    "summary": "The 2020 NFL season was unlike any other. The threat of coronavirus constantly loomed, causing absences of key players and coaching staff and even forcing multiple games to be rescheduled. The playoff field was expanded from 12 to 14 teams, and teams like the Cleveland...",
+    "contentFile": "2020_rookie_qbs.md",
+    "images": [
+      {
+        "src": "/assets/journalism/2020_rookie_qbs/figure-02.png",
+        "alt": "Figure 2"
+      }
+    ]
+  },
+  {
+    "title": "An In-Depth Comparison of Two NBA Eras",
+    "authors": [
+      "Terrence Liu"
+    ],
+    "date": "Mar 25, 2021",
+    "year": 2021,
+    "sport": "Basketball",
+    "readTime": 11,
+    "summary": "It has been 20 years since the turn of the century--a span in which basketball experienced many revolutions. The 2000-2001 NBA season was before Steph Curry’s three-point revolution, Lebron James and his undeniable dominance through three different teams: it is the time of...",
+    "contentFile": "compare_nba_eras.md",
+    "images": [
+      {
+        "src": "/assets/journalism/compare_nba_eras/figure-03.png",
+        "alt": "Figure 3"
+      }
+    ]
+  },
+  {
+    "title": "Finding NBA’s Hidden Gems: An Analysis of Draft History and Player Success",
+    "authors": [
+      "Claire Jiang",
+      "Wilson Yu"
+    ],
+    "date": "Mar 21, 2021",
+    "year": 2021,
+    "sport": "Basketball",
+    "readTime": 26,
+    "summary": "The NBA Draft is a highly anticipated annual event where teams get the chance to recruit top talent in hopes of building a dynasty and making championship runs. For organizations that have not performed so well, this is their chance to level out the playing field by...",
+    "contentFile": "nba-draft-analysis.md",
+    "images": [
+      {
+        "src": "/assets/journalism/nba-draft-analysis/figure-01.jpg",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "NBA Draft Analysis",
+    "authors": [
+      "Claire Jiang",
+      "Wilson Yu"
+    ],
+    "date": "Mar 21, 2021",
+    "year": 2021,
+    "sport": "Basketball",
+    "readTime": 26,
+    "summary": "The NBA Draft is a highly anticipated annual event where teams get the chance to recruit top talent in hopes of building a dynasty and making championship runs. For organizations that have not performed so well, this is their chance to level out the playing field by...",
+    "contentFile": "nba_draft_analysis.md",
+    "images": [
+      {
+        "src": "/assets/journalism/nba_draft_analysis/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "Offensive/Defensive Weight Part 2: Wrapping Up a Complicated Relationship",
+    "authors": [
+      "Ian Geertsen"
+    ],
+    "date": "Mar 21, 2021",
+    "year": 2021,
+    "sport": "Basketball",
+    "readTime": 20,
+    "summary": "(With an offensive/defensive weight of 14, the 2003-2004 Detroit Pistons are the most heavily defensively weighted championship winner since the 1983-1984 season—the image above shows defensive cornerstone Ben Wallace matched up against the late Kobe Bryant during the 2004...",
+    "contentFile": "off_def_part2.md",
+    "images": [
+      {
+        "src": "/assets/journalism/off_def_part2/figure-01.jpg",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "Finding a City for the Next NBA Expansion Team",
+    "authors": [
+      "Franklin Liang"
+    ],
+    "date": "Mar 21, 2021",
+    "year": 2021,
+    "sport": "Basketball",
+    "readTime": 14,
+    "summary": "We hear it every year. “Seattle deserves an NBA team again.”",
+    "contentFile": "nba_expansion.md",
+    "images": [
+      {
+        "src": "/assets/journalism/nba_expansion/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "Offensive/Defensive Weight Part 1: Correlations Between Orientation and Success",
+    "authors": [
+      "Ian Geertsen"
+    ],
+    "date": "Mar 21, 2021",
+    "year": 2021,
+    "sport": "General",
+    "readTime": 18,
+    "summary": "We’ve all heard the sayings before: “offense wins games but defense wins championships,” or something in that vein. Today, we will see if there are any truths to these adages. Looking back at data from the last four decades, parts one and two of this piece will explore the...",
+    "contentFile": "off_def_part1.md",
+    "images": [
+      {
+        "src": "/assets/journalism/off_def_part1/figure-01.jpg",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "The GOAT vs The Cliff",
+    "authors": [
+      "Erik Chen"
+    ],
+    "date": "Mar 20, 2021",
+    "year": 2021,
+    "sport": "Football",
+    "readTime": 13,
+    "summary": "Max Kellerman, a famous sports commentator and co-host of ESPN’s First Take show, in 2016 famously made his Tom Brady cliff prediction. Specifically this is what Kellerman said: “Tom Brady’s just about done. It could be his next game. It could be a year from now. But he is...",
+    "contentFile": "goat_vs_cliff.md",
+    "images": [
+      {
+        "src": "/assets/journalism/goat_vs_cliff/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "3-pt Volume vs. 2-pt Efficiency: Stylistic Differences in the Modern NBA",
+    "authors": [
+      "Brian Suk"
+    ],
+    "date": "Mar 16, 2021",
+    "year": 2021,
+    "sport": "Basketball",
+    "readTime": 9,
+    "summary": "One prevalent topic in the modern NBA is the notable shift in the offensive style of today. Back in the 2000’s and earlier, offensive strategy was much slower and all about isolation. Giving the ball to your star player or throwing it to the post and letting them go to work...",
+    "contentFile": "nba_stylistic_differences.md",
+    "images": [
+      {
+        "src": "/assets/journalism/nba_stylistic_differences/figure-01.jpg",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "How Important is the Serve in Men’s Singles Tennis?",
+    "authors": [
+      "Shail Mirpuri"
+    ],
+    "date": "Mar 16, 2021",
+    "year": 2021,
+    "sport": "Tennis",
+    "readTime": 14,
+    "summary": "In the sport of Tennis, there are very few things discussed more than a player's serve. The serve helps a player dictate the flow of a particular point, and can be crucial in determining a player’s overall success within a Grand Slam. With a rise in point-level data...",
+    "contentFile": "serve_importance.md",
+    "images": [
+      {
+        "src": "/assets/journalism/serve_importance/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "Old Time Hockey",
+    "authors": [
+      "Brendan Zytowski"
+    ],
+    "date": "Mar 15, 2021",
+    "year": 2021,
+    "sport": "Hockey",
+    "readTime": 6,
+    "summary": "Hockey is often described as the most violent of the most followed global team sports. This is in part due to the constant rough-housing and physical nature of professional hockey. A common myth parroted by hockey analysts, scouts, coaches, and even General Managers, is that...",
+    "contentFile": "old_time_hockey.md",
+    "images": [
+      {
+        "src": "/assets/journalism/old_time_hockey/figure-01.jpg",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "Comparing the Playstyles of North American and European Rocket League",
+    "authors": [
+      "Oscar O'Brien"
+    ],
+    "date": "Mar 14, 2021",
+    "year": 2021,
+    "sport": "Soccer",
+    "readTime": 23,
+    "summary": "Rocket League is an esports game that has been rapidly gaining popularity recently after becoming a free-to-play game on the Epic Games Store. It was even one of two games selected to be featured in a tournament (now likely canceled due to COVID-19) hosted before the Tokyo...",
+    "contentFile": "rocketleague_playstyles.md",
+    "images": [
+      {
+        "src": "/assets/journalism/rocketleague_playstyles/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "Should You Run or Pass When Going For Two?",
+    "authors": [
+      "Ryan Dunker",
+      "Tommy Schilder"
+    ],
+    "date": "Mar 12, 2021",
+    "year": 2021,
+    "sport": "Football",
+    "readTime": 8,
+    "summary": "Among the most pivotal moments in a football game is the two point conversion. Whether it’s necessary to tie the game, or a bold move to take the lead, it’s hard to find a two yard play that is more consequential than the two point conversion. Despite the two point conversion...",
+    "contentFile": "going_for_two.md",
+    "images": [
+      {
+        "src": "/assets/journalism/going_for_two/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "Analyzing the Recent New York Knicks \"Success\"",
+    "authors": [
+      "Allen Chun"
+    ],
+    "date": "Mar 4, 2021",
+    "year": 2021,
+    "sport": "Golf",
+    "readTime": 8,
+    "summary": "Last season, the New York Knicks won 21 of 66 games, putting them in 12th place in the Eastern Conference and missing the playoffs for the seventh straight year. With mediocre offseason signings and unlucky draft pick positions, it certainly seemed as if the Knicks were...",
+    "contentFile": "knicks_success.md",
+    "images": [
+      {
+        "src": "/assets/journalism/knicks_success/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "How do Giannis' Statistics Compare to Hakeem Olajuwon's?",
+    "authors": [
+      "Akshat Srivastav",
+      "Utkarsh Kumar"
+    ],
+    "date": "Jan 2, 2021",
+    "year": 2021,
+    "sport": "Basketball",
+    "readTime": 20,
+    "summary": "This 2019-20 NBA season, Giannis Antetokounmpo accomplished something extraordinary. He joined Michael Jordan and Hakeem Olajuwon as the only 3 players to win MVP and DPOY in the same year. He also won back-to-back MVPs, putting up career high scoring and rebounding numbers....",
+    "contentFile": "giannis_vs_hakeem.md",
+    "images": [
+      {
+        "src": "/assets/journalism/giannis_vs_hakeem/figure-01.png",
+        "alt": "A head-to-head tornado chart"
+      }
+    ]
+  },
+  {
+    "title": "How Important are Soccer Managers?",
+    "authors": [
+      "Derek Nakagawa",
+      "Trent Bellinger"
+    ],
+    "date": "Jan 1, 2021",
+    "year": 2021,
+    "sport": "Soccer",
+    "readTime": 6,
+    "summary": "There have been many great soccer players throughout history including Ronaldo, Messi, Maradona, Pele, and the list goes on.  But what many fans don’t realize is how important managers are to these winning teams.  The manager’s role is to sign new players, coach the...",
+    "contentFile": "soccer_managers.md",
+    "images": [
+      {
+        "src": "/assets/journalism/soccer_managers/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "Does Distance Determine Dollars?",
+    "authors": [
+      "Erik Chen",
+      "Taiyo Keilin"
+    ],
+    "date": "Dec 21, 2020",
+    "year": 2020,
+    "sport": "Golf",
+    "readTime": 7,
+    "summary": "Driving distance has been at the forefront of golf fans’ minds since the 1997 season when a young Tiger Woods was outdriving the average PGA Tour pro by over 25 yards while also winning many tournaments by lopsided margins. At the time he was the game’s second-longest hitter,...",
+    "contentFile": "driving_distance.md",
+    "images": [
+      {
+        "src": "/assets/journalism/driving_distance/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "A Tactical Breakdown of the English Premier League",
+    "authors": [
+      "Faraz Murshed"
+    ],
+    "date": "Dec 21, 2020",
+    "year": 2020,
+    "sport": "Soccer",
+    "readTime": 8,
+    "summary": "As the most-watched sports league on the planet, the English Premier League (EPL) prides itself on being a fiercely contested competition. Analysts and pundits generally believe that any of the clubs in the table are capable of taking points off another. Furthermore,...",
+    "contentFile": "epl_tactical_breakdown.md",
+    "images": [
+      {
+        "src": "/assets/journalism/epl_tactical_breakdown/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "Why the Houston Rockets Small Ball Experiment Failed",
+    "authors": [
+      "Allen Chun"
+    ],
+    "date": "Dec 20, 2020",
+    "year": 2020,
+    "sport": "Basketball",
+    "readTime": 7,
+    "summary": "Just before the NBA was preparing to resume the 2019-2020 season at the Orlando Disney bubble, there were four teams that were favorites to win the championship in the betting markets: the Los Angeles Lakers, the Los Angeles Clippers, the Milwaukee Bucks, and the Houston...",
+    "contentFile": "why-the-houston-rockets-small-ball-experiment-failed.md",
+    "images": [
+      {
+        "src": "/assets/journalism/why-the-houston-rockets-small-ball-experiment-failed/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "Finding the All-NBA Average Team of 2019-2020",
+    "authors": [
+      "Franklin Liang"
+    ],
+    "date": "Dec 17, 2020",
+    "year": 2020,
+    "sport": "Basketball",
+    "readTime": 7,
+    "summary": "If the NBA is one big show, then its superstars are the main actors. We gravitate towards their talent, highlights, and accolades because greatness is simply second nature to them. If I said, “LeBron James,” you’d probably tell me, “3-time champ, 4-time MVP, and arguable...",
+    "contentFile": "nba_average_team.md",
+    "images": [
+      {
+        "src": "/assets/journalism/nba_average_team/figure-02.png",
+        "alt": "Figure 2: Average Stats by Position"
+      }
+    ]
+  },
+  {
+    "title": "Execution and Difficulty Trends in Elite Gymnastics",
+    "authors": [
+      "Kaylee Diller",
+      "Avery Robinson"
+    ],
+    "date": "Dec 17, 2020",
+    "year": 2020,
+    "sport": "Gymnastics",
+    "readTime": 10,
+    "summary": "In elite gymnastics, a gymnast’s score is broken up into two components: execution and difficulty. The execution score is out of ten, and can be thought of as a grade of how perfectly the routine was performed. Introduced after the 2004 Athens Olympic Games, the difficulty...",
+    "contentFile": "elite_gymnastics.md",
+    "images": [
+      {
+        "src": "/assets/journalism/elite_gymnastics/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "How Deserving Are NBA MVP Selections?",
+    "authors": [
+      "Dean Jones",
+      "Vishal Narayan"
+    ],
+    "date": "Dec 17, 2020",
+    "year": 2020,
+    "sport": "Basketball",
+    "readTime": 31,
+    "summary": "Since the 1955-56 season, the National Basketball Association Most Valuable Player Award has sought to honor the best performing player of the regular season. Every winner eligible for the Hall of Fame has been inducted. Triumphantly punctuating a career year with the Maurice...",
+    "contentFile": "nba_mvp.md",
+    "images": [
+      {
+        "src": "/assets/journalism/nba_mvp/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "Are Role Players the Foundation of NBA Team Success?",
+    "authors": [
+      "Terrence Liu",
+      "Oscar O’Brien"
+    ],
+    "date": "Dec 17, 2020",
+    "year": 2020,
+    "sport": "Basketball",
+    "readTime": 21,
+    "summary": "The National Basketball Association (NBA) is filled with superstar players that deservedly receive a significant amount of attention and praise for helping their respective teams. Players such as Lebron James, Stephen Curry, and even younger talents like Luka Doncic are...",
+    "contentFile": "nba_roleplayers.md",
+    "images": [
+      {
+        "src": "/assets/journalism/nba_roleplayers/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "Is Defensive Rating a Good Measure of Actual Defensive Ability?",
+    "authors": [
+      "Brian Suk"
+    ],
+    "date": "Dec 17, 2020",
+    "year": 2020,
+    "sport": "Basketball",
+    "readTime": 12,
+    "summary": "“Defense wins championships.” If you are an NBA fan, or even just a sports fan in general, you are probably familiar with this phrase. It signifies the importance of the less-highlighted side of the floor that contributes just as much to a team’s success as a flashy dunk, or...",
+    "contentFile": "defensive_rating.md",
+    "images": [
+      {
+        "src": "/assets/journalism/defensive_rating/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "Cracking the Fantasy Premier League Process",
+    "authors": [
+      "Shail Mirpuri"
+    ],
+    "date": "Dec 14, 2020",
+    "year": 2020,
+    "sport": "Soccer",
+    "readTime": 13,
+    "summary": "Every year over 6 million soccer fanatics take part in the biggest fantasy soccer league in the world: The Fantasy Premier League (FPL). Players face tough dilemmas when selecting their squads by considering where they should allocate their budgets, when they should make...",
+    "contentFile": "cracking_fpl.md",
+    "images": [
+      {
+        "src": "/assets/journalism/cracking_fpl/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "Defensive Dimensions: Analyzing Defensive Impact Through a Visual Lens",
+    "authors": [
+      "Ian Geertsen"
+    ],
+    "date": "Dec 14, 2020",
+    "year": 2020,
+    "sport": "Basketball",
+    "readTime": 29,
+    "summary": "Anyone who plays any sport knows how difficult it is to take a game full of skill, luck, athleticism, and random chance and reduce a player’s impact down to a metric or statistic. They also know how exponentially harder it is to do so for defense compared to offense. In this...",
+    "contentFile": "defensive_dimensions.md",
+    "images": [
+      {
+        "src": "/assets/journalism/defensive_dimensions/figure-01.png",
+        "alt": "Graphic by Ben Taylor"
+      }
+    ]
+  },
+  {
+    "title": "What it Takes to Become a Two-time Olympic Champion",
+    "authors": [
+      "Nora Liu"
+    ],
+    "date": "Dec 12, 2020",
+    "year": 2020,
+    "sport": "Gymnastics",
+    "readTime": 7,
+    "summary": "Yuzuru Hanyu, two-time Olympic Champion in men’s figure skating, two-time world champion, and 4 time champion of GPF, is by all means a great skater. He is the first skater to land a clean quadruple loop, and the first skater to surpass a total score of 300 points. Other than...",
+    "contentFile": "olympic_skating_champion.md",
+    "images": [
+      {
+        "src": "/assets/journalism/olympic_skating_champion/figure-04.png",
+        "alt": "Fig 3: Plot of PCS against TES in 2014 Sochi Olympics Men’s Figure Skating Free Program. The red line is the best fit line. The linear model can be used to predict PCS. The P-value of the variable TES is 0.046 which is smaller than 0.05 suggesting that the variable TES is statistically significant. This model has R^2 value at 0.2387, which is understandably low since there are multiple other factors that might influence one’s PCS, including the performance itself, skaters’ starting order, nationality, etc. But this model tells us that there is a valid positive relationship between PCS and TES."
+      }
+    ]
+  },
+  {
+    "title": "Man vs Machine: Human and Analytical Evaluations of NBA Greats",
+    "authors": [
+      "Ian Geertsen"
+    ],
+    "date": "Sep 20, 2020",
+    "year": 2020,
+    "sport": "Basketball",
+    "readTime": 41,
+    "summary": "Who are the greatest players of all time, and how are they ranked? These are timeless questions asked by every fan of every sport, and quite frankly are questions that I can not hope to answer. What I do hope, though, is that this piece adds a new perspective for how we look...",
+    "contentFile": "man_vs_machine.md",
+    "images": [
+      {
+        "src": "/assets/journalism/man_vs_machine/figure-01.png",
+        "alt": "logo_1_edited.png"
+      }
+    ]
+  },
+  {
+    "title": "Project Restart: Winners and Losers of the EPL’s Return",
+    "authors": [
+      "Ethan Allavarpu"
+    ],
+    "date": "Aug 17, 2020",
+    "year": 2020,
+    "sport": "Soccer",
+    "readTime": 16,
+    "summary": "After a hiatus of around three months, the English Premier League resumed its season in mid-June in an all-out sprint to the finish line. Most of the league’s fans knew which team would hoist the trophy around a month later on the last weekend of July: the Liverpool Reds....",
+    "contentFile": "project_restart.md",
+    "images": [
+      {
+        "src": "/assets/journalism/project_restart/figure-01.jpg",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "2020 NBA Playoff Predictions Part 2: Our Projections for Each Series (The Fun Stuff)",
+    "authors": [
+      "Wilson Yu",
+      "Dean Jones",
+      "Lia Bergman-Turnbull"
+    ],
+    "date": "Jul 22, 2020",
+    "year": 2020,
+    "sport": "Basketball",
+    "readTime": 40,
+    "summary": "In the first part of our article, we discussed the statistical background of the model that we have used to project the 2020 NBA Playoffs. In this second part, we will proceed to discuss all the match-ups with an emphasis on some of the more intense and interesting matchups,...",
+    "contentFile": "nba_playoffs_2020_part2.md",
+    "images": [
+      {
+        "src": "/assets/journalism/nba_playoffs_2020_part2/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "2020 NBA Playoff Predictions Part 1: Our Model (The Nerdy Stuff)",
+    "authors": [
+      "Wilson Yu",
+      "Dean Jones",
+      "Lia Bergman-Turnbull"
+    ],
+    "date": "Jul 22, 2020",
+    "year": 2020,
+    "sport": "Basketball",
+    "readTime": 10,
+    "summary": "With the coronavirus holding the nation and world in its grasp and most human activity coming to a standstill, there is a huge void in our lives. For all us non-essential workers, we are starting to feel a bit restless, despite knowing we are fortunate to be at home safely....",
+    "contentFile": "nba_playoffs_2020.md",
+    "images": [
+      {
+        "src": "/assets/journalism/nba_playoffs_2020/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "Fantasy Football and the NFL Combine",
+    "authors": [
+      "Ethan Allavarpu",
+      "Kyle Boal"
+    ],
+    "date": "Jun 15, 2020",
+    "year": 2020,
+    "sport": "Football",
+    "readTime": 12,
+    "summary": "The NFL combine garners popularity among football fans across the country. Players boost themselves into the public spotlight after a spectacular combine (i.e. D.K. Metcalf blew up on social media after his phenomenal combine results). The combine can affect draft stock,...",
+    "contentFile": "fantasycombine.md",
+    "images": [
+      {
+        "src": "/assets/journalism/fantasycombine/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "Which Team Won the 2020 Draft?",
+    "authors": [
+      "Vishal Sundaram"
+    ],
+    "date": "Jun 15, 2020",
+    "year": 2020,
+    "sport": "Football",
+    "readTime": 17,
+    "summary": "With the NFL draft having recently concluded, many fans and outlets have been releasing draft grades, as per the annual tradition. While the grades vary from A's down to the occasional F, there's really very little analysis put into deriving these letters; these outlets often...",
+    "contentFile": "draftwinners.md",
+    "images": [
+      {
+        "src": "/assets/journalism/draftwinners/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "Assessing the Tiers of Modern NFL Receivers With the Help of Machine Learning",
+    "authors": [
+      "Kathir Ilango"
+    ],
+    "date": "May 27, 2020",
+    "year": 2020,
+    "sport": "General",
+    "readTime": 11,
+    "summary": "Much like what has happened to basketball during Stephen Curry's career, the offensive philosophy of football has changed over the last few years. The traditional usage of wide receivers that has been around for decades ...",
+    "contentFile": "modernreceivers.md",
+    "images": [
+      {
+        "src": "/assets/journalism/modernreceivers/figure-03.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "The Faces of Tomorrow’s NBA?: A Comparison of the Atlanta Hawks’ and Dallas Mavericks’ Offenses",
+    "authors": [
+      "Oscar O'Brien",
+      "Mason Weinstein"
+    ],
+    "date": "Apr 6, 2020",
+    "year": 2020,
+    "sport": "Basketball",
+    "readTime": 7,
+    "summary": "When All-Stars Trae Young and Luka Doncic were swapped for each other on the day they were drafted in 2018, nobody could have predicted the offensive numbers they both would be putting up today. They weren't traded for each other straight up, with the Mavericks forking over a...",
+    "contentFile": "hawksmavs.md",
+    "images": [
+      {
+        "src": "/assets/journalism/hawksmavs/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "Predicting Success: Why the White Sox are the Next Rays",
+    "authors": [
+      "Luke Ito",
+      "Sean Lashkari"
+    ],
+    "date": "Apr 6, 2020",
+    "year": 2020,
+    "sport": "Basketball",
+    "readTime": 13,
+    "summary": "In Major League Baseball, it is notoriously difficult for a single player to lead a team to the playoffs, unlike sports such as basketball or football. With only a soft salary cap — the luxury tax — teams with more financial power have more playoff success than teams with...",
+    "contentFile": "whitesoxrays.md",
+    "images": [
+      {
+        "src": "/assets/journalism/whitesoxrays/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "The Team With the Best Clutch Gene",
+    "authors": [
+      "Wilson Yu",
+      "Jaden Nguyen",
+      "Pieter van Tol"
+    ],
+    "date": "Mar 31, 2020",
+    "year": 2020,
+    "sport": "Basketball",
+    "readTime": 9,
+    "summary": "In the 2013 NBA Finals, Ray Allen hit arguably one of the most significant shots of the decade. With the rival San Antonio Spurs just seconds away from another NBA championship, Allen converted an offensive rebound into a 3 point shot to tie the game, send it to overtime and...",
+    "contentFile": "clutchgene.md",
+    "images": [
+      {
+        "src": "/assets/journalism/clutchgene/figure-01.png",
+        "alt": "Figure 1: Absolute Clutch Win Percentage"
+      }
+    ]
+  },
+  {
+    "title": "The Legacy of Michael Phelps",
+    "authors": [
+      "Fischer Sherrod"
+    ],
+    "date": "Mar 30, 2020",
+    "year": 2020,
+    "sport": "Gymnastics",
+    "readTime": 8,
+    "summary": "With 28 Olympic gold medals, 27 World Championship gold medals, and 16 Pan Pacific Championship gold medals, Michael Phelps is the most decorated swimmer of all time. But Phelps' medals are just the beginning of his legacy. He has attended 5 Olympic Games, been named World...",
+    "contentFile": "michaelphelps.md",
+    "images": [
+      {
+        "src": "/assets/journalism/michaelphelps/figure-02.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "The Coin Toss",
+    "authors": [
+      "Ethan Allavarpu",
+      "Kyle Boal"
+    ],
+    "date": "Mar 29, 2020",
+    "year": 2020,
+    "sport": "Football",
+    "readTime": 9,
+    "summary": "A coin toss is just a flip of the coin, but in recent years-especially during the NFL playoffs-it has seemingly gained heightened importance. A prime example of this is the coin toss of the Super Bowl: in the early years, only the select few captains and a single referee met...",
+    "contentFile": "cointoss.md",
+    "images": [
+      {
+        "src": "/assets/journalism/cointoss/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "The Story of Kyle Shanahan’s Offense and Where He Went Wrong in Super Bowl LIV",
+    "authors": [
+      "Kathir Ilango"
+    ],
+    "date": "Feb 17, 2020",
+    "year": 2020,
+    "sport": "Football",
+    "readTime": 16,
+    "summary": "After finishing the 2016 season with 2 wins, the San Francisco 49ers decided it was time to try something new. They went into full-rebuild mode, giving six-year contracts to new head coach Kyle Shanahan and general manager John Lynch. Prior to their hiring, Shanahan was an...",
+    "contentFile": "kyleshanahan.md",
+    "images": [
+      {
+        "src": "/assets/journalism/kyleshanahan/figure-04.jpg",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "The Sustainability of Lamar Jackson's Production",
+    "authors": [
+      "Vishal Sundaram"
+    ],
+    "date": "Feb 1, 2020",
+    "year": 2020,
+    "sport": "Basketball",
+    "readTime": 13,
+    "summary": "When tasked with winning football games, every head coach in the NFL talks about establishing an identity, as all the best teams have one. The 49ers are winning off of a multi-dimensional running game and a ferocious defense that gets to the opposing quarterback. The Saints...",
+    "contentFile": "lamarjackson.md",
+    "images": [
+      {
+        "src": "/assets/journalism/lamarjackson/figure-01.png",
+        "alt": "logo_1_edited.png"
+      }
+    ]
+  },
+  {
+    "title": "A Brief History of MLB Postseason Format Changes",
+    "authors": [
+      "Fischer Sherrod"
+    ],
+    "date": "Jan 24, 2020",
+    "year": 2020,
+    "sport": "Baseball",
+    "readTime": 7,
+    "summary": "For many baseball fans, the MLB postseason—the World Series in particular—is the ultimate test of skill and teamwork. Over the course of a month, the best teams battle it out to become the World Series champion. Dating back to the first MLB postseason in 1884, the title of...",
+    "contentFile": "mlbpostseason.md",
+    "images": [
+      {
+        "src": "/assets/journalism/mlbpostseason/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "Christian Yelich and the Rise to Stardom",
+    "authors": [
+      "Max Blane",
+      "Borna Nazari"
+    ],
+    "date": "Jan 15, 2020",
+    "year": 2020,
+    "sport": "Baseball",
+    "readTime": 9,
+    "summary": "Drafted as a Florida Marlin 23rd overall in 2010, Christian Yelich was a very highly touted prospect with loads of potential. As predictions usually go for players drafted in the first few rounds, he was expected to eventually reach the Major Leagues and be a top of the order...",
+    "contentFile": "christianyelich.md",
+    "images": [
+      {
+        "src": "/assets/journalism/christianyelich/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "Analyzing Factors That Go Into a Fast Marathon",
+    "authors": [
+      "Donald Chung"
+    ],
+    "date": "Jan 15, 2020",
+    "year": 2020,
+    "sport": "General",
+    "readTime": 5,
+    "summary": "On October 12, 2019, it was still early morning as the world watched as Elliot Kipchoge put one foot in front of another, gracefully passing the finish line and becoming the first person ever to run a marathon in under two hours. He finished in a blistering fast time of...",
+    "contentFile": "fastestmarathon.md",
+    "images": [
+      {
+        "src": "/assets/journalism/fastestmarathon/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "The Modern Fullback",
+    "authors": [
+      "Ishaan Shah"
+    ],
+    "date": "Jan 14, 2020",
+    "year": 2020,
+    "sport": "Golf",
+    "readTime": 9,
+    "summary": "When one hears the word defender, what comes to one's mind? A defender's main job is to prevent the opposition from scoring and stays back while the rest of the team attacks. Straightforward, right? The modern fullback is way more than just a defender. Their duties and...",
+    "contentFile": "modernfullback.md",
+    "images": [
+      {
+        "src": "/assets/journalism/modernfullback/figure-02.png",
+        "alt": "Source: Statsbomb"
+      }
+    ]
+  },
+  {
+    "title": "The Evolution of the Free Throw",
+    "authors": [
+      "Ethan Allavarpu",
+      "Kyle Boal"
+    ],
+    "date": "Jan 7, 2020",
+    "year": 2020,
+    "sport": "Basketball",
+    "readTime": 9,
+    "summary": "The Free Throw: the only shot in basketball that is theoretically free, but players continue to show that it's more difficult than it originally appears. In the early 2000's, the idea of \"hack-a-shaq\" was introduced. This strategy had players intentionally foul poor free...",
+    "contentFile": "freethrow.md",
+    "images": [
+      {
+        "src": "/assets/journalism/freethrow/figure-06.png",
+        "alt": "Figure 6"
+      }
+    ]
+  },
+  {
+    "title": "How to Maximize Your Investment in Top Sports Stocks",
+    "authors": [
+      "Breanna Ramos"
+    ],
+    "date": "Jul 18, 2019",
+    "year": 2019,
+    "sport": "Basketball",
+    "readTime": 6,
+    "summary": "Earlier this year, Nike became the official uniform and footwear supplier of Major League Baseball (MLB). This means that Nike now dominates three of the four major professional sports leagues within the U.S.: MLB, NBA, and NFL. When I learned that Nike had secured its third...",
+    "contentFile": "topsportsstocks.md",
+    "images": [
+      {
+        "src": "/assets/journalism/topsportsstocks/figure-01.png",
+        "alt": "logo_1_edited.png"
+      }
+    ]
+  },
+  {
+    "title": "How the Sharks’ Versatility Led them to the Conference Finals",
+    "authors": [
+      "Haley Rao",
+      "Kristen Ahmann",
+      "Joe Dunham"
+    ],
+    "date": "May 29, 2019",
+    "year": 2019,
+    "sport": "Hockey",
+    "readTime": 23,
+    "summary": "One of the thrills of watching playoff hockey is the emotional aspect, following a team through several games against the same opponent with everything on the line, and an especially close series makes the thrill even higher. The San Jose Sharks playing the Vegas Golden...",
+    "contentFile": "knightsvssharksbrainstorm.md",
+    "images": [
+      {
+        "src": "/assets/journalism/knightsvssharksbrainstorm/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "What It Takes To Be World Number 1: An Analysis of the ATP Tour",
+    "authors": [
+      "Kevin Hahn",
+      "Kathir Ilango"
+    ],
+    "date": "May 28, 2019",
+    "year": 2019,
+    "sport": "Tennis",
+    "readTime": 12,
+    "summary": "When it comes to individual sports, the title of “World Number One” is the ultimate feat an athlete can achieve. Tennis may be the most popular example of such a sport, as it is played worldwide and is heavily driven by rankings from its lowest tiers to the professional...",
+    "contentFile": "atptour.md",
+    "images": [
+      {
+        "src": "/assets/journalism/atptour/figure-07.png",
+        "alt": "logo_1_edited.png"
+      }
+    ]
+  },
+  {
+    "title": "The Issues With the Duckworth-Lewis-Stern Method",
+    "authors": [
+      "Vedant Sahu"
+    ],
+    "date": "May 28, 2019",
+    "year": 2019,
+    "sport": "Soccer",
+    "readTime": 9,
+    "summary": "With the Indian Premier League wrapped up and the ICC World Cup just on the horizon, the cricket fever is definitely reaching its peak. As more and more people turn towards cricket to keep themselves entertained over the summer, it is probably safe to say that people who have...",
+    "contentFile": "duckworthlewissternmethod.md",
+    "images": [
+      {
+        "src": "/assets/journalism/duckworthlewissternmethod/figure-01.jpg",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "Home Runs in the Air",
+    "authors": [
+      "Alex Veroulis"
+    ],
+    "date": "May 25, 2019",
+    "year": 2019,
+    "sport": "Baseball",
+    "readTime": 9,
+    "summary": "Every year, it seems that home runs become more and more prevalent in the modern version of Major League Baseball. After all, in recent years, more players seem to be following the Three True Outcomes when they go up to hit: a strikeout, a walk, or a home run. These outcomes...",
+    "contentFile": "homerunsintheair.md",
+    "images": [
+      {
+        "src": "/assets/journalism/homerunsintheair/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "The Three Point Shot & the NBA",
+    "authors": [
+      "Max Blane",
+      "Borna Nazari"
+    ],
+    "date": "Apr 22, 2019",
+    "year": 2019,
+    "sport": "Basketball",
+    "readTime": 6,
+    "summary": "The 3-point shot, instituted into the NBA in 1979, significantly impacted the future and the direction of the league. In the shot's inaugural year, Hubie Brown's '79-80 Hawks attempted a season total of 75 three-pointers, making just 13, for a three-point shooting percentage...",
+    "contentFile": "the3pointshot.md",
+    "images": [
+      {
+        "src": "/assets/journalism/the3pointshot/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "An Analysis of Score Inflation in NCAA Women’s Gymnastics",
+    "authors": [
+      "Joey Maurer"
+    ],
+    "date": "Apr 13, 2019",
+    "year": 2019,
+    "sport": "Gymnastics",
+    "readTime": 6,
+    "summary": "As the 2019 Women's Gymnastics Championship approaches, a cloud of controversy looms over the sport. Many fans believe that the scores being handed out this year are misrepresentative of actual routines. The issue of score inflation seems to creep into every discussion about...",
+    "contentFile": "analysis_score_inflation_in_ncaa_women.md",
+    "images": [
+      {
+        "src": "/assets/journalism/analysis_score_inflation_in_ncaa_women/figure-01.png",
+        "alt": "logo_1_edited.png"
+      }
+    ]
+  },
+  {
+    "title": "Andy Murray: A “Big Four” Member, but the Weakest One",
+    "authors": [
+      "Stephen Chen"
+    ],
+    "date": "Apr 3, 2019",
+    "year": 2019,
+    "sport": "Tennis",
+    "readTime": 6,
+    "summary": "At the end of 2016, Andy Murray raised the Paris Masters 1000 trophy after defeating John Isner in 3 sets, cementing his status as the world's No. 1 tennis player for the first time in his career. Murray had racked up 9 singles titles to end the 2016 season, including his...",
+    "contentFile": "andy_murray.md",
+    "images": [
+      {
+        "src": "/assets/journalism/andy_murray/figure-03.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "On the Road Again: The Myth of Neutrality in NHL Scheduling",
+    "authors": [
+      "Joe Dunham"
+    ],
+    "date": "Mar 10, 2019",
+    "year": 2019,
+    "sport": "Hockey",
+    "readTime": 9,
+    "summary": "With the NHL season inching closer to the playoffs, the format of the regular season is perhaps not the first thought on most fans' minds. However, this year's notable lack of inter-conference parity has drawn attention from casual and knowledgeable fans alike -- the point...",
+    "contentFile": "nhl_scheduling.md",
+    "images": [
+      {
+        "src": "/assets/journalism/nhl_scheduling/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "What Happens to Jim Harbaugh in Big Games?",
+    "authors": [
+      "Kathir Ilango"
+    ],
+    "date": "Feb 14, 2019",
+    "year": 2019,
+    "sport": "Football",
+    "readTime": 9,
+    "summary": "After finishing the 2010 NFL season with a losing record yet again, the San Francisco 49ers finally decided it was time for a new head coach. They needed to win games to become relevant again and, more importantly, they needed to bring life back to a fan base that had not had...",
+    "contentFile": "harbaugh.md",
+    "images": [
+      {
+        "src": "/assets/journalism/harbaugh/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "The Impact of Pitches Seen on Offensive Production",
+    "authors": [
+      "Max Blane",
+      "Borna Nazari"
+    ],
+    "date": "Jan 24, 2019",
+    "year": 2019,
+    "sport": "Baseball",
+    "readTime": 7,
+    "summary": "Due to the effects of a major knee surgery suffered during a September 2016 matchup vs. the Toronto Blue Jays, and a reinjury that was followed by a second surgery in April of 2017, the 2018 season came and went with Boston Red Sox second baseman Dustin Pedroia compiling...",
+    "contentFile": "pitchesoffensiveproduction.md",
+    "images": [
+      {
+        "src": "/assets/journalism/pitchesoffensiveproduction/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "Constructing My All-Time NBA Lineup Through K-Means Clustering, Part 2",
+    "authors": [
+      "Nikhil Sharma"
+    ],
+    "date": "Jan 14, 2019",
+    "year": 2019,
+    "sport": "Basketball",
+    "readTime": 6,
+    "summary": "If you haven't read my first article on the topic, check it out here! A few months ago, I wrote an article where I used k-means clustering to help choose five NBA players from 1980 to the present to constitute an all-time starting lineup.",
+    "contentFile": "nbaclust2.md",
+    "images": [
+      {
+        "src": "/assets/journalism/nbaclust2/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "Russell Westbrook: Point Guard or Shooting Guard?",
+    "authors": [
+      "Jack Ma",
+      "Nikhil Sharma"
+    ],
+    "date": "Dec 5, 2018",
+    "year": 2018,
+    "sport": "Basketball",
+    "readTime": 11,
+    "summary": "Russell Westbrook has become one of the NBA's top players in the past decade. He has been a marvel to watch, as his thrilling athleticism has allowed him to churn out highlight after highlight. On top of his exhilarating play-style, he has become a fan favorite due to his...",
+    "contentFile": "russpgorsg.md",
+    "images": [
+      {
+        "src": "/assets/journalism/russpgorsg/figure-01.png",
+        "alt": "logo_1_edited.png"
+      }
+    ]
+  },
+  {
+    "title": "Constructing My All-Time NBA Lineup Through K-Means Clustering",
+    "authors": [
+      "Nikhil Sharma"
+    ],
+    "date": "Nov 29, 2018",
+    "year": 2018,
+    "sport": "Basketball",
+    "readTime": 15,
+    "summary": "It's a debate that pervades all cultures, ages and creeds. From every barbershop to lunch table in the world, the question rings: what is your best all-time starting five? Who can construct the best lineup to put on the hardwood using any player from any time? It's a question...",
+    "contentFile": "kmeansallnba.md",
+    "images": [
+      {
+        "src": "/assets/journalism/kmeansallnba/figure-01.png",
+        "alt": "logo_1_edited.png"
+      }
+    ]
+  },
+  {
+    "title": "Raw Powerlifting is Coming at Full Force",
+    "authors": [
+      "Qi Jing Yap"
+    ],
+    "date": "Nov 21, 2018",
+    "year": 2018,
+    "sport": "General",
+    "readTime": 13,
+    "summary": "On first glance, powerlifting appears to be a sport destined for greatness, featuring incredible feats of strength through the squat, bench, and deadlift, some of the most ubiquitous exercises in the gym. In addition to that, the basic rules of the sport are mind-numbingly...",
+    "contentFile": "powerlifting.md",
+    "images": [
+      {
+        "src": "/assets/journalism/powerlifting/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "How 'Mexican Style' Came Back to Haunt GGG",
+    "authors": [
+      "Kathir Ilango"
+    ],
+    "date": "Oct 27, 2018",
+    "year": 2018,
+    "sport": "General",
+    "readTime": 9,
+    "summary": "The success of a boxer comes down to not only how he can fight, but also how he can spread his brand. The man from Kazakhstan known around the world today as 'GGG' did not have traction in the popularity department for a massive portion of his fighting career. After an...",
+    "contentFile": "mexicanstyle.md",
+    "images": [
+      {
+        "src": "/assets/journalism/mexicanstyle/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "Does Defense Really Win Championships? An In-Depth Analysis of the NBA Playoffs",
+    "authors": [
+      "Don Vu"
+    ],
+    "date": "May 22, 2018",
+    "year": 2018,
+    "sport": "Basketball",
+    "readTime": 14,
+    "summary": "With 2 minutes left on the clock, Richard Hamilton stepped up to the free throw line. He dribbled the ball a few times and calmly knocked down both shots to seal one of the most stunning upsets in playoff history. The Detroit Pistons had defeated the heavily favored Los...",
+    "contentFile": "defchamp.md",
+    "images": [
+      {
+        "src": "/assets/journalism/defchamp/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "Kentucky Derby 2018: History, Trends, and Predictions",
+    "authors": [
+      "Joey Maurer"
+    ],
+    "date": "May 1, 2018",
+    "year": 2018,
+    "sport": "General",
+    "readTime": 7,
+    "summary": "Described as “The Most Exciting Two Minutes in Sports”, the Kentucky Derby never fails to capture the attention of sports and gambling enthusiasts alike each May. First held in 1875, the world famous race at Churchill Downs has become ingrained in American sports culture....",
+    "contentFile": "kenderby.md",
+    "images": [
+      {
+        "src": "/assets/journalism/kenderby/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "UCLA Gymnastics: Analysis and Optimal Lineups Heading into Championship Meets",
+    "authors": [
+      "Joey Maurer"
+    ],
+    "date": "Mar 22, 2018",
+    "year": 2018,
+    "sport": "Gymnastics",
+    "readTime": 11,
+    "summary": "The most exciting time of the year for women’s collegiate gymnastics is just around the corner. UCLA, currently ranked #3 in the country, will compete for a conference, regional, and hopefully national championship in the coming weeks. Boasting a roster littered with former...",
+    "contentFile": "uclagym.md",
+    "images": [
+      {
+        "src": "/assets/journalism/uclagym/figure-01.png",
+        "alt": "logo_1_edited.png"
+      }
+    ]
+  },
+  {
+    "title": "An In-Depth Comparison of the 06-07 Phoenix Suns and 17-18 Houston Rockets",
+    "authors": [
+      "Ronaq Virdi",
+      "Nikhil Sharma",
+      "Ben Messinger"
+    ],
+    "date": "Mar 9, 2018",
+    "year": 2018,
+    "sport": "Basketball",
+    "readTime": 16,
+    "summary": "In Game 6 of the 1998 NBA Finals, Michael Jordan’s last game in a Chicago Bulls jersey, the Bulls attempted 67 field goals in the entire game, including only 10 three-point attempts. Fast forward to 2017-18, and the Houston Rockets are averaging 42.6 three-point field goal...",
+    "contentFile": "sunsrockets.md",
+    "images": [
+      {
+        "src": "/assets/journalism/sunsrockets/figure-01.png",
+        "alt": "Figure 1"
+      }
+    ]
+  },
+  {
+    "title": "Fixture Congestion and Playing Styles vs Injuries in European Football",
+    "authors": [
+      "Salil Akundi"
+    ],
+    "date": "Feb 7, 2018",
+    "year": 2018,
+    "sport": "Football",
+    "readTime": 5,
+    "summary": "Over the last few years, debate over fixture congestion in English football has increased, both on social media and by so-called sports pundits and former players on television. A key contributing factor to this debate is the increase in number of foreign mangers (mostly from...",
+    "contentFile": "fixturecongestion.md",
+    "images": [
+      {
+        "src": "/assets/journalism/fixturecongestion/figure-01.jpg",
+        "alt": "Figure 1"
+      }
+    ]
+  }
+];

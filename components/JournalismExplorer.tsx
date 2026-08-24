@@ -2,17 +2,33 @@
 
 import { ChevronLeft, ChevronRight, Search } from "lucide-react";
 import { useEffect, useMemo, useRef, useState } from "react";
-import { articles } from "@/data/journalism";
+import { articleSummaries } from "@/data/journalismSummaries";
+import type { JournalismArticle } from "@/data/journalism";
 import { ArticleCard } from "@/components/ArticleCard";
 import styles from "./JournalismExplorer.module.css";
 
 const ALL = "All";
 const ARTICLES_PER_PAGE = 24;
 
+type SearchableArticle = JournalismArticle & { _searchHaystack: string };
+
+// Pre-sort and pre-index articles once at module load
+const sortedSearchableArticles: SearchableArticle[] = [...articleSummaries]
+  .sort((a, b) => Date.parse(b.date) - Date.parse(a.date))
+  .map((article) => ({
+    ...article,
+    _searchHaystack: [
+      article.title,
+      article.authors.join(" "),
+      article.summary || "",
+      article.techStack?.join(" ") || ""
+    ].join(" ").toLowerCase()
+  }));
+
 // Unique sports (alphabetical) and years (newest first), derived from the data
-const sportOptions = Array.from(new Set(articles.map((a) => a.sport))).sort((a, b) => a.localeCompare(b));
+const sportOptions = Array.from(new Set(sortedSearchableArticles.map((a) => a.sport))).sort((a, b) => a.localeCompare(b));
 const yearOptions = Array.from(
-  new Set(articles.map((a) => a.year).filter((y): y is number => typeof y === "number"))
+  new Set(sortedSearchableArticles.map((a) => a.year).filter((y): y is number => typeof y === "number"))
 ).sort((a, b) => b - a);
 
 function getPageNumbers(current: number, total: number): (number | string)[] {
@@ -37,15 +53,12 @@ export function JournalismExplorer() {
 
   const filtered = useMemo(() => {
     const needle = query.trim().toLowerCase();
-    return [...articles]
-      .sort((a, b) => Date.parse(b.date) - Date.parse(a.date))
-      .filter((article) => sport === ALL || article.sport === sport)
-      .filter((article) => year === ALL || String(article.year) === year)
-      .filter((article) => {
-        if (!needle) return true;
-        const haystack = [article.title, article.authors.join(" "), article.summary, article.techStack?.join(" ")].join(" ").toLowerCase();
-        return haystack.includes(needle);
-      });
+    return sortedSearchableArticles.filter((article) => {
+      if (sport !== ALL && article.sport !== sport) return false;
+      if (year !== ALL && String(article.year) !== year) return false;
+      if (needle && !article._searchHaystack.includes(needle)) return false;
+      return true;
+    });
   }, [query, sport, year]);
 
   // Reset to page 1 whenever filters change
@@ -183,8 +196,8 @@ export function JournalismExplorer() {
       ) : (
         <>
           <div className={styles.grid}>
-            {paginatedArticles.map((article) => (
-              <ArticleCard key={article.title} article={article} />
+            {paginatedArticles.map((article, index) => (
+              <ArticleCard key={article.title} article={article} priority={page === 1 && index < 6} />
             ))}
           </div>
 
