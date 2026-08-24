@@ -113,7 +113,7 @@ export default function Home() {
             </div>
             <Link className="btn btn-secondary" href="/events"><CalendarDays size={18} aria-hidden /> View all</Link>
           </div>
-          <div className="grid two">
+          <div className="grid three">
             {publicEvents.map((event, index) => (
               <EventCard event={event} key={event.slug} isSoonest={index === 0} />
             ))}

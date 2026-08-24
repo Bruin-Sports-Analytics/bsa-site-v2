@@ -21,7 +21,7 @@ export default function EventsPage() {
       </section>
       <section className="section">
         <div className="container">
-          <div className="grid two">
+          <div className="grid three">
             {publicEvents.map((event, index) => (
               <EventCard event={event} key={event.slug} isSoonest={index === 0} />
             ))}
