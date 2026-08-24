@@ -23,17 +23,17 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 12px 18px;
+  gap: 12px 22px;
 }
 
 .tile {
-  flex: 0 0 150px;
-  width: 150px;
-  min-height: 96px;
+  flex: 0 0 144px;
+  width: 144px;
+  min-height: 90px;
   box-sizing: border-box;
   display: grid;
   place-items: center;
-  padding: 16px 14px;
+  padding: 14px 12px;
   text-align: center;
   background: transparent;
   border-radius: var(--radius-sm);
