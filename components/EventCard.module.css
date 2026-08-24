@@ -4,6 +4,15 @@
   gap: 14px;
   align-content: start;
   padding: 22px;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.headerRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  flex-wrap: wrap;
 }
 
 .type,
@@ -24,6 +33,50 @@
   border: 1px solid rgba(211, 160, 0, 0.40);
   background: rgba(255, 209, 0, 0.12);
   color: #9a6500;
+}
+
+/* Soonest / Highlighted Card */
+.soonestCard {
+  border: 2px solid var(--ucla-gold) !important;
+  box-shadow: 0 0 24px rgba(255, 209, 0, 0.22), var(--glass-shadow-sm);
+}
+
+.soonestCard:hover {
+  border-color: #ffe04d !important;
+  box-shadow: 0 0 32px rgba(255, 209, 0, 0.35), var(--glass-shadow-md);
+  transform: translateY(-2px);
+}
+
+:global(html[data-theme="light"]) .soonestCard {
+  border: 2px solid #0d4782 !important;
+  box-shadow: 0 0 24px rgba(13, 71, 130, 0.16), 0 4px 20px rgba(16, 42, 73, 0.08);
+}
+
+:global(html[data-theme="light"]) .soonestCard:hover {
+  border-color: #1a6cb0 !important;
+  box-shadow: 0 0 32px rgba(13, 71, 130, 0.26), 0 8px 28px rgba(16, 42, 73, 0.12);
+}
+
+.soonestBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  border-radius: var(--radius-sm);
+  padding: 4px 8px;
+  font-family: var(--font-mono), monospace;
+  font-size: 10.5px;
+  font-weight: 800;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  background: rgba(255, 209, 0, 0.18);
+  border: 1px solid rgba(255, 209, 0, 0.55);
+  color: var(--ucla-gold);
+}
+
+:global(html[data-theme="light"]) .soonestBadge {
+  background: rgba(13, 71, 130, 0.10);
+  border: 1px solid rgba(13, 71, 130, 0.45);
+  color: #0d4782;
 }
 
 .card h3 {

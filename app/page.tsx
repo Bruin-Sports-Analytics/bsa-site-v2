@@ -15,7 +15,7 @@ export default function Home() {
     ? featuredProjects
     : [...publicProjects()].sort((a, b) => Date.parse(b.lastUpdated) - Date.parse(a.lastUpdated))
   ).slice(0, 3);
-  const publicEvents = events.filter((event) => !event.isMembersOnly).slice(0, 3);
+  const publicEvents = events.filter((event) => !event.isMembersOnly).slice(0, 2);
   const displayedOutcomes = outcomes.filter((outcome) => outcome.approvedForDisplay);
   const marqueeMidpoint = Math.ceil(displayedOutcomes.length / 2);
   const marqueeRows = [displayedOutcomes.slice(0, marqueeMidpoint), displayedOutcomes.slice(marqueeMidpoint)];
@@ -113,8 +113,10 @@ export default function Home() {
             </div>
             <Link className="btn btn-secondary" href="/events"><CalendarDays size={18} aria-hidden /> View all</Link>
           </div>
-          <div className="grid three">
-            {publicEvents.map((event) => <EventCard event={event} key={event.slug} />)}
+          <div className="grid two">
+            {publicEvents.map((event, index) => (
+              <EventCard event={event} key={event.slug} isSoonest={index === 0} />
+            ))}
           </div>
         </div>
       </section>

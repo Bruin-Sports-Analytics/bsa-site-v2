@@ -4,10 +4,25 @@ import type { Event } from "@/data/site";
 import { formatEventDate } from "@/lib/utils";
 import styles from "./EventCard.module.css";
 
-export function EventCard({ event }: { event: Event }) {
+type Props = {
+  event: Event;
+  isSoonest?: boolean;
+};
+
+export function EventCard({ event, isSoonest = false }: Props) {
   return (
-    <GlassSurface as="article" variant="regular" tint={event.type === "recruitment" ? "gold" : "none"} interactive radius="md" className={styles.card}>
-      <span className={styles.type}>{event.type}</span>
+    <GlassSurface
+      as="article"
+      variant="regular"
+      tint={isSoonest ? "gold" : event.type === "recruitment" ? "gold" : "none"}
+      interactive
+      radius="md"
+      className={`${styles.card} ${isSoonest ? styles.soonestCard : ""}`}
+    >
+      <div className={styles.headerRow}>
+        <span className={styles.type}>{event.type}</span>
+        {isSoonest && <span className={styles.soonestBadge}>Soonest Event</span>}
+      </div>
       <h3>{event.title}</h3>
       <p>{event.description}</p>
       <div className={styles.meta}>

@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
-import { CalendarDays } from "lucide-react";
-import { GlassSurface } from "@/components/ui/GlassSurface";
-import { recruitment } from "@/data/site";
-import eventCardStyles from "@/components/EventCard.module.css";
+import { EventCard } from "@/components/EventCard";
+import { events } from "@/data/site";
 
 export const metadata: Metadata = {
   title: "Events",
@@ -10,7 +8,7 @@ export const metadata: Metadata = {
 };
 
 export default function EventsPage() {
-  const awarenessEvents = recruitment.timelineEvents.filter((event) => event.status === "Awareness");
+  const publicEvents = events.filter((event) => !event.isMembersOnly);
 
   return (
     <main>
@@ -23,24 +21,9 @@ export default function EventsPage() {
       </section>
       <section className="section">
         <div className="container">
-          <div className="grid three">
-            {awarenessEvents.map((event) => (
-              <GlassSurface
-                as="article"
-                variant="regular"
-                tint="gold"
-                interactive
-                radius="md"
-                className={eventCardStyles.card}
-                key={`${event.date}-${event.title}`}
-              >
-                <span className={eventCardStyles.type}>{event.status}</span>
-                <h3>{event.title}</h3>
-                <p>{event.detail}</p>
-                <div className={eventCardStyles.meta}>
-                  <span><CalendarDays size={16} aria-hidden /> {event.date}</span>
-                </div>
-              </GlassSurface>
+          <div className="grid two">
+            {publicEvents.map((event, index) => (
+              <EventCard event={event} key={event.slug} isSoonest={index === 0} />
             ))}
           </div>
         </div>
