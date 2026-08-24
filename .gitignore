@@ -16,3 +16,11 @@ public/assets/papers/
 
 # Local Data Journalism resource PDFs — served from Supabase Storage, uploaded via `npm run upload-dj-resources`
 public/assets/dj_resources/
+
+# Temporary scratch and workspace test artifacts
+scratch/
+.superpowers/
+.tempmediaStorage/
+playwright-report/
+test-results/
+
