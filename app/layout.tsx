@@ -37,7 +37,7 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://bruinsportsanalytics.org"),
+  metadataBase: new URL("https://www.bruinsportsanalytics.org"),
   title: {
     default: "Bruin Sports Analytics",
     template: "%s | Bruin Sports Analytics"
@@ -61,7 +61,7 @@ export const metadata: Metadata = {
     follow: true,
   },
   alternates: {
-    canonical: "https://bruinsportsanalytics.org",
+    canonical: "https://www.bruinsportsanalytics.org",
   },
   openGraph: {
     title: "Bruin Sports Analytics",
@@ -114,8 +114,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               "@context": "https://schema.org",
               "@type": "Organization",
               "name": "Bruin Sports Analytics",
-              "url": "https://bruinsportsanalytics.org",
-              "logo": "https://bruinsportsanalytics.org/assets/bsa_logo.jpeg",
+              "url": "https://www.bruinsportsanalytics.org",
+              "logo": "https://www.bruinsportsanalytics.org/assets/bsa_logo.jpeg",
               "description": "UCLA's student-run sports analytics organization",
               "location": {
                 "@type": "Place",

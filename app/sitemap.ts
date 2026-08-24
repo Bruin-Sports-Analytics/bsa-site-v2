@@ -4,7 +4,7 @@ import { articles } from '@/data/journalism';
 import { slugify } from '@/lib/utils';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://bruinsportsanalytics.org';
+  const baseUrl = 'https://www.bruinsportsanalytics.org';
 
   const staticPages = [
     { url: '/', priority: 1.0, changeFrequency: 'weekly' as const },
