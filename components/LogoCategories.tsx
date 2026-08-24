@@ -1,7 +1,8 @@
 import Image from "next/image";
+import type { CSSProperties } from "react";
 import styles from "./LogoCategories.module.css";
 
-type Outcome = { name: string; category: string; logo?: string | null; logoScale?: number };
+type Outcome = { name: string; category: string; logo?: string | null; logoScale?: number; logoGapAfter?: number };
 
 const GROUPS: { label: string; categories: string[] }[] = [
   { label: "Sports", categories: ["Sports", "Sports Analytics"] },
@@ -23,7 +24,16 @@ export function LogoCategories({ logos }: { logos: Outcome[] }) {
           <h3 className={styles.groupTitle}>{group.label}</h3>
           <div className={styles.wall}>
             {group.logos.map((outcome) => (
-              <div className={styles.tile} title={`${outcome.name} — ${outcome.category}`} key={outcome.name}>
+              <div
+                className={styles.tile}
+                title={`${outcome.name} — ${outcome.category}`}
+                key={outcome.name}
+                style={
+                  outcome.logoGapAfter
+                    ? ({ "--logo-gap-after": `${outcome.logoGapAfter}px` } as CSSProperties)
+                    : undefined
+                }
+              >
                 {outcome.logo ? (
                   <span className={styles.imgWrap}>
                     <Image

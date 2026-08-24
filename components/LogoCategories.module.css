@@ -30,6 +30,7 @@
   flex: 0 0 144px;
   width: 144px;
   min-height: 90px;
+  margin-right: var(--logo-gap-after, 0);
   box-sizing: border-box;
   display: grid;
   place-items: center;
