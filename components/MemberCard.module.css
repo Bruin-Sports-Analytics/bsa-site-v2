@@ -95,14 +95,19 @@
   border-radius: 0;
   background: var(--member-badge-fill);
   color: var(--member-badge-color);
+  text-decoration: none;
   transition: all 0.2s cubic-bezier(0.2, 0.8, 0.2, 1);
   z-index: 4;
 }
 
+.linkedinBadge:hover,
+.linkedinBadge:focus-visible,
 .card:hover .linkedinBadge {
   border-color: var(--ucla-gold);
 }
 
+:global(html[data-theme="light"]) .linkedinBadge:hover,
+:global(html[data-theme="light"]) .linkedinBadge:focus-visible,
 :global(html[data-theme="light"]) .card:hover .linkedinBadge {
   border-color: #0d4782;
 }

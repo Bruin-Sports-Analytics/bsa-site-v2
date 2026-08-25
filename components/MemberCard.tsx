@@ -26,14 +26,21 @@ export function MemberCard({ member, priority = false }: { member: Member; prior
     },
   };
 
-  const handleCardClick = (e: React.MouseEvent) => {
-    if (member.linkedinUrl) {
+  const handleCardClick = () => {
+    if (isBoard) {
+      setBioOpen(true);
+    } else if (member.linkedinUrl) {
       window.open(member.linkedinUrl, "_blank", "noopener,noreferrer");
     }
   };
 
   const handleCardKeyDown = (e: React.KeyboardEvent) => {
-    if ((e.key === "Enter" || e.key === " ") && member.linkedinUrl) {
+    if (e.key !== "Enter" && e.key !== " ") return;
+
+    if (isBoard) {
+      e.preventDefault();
+      setBioOpen(true);
+    } else if (member.linkedinUrl) {
       e.preventDefault();
       window.open(member.linkedinUrl, "_blank", "noopener,noreferrer");
     }
@@ -50,9 +57,9 @@ export function MemberCard({ member, priority = false }: { member: Member; prior
         className={styles.card}
         onClick={handleCardClick}
         onKeyDown={handleCardKeyDown}
-        tabIndex={member.linkedinUrl ? 0 : undefined}
-        role={member.linkedinUrl ? "link" : undefined}
-        aria-label={member.linkedinUrl ? `${member.name} on LinkedIn` : member.name}
+        tabIndex={isBoard || member.linkedinUrl ? 0 : undefined}
+        role={isBoard ? "button" : member.linkedinUrl ? "link" : undefined}
+        aria-label={isBoard ? `About ${member.name}` : member.linkedinUrl ? `${member.name} on LinkedIn` : member.name}
         {...expandHandlers}
       >
         <div className={styles.photo}>
@@ -89,9 +96,18 @@ export function MemberCard({ member, priority = false }: { member: Member; prior
           )}
 
           {member.linkedinUrl && (
-            <span className={styles.linkedinBadge} aria-hidden>
-              <Linkedin size={16} />
-            </span>
+            <a
+              className={styles.linkedinBadge}
+              href={member.linkedinUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={`${member.name} on LinkedIn`}
+              title={`${member.name} on LinkedIn`}
+              onClick={(e) => e.stopPropagation()}
+              onKeyDown={(e) => e.stopPropagation()}
+            >
+              <Linkedin size={16} aria-hidden />
+            </a>
           )}
         </div>
 
@@ -119,4 +135,3 @@ export function MemberCard({ member, priority = false }: { member: Member; prior
     </>
   );
 }
-
