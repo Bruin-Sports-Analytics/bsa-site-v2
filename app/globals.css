@@ -284,34 +284,18 @@ button {
   flex: 1 1 auto;
   min-width: 0;
   opacity: 1;
-  animation: route-enter 260ms ease both;
+  transition: opacity 220ms ease;
   will-change: opacity;
+}
+
+.route-transition--entering {
+  opacity: 0.001;
 }
 
 .route-transition--exiting {
   opacity: 0;
-  transition: opacity 0s;
+  transition: opacity 180ms ease;
   pointer-events: none;
-}
-
-@keyframes route-enter {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes route-exit {
-  from {
-    opacity: 1;
-  }
-
-  to {
-    opacity: 0;
-  }
 }
 
 main > section {

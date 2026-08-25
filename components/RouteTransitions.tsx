@@ -4,28 +4,34 @@ import { useEffect, useRef, useState } from "react";
 import { usePathname, useRouter } from "next/navigation";
 import type { ReactNode } from "react";
 
-const FADE_MS = 240;
+const FADE_MS = 180;
 
 function isModifiedClick(event: MouseEvent) {
   return event.metaKey || event.ctrlKey || event.shiftKey || event.altKey;
-}
-
-function forceScrollTop() {
-  const root = document.documentElement;
-  const previousScrollBehavior = root.style.scrollBehavior;
-  root.style.scrollBehavior = "auto";
-  window.scrollTo(0, 0);
-  root.style.scrollBehavior = previousScrollBehavior;
 }
 
 export function RouteTransitions({ children }: { children: ReactNode }) {
   const pathname = usePathname();
   const router = useRouter();
   const timeoutRef = useRef<number | null>(null);
+  const frameRef = useRef<number | null>(null);
+  const [entering, setEntering] = useState(true);
   const [exiting, setExiting] = useState(false);
 
   useEffect(() => {
     setExiting(false);
+    setEntering(true);
+    frameRef.current = window.requestAnimationFrame(() => {
+      setEntering(false);
+      frameRef.current = null;
+    });
+
+    return () => {
+      if (frameRef.current) {
+        window.cancelAnimationFrame(frameRef.current);
+        frameRef.current = null;
+      }
+    };
   }, [pathname]);
 
   useEffect(() => {
@@ -49,8 +55,7 @@ export function RouteTransitions({ children }: { children: ReactNode }) {
       event.preventDefault();
 
       const navigate = () => {
-        forceScrollTop();
-        router.push(`${url.pathname}${url.search}${url.hash}`);
+        router.push(`${url.pathname}${url.search}${url.hash}`, { scroll: true });
       };
 
       if (timeoutRef.current) {
@@ -79,7 +84,10 @@ export function RouteTransitions({ children }: { children: ReactNode }) {
   }, [router]);
 
   return (
-    <div key={pathname} className={`route-transition${exiting ? " route-transition--exiting" : ""}`}>
+    <div
+      key={pathname}
+      className={`route-transition${entering ? " route-transition--entering" : ""}${exiting ? " route-transition--exiting" : ""}`}
+    >
       {children}
     </div>
   );

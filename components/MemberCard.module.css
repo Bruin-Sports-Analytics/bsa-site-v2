@@ -10,8 +10,13 @@
   backdrop-filter: none !important;
   -webkit-backdrop-filter: none !important;
   padding: 0 !important;
-  cursor: pointer;
   overflow: visible !important;
+  transform: translateZ(0);
+}
+
+.card[role="button"],
+.card[role="link"] {
+  cursor: pointer;
 }
 
 .card::before,
@@ -32,10 +37,15 @@
   font-size: 48px;
   font-weight: 800;
   border: 2px solid transparent;
-  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  isolation: isolate;
+  transform: translateZ(0);
+  transition: border-color 0.22s ease, box-shadow 0.22s ease;
+  backface-visibility: hidden;
+  contain: paint;
 }
 
-.card:hover .photo {
+.card:hover .photo,
+.card:focus-within .photo {
   border-color: var(--ucla-gold);
   box-shadow: 0 0 20px rgba(255, 209, 0, 0.4);
 }
@@ -43,6 +53,10 @@
 .photoImg {
   object-fit: cover;
   object-position: center top;
+  background: var(--member-photo-bg);
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  will-change: opacity;
 }
 
 .infoBtn {
@@ -60,10 +74,11 @@
   cursor: pointer;
   z-index: 6;
   padding: 0;
-  transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease, transform 0.2s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.2s ease;
+  transition: background-color 0.18s ease, color 0.18s ease, border-color 0.18s ease, transform 0.18s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.18s ease;
 }
 
-.infoBtn:hover {
+.infoBtn:hover,
+.infoBtn:focus-visible {
   background: var(--ucla-gold);
   color: #041120;
   border-color: var(--ucla-gold);
@@ -96,7 +111,7 @@
   background: var(--member-badge-fill);
   color: var(--member-badge-color);
   text-decoration: none;
-  transition: all 0.2s cubic-bezier(0.2, 0.8, 0.2, 1);
+  transition: border-color 0.18s ease, background-color 0.18s ease, color 0.18s ease, transform 0.18s cubic-bezier(0.2, 0.8, 0.2, 1);
   z-index: 4;
 }
 
@@ -144,15 +159,15 @@
   margin-top: -4px;
   opacity: 0;
   transform: translateY(-10px);
-  transition: opacity 0.28s cubic-bezier(0.2, 0.8, 0.2, 1), transform 0.28s cubic-bezier(0.2, 0.8, 0.2, 1);
+  transition: opacity 0.22s cubic-bezier(0.2, 0.8, 0.2, 1), transform 0.22s cubic-bezier(0.2, 0.8, 0.2, 1);
   pointer-events: none;
   z-index: 10;
 }
 
-.bodyExpand.bodyExpandOpen {
+.card:hover .bodyExpand,
+.card:focus-within .bodyExpand {
   opacity: 1;
   transform: translateY(0);
-  pointer-events: auto;
 }
 
 .bodyExpandInner {
