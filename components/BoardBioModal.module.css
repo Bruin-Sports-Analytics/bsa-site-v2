@@ -226,6 +226,14 @@
   color: #f1f5f9;
 }
 
+.funFactText {
+  margin: 0;
+  padding-left: 21px;
+  font-size: 13.5px;
+  line-height: 1.55;
+  color: rgba(241, 245, 249, 0.92);
+}
+
 /* Light Mode Overrides */
 :global(html[data-theme="light"]) .overlay {
   background: rgba(230, 240, 250, 0.72);
@@ -306,6 +314,10 @@
   color: #07182b;
 }
 
+:global(html[data-theme="light"]) .funFactText {
+  color: #334155;
+}
+
 @media (max-width: 520px) {
   .modal {
     padding: 22px 18px;
@@ -326,7 +338,8 @@
   }
 
   .valueText,
-  .tagList {
+  .tagList,
+  .funFactText {
     padding-left: 0;
   }
 

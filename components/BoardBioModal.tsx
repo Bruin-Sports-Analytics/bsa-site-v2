@@ -3,7 +3,7 @@
 import { useEffect, useState, useCallback } from "react";
 import { createPortal } from "react-dom";
 import Image from "next/image";
-import { X, Linkedin, MapPin, Calendar, Trophy, Sparkles } from "lucide-react";
+import { X, Linkedin, MapPin, Calendar, Trophy, Sparkles, Smile } from "lucide-react";
 import type { Member } from "@/data/site";
 import { getBoardBio } from "@/data/boardBios";
 import styles from "./BoardBioModal.module.css";
@@ -173,6 +173,17 @@ export function BoardBioModal({ member, isOpen, onClose }: Props) {
               ))}
             </div>
           </div>
+
+          {/* Fun Fact */}
+          {bio.funFact && (
+            <div className={`${styles.infoBlock} ${styles.fullWidth}`}>
+              <div className={styles.labelRow}>
+                <Smile size={15} className={styles.icon} aria-hidden />
+                <span className={styles.labelText}>Fun Fact</span>
+              </div>
+              <p className={styles.funFactText}>{bio.funFact}</p>
+            </div>
+          )}
         </div>
       </div>
     </div>,
