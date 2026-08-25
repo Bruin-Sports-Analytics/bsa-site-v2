@@ -15,7 +15,7 @@ export const boardBios: Record<string, BoardBio> = {
     bsaGroups: ["Basketball", "Data Journalism"],
     favoriteTeams: ["Chicago Bears", "Chicago Bulls", "Chicago Cubs", "Chicago Blackhawks"],
     interests: ["Music Production", "LLM Evals", "NYT & Board Games", "2K", "Golf", "Beli"],
-    funFact: "Has 2 majors and 2 minors in Music Industry and Math"
+    funFact: "I can duel anyone in a Suits quote-off"
   },
   "sampath-kalagarla": {
     hometown: "Andover, MA",
@@ -23,21 +23,21 @@ export const boardBios: Record<string, BoardBio> = {
     bsaGroups: ["Basketball"],
     favoriteTeams: ["Boston Celtics", "New England Patriots", "Boston Red Sox"],
     interests: ["Entrepreneurship", "Lifting", "2K", "Soccer"],
-    funFact: "Has been to 20 US States (thanks East Coast)"
+    funFact: "I've been to 20 US States (thanks East Coast)"
   },
   "ben-troutman": {
     hometown: "Orange County, CA",
-    joinDate: "2024",
+    joinDate: "Fall 2024",
     bsaGroups: ["Baseball"],
     favoriteTeams: ["LA Angels", "LA Lakers"],
     interests: ["Indie/alternative rock", "Pickup basketball", "Hiking", "Cars"]
   },
   "vardaan-sinha": {
-    hometown: "",
-    joinDate: "",
-    bsaGroups: [],
-    favoriteTeams: [],
-    interests: []
+    hometown: "San Diego, CA",
+    joinDate: "Fall 2024",
+    bsaGroups: ["Football"],
+    favoriteTeams: ["New England Patriots", "LA Lakers", "San Diego Padres"],
+    interests: ["Cricket"]
   },
   "anthony-mui": {
     hometown: "",
@@ -48,17 +48,19 @@ export const boardBios: Record<string, BoardBio> = {
   },
   "colin-granger": {
     hometown: "Phoenix, AZ",
-    joinDate: "Sophomore year",
+    joinDate: "Fall 2024",
     bsaGroups: ["Data Journalism", "Baseball"],
     favoriteTeams: ["Arizona Diamondbacks", "Phoenix Suns", "Arizona Cardinals", "UCLA Sports"],
-    interests: ["Gym", "Running", "Star Wars", "MCU", "Pokemon"]
+    interests: ["Gym", "Running", "Star Wars", "MCU", "Pokemon"],
+    funFact: "I was at the game where UCLA legend Josh Rosen made his regular season debut"
   },
   "eshaan-dhavala": {
-    hometown: "",
-    joinDate: "",
-    bsaGroups: [],
+    hometown: "Prior Lake, MN",
+    joinDate: "Spring 2025",
+    bsaGroups: ["Tennis Scouting", "Football Research"],
     favoriteTeams: [],
-    interests: []
+    interests: ["Video games", "Space", "Music"],
+    funFact: "I am addicted to Taco Bell"
   },
   "abhi-kumar": {
     hometown: "San Diego, CA",
@@ -72,7 +74,8 @@ export const boardBios: Record<string, BoardBio> = {
     joinDate: "Fall 2024",
     bsaGroups: ["Data Journalism", "Basketball"],
     favoriteTeams: ["LA Lakers", "LA Dodgers", "LA Rams"],
-    interests: ["Weightlifting", "Golf", "Wii Sports"]
+    interests: ["Weightlifting", "Golf", "Wii Sports"],
+    funFact: "I'm a practice player for our women's team"
   },
   "raja-kavasseri": {
     hometown: "Fremont, CA",
@@ -97,10 +100,11 @@ export const boardBios: Record<string, BoardBio> = {
   },
   "anika-soitkar": {
     hometown: "Thousand Oaks, CA",
-    joinDate: "Freshman year",
+    joinDate: "Fall 2024",
     bsaGroups: ["Data Journalism", "Football"],
     favoriteTeams: ["Kansas City Chiefs"],
-    interests: ["Baking", "Poker", "Gym"]
+    interests: ["Baking", "Poker", "Gym"],
+    funFact: "I've had a licensed baking business for 6 years"
   },
   "alan-ruiz": {
     hometown: "",
@@ -113,7 +117,7 @@ export const boardBios: Record<string, BoardBio> = {
     hometown: "San Jose, CA",
     joinDate: "Fall 2025",
     bsaGroups: ["Football"],
-    favoriteTeams: ["SF 49ers", "Golden StateWarriors", "SF Giants", "San Jose Sharks", "Manchester City"],
+    favoriteTeams: ["San Francisco 49ers", "Golden State Warriors", "San Francisco Giants", "San Jose Sharks", "Manchester City"],
     interests: ["Kickboxing", "Music"]
   },
   "madeleine-curran": {
