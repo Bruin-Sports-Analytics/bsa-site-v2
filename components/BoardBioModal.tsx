@@ -3,7 +3,7 @@
 import { useEffect, useState, useCallback } from "react";
 import { createPortal } from "react-dom";
 import Image from "next/image";
-import { X, Linkedin, MapPin, Calendar, Trophy, Sparkles, Smile } from "lucide-react";
+import { X, Linkedin, MapPin, Calendar, Trophy, Sparkles, Smile, Users } from "lucide-react";
 import type { Member } from "@/data/site";
 import { getBoardBio } from "@/data/boardBios";
 import styles from "./BoardBioModal.module.css";
@@ -143,6 +143,23 @@ export function BoardBioModal({ member, isOpen, onClose }: Props) {
             </div>
             <span className={styles.valueText}>{bio.joinDate}</span>
           </div>
+
+          {/* BSA Groups */}
+          {bio.bsaGroups && bio.bsaGroups.length > 0 && (
+            <div className={`${styles.infoBlock} ${styles.fullWidth}`}>
+              <div className={styles.labelRow}>
+                <Users size={15} className={styles.icon} aria-hidden />
+                <span className={styles.labelText}>BSA Groups</span>
+              </div>
+              <div className={styles.tagList}>
+                {bio.bsaGroups.map((group) => (
+                  <span className={styles.pillTag} key={group}>
+                    {group}
+                  </span>
+                ))}
+              </div>
+            </div>
+          )}
 
           {/* Favorite Teams */}
           <div className={`${styles.infoBlock} ${styles.fullWidth}`}>
