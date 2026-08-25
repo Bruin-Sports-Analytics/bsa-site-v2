@@ -1,0 +1,358 @@
+.overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: grid;
+  place-items: center;
+  padding: 16px;
+  background: rgba(3, 10, 20, 0.72);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  opacity: 0;
+  transition: opacity 0.24s cubic-bezier(0.16, 1, 0.3, 1);
+  overflow-y: auto;
+}
+
+.overlayOpen {
+  opacity: 1;
+}
+
+.overlayClosing {
+  opacity: 0;
+}
+
+.modal {
+  position: relative;
+  width: 100%;
+  max-width: 540px;
+  background: rgba(7, 24, 43, 0.94);
+  border: 1px solid rgba(139, 203, 255, 0.22);
+  border-radius: var(--radius-lg, 16px);
+  box-shadow: 0 24px 64px rgba(0, 0, 0, 0.5), 0 0 32px rgba(13, 71, 130, 0.25);
+  padding: 28px 26px;
+  color: var(--text-primary, #ffffff);
+  box-sizing: border-box;
+  transform: scale(0.94) translateY(14px);
+  opacity: 0;
+  transition: transform 0.24s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.24s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.modalOpen {
+  transform: scale(1) translateY(0);
+  opacity: 1;
+}
+
+.modalClosing {
+  transform: scale(0.95) translateY(10px);
+  opacity: 0;
+}
+
+.closeBtn {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 36px;
+  height: 36px;
+  display: grid;
+  place-items: center;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 50%;
+  color: var(--text-secondary, #94a3b8);
+  cursor: pointer;
+  transition: background 0.18s ease, color 0.18s ease, transform 0.18s ease, border-color 0.18s ease;
+  z-index: 2;
+}
+
+.closeBtn:hover {
+  background: rgba(255, 209, 0, 0.15);
+  border-color: var(--ucla-gold, #ffd100);
+  color: var(--ucla-gold, #ffd100);
+  transform: rotate(90deg);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.avatarWrap {
+  position: relative;
+  width: 92px;
+  height: 92px;
+  flex-shrink: 0;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 2px solid var(--ucla-gold, #ffd100);
+  box-shadow: 0 0 16px rgba(255, 209, 0, 0.25);
+  background: var(--member-photo-bg, #0b1f36);
+}
+
+.avatarImg {
+  object-fit: cover;
+  object-position: center top;
+}
+
+.avatarFallback {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  font-family: var(--font-sora), system-ui, sans-serif;
+  font-size: 32px;
+  font-weight: 800;
+  color: var(--sky-blue, #8bcbff);
+}
+
+.headerInfo {
+  flex: 1;
+  min-width: 0;
+}
+
+.roleBadge {
+  display: inline-block;
+  font-family: var(--font-sora), system-ui, sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--ucla-gold, #ffd100);
+  margin-bottom: 4px;
+}
+
+.name {
+  margin: 0 0 4px;
+  font-family: var(--font-sora), system-ui, sans-serif;
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 1.2;
+  color: #ffffff;
+}
+
+.majorGrad {
+  margin: 0 0 10px;
+  font-size: 13px;
+  color: var(--text-secondary, #94a3b8);
+  font-weight: 500;
+}
+
+.linkedinLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--sky-blue, #8bcbff);
+  text-decoration: none;
+  padding: 4px 10px;
+  background: rgba(139, 203, 255, 0.08);
+  border: 1px solid rgba(139, 203, 255, 0.2);
+  border-radius: 999px;
+  transition: all 0.18s ease;
+}
+
+.linkedinLink:hover {
+  background: rgba(139, 203, 255, 0.18);
+  border-color: var(--sky-blue, #8bcbff);
+  color: #ffffff;
+  transform: translateY(-1px);
+}
+
+.divider {
+  height: 1px;
+  background: rgba(255, 255, 255, 0.08);
+  margin: 20px 0 18px;
+}
+
+.bioGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px 20px;
+}
+
+.infoBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.fullWidth {
+  grid-column: 1 / -1;
+}
+
+.labelRow {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.icon {
+  color: var(--ucla-gold, #ffd100);
+  flex-shrink: 0;
+}
+
+.labelText {
+  font-family: var(--font-sora), system-ui, sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--text-secondary, #94a3b8);
+}
+
+.valueText {
+  font-size: 14px;
+  font-weight: 600;
+  color: #ffffff;
+  padding-left: 21px;
+}
+
+.tagList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 8px;
+  padding-left: 21px;
+}
+
+.pillTag {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 4px 10px;
+  background: rgba(255, 209, 0, 0.08);
+  border: 1px solid rgba(255, 209, 0, 0.24);
+  border-radius: 6px;
+  color: #f1f5f9;
+}
+
+.aboutText {
+  margin: 0;
+  padding-left: 21px;
+  font-size: 13.5px;
+  line-height: 1.55;
+  color: rgba(241, 245, 249, 0.88);
+}
+
+/* Light Mode Overrides */
+:global(html[data-theme="light"]) .overlay {
+  background: rgba(230, 240, 250, 0.72);
+}
+
+:global(html[data-theme="light"]) .modal {
+  background: rgba(255, 255, 255, 0.96);
+  border: 1px solid rgba(13, 71, 130, 0.2);
+  box-shadow: 0 24px 60px rgba(10, 30, 60, 0.18), 0 0 32px rgba(13, 71, 130, 0.08);
+  color: #07182b;
+}
+
+:global(html[data-theme="light"]) .closeBtn {
+  background: rgba(13, 71, 130, 0.05);
+  border-color: rgba(13, 71, 130, 0.15);
+  color: #475569;
+}
+
+:global(html[data-theme="light"]) .closeBtn:hover {
+  background: rgba(13, 71, 130, 0.12);
+  border-color: #0d4782;
+  color: #0d4782;
+}
+
+:global(html[data-theme="light"]) .avatarWrap {
+  border-color: #0d4782;
+  box-shadow: 0 0 16px rgba(13, 71, 130, 0.2);
+  background: #e2e8f0;
+}
+
+:global(html[data-theme="light"]) .avatarFallback {
+  color: #0d4782;
+}
+
+:global(html[data-theme="light"]) .roleBadge {
+  color: #0d4782;
+}
+
+:global(html[data-theme="light"]) .name {
+  color: #07182b;
+}
+
+:global(html[data-theme="light"]) .majorGrad {
+  color: #475569;
+}
+
+:global(html[data-theme="light"]) .linkedinLink {
+  color: #0d4782;
+  background: rgba(13, 71, 130, 0.08);
+  border-color: rgba(13, 71, 130, 0.2);
+}
+
+:global(html[data-theme="light"]) .linkedinLink:hover {
+  background: rgba(13, 71, 130, 0.16);
+  border-color: #0d4782;
+  color: #07182b;
+}
+
+:global(html[data-theme="light"]) .divider {
+  background: rgba(13, 71, 130, 0.1);
+}
+
+:global(html[data-theme="light"]) .icon {
+  color: #0d4782;
+}
+
+:global(html[data-theme="light"]) .labelText {
+  color: #64748b;
+}
+
+:global(html[data-theme="light"]) .valueText {
+  color: #07182b;
+}
+
+:global(html[data-theme="light"]) .pillTag {
+  background: rgba(13, 71, 130, 0.06);
+  border-color: rgba(13, 71, 130, 0.18);
+  color: #07182b;
+}
+
+:global(html[data-theme="light"]) .aboutText {
+  color: #334155;
+}
+
+@media (max-width: 520px) {
+  .modal {
+    padding: 22px 18px;
+  }
+
+  .header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .avatarWrap {
+    width: 80px;
+    height: 80px;
+  }
+
+  .bioGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .valueText,
+  .tagList,
+  .aboutText {
+    padding-left: 0;
+  }
+
+  .labelRow {
+    justify-content: flex-start;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .overlay,
+  .modal,
+  .closeBtn,
+  .linkedinLink {
+    transition-duration: 0.01ms !important;
+  }
+}

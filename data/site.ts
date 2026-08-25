@@ -1510,3 +1510,5 @@ export const capabilities = [
 export const technology = ["Python", "R", "SQL", "Tableau", "React", "Next.js", "GitHub", "scikit-learn", "PyTorch", "Shiny"];
 
 export const ENABLE_ALUMNI_PAGE = false;
+
+export * from "./boardBios";
