@@ -8,10 +8,10 @@ export type BoardBio = {
 
 export const boardBios: Record<string, BoardBio> = {
   "moulik-chatterjee": {
-    hometown: "San Jose, CA",
-    joinDate: "Fall 2023",
-    favoriteTeams: ["Golden State Warriors", "San Francisco 49ers", "San Francisco Giants"],
-    interests: ["Executive Leadership", "Basketball Analytics", "Predictive Modeling", "Chess"],
+    hometown: "Chicago, IL",
+    joinDate: "Winter 2025",
+    favoriteTeams: ["Chicago Bears", "Chicago Bulls", "Chicago Cubs", "Chicago Blackhawks"],
+    interests: ["Music Production", "LLM Evals", "NYT & Board Games", "2K", "Golf", "Beli"],
     bioText: "Leads BSA's strategic direction, campus partnerships, and organization-wide development across all sports divisions and technical initiatives."
   },
   "sampath-kalagarla": {

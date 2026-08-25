@@ -24,7 +24,7 @@
 .modal {
   position: relative;
   width: 100%;
-  max-width: 540px;
+  max-width: 520px;
   background: rgba(7, 24, 43, 0.94);
   border: 1px solid rgba(139, 203, 255, 0.22);
   border-radius: var(--radius-lg, 16px);
@@ -226,14 +226,6 @@
   color: #f1f5f9;
 }
 
-.aboutText {
-  margin: 0;
-  padding-left: 21px;
-  font-size: 13.5px;
-  line-height: 1.55;
-  color: rgba(241, 245, 249, 0.88);
-}
-
 /* Light Mode Overrides */
 :global(html[data-theme="light"]) .overlay {
   background: rgba(230, 240, 250, 0.72);
@@ -314,10 +306,6 @@
   color: #07182b;
 }
 
-:global(html[data-theme="light"]) .aboutText {
-  color: #334155;
-}
-
 @media (max-width: 520px) {
   .modal {
     padding: 22px 18px;
@@ -338,8 +326,7 @@
   }
 
   .valueText,
-  .tagList,
-  .aboutText {
+  .tagList {
     padding-left: 0;
   }
 
