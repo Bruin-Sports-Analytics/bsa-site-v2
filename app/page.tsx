@@ -36,7 +36,7 @@ export default function Home() {
         <div className={`container ${styles.heroGrid}`}>
           <div className={styles.heroCopy}>
             <h1 className={styles.flowTitle}>Bruin Sports Analytics</h1>
-            <p className={styles.flowText}>UCLA&apos;s student-run sports analytics organization. Research, tools, and analysis across five sports.</p>
+            <p className={styles.flowText}>Winning runs on analysis.</p>
             <div className={`${styles.heroCta} ${styles.flowCta}`}>
               <div className="button-row">
                 <Link className="btn btn-primary" href="/teams" data-analytics="hero_work_click">Explore Our Work <ArrowRight size={18} aria-hidden /></Link>
