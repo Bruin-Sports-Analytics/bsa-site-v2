@@ -44,17 +44,7 @@ export function Navigation() {
     <header className={cn(styles.header, scrolled && styles.scrolled)}>
       <div className={styles.inner}>
         <Link href="/" className={styles.brand} aria-label="Bruin Sports Analytics home">
-          <span className={styles.brandMark}>
-            <Image
-              src="/assets/bsa_logo.jpeg"
-              alt=""
-              width={36}
-              height={36}
-              aria-hidden
-              loading="eager"
-              fetchPriority="low"
-            />
-          </span>
+          <span className={styles.brandMark}><Image src="/assets/bsa_logo.jpeg" alt="" width={36} height={36} aria-hidden /></span>
           <span>Bruin Sports Analytics</span>
         </Link>
         <nav className={styles.desktop} aria-label="Primary navigation">

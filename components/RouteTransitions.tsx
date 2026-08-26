@@ -13,20 +13,12 @@ function isModifiedClick(event: MouseEvent) {
 export function RouteTransitions({ children }: { children: ReactNode }) {
   const pathname = usePathname();
   const router = useRouter();
-  const hasMountedRef = useRef(false);
   const timeoutRef = useRef<number | null>(null);
   const frameRef = useRef<number | null>(null);
-  const [entering, setEntering] = useState(false);
+  const [entering, setEntering] = useState(true);
   const [exiting, setExiting] = useState(false);
 
   useEffect(() => {
-    if (!hasMountedRef.current) {
-      hasMountedRef.current = true;
-      setExiting(false);
-      setEntering(false);
-      return;
-    }
-
     setExiting(false);
     setEntering(true);
     frameRef.current = window.requestAnimationFrame(() => {

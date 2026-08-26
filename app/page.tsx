@@ -47,12 +47,11 @@ export default function Home() {
           </div>
           <div className={`${styles.heroLogo} ${styles.flowVisual}`}>
             <Image
-              src="/assets/bsa-logo-800.webp"
+              src="/assets/bsa_logo_high_res.jpeg"
               alt="Bruin Sports Analytics logo"
               width={800}
               height={800}
               priority
-              sizes="(max-width: 640px) 280px, 420px"
             />
           </div>
         </div>

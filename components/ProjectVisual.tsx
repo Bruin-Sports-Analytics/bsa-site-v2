@@ -2,10 +2,10 @@
 
 import type { CSSProperties } from "react";
 import { ImageOff } from "lucide-react";
+import Image from "next/image";
 import { sports, type Project } from "@/data/site";
 import { sportName } from "@/lib/utils";
 import { projectThumbnailSrc } from "@/lib/projectThumbnails";
-import { LazyImage } from "@/components/LazyImage";
 import styles from "./ProjectVisual.module.css";
 
 export function ProjectVisual({ project }: { project: Project }) {
@@ -15,15 +15,12 @@ export function ProjectVisual({ project }: { project: Project }) {
   return (
     <div className={styles.media}>
       {hasPaper ? (
-        <LazyImage
+        <Image
           src={projectThumbnailSrc(project.slug)}
           alt=""
           fill
-          sizes="(max-width: 700px) calc(100vw - 40px), (max-width: 1180px) 31vw, 360px"
+          sizes="(max-width: 900px) 100vw, (max-width: 1280px) 50vw, 33vw"
           className={styles.image}
-          loading="lazy"
-          fetchPriority="low"
-          rootMargin="450px"
         />
       ) : (
         <div className={styles.fallback} style={{ "--accent": accent } as CSSProperties}>

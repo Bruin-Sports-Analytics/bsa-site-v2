@@ -189,7 +189,7 @@
 }
 
 .flowVisual {
-  animation-delay: 0ms;
+  animation-delay: 180ms;
 }
 
 
@@ -780,3 +780,4 @@
   border-color: rgba(39, 116, 174, 0.35) !important;
   box-shadow: 0 10px 30px rgba(16, 42, 73, 0.12) !important;
 }
+
