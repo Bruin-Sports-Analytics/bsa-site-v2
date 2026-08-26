@@ -36,7 +36,6 @@ export function Navigation() {
 
   const peopleLinks = [
     { label: "Board", href: "/people/board", description: "Leadership and directors" },
-    { label: "Current Members", href: "/people/members", description: "Teams and contributors" },
     { label: "Alumni", href: "/people/alumni", description: "Former members" },
   ];
 
@@ -97,9 +96,6 @@ export function Navigation() {
                       <div className={styles.menuColumn}>
                         <Link href="/people/board" onClick={() => setOpenMenu(null)}>
                           Board <small>Leadership and directors</small>
-                        </Link>
-                        <Link href="/people/members" onClick={() => setOpenMenu(null)}>
-                          Current Members <small>Teams and contributors</small>
                         </Link>
                         <Link href="/people/alumni" onClick={() => setOpenMenu(null)}>
                           Alumni <small>Former members</small>
