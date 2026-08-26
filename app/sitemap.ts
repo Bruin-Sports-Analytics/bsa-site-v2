@@ -11,6 +11,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: '/teams', priority: 0.9, changeFrequency: 'weekly' as const },
     { url: '/projects', priority: 0.9, changeFrequency: 'weekly' as const },
     { url: '/people/board', priority: 0.8, changeFrequency: 'monthly' as const },
+    { url: '/people/members', priority: 0.8, changeFrequency: 'monthly' as const },
     { url: '/events', priority: 0.8, changeFrequency: 'weekly' as const },
     { url: '/journalism', priority: 0.8, changeFrequency: 'weekly' as const },
     { url: '/join', priority: 0.8, changeFrequency: 'monthly' as const },

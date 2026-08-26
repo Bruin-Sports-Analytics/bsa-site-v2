@@ -1302,7 +1302,7 @@ const currentMemberCount = memberProfiles.filter((profile) => (
 export const impactStats = [
   { label: "Active projects", value: activeProjectCount },
   { label: "Sports groups", value: sports.length },
-  { label: "Current members", value: 70 },
+  { label: "Current members", value: currentMemberCount },
   { label: "Years at UCLA", value: 9 },
   { label: "UCLA Athletics Partners", value: 3 }
 ];

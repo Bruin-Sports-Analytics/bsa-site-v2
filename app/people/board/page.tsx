@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { members } from "@/data/site";
 import { PeopleSections } from "@/components/PeopleSections";
 
@@ -33,6 +34,8 @@ export default function BoardPage() {
         <div className="container">
           <span className="eyebrow">People</span>
           <h1>Our Board, &apos;26-27</h1>
+
+          <Link className="btn btn-secondary" href="/people/members">View current members</Link>
         </div>
       </section>
       <section className="section">
