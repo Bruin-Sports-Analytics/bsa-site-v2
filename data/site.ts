@@ -1456,6 +1456,7 @@ export const outcomes = [
   { name: "LA Galaxy", category: "Sports", logo: "/assets/logos/la-galaxy.svg", logoLight: "/assets/logos/modes/la-galaxy-light.svg", logoDark: "/assets/logos/modes/la-galaxy-dark.svg", logoScale: 1.05, approvedForDisplay: true, prestige: true },
   { name: "Atlanta Braves", category: "Sports", logo: "/assets/logos/atlanta-braves.png", logoScale: 1.05, approvedForDisplay: true, prestige: true },
   { name: "OKC Thunder", category: "Sports", logo: "/assets/logos/okc-thunder.png", logoLight: "/assets/logos/modes/okc-thunder-light.svg", logoDark: "/assets/logos/modes/okc-thunder-dark.svg", logoScale: 1.05, approvedForDisplay: true, prestige: true },
+  { name: "USA Beach Volleyball", category: "Sports", logo: "/assets/logos/usa-beach-volleyball.png", logoScale: 1.45, approvedForDisplay: true },
   { name: "PFF", category: "Sports Analytics", logo: "/assets/logos/pff.png", logoLight: "/assets/logos/modes/pff-light.svg", logoDark: "/assets/logos/modes/pff-dark.svg", logoScale: 1.05, approvedForDisplay: true },
   // Technology
   { name: "Google", category: "Technology", logo: "/assets/logos/google.svg", logoLight: "/assets/logos/modes/google-light.svg", logoDark: "/assets/logos/modes/google-dark.svg", approvedForDisplay: true, prestige: true },
@@ -1466,6 +1467,7 @@ export const outcomes = [
   { name: "IBM", category: "Technology", logo: "/assets/logos/ibm.svg", logoLight: "/assets/logos/modes/ibm-light.svg", logoDark: "/assets/logos/modes/ibm-dark.svg", logoScale: 0.9, approvedForDisplay: true, prestige: true },
   { name: "JetBlue", category: "Technology", logo: "/assets/logos/jetblue.svg", logoLight: "/assets/logos/modes/jetblue-light.svg", logoDark: "/assets/logos/modes/jetblue-dark.svg", logoScale: 1.05, approvedForDisplay: true, prestige: true },
   { name: "Coinbase", category: "Technology", logo: "/assets/logos/coinbase.svg", logoLight: "/assets/logos/modes/coinbase-light.svg", logoDark: "/assets/logos/modes/coinbase-dark.svg", approvedForDisplay: true },
+  { name: "Stripe", category: "Technology", logo: "/assets/logos/stripe.svg", logoLight: "/assets/logos/modes/stripe-light.svg", logoDark: "/assets/logos/modes/stripe-dark.svg", logoScale: 0.85, approvedForDisplay: true, prestige: true },
   { name: "Palo Alto Networks", category: "Technology", logo: "/assets/logos/palo-alto-networks.svg", logoLight: "/assets/logos/modes/palo-alto-networks-light.svg", logoDark: "/assets/logos/modes/palo-alto-networks-dark.svg", approvedForDisplay: true },
   { name: "Nokia", category: "Technology", logo: "/assets/logos/nokia.svg", logoLight: "/assets/logos/modes/nokia-light.svg", logoDark: "/assets/logos/modes/nokia-dark.svg", approvedForDisplay: true },
   { name: "Rocket Lab", category: "Aerospace", logo: "/assets/logos/rocket-lab.svg", logoLight: "/assets/logos/modes/rocket-lab-light.svg", logoDark: "/assets/logos/modes/rocket-lab-dark.svg", approvedForDisplay: true },
@@ -1477,7 +1479,6 @@ export const outcomes = [
   { name: "Conagra Brands", category: "Consumer Goods", logo: "/assets/logos/conagra-brands.svg", logoLight: "/assets/logos/modes/conagra-brands-light.svg", logoDark: "/assets/logos/modes/conagra-brands-dark.svg", approvedForDisplay: true },
   // Finance / Banking / Investments / Consulting
   { name: "Goldman Sachs", category: "Finance", logo: "/assets/logos/goldman-sachs.svg", logoLight: "/assets/logos/modes/goldman-sachs-light.svg", logoDark: "/assets/logos/modes/goldman-sachs-dark.svg", approvedForDisplay: true, prestige: true },
-  { name: "Stripe", category: "Technology", logo: "/assets/logos/stripe.svg", logoLight: "/assets/logos/modes/stripe-light.svg", logoDark: "/assets/logos/modes/stripe-dark.svg", logoScale: 0.85, approvedForDisplay: true, prestige: true },
   { name: "Bloomberg", category: "Finance", logo: "/assets/logos/bloomberg.png", approvedForDisplay: true, prestige: true },
   { name: "Balyasny Asset Management", category: "Investments", logo: "/assets/logos/balyasny.png", logoLight: "/assets/logos/modes/balyasny-light.svg", logoDark: "/assets/logos/modes/balyasny-dark.svg", approvedForDisplay: true },
   { name: "Graham Partners", category: "Investments", logo: "/assets/logos/graham-partners.png", logoLight: "/assets/logos/modes/graham-partners-light.svg", logoDark: "/assets/logos/modes/graham-partners-dark.svg", logoScale: 1.05, approvedForDisplay: true },
