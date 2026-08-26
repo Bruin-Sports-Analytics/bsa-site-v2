@@ -1,5 +1,5 @@
-import Image from "next/image";
 import type { CSSProperties } from "react";
+import { LazyImage } from "@/components/LazyImage";
 import styles from "./LogoCategories.module.css";
 
 type Outcome = { name: string; category: string; logo?: string | null; logoScale?: number; logoGapAfter?: number };
@@ -36,12 +36,15 @@ export function LogoCategories({ logos }: { logos: Outcome[] }) {
               >
                 {outcome.logo ? (
                   <span className={styles.imgWrap}>
-                    <Image
+                    <LazyImage
                       src={outcome.logo}
                       alt={outcome.name}
                       fill
                       sizes="160px"
                       className={styles.img}
+                      loading="lazy"
+                      fetchPriority="low"
+                      rootMargin="360px"
                       style={outcome.logoScale ? { transform: `scale(${outcome.logoScale})` } : undefined}
                     />
                   </span>
