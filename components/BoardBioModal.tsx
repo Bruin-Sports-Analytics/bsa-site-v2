@@ -127,22 +127,26 @@ export function BoardBioModal({ member, isOpen, onClose }: Props) {
         {/* Bio Details Grid */}
         <div className={styles.bioGrid}>
           {/* Hometown */}
-          <div className={styles.infoBlock}>
-            <div className={styles.labelRow}>
-              <MapPin size={15} className={styles.icon} aria-hidden />
-              <span className={styles.labelText}>Hometown</span>
+          {bio.hometown && (
+            <div className={styles.infoBlock}>
+              <div className={styles.labelRow}>
+                <MapPin size={15} className={styles.icon} aria-hidden />
+                <span className={styles.labelText}>Hometown</span>
+              </div>
+              <span className={styles.valueText}>{bio.hometown}</span>
             </div>
-            <span className={styles.valueText}>{bio.hometown}</span>
-          </div>
+          )}
 
           {/* Joined BSA */}
-          <div className={styles.infoBlock}>
-            <div className={styles.labelRow}>
-              <Calendar size={15} className={styles.icon} aria-hidden />
-              <span className={styles.labelText}>Joined BSA</span>
+          {bio.joinDate && (
+            <div className={styles.infoBlock}>
+              <div className={styles.labelRow}>
+                <Calendar size={15} className={styles.icon} aria-hidden />
+                <span className={styles.labelText}>Joined BSA</span>
+              </div>
+              <span className={styles.valueText}>{bio.joinDate}</span>
             </div>
-            <span className={styles.valueText}>{bio.joinDate}</span>
-          </div>
+          )}
 
           {/* BSA Groups */}
           {bio.bsaGroups && bio.bsaGroups.length > 0 && (
