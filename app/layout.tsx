@@ -74,8 +74,9 @@ const themeScript = `
 (() => {
   try {
     localStorage.removeItem("theme");
+    const manual = sessionStorage.getItem("theme_manual");
     const stored = sessionStorage.getItem("theme");
-    if (stored === "dark" || stored === "light") {
+    if (manual === "true" && (stored === "dark" || stored === "light")) {
       document.documentElement.dataset.theme = stored;
       document.documentElement.style.colorScheme = stored;
       return;
