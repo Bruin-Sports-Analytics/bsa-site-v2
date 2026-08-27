@@ -35,7 +35,7 @@ export const boardBios: Record<string, BoardBio> = {
   },
   "vardaan-sinha": {
     hometown: "San Diego, CA",
-    joinDate: "2024-25",
+    joinDate: "Fall 2024",
     bsaGroups: ["Football"],
     favoriteTeams: ["New England Patriots", "LA Lakers", "San Diego Padres"],
     interests: ["Cricket"],
@@ -50,7 +50,7 @@ export const boardBios: Record<string, BoardBio> = {
   },
   "colin-granger": {
     hometown: "Phoenix, AZ",
-    joinDate: "Sophomore Year",
+    joinDate: "Fall 2024",
     bsaGroups: ["Data Journalism", "Baseball"],
     favoriteTeams: ["Arizona Diamondbacks", "Phoenix Suns", "Arizona Cardinals", "UCLA Sports"],
     interests: ["Gym", "Running", "Star Wars", "MCU", "Pokémon"],
@@ -58,7 +58,7 @@ export const boardBios: Record<string, BoardBio> = {
   },
   "eshaan-dhavala": {
     hometown: "Prior Lake, MN",
-    joinDate: "Spring (1st Year)",
+    joinDate: "Spring 2025",
     bsaGroups: ["Tennis Scouting", "Football Research"],
     favoriteTeams: [],
     interests: ["Video Games", "Space", "Music"],
@@ -104,7 +104,7 @@ export const boardBios: Record<string, BoardBio> = {
   },
   "anika-soitkar": {
     hometown: "Thousand Oaks, CA",
-    joinDate: "Freshman Year",
+    joinDate: "Fall 2024",
     bsaGroups: ["Data Journalism", "Football"],
     favoriteTeams: ["Kansas City Chiefs"],
     interests: ["Baking", "Poker", "Gym"],
@@ -113,7 +113,7 @@ export const boardBios: Record<string, BoardBio> = {
   "alan-ruiz": {
     hometown: "Granada Hills, CA",
     joinDate: "Fall 2025",
-    bsaGroups: ["Data Journalism", "Baseball Consulting (Stuff+)"],
+    bsaGroups: ["Data Journalism", "Baseball"],
     favoriteTeams: ["LA Dodgers", "LA Rams", "LA Lakers"],
     interests: ["Nature & Animals", "Star Wars & Marvel", "Singing"],
     funFact: "I created a social media platform called “All Things Dodgers” to present sports analysis on my favorite team since 2023."
@@ -157,7 +157,7 @@ export const boardBios: Record<string, BoardBio> = {
   },
   "harsh-govindji": {
     hometown: "Bakersfield, CA",
-    joinDate: "2024",
+    joinDate: "Fall 2024",
     bsaGroups: ["Football", "Research", "Basketball"],
     favoriteTeams: ["Miami Heat"],
     interests: ["Golf", "Lifting", "Cooking"],
