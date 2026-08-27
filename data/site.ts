@@ -1290,7 +1290,8 @@ export const alumni: AlumniProfile[] = [
   { name: "Daniel Wang", linkedinUrl: "https://www.linkedin.com/in/danielwang22/" },
   { name: "Tom Seifert", linkedinUrl: "https://www.linkedin.com/in/tom-seifertt/" },
   { name: "Bryan Mui", linkedinUrl: "https://www.linkedin.com/in/bryanmui/" },
-  { name: "Leo Cardozo", linkedinUrl: "https://www.linkedin.com/in/leo-cardozo/" }
+  { name: "Leo Cardozo", linkedinUrl: "https://www.linkedin.com/in/leo-cardozo/" },
+  { name: "Alexander West", linkedinUrl: "https://www.linkedin.com/in/awest25/" }
 ];
 
 const activeProjectCount = projects.filter(isActiveProject).length;

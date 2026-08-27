@@ -23,7 +23,7 @@ export const boardBios: Record<string, BoardBio> = {
     bsaGroups: ["Basketball"],
     favoriteTeams: ["Boston Celtics", "New England Patriots", "Boston Red Sox"],
     interests: ["Entrepreneurship", "Lifting", "2K", "Soccer"],
-    funFact: "I've been to 20 US States (thanks East Coast)"
+    funFact: "I can solve a Megaminx (12-sided Rubik's cube)"
   },
   "ben-troutman": {
     hometown: "Orange County, CA",
@@ -78,7 +78,7 @@ export const boardBios: Record<string, BoardBio> = {
     bsaGroups: ["Data Journalism", "Basketball"],
     favoriteTeams: ["LA Lakers", "LA Dodgers", "LA Rams"],
     interests: ["Weightlifting", "Golf", "Wii Sports"],
-    funFact: "I’m a practice player for our women’s team"
+    funFact: "I’m a practice player for our women’s basketball team"
   },
   "raja-kavasseri": {
     hometown: "Fremont, CA",
