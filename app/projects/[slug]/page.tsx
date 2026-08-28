@@ -45,7 +45,53 @@ export default function ProjectDetailPage({ params }: Props) {
         </div>
       </section>
 
-      {/* TODO: project details accordion hidden until content is verified against source papers — see GitHub issue #1 */}
+      <section className={styles.detailsSection}>
+        <div className="container">
+          <div className={styles.overviewCard}>
+            <span className="eyebrow">Project Overview</span>
+            <p className={styles.summaryText}>{project.summary}</p>
+          </div>
+
+          <div className={styles.gridThree}>
+            <div className={styles.gridCard}>
+              <span className={styles.cardHeader}>Problem & Objective</span>
+              <p className={styles.cardBody}>{project.problem}</p>
+            </div>
+            <div className={styles.gridCard}>
+              <span className={styles.cardHeader}>Analytical Approach</span>
+              <p className={styles.cardBody}>{project.approach}</p>
+            </div>
+            <div className={styles.gridCard}>
+              <span className={styles.cardHeader}>Key Result & Impact</span>
+              <p className={styles.cardBody}>{project.result}</p>
+            </div>
+          </div>
+
+          {project.techStack.length > 0 && (
+            <div className={styles.techStackBlock}>
+              <span className="eyebrow">Tech Stack & Tools</span>
+              <div className="tag-row" style={{ marginTop: 8 }}>
+                {project.techStack.map((tech) => (
+                  <span className="tag" key={tech}>{tech}</span>
+                ))}
+              </div>
+            </div>
+          )}
+
+          {project.links.demo && (
+            <div style={{ marginTop: 24 }}>
+              <a
+                href={project.links.demo}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn btn-primary"
+              >
+                Open Live Tool <ArrowUpRight size={16} aria-hidden />
+              </a>
+            </div>
+          )}
+        </div>
+      </section>
 
       {project.links.paper && (
         <section className={styles.paperSection}>
