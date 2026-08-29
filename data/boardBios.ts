@@ -89,11 +89,11 @@ export const boardBios: Record<string, BoardBio> = {
     funFact: "I’ve seen the northern lights 4 times"
   },
   "pavan-gudavalli": {
-    hometown: "",
-    joinDate: "",
-    bsaGroups: [],
-    favoriteTeams: [],
-    interests: []
+    hometown: "Boulder, CO",
+    joinDate: "Fall 2023",
+    bsaGroups: ["Tennis"],
+    favoriteTeams: ["Brighton", "Denver Broncos", "Denver Nuggets"],
+    interests: ["Golf", "Brawl Stars"]
   },
   "beck-zimmerman": {
     hometown: "",
@@ -134,11 +134,12 @@ export const boardBios: Record<string, BoardBio> = {
     interests: []
   },
   "evana-sharma": {
-    hometown: "",
-    joinDate: "",
-    bsaGroups: [],
-    favoriteTeams: [],
-    interests: []
+    hometown: "Sacramento, CA",
+    joinDate: "Fall 2025",
+    bsaGroups: ["Data Journalism", "Marketing"],
+    favoriteTeams: ["Golden State Warriors"],
+    interests: ["Tennis", "Pickleball", "Basketball"],
+    funFact: "I randomly met Marcello Hernández from SNL while I was in New York!"
   },
   "annika-gupta": {
     hometown: "",

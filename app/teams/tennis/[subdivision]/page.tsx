@@ -32,7 +32,28 @@ export function generateStaticParams() {
 
 export function generateMetadata({ params }: Props): Metadata {
   const name = resolveSubdivision(params.subdivision);
-  return { title: name ? `Tennis: ${name}` : "Tennis Program" };
+  const title = name ? `Tennis: ${name} | Bruin Sports Analytics` : "Tennis Program | Bruin Sports Analytics";
+  const description = name
+    ? `Tennis analytics, match preparation, and player development projects for ${name} by Bruin Sports Analytics.`
+    : "Tennis analytics, match preparation, and player development projects by Bruin Sports Analytics.";
+
+  return {
+    title,
+    description,
+    keywords: [
+      name ?? "Tennis",
+      "tennis analytics",
+      "UCLA tennis analytics",
+      "match strategy",
+      "sports analytics consulting",
+      "Bruin Sports Analytics"
+    ],
+    openGraph: {
+      title,
+      description,
+      url: `https://www.bruinsportsanalytics.org/teams/tennis/${params.subdivision}`
+    }
+  };
 }
 
 export default function TennisSubdivisionPage({ params }: Props) {

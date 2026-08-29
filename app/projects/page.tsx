@@ -2,8 +2,25 @@ import type { Metadata } from "next";
 import { ProjectExplorer } from "@/components/ProjectExplorer";
 
 export const metadata: Metadata = {
-  title: "Projects",
-  description: "Sports analytics projects from Bruin Sports Analytics. Research papers, consulting reports, and interactive dashboards."
+  title: "Projects & Research | Sports Analytics Dashboards & Papers",
+  description: "Explore sports analytics consulting reports, predictive models, and research projects by Bruin Sports Analytics students across baseball, basketball, football, volleyball, and tennis.",
+  keywords: [
+    "sports analytics projects",
+    "sports data science research",
+    "sports predictive models",
+    "baseball analytics projects",
+    "basketball shot quality models",
+    "football analytics research",
+    "sabermetrics portfolio",
+    "sports analytics dashboards",
+    "UCLA sports analytics work",
+    "student sports consulting reports"
+  ],
+  openGraph: {
+    title: "Projects & Research | Bruin Sports Analytics",
+    description: "Sports analytics consulting reports, predictive models, and student research projects across collegiate and professional sports.",
+    url: "https://www.bruinsportsanalytics.org/projects"
+  }
 };
 
 export default function ProjectsPage() {

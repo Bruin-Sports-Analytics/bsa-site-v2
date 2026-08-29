@@ -6,8 +6,23 @@ import { impactStats, members, sports } from "@/data/site";
 import styles from "./page.module.css";
 
 export const metadata: Metadata = {
-  title: "About",
-  description: "About Bruin Sports Analytics. UCLA's student-run sports analytics organization bridging sports and data."
+  title: "About Us | UCLA's Premier Sports Analytics Organization",
+  description: "About Bruin Sports Analytics (BSA) at UCLA — bridging collegiate athletics and data science. Learn about our mission, executive leadership, sports consulting, and alumni network.",
+  keywords: [
+    "about Bruin Sports Analytics",
+    "UCLA sports analytics organization",
+    "sports data science club UCLA",
+    "sports analytics leadership",
+    "BSA executive board",
+    "sports analytics alumni",
+    "student sports consulting UCLA",
+    "sports analytics club"
+  ],
+  openGraph: {
+    title: "About Us | Bruin Sports Analytics",
+    description: "Learn about UCLA's premier student-run sports analytics organization bridging sports, data science, and consulting.",
+    url: "https://www.bruinsportsanalytics.org/about"
+  }
 };
 
 const boardGroups: { title: string; teams: string[] }[] = [

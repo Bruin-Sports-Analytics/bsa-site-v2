@@ -261,9 +261,28 @@ export function generateMetadata({ params }: Props): Metadata {
   if (!article) {
     return { title: "Article not found" };
   }
+  const keywords = [
+    article.title,
+    article.sport,
+    `${article.sport} analytics`,
+    "sports data journalism",
+    "sports data science",
+    "Bruin Sports Analytics",
+    ...(article.techStack ?? [])
+  ];
+
   return {
     title: article.title,
-    description: article.summary
+    description: article.summary,
+    keywords,
+    openGraph: {
+      title: `${article.title} | Bruin Sports Analytics`,
+      description: article.summary,
+      url: `https://www.bruinsportsanalytics.org/journalism/${params.slug}`,
+      type: "article",
+      publishedTime: article.date ? new Date(article.date).toISOString() : undefined,
+      authors: article.authors
+    }
   };
 }
 
@@ -272,8 +291,33 @@ export default function JournalismArticlePage({ params }: Props) {
   if (!article) notFound();
   const content = article.content?.length ? article.content : fileContentBlocks(article);
 
+  const articleJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "NewsArticle",
+    "headline": article.title,
+    "description": article.summary,
+    "author": article.authors.map((authorName) => ({
+      "@type": "Person",
+      "name": authorName
+    })),
+    "publisher": {
+      "@type": "Organization",
+      "name": "Bruin Sports Analytics",
+      "url": "https://www.bruinsportsanalytics.org",
+      "logo": "https://www.bruinsportsanalytics.org/assets/bsa_logo.jpeg"
+    },
+    "datePublished": article.date ? new Date(article.date).toISOString() : undefined,
+    "articleSection": article.sport,
+    "keywords": [article.sport, ...(article.techStack ?? [])].join(", "),
+    "url": `https://www.bruinsportsanalytics.org/journalism/${slugify(article.title)}`
+  };
+
   return (
     <main>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
+      />
       <section className={styles.header}>
         <div className="container">
           <span className="eyebrow">Data Journalism · {article.sport}</span>

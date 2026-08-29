@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, CalendarDays } from "lucide-react";
@@ -8,6 +9,23 @@ import { ScrollCountStats } from "@/components/ScrollCountStats";
 import { events, impactStats, outcomes, sports } from "@/data/site";
 import { currentlyFeatured, publicProjects } from "@/lib/utils";
 import styles from "./page.module.css";
+
+export const metadata: Metadata = {
+  title: "Bruin Sports Analytics | UCLA Sports Analytics Consulting & Student Recruitment",
+  description: "Bruin Sports Analytics is UCLA's leading sports data organization. We partner with athletic departments and teams for sports analytics consulting and recruit students for data science, software, and journalism.",
+  keywords: [
+    "Bruin Sports Analytics",
+    "UCLA sports analytics",
+    "sports analytics consulting",
+    "UCLA club recruitment",
+    "sports data science UCLA",
+    "sports analytics partner",
+    "sabermetrics UCLA",
+    "sports machine learning",
+    "college sports consulting",
+    "join UCLA sports analytics"
+  ]
+};
 
 export default function Home() {
   const featuredProjects = currentlyFeatured();

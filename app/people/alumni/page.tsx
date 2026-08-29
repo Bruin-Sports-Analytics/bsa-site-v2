@@ -2,7 +2,20 @@ import type { Metadata } from "next";
 import { alumni } from "@/data/site";
 
 export const metadata: Metadata = {
-  title: "Alumni"
+  title: "Alumni Network | Sports Analytics Industry Careers",
+  description: "Discover where Bruin Sports Analytics alumni work across professional sports franchises, front offices, analytics firms, and top tech companies.",
+  keywords: [
+    "Bruin Sports Analytics alumni",
+    "sports analytics careers",
+    "BSA alumni network",
+    "sports front office alumni UCLA",
+    "sports data science jobs"
+  ],
+  openGraph: {
+    title: "Alumni Network | Bruin Sports Analytics",
+    description: "BSA alumni career paths across MLB, NBA, NFL front offices, sports consulting, and data science.",
+    url: "https://www.bruinsportsanalytics.org/people/alumni"
+  }
 };
 
 export default function AlumniPage() {

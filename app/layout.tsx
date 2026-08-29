@@ -39,10 +39,30 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.bruinsportsanalytics.org"),
   title: {
-    default: "Bruin Sports Analytics",
+    default: "Bruin Sports Analytics | UCLA Sports Analytics & Consulting",
     template: "%s | Bruin Sports Analytics"
   },
-  description: "UCLA's student-run sports analytics organization. Where sports meet data.",
+  description: "UCLA's premier student-run sports analytics organization. We provide data science consulting for sports teams and recruit top UCLA students for analytics, software engineering, and journalism.",
+  keywords: [
+    "Bruin Sports Analytics",
+    "UCLA sports analytics",
+    "sports analytics consulting",
+    "UCLA student recruitment",
+    "sports data science",
+    "sports analytics club",
+    "sports consulting partnerships",
+    "sabermetrics UCLA",
+    "college sports analytics",
+    "sports predictive modeling",
+    "athletic department analytics",
+    "sports performance analytics",
+    "UCLA data science clubs",
+    "sports journalism UCLA",
+    "student sports consulting"
+  ],
+  authors: [{ name: "Bruin Sports Analytics", url: "https://www.bruinsportsanalytics.org" }],
+  creator: "Bruin Sports Analytics",
+  publisher: "Bruin Sports Analytics",
   icons: {
     icon: [
       { url: "/favicon.ico", sizes: "any" },
@@ -64,9 +84,26 @@ export const metadata: Metadata = {
     canonical: "https://www.bruinsportsanalytics.org",
   },
   openGraph: {
-    title: "Bruin Sports Analytics",
-    description: "Where sports meet data.",
-    type: "website"
+    title: "Bruin Sports Analytics | UCLA Sports Analytics & Consulting",
+    description: "UCLA's premier student-run sports analytics organization. Sports consulting partnerships for teams and student recruitment for data analysts.",
+    url: "https://www.bruinsportsanalytics.org",
+    siteName: "Bruin Sports Analytics",
+    locale: "en_US",
+    type: "website",
+    images: [
+      {
+        url: "https://www.bruinsportsanalytics.org/assets/bsa_logo_high_res.jpeg",
+        width: 800,
+        height: 800,
+        alt: "Bruin Sports Analytics Logo",
+      }
+    ]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Bruin Sports Analytics | UCLA Sports Analytics & Consulting",
+    description: "UCLA's premier student-run sports analytics organization — sports consulting partnerships & student recruitment.",
+    images: ["https://www.bruinsportsanalytics.org/assets/bsa_logo_high_res.jpeg"]
   }
 };
 
@@ -115,23 +152,66 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               "@context": "https://schema.org",
               "@type": "Organization",
               "name": "Bruin Sports Analytics",
+              "alternateName": ["BSA", "Bruin Sports Analytics at UCLA", "BSA UCLA"],
               "url": "https://www.bruinsportsanalytics.org",
               "logo": "https://www.bruinsportsanalytics.org/assets/bsa_logo.jpeg",
-              "description": "UCLA's student-run sports analytics organization",
+              "description": "UCLA's premier student-run sports analytics organization specializing in sports analytics consulting, predictive modeling, data journalism, and undergraduate training in sports data science.",
+              "parentOrganization": {
+                "@type": "CollegeOrUniversity",
+                "name": "University of California, Los Angeles",
+                "alternateName": "UCLA"
+              },
               "location": {
                 "@type": "Place",
                 "name": "UCLA",
                 "address": {
                   "@type": "PostalAddress",
                   "addressLocality": "Los Angeles",
-                  "addressRegion": "CA"
+                  "addressRegion": "CA",
+                  "addressCountry": "US"
                 }
               },
+              "knowsAbout": [
+                "Sports Analytics",
+                "Sports Data Science",
+                "Sports Analytics Consulting",
+                "Sabermetrics",
+                "Basketball Analytics",
+                "Football Analytics",
+                "Volleyball Analytics",
+                "Tennis Analytics",
+                "Data Journalism",
+                "Predictive Modeling in Sports",
+                "Machine Learning",
+                "UCLA Athletics Analytics"
+              ],
               "sameAs": [
                 "https://www.instagram.com/bruinsportsanalytics/",
                 "https://www.linkedin.com/company/bruin-sports-analytics/",
                 "https://github.com/Bruin-Sports-Analytics"
-              ]
+              ],
+              "offers": {
+                "@type": "OfferCatalog",
+                "name": "Sports Analytics Services & Programs",
+                "itemListElement": [
+                  {
+                    "@type": "Offer",
+                    "itemOffered": {
+                      "@type": "Service",
+                      "name": "Sports Analytics Consulting",
+                      "description": "Consulting services for collegiate and professional sports organizations, including tactical scouting, lineup optimization, and custom interactive dashboards."
+                    }
+                  },
+                  {
+                    "@type": "Offer",
+                    "itemOffered": {
+                      "@type": "Service",
+                      "name": "Student Analyst Recruitment & Training",
+                      "description": "Recruitment program and hands-on data science training for UCLA students in sports analytics, engineering, and data journalism."
+                    }
+                  }
+                ]
+              }
             })
           }}
         />

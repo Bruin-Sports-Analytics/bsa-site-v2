@@ -5,13 +5,60 @@ import { PartnerForm } from "@/components/PartnerForm";
 import { capabilities, technology } from "@/data/site";
 
 export const metadata: Metadata = {
-  title: "Partner With Us",
-  description: "Partner with Bruin Sports Analytics for sports analytics consulting, research, and data-driven insights. UCLA students."
+  title: "Partner With Us | Sports Analytics Consulting & Data Solutions",
+  description: "Partner with Bruin Sports Analytics for data-driven consulting, predictive modeling, opponent scouting, and custom dashboards. Work with top UCLA sports data science talent.",
+  keywords: [
+    "sports analytics consulting",
+    "partner with sports analytics club",
+    "athletic department analytics consulting",
+    "sports data science consulting",
+    "sports performance analytics partner",
+    "college sports analytics consulting",
+    "pro sports analytics research partner",
+    "sports scouting dashboards",
+    "hire student sports analysts",
+    "UCLA sports consulting"
+  ],
+  openGraph: {
+    title: "Partner With Bruin Sports Analytics | Sports Analytics Consulting",
+    description: "Data-driven sports analytics consulting, predictive modeling, and scouting dashboards from top UCLA data science students.",
+    url: "https://www.bruinsportsanalytics.org/partner"
+  }
 };
 
 export default function PartnerPage() {
+  const serviceJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Bruin Sports Analytics Consulting Services",
+    "provider": {
+      "@type": "Organization",
+      "name": "Bruin Sports Analytics",
+      "url": "https://www.bruinsportsanalytics.org"
+    },
+    "serviceType": "Sports Analytics Consulting",
+    "description": "Custom sports data analysis, opponent scouting reports, predictive performance modeling, and interactive visualization dashboards for athletic teams and sports organizations.",
+    "areaServed": "United States",
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Sports Analytics Capabilities",
+      "itemListElement": capabilities.map((cap) => ({
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": cap.title,
+          "description": cap.text
+        }
+      }))
+    }
+  };
+
   return (
     <main>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceJsonLd) }}
+      />
       <section className="page-hero">
         <div className="container">
           <span className="eyebrow">Partner with us</span>

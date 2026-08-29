@@ -7,8 +7,24 @@ import { djResources } from "@/data/journalism";
 import styles from "./page.module.css";
 
 export const metadata: Metadata = {
-  title: "Journalism",
-  description: "Data-driven sports journalism by Bruin Sports Analytics. Analysis, visualizations, and storytelling across major sports."
+  title: "Data Journalism | Sports Statistics, Visualizations & Stories",
+  description: "Read data-driven sports journalism by Bruin Sports Analytics students. In-depth statistics, interactive visualizations, and data storytelling across the NBA, NFL, MLB, and NCAA.",
+  keywords: [
+    "sports data journalism",
+    "sports data visualizations",
+    "sports analytics articles",
+    "data storytelling in sports",
+    "UCLA sports journalism",
+    "NBA data analysis",
+    "NFL analytics articles",
+    "student sports writing",
+    "Bruin Sports Analytics journalism"
+  ],
+  openGraph: {
+    title: "Data Journalism | Bruin Sports Analytics",
+    description: "Data-driven sports journalism, statistics, and interactive visualizations produced by UCLA students.",
+    url: "https://www.bruinsportsanalytics.org/journalism"
+  }
 };
 
 export default function JournalismPage() {

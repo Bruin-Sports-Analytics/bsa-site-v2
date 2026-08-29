@@ -9,11 +9,45 @@ import { recruitment } from "@/data/site";
 import styles from "./join.module.css";
 
 export const metadata: Metadata = {
-  title: "Join",
-  description: "Join Bruin Sports Analytics. Apply for our fall recruitment cycle as an analyst, engineer, writer, or designer."
+  title: "Join BSA | UCLA Student Recruitment & Applications",
+  description: "Apply to join Bruin Sports Analytics at UCLA. Student recruitment for sports data analysts, software engineers, data journalists, and designers.",
+  keywords: [
+    "join Bruin Sports Analytics",
+    "UCLA sports analytics recruitment",
+    "UCLA sports analytics application",
+    "UCLA data science clubs",
+    "sports analytics club recruitment",
+    "student sports analyst UCLA",
+    "sports software engineering UCLA",
+    "sports data journalism club",
+    "BSA recruitment cycle",
+    "UCLA sports club application"
+  ],
+  openGraph: {
+    title: "Join Bruin Sports Analytics | UCLA Student Recruitment",
+    description: "Apply for our recruitment cycle as a data analyst, software engineer, sports journalist, or designer at UCLA.",
+    url: "https://www.bruinsportsanalytics.org/join"
+  }
 };
 
 export default function JoinPage() {
+  const recruitmentJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "EducationalOccupationalProgram",
+    "name": "Bruin Sports Analytics Student Recruitment & Training",
+    "description": "Student recruitment and sports analytics training program at UCLA covering data science, software development, tactical consulting, and sports journalism.",
+    "provider": {
+      "@type": "Organization",
+      "name": "Bruin Sports Analytics",
+      "url": "https://www.bruinsportsanalytics.org"
+    },
+    "educationalProgramMode": "In-person / Hybrid",
+    "programType": "Student Organization / Pre-Professional Training",
+    "startDate": recruitment.openDate,
+    "applicationDeadline": recruitment.closeDate,
+    "url": "https://www.bruinsportsanalytics.org/join"
+  };
+
   const stateCopy = {
     UPCOMING: {
       title: `Our next recruitment cycle is ${recruitment.nextCycleLabel}`,
@@ -34,6 +68,10 @@ export default function JoinPage() {
 
   return (
     <main>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(recruitmentJsonLd) }}
+      />
       <section className="page-hero">
         <div className={`container ${recruitment.status === "UPCOMING" ? styles.heroLayout : ""}`}>
           <div className={recruitment.status === "UPCOMING" ? styles.heroContent : ""}>

@@ -18,9 +18,30 @@ export function generateMetadata({ params }: Props): Metadata {
   if (!project) {
     return { title: "Project not found" };
   }
+  const sportLabel = sportName(project.sport);
+  const keywords = [
+    project.title,
+    sportLabel,
+    `${sportLabel} analytics`,
+    project.projectType,
+    "sports analytics consulting",
+    "sports data science",
+    "Bruin Sports Analytics",
+    "UCLA sports analytics",
+    ...(project.techStack ?? []),
+    ...(project.subdivision ? [project.subdivision] : [])
+  ];
+
   return {
     title: project.title,
-    description: project.summary
+    description: project.summary,
+    keywords,
+    openGraph: {
+      title: `${project.title} | Bruin Sports Analytics`,
+      description: project.summary,
+      url: `https://www.bruinsportsanalytics.org/projects/${params.slug}`,
+      type: "article"
+    }
   };
 }
 
@@ -29,9 +50,33 @@ export default function ProjectDetailPage({ params }: Props) {
   if (!project || project.visibility === "private") notFound();
 
   const redacted = project.visibility === "redacted";
+  const projectJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "CreativeWork",
+    "name": project.title,
+    "description": project.summary,
+    "genre": `${sportName(project.sport)} Analytics`,
+    "keywords": [sportName(project.sport), project.projectType, ...(project.techStack ?? [])].join(", "),
+    "author": {
+      "@type": "Organization",
+      "name": "Bruin Sports Analytics",
+      "url": "https://www.bruinsportsanalytics.org"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Bruin Sports Analytics",
+      "url": "https://www.bruinsportsanalytics.org"
+    },
+    "dateModified": project.lastUpdated ? new Date(project.lastUpdated).toISOString() : undefined,
+    "url": `https://www.bruinsportsanalytics.org/projects/${project.slug}`
+  };
 
   return (
     <main>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(projectJsonLd) }}
+      />
       <section className={styles.header}>
         <div className="container">
           <span className="eyebrow">{sportName(project.sport)} · {project.projectType}</span>

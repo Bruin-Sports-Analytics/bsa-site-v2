@@ -3,8 +3,21 @@ import { members } from "@/data/site";
 import { PeopleSections } from "@/components/PeopleSections";
 
 export const metadata: Metadata = {
-  title: "Our Board, '26-27",
-  description: "Meet the leadership of Bruin Sports Analytics. President, vice presidents, and team chairs."
+  title: "Executive Board & Leadership | Bruin Sports Analytics",
+  description: "Meet the executive board, operations team, and division chairs leading Bruin Sports Analytics at UCLA across research, consulting, and student recruitment.",
+  keywords: [
+    "Bruin Sports Analytics board",
+    "BSA student leadership",
+    "UCLA sports analytics chairs",
+    "sports analytics executive board",
+    "sports analytics directors UCLA",
+    "BSA leadership team"
+  ],
+  openGraph: {
+    title: "Executive Board & Leadership | Bruin Sports Analytics",
+    description: "Meet the student leaders and division chairs directing research, consulting, and recruitment for BSA.",
+    url: "https://www.bruinsportsanalytics.org/people/board"
+  }
 };
 
 const normalize = (value: string) => value.trim().toLowerCase();
