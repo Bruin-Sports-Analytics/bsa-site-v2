@@ -15,24 +15,17 @@ export function Navigation() {
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
   const [openMenu, setOpenMenu] = useState<string | null>(null);
+  const [pinnedMenu, setPinnedMenu] = useState<string | null>(null);
   const [mobileTeamsOpen, setMobileTeamsOpen] = useState(false);
   const [mobilePeopleOpen, setMobilePeopleOpen] = useState(false);
   const scrolled = useScrolledState();
 
-  const teamLinks = [
-    ...sports.map((sport) => ({
-      label: sport.name,
-      href: `/teams/${sport.slug}`,
-      description: `${sport.name} analytics team`,
-      icon: sport.icon,
-    })),
-    {
-      label: "All Teams",
-      href: "/teams",
-      description: "Overview of all sports teams",
-      icon: null,
-    },
-  ];
+  const teamLinks = sports.map((sport) => ({
+    label: sport.name,
+    href: `/teams/${sport.slug}`,
+    description: `${sport.name} analytics team`,
+    icon: sport.icon,
+  }));
 
   const peopleLinks = [
     { label: "Board", href: "/people/board", description: "Leadership and directors" },
@@ -59,18 +52,39 @@ export function Navigation() {
                 )}
                 key={item.href}
                 onMouseEnter={() => hasMenu && setOpenMenu(item.label)}
-                onMouseLeave={() => setOpenMenu(null)}
+                onMouseLeave={() => {
+                  if (pinnedMenu !== item.label) {
+                    setOpenMenu(null);
+                  }
+                }}
                 onFocus={() => hasMenu && setOpenMenu(item.label)}
                 onBlur={(e) => {
-                  if (!e.currentTarget.contains(e.relatedTarget as Node)) {
+                  if (pinnedMenu !== item.label && !e.currentTarget.contains(e.relatedTarget as Node)) {
                     setOpenMenu(null);
                   }
                 }}
               >
-                <Link href={item.href} className={`${styles.navLink} ${active ? styles.active : ""} ${hasMenu ? styles.navLinkWithMenu : ""} ${openMenu === item.label ? styles.navLinkMenuOpen : ""}`}>
-                  {item.label}
-                  {hasMenu ? <ChevronDown className={styles.dropdownIcon} size={14} strokeWidth={2.6} aria-hidden /> : null}
-                </Link>
+                {item.label === "Teams" ? (
+                  <button
+                    type="button"
+                    className={`${styles.navLink} ${active ? styles.active : ""} ${styles.navLinkWithMenu} ${openMenu === item.label ? styles.navLinkMenuOpen : ""}`}
+                    onClick={() => {
+                      const nextPinned = pinnedMenu === item.label ? null : item.label;
+                      setPinnedMenu(nextPinned);
+                      setOpenMenu(nextPinned);
+                    }}
+                    aria-expanded={openMenu === item.label}
+                    aria-haspopup="true"
+                  >
+                    {item.label}
+                    <ChevronDown className={styles.dropdownIcon} size={14} strokeWidth={2.6} aria-hidden />
+                  </button>
+                ) : (
+                  <Link href={item.href} className={`${styles.navLink} ${active ? styles.active : ""} ${hasMenu ? styles.navLinkWithMenu : ""} ${openMenu === item.label ? styles.navLinkMenuOpen : ""}`}>
+                    {item.label}
+                    {hasMenu ? <ChevronDown className={styles.dropdownIcon} size={14} strokeWidth={2.6} aria-hidden /> : null}
+                  </Link>
+                )}
                 {hasMenu ? (
                   <div className={`${styles.megaMenu} ${openMenu === item.label ? styles.menuOpen : ""} ${item.label === "Teams" ? styles.teamsMenu : ""} ${item.label === "People" ? styles.peopleMenu : ""} glass glass--strong glass--radius-lg`}>
                     {item.label === "Teams" ? (
@@ -82,7 +96,10 @@ export function Navigation() {
                               key={sport.slug}
                               href={`/teams/${sport.slug}`}
                               className={styles.teamCard}
-                              onClick={() => setOpenMenu(null)}
+                              onClick={() => {
+                                setOpenMenu(null);
+                                setPinnedMenu(null);
+                              }}
                             >
                               <span className={styles.teamIconBox}>
                                 <SportIcon size={32} color="currentColor" aria-hidden />

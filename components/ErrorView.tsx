@@ -11,7 +11,6 @@ import {
   Compass,
   Home,
   RefreshCw,
-  Trophy,
   Users
 } from "lucide-react";
 import styles from "./ErrorView.module.css";
@@ -47,12 +46,6 @@ const quickLinks = [
     desc: "Explore machine learning models and club analytics research.",
     href: "/projects",
     icon: Briefcase
-  },
-  {
-    title: "Sports Divisions",
-    desc: "See analytics teams for basketball, baseball, football, and more.",
-    href: "/teams",
-    icon: Trophy
   },
   {
     title: "Events & Workshops",

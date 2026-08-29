@@ -39,7 +39,7 @@ export default function Home() {
             <p className={styles.flowText}>Winning runs on analysis.</p>
             <div className={`${styles.heroCta} ${styles.flowCta}`}>
               <div className="button-row">
-                <Link className="btn btn-primary" href="/teams" data-analytics="hero_work_click">Explore Our Work <ArrowRight size={18} aria-hidden /></Link>
+                <Link className="btn btn-primary" href="/projects" data-analytics="hero_work_click">Explore Our Work <ArrowRight size={18} aria-hidden /></Link>
                 <Link className="btn btn-secondary" href="/join" data-analytics="hero_join_click">Join the Team</Link>
               </div>
               <Link className={`text-link ${styles.partnerLink}`} href="/partner">Partner With Us →</Link>
