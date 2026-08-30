@@ -2,6 +2,7 @@
 
 import { FormEvent, useState } from "react";
 import emailjs from "@emailjs/browser";
+import { saveContactSubmission } from "@/lib/contactSubmissions";
 import { emailjsConfig } from "@/lib/emailjs";
 
 export function PartnerForm() {
@@ -25,42 +26,64 @@ export function PartnerForm() {
     }
 
     // Format all fields into a single message
+    const name = String(formData.get("name") || "");
+    const organization = String(formData.get("organization") || "");
+    const email = String(formData.get("email") || "");
+    const sport = String(formData.get("sport") || "");
+    const problem = String(formData.get("problem") || "");
+    const availableData = String(formData.get("data") || "");
+    const timeline = String(formData.get("timeline") || "");
+    const link = String(formData.get("link") || "");
+
     const message = `
 NEW PARTNERSHIP INQUIRY
 
 Contact Information:
 -------------------
-Name: ${formData.get("name")}
-Organization: ${formData.get("organization")}
-Email: ${formData.get("email")}
-Sport/Industry: ${formData.get("sport")}
+Name: ${name}
+Organization: ${organization}
+Email: ${email}
+Sport/Industry: ${sport}
 
 Inquiry Details:
 ----------------
 Problem to solve:
-${formData.get("problem")}
+${problem}
 
 Available data:
-${formData.get("data") || "Not specified"}
+${availableData || "Not specified"}
 
 Desired timeline:
-${formData.get("timeline") || "Not specified"}
+${timeline || "Not specified"}
 
 Files/Links:
-${formData.get("link") || "None provided"}
+${link || "None provided"}
 
 ---
 Sent via BSA Website Partner Inquiry Form
     `.trim();
 
     try {
+      await saveContactSubmission({
+        formType: "partner",
+        name,
+        organization,
+        email,
+        sport,
+        problem,
+        availableData,
+        timeline,
+        link,
+        consent: true
+      });
+
       const result = await emailjs.send(
         emailjsConfig.serviceId,
         emailjsConfig.templateIds.partner,
         {
           message,
-          from_name: formData.get("name"),
-          from_email: formData.get("email"),
+          from_name: name,
+          from_email: email,
         },
         emailjsConfig.publicKey
       );
@@ -72,7 +95,7 @@ Sent via BSA Website Partner Inquiry Form
         throw new Error("Failed to send");
       }
     } catch (error) {
-      console.error("EmailJS error:", error);
+      console.error("Partner form error:", error);
       setStatus("error");
       setErrorMessage("Failed to send inquiry. Please try emailing directly.");
     }

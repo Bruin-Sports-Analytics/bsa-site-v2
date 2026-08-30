@@ -2,6 +2,7 @@
 
 import { FormEvent, useState } from "react";
 import emailjs from "@emailjs/browser";
+import { saveContactSubmission } from "@/lib/contactSubmissions";
 import { emailjsConfig } from "@/lib/emailjs";
 
 export function RecruitmentForm() {
@@ -25,32 +26,48 @@ export function RecruitmentForm() {
     }
 
     // Format all fields into a single message
+    const name = String(formData.get("name") || "");
+    const email = String(formData.get("email") || "");
+    const major = String(formData.get("major") || "");
+    const sport = String(formData.get("sport") || "");
+    const recruitmentMessage = String(formData.get("message") || "");
+
     const message = `
 NEW RECRUITMENT INQUIRY
 
 Contact Information:
 -------------------
-Name: ${formData.get("name")}
-Email: ${formData.get("email")}
-Major: ${formData.get("major")}
-Sport Interest: ${formData.get("sport") || "Not specified"}
+Name: ${name}
+Email: ${email}
+Major: ${major}
+Sport Interest: ${sport || "Not specified"}
 
 Message:
 --------
-${formData.get("message")}
+${recruitmentMessage}
 
 ---
 Sent via BSA Website Recruitment Form
     `.trim();
 
     try {
+      await saveContactSubmission({
+        formType: "recruitment",
+        name,
+        email,
+        major,
+        sport,
+        message: recruitmentMessage,
+        consent: true
+      });
+
       const result = await emailjs.send(
         emailjsConfig.serviceId,
         emailjsConfig.templateIds.recruitment,
         {
           message,
-          from_name: formData.get("name"),
-          from_email: formData.get("email"),
+          from_name: name,
+          from_email: email,
         },
         emailjsConfig.publicKey
       );
@@ -62,7 +79,7 @@ Sent via BSA Website Recruitment Form
         throw new Error("Failed to send");
       }
     } catch (error) {
-      console.error("EmailJS error:", error);
+      console.error("Recruitment form error:", error);
       setStatus("error");
       setErrorMessage("Failed to send message. Please try emailing directly.");
     }
