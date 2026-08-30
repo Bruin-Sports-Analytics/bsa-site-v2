@@ -10,6 +10,8 @@ type Props = {
 };
 
 export function EventCard({ event, isSoonest = false }: Props) {
+  const isExternalSignup = event.rsvpUrl?.startsWith("http");
+
   return (
     <GlassSurface
       as="article"
@@ -26,13 +28,20 @@ export function EventCard({ event, isSoonest = false }: Props) {
       <h3>{event.title}</h3>
       <p>{event.description}</p>
       <div className={styles.meta}>
-        <span><CalendarDays size={16} aria-hidden /> {formatEventDate(event.startTime)}</span>
+        <span><CalendarDays size={16} aria-hidden /> {event.dateLabel ?? formatEventDate(event.startTime)}</span>
         <span><MapPin size={16} aria-hidden /> {event.location}</span>
       </div>
       {event.isMembersOnly ? (
         <span className={styles.members}>Members only</span>
       ) : (
-        <a className="btn btn-secondary" href={event.rsvpUrl ?? "/events"}>RSVP</a>
+        <a
+          className="btn btn-secondary"
+          href={event.rsvpUrl ?? "/events"}
+          target={isExternalSignup ? "_blank" : undefined}
+          rel={isExternalSignup ? "noopener noreferrer" : undefined}
+        >
+          Sign up soon
+        </a>
       )}
     </GlassSurface>
   );

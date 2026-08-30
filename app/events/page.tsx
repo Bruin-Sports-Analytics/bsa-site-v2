@@ -34,8 +34,8 @@ export default function EventsPage() {
         "@type": "Event",
         "name": event.title,
         "description": event.description,
-        "startDate": event.startTime,
-        "endDate": event.endTime,
+        "startDate": event.dateLabel === "TBD" ? undefined : event.startTime,
+        "endDate": event.dateLabel === "TBD" ? undefined : event.endTime,
         "location": {
           "@type": "Place",
           "name": event.location,
@@ -64,7 +64,7 @@ export default function EventsPage() {
         <div className="container">
           <span className="eyebrow">Events</span>
           <h1>Upcoming events</h1>
-          <p>Public events include RSVP actions. <br />For members of sports groups and data journalism teams, please refer to slack.</p>
+          <p>Public event signups will open soon through our mailing list. <br />For members of sports groups and data journalism teams, please refer to Slack.</p>
         </div>
       </section>
       <section className="section">

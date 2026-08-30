@@ -31,6 +31,8 @@ export const metadata: Metadata = {
 };
 
 export default function JoinPage() {
+  const isMailingListCta = recruitment.status !== "OPEN";
+
   const recruitmentJsonLd = {
     "@context": "https://schema.org",
     "@type": "EducationalOccupationalProgram",
@@ -79,7 +81,15 @@ export default function JoinPage() {
             <h1>{stateCopy.title}</h1>
             <p>{stateCopy.text}</p>
             <div className="button-row">
-              <a className="btn btn-primary" href={recruitment.status === "OPEN" ? recruitment.applicationUrl : "mailto:bruinsportsanalytics@gmail.com"} data-analytics="recruitment_apply_click">{stateCopy.cta}</a>
+              <a
+                className="btn btn-primary"
+                href={recruitment.status === "OPEN" ? recruitment.applicationUrl : recruitment.mailingListUrl}
+                target={isMailingListCta ? "_blank" : undefined}
+                rel={isMailingListCta ? "noopener noreferrer" : undefined}
+                data-analytics="recruitment_apply_click"
+              >
+                {stateCopy.cta}
+              </a>
               <Link className="btn btn-secondary" href="/events">Public events</Link>
             </div>
           </div>

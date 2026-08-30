@@ -106,12 +106,15 @@ export type Event = {
   type: "workshop" | "speaker" | "recruitment" | "meeting" | "social" | "conference";
   startTime: string;
   endTime: string;
+  dateLabel?: string;
   location: string;
   isMembersOnly: boolean;
   rsvpUrl?: string;
   description: string;
   speaker?: string;
 };
+
+export const mailingListUrl = "https://docs.google.com/forms/d/e/1FAIpQLScYvLpx7T3r4QQ4EhZ0v0N7rmW-7Scp3kyRAqyi1S14PuJ_3w/viewform?usp=header";
 
 export const navItems = [
   { label: "Home", href: "/" },
@@ -1346,26 +1349,51 @@ export const impactStats = [
 
 export const events: Event[] = [
   {
-    title: "Fall Recruitment Info Session",
-    slug: "fall-recruitment-info-session",
+    title: "Enormous Activities Fair (EAF)",
+    slug: "enormous-activities-fair-eaf",
+    type: "recruitment",
+    startTime: "2026-09-22T11:00:00-07:00",
+    endTime: "2026-09-22T15:00:00-07:00",
+    location: "Royce Quad, UCLA",
+    isMembersOnly: false,
+    rsvpUrl: mailingListUrl,
+    description: "Meet the club, talk to analysts and board members, and learn about our projects and recruitment."
+  },
+  {
+    title: "Data Science Showcase",
+    slug: "data-science-showcase",
+    type: "recruitment",
+    startTime: "2026-09-24T18:00:00-07:00",
+    endTime: "2026-09-24T20:00:00-07:00",
+    dateLabel: "TBD",
+    location: "TBD",
+    isMembersOnly: false,
+    rsvpUrl: mailingListUrl,
+    description: "Learn more about UCLA's data science organizations."
+  },
+  {
+    title: "BSA Info Session",
+    slug: "bsa-info-session",
     type: "recruitment",
     startTime: "2026-09-29T18:00:00-07:00",
     endTime: "2026-09-29T19:15:00-07:00",
-    location: "UCLA campus, room TBA",
+    dateLabel: "TBD",
+    location: "TBD",
     isMembersOnly: false,
-    rsvpUrl: "/join",
-    description: "Meet current members, see project examples, and learn how applications work."
+    rsvpUrl: mailingListUrl,
+    description: "What research, consulting, and competitions actually look like day to day, plus open Q&A."
   },
   {
-    title: "Sports Data Cleaning Workshop",
-    slug: "sports-data-cleaning-workshop",
+    title: "EDA Workshop",
+    slug: "eda-workshop",
     type: "workshop",
     startTime: "2026-10-06T17:30:00-07:00",
     endTime: "2026-10-06T19:00:00-07:00",
-    location: "Data Theory Lab",
+    dateLabel: "TBD",
+    location: "TBD",
     isMembersOnly: false,
-    rsvpUrl: "/events",
-    description: "A hands-on workshop for turning messy play-by-play data into analysis-ready tables."
+    rsvpUrl: mailingListUrl,
+    description: "Learn about the latest tools and techniques in data analysis."
   },
   {
     title: "Member Project Standup",
@@ -1386,6 +1414,7 @@ export const recruitment = {
   closeDate: "2026-10-12",
   nextCycleLabel: "Fall 2026",
   applicationUrl: "https://forms.gle/",
+  mailingListUrl,
   roles: ["Sport analysts", "Data engineers", "Writers", "Designers", "Dashboard builders"],
   teamsRecruiting: ["Baseball", "Volleyball", "Basketball", "Football", "Tennis"],
   timelineEvents: [
@@ -1475,11 +1504,6 @@ export const faqs = [
     category: "Partnerships",
     question: "How do we get started?",
     answer: "Submit the inquiry form with your problem and available data. Our External Vice President will follow up to schedule a discovery call and scope the engagement."
-  },
-  {
-    category: "Events",
-    question: "Are events open to non-members?",
-    answer: "Public workshops, speaker events, and info sessions are listed on the Events page. Internal meetings are marked members-only."
   }
 ];
 
