@@ -9,6 +9,8 @@ yarn-debug.log*
 yarn-error.log*
 .DS_Store
 .claude
+.agents/
+skills-lock.json
 tsconfig.tsbuildinfo
 
 # Local project paper PDFs — served from Supabase Storage, uploaded via `npm run upload-paper`
@@ -23,4 +25,3 @@ scratch/
 .tempmediaStorage/
 playwright-report/
 test-results/
-
