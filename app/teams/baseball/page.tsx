@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { SportHomePage } from "@/components/SportHomePage";
 
 export const metadata: Metadata = {
-  title: "Baseball Analytics & Sabermetrics | Bruin Sports Analytics",
+  title: "Baseball",
   description: "UCLA baseball analytics and sabermetrics team: pitch design, batted-ball modeling, TrackMan data analysis, scouting tools, and game-planning consulting.",
   keywords: [
     "baseball analytics",

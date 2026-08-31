@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { ProjectExplorer } from "@/components/ProjectExplorer";
 
 export const metadata: Metadata = {
-  title: "Projects & Research | Sports Analytics Dashboards & Papers",
+  title: "Projects",
   description: "Explore sports analytics consulting reports, predictive models, and research projects by Bruin Sports Analytics students across baseball, basketball, football, volleyball, and tennis.",
   keywords: [
     "sports analytics projects",

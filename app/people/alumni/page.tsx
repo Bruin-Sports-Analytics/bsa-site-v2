@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { alumni } from "@/data/site";
 
 export const metadata: Metadata = {
-  title: "Alumni Network | Sports Analytics Industry Careers",
+  title: "Alumni",
   description: "Discover where Bruin Sports Analytics alumni work across professional sports franchises, front offices, analytics firms, and top tech companies.",
   keywords: [
     "Bruin Sports Analytics alumni",

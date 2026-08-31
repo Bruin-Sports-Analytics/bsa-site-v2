@@ -3,7 +3,7 @@ import { EventCard } from "@/components/EventCard";
 import { events } from "@/data/site";
 
 export const metadata: Metadata = {
-  title: "Events & Workshops | Sports Analytics Info Sessions & Panels",
+  title: "Events",
   description: "Join upcoming Bruin Sports Analytics workshops, recruitment info sessions, hackathons, and guest speaker panels with sports industry leaders.",
   keywords: [
     "sports analytics events",

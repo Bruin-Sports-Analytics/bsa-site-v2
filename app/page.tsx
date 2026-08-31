@@ -11,7 +11,9 @@ import { currentlyFeatured, publicProjects } from "@/lib/utils";
 import styles from "./page.module.css";
 
 export const metadata: Metadata = {
-  title: "Bruin Sports Analytics | UCLA Sports Analytics Consulting & Student Recruitment",
+  title: {
+    absolute: "Bruin Sports Analytics"
+  },
   description: "Bruin Sports Analytics is UCLA's leading sports data organization. We partner with athletic departments and teams for sports analytics consulting and recruit students for data science, software, and journalism.",
   keywords: [
     "Bruin Sports Analytics",

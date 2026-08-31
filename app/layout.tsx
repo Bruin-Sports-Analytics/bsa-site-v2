@@ -39,7 +39,7 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.bruinsportsanalytics.org"),
   title: {
-    default: "Bruin Sports Analytics | UCLA Sports Analytics & Consulting",
+    default: "Bruin Sports Analytics",
     template: "%s | Bruin Sports Analytics"
   },
   description: "UCLA's premier student-run sports analytics organization. We provide data science consulting for sports teams and recruit top UCLA students for analytics, software engineering, and journalism.",

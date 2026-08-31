@@ -9,7 +9,7 @@ import { recruitment } from "@/data/site";
 import styles from "./join.module.css";
 
 export const metadata: Metadata = {
-  title: "Join BSA | UCLA Student Recruitment & Applications",
+  title: "Join",
   description: "Apply to join Bruin Sports Analytics at UCLA. Student recruitment for sports data analysts, software engineers, data journalists, and designers.",
   keywords: [
     "join Bruin Sports Analytics",

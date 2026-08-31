@@ -3,7 +3,7 @@ import { FAQAccordion } from "@/components/FAQAccordion";
 import { faqs } from "@/data/site";
 
 export const metadata: Metadata = {
-  title: "FAQ | Recruitment, Membership & Consulting Inquiries",
+  title: "FAQ",
   description: "Frequently asked questions about Bruin Sports Analytics at UCLA: student recruitment and applications, sports analytics consulting partnerships, and club projects.",
   keywords: [
     "Bruin Sports Analytics FAQ",

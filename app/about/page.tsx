@@ -6,7 +6,7 @@ import { impactStats, members, sports } from "@/data/site";
 import styles from "./page.module.css";
 
 export const metadata: Metadata = {
-  title: "About Us | UCLA's Premier Sports Analytics Organization",
+  title: "About Us",
   description: "About Bruin Sports Analytics (BSA) at UCLA — bridging collegiate athletics and data science. Learn about our mission, executive leadership, sports consulting, and alumni network.",
   keywords: [
     "about Bruin Sports Analytics",

@@ -5,7 +5,7 @@ import { PartnerForm } from "@/components/PartnerForm";
 import { capabilities, technology } from "@/data/site";
 
 export const metadata: Metadata = {
-  title: "Partner With Us | Sports Analytics Consulting & Data Solutions",
+  title: "Partner With Us",
   description: "Partner with Bruin Sports Analytics for data-driven consulting, predictive modeling, opponent scouting, and custom dashboards. Work with top UCLA sports data science talent.",
   keywords: [
     "sports analytics consulting",

@@ -32,7 +32,7 @@ export function generateStaticParams() {
 
 export function generateMetadata({ params }: Props): Metadata {
   const name = resolveSubdivision(params.subdivision);
-  const title = name ? `Tennis: ${name} | Bruin Sports Analytics` : "Tennis Program | Bruin Sports Analytics";
+  const title = name ? `Tennis: ${name}` : "Tennis";
   const description = name
     ? `Tennis analytics, match preparation, and player development projects for ${name} by Bruin Sports Analytics.`
     : "Tennis analytics, match preparation, and player development projects by Bruin Sports Analytics.";

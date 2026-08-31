@@ -7,7 +7,7 @@ import { djResources } from "@/data/journalism";
 import styles from "./page.module.css";
 
 export const metadata: Metadata = {
-  title: "Data Journalism | Sports Statistics, Visualizations & Stories",
+  title: "Journalism",
   description: "Read data-driven sports journalism by Bruin Sports Analytics students. In-depth statistics, interactive visualizations, and data storytelling across the NBA, NFL, MLB, and NCAA.",
   keywords: [
     "sports data journalism",

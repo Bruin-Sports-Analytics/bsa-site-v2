@@ -3,7 +3,7 @@ import { members } from "@/data/site";
 import { PeopleSections } from "@/components/PeopleSections";
 
 export const metadata: Metadata = {
-  title: "Executive Board & Leadership | Bruin Sports Analytics",
+  title: "Board",
   description: "Meet the executive board, operations team, and division chairs leading Bruin Sports Analytics at UCLA across research, consulting, and student recruitment.",
   keywords: [
     "Bruin Sports Analytics board",
