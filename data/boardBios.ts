@@ -23,7 +23,7 @@ export const boardBios: Record<string, BoardBio> = {
     bsaGroups: ["Basketball"],
     favoriteTeams: ["Boston Celtics", "New England Patriots", "Boston Red Sox", "Chelsea"],
     interests: ["Entrepreneurship", "Lifting", "2K", "Soccer"],
-    funFact: "I can solve a Megaminx (12-sided Rubik's cube)"
+    funFact: "I can solve a Megaminx (12-sided Rubik's cube)!"
   },
   "ben-troutman": {
     hometown: "Orange County, CA",
@@ -129,11 +129,12 @@ export const boardBios: Record<string, BoardBio> = {
     funFact: "I have the same birthday as LeBron and Tiger Woods"
   },
   "madeleine-curran": {
-    hometown: "",
-    joinDate: "",
-    bsaGroups: [],
-    favoriteTeams: [],
-    interests: []
+    hometown: "San Francisco, CA",
+    joinDate: "Fall 2025",
+    bsaGroups: ["Baseball"],
+    favoriteTeams: ["San Francisco Giants", "Golden State Valkyries"],
+    interests: ["Theater", "Gerontology"],
+    funFact: "I danced in a Warriors halftime show a few years ago!"
   },
   "evana-sharma": {
     hometown: "Sacramento, CA",
