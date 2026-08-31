@@ -12,7 +12,7 @@ export const boardBios: Record<string, BoardBio> = {
   "moulik-chatterjee": {
     hometown: "Chicago, IL",
     joinDate: "Winter 2025",
-    bsaGroups: ["Basketball", "Data Journalism"],
+    bsaGroups: ["Basketball", "Football"],
     favoriteTeams: ["Chicago Bears", "Chicago Bulls", "Chicago Cubs", "Chicago Blackhawks"],
     interests: ["Music Production", "LLM Evals", "NYT & Board Games", "2K", "Golf", "Beli"],
     funFact: "I can duel anyone in a Suits quote-off"
@@ -21,7 +21,7 @@ export const boardBios: Record<string, BoardBio> = {
     hometown: "Andover, MA",
     joinDate: "Fall 2025",
     bsaGroups: ["Basketball"],
-    favoriteTeams: ["Boston Celtics", "New England Patriots", "Boston Red Sox"],
+    favoriteTeams: ["Boston Celtics", "New England Patriots", "Boston Red Sox", "Chelsea"],
     interests: ["Entrepreneurship", "Lifting", "2K", "Soccer"],
     funFact: "I can solve a Megaminx (12-sided Rubik's cube)"
   },
@@ -39,19 +39,20 @@ export const boardBios: Record<string, BoardBio> = {
     bsaGroups: ["Football"],
     favoriteTeams: ["New England Patriots", "LA Lakers", "San Diego Padres"],
     interests: ["Cricket"],
-    funFact: "I worked with the Knicks front office this summer!"
+    funFact: "I type at 200 wpm!"
   },
   "anthony-mui": {
-    hometown: "",
-    joinDate: "",
-    bsaGroups: [],
-    favoriteTeams: [],
-    interests: []
+    hometown: "Morton Grove, IL",
+    joinDate: "Fall 2025",
+    bsaGroups: ["Baseball", "Data Journalism"],
+    favoriteTeams: ["Chicago Cubs"],
+    interests: ["Baking", "Exploring", "Doing Long-Winded Bits"],
+    funFact: "I forgot how to ride a bike"
   },
   "colin-granger": {
     hometown: "Phoenix, AZ",
     joinDate: "Fall 2024",
-    bsaGroups: ["Data Journalism", "Baseball"],
+    bsaGroups: ["Baseball", "Data Journalism"],
     favoriteTeams: ["Arizona Diamondbacks", "Phoenix Suns", "Arizona Cardinals", "UCLA Sports"],
     interests: ["Gym", "Running", "Star Wars", "MCU", "Pokémon"],
     funFact: "I was at the game where UCLA legend Josh Rosen made his regular season debut"
@@ -59,7 +60,7 @@ export const boardBios: Record<string, BoardBio> = {
   "eshaan-dhavala": {
     hometown: "Prior Lake, MN",
     joinDate: "Spring 2025",
-    bsaGroups: ["Tennis Scouting", "Football Research"],
+    bsaGroups: ["Football", "Tennis"],
     favoriteTeams: [],
     interests: ["Video Games", "Space", "Music"],
     funFact: "I am addicted to Taco Bell"
@@ -75,7 +76,7 @@ export const boardBios: Record<string, BoardBio> = {
   "lucas-pichardo": {
     hometown: "Pasadena, CA",
     joinDate: "Fall 2024",
-    bsaGroups: ["Data Journalism", "Basketball"],
+    bsaGroups: ["Basketball", "Data Journalism"],
     favoriteTeams: ["LA Lakers", "LA Dodgers", "LA Rams"],
     interests: ["Weightlifting", "Golf", "Wii Sports"],
     funFact: "I’m a practice player for our women’s basketball team"
@@ -83,7 +84,7 @@ export const boardBios: Record<string, BoardBio> = {
   "raja-kavasseri": {
     hometown: "Fremont, CA",
     joinDate: "Spring 2024",
-    bsaGroups: ["Data Journalism", "BTC", "Basketball"],
+    bsaGroups: ["Basketball", "Tennis", "Data Journalism"],
     favoriteTeams: ["New Orleans Saints", "UCLA Basketball", "Golden State Warriors"],
     interests: ["Video & Board Games", "Soccer", "Bouldering", "Trivia"],
     funFact: "I’ve seen the northern lights 4 times"
@@ -96,11 +97,12 @@ export const boardBios: Record<string, BoardBio> = {
     interests: ["Golf", "Brawl Stars"]
   },
   "beck-zimmerman": {
-    hometown: "",
-    joinDate: "",
-    bsaGroups: [],
-    favoriteTeams: [],
-    interests: []
+    hometown: "Ojai, CA",
+    joinDate: "Fall 2025",
+    bsaGroups: ["Volleyball"],
+    favoriteTeams: ["Gage Basey & Thomas Hurst (Beach Volleyball)"],
+    interests: ["Anime", "Card Games", "Video Games"],
+    funFact: "I can create ceramic glazes!"
   },
   "anika-soitkar": {
     hometown: "Thousand Oaks, CA",
@@ -136,17 +138,18 @@ export const boardBios: Record<string, BoardBio> = {
   "evana-sharma": {
     hometown: "Sacramento, CA",
     joinDate: "Fall 2025",
-    bsaGroups: ["Data Journalism", "Marketing"],
+    bsaGroups: ["Data Journalism"],
     favoriteTeams: ["Golden State Warriors"],
     interests: ["Tennis", "Pickleball", "Basketball"],
     funFact: "I randomly met Marcello Hernández from SNL while I was in New York!"
   },
   "annika-gupta": {
-    hometown: "",
-    joinDate: "",
-    bsaGroups: [],
-    favoriteTeams: [],
-    interests: []
+    hometown: "San Carlos, CA",
+    joinDate: "Fall 2025",
+    bsaGroups: ["Data Journalism"],
+    favoriteTeams: ["Real Madrid", "Golden State Warriors", "San Francisco 49ers"],
+    interests: ["Skiing"],
+    funFact: "I have skied competitively for the last 10 years"
   },
   "kevin-baer": {
     hometown: "Potomac, MD",
@@ -159,7 +162,7 @@ export const boardBios: Record<string, BoardBio> = {
   "harsh-govindji": {
     hometown: "Bakersfield, CA",
     joinDate: "Fall 2024",
-    bsaGroups: ["Football", "Research", "Basketball"],
+    bsaGroups: ["Football", "Basketball"],
     favoriteTeams: ["Miami Heat"],
     interests: ["Golf", "Lifting", "Cooking"],
     funFact: "I can solve a Rubik’s cube in 15 seconds"
