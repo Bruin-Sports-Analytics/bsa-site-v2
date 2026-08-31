@@ -131,7 +131,7 @@ export const socialLinks = [
   { label: "Instagram", href: "https://www.instagram.com/bruinsportsanalytics/" },
   { label: "LinkedIn", href: "https://www.linkedin.com/company/bruin-sports-analytics/" },
   { label: "GitHub", href: "https://github.com/Bruin-Sports-Analytics" },
-  { label: "Slack", href: "https://slack.com/" }
+  { label: "Slack", href: "https://bsa-2026-27.slack.com/archives/C0BTAF5B5E0" }
 ];
 
 export const sports: Sport[] = [
