@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { ResumeTemplatesButton } from "./ResumeTemplatesButton";
 import styles from "./Countdown.module.css";
 
 const TARGET = new Date("2026-09-21T00:00:00");
@@ -49,6 +50,9 @@ export function Countdown() {
             <span className={styles.unitLabel}>{label}</span>
           </div>
         ))}
+      </div>
+      <div className={styles.resumeTemplates}>
+        <ResumeTemplatesButton />
       </div>
     </div>
   );

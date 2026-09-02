@@ -1,0 +1,129 @@
+.wrapper {
+  position: relative;
+  display: inline-block;
+  width: max-content;
+}
+
+.trigger {
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.caret {
+  transition: transform .18s ease;
+}
+
+.caretOpen {
+  transform: rotate(180deg);
+}
+
+.menu {
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 0;
+  z-index: 500;
+  min-width: 220px;
+  display: flex;
+  flex-direction: column;
+  padding: 6px;
+  border: 1px solid rgba(139, 203, 255, 0.28);
+  border-radius: var(--radius-sm);
+  background-color: #0b1a2e;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transform: translateY(-6px) scale(.98);
+  transform-origin: top left;
+  transition:
+    opacity .18s ease,
+    transform .18s ease,
+    visibility 0s linear .18s;
+}
+
+.menuOpen {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transform: translateY(0) scale(1);
+  transition:
+    opacity .18s ease,
+    transform .18s ease,
+    visibility 0s linear 0s;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  padding: 10px 14px;
+  border-radius: var(--radius-sm);
+  color: var(--text-primary);
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none !important;
+  transition: background .15s ease, color .15s ease;
+}
+
+.item:hover,
+.item:focus-visible {
+  background: rgba(139, 203, 255, 0.14);
+  color: var(--ucla-gold);
+}
+
+.item svg {
+  flex-shrink: 0;
+  opacity: .82;
+}
+
+:global(html[data-theme="light"]) .menu {
+  background-color: #ffffff;
+  border-color: rgba(34, 86, 124, 0.28);
+  box-shadow: 0 16px 40px rgba(16, 42, 73, 0.18);
+}
+
+:global(html[data-theme="light"]) .item {
+  color: #102235;
+}
+
+:global(html[data-theme="light"]) .item:hover,
+:global(html[data-theme="light"]) .item:focus-visible {
+  background: #eef5fb;
+  color: #1a6cb0;
+}
+
+@media (max-width: 520px) {
+  .wrapper,
+  .trigger {
+    width: 100%;
+  }
+
+  .menu {
+    position: static;
+    width: 100%;
+    min-width: 100%;
+    max-height: 0;
+    margin-top: 8px;
+    padding: 0 6px;
+    overflow: hidden;
+    border-width: 0;
+    transform: none;
+    transform-origin: top center;
+  }
+
+  .menuOpen {
+    max-height: 120px;
+    padding: 6px;
+    border-width: 1px;
+    transform: none;
+    min-width: 100%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .menu,
+  .caret {
+    transition: none;
+  }
+}
