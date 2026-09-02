@@ -1363,21 +1363,20 @@ export const events: Event[] = [
     title: "Data Science Showcase",
     slug: "data-science-showcase",
     type: "recruitment",
-    startTime: "2026-09-24T18:00:00-07:00",
-    endTime: "2026-09-24T20:00:00-07:00",
-    dateLabel: "TBD",
+    startTime: "2026-09-28T18:00:00-07:00",
+    endTime: "2026-09-28T20:00:00-07:00",
+    dateLabel: "Tentative",
     location: "TBD",
     isMembersOnly: false,
     rsvpUrl: mailingListUrl,
-    description: "Learn more about UCLA's data science organizations."
+    description: "Tentative pending DSU confirmation. Learn more about UCLA's data science organizations."
   },
   {
     title: "BSA Info Session",
     slug: "bsa-info-session",
     type: "recruitment",
-    startTime: "2026-09-29T18:00:00-07:00",
-    endTime: "2026-09-29T19:15:00-07:00",
-    dateLabel: "TBD",
+    startTime: "2026-09-30T18:00:00-07:00",
+    endTime: "2026-09-30T19:15:00-07:00",
     location: "TBD",
     isMembersOnly: false,
     rsvpUrl: mailingListUrl,
@@ -1387,9 +1386,8 @@ export const events: Event[] = [
     title: "EDA Workshop",
     slug: "eda-workshop",
     type: "workshop",
-    startTime: "2026-10-06T17:30:00-07:00",
-    endTime: "2026-10-06T19:00:00-07:00",
-    dateLabel: "TBD",
+    startTime: "2026-10-05T17:30:00-07:00",
+    endTime: "2026-10-05T19:00:00-07:00",
     location: "TBD",
     isMembersOnly: false,
     rsvpUrl: mailingListUrl,
@@ -1410,8 +1408,8 @@ export const events: Event[] = [
 export const recruitment = {
   name: "Fall 2026 Recruitment",
   status: "UPCOMING" as RecruitmentStatus,
-  openDate: "2026-09-28",
-  closeDate: "2026-10-12",
+  openDate: "2026-09-23",
+  closeDate: "2026-10-02",
   nextCycleLabel: "Fall 2026",
   applicationUrl: "https://forms.gle/",
   mailingListUrl,
@@ -1419,13 +1417,13 @@ export const recruitment = {
   teamsRecruiting: ["Baseball", "Volleyball", "Basketball", "Football", "Tennis"],
   timelineEvents: [
     { date: "Sep 22", title: "EAF", detail: "Enormous Activities Fair - Meet the club and learn about our projects.", status: "Awareness" },
-    { date: "TBD", title: "Data Science Showcase", detail: "Learn more about UCLA's data science organizations.", status: "Awareness" },
-    { date: "TBD", title: "BSA Info Session", detail: "What research, consulting, and competitions actually look like day to day, plus open Q&A.", status: "Application" },
-    { date: "TBD", title: "Applications Released", detail: "Application form goes live. Check our Slack, Instagram, and email for updates.", status: "Application" },
-    { date: "TBD", title: "Application Deadline", detail: "Applications close; interviews invites are sent out after reviewing submissions.", status: "Application" },
-    {date: "TBD", title: "EDA Workshop", detail: "Learn about the latest tools and techniques in data analysis.", status: "Application" },
-    { date: "TBD", title: "Coffee Chats", detail: "Get to know other prospective members and let them learn more about member experiences.", status: "Application" },
-    { date: "TBD", title: "Final Interviews", detail: "In-person interviews where possible with chairs & returning members", status: "Selection" }
+    { date: "Sep 23", title: "Applications Released", detail: "Application form goes live. Check our Slack, Instagram, and email for updates.", status: "Application" },
+    { date: "Sep 28", title: "Data Science Showcase", detail: "Tentative pending DSU confirmation. Learn more about UCLA's data science organizations.", status: "Awareness" },
+    { date: "Sep 30", title: "BSA Info Session", detail: "What research, consulting, and competitions actually look like day to day, plus open Q&A.", status: "Application" },
+    { date: "Oct 2", title: "Applications Due", detail: "Applications close; interview invites are sent out after reviewing submissions.", status: "Application" },
+    { date: "Oct 5", title: "Exploratory Data Analysis Workshop", detail: "Learn about the latest tools and techniques in data analysis.", status: "Application" },
+    { date: "Oct 6", title: "Coffee Chats", detail: "Invite only. Get to know current members and learn more about member experiences.", status: "Selection" },
+    { date: "Oct 8-9", title: "Final Round Interviews", detail: "Invite only. In-person interviews where possible with chairs and returning members.", status: "Selection" }
   ]
 };
 
