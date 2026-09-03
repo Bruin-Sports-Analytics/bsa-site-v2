@@ -2,7 +2,6 @@
 
 import { useState, type KeyboardEvent } from "react";
 import Image from "next/image";
-import { Linkedin, Info } from "lucide-react";
 import { GlassSurface } from "@/components/ui/GlassSurface";
 import type { Member } from "@/data/site";
 import { BoardBioModal } from "@/components/BoardBioModal";
@@ -53,22 +52,6 @@ export function MemberCard({ member, priority = false }: { member: Member; prior
         aria-label={isBoard ? `About ${member.name}` : member.linkedinUrl ? `${member.name} on LinkedIn` : member.name}
       >
         <div className={styles.photo}>
-          {isBoard && (
-            <button
-              type="button"
-              className={styles.infoBtn}
-              onClick={(e) => {
-                e.preventDefault();
-                e.stopPropagation();
-                setBioOpen(true);
-              }}
-              aria-label={`About ${member.name}`}
-              title={`About ${member.name}`}
-            >
-              <Info size={16} aria-hidden />
-            </button>
-          )}
-
           {member.photoUrl && !imgError ? (
             <Image
               src={member.photoUrl}
@@ -83,21 +66,6 @@ export function MemberCard({ member, priority = false }: { member: Member; prior
             />
           ) : (
             <span aria-hidden>{initials}</span>
-          )}
-
-          {member.linkedinUrl && (
-            <a
-              className={styles.linkedinBadge}
-              href={member.linkedinUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label={`${member.name} on LinkedIn`}
-              title={`${member.name} on LinkedIn`}
-              onClick={(e) => e.stopPropagation()}
-              onKeyDown={(e) => e.stopPropagation()}
-            >
-              <Linkedin size={16} aria-hidden />
-            </a>
           )}
         </div>
 
