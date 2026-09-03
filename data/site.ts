@@ -226,7 +226,7 @@ export const projects: Project[] = [
     projectType: "Tool",
     status: "Active",
     academicYear: "2025-26",
-    summary: "A decision-support tool that recommends whether NFL coaches should go for it, punt, or kick a field goal on 4th down in overtime — trained on 350,000+ plays from 2016–2024.",
+    summary: "A decision-making tool modeled after NFL Next Gen Stats to help coaches choose the optimal strategy given the 2025 overtime rule change.",
     problem: "NFL coaches lack a real-time, data-driven framework for 4th-down decisions in overtime, where post-2022 rules guarantee both teams a possession before sudden death.",
     approach: "Four XGBoost submodels — punt outcome, field goal probability, conversion probability, and win probability — are chained together with isotonic calibration and expected-value maximization to recommend the optimal decision given field position, score, team quality, weather, and venue.",
     result: "The live tool at playbyplay.football lets users input any game situation and instantly surfaces win-probability estimates for all three options under current overtime rules.",
@@ -244,7 +244,7 @@ export const projects: Project[] = [
     projectType: "Research",
     status: "Active",
     academicYear: "2025-26",
-    summary: "A quarterback clutch metric that compares actual EPA to an XGBoost expectation from pocket geometry, pass-rush spacing, and game context, then isolates how each QB performs in high-leverage fourth-quarter and overtime plays.",
+    summary: "A rating system to rank quarterbacks based on their actual versus predicted EPA in clutch situations, utilizing features related to the QB's pocket.",
     problem: "No existing metric isolates a quarterback's clutch performance relative to their own baseline — most stats conflate absolute output with situation-adjusted execution, making it impossible to distinguish QBs who genuinely elevate under pressure from those who merely happen to be good.",
     approach: "Paired nflfastR play-by-play data (~7,000 pass plays, 2021 season) with NFL Big Data Bowl 2023 tracking data (10Hz, weeks 1–8) to engineer spatial features — pocket area and collapse rate via convex hull geometry, QB displacement and body orientation at release, and nearest pass-rusher distances and speeds. A leave-one-week-out XGBoost regressor predicts EPA per play from these features, then clutch rating = mean EPA residual on clutch plays (win probability 40–60%, Q4/OT) minus mean EPA residual on all plays.",
     result: "Patrick Mahomes ranked highest on clutch rating among qualified QBs (≥50 clutch and ≥50 non-clutch plays); Carson Wentz ranked lowest. The metric surfaces quarterbacks who consistently elevate execution under pressure beyond what pocket geometry alone would predict.",
@@ -1369,7 +1369,7 @@ export const events: Event[] = [
     location: "TBD",
     isMembersOnly: false,
     rsvpUrl: mailingListUrl,
-    description: "Tentative pending DSU confirmation. Learn more about UCLA's data science organizations."
+    description: "Tentative date. Learn more about UCLA's data science organizations."
   },
   {
     title: "BSA Info Session",
@@ -1418,7 +1418,7 @@ export const recruitment = {
   timelineEvents: [
     { date: "Sep 22", title: "EAF", detail: "Enormous Activities Fair - Meet the club and learn about our projects.", status: "Awareness" },
     { date: "Sep 23", title: "Applications Released", detail: "Application form goes live. Check our Slack, Instagram, and email for updates.", status: "Application" },
-    { date: "Sep 28", title: "Data Science Showcase", detail: "Tentative pending DSU confirmation. Learn more about UCLA's data science organizations.", status: "Awareness" },
+    { date: "Sep 28", title: "Data Science Showcase", detail: "Tentative date. Learn more about UCLA's data science organizations.", status: "Awareness" },
     { date: "Sep 30", title: "BSA Info Session", detail: "What research, consulting, and competitions actually look like day to day, plus open Q&A.", status: "Application" },
     { date: "Oct 2", title: "Applications Due", detail: "Applications close; interview invites are sent out after reviewing submissions.", status: "Application" },
     { date: "Oct 5", title: "Exploratory Data Analysis Workshop", detail: "Learn about the latest tools and techniques in data analysis.", status: "Application" },
