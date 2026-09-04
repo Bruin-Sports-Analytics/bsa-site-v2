@@ -155,13 +155,15 @@ export function SportHomePage({ slug }: { slug: TeamSportSlug }) {
         </div>
       </section>
 
-      <section className="section tight">
-        <div className="container">
-          <span className="eyebrow">Archive</span>
-          <h2 className="section-title">Past work</h2>
-          {archivedProjects.length ? <ProjectCardGrid projects={archivedProjects} /> : <p className="section-lede">Past work will appear here as the archive is filled out.</p>}
-        </div>
-      </section>
+      {slug !== "volleyball" && (
+        <section className="section tight">
+          <div className="container">
+            <span className="eyebrow">Archive</span>
+            <h2 className="section-title">Past work</h2>
+            {archivedProjects.length ? <ProjectCardGrid projects={archivedProjects} /> : <p className="section-lede">Past work will appear here as the archive is filled out.</p>}
+          </div>
+        </section>
+      )}
     </main>
   );
 }

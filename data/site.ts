@@ -232,7 +232,7 @@ export const projects: Project[] = [
     result: "The live tool at playbyplay.football lets users input any game situation and instantly surfaces win-probability estimates for all three options under current overtime rules.",
     members: [],
     techStack: ["Python", "XGBoost", "React"],
-    links: { paper: "https://hfpruaivskrkweobtvcf.supabase.co/storage/v1/object/public/project_papers/bsa-group-1-winter-presentation.pdf", demo: "https://playbyplay.football" },
+    links: { paper: "https://hfpruaivskrkweobtvcf.supabase.co/storage/v1/object/public/project_papers/bsa-group-1-winter-presentation.pdf", demo: "https://playbyplay.football", github: "https://github.com/Bruin-Sports-Analytics/nfl-ot-4th-down-model" },
     visibility: "public",
     featured: true,
     lastUpdated: "2026-07-30"
@@ -250,7 +250,7 @@ export const projects: Project[] = [
     result: "Patrick Mahomes ranked highest on clutch rating among qualified QBs (≥50 clutch and ≥50 non-clutch plays); Carson Wentz ranked lowest. The metric surfaces quarterbacks who consistently elevate execution under pressure beyond what pocket geometry alone would predict.",
     members: [],
     techStack: ["Python", "nflfastR", "XGBoost", "scipy"],
-    links: { paper: "https://hfpruaivskrkweobtvcf.supabase.co/storage/v1/object/public/project_papers/bsa-group-1-spring-presentation.pdf",},
+    links: { paper: "https://hfpruaivskrkweobtvcf.supabase.co/storage/v1/object/public/project_papers/bsa-group-1-spring-presentation.pdf", github: "https://github.com/Bruin-Sports-Analytics/qb-optimality" },
     visibility: "public",
     featured: false,
     lastUpdated: "2026-05-15"
@@ -1416,14 +1416,14 @@ export const recruitment = {
   roles: ["Sport analysts", "Data engineers", "Writers", "Designers", "Dashboard builders"],
   teamsRecruiting: ["Baseball", "Volleyball", "Basketball", "Football", "Tennis"],
   timelineEvents: [
-    { date: "Sep 22", title: "EAF", detail: "Enormous Activities Fair - Meet the club and learn about our projects.", status: "Awareness" },
+    { date: "Sep 22", title: "EAF", detail: "Enormous Activities Fair - Meet the club and learn about our projects.", status: "Awareness", location: "Royce Quad, UCLA" },
     { date: "Sep 23", title: "Applications Released", detail: "Application form goes live. Check our Slack, Instagram, and email for updates.", status: "Application" },
-    { date: "Sep 28", title: "Data Science Showcase", detail: "Tentative date. Learn more about UCLA's data science organizations.", status: "Awareness" },
-    { date: "Sep 30", title: "BSA Info Session", detail: "What research, consulting, and competitions actually look like day to day, plus open Q&A.", status: "Application" },
-    { date: "Oct 2", title: "Applications Due", detail: "Applications close; interview invites are sent out after reviewing submissions.", status: "Application" },
-    { date: "Oct 5", title: "Exploratory Data Analysis Workshop", detail: "Learn about the latest tools and techniques in data analysis.", status: "Application" },
-    { date: "Oct 6", title: "Coffee Chats", detail: "Invite only. Get to know current members and learn more about member experiences.", status: "Selection" },
-    { date: "Oct 8-9", title: "Final Round Interviews", detail: "Invite only. In-person interviews where possible with chairs and returning members.", status: "Selection" }
+    { date: "Sep 28", title: "Data Science Showcase", detail: "Tentative date. Learn more about UCLA's data science organizations.", status: "Awareness", location: "TBD" },
+    { date: "Sep 30", title: "BSA Info Session", detail: "What research, consulting, and competitions actually look like day to day, plus open Q&A.", status: "Application", location: "TBD" },
+    { date: "Oct 2", title: "Applications Due", detail: "Applications close; coffee chat invites are sent out after reviewing submissions.", status: "Application" },
+    { date: "Oct 5", title: "Exploratory Data Analysis Workshop", detail: "Learn about the latest tools and techniques in data analysis.", status: "Application", location: "TBD" },
+    { date: "Oct 6", title: "Coffee Chats", detail: "Invite only. Get to know current members and learn more about member experiences.", status: "Selection", location: "TBD" },
+    { date: "Oct 8-9", title: "Final Round Interviews", detail: "Invite only. In-person interviews where possible with chairs and returning members.", status: "Selection", location: "TBD" }
   ]
 };
 

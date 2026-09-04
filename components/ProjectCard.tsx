@@ -3,7 +3,7 @@
 import { useState, useRef } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { ArrowUpRight, LockKeyhole } from "lucide-react";
+import { ArrowUpRight, Github, LockKeyhole } from "lucide-react";
 import { GlassSurface } from "@/components/ui/GlassSurface";
 import type { Project } from "@/data/site";
 import { sportName } from "@/lib/utils";
@@ -97,6 +97,9 @@ export function ProjectCard({ project, active, onActivate, onDeactivate }: Props
             </div>
             <div className={styles.classificationRow}>
               <span className={styles.classificationBadge}>{project.projectType}</span>
+              {project.academicYear <= "2024-25" && (
+                <span className={styles.classificationBadge}>Archived</span>
+              )}
             </div>
             <div className={styles.action}>
               {isPrivate ? (
@@ -106,6 +109,11 @@ export function ProjectCard({ project, active, onActivate, onDeactivate }: Props
                   {project.links.demo && (
                     <a href={project.links.demo} target="_blank" rel="noopener noreferrer" className={styles.link}>
                       Open tool <ArrowUpRight size={15} aria-hidden />
+                    </a>
+                  )}
+                  {project.links.github && (
+                    <a href={project.links.github} target="_blank" rel="noopener noreferrer" className={styles.link}>
+                      <Github size={14} aria-hidden /> Repo
                     </a>
                   )}
                 </>

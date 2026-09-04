@@ -94,7 +94,8 @@ export const boardBios: Record<string, BoardBio> = {
     joinDate: "Fall 2023",
     bsaGroups: ["Tennis"],
     favoriteTeams: ["Brighton", "Denver Broncos", "Denver Nuggets"],
-    interests: ["Golf", "Brawl Stars"]
+    interests: ["Golf", "Brawl Stars"],
+    funFact: "I've climbed eight 14ers"
   },
   "beck-zimmerman": {
     hometown: "Ojai, CA",

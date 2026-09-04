@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { MapPin } from "lucide-react";
 import styles from "./Timeline.module.css";
 
 type TimelineEvent = {
@@ -8,6 +9,7 @@ type TimelineEvent = {
   title: string;
   detail: string;
   status: string;
+  location?: string;
 };
 
 export function Timeline({ events }: { events: TimelineEvent[] }) {
@@ -35,6 +37,11 @@ export function Timeline({ events }: { events: TimelineEvent[] }) {
         <span className="eyebrow">{events[active].status}</span>
         <h3>{events[active].title}</h3>
         <p>{events[active].detail}</p>
+        {events[active].location && (
+          <p className={styles.location}>
+            <MapPin size={14} aria-hidden /> {events[active].location}
+          </p>
+        )}
       </div>
     </div>
   );

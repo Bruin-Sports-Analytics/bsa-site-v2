@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { ArrowUpRight, LockKeyhole } from "lucide-react";
+import { ArrowUpRight, Github, LockKeyhole } from "lucide-react";
 import { projectLifecycleStatus, projects } from "@/data/site";
 import { formatDate, sportName, visibleProjectDetail } from "@/lib/utils";
 import styles from "./page.module.css";
@@ -86,6 +86,7 @@ export default function ProjectDetailPage({ params }: Props) {
             <span className="tag">{project.academicYear}</span>
             <span className="tag">Updated {formatDate(project.lastUpdated)}</span>
             {redacted ? <span className="tag"><LockKeyhole size={14} aria-hidden /> Redacted</span> : null}
+            {project.academicYear <= "2024-25" ? <span className="tag">Archived</span> : null}
           </div>
         </div>
       </section>
@@ -123,16 +124,28 @@ export default function ProjectDetailPage({ params }: Props) {
             </div>
           )}
 
-          {project.links.demo && (
-            <div style={{ marginTop: 24 }}>
-              <a
-                href={project.links.demo}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn btn-primary"
-              >
-                Open Live Tool <ArrowUpRight size={16} aria-hidden />
-              </a>
+          {(project.links.demo || project.links.github) && (
+            <div style={{ marginTop: 24, display: "flex", gap: 12, flexWrap: "wrap" }}>
+              {project.links.demo && (
+                <a
+                  href={project.links.demo}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn-primary"
+                >
+                  Open Live Tool <ArrowUpRight size={16} aria-hidden />
+                </a>
+              )}
+              {project.links.github && (
+                <a
+                  href={project.links.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn-secondary"
+                >
+                  <Github size={16} aria-hidden /> View on GitHub
+                </a>
+              )}
             </div>
           )}
         </div>
