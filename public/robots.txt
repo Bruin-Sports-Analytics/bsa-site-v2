@@ -2,3 +2,7 @@ User-agent: *
 Allow: /
 
 Sitemap: https://www.bruinsportsanalytics.org/sitemap.xml
+
+# LLM index files (llmstxt.org)
+# Concise: https://www.bruinsportsanalytics.org/llms.txt
+# Full:    https://www.bruinsportsanalytics.org/llms-full.txt
