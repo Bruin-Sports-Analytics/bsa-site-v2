@@ -44,6 +44,26 @@
   font-weight: 700;
 }
 
+.nodeLocationIcon {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-secondary) !important;
+  opacity: 0.75;
+}
+
+.active .nodeLocationIcon {
+  color: var(--ucla-gold) !important;
+  opacity: 1;
+}
+
+:global(html[data-theme="light"]) .active .nodeLocationIcon {
+  color: var(--ucla-blue) !important;
+}
+
 .node b {
   font-size: 13px;
 }

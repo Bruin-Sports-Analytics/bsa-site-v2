@@ -1418,7 +1418,7 @@ export const recruitment = {
   timelineEvents: [
     { date: "Sep 22", title: "EAF", detail: "Enormous Activities Fair - Meet the club and learn about our projects.", status: "Awareness", location: "Royce Quad, UCLA" },
     { date: "Sep 23", title: "Applications Released", detail: "Application form goes live. Check our Slack, Instagram, and email for updates.", status: "Application" },
-    { date: "Sep 28", title: "Data Science Showcase", detail: "Tentative date. Learn more about UCLA's data science organizations.", status: "Awareness", location: "TBD" },
+    { date: "Sep 28", title: "Data Science Showcase", detail: "Tentative date. Learn more about UCLA's data science organizations.", status: "Awareness", location: "Online via Zoom" },
     { date: "Sep 30", title: "BSA Info Session", detail: "What research, consulting, and competitions actually look like day to day, plus open Q&A.", status: "Application", location: "TBD" },
     { date: "Oct 2", title: "Applications Due", detail: "Applications close; coffee chat invites are sent out after reviewing submissions.", status: "Application" },
     { date: "Oct 5", title: "Exploratory Data Analysis Workshop", detail: "Learn about the latest tools and techniques in data analysis.", status: "Application", location: "TBD" },

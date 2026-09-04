@@ -28,6 +28,11 @@ export function Timeline({ events }: { events: TimelineEvent[] }) {
             aria-current={active === index ? "step" : undefined}
           >
             <span className={styles.nodeNumber}>{String(index + 1).padStart(2, "0")}</span>
+            {event.location && (
+              <span className={styles.nodeLocationIcon} title={event.location}>
+                <MapPin size={13} aria-hidden />
+              </span>
+            )}
             <span>{event.date}</span>
             <b>{event.title}</b>
           </button>
