@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { ChevronDown, Menu, X } from "lucide-react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { navItems, sports } from "@/data/site";
 import { ThemeToggle } from "@/components/ThemeToggle";
 import { useScrolledState } from "@/hooks/useScrolledState";
@@ -19,6 +19,17 @@ export function Navigation() {
   const [mobileTeamsOpen, setMobileTeamsOpen] = useState(false);
   const [mobilePeopleOpen, setMobilePeopleOpen] = useState(false);
   const scrolled = useScrolledState();
+
+  useEffect(() => {
+    if (open) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [open]);
 
   const teamLinks = sports.map((sport) => ({
     label: sport.name,
