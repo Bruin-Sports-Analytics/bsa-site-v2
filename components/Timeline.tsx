@@ -29,8 +29,9 @@ export function Timeline({ events }: { events: TimelineEvent[] }) {
           >
             <span className={styles.nodeNumber}>{String(index + 1).padStart(2, "0")}</span>
             {event.location && (
-              <span className={styles.nodeLocationIcon} title={event.location}>
-                <MapPin size={13} aria-hidden />
+              <span className={styles.nodeLocation} title={event.location}>
+                <MapPin size={11} aria-hidden />
+                <span className={styles.nodeLocationText}>{event.location}</span>
               </span>
             )}
             <span>{event.date}</span>

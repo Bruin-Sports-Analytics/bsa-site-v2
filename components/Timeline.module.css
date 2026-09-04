@@ -44,23 +44,36 @@
   font-weight: 700;
 }
 
-.nodeLocationIcon {
+.nodeLocation {
   position: absolute;
   top: 8px;
   right: 8px;
   display: inline-flex;
   align-items: center;
-  justify-content: center;
+  gap: 3px;
+  max-width: calc(100% - 34px);
   color: var(--text-secondary) !important;
-  opacity: 0.75;
+  opacity: 0.85;
 }
 
-.active .nodeLocationIcon {
+.nodeLocationText {
+  font-family: var(--font-mono), monospace !important;
+  font-size: 10px !important;
+  font-weight: 600 !important;
+  color: var(--text-secondary) !important;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.active .nodeLocation,
+.active .nodeLocationText {
   color: var(--ucla-gold) !important;
   opacity: 1;
 }
 
-:global(html[data-theme="light"]) .active .nodeLocationIcon {
+:global(html[data-theme="light"]) .active .nodeLocation,
+:global(html[data-theme="light"]) .active .nodeLocationText {
   color: var(--ucla-blue) !important;
 }
 
