@@ -37,11 +37,18 @@ const SKIP_REPOS = new Set([
 const SLUG_OVERRIDES = {
   "nfl-ot-4th-down-model":                  "nfl-ot-4th-down-decision-engine",
   "qb-optimality":                           "qb-pocket-clutch-ratings",
-  "UCLA-WBB-RAG-Development-Spring-2025":    null,
-  "NBA-Fantasy-Points-Research-Fall-2025":   null,
-  "BTC-Computer-Vision-Tagger-Winter-2026":  null,
-  "NBA-What-If-Analysis-Spring-2026":        null,
-  "nflpa_24":                                null,
+  "BSA-NFL-Gravity-Metric-2026":            "nfl-gravity-metric",
+  "2026-TrackMan-pitch-plotter":            "ucla-baseball-trackman-pitch-plotter",
+  "2026-pitch-performance-db":              "ucla-baseball-pitcher-metrics-dashboard",
+  "BSA-UCLA-WBB-Product-Winter-2026":       "wbb-transfer-intelligence-report",
+  "UCLA-WBB-RAG-Development-Spring-2025":   "ucla-wbb-rag-analytics-chatbot",
+  "NBA-Fantasy-Points-Research-Fall-2025":  "forecasting-nba-player-fantasy-points",
+  "BTC-Computer-Vision-Tagger-Winter-2026": "computer-vision-tennis-match-tagger",
+  "NBA-What-If-Analysis-Spring-2026":       "nba-win-probability-what-if-analyzer",
+  "BSA-Quantitative-Defensive-Selections-Research-2025": "all-nba-defensive-team-selection-model",
+  "NBA-Parley-Maker-Game-State-Model-Spring-2026": "nba-game-state-probability-arbitrage-engine",
+  "nflpa_24":                                "nflpa-player-compensation-analysis",
+  "BSA-Basketball-Research-Fall-2024":      "bsa-fall-2024-basketball-research",
 };
 
 // ─── Fetch all repos from the org (handles pagination) ────────────────────
