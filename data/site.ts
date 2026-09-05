@@ -498,8 +498,8 @@ export const projects: Project[] = [
     sport: "basketball",
     subdivision: "Women's Basketball",
     projectType: "Tool",
-    status: "Active",
-    academicYear: "2025-26",
+    status: "Archived",
+    academicYear: "2024-25",
     summary: "An intelligent Retrieval-Augmented Generation (RAG) chatbot for UCLA Women's Basketball statistics and analytics, powered by Anthropic Claude 3.5 Sonnet, Flask, and ChromaDB.",
     problem: "UCLA Women's Basketball coaches and analysts needed an intuitive, natural-language interface to query complex player statistics, game-by-game performance trends, and contextual tactical data without running manual SQL/Python queries.",
     approach: "The team built a RAG pipeline leveraging Claude 3.5 Sonnet, a Flask API backend, and vector embeddings in ChromaDB to retrieve play-by-play and player performance data, generating real-time conversational responses with comprehensive error handling.",
@@ -509,7 +509,7 @@ export const projects: Project[] = [
     links: { github: "https://github.com/Bruin-Sports-Analytics/UCLA-WBB-RAG-Development-Spring-2025" },
     visibility: "public",
     featured: false,
-    lastUpdated: "2026-09-01"
+    lastUpdated: "2025-05-15"
   },
   {
     title: "Forecasting NBA Player Fantasy Points",
@@ -527,7 +527,7 @@ export const projects: Project[] = [
     links: { github: "https://github.com/Bruin-Sports-Analytics/NBA-Fantasy-Points-Research-Fall-2025" },
     visibility: "public",
     featured: false,
-    lastUpdated: "2026-09-01"
+    lastUpdated: "2025-11-15"
   },
   {
     title: "Computer Vision Automated Match Tagger for Tennis",
@@ -545,7 +545,7 @@ export const projects: Project[] = [
     links: { github: "https://github.com/Bruin-Sports-Analytics/BTC-Computer-Vision-Tagger-Winter-2026" },
     visibility: "public",
     featured: false,
-    lastUpdated: "2026-09-01"
+    lastUpdated: "2026-02-15"
   },
   {
     title: "NBA Win Probability & What-If Analyzer",
@@ -563,15 +563,15 @@ export const projects: Project[] = [
     links: { github: "https://github.com/Bruin-Sports-Analytics/NBA-What-If-Analysis-Spring-2026" },
     visibility: "public",
     featured: true,
-    lastUpdated: "2026-09-01"
+    lastUpdated: "2026-05-15"
   },
   {
     title: "Statistically-Grounded All-NBA Defensive Team Selection Model",
     slug: "all-nba-defensive-team-selection-model",
     sport: "basketball",
     projectType: "Research",
-    status: "Active",
-    academicYear: "2025-26",
+    status: "Archived",
+    academicYear: "2024-25",
     summary: "A statistical framework for predicting All-NBA Defensive Teams and Defensive Player of the Year by modeling possession-level matchup data rather than media narrative or box-score totals.",
     problem: "All-NBA Defensive voting heavily relies on box-score totals (steals/blocks), team record, and media narrative bias, misvaluing elite defenders on poor teams or versatile switching defenders.",
     approach: "Processed possession-level matchup tracking data to isolate defender vs. ball-handler execution, normalizing for position and role opportunity, and applied SHAP explainability to attribute individual defensive impact.",
@@ -581,7 +581,7 @@ export const projects: Project[] = [
     links: { github: "https://github.com/Bruin-Sports-Analytics/BSA-Quantitative-Defensive-Selections-Research-2025" },
     visibility: "public",
     featured: false,
-    lastUpdated: "2026-08-30"
+    lastUpdated: "2025-05-30"
   },
   {
     title: "NBA Game-State Probability & Arbitrage Engine",
@@ -599,7 +599,7 @@ export const projects: Project[] = [
     links: { github: "https://github.com/Bruin-Sports-Analytics/NBA-Parley-Maker-Game-State-Model-Spring-2026" },
     visibility: "public",
     featured: false,
-    lastUpdated: "2026-09-01"
+    lastUpdated: "2026-05-15"
   },
   {
     title: "NFLPA Player Compensation & Contract Analysis",
@@ -617,7 +617,7 @@ export const projects: Project[] = [
     links: { github: "https://github.com/Bruin-Sports-Analytics/nflpa_24" },
     visibility: "public",
     featured: false,
-    lastUpdated: "2025-08-28"
+    lastUpdated: "2024-10-09"
   },
   {
     title: "BSA Fall 2024 Basketball Research Pipeline",
@@ -635,7 +635,7 @@ export const projects: Project[] = [
     links: { github: "https://github.com/Bruin-Sports-Analytics/BSA-Basketball-Research-Fall-2024" },
     visibility: "public",
     featured: false,
-    lastUpdated: "2026-09-01"
+    lastUpdated: "2024-11-15"
   }
 ];
 
