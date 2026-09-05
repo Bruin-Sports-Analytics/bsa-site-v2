@@ -104,8 +104,8 @@ export type Event = {
   title: string;
   slug: string;
   type: "workshop" | "speaker" | "recruitment" | "meeting" | "social" | "conference";
-  startTime: string;
-  endTime: string;
+  date: string;
+  time: string;
   dateLabel?: string;
   location: string;
   isMembersOnly: boolean;
@@ -1497,8 +1497,8 @@ export const events: Event[] = [
     title: "Enormous Activities Fair (EAF)",
     slug: "enormous-activities-fair-eaf",
     type: "recruitment",
-    startTime: "2026-09-22T11:00:00-07:00",
-    endTime: "2026-09-22T15:00:00-07:00",
+    date: "Sep 22, 2026",
+    time: "11:00 AM – 3:00 PM",
     location: "Royce Quad, UCLA",
     isMembersOnly: false,
     rsvpUrl: mailingListUrl,
@@ -1508,10 +1508,10 @@ export const events: Event[] = [
     title: "Data Science Showcase",
     slug: "data-science-showcase",
     type: "recruitment",
-    startTime: "2026-09-28T18:00:00-07:00",
-    endTime: "2026-09-28T20:00:00-07:00",
-    dateLabel: "Tentative",
-    location: "TBD",
+    date: "Sep 28, 2026",
+    time: "TBD",
+    // dateLabel: "Tentative",
+    location: "Online via Zoom",
     isMembersOnly: false,
     rsvpUrl: mailingListUrl,
     description: "Tentative date. Learn more about UCLA's data science organizations."
@@ -1520,8 +1520,9 @@ export const events: Event[] = [
     title: "BSA Info Session",
     slug: "bsa-info-session",
     type: "recruitment",
-    startTime: "2026-09-30T18:00:00-07:00",
-    endTime: "2026-09-30T19:15:00-07:00",
+    date: "Sep 30, 2026",
+    time: "TBD",
+    // dateLabel: "Tentative",
     location: "TBD",
     isMembersOnly: false,
     rsvpUrl: mailingListUrl,
@@ -1531,8 +1532,9 @@ export const events: Event[] = [
     title: "EDA Workshop",
     slug: "eda-workshop",
     type: "workshop",
-    startTime: "2026-10-05T17:30:00-07:00",
-    endTime: "2026-10-05T19:00:00-07:00",
+    date: "Oct 5, 2026",
+    time: "TBD",
+    // dateLabel: "Tentative",
     location: "TBD",
     isMembersOnly: false,
     rsvpUrl: mailingListUrl,
@@ -1542,8 +1544,8 @@ export const events: Event[] = [
     title: "Member Project Standup",
     slug: "member-project-standup",
     type: "meeting",
-    startTime: "2026-10-13T19:00:00-07:00",
-    endTime: "2026-10-13T20:00:00-07:00",
+    date: "Oct 13, 2026",
+    time: "7:00 PM – 8:00 PM",
     location: "Members only",
     isMembersOnly: true,
     description: "Internal project updates. Members should check Slack for details."

@@ -55,10 +55,7 @@ export async function GET() {
           `## Upcoming Events`,
           ``,
           ...publicEvents.map((e) => {
-            const date = new Date(e.startTime).toLocaleDateString("en-US", {
-              month: "short", day: "numeric", year: "numeric",
-            });
-            return `- **${e.title}** (${date}${e.location ? `, ${e.location}` : ""}): ${e.description}`;
+            return `- **${e.title}** (${e.date}, ${e.time}${e.location ? `, ${e.location}` : ""}): ${e.description}`;
           }),
           ``,
         ]

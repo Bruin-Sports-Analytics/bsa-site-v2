@@ -34,8 +34,7 @@ export default function EventsPage() {
         "@type": "Event",
         "name": event.title,
         "description": event.description,
-        "startDate": event.dateLabel === "TBD" ? undefined : event.startTime,
-        "endDate": event.dateLabel === "TBD" ? undefined : event.endTime,
+        "startDate": event.date,
         "location": {
           "@type": "Place",
           "name": event.location,

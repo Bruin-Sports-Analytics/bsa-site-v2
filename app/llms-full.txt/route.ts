@@ -76,12 +76,10 @@ export async function GET() {
           `## Upcoming Events`,
           ``,
           ...publicEvents.flatMap((e) => {
-            const start = new Date(e.startTime);
-            const end = new Date(e.endTime);
             return [
               `### ${e.title}`,
-              `- Date: ${start.toLocaleDateString("en-US", { weekday: "long", month: "long", day: "numeric", year: "numeric" })}`,
-              `- Time: ${start.toLocaleTimeString("en-US", { hour: "numeric", minute: "2-digit" })} – ${end.toLocaleTimeString("en-US", { hour: "numeric", minute: "2-digit" })}`,
+              `- Date: ${e.date}`,
+              `- Time: ${e.time}`,
               e.location ? `- Location: ${e.location}` : null,
               e.rsvpUrl ? `- RSVP: ${e.rsvpUrl}` : null,
               `- ${e.description}`,
