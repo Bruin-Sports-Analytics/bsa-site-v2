@@ -1510,7 +1510,7 @@ export const events: Event[] = [
     type: "recruitment",
     date: "Sep 28, 2026",
     time: "TBD",
-    // dateLabel: "Tentative",
+    dateLabel: "Tentative",
     location: "Online via Zoom",
     isMembersOnly: false,
     rsvpUrl: mailingListUrl,
@@ -1522,7 +1522,7 @@ export const events: Event[] = [
     type: "recruitment",
     date: "Sep 30, 2026",
     time: "TBD",
-    // dateLabel: "Tentative",
+    dateLabel: "Tentative",
     location: "TBD",
     isMembersOnly: false,
     rsvpUrl: mailingListUrl,
@@ -1534,13 +1534,13 @@ export const events: Event[] = [
     type: "workshop",
     date: "Oct 5, 2026",
     time: "TBD",
-    // dateLabel: "Tentative",
+    dateLabel: "Tentative",
     location: "TBD",
     isMembersOnly: false,
     rsvpUrl: mailingListUrl,
     description: "Learn about the latest tools and techniques in data analysis."
   },
-  {
+  /* {
     title: "Member Project Standup",
     slug: "member-project-standup",
     type: "meeting",
@@ -1549,7 +1549,7 @@ export const events: Event[] = [
     location: "Members only",
     isMembersOnly: true,
     description: "Internal project updates. Members should check Slack for details."
-  }
+  } */
 ];
 
 export const recruitment = {
