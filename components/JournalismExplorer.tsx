@@ -207,7 +207,7 @@ export function JournalismExplorer({ articles }: Props) {
         <>
           <div className={styles.grid}>
             {paginatedArticles.map((article, index) => (
-              <ArticleCard key={article.title} article={article} priority={page === 1 && index < 6} />
+              <ArticleCard key={article.title} article={article} priority={page === 1 && index < 2} />
             ))}
           </div>
 
