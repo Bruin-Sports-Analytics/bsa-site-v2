@@ -4,6 +4,7 @@ import { JournalismExplorer } from "@/components/JournalismExplorer";
 import { ViewResourcesButton } from "@/components/ViewResourcesButton";
 import { members } from "@/data/site";
 import { djResources } from "@/data/journalism";
+import { getJournalismArticles } from "@/lib/journalism";
 import styles from "./page.module.css";
 
 export const metadata: Metadata = {
@@ -27,7 +28,8 @@ export const metadata: Metadata = {
   }
 };
 
-export default function JournalismPage() {
+export default async function JournalismPage() {
+  const articles = await getJournalismArticles();
   const djChairs = members
     .filter((m) => m.group === "board" && m.team.toLowerCase() === "data journalism" && m.isPublished)
     .sort((a, b) => a.sortOrder - b.sortOrder);
@@ -52,7 +54,7 @@ export default function JournalismPage() {
       </section>
       <section className={styles.articles}>
         <div className="container">
-          <JournalismExplorer />
+          <JournalismExplorer articles={articles} />
         </div>
       </section>
     </main>

@@ -1,9 +1,9 @@
 import { MetadataRoute } from 'next';
 import { projects, sports } from '@/data/site';
-import { articles } from '@/data/journalism';
+import { getJournalismArticles } from '@/lib/journalism';
 import { slugify } from '@/lib/utils';
 
-export default function sitemap(): MetadataRoute.Sitemap {
+export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const baseUrl = 'https://www.bruinsportsanalytics.org';
 
   const staticPages = [
@@ -33,6 +33,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     changeFrequency: 'monthly' as const,
   }));
 
+  const articles = await getJournalismArticles();
   const journalismPages = articles
     .filter(a => a.paperUrl || a.contentFile || a.content?.length)
     .map(article => ({

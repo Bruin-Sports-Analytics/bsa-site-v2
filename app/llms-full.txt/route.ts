@@ -1,5 +1,5 @@
 import { projects, sports, events, recruitment, isActiveProject } from "@/data/site";
-import { articles } from "@/data/journalism";
+import { getJournalismArticles } from "@/lib/journalism";
 
 const BASE = "https://www.bruinsportsanalytics.org";
 
@@ -12,6 +12,7 @@ export async function GET() {
   const activeProjects = publicProjects.filter(isActiveProject);
   const archivedProjects = publicProjects.filter((p) => !isActiveProject(p));
   const publicEvents = events.filter((e) => !e.isMembersOnly);
+  const articles = await getJournalismArticles();
 
   // Sample of recent journalism articles (most recent 60 by date desc)
   const recentArticles = [...articles]

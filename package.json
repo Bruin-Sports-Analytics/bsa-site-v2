@@ -8,6 +8,8 @@
     "start": "next start",
     "lint": "next lint",
     "generate-project-thumbnails": "node scripts/generate-project-thumbnails.mjs",
+    "dry-run-migrate-journalism": "node scripts/dry-run-migrate-journalism.mjs",
+    "migrate-journalism-to-supabase": "node --env-file=.env.local scripts/migrate-journalism-to-supabase.mjs",
     "upload-paper": "node --env-file=.env.local scripts/upload-paper.mjs",
     "upload-resume-templates": "node --env-file=.env.local scripts/upload-resume-templates.mjs",
     "upload-dj-resources": "node --env-file=.env.local scripts/upload-dj-resources.mjs",

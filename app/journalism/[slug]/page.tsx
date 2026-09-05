@@ -1,18 +1,15 @@
 import type { Metadata } from "next";
-import { readFileSync, existsSync } from "node:fs";
-import path from "node:path";
 import Image from "next/image";
 import { notFound } from "next/navigation";
 import { ArrowUpRight } from "lucide-react";
-import { articles, type ArticleBlock, type JournalismArticle } from "@/data/journalism";
+import { type ArticleBlock } from "@/data/journalism";
+import { getJournalismArticle, getJournalismSlugs } from "@/lib/journalism";
 import { formatAuthors, slugify } from "@/lib/utils";
 import styles from "./page.module.css";
 
 type Props = {
   params: { slug: string };
 };
-
-const contentDirectory = path.join(process.cwd(), "content", "journalism");
 
 function renderInline(text: string): React.ReactNode {
   const tokens: React.ReactNode[] = [];
@@ -53,211 +50,13 @@ function renderInline(text: string): React.ReactNode {
   return tokens.length > 0 ? tokens : text;
 }
 
-function parseMarkdownToBlocks(rawMd: string): ArticleBlock[] {
-  const lines = rawMd.split("\n");
-  const blocks: ArticleBlock[] = [];
-  let currentList: { ordered: boolean; items: string[] } | null = null;
-  let currentTable: { headers: string[]; rows: string[][] } | null = null;
-  let currentParagraph: string[] = [];
-
-  const flushParagraph = () => {
-    if (currentParagraph.length > 0) {
-      const text = currentParagraph.join(" ").trim();
-      if (text) {
-        blocks.push({ type: "paragraph", text });
-      }
-      currentParagraph = [];
-    }
-  };
-
-  const flushList = () => {
-    if (currentList) {
-      blocks.push({ type: "list", ordered: currentList.ordered, items: currentList.items });
-      currentList = null;
-    }
-  };
-
-  const flushTable = () => {
-    if (currentTable && currentTable.headers.length > 0) {
-      blocks.push({ type: "table", columns: currentTable.headers, rows: currentTable.rows });
-      currentTable = null;
-    }
-  };
-
-  for (let i = 0; i < lines.length; i++) {
-    const line = lines[i].trim();
-
-    if (!line) {
-      flushParagraph();
-      flushList();
-      flushTable();
-      continue;
-    }
-
-    // Embedded Markdown Image: ![alt](src)
-    const imgMatch = line.match(/^!\[(.*?)\]\((.*?)\)$/);
-    if (imgMatch) {
-      flushParagraph();
-      flushList();
-      flushTable();
-      blocks.push({
-        type: "image",
-        src: imgMatch[2],
-        alt: imgMatch[1] || "Figure",
-        caption: imgMatch[1] || undefined,
-        width: 1200,
-        height: 700
-      });
-      continue;
-    }
-
-    // Filter out author bylines, subscribe CTAs, and publication metadata
-    if (
-      /^(by:|written\s+by:|authors?:|published:|subscribe\b)/i.test(line) ||
-      /^(\*\*|\*)(by:|written\s+by:|authors?:)/i.test(line)
-    ) {
-      continue;
-    }
-
-    // Headings that are author bylines e.g. "## By Billy Peir", "### By Nathan Wetmore"
-    const headingPrefixMatch = line.match(/^#{1,6}\s+(.*)$/);
-    if (headingPrefixMatch) {
-      const headingText = headingPrefixMatch[1].trim();
-      if (/^(by:|written\s+by:|authors?:|published:|subscribe\b)/i.test(headingText)) {
-        continue;
-      }
-      if (/^by\s+/i.test(headingText)) {
-        const rest = headingText.slice(3).trim();
-        if (!/^(age|position|year|sport|team|tier|category|conference|round|metric|season|decade|country|player\s+type)\b/i.test(rest)) {
-          continue;
-        }
-      }
-    }
-
-    // Top-of-article standalone byline e.g. "By Billy Peir" or "**By Billy Peir**"
-    if (i <= 6) {
-      const clean = line.replace(/^(\*\*|\*)|(\*\*|\*)$/g, "").trim();
-      if (/^by\s+[A-Z]/i.test(clean)) {
-        const rest = clean.slice(3).trim();
-        if (!/^(the|this|a|an|studying|analyzing|comparing|using|calculating|examining|looking|virtue|isolating|contrast|understanding|taking|plotting|measuring|evaluating|determining|diving)\b/i.test(rest)) {
-          if (!/^(age|position|year|sport|team|tier|category|conference|round|metric|season)\b/i.test(rest)) {
-            continue;
-          }
-        }
-      }
-    }
-
-    // Headings
-    if (line.startsWith("### ")) {
-      flushParagraph();
-      flushList();
-      flushTable();
-      const headingText = line.slice(4).trim().replace(/^\*\*|\*\*$/g, "").trim();
-      blocks.push({ type: "heading", level: 3, text: headingText });
-      continue;
-    }
-    if (line.startsWith("## ")) {
-      flushParagraph();
-      flushList();
-      flushTable();
-      const headingText = line.slice(3).trim().replace(/^\*\*|\*\*$/g, "").trim();
-      blocks.push({ type: "heading", level: 2, text: headingText });
-      continue;
-    }
-    if (line.startsWith("# ")) {
-      flushParagraph();
-      flushList();
-      flushTable();
-      const headingText = line.slice(2).trim().replace(/^\*\*|\*\*$/g, "").trim();
-      blocks.push({ type: "heading", level: 2, text: headingText });
-      continue;
-    }
-
-    // Blockquote
-    if (line.startsWith("> ")) {
-      flushParagraph();
-      flushList();
-      flushTable();
-      blocks.push({ type: "blockquote", text: line.slice(2).trim() });
-      continue;
-    }
-
-    // Lists
-    if (line.startsWith("- ") || line.startsWith("* ")) {
-      flushParagraph();
-      flushTable();
-      if (!currentList || currentList.ordered) {
-        flushList();
-        currentList = { ordered: false, items: [] };
-      }
-      currentList.items.push(line.slice(2).trim());
-      continue;
-    }
-    const olMatch = line.match(/^(\d+)\.\s+(.*)$/);
-    if (olMatch) {
-      flushParagraph();
-      flushTable();
-      if (!currentList || !currentList.ordered) {
-        flushList();
-        currentList = { ordered: true, items: [] };
-      }
-      currentList.items.push(olMatch[2].trim());
-      continue;
-    }
-
-    // Tables
-    if (line.startsWith("|") && line.endsWith("|")) {
-      flushParagraph();
-      flushList();
-      const cells = line.slice(1, -1).split("|").map((c) => c.trim());
-      if (cells.every((c) => /^---+$/.test(c))) {
-        continue;
-      }
-      if (!currentTable) {
-        currentTable = { headers: cells.map(c => c.replace(/^\*\*|\*\*$/g, "").trim()), rows: [] };
-      } else {
-        currentTable.rows.push(cells);
-      }
-      continue;
-    }
-
-    // Normal paragraph line
-    currentParagraph.push(line);
-  }
-
-  flushParagraph();
-  flushList();
-  flushTable();
-
-  return blocks;
+export async function generateStaticParams() {
+  const slugs = await getJournalismSlugs();
+  return slugs.map((slug) => ({ slug }));
 }
 
-function fileContentBlocks(article: JournalismArticle): ArticleBlock[] {
-  if (!article.contentFile) return [];
-
-  try {
-    const mdPath = path.join(contentDirectory, article.contentFile.replace(/\.txt$/, ".md"));
-    const txtPath = path.join(contentDirectory, article.contentFile);
-    const targetPath = existsSync(mdPath) ? mdPath : txtPath;
-
-    if (!existsSync(targetPath)) return [];
-
-    const raw = readFileSync(targetPath, "utf8");
-    const blocks = parseMarkdownToBlocks(raw);
-    return blocks;
-  } catch {
-    return [];
-  }
-}
-
-export function generateStaticParams() {
-  return articles
-    .filter((article) => article.paperUrl || article.content?.length || article.contentFile)
-    .map((article) => ({ slug: slugify(article.title) }));
-}
-
-export function generateMetadata({ params }: Props): Metadata {
-  const article = articles.find((item) => (item.paperUrl || item.content?.length || item.contentFile) && slugify(item.title) === params.slug);
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const article = await getJournalismArticle(params.slug);
   if (!article) {
     return { title: "Article not found" };
   }
@@ -286,10 +85,10 @@ export function generateMetadata({ params }: Props): Metadata {
   };
 }
 
-export default function JournalismArticlePage({ params }: Props) {
-  const article = articles.find((item) => (item.paperUrl || item.content?.length || item.contentFile) && slugify(item.title) === params.slug);
+export default async function JournalismArticlePage({ params }: Props) {
+  const article = await getJournalismArticle(params.slug);
   if (!article) notFound();
-  const content = article.content?.length ? article.content : fileContentBlocks(article);
+  const content = article.content || [];
 
   const articleJsonLd = {
     "@context": "https://schema.org",
