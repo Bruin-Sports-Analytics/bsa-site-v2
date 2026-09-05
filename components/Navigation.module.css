@@ -349,6 +349,10 @@
     border-radius: 0;
   }
 
+  .headerOpen {
+    overflow: visible;
+  }
+
   .desktop,
   .partner,
   .desktopThemeToggle {
@@ -369,20 +373,24 @@
   }
 
   .mobilePanel {
-    position: fixed;
-    top: 62px;
+    position: absolute;
+    top: 100%;
     left: 0;
     right: 0;
-    bottom: 0;
+    width: 100%;
+    height: calc(100dvh - 62px);
     max-height: calc(100dvh - 62px);
-    display: grid;
-    align-content: start;
+    display: flex;
+    flex-direction: column;
     gap: 10px;
-    padding: 24px;
-    padding-bottom: 40px;
+    padding: 24px 24px 60px;
     border-radius: 0;
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
+    box-sizing: border-box;
+    background: var(--nav-scrolled-fill);
+    -webkit-backdrop-filter: blur(var(--glass-strong-blur)) saturate(var(--glass-saturation));
+    backdrop-filter: blur(var(--glass-strong-blur)) saturate(var(--glass-saturation));
   }
 
   .mobilePanel a {
