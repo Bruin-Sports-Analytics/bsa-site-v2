@@ -29,8 +29,13 @@ export function ProjectExplorer({ compact = false }: { compact?: boolean }) {
         return haystack.includes(query.toLowerCase());
       })
       .sort((a, b) => {
-        if (sort === "featured") return Number(b.featured) - Number(a.featured);
-        return Date.parse(b.lastUpdated) - Date.parse(a.lastUpdated);
+        if (sort === "featured") {
+          const featuredSort = Number(b.featured) - Number(a.featured);
+          if (featuredSort !== 0) return featuredSort;
+        }
+
+        const dateSort = Date.parse(b.lastUpdated) - Date.parse(a.lastUpdated);
+        return sort === "oldest" ? -dateSort : dateSort;
       });
   }, [query, sport, status, type, showArchived, sort]);
 
@@ -64,6 +69,7 @@ export function ProjectExplorer({ compact = false }: { compact?: boolean }) {
         <select value={sort} onChange={(event) => setSort(event.target.value)} aria-label="Sort projects">
           <option value="" disabled hidden>Sort</option>
           <option value="newest">Newest</option>
+          <option value="oldest">Oldest</option>
           <option value="featured">Featured</option>
         </select>
         <label className={styles.toggle}>
