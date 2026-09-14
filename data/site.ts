@@ -1491,7 +1491,7 @@ export const impactStats = [
   { label: "Sports groups", value: sports.length },
   { label: "Current members", value: 70 },
   { label: "Years at UCLA", value: 9 },
-  { label: "UCLA Athletics Partners", value: 3 }
+  { label: "UCLA Athletics Partners", value: 4 }
 ];
 
 export const events: Event[] = [
