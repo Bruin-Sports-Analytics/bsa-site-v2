@@ -4,6 +4,8 @@ import { useEffect, useRef, useState } from "react";
 import styles from "./ScrollCountStats.module.css";
 
 const DURATION_MS = 1200;
+const SEASON_START_YEAR = 2017;
+const SEASON_END_YEAR = 2026;
 
 type Stat = { label: string; value: number };
 
@@ -101,7 +103,7 @@ export function ScrollCountStats({ stats }: { stats: Stat[] }) {
   const statByLabel = new Map(stats.map((stat) => [stat.label, stat]));
   const scoreItems = [
     { label: "Active projects", value: statByLabel.get("Active projects")?.value ?? 0 },
-    { label: "Season", value: "20:26" },
+    { label: "Season", value: SEASON_END_YEAR },
     { label: "Sports groups", value: statByLabel.get("Sports groups")?.value ?? 0 },
     { label: "Current members", value: statByLabel.get("Current members")?.value ?? 0 },
     { label: "UCLA Athletics Partners", value: statByLabel.get("UCLA Athletics Partners")?.value ?? 0 },
@@ -115,9 +117,9 @@ export function ScrollCountStats({ stats }: { stats: Stat[] }) {
           <div className={styles.scoreboardTitle}>AT A GLANCE</div>
           <div className={styles.scoreGrid}>
             {scoreItems.map((stat) => {
-              const displayValue = typeof stat.value === "number"
-                ? String(Math.round(progress * stat.value)).padStart(2, "0")
-                : stat.value;
+              const displayValue = stat.label === "Season"
+                ? String(Math.round(SEASON_START_YEAR + progress * (SEASON_END_YEAR - SEASON_START_YEAR)))
+                : String(Math.round(progress * stat.value)).padStart(2, "0");
 
               return (
                 <div className={styles.stat} key={stat.label}>
@@ -131,7 +133,7 @@ export function ScrollCountStats({ stats }: { stats: Stat[] }) {
           <span className={`${styles.corner} ${styles.cornerTopRight}`} aria-hidden="true" />
           <span className={`${styles.corner} ${styles.cornerBottomLeft}`} aria-hidden="true" />
           <span className={`${styles.corner} ${styles.cornerBottomRight}`} aria-hidden="true" />
-            </div>
+        </div>
       </div>
     </section>
   );

@@ -10,11 +10,11 @@ import styles from "./ProjectVisual.module.css";
 
 export function ProjectVisual({ project }: { project: Project }) {
   const accent = sports.find((sport) => sport.slug === project.sport)?.accent ?? "#4aa8ff";
-  const hasPaper = Boolean(project.links.paper);
+  const hasThumbnail = Boolean(project.links.paper || project.hasThumbnail);
 
   return (
     <div className={styles.media}>
-      {hasPaper ? (
+      {hasThumbnail ? (
         <Image
           src={projectThumbnailSrc(project.slug)}
           alt=""

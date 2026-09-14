@@ -52,6 +52,7 @@ export type Project = {
     article?: string;
     presentation?: string;
   };
+  hasThumbnail?: boolean;
   visibility: Visibility;
   featured: boolean;
   featuredUntil?: string;
@@ -561,6 +562,7 @@ export const projects: Project[] = [
     members: [],
     techStack: ["React", "Vite", "Flask", "PyTorch", "ONNX", "Python"],
     links: { github: "https://github.com/Bruin-Sports-Analytics/NBA-What-If-Analysis-Spring-2026" },
+    hasThumbnail: true,
     visibility: "public",
     featured: true,
     lastUpdated: "2026-05-15"
