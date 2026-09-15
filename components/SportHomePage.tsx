@@ -52,7 +52,7 @@ export function SportHomePage({ slug }: { slug: TeamSportSlug }) {
       <section className="page-hero">
         <div className={`container ${heroStyles.heroRow}`}>
           <div className={heroStyles.heroText}>
-            <span className="eyebrow">{sport.name} analytics</span>
+            <span className="eyebrow">{slug === "tennis" ? "Bruin tennis consulting" : `${sport.name} analytics`}</span>
             <h1>{sport.name}</h1>
             <p>{sport.description}</p>
             {sport.slug === "volleyball" ? (
