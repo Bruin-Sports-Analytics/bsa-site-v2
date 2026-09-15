@@ -141,7 +141,7 @@ export const sports: Sport[] = [
     name: "Tennis",
     slug: "tennis",
     icon: TennisIcon,
-    description: "Tennis analytics work across data engineering, analytics, web development, and scouting subteams.",
+    description: "Tennis consulting work across data engineering, analytics, web development, and scouting subteams.",
     focusAreas: ["Point patterns", "Serve plus-one value", "Opponent scouting"],
     activeProjects: 4,
     archivedProjects: 5,
