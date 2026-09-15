@@ -5,7 +5,15 @@ export function formatDate(value: string) {
     month: "short",
     day: "numeric",
     year: "numeric"
-  }).format(new Date(value));
+  }).format(parseDate(value));
+}
+
+export function formatLongDate(value: string) {
+  return new Intl.DateTimeFormat("en-US", {
+    month: "long",
+    day: "numeric",
+    year: "numeric"
+  }).format(parseDate(value));
 }
 
 export function formatEventDate(value: string) {
@@ -16,6 +24,15 @@ export function formatEventDate(value: string) {
     hour: "numeric",
     minute: "2-digit"
   }).format(new Date(value));
+}
+
+function parseDate(value: string) {
+  if (/^\d{4}-\d{2}-\d{2}$/.test(value)) {
+    const [year, month, day] = value.split("-").map(Number);
+    return new Date(year, month - 1, day);
+  }
+
+  return new Date(value);
 }
 
 export function sportName(slug: SportSlug) {

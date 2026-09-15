@@ -1,17 +1,23 @@
 import Link from "next/link";
 import { ArrowUpRight, LockKeyhole } from "lucide-react";
 import type { Project } from "@/data/site";
-import { sportName } from "@/lib/utils";
+import { formatLongDate, sportName } from "@/lib/utils";
 import { ProjectVisual } from "@/components/ProjectVisual";
 import styles from "./HomeProjectCard.module.css";
 
-export function HomeProjectCard({ project }: { project: Project }) {
+type Props = {
+  project: Project;
+  priority?: boolean;
+};
+
+export function HomeProjectCard({ project, priority = false }: Props) {
   const isPrivate = project.visibility === "private" || project.visibility === "redacted";
-  const date = new Date(project.lastUpdated).toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" });
+  const displayDate = project.repoFirstCommitAt ?? project.lastUpdated;
+  const date = formatLongDate(displayDate);
 
   const cardContent = (
     <>
-      <ProjectVisual project={project} />
+      <ProjectVisual project={project} priority={priority} />
       <div className={styles.body}>
         <h3 className={styles.title}>{project.title}</h3>
         <span className={styles.date}>{date}</span>

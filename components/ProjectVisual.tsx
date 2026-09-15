@@ -8,7 +8,15 @@ import { sportName } from "@/lib/utils";
 import { projectThumbnailSrc } from "@/lib/projectThumbnails";
 import styles from "./ProjectVisual.module.css";
 
-export function ProjectVisual({ project }: { project: Project }) {
+type Props = {
+  project: Project;
+  priority?: boolean;
+  sizes?: string;
+};
+
+const defaultSizes = "(max-width: 600px) calc(100vw - 40px), (max-width: 1050px) calc((100vw - 54px) / 2), (max-width: 1280px) calc((100vw - 82px) / 3), 380px";
+
+export function ProjectVisual({ project, priority = false, sizes = defaultSizes }: Props) {
   const accent = sports.find((sport) => sport.slug === project.sport)?.accent ?? "#4aa8ff";
   const hasThumbnail = Boolean(project.links.paper || project.hasThumbnail);
 
@@ -19,8 +27,9 @@ export function ProjectVisual({ project }: { project: Project }) {
           src={projectThumbnailSrc(project.slug)}
           alt=""
           fill
-          sizes="(max-width: 900px) 100vw, (max-width: 1280px) 50vw, 33vw"
+          sizes={sizes}
           className={styles.image}
+          priority={priority}
         />
       ) : (
         <div className={styles.fallback} style={{ "--accent": accent } as CSSProperties}>

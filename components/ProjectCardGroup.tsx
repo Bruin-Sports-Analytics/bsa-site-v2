@@ -5,8 +5,8 @@ import styles from "./ProjectCardGroup.module.css";
 export function ProjectCardGroup({ projects }: { projects: Project[] }) {
   return (
     <div className={styles.grid}>
-      {projects.map((project) => (
-        <HomeProjectCard key={project.slug} project={project} />
+      {projects.map((project, index) => (
+        <HomeProjectCard key={project.slug} project={project} priority={index < 3} />
       ))}
     </div>
   );

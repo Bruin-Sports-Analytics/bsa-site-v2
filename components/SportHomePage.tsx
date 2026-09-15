@@ -1,9 +1,8 @@
 import Link from "next/link";
-import { ArrowRight, ArrowUpRight } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
 import { MemberCard } from "@/components/MemberCard";
 import { ProjectCardGrid } from "@/components/ProjectCardGrid";
 import { getSportOverviewBySlug, type TeamSportSlug } from "@/lib/team-pages";
-import { slugify } from "@/lib/utils";
 import styles from "./SportHomePage.module.css";
 import heroStyles from "@/app/teams/sport-hero.module.css";
 
@@ -132,15 +131,14 @@ export function SportHomePage({ slug }: { slug: TeamSportSlug }) {
       {sport.subdivisions ? (
         <section className="section tight">
           <div className="container">
-            <span className="eyebrow">Tennis roles</span>
-            <h2 className="section-title">Role-based programs</h2>
+            <span className="eyebrow">Tennis subteams</span>
+            <h2 className="section-title">How the team is organized</h2>
             <div className={styles.roleGrid}>
               {sport.subdivisions.map((name) => (
-                <Link className={styles.roleCard} href={`/teams/tennis/${slugify(name)}`} key={name}>
+                <article className={styles.roleCard} key={name}>
                   <h3>{name}</h3>
-                  <p>Projects, dashboards, lead contacts, and archived work for this tennis role area.</p>
-                  <span>Open role <ArrowRight size={16} aria-hidden /></span>
-                </Link>
+                  <p>Projects, dashboards, lead contacts, and archived work for this tennis subteam.</p>
+                </article>
               ))}
             </div>
           </div>
@@ -155,7 +153,7 @@ export function SportHomePage({ slug }: { slug: TeamSportSlug }) {
         </div>
       </section>
 
-      {slug !== "volleyball" && (
+      {slug !== "tennis" && slug !== "volleyball" && (
         <section className="section tight">
           <div className="container">
             <span className="eyebrow">Archive</span>
@@ -167,4 +165,3 @@ export function SportHomePage({ slug }: { slug: TeamSportSlug }) {
     </main>
   );
 }
-

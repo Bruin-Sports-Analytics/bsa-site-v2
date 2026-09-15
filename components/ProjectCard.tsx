@@ -6,18 +6,20 @@ import { useRouter } from "next/navigation";
 import { ArrowUpRight, Github, LockKeyhole } from "lucide-react";
 import { GlassSurface } from "@/components/ui/GlassSurface";
 import type { Project } from "@/data/site";
-import { sportName } from "@/lib/utils";
+import { formatLongDate, sportName } from "@/lib/utils";
 import { ProjectVisual } from "@/components/ProjectVisual";
 import styles from "./ProjectCard.module.css";
 
 type Props = {
   project: Project;
+  priority?: boolean;
+  imageSizes?: string;
   active?: boolean;
   onActivate?: () => void;
   onDeactivate?: () => void;
 };
 
-export function ProjectCard({ project, active, onActivate, onDeactivate }: Props) {
+export function ProjectCard({ project, priority = false, imageSizes, active, onActivate, onDeactivate }: Props) {
   const router = useRouter();
   const controlled = active !== undefined;
   const [internalExpanded, setInternalExpanded] = useState(false);
@@ -27,6 +29,7 @@ export function ProjectCard({ project, active, onActivate, onDeactivate }: Props
 
   const expanded = controlled ? active : internalExpanded;
   const contentVisible = controlled ? active : internalVisible;
+  const displayDate = project.repoFirstCommitAt ?? project.lastUpdated;
 
   const handleEnter = () => {
     if (controlled) { onActivate?.(); return; }
@@ -81,10 +84,10 @@ export function ProjectCard({ project, active, onActivate, onDeactivate }: Props
       className={`${styles.card} ${expanded ? styles.expanded : ""}`}
       {...handlers}
     >
-      <ProjectVisual project={project} />
+      <ProjectVisual project={project} priority={priority} sizes={imageSizes} />
       <div className={styles.body}>
         <h3 className={styles.title}>{project.title}</h3>
-        <span className={styles.date}>{new Date(project.lastUpdated).toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" })}</span>
+        <span className={styles.date}>{formatLongDate(displayDate)}</span>
         <div className={`${styles.reveal} ${contentVisible ? styles.revealOpen : ""}`}>
           <div className={styles.revealInner}>
             <div className={styles.divider} aria-hidden />

@@ -43,6 +43,9 @@ export function ProjectExplorer({ compact = false }: { compact?: boolean }) {
   const columns = Array.from({ length: numCols }, (_, i) =>
     filtered.filter((_, j) => j % numCols === i)
   );
+  const imageSizes = compact
+    ? "(max-width: 600px) calc(100vw - 40px), (max-width: 1050px) calc((100vw - 54px) / 2), 560px"
+    : "(max-width: 600px) calc(100vw - 40px), (max-width: 1050px) calc((100vw - 54px) / 2), (max-width: 1280px) calc((100vw - 96px) / 4), 280px";
 
   return (
     <div className={styles.explorer}>
@@ -83,8 +86,8 @@ export function ProjectExplorer({ compact = false }: { compact?: boolean }) {
         <div className={compact ? styles.compactGrid : styles.grid}>
           {columns.map((col, i) => (
             <div key={i} className={styles.column}>
-              {col.map((project) => (
-                <ProjectCard project={project} key={project.slug} />
+              {col.map((project, projectIndex) => (
+                <ProjectCard project={project} key={project.slug} priority={projectIndex === 0} imageSizes={imageSizes} />
               ))}
             </div>
           ))}

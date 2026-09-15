@@ -56,6 +56,7 @@ export type Project = {
   visibility: Visibility;
   featured: boolean;
   featuredUntil?: string;
+  repoFirstCommitAt?: string;
   lastUpdated: string;
 };
 
@@ -140,14 +141,14 @@ export const sports: Sport[] = [
     name: "Tennis",
     slug: "tennis",
     icon: TennisIcon,
-    description: "Match strategy, player development, and scouting work across three configurable programs.",
+    description: "Tennis analytics work across data engineering, analytics, web development, and scouting subteams.",
     focusAreas: ["Point patterns", "Serve plus-one value", "Opponent scouting"],
     activeProjects: 4,
     archivedProjects: 5,
-    featuredMetric: "3 programs",
+    featuredMetric: "4 subteams",
     lead: "Tennis Analytics Lead",
     accent: "#8BCBFF",
-    subdivisions: ["Scouting - role", "Tagging - role", "Strategy - role"]
+    subdivisions: ["Data Engineering", "Analytics", "Web Dev", "Scouting"]
   },
   {
     name: "Football",
@@ -236,6 +237,7 @@ export const projects: Project[] = [
     links: { paper: "https://hfpruaivskrkweobtvcf.supabase.co/storage/v1/object/public/project_papers/bsa-group-1-winter-presentation.pdf", demo: "https://playbyplay.football", github: "https://github.com/Bruin-Sports-Analytics/nfl-ot-4th-down-model" },
     visibility: "public",
     featured: true,
+    repoFirstCommitAt: "2026-02-11",
     lastUpdated: "2026-07-30"
   },
   {
@@ -254,6 +256,7 @@ export const projects: Project[] = [
     links: { paper: "https://hfpruaivskrkweobtvcf.supabase.co/storage/v1/object/public/project_papers/bsa-group-1-spring-presentation.pdf", github: "https://github.com/Bruin-Sports-Analytics/qb-optimality" },
     visibility: "public",
     featured: false,
+    repoFirstCommitAt: "2026-05-05",
     lastUpdated: "2026-05-15"
   },
   {
@@ -272,6 +275,7 @@ export const projects: Project[] = [
     links: { paper: "https://hfpruaivskrkweobtvcf.supabase.co/storage/v1/object/public/project_papers/nfl-gravity-metric.pdf", github: "https://github.com/Bruin-Sports-Analytics/BSA-NFL-Gravity-Metric-2026" },
     visibility: "public",
     featured: false,
+    repoFirstCommitAt: "2026-02-12",
     lastUpdated: "2026-08-06"
   },
   {
@@ -327,6 +331,7 @@ export const projects: Project[] = [
     links: { github: "https://github.com/Bruin-Sports-Analytics/2026-TrackMan-pitch-plotter" },
     visibility: "public",
     featured: true,
+    repoFirstCommitAt: "2026-08-29",
     lastUpdated: "2026-04-10"
   },
   {
@@ -345,6 +350,7 @@ export const projects: Project[] = [
     links: { github: "https://github.com/Bruin-Sports-Analytics/2026-pitch-performance-db" },
     visibility: "public",
     featured: false,
+    repoFirstCommitAt: "2026-08-29",
     lastUpdated: "2026-03-20"
   },
   {
@@ -382,6 +388,7 @@ export const projects: Project[] = [
     links: { paper: "https://hfpruaivskrkweobtvcf.supabase.co/storage/v1/object/public/project_papers/bsa-w26-project-1.pdf", demo: "https://ucla-wbb-transfer-analysis-db.netlify.app/", github: "https://github.com/Bruin-Sports-Analytics/BSA-UCLA-WBB-Product-Winter-2026" },
     visibility: "public",
     featured: true,
+    repoFirstCommitAt: "2026-01-21",
     lastUpdated: "2026-03-15"
   },
   {
@@ -510,6 +517,7 @@ export const projects: Project[] = [
     links: { github: "https://github.com/Bruin-Sports-Analytics/UCLA-WBB-RAG-Development-Spring-2025" },
     visibility: "public",
     featured: false,
+    repoFirstCommitAt: "2025-06-13",
     lastUpdated: "2025-05-15"
   },
   {
@@ -528,25 +536,27 @@ export const projects: Project[] = [
     links: { github: "https://github.com/Bruin-Sports-Analytics/NBA-Fantasy-Points-Research-Fall-2025" },
     visibility: "public",
     featured: false,
+    repoFirstCommitAt: "2025-01-14",
     lastUpdated: "2025-11-15"
   },
   {
-    title: "Computer Vision Automated Match Tagger for Tennis",
-    slug: "computer-vision-tennis-match-tagger",
+    title: "UCLA Tennis Match Viewing Dashboard",
+    slug: "ucla-tennis-match-viewing-dashboard",
     sport: "tennis",
     projectType: "Tool",
     status: "Active",
     academicYear: "2025-26",
-    summary: "A computer vision pipeline adapted for UCLA Tennis court cameras to automatically tag player movements, ball trajectories, and point-level statistics from match video.",
-    problem: "Manual charting of tennis match video is labor-intensive, preventing UCLA Tennis coaches from reviewing full point-by-point spatial analytics for every match.",
-    approach: "The team adapted deep learning object detection and court homography models to process broadcast and raw court video, mapping ball bounces, player positioning, and shot trajectories into structured CSV datasets.",
-    result: "Automated match video processing to extract structured spatial coordinate data, enabling automated point charting, movement profiles, and tactical post-match reports for UCLA Tennis.",
+    summary: "An authenticated match-viewing dashboard built by Bruin Sports Analytics for UCLA Tennis, organizing match video, rosters, opponents, singles and doubles lines, and tagged-match review in one coaching-facing tool.",
+    problem: "UCLA Tennis needed a cleaner way to review match video and match context without scattering clips, rosters, opponent details, and tagging status across separate workflows.",
+    approach: "The team built a Next.js and Firebase dashboard with login-protected access, searchable match cards, roster views, singles and doubles match tiles, score displays, opponent metadata, PDF support, and tagged-match indicators.",
+    result: "The live dashboard gives UCLA Tennis a centralized match review hub for browsing matches, finding athletes and opponents, and opening tagged video context for post-match analysis.",
     members: [],
-    techStack: ["Python", "OpenCV", "PyTorch", "Computer Vision", "Homography"],
-    links: { github: "https://github.com/Bruin-Sports-Analytics/BTC-Computer-Vision-Tagger-Winter-2026" },
+    techStack: ["Next.js", "React", "Firebase", "Firestore", "Authentication"],
+    links: { demo: "https://match-viewing-dashboard.web.app/" },
     visibility: "public",
-    featured: false,
-    lastUpdated: "2026-02-15"
+    featured: true,
+    hasThumbnail: true,
+    lastUpdated: "2026-09-15"
   },
   {
     title: "NBA Win Probability & What-If Analyzer",
@@ -565,6 +575,7 @@ export const projects: Project[] = [
     hasThumbnail: true,
     visibility: "public",
     featured: true,
+    repoFirstCommitAt: "2026-04-17",
     lastUpdated: "2026-05-15"
   },
   {
@@ -583,6 +594,7 @@ export const projects: Project[] = [
     links: { github: "https://github.com/Bruin-Sports-Analytics/BSA-Quantitative-Defensive-Selections-Research-2025" },
     visibility: "public",
     featured: false,
+    repoFirstCommitAt: "2025-04-03",
     lastUpdated: "2025-05-30"
   },
   {
@@ -601,6 +613,7 @@ export const projects: Project[] = [
     links: { github: "https://github.com/Bruin-Sports-Analytics/NBA-Parley-Maker-Game-State-Model-Spring-2026" },
     visibility: "public",
     featured: false,
+    repoFirstCommitAt: "2026-04-22",
     lastUpdated: "2026-05-15"
   },
   {
@@ -619,6 +632,7 @@ export const projects: Project[] = [
     links: { github: "https://github.com/Bruin-Sports-Analytics/nflpa_24" },
     visibility: "public",
     featured: false,
+    repoFirstCommitAt: "2024-10-09",
     lastUpdated: "2024-10-09"
   },
   {
@@ -637,6 +651,7 @@ export const projects: Project[] = [
     links: { github: "https://github.com/Bruin-Sports-Analytics/BSA-Basketball-Research-Fall-2024" },
     visibility: "public",
     featured: false,
+    repoFirstCommitAt: "2024-10-22",
     lastUpdated: "2024-11-15"
   }
 ];
