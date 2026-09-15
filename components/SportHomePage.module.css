@@ -181,16 +181,18 @@
 
 .roleGrid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 16px;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
 }
 
 .roleCard {
-  display: grid;
-  gap: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 86px;
   border: 1px solid var(--border);
-  border-radius: var(--radius-md);
-  padding: 22px;
+  border-radius: var(--radius-sm);
+  padding: 18px 20px;
   background: var(--card-fill);
   color: var(--text-primary);
   box-shadow: var(--card-shadow);
@@ -199,21 +201,10 @@
 .roleCard h3 {
   margin: 0;
   font-family: var(--font-sora), system-ui, sans-serif;
-  font-size: 22px;
-}
-
-.roleCard p {
-  margin: 0;
-  color: var(--text-secondary);
-  line-height: 1.55;
-}
-
-.roleCard span {
-  display: inline-flex;
-  align-items: center;
-  gap: 7px;
-  color: var(--ucla-gold);
-  font-weight: 900;
+  font-size: clamp(17px, 1.7vw, 22px);
+  line-height: 1.15;
+  text-align: center;
+  overflow-wrap: anywhere;
 }
 
 .teamHeader {
@@ -232,9 +223,12 @@
     grid-template-columns: 1fr;
   }
 
-  .focusGrid,
-  .roleGrid {
+  .focusGrid {
     grid-template-columns: 1fr;
+  }
+
+  .roleGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
@@ -245,9 +239,17 @@
 
   .heroPanel,
   .focusCard,
-  .featuredWork,
-  .roleCard {
+  .featuredWork {
     border-radius: var(--radius-sm);
     padding: 18px;
+  }
+
+  .roleGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .roleCard {
+    min-height: 72px;
+    padding: 16px 18px;
   }
 }

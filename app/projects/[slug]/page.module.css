@@ -70,6 +70,27 @@
   margin-top: 20px;
 }
 
+.videoBlock {
+  margin-top: 28px;
+}
+
+.videoHeader {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.video {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  display: block;
+  background: #07182b;
+  border: 1px solid var(--border-subtle, rgba(139, 203, 255, 0.16));
+  border-radius: var(--radius-md, 12px);
+  object-fit: contain;
+}
+
 :global(html[data-theme="light"]) .overviewCard {
   background: rgba(255, 255, 255, 0.85);
   border-color: rgba(13, 71, 130, 0.15);

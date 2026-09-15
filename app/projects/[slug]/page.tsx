@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { ArrowUpRight, Github, LockKeyhole } from "lucide-react";
 import { projectLifecycleStatus, projects } from "@/data/site";
+import { projectThumbnailSrc } from "@/lib/projectThumbnails";
 import { formatDate, sportName, visibleProjectDetail } from "@/lib/utils";
 import styles from "./page.module.css";
 
@@ -146,6 +147,24 @@ export default function ProjectDetailPage({ params }: Props) {
                   <Github size={16} aria-hidden /> View on GitHub
                 </a>
               )}
+            </div>
+          )}
+
+          {project.links.video && (
+            <div className={styles.videoBlock}>
+              <div className={styles.videoHeader}>
+                <span className="eyebrow">Demo video</span>
+              </div>
+              <video
+                className={styles.video}
+                src={project.links.video}
+                poster={project.hasThumbnail ? projectThumbnailSrc(project.slug) : undefined}
+                controls
+                preload="metadata"
+                playsInline
+              >
+                <a href={project.links.video}>Download the demo video</a>
+              </video>
             </div>
           )}
         </div>

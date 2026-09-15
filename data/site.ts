@@ -51,6 +51,7 @@ export type Project = {
     paper?: string;
     article?: string;
     presentation?: string;
+    video?: string;
   };
   hasThumbnail?: boolean;
   visibility: Visibility;
@@ -535,7 +536,7 @@ export const projects: Project[] = [
     result: "Delivered a fast, conversational scouting interface capable of answering natural language analytics questions across player stats, team trends, and opponent breakdowns.",
     members: [],
     techStack: ["Python", "Flask", "Claude 3.5 Sonnet", "RAG", "ChromaDB"],
-    links: { github: "https://github.com/Bruin-Sports-Analytics/UCLA-WBB-RAG-Development-Spring-2025" },
+    links: { github: "https://github.com/Bruin-Sports-Analytics/UCLA-WBB-RAG-Development-Spring-2025", video: "/assets/project-videos/ucla-wbb-rag-analytics-chatbot.mp4" },
     visibility: "public",
     featured: false,
     hasThumbnail: true,
@@ -580,6 +581,26 @@ export const projects: Project[] = [
     featured: true,
     hasThumbnail: true,
     lastUpdated: "2026-09-15"
+  },
+  {
+    title: "BTC Computer Vision Tagger",
+    slug: "btc-computer-vision-tagger",
+    sport: "tennis",
+    projectType: "Tool",
+    status: "Active",
+    academicYear: "2025-26",
+    summary: "A computer-vision tagging system for UCLA Tennis match video that automatically tracks court geometry, player movement, and rally context to support downstream match statistics and reports.",
+    problem: "UCLA Tennis needed a more efficient way to collect structured data from match videos instead of relying on fully manual tagging workflows.",
+    approach: "The project adapts an open-source tennis computer-vision pipeline with UCLA-specific homography and camera-system adjustments, then processes model output into data formats usable for match statistics and reporting.",
+    result: "Produced a working automated tagger demo that overlays court lines, player detections, and distance measurements on tennis video for review and analysis.",
+    members: [],
+    techStack: ["Python", "Computer Vision", "Homography", "Video Processing"],
+    links: { github: "https://github.com/Bruin-Sports-Analytics/BTC-Computer-Vision-Tagger-Winter-2026", video: "/assets/project-videos/btc-computer-vision-tagger.mp4" },
+    visibility: "public",
+    featured: false,
+    hasThumbnail: true,
+    repoFirstCommitAt: "2026-09-01",
+    lastUpdated: "2026-09-01"
   },
   {
     title: "NBA \"What-If\" Analyzer and Play Editor",
@@ -1377,11 +1398,11 @@ export const memberProfiles: MemberProfile[] = [
     "assignments": [
       {
         "slug": "niranjan-bhagwat",
-        "role": "Tennis Analyst",
-        "group": "member",
-        "team": "Tennis",
-        "bio": "Tennis analytics researcher and contributor.",
-        "sortOrder": 402
+        "role": "Tennis Vice President",
+        "group": "board",
+        "team": "tennis",
+        "bio": "Supports tennis analytics leadership, project coordination, and team operations.",
+        "sortOrder": 7
       }
     ]
   },
@@ -1395,11 +1416,11 @@ export const memberProfiles: MemberProfile[] = [
     "assignments": [
       {
         "slug": "emma-li",
-        "role": "Tennis Analyst",
-        "group": "member",
-        "team": "Tennis",
-        "bio": "Tennis analytics researcher and contributor.",
-        "sortOrder": 403
+        "role": "Tennis Vice President",
+        "group": "board",
+        "team": "tennis",
+        "bio": "Supports tennis analytics leadership, project coordination, and team operations.",
+        "sortOrder": 8
       }
     ]
   },
@@ -1478,6 +1499,7 @@ export const alumni: AlumniProfile[] = [
   { name: "Jaden Nguyen", linkedinUrl: "https://www.linkedin.com/in/jaden-nguyen/" },
   { name: "Ian Geertsen", linkedinUrl: "https://www.linkedin.com/in/ian-geertsen/" },
   { name: "Franklin Liang" },
+  { name: "Frederick Zhang", linkedinUrl: "https://www.linkedin.com/in/frederickmzhang/" },
   { name: "Allen Chun", linkedinUrl: "https://www.linkedin.com/in/allenchun/" },
   { name: "Joshua Gunawan", linkedinUrl: "https://www.linkedin.com/in/joshsgun/" },
   { name: "Akshat Srivastav", linkedinUrl: "https://www.linkedin.com/in/akshatsrivastav2911/" },
@@ -1709,6 +1731,7 @@ export const outcomes = [
   // Technology
   { name: "Google", category: "Technology", logo: "/assets/logos/google.svg", logoLight: "/assets/logos/modes/google-light.svg", logoDark: "/assets/logos/modes/google-dark.svg", approvedForDisplay: true, prestige: true },
   { name: "Google DeepMind", category: "AI", logo: "/assets/logos/google-deepmind.png", approvedForDisplay: true, prestige: true },
+  { name: "Databricks", category: "Technology", logo: "/assets/logos/databricks.png", logoScale: 1.05, approvedForDisplay: true, prestige: true },
   { name: "Meta", category: "Technology", logo: "/assets/logos/meta.svg", logoLight: "/assets/logos/modes/meta-light.svg", logoDark: "/assets/logos/modes/meta-dark.svg", logoScale: 1.05, approvedForDisplay: true, prestige: true },
   { name: "Amazon", category: "Technology", logo: "/assets/logos/amazon.svg", logoLight: "/assets/logos/modes/amazon-light.svg", logoDark: "/assets/logos/modes/amazon-dark.svg", approvedForDisplay: true, prestige: true },
   { name: "Oracle", category: "Technology", logo: "/assets/logos/oracle.svg", logoLight: "/assets/logos/modes/oracle-light.svg", logoDark: "/assets/logos/modes/oracle-dark.svg", approvedForDisplay: true, prestige: true },

@@ -137,7 +137,6 @@ export function SportHomePage({ slug }: { slug: TeamSportSlug }) {
               {sport.subdivisions.map((name) => (
                 <article className={styles.roleCard} key={name}>
                   <h3>{name}</h3>
-                  <p>Projects, dashboards, lead contacts, and archived work for this tennis subteam.</p>
                 </article>
               ))}
             </div>
