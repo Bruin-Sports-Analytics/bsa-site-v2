@@ -34,6 +34,16 @@
   max-width: 234px;
 }
 
+.chairGridTennis {
+  width: 540px;
+  gap: 14px;
+}
+
+.chairGridTennis > * {
+  flex: 0 0 calc((100% - 28px) / 3);
+  max-width: calc((100% - 28px) / 3);
+}
+
 .teamSection {
   text-align: center;
 }
@@ -60,6 +70,15 @@
   }
 
   .chairGrid > * {
+    flex: 0 0 calc(50% - 9px);
+    max-width: calc(50% - 9px);
+  }
+
+  .chairGridTennis {
+    gap: 18px;
+  }
+
+  .chairGridTennis > * {
     flex: 0 0 calc(50% - 9px);
     max-width: calc(50% - 9px);
   }

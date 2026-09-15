@@ -65,7 +65,15 @@ export function SportHomePage({ slug }: { slug: TeamSportSlug }) {
           </div>
 
           {chairs.length > 0 && (
-            <div className={chairs.length === 1 ? `${heroStyles.chairGrid} ${heroStyles.chairGridCentered}` : heroStyles.chairGrid}>
+            <div
+              className={
+                chairs.length === 1
+                  ? `${heroStyles.chairGrid} ${heroStyles.chairGridCentered}`
+                  : slug === "tennis"
+                    ? `${heroStyles.chairGrid} ${heroStyles.chairGridTennis}`
+                    : heroStyles.chairGrid
+              }
+            >
               {chairs.map((chair) => <MemberCard member={chair} key={chair.slug} />)}
             </div>
           )}
