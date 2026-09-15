@@ -20,8 +20,16 @@ function bySortOrder(a: Member, b: Member) {
   return a.sortOrder - b.sortOrder;
 }
 
+function byDisplayDateDesc(a: Project, b: Project) {
+  const aDate = Date.parse(a.repoFirstCommitAt ?? a.lastUpdated);
+  const bDate = Date.parse(b.repoFirstCommitAt ?? b.lastUpdated);
+  return bDate - aDate;
+}
+
 export function getSportOverview(sport: Sport): SportOverview {
-  const sportProjects = projects.filter((project) => project.sport === sport.slug && project.visibility !== "hidden");
+  const sportProjects = projects
+    .filter((project) => project.sport === sport.slug && project.visibility !== "hidden")
+    .sort(byDisplayDateDesc);
   const activeProjects = sportProjects.filter(isActiveProject);
   const archivedProjects = sportProjects.filter((project) => !isActiveProject(project));
   const featuredProject = activeProjects.find((project) => project.featured) ?? activeProjects[0] ?? archivedProjects.find((project) => project.featured) ?? archivedProjects[0];
@@ -56,4 +64,3 @@ export function getTeamSportOverviews() {
     .filter((sport): sport is Sport & { slug: TeamSportSlug } => teamSportSlugs.includes(sport.slug as TeamSportSlug))
     .map(getSportOverview);
 }
-
