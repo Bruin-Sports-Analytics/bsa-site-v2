@@ -629,7 +629,7 @@ export const projects: Project[] = [
     result: "Produced comprehensive financial breakdown reports illustrating wage distribution disparities across NFL positions and draft rounds.",
     members: [],
     techStack: ["JavaScript", "Quarto", "R", "Data Visualization"],
-    links: { github: "https://github.com/Bruin-Sports-Analytics/nflpa_24" },
+    links: { paper: "https://hfpruaivskrkweobtvcf.supabase.co/storage/v1/object/public/project_papers/nflpa-final.pdf", github: "https://github.com/Bruin-Sports-Analytics/nflpa_24" },
     visibility: "public",
     featured: false,
     repoFirstCommitAt: "2024-10-09",
