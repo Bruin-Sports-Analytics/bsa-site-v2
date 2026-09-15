@@ -1731,7 +1731,7 @@ export const outcomes = [
   // Technology
   { name: "Google", category: "Technology", logo: "/assets/logos/google.svg", logoLight: "/assets/logos/modes/google-light.svg", logoDark: "/assets/logos/modes/google-dark.svg", approvedForDisplay: true, prestige: true },
   { name: "Google DeepMind", category: "AI", logo: "/assets/logos/google-deepmind.png", approvedForDisplay: true, prestige: true },
-  { name: "Databricks", category: "Technology", logo: "/assets/logos/databricks.png", logoScale: 1.05, approvedForDisplay: true, prestige: true },
+  { name: "Databricks", category: "Technology", logo: "/assets/logos/databricks-horizontal.png", logoScale: 1.08, approvedForDisplay: true, prestige: true },
   { name: "Meta", category: "Technology", logo: "/assets/logos/meta.svg", logoLight: "/assets/logos/modes/meta-light.svg", logoDark: "/assets/logos/modes/meta-dark.svg", logoScale: 1.05, approvedForDisplay: true, prestige: true },
   { name: "Amazon", category: "Technology", logo: "/assets/logos/amazon.svg", logoLight: "/assets/logos/modes/amazon-light.svg", logoDark: "/assets/logos/modes/amazon-dark.svg", approvedForDisplay: true, prestige: true },
   { name: "Oracle", category: "Technology", logo: "/assets/logos/oracle.svg", logoLight: "/assets/logos/modes/oracle-light.svg", logoDark: "/assets/logos/modes/oracle-dark.svg", approvedForDisplay: true, prestige: true },
