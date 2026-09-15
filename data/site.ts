@@ -538,6 +538,7 @@ export const projects: Project[] = [
     links: { github: "https://github.com/Bruin-Sports-Analytics/UCLA-WBB-RAG-Development-Spring-2025" },
     visibility: "public",
     featured: false,
+    hasThumbnail: true,
     repoFirstCommitAt: "2025-06-13",
     lastUpdated: "2025-05-15"
   },
@@ -546,7 +547,7 @@ export const projects: Project[] = [
     slug: "forecasting-nba-player-fantasy-points",
     sport: "basketball",
     projectType: "Research",
-    status: "Active",
+    status: "Archived",
     academicYear: "2025-26",
     summary: "A predictive modeling framework for forecasting season-average NBA player statistics using gradient boosting, allowing fantasy projections under any custom scoring system.",
     problem: "Commercial fantasy sports products forecast per-game statistics, which are highly volatile and prone to noise, making long-term roster construction and trade evaluation unreliable.",
@@ -554,11 +555,12 @@ export const projects: Project[] = [
     result: "Showed significant reduction in prediction error compared to per-game forecasting baselines, serving both fantasy projections and front-office trade/draft evaluation.",
     members: [],
     techStack: ["Python", "Jupyter Notebook", "Gradient Boosting", "pandas", "scikit-learn"],
-    links: { github: "https://github.com/Bruin-Sports-Analytics/NBA-Fantasy-Points-Research-Fall-2025" },
+    links: { paper: "https://hfpruaivskrkweobtvcf.supabase.co/storage/v1/object/public/project_papers/modeling-techniques-to-forecast-nba-player-fantasy-points.pdf", github: "https://github.com/Bruin-Sports-Analytics/NBA-Fantasy-Points-Research-Fall-2025" },
     visibility: "public",
     featured: false,
-    repoFirstCommitAt: "2025-01-14",
-    lastUpdated: "2025-11-15"
+    hasThumbnail: true,
+    repoFirstCommitAt: "2025-10-14",
+    lastUpdated: "2025-10-14"
   },
   {
     title: "UCLA Tennis Match Viewing Dashboard",
@@ -580,7 +582,7 @@ export const projects: Project[] = [
     lastUpdated: "2026-09-15"
   },
   {
-    title: "NBA Win Probability & What-If Analyzer",
+    title: "NBA \"What-If\" Analyzer and Play Editor",
     slug: "nba-win-probability-what-if-analyzer",
     sport: "basketball",
     projectType: "Tool",
@@ -615,6 +617,7 @@ export const projects: Project[] = [
     links: { github: "https://github.com/Bruin-Sports-Analytics/BSA-Quantitative-Defensive-Selections-Research-2025" },
     visibility: "public",
     featured: false,
+    hasThumbnail: true,
     repoFirstCommitAt: "2025-04-03",
     lastUpdated: "2025-05-30"
   },
