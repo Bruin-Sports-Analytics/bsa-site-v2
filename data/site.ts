@@ -283,8 +283,8 @@ export const projects: Project[] = [
     slug: "wr-blocking-effectiveness-framework",
     sport: "football",
     projectType: "Research",
-    status: "Active",
-    academicYear: "2025-26",
+    status: "Archived",
+    academicYear: "2024-25",
     summary: "A tracking-data framework for evaluating wide receiver and skill-player downfield blocking, combining defender angles, speed, ball geometry, and blocker-defender movement into a Blocking Effectiveness Score.",
     problem: "Wide receiver blocking is one of the least-measured skills in football — traditional charting is subjective and inconsistent across evaluators.",
     approach: "The team derives a blocking effectiveness metric from player tracking data, capturing separation held, displacement created, and time-to-contact for skill players on downfield blocks.",
@@ -294,7 +294,7 @@ export const projects: Project[] = [
     links: { paper: "https://hfpruaivskrkweobtvcf.supabase.co/storage/v1/object/public/project_papers/wr-blocking-effectiveness-framework.pdf" },
     visibility: "public",
     featured: false,
-    lastUpdated: "2026-01-03"
+    lastUpdated: "2025-05-15"
   },
   {
     title: "Spicing up Spikeball",
