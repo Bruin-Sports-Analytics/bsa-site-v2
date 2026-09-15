@@ -634,6 +634,7 @@ export const projects: Project[] = [
     links: { github: "https://github.com/Bruin-Sports-Analytics/NBA-Parley-Maker-Game-State-Model-Spring-2026" },
     visibility: "public",
     featured: false,
+    hasThumbnail: true,
     repoFirstCommitAt: "2026-04-22",
     lastUpdated: "2026-05-15"
   },
