@@ -204,6 +204,26 @@ export const sports: Sport[] = [
 
 export const projects: Project[] = [
   {
+    title: "Volleymetrics Spring 2026",
+    slug: "volleymetrics-spring-2026",
+    sport: "volleyball",
+    projectType: "Tool",
+    status: "Active",
+    academicYear: "2025-26",
+    summary: "An advanced volleyball analytics pipeline and R Shiny dashboard built with UCLA Athletics, turning DataVolley scouting files into custom reception, offense, serving, blocking, and clutch-performance metrics.",
+    problem: "UCLA Volleyball needed a reusable way to turn raw DataVolley scouting files into coaching-ready metrics across serve receive, attack quality, serve pressure, blocking influence, and late-set performance.",
+    approach: "The team built an R pipeline that batch-loads DataVolley files with datavolley, combines roughly 100 matches into a season-long play-by-play table, derives custom metrics like SPI, SEI, OSS, BIS, passer rating, and clutch leaderboards, and surfaces results in a multi-tab Shiny dashboard.",
+    result: "The dashboard gives analysts and coaches sortable leaderboards, team reports, and ggplot2 visualizations for serve zones, serve types, blocking trends, setter-hitter efficiency, and pressure-situation performance.",
+    members: [],
+    techStack: ["R", "Shiny", "datavolley", "tidyverse", "ggplot2"],
+    links: { github: "https://github.com/Bruin-Sports-Analytics/Volleymetrics-Spring-2026" },
+    hasThumbnail: true,
+    visibility: "public",
+    featured: true,
+    repoFirstCommitAt: "2026-09-07",
+    lastUpdated: "2026-09-07"
+  },
+  {
     title: "Machine Learning Based Playstyle Classification for NCAA Tennis Players",
     slug: "ml-playstyle-classification-tennis",
     sport: "tennis",
