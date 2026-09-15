@@ -349,6 +349,7 @@ export const projects: Project[] = [
     members: [],
     techStack: ["R", "Shiny", "Google BigQuery", "ggplot2", "Plotly", "DT"],
     links: { github: "https://github.com/Bruin-Sports-Analytics/2026-TrackMan-pitch-plotter" },
+    hasThumbnail: true,
     visibility: "public",
     featured: true,
     repoFirstCommitAt: "2026-08-29",
