@@ -682,7 +682,7 @@ export const projects: Project[] = [
     lastUpdated: "2024-10-09"
   },
   {
-    title: "BSA Fall 2024 Basketball Research Pipeline",
+    title: "Predicting basketball shot probability based on player behavior and situational factors",
     slug: "bsa-fall-2024-basketball-research",
     sport: "basketball",
     projectType: "Research",
@@ -697,6 +697,7 @@ export const projects: Project[] = [
     links: { github: "https://github.com/Bruin-Sports-Analytics/BSA-Basketball-Research-Fall-2024" },
     visibility: "public",
     featured: false,
+    hasThumbnail: true,
     repoFirstCommitAt: "2024-10-22",
     lastUpdated: "2024-11-15"
   }
