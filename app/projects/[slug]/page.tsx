@@ -83,7 +83,7 @@ export default function ProjectDetailPage({ params }: Props) {
           <span className="eyebrow">{sportName(project.sport)} · {project.projectType}</span>
           <h1 className={styles.title}>{project.title}</h1>
           <div className="tag-row" style={{ marginTop: 10 }}>
-            <span className="tag">{projectLifecycleStatus(project)}</span>
+            {projectLifecycleStatus(project) === "Active" ? <span className="tag">Active</span> : null}
             <span className="tag">{project.academicYear}</span>
             <span className="tag">Updated {formatDate(project.lastUpdated)}</span>
             {redacted ? <span className="tag"><LockKeyhole size={14} aria-hidden /> Redacted</span> : null}

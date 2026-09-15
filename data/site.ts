@@ -599,8 +599,8 @@ export const projects: Project[] = [
     visibility: "public",
     featured: false,
     hasThumbnail: true,
-    repoFirstCommitAt: "2026-09-01",
-    lastUpdated: "2026-09-01"
+    repoFirstCommitAt: "2024-08-21",
+    lastUpdated: "2024-08-21"
   },
   {
     title: "NBA \"What-If\" Analyzer and Play Editor",
