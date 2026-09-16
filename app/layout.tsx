@@ -42,7 +42,7 @@ export const metadata: Metadata = {
     default: "Bruin Sports Analytics",
     template: "%s | Bruin Sports Analytics"
   },
-  description: "UCLA's premier student-run sports analytics organization. We provide data science consulting for sports teams and recruit top UCLA students for analytics, software engineering, and journalism.",
+  description: "The premier student-run sports analytics organization at UCLA. We provide data science consulting for sports teams and recruit students for analytics, software engineering, and journalism.",
   keywords: [
     "Bruin Sports Analytics",
     "UCLA sports analytics",
@@ -85,7 +85,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "Bruin Sports Analytics | UCLA Sports Analytics & Consulting",
-    description: "UCLA's premier student-run sports analytics organization. Sports consulting partnerships for teams and student recruitment for data analysts.",
+    description: "The premier student-run sports analytics organization at UCLA. Sports consulting partnerships for teams and student recruitment for data analysts.",
     url: "https://www.bruinsportsanalytics.org",
     siteName: "Bruin Sports Analytics",
     locale: "en_US",
@@ -102,7 +102,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Bruin Sports Analytics | UCLA Sports Analytics & Consulting",
-    description: "UCLA's premier student-run sports analytics organization — sports consulting partnerships & student recruitment.",
+    description: "The premier student-run sports analytics organization at UCLA — sports consulting partnerships and student recruitment.",
     images: ["https://www.bruinsportsanalytics.org/assets/bsa_logo_high_res.jpeg"]
   }
 };

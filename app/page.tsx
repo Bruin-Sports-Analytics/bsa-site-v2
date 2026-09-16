@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   title: {
     absolute: "Bruin Sports Analytics"
   },
-  description: "Bruin Sports Analytics is UCLA's leading sports data organization. We partner with athletic departments and teams for sports analytics consulting and recruit students for data science, software, and journalism.",
+  description: "Bruin Sports Analytics is the leading student-run sports data organization at UCLA. We build models, tools, dashboards, and publications across tennis, football, basketball, baseball, and volleyball.",
   keywords: [
     "Bruin Sports Analytics",
     "UCLA sports analytics",
