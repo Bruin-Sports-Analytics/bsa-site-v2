@@ -54,7 +54,7 @@ export function SportHomePage({ slug }: { slug: TeamSportSlug }) {
           <div className={heroStyles.heroText}>
             <span className="eyebrow">{slug === "tennis" ? "Bruin tennis consulting" : `${sport.name} analytics`}</span>
             <h1>{sport.name}</h1>
-            <p>{sport.description}</p>
+            {sport.slug !== "volleyball" ? <p>{sport.description}</p> : null}
             {sport.slug === "volleyball" ? (
               <p>For two years, BSA has partnered with UCLA men&apos;s and women&apos;s volleyball on work that supports coaching decisions with clearer, faster information.</p>
             ) : null}

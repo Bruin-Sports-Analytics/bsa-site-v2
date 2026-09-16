@@ -34,15 +34,12 @@ export function ProjectExplorer({ compact = false }: { compact?: boolean }) {
           if (featuredSort !== 0) return featuredSort;
         }
 
-        const dateSort = Date.parse(b.lastUpdated) - Date.parse(a.lastUpdated);
+        const dateSort = Date.parse(b.repoFirstCommitAt ?? b.lastUpdated) - Date.parse(a.repoFirstCommitAt ?? a.lastUpdated);
         return sort === "oldest" ? -dateSort : dateSort;
       });
   }, [query, sport, status, type, showArchived, sort]);
 
   const numCols = compact ? 2 : 4;
-  const columns = Array.from({ length: numCols }, (_, i) =>
-    filtered.filter((_, j) => j % numCols === i)
-  );
   const imageSizes = compact
     ? "(max-width: 600px) calc(100vw - 40px), (max-width: 1050px) calc((100vw - 54px) / 2), 560px"
     : "(max-width: 600px) calc(100vw - 40px), (max-width: 1050px) calc((100vw - 54px) / 2), (max-width: 1280px) calc((100vw - 96px) / 4), 280px";
@@ -84,12 +81,8 @@ export function ProjectExplorer({ compact = false }: { compact?: boolean }) {
         <p className={styles.empty}>No projects match those filters.</p>
       ) : (
         <div className={compact ? styles.compactGrid : styles.grid}>
-          {columns.map((col, i) => (
-            <div key={i} className={styles.column}>
-              {col.map((project, projectIndex) => (
-                <ProjectCard project={project} key={project.slug} priority={projectIndex === 0} imageSizes={imageSizes} />
-              ))}
-            </div>
+          {filtered.map((project, projectIndex) => (
+            <ProjectCard project={project} key={project.slug} priority={projectIndex < numCols} imageSizes={imageSizes} />
           ))}
         </div>
       )}

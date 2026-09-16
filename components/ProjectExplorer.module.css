@@ -49,13 +49,16 @@
 
 .grid,
 .compactGrid {
-  display: flex;
-  align-items: flex-start;
+  display: grid;
+  grid-template-columns: repeat(var(--project-cols, 4), minmax(0, 1fr));
   gap: 14px;
 }
 
+.compactGrid {
+  --project-cols: 2;
+}
+
 .column {
-  flex: 1;
   min-width: 0;
   display: flex;
   flex-direction: column;
@@ -85,17 +88,17 @@
   }
 
   .grid {
-    flex-wrap: wrap;
+    --project-cols: 2;
   }
 
-  .grid .column {
-    flex: 1 1 calc(50% - 7px);
+  .compactGrid {
+    --project-cols: 2;
   }
 }
 
 @media (max-width: 600px) {
-  .grid .column,
-  .compactGrid .column {
-    flex: 1 1 100%;
+  .grid,
+  .compactGrid {
+    --project-cols: 1;
   }
 }

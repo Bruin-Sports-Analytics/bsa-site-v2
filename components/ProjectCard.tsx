@@ -82,6 +82,7 @@ export function ProjectCard({ project, priority = false, imageSizes, active, onA
       tint="none"
       radius="lg"
       className={`${styles.card} ${expanded ? styles.expanded : ""}`}
+      data-project-card="true"
       {...handlers}
     >
       <ProjectVisual project={project} priority={priority} sizes={imageSizes} />
