@@ -97,6 +97,14 @@ export const boardBios: Record<string, BoardBio> = {
     interests: ["Golf", "Brawl Stars"],
     funFact: "I've climbed eight 14ers"
   },
+  "niranjan-bhagwat": {
+    hometown: "Castaic, CA",
+    joinDate: "Fall 2024",
+    bsaGroups: ["Tennis"],
+    favoriteTeams: ["Seattle Seahawks", "Los Angeles Dodgers", "Cleveland Cavaliers"],
+    interests: ["International Travel", "Sneaker Engineering", "Cooking"],
+    funFact: "I’ve been whitewater rafting down the Merced River!"
+  },
   "beck-zimmerman": {
     hometown: "Ojai, CA",
     joinDate: "Fall 2025",

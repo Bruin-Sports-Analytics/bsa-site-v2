@@ -34,6 +34,13 @@ const focusDescriptions: Record<TeamSportSlug, Record<string, string>> = {
   }
 };
 
+const tennisRoleDescriptions: Record<string, string> = {
+  "Data Engineering": "Computer-vision match metric collection",
+  Scouting: "Analyze opponent tendencies from historical match data",
+  Analytics: "Produce post-match performance reports for coaches",
+  "Web Development": "Unify reports + visuals into one client UI"
+};
+
 function projectAction(project: NonNullable<ReturnType<typeof getSportOverviewBySlug>>["featuredProject"]) {
   if (!project) return null;
   if (project.links.demo) return { href: project.links.demo, label: "Open tool", external: true };
@@ -145,6 +152,7 @@ export function SportHomePage({ slug }: { slug: TeamSportSlug }) {
               {sport.subdivisions.map((name) => (
                 <article className={styles.roleCard} key={name}>
                   <h3>{name}</h3>
+                  {slug === "tennis" ? <p>{tennisRoleDescriptions[name]}</p> : null}
                 </article>
               ))}
             </div>

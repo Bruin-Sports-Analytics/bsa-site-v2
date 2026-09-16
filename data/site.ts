@@ -149,7 +149,7 @@ export const sports: Sport[] = [
     featuredMetric: "4 subteams",
     lead: "Tennis Analytics Lead",
     accent: "#8BCBFF",
-    subdivisions: ["Data Engineering", "Analytics", "Web Dev", "Scouting"]
+    subdivisions: ["Data Engineering", "Analytics", "Web Development", "Scouting"]
   },
   {
     name: "Football",
