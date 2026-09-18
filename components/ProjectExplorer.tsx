@@ -1,13 +1,36 @@
 "use client";
 
 import { Search } from "lucide-react";
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { isActiveProject, projectLifecycleStatus, projects, sports, type WorkType } from "@/data/site";
 import { ProjectCard } from "@/components/ProjectCard";
 import styles from "./ProjectExplorer.module.css";
 
 const types: Array<WorkType | "All"> = ["All", "Consulting", "Research", "Journalism", "Dashboard", "Tool"];
 const statuses = ["Active", "Archived"] as const;
+
+function useProjectColumnCount(compact: boolean) {
+  const [columnCount, setColumnCount] = useState(compact ? 2 : 4);
+
+  useEffect(() => {
+    const mobile = window.matchMedia("(max-width: 600px)");
+    const tablet = window.matchMedia("(max-width: 1050px)");
+    const updateColumnCount = () => {
+      setColumnCount(mobile.matches ? 1 : compact || tablet.matches ? 2 : 4);
+    };
+
+    updateColumnCount();
+    mobile.addEventListener("change", updateColumnCount);
+    tablet.addEventListener("change", updateColumnCount);
+
+    return () => {
+      mobile.removeEventListener("change", updateColumnCount);
+      tablet.removeEventListener("change", updateColumnCount);
+    };
+  }, [compact]);
+
+  return columnCount;
+}
 
 export function ProjectExplorer({ compact = false }: { compact?: boolean }) {
   const [query, setQuery] = useState("");
@@ -39,7 +62,10 @@ export function ProjectExplorer({ compact = false }: { compact?: boolean }) {
       });
   }, [query, sport, status, type, showArchived, sort]);
 
-  const numCols = compact ? 2 : 4;
+  const numCols = useProjectColumnCount(compact);
+  const columns = Array.from({ length: numCols }, (_, columnIndex) =>
+    filtered.filter((_, projectIndex) => projectIndex % numCols === columnIndex)
+  );
   const imageSizes = compact
     ? "(max-width: 600px) calc(100vw - 40px), (max-width: 1050px) calc((100vw - 54px) / 2), 560px"
     : "(max-width: 600px) calc(100vw - 40px), (max-width: 1050px) calc((100vw - 54px) / 2), (max-width: 1280px) calc((100vw - 96px) / 4), 280px";
@@ -81,8 +107,12 @@ export function ProjectExplorer({ compact = false }: { compact?: boolean }) {
         <p className={styles.empty}>No projects match those filters.</p>
       ) : (
         <div className={compact ? styles.compactGrid : styles.grid}>
-          {filtered.map((project, projectIndex) => (
-            <ProjectCard project={project} key={project.slug} priority={projectIndex < numCols} imageSizes={imageSizes} />
+          {columns.map((column, columnIndex) => (
+            <div className={styles.column} key={columnIndex}>
+              {column.map((project, projectIndex) => (
+                <ProjectCard project={project} key={project.slug} priority={projectIndex === 0} imageSizes={imageSizes} />
+              ))}
+            </div>
           ))}
         </div>
       )}

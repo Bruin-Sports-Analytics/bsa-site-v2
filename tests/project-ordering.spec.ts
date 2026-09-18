@@ -21,10 +21,10 @@ test("projects are displayed chronologically by default", async ({ page }) => {
   );
 
   expect(visibleTitles).toEqual([
-    "NFL Gravity Metric",
-    "NFL OT 4th Down Decision Engine",
-    "QB Pocket Clutch Ratings",
-    "NBA Win Probability & What-If Analyzer"
+    "UCLA Tennis Match Viewing Dashboard",
+    "Volleymetrics Spring 2026",
+    "UCLA Baseball TrackMan Pitch Plotter & Analytics Suite",
+    "UCLA Baseball Pitcher Performance & Metrics Dashboard"
   ]);
 });
 
@@ -64,7 +64,7 @@ test("expanding one project only moves cards in the same column", async ({ page 
   const initialLowerSameColumnBox = await lowerSameColumnCard.boundingBox();
 
   await firstCard.hover();
-  await expect(firstCard.getByText("Python", { exact: true })).toBeVisible();
+  await expect(firstCard.locator(".tag").first()).toBeVisible();
 
   const expandedNeighborBox = await neighborCard.boundingBox();
   await expect.poll(async () => (await lowerSameColumnCard.boundingBox())?.y ?? 0).toBeGreaterThan(initialLowerSameColumnBox!.y + 20);
