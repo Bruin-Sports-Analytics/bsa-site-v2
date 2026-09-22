@@ -4,7 +4,8 @@ import { useEffect, useState } from "react";
 import { ResumeTemplatesButton } from "./ResumeTemplatesButton";
 import styles from "./Countdown.module.css";
 
-const TARGET = new Date("2026-09-23T00:00:00");
+// September in Los Angeles observes PDT (UTC−07:00).
+const TARGET = new Date("2026-09-23T08:00:00-07:00");
 
 function getTimeLeft() {
   const diff = TARGET.getTime() - Date.now();
