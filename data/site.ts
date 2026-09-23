@@ -109,6 +109,9 @@ export type Event = {
   type: "workshop" | "speaker" | "recruitment" | "meeting" | "social" | "conference";
   date: string;
   time: string;
+  /** ISO 8601 timestamps in Los Angeles time, used to hide events after they finish. */
+  startsAt: string;
+  endsAt: string;
   dateLabel?: string;
   location: string;
   isMembersOnly: boolean;
@@ -1564,6 +1567,8 @@ export const events: Event[] = [
     type: "recruitment",
     date: "Sep 22, 2026",
     time: "11:00 AM – 3:00 PM",
+    startsAt: "2026-09-22T11:00:00-07:00",
+    endsAt: "2026-09-22T15:00:00-07:00",
     location: "Royce Quad, UCLA",
     isMembersOnly: false,
     rsvpUrl: mailingListUrl,
@@ -1575,6 +1580,8 @@ export const events: Event[] = [
     type: "recruitment",
     date: "Sep 28, 2026",
     time: "TBD",
+    startsAt: "2026-09-28T00:00:00-07:00",
+    endsAt: "2026-09-28T23:59:59-07:00",
     dateLabel: "Tentative",
     location: "Online via Zoom",
     isMembersOnly: false,
@@ -1587,6 +1594,8 @@ export const events: Event[] = [
     type: "recruitment",
     date: "Oct 1, 2026",
     time: "TBD",
+    startsAt: "2026-10-01T00:00:00-07:00",
+    endsAt: "2026-10-01T23:59:59-07:00",
     dateLabel: "Tentative",
     location: "TBD",
     isMembersOnly: false,
@@ -1599,6 +1608,8 @@ export const events: Event[] = [
     type: "workshop",
     date: "Oct 5, 2026",
     time: "TBD",
+    startsAt: "2026-10-05T00:00:00-07:00",
+    endsAt: "2026-10-05T23:59:59-07:00",
     dateLabel: "Tentative",
     location: "TBD",
     isMembersOnly: false,
@@ -1628,14 +1639,14 @@ export const recruitment = {
   roles: ["Sport analysts", "Data engineers", "Writers", "Designers", "Dashboard builders"],
   teamsRecruiting: ["Baseball", "Volleyball", "Basketball", "Football", "Tennis"],
   timelineEvents: [
-    { date: "Sep 22", title: "EAF", detail: "Enormous Activities Fair - Meet the club and learn about our projects.", status: "Awareness", location: "Royce Quad, UCLA" },
-    { date: "Sep 23", title: "Applications Released", detail: "Application form goes live. Check our Slack, Instagram, and email for updates.", status: "Application" },
-    { date: "Sep 28", title: "Data Science Showcase", detail: "Tentative date. Learn more about UCLA's data science organizations.", status: "Awareness", location: "Online via Zoom" },
-    { date: "Oct 1", title: "BSA Info Session", detail: "What research, consulting, and competitions actually look like day to day, plus open Q&A.", status: "Application", location: "TBD" },
-    { date: "Oct 3", title: "Applications Due", detail: "Applications close; coffee chat invites are sent out after reviewing submissions.", status: "Application" },
-    { date: "Oct 5", title: "Exploratory Data Analysis Workshop", detail: "Learn about the latest tools and techniques in data analysis.", status: "Application", location: "TBD" },
-    { date: "Oct 6", title: "Coffee Chats", detail: "Invite only. Get to know current members and learn more about member experiences.", status: "Selection", location: "TBD" },
-    { date: "Oct 8-9", title: "Final Round Interviews", detail: "Invite only. In-person interviews where possible with chairs and returning members.", status: "Selection", location: "TBD" }
+    { date: "Sep 22", title: "EAF", detail: "Enormous Activities Fair - Meet the club and learn about our projects.", status: "Awareness", location: "Royce Quad, UCLA", endsAt: "2026-09-22T15:00:00-07:00" },
+    { date: "Sep 23", title: "Applications Released", detail: "Application form goes live. Check our Slack, Instagram, and email for updates.", status: "Application", endsAt: "2026-09-23T08:00:00-07:00" },
+    { date: "Sep 28", title: "Data Science Showcase", detail: "Tentative date. Learn more about UCLA's data science organizations.", status: "Awareness", location: "Online via Zoom", endsAt: "2026-09-28T23:59:59-07:00" },
+    { date: "Oct 1", title: "BSA Info Session", detail: "What research, consulting, and competitions actually look like day to day, plus open Q&A.", status: "Application", location: "TBD", endsAt: "2026-10-01T23:59:59-07:00" },
+    { date: "Oct 3", title: "Applications Due", detail: "Applications close; coffee chat invites are sent out after reviewing submissions.", status: "Application", endsAt: "2026-10-03T23:59:59-07:00" },
+    { date: "Oct 5", title: "Exploratory Data Analysis Workshop", detail: "Learn about the latest tools and techniques in data analysis.", status: "Application", location: "TBD", endsAt: "2026-10-05T23:59:59-07:00" },
+    { date: "Oct 6", title: "Coffee Chats", detail: "Invite only. Get to know current members and learn more about member experiences.", status: "Selection", location: "TBD", endsAt: "2026-10-06T23:59:59-07:00" },
+    { date: "Oct 8-9", title: "Final Round Interviews", detail: "Invite only. In-person interviews where possible with chairs and returning members.", status: "Selection", location: "TBD", endsAt: "2026-10-09T23:59:59-07:00" }
   ]
 };
 

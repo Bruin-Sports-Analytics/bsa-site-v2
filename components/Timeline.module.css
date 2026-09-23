@@ -81,6 +81,19 @@
   font-size: 13px;
 }
 
+.completed {
+  color: var(--text-secondary);
+  opacity: 0.48;
+  filter: grayscale(1);
+}
+
+.completed span,
+.completed b {
+  color: inherit !important;
+  text-decoration: line-through;
+  text-decoration-thickness: 1px;
+}
+
 .active {
   border-color: var(--ucla-gold);
   outline: 2px solid var(--ucla-gold);

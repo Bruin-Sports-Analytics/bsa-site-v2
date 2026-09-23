@@ -2,11 +2,12 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, CalendarDays } from "lucide-react";
-import { EventCard } from "@/components/EventCard";
 import { LogoCategories } from "@/components/LogoCategories";
 import { ProjectCardGroup } from "@/components/ProjectCardGroup";
 import { ScrollCountStats } from "@/components/ScrollCountStats";
+import { UpcomingEventCards } from "@/components/UpcomingEventCards";
 import { events, impactStats, outcomes, sports } from "@/data/site";
+import { upcomingEvents } from "@/lib/event-status";
 import { currentlyFeatured, publicProjects } from "@/lib/utils";
 import styles from "./page.module.css";
 
@@ -29,13 +30,15 @@ export const metadata: Metadata = {
   ]
 };
 
+export const dynamic = "force-dynamic";
+
 export default function Home() {
   const featuredProjects = currentlyFeatured();
   const featured = (featuredProjects.length > 0
     ? featuredProjects
     : [...publicProjects()].sort((a, b) => Date.parse(b.lastUpdated) - Date.parse(a.lastUpdated))
   ).slice(0, 3);
-  const publicEvents = events.filter((event) => !event.isMembersOnly).slice(0, 2);
+  const publicEvents = upcomingEvents(events.filter((event) => !event.isMembersOnly));
   const displayedOutcomes = outcomes.filter((outcome) => outcome.approvedForDisplay);
   const marqueeMidpoint = Math.ceil(displayedOutcomes.length / 2);
   const marqueeRows = [displayedOutcomes.slice(0, marqueeMidpoint), displayedOutcomes.slice(marqueeMidpoint)];
@@ -133,11 +136,7 @@ export default function Home() {
             </div>
             <Link className="btn btn-secondary" href="/events"><CalendarDays size={18} aria-hidden /> View all</Link>
           </div>
-          <div className="grid three">
-            {publicEvents.map((event, index) => (
-              <EventCard event={event} key={event.slug} isSoonest={index === 0} />
-            ))}
-          </div>
+          <UpcomingEventCards events={publicEvents} limit={2} />
         </div>
       </section>
 

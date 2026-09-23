@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
-import { EventCard } from "@/components/EventCard";
+import { UpcomingEventCards } from "@/components/UpcomingEventCards";
 import { events } from "@/data/site";
+import { upcomingEvents } from "@/lib/event-status";
 
 export const metadata: Metadata = {
   title: "Events",
@@ -21,8 +22,10 @@ export const metadata: Metadata = {
   }
 };
 
+export const dynamic = "force-dynamic";
+
 export default function EventsPage() {
-  const publicEvents = events.filter((event) => !event.isMembersOnly);
+  const publicEvents = upcomingEvents(events.filter((event) => !event.isMembersOnly));
 
   const eventsJsonLd = {
     "@context": "https://schema.org",
@@ -34,7 +37,8 @@ export default function EventsPage() {
         "@type": "Event",
         "name": event.title,
         "description": event.description,
-        "startDate": event.date,
+        "startDate": event.startsAt,
+        "endDate": event.endsAt,
         "location": {
           "@type": "Place",
           "name": event.location,
@@ -68,11 +72,10 @@ export default function EventsPage() {
       </section>
       <section className="section">
         <div className="container">
-          <div className="grid three">
-            {publicEvents.map((event, index) => (
-              <EventCard event={event} key={event.slug} isSoonest={index === 0} />
-            ))}
-          </div>
+          <UpcomingEventCards
+            events={publicEvents}
+            emptyMessage="No upcoming public events are scheduled right now."
+          />
         </div>
       </section>
     </main>

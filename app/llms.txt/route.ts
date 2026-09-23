@@ -1,6 +1,9 @@
 import { projects, sports, events, recruitment, isActiveProject } from "@/data/site";
+import { upcomingEvents } from "@/lib/event-status";
 
 const BASE = "https://www.bruinsportsanalytics.org";
+
+export const dynamic = "force-dynamic";
 
 function sportLabel(slug: string) {
   return slug.charAt(0).toUpperCase() + slug.slice(1);
@@ -13,7 +16,7 @@ export async function GET() {
   const archivedProjects = projects.filter(
     (p) => p.visibility === "public" && !isActiveProject(p)
   );
-  const publicEvents = events.filter((e) => !e.isMembersOnly);
+  const publicEvents = upcomingEvents(events.filter((e) => !e.isMembersOnly));
 
   const lines: string[] = [
     // ── Title & blurb (required by llmstxt.org spec) ──────────────────

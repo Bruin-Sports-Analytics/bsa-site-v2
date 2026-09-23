@@ -1,7 +1,10 @@
 import { projects, sports, events, recruitment, isActiveProject } from "@/data/site";
 import { getJournalismArticles } from "@/lib/journalism";
+import { upcomingEvents } from "@/lib/event-status";
 
 const BASE = "https://www.bruinsportsanalytics.org";
+
+export const dynamic = "force-dynamic";
 
 function sportLabel(slug: string) {
   return slug.charAt(0).toUpperCase() + slug.slice(1);
@@ -11,7 +14,7 @@ export async function GET() {
   const publicProjects = projects.filter((p) => p.visibility === "public");
   const activeProjects = publicProjects.filter(isActiveProject);
   const archivedProjects = publicProjects.filter((p) => !isActiveProject(p));
-  const publicEvents = events.filter((e) => !e.isMembersOnly);
+  const publicEvents = upcomingEvents(events.filter((e) => !e.isMembersOnly));
   const articles = await getJournalismArticles();
 
   // Sample of recent journalism articles (most recent 60 by date desc)
