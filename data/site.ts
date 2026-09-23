@@ -1630,11 +1630,12 @@ export const events: Event[] = [
 
 export const recruitment = {
   name: "Fall 2026 Recruitment",
-  status: "UPCOMING" as RecruitmentStatus,
+  status: "OPEN" as RecruitmentStatus,
   openDate: "2026-09-23",
   closeDate: "2026-10-03",
+  closeAt: "2026-10-03T23:59:59-07:00",
   nextCycleLabel: "Fall 2026",
-  applicationUrl: "https://forms.gle/",
+  applicationUrl: "https://docs.google.com/forms/d/e/1FAIpQLSfVzlm3u_nYH--vqvxEH-_puv7_pRaGqtQ4if44tHD-tdUrYg/viewform",
   mailingListUrl,
   roles: ["Sport analysts", "Data engineers", "Writers", "Designers", "Dashboard builders"],
   teamsRecruiting: ["Baseball", "Volleyball", "Basketball", "Football", "Tennis"],

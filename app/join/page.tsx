@@ -32,6 +32,7 @@ export const metadata: Metadata = {
 
 export default function JoinPage() {
   const isMailingListCta = recruitment.status !== "OPEN";
+  const hasDeadlineCountdown = recruitment.status === "OPEN";
 
   const recruitmentJsonLd = {
     "@context": "https://schema.org",
@@ -75,25 +76,44 @@ export default function JoinPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(recruitmentJsonLd) }}
       />
       <section className="page-hero">
-        <div className={`container ${recruitment.status === "UPCOMING" ? styles.heroLayout : ""}`}>
-          <div className={recruitment.status === "UPCOMING" ? styles.heroContent : ""}>
+        <div className={`container ${hasDeadlineCountdown || recruitment.status === "UPCOMING" ? styles.heroLayout : ""}`}>
+          <div className={hasDeadlineCountdown || recruitment.status === "UPCOMING" ? styles.heroContent : ""}>
             <span className="eyebrow">{recruitment.name}</span>
             <h1>{stateCopy.title}</h1>
             <p>{stateCopy.text}</p>
             <div className="button-row">
-              <a
-                className="btn btn-primary"
-                href={recruitment.status === "OPEN" ? recruitment.applicationUrl : recruitment.mailingListUrl}
-                target={isMailingListCta ? "_blank" : undefined}
-                rel={isMailingListCta ? "noopener noreferrer" : undefined}
-                data-analytics="recruitment_apply_click"
-              >
-                {stateCopy.cta}
-              </a>
+              {hasDeadlineCountdown ? (
+                <a
+                  className="btn btn-primary"
+                  href={recruitment.mailingListUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  data-analytics="recruitment_interest_click"
+                >
+                  Get notified
+                </a>
+              ) : (
+                <a
+                  className="btn btn-primary"
+                  href={recruitment.status === "OPEN" ? recruitment.applicationUrl : recruitment.mailingListUrl}
+                  target={isMailingListCta ? "_blank" : undefined}
+                  rel={isMailingListCta ? "noopener noreferrer" : undefined}
+                  data-analytics="recruitment_apply_click"
+                >
+                  {stateCopy.cta}
+                </a>
+              )}
               <Link className="btn btn-secondary" href="/events">Public events</Link>
             </div>
           </div>
-          {recruitment.status === "UPCOMING" && <Countdown />}
+          {hasDeadlineCountdown && (
+            <Countdown
+              target={recruitment.closeAt}
+              label="Applications due in"
+              actionHref={recruitment.applicationUrl}
+              actionLabel="Apply now"
+            />
+          )}
         </div>
       </section>
       <section className="section">
