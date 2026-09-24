@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { ResumeTemplatesButton } from "./ResumeTemplatesButton";
 import styles from "./Countdown.module.css";
 
 type TimeLeft = {
@@ -68,6 +69,7 @@ export function Countdown({ target, label, actionHref, actionLabel }: Props) {
         <a className="btn btn-primary" href={actionHref} target="_blank" rel="noopener noreferrer" data-analytics="recruitment_countdown_apply_click">
           {actionLabel}
         </a>
+        <ResumeTemplatesButton />
       </div>
     </div>
   );
