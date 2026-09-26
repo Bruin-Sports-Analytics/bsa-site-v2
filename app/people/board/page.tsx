@@ -36,7 +36,11 @@ export default function BoardPage() {
       title: group.title,
       people: board
         .filter((member) => group.teams.includes(normalize(member.team)))
-        .sort((a, b) => a.sortOrder - b.sortOrder)
+        .sort((a, b) => {
+          const teamOrder = (team: string) => group.teams.indexOf(normalize(team));
+          const teamDifference = teamOrder(a.team) - teamOrder(b.team);
+          return teamDifference || a.sortOrder - b.sortOrder;
+        })
     }))
     .filter((section) => section.people.length > 0);
 
