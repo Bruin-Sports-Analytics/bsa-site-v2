@@ -1593,14 +1593,13 @@ export const events: Event[] = [
     slug: "bsa-info-session",
     type: "recruitment",
     date: "Oct 1, 2026",
-    time: "TBD",
-    startsAt: "2026-10-01T00:00:00-07:00",
-    endsAt: "2026-10-01T23:59:59-07:00",
-    dateLabel: "Tentative",
-    location: "TBD",
+    time: "6:00 PM – 7:00 PM",
+    startsAt: "2026-10-01T18:00:00-07:00",
+    endsAt: "2026-10-01T19:00:00-07:00",
+    location: "Bruin Reception Room @ Ackerman Union",
     isMembersOnly: false,
     rsvpUrl: mailingListUrl,
-    description: "What research, consulting, and competitions actually look like day to day, plus open Q&A."
+    description: "What research, consulting, and competitions actually look like day to day, plus open Q&A. Networking will follow the info session."
   },
   {
     title: "EDA Workshop",
@@ -1643,7 +1642,7 @@ export const recruitment = {
     { date: "Sep 22", title: "EAF", detail: "Enormous Activities Fair - Meet the club and learn about our projects.", status: "Awareness", location: "Royce Quad, UCLA", endsAt: "2026-09-22T15:00:00-07:00" },
     { date: "Sep 23", title: "Applications Released", detail: "Application form goes live. Check our Slack, Instagram, and email for updates.", status: "Application", endsAt: "2026-09-23T08:00:00-07:00" },
     { date: "Sep 28", title: "Data Science Showcase", detail: "Tentative date. Learn more about UCLA's data science organizations.", status: "Awareness", location: "Online via Zoom", endsAt: "2026-09-28T23:59:59-07:00" },
-    { date: "Oct 1", title: "BSA Info Session", detail: "What research, consulting, and competitions actually look like day to day, plus open Q&A.", status: "Application", location: "TBD", endsAt: "2026-10-01T23:59:59-07:00" },
+    { date: "Oct 1", title: "BSA Info Session", detail: "What research, consulting, and competitions actually look like day to day, plus open Q&A.", status: "Application", location: "Bruin Reception Room @ Ackerman Union", endsAt: "2026-10-01T19:00:00-07:00" },
     { date: "Oct 3", title: "Applications Due", detail: "Applications close; coffee chat invites are sent out after reviewing submissions.", status: "Application", endsAt: "2026-10-03T23:59:59-07:00" },
     { date: "Oct 5", title: "Exploratory Data Analysis Workshop", detail: "Learn about the latest tools and techniques in data analysis.", status: "Application", location: "TBD", endsAt: "2026-10-05T23:59:59-07:00" },
     { date: "Oct 6", title: "Coffee Chats", detail: "Invite only. Get to know current members and learn more about member experiences.", status: "Selection", location: "TBD", endsAt: "2026-10-06T23:59:59-07:00" },
