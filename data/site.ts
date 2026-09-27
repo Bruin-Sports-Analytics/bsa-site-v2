@@ -116,6 +116,7 @@ export type Event = {
   location: string;
   isMembersOnly: boolean;
   rsvpUrl?: string;
+  ctaLabel?: string;
   description: string;
   speaker?: string;
 };
@@ -1585,7 +1586,8 @@ export const events: Event[] = [
     dateLabel: "Tentative",
     location: "Online via Zoom",
     isMembersOnly: false,
-    rsvpUrl: mailingListUrl,
+    rsvpUrl: "https://docs.google.com/forms/d/e/1FAIpQLSduHhgcTSRsDLkxnAstBd8ODck2H3P_Ih5c7AI3ZUcuOpoibw/viewform",
+    ctaLabel: "RSVP",
     description: "Tentative date. Learn more about UCLA's data science organizations."
   },
   {

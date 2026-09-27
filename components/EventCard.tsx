@@ -39,7 +39,7 @@ export function EventCard({ event, isSoonest = false }: Props) {
           target={isExternalSignup ? "_blank" : undefined}
           rel={isExternalSignup ? "noopener noreferrer" : undefined}
         >
-          Sign up soon
+          {event.ctaLabel ?? "Sign up soon"}
         </a>
       )}
     </GlassSurface>
