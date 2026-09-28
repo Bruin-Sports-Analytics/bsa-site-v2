@@ -13,6 +13,7 @@ export const metadata: Metadata = {
   description: "Apply to join Bruin Sports Analytics at UCLA. Student recruitment for sports data analysts, software engineers, data journalists, and designers.",
   keywords: [
     "join Bruin Sports Analytics",
+    "BSA UCLA recruitment",
     "UCLA sports analytics recruitment",
     "UCLA sports analytics application",
     "UCLA data science clubs",

@@ -10,6 +10,7 @@ export const metadata: Metadata = {
   description: "About Bruin Sports Analytics (BSA) at UCLA — bridging collegiate athletics and data science. Learn about our mission, executive leadership, sports consulting, and alumni network.",
   keywords: [
     "about Bruin Sports Analytics",
+    "BSA UCLA",
     "UCLA sports analytics organization",
     "sports data science club UCLA",
     "sports analytics leadership",

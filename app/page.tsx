@@ -13,11 +13,12 @@ import styles from "./page.module.css";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Bruin Sports Analytics"
+    absolute: "BSA UCLA | Bruin Sports Analytics"
   },
-  description: "Bruin Sports Analytics is the leading student-run sports data organization at UCLA. We build models, tools, dashboards, and publications across tennis, football, basketball, baseball, and volleyball.",
+  description: "BSA UCLA (Bruin Sports Analytics) is a student-run sports data organization at UCLA building models, tools, dashboards, and publications across tennis, football, basketball, baseball, and volleyball.",
   keywords: [
     "Bruin Sports Analytics",
+    "BSA UCLA",
     "UCLA sports analytics",
     "sports analytics consulting",
     "UCLA club recruitment",

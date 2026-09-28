@@ -39,12 +39,13 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.bruinsportsanalytics.org"),
   title: {
-    default: "Bruin Sports Analytics",
+    default: "Bruin Sports Analytics (BSA UCLA)",
     template: "%s | Bruin Sports Analytics"
   },
-  description: "The premier student-run sports analytics organization at UCLA. We provide data science consulting for sports teams and recruit students for analytics, software engineering, and journalism.",
+  description: "BSA UCLA (Bruin Sports Analytics) is a student-run sports analytics organization at UCLA providing data science consulting, research, and student recruitment.",
   keywords: [
     "Bruin Sports Analytics",
+    "BSA UCLA",
     "UCLA sports analytics",
     "sports analytics consulting",
     "UCLA student recruitment",
@@ -84,8 +85,8 @@ export const metadata: Metadata = {
     canonical: "https://www.bruinsportsanalytics.org",
   },
   openGraph: {
-    title: "Bruin Sports Analytics | UCLA Sports Analytics & Consulting",
-    description: "The premier student-run sports analytics organization at UCLA. Sports consulting partnerships for teams and student recruitment for data analysts.",
+    title: "BSA UCLA | Bruin Sports Analytics",
+    description: "BSA UCLA provides sports analytics consulting, research, and hands-on data science opportunities for UCLA students.",
     url: "https://www.bruinsportsanalytics.org",
     siteName: "Bruin Sports Analytics",
     locale: "en_US",
@@ -101,8 +102,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Bruin Sports Analytics | UCLA Sports Analytics & Consulting",
-    description: "The premier student-run sports analytics organization at UCLA — sports consulting partnerships and student recruitment.",
+    title: "BSA UCLA | Bruin Sports Analytics",
+    description: "BSA UCLA — sports analytics consulting, research, and student recruitment at UCLA.",
     images: ["https://www.bruinsportsanalytics.org/assets/bsa_logo_high_res.jpeg"]
   }
 };
