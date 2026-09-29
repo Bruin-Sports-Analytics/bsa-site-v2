@@ -60,6 +60,8 @@ export function MemberCard({ member, priority = false }: { member: Member; prior
               sizes="(max-width: 600px) 100vw, 400px"
               className={styles.photoImg}
               style={member.photoTransform ? { transform: `${member.photoTransform} translateZ(0)` } : undefined}
+              // Headshots are local public assets; bypass the deployment's unavailable image optimizer.
+              unoptimized={member.photoUrl.startsWith("/")}
               decoding="async"
               onError={() => setImgError(true)}
               priority={priority}
