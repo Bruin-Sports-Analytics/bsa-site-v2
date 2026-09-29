@@ -16,6 +16,8 @@ type Props = {
   label: string;
   actionHref: string;
   actionLabel: string;
+  secondaryActionHref?: string;
+  secondaryActionLabel?: string;
 };
 
 function getTimeLeft(target: string): TimeLeft | null {
@@ -29,7 +31,14 @@ function getTimeLeft(target: string): TimeLeft | null {
   };
 }
 
-export function Countdown({ target, label, actionHref, actionLabel }: Props) {
+export function Countdown({
+  target,
+  label,
+  actionHref,
+  actionLabel,
+  secondaryActionHref,
+  secondaryActionLabel,
+}: Props) {
   const [timeLeft, setTimeLeft] = useState<TimeLeft | null>(null);
   const [mounted, setMounted] = useState(false);
 
@@ -66,9 +75,16 @@ export function Countdown({ target, label, actionHref, actionLabel }: Props) {
         ))}
       </div>
       <div className={styles.action}>
-        <a className="btn btn-primary" href={actionHref} target="_blank" rel="noopener noreferrer" data-analytics="recruitment_countdown_apply_click">
-          {actionLabel}
-        </a>
+        <div className={styles.applicationActions}>
+          <a className="btn btn-primary" href={actionHref} target="_blank" rel="noopener noreferrer" data-analytics="recruitment_countdown_apply_click">
+            {actionLabel}
+          </a>
+          {secondaryActionHref && secondaryActionLabel && (
+            <a className="btn btn-primary" href={secondaryActionHref} target="_blank" rel="noopener noreferrer" data-analytics="recruitment_countdown_data_journalism_click">
+              {secondaryActionLabel}
+            </a>
+          )}
+        </div>
         <ResumeTemplatesButton />
       </div>
     </div>

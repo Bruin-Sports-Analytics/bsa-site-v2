@@ -112,7 +112,9 @@ export default function JoinPage() {
               target={recruitment.closeAt}
               label="Applications due in"
               actionHref={recruitment.applicationUrl}
-              actionLabel="Apply now"
+              actionLabel="Apply to a sport group"
+              secondaryActionHref="https://docs.google.com/forms/d/e/1FAIpQLSdgfxbnwCnj3GVntgsMhTGYalqURz7UlgssUVHs0bQW6QtUHg/viewform"
+              secondaryActionLabel="Apply to Data Journalism"
             />
           )}
         </div>
