@@ -91,6 +91,8 @@ export function BoardBioModal({ member, isOpen, onClose }: Props) {
                 sizes="110px"
                 className={styles.avatarImg}
                 style={member.photoTransform ? { transform: member.photoTransform } : undefined}
+                // Headshots are local public assets; bypass the deployment's unavailable image optimizer.
+                unoptimized={member.photoUrl.startsWith("/")}
                 onError={() => setImgError(true)}
               />
             ) : (
