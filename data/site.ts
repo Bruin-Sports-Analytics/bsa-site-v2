@@ -1608,13 +1608,13 @@ export const events: Event[] = [
     slug: "eda-workshop",
     type: "workshop",
     date: "Oct 5, 2026",
-    time: "TBD",
-    startsAt: "2026-10-05T00:00:00-07:00",
+    time: "6:30 PM",
+    startsAt: "2026-10-05T18:30:00-07:00",
     endsAt: "2026-10-05T23:59:59-07:00",
-    dateLabel: "Tentative",
-    location: "TBD",
+    location: "Online via Zoom",
     isMembersOnly: false,
-    rsvpUrl: mailingListUrl,
+    rsvpUrl: "https://us05web.zoom.us/j/4518383000?pwd=ZDvQbHQiOjveAURM1uSOKnaqya1Ies.1&omn=89378409760",
+    ctaLabel: "Join on Zoom",
     description: "Learn about the latest tools and techniques in data analysis."
   },
   /* {
@@ -1646,7 +1646,7 @@ export const recruitment = {
     { date: "Sep 28", title: "Data Science Showcase", detail: "Tentative date. Learn more about UCLA's data science organizations.", status: "Awareness", location: "Online via Zoom", endsAt: "2026-09-28T23:59:59-07:00" },
     { date: "Oct 1", title: "BSA Info Session", detail: "What research, consulting, and competitions actually look like day to day, plus open Q&A.", status: "Application", location: "Bruin Reception Room @ Ackerman Union", endsAt: "2026-10-01T19:00:00-07:00" },
     { date: "Oct 4, 12:45 PM", title: "Applications Due", detail: "Applications close at 12:45 PM; coffee chat invites are sent out after reviewing submissions.", status: "Application", endsAt: "2026-10-04T12:45:00-07:00" },
-    { date: "Oct 5", title: "Exploratory Data Analysis Workshop", detail: "Learn about the latest tools and techniques in data analysis.", status: "Application", location: "TBD", endsAt: "2026-10-05T23:59:59-07:00" },
+    { date: "Oct 5, 6:30 PM", title: "Exploratory Data Analysis Workshop", detail: "Learn about the latest tools and techniques in data analysis.", status: "Application", location: "Online via Zoom", url: "https://us05web.zoom.us/j/4518383000?pwd=ZDvQbHQiOjveAURM1uSOKnaqya1Ies.1&omn=89378409760", ctaLabel: "Join on Zoom", endsAt: "2026-10-05T23:59:59-07:00" },
     { date: "Oct 6", title: "Coffee Chats", detail: "Invite only. Get to know current members and learn more about member experiences.", status: "Selection", location: "TBD", endsAt: "2026-10-06T23:59:59-07:00" },
     { date: "Oct 8-9", title: "Final Round Interviews", detail: "Invite only. In-person interviews where possible with chairs and returning members.", status: "Selection", location: "TBD", endsAt: "2026-10-09T23:59:59-07:00" }
   ]

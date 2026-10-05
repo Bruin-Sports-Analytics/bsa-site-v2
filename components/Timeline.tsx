@@ -11,6 +11,8 @@ type TimelineEvent = {
   detail: string;
   status: string;
   location?: string;
+  url?: string;
+  ctaLabel?: string;
   endsAt: string;
 };
 
@@ -93,10 +95,24 @@ export function Timeline({ events }: { events: TimelineEvent[] }) {
         <span className="eyebrow">{events[active].status}</span>
         <h3>{events[active].title}</h3>
         <p>{events[active].detail}</p>
-        {events[active].location && (
-          <p className={styles.location}>
-            <MapPin size={14} aria-hidden /> {events[active].location}
-          </p>
+        {(events[active].location || events[active].url) && (
+          <div className={styles.detailActions}>
+            {events[active].location && (
+              <p className={styles.location}>
+                <MapPin size={14} aria-hidden /> {events[active].location}
+              </p>
+            )}
+            {events[active].url && (
+              <a
+                className={`btn btn-secondary ${styles.action}`}
+                href={events[active].url}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {events[active].ctaLabel ?? "Learn more"}
+              </a>
+            )}
+          </div>
         )}
       </div>
     </div>
