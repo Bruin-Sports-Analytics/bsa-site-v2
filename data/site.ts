@@ -1005,18 +1005,18 @@ export const memberProfiles: MemberProfile[] = [
     "assignments": [
       {
         "slug": "beck-zimmerman",
-        "role": "Volleyball Chair",
+        "role": "Volleyball Co-Chair",
         "group": "board",
         "team": "volleyball",
-        "bio": "Leads volleyball analytics projects and oversees volleyball team operations.",
+        "bio": "Co-leads volleyball analytics projects and oversees volleyball team operations.",
         "sortOrder": 7
       },
       {
         "slug": "beck-zimmerman-member",
-        "role": "Volleyball Chair",
+        "role": "Volleyball Co-Chair",
         "group": "member",
         "team": "Volleyball",
-        "bio": "Leads volleyball analytics projects and oversees volleyball team operations.",
+        "bio": "Co-leads volleyball analytics projects and oversees volleyball team operations.",
         "sortOrder": 501
       }
     ]
@@ -1056,11 +1056,19 @@ export const memberProfiles: MemberProfile[] = [
     "isPublished": true,
     "assignments": [
       {
+        "slug": "anika-malapati",
+        "role": "Volleyball Co-Chair",
+        "group": "board",
+        "team": "volleyball",
+        "bio": "Co-leads volleyball analytics projects and oversees volleyball team operations.",
+        "sortOrder": 8
+      },
+      {
         "slug": "anika-malapati-volleyball",
-        "role": "Volleyball Analyst",
+        "role": "Volleyball Co-Chair",
         "group": "member",
         "team": "Volleyball",
-        "bio": "Volleyball analytics contributor.",
+        "bio": "Co-leads volleyball analytics projects and oversees volleyball team operations.",
         "sortOrder": 502
       }
     ]
