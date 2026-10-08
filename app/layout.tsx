@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { Montserrat, Lato, Roboto } from "next/font/google";
+import localFont from "next/font/local";
 import { Analytics } from "@vercel/analytics/react";
 import "./globals.css";
 import { Footer } from "@/components/Footer";
@@ -10,25 +10,27 @@ import { ScrollReveal } from "@/components/ScrollReveal";
 import { SocialSidebar } from "@/components/SocialSidebar";
 import { ErrorBoundary } from "@/components/ErrorBoundary";
 
-const montserrat = Montserrat({
-  weight: ["600", "700", "800"],
-  subsets: ["latin"],
+const montserrat = localFont({
+  src: "./fonts/montserrat-variable.woff2",
   variable: "--font-montserrat",
   display: "swap",
+  weight: "600 800",
 });
 
-const lato = Lato({
-  weight: ["400", "700"],
-  subsets: ["latin"],
+const lato = localFont({
+  src: [
+    { path: "./fonts/lato-regular.woff2", weight: "400", style: "normal" },
+    { path: "./fonts/lato-bold.woff2", weight: "700", style: "normal" },
+  ],
   variable: "--font-lato",
   display: "swap",
 });
 
-const roboto = Roboto({
-  weight: ["400", "500", "700"],
-  subsets: ["latin"],
+const roboto = localFont({
+  src: "./fonts/roboto-variable.woff2",
   variable: "--font-roboto",
   display: "swap",
+  weight: "400 700",
 });
 
 export const viewport: Viewport = {
