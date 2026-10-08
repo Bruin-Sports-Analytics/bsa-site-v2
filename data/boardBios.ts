@@ -116,7 +116,7 @@ export const boardBios: Record<string, BoardBio> = {
   "anika-malapati": {
     hometown: "Dallas, TX",
     joinDate: "Fall 2024",
-    bsaGroups: ["Volleyball Consulting"],
+    bsaGroups: ["Volleyball"],
     favoriteTeams: ["Dallas Cowboys", "FC Barcelona", "Argentina Soccer", "USA Volleyball"],
     interests: ["Beach Volleyball", "Hiking", "Gym/Sports", "Entrepreneurship", "Coffee Shops"],
     funFact: "I’ve traveled to over 20 countries!"
