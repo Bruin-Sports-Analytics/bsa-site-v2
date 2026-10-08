@@ -113,6 +113,14 @@ export const boardBios: Record<string, BoardBio> = {
     interests: ["Anime", "Card Games", "Video Games"],
     funFact: "I can create ceramic glazes!"
   },
+  "anika-malapati": {
+    hometown: "Dallas, TX",
+    joinDate: "Fall 2024",
+    bsaGroups: ["Volleyball Consulting"],
+    favoriteTeams: ["Dallas Cowboys", "FC Barcelona", "Argentina Soccer", "USA Volleyball"],
+    interests: ["Beach Volleyball", "Hiking", "Gym/Sports", "Entrepreneurship", "Coffee Shops"],
+    funFact: "I’ve traveled to over 20 countries!"
+  },
   "anika-soitkar": {
     hometown: "Thousand Oaks, CA",
     joinDate: "Fall 2024",

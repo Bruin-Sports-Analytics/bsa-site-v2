@@ -1049,7 +1049,7 @@ export const memberProfiles: MemberProfile[] = [
   },
   {
     "name": "Anika Malapati",
-    "major": "Stats & Data Science",
+    "major": "Data Science & Statistics",
     "gradYear": "2028",
     "linkedinUrl": "https://www.linkedin.com/in/anika-malapati",
     "photoUrl": "/assets/linkedin_headshots/anika-malapati.jpeg",
