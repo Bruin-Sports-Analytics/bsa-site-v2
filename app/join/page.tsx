@@ -4,6 +4,7 @@ import Link from "next/link";
 import { FAQAccordion } from "@/components/FAQAccordion";
 import { Timeline } from "@/components/Timeline";
 import { Countdown } from "@/components/Countdown";
+import { ResumeTemplatesButton } from "@/components/ResumeTemplatesButton";
 import { RecruitmentForm } from "@/components/RecruitmentForm";
 import { recruitment } from "@/data/site";
 import styles from "./join.module.css";
@@ -34,6 +35,7 @@ export const metadata: Metadata = {
 export default function JoinPage() {
   const isMailingListCta = recruitment.status !== "OPEN";
   const hasDeadlineCountdown = recruitment.status === "OPEN";
+  const showRecruitmentTimeline = false;
 
   const recruitmentJsonLd = {
     "@context": "https://schema.org",
@@ -47,8 +49,10 @@ export default function JoinPage() {
     },
     "educationalProgramMode": "In-person / Hybrid",
     "programType": "Student Organization / Pre-Professional Training",
-    "startDate": recruitment.openDate,
-    "applicationDeadline": recruitment.closeDate,
+    ...(recruitment.status === "OPEN" && {
+      "startDate": recruitment.openDate,
+      "applicationDeadline": recruitment.closeDate,
+    }),
     "url": "https://www.bruinsportsanalytics.org/join"
   };
 
@@ -105,6 +109,7 @@ export default function JoinPage() {
                 </a>
               )}
               <Link className="btn btn-secondary" href="/events">Public events</Link>
+              {!hasDeadlineCountdown && <ResumeTemplatesButton />}
             </div>
           </div>
           {hasDeadlineCountdown && (
@@ -119,13 +124,15 @@ export default function JoinPage() {
           )}
         </div>
       </section>
-      <section className="section">
-        <div className="container">
-          <span className="eyebrow">Recruitment timeline</span>
-          <h2 className="section-title">Fall Events</h2>
-          <Timeline events={recruitment.timelineEvents} />
-        </div>
-      </section>
+      {showRecruitmentTimeline && (
+        <section className="section">
+          <div className="container">
+            <span className="eyebrow">Recruitment timeline</span>
+            <h2 className="section-title">Fall Events</h2>
+            <Timeline events={recruitment.timelineEvents} />
+          </div>
+        </section>
+      )}
       <section className="section tight">
         <div className="container grid two">
           <article className={`card ${styles.recruitmentCard}`}>
