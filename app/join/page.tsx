@@ -58,7 +58,7 @@ export default function JoinPage() {
 
   const stateCopy = {
     UPCOMING: {
-      title: `Our next recruitment cycle is ${recruitment.nextCycleLabel}`,
+      title: "Stay in tune for our future recruitment cycle",
       // text: "Join the mailing list, attend public events, and review the roles that expect to recruit.",
       cta: "Get notified"
     },
