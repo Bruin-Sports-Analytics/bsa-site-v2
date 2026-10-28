@@ -28,7 +28,7 @@ export function EventCard({ event, isSoonest = false }: Props) {
       <p>{event.description}</p>
       <div className={styles.meta}>
         <span><CalendarDays size={16} aria-hidden /> {event.date} • {event.time}</span>
-        <span><MapPin size={16} aria-hidden /> {event.location}</span>
+        {event.location && <span><MapPin size={16} aria-hidden /> {event.location}</span>}
       </div>
       {event.isMembersOnly ? (
         <span className={styles.members}>Members only</span>

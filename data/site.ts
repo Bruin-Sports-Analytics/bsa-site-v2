@@ -113,7 +113,7 @@ export type Event = {
   startsAt: string;
   endsAt: string;
   dateLabel?: string;
-  location: string;
+  location?: string;
   isMembersOnly: boolean;
   rsvpUrl?: string;
   ctaLabel?: string;
@@ -1570,6 +1570,18 @@ export const impactStats = [
 ];
 
 export const events: Event[] = [
+  {
+    title: "Git Workshop",
+    slug: "git-workshop",
+    type: "workshop",
+    date: "Oct 28, 2026",
+    time: "7:00 PM",
+    startsAt: "2026-10-28T19:00:00-07:00",
+    endsAt: "2026-10-28T23:59:59-07:00",
+    isMembersOnly: false,
+    ctaLabel: "Zoom link available soon",
+    description: "Join us for a Git workshop. A Zoom link will be available.",
+  },
   {
     title: "Enormous Activities Fair (EAF)",
     slug: "enormous-activities-fair-eaf",

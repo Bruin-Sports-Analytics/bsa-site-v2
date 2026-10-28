@@ -39,7 +39,7 @@ export default function EventsPage() {
         "description": event.description,
         "startDate": event.startsAt,
         "endDate": event.endsAt,
-        "location": {
+        ...(event.location ? { "location": {
           "@type": "Place",
           "name": event.location,
           "address": {
@@ -47,7 +47,7 @@ export default function EventsPage() {
             "addressLocality": "Los Angeles",
             "addressRegion": "CA"
           }
-        },
+        } } : {}),
         "organizer": {
           "@type": "Organization",
           "name": "Bruin Sports Analytics",
