@@ -1575,7 +1575,7 @@ export const events: Event[] = [
     slug: "git-workshop",
     type: "workshop",
     date: "Oct 28, 2026",
-    time: "7:00 PM",
+    time: "7:15 PM",
     startsAt: "2026-10-28T19:00:00-07:00",
     endsAt: "2026-10-28T23:59:59-07:00",
     isMembersOnly: false,
