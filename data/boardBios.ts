@@ -105,6 +105,14 @@ export const boardBios: Record<string, BoardBio> = {
     interests: ["International Travel", "Sneaker Engineering", "Cooking"],
     funFact: "I’ve been whitewater rafting down the Merced River!"
   },
+  "emma-li": {
+    hometown: "Torrance, CA",
+    joinDate: "Fall 2024",
+    bsaGroups: ["Tennis"],
+    favoriteTeams: ["San Francisco 49ers", "Golden State Warriors"],
+    interests: ["Tennis", "Pilates", "Hot Yoga", "Football"],
+    funFact: "I have a dog named Coco and a cat named Codi"
+  },
   "beck-zimmerman": {
     hometown: "Ojai, CA",
     joinDate: "Fall 2025",
