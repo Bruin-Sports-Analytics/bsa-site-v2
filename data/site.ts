@@ -1571,6 +1571,21 @@ export const impactStats = [
 
 export const events: Event[] = [
   {
+    title: "Guest Speaker: Jeremy Frank",
+    slug: "guest-speaker-jeremy-frank",
+    type: "speaker",
+    date: "Nov 4, 2026",
+    time: "7:00 PM",
+    startsAt: "2026-11-04T19:00:00-08:00",
+    endsAt: "2026-11-04T23:59:59-08:00",
+    location: "Online via Zoom",
+    isMembersOnly: false,
+    rsvpUrl: "https://us06web.zoom.us/j/4518383000?pwd=ZDvQbHQiOjveAURM1uSOKnaqya1Ies.1&omn=83444997206",
+    ctaLabel: "Join on Zoom",
+    description: "Join Jeremy Frank, Senior Baseball Data Scientist for the Chicago Cubs, as he shares his experience working in sports analytics and data science.",
+    speaker: "Jeremy Frank"
+  },
+  {
     title: "Git Workshop",
     slug: "git-workshop",
     type: "workshop",
