@@ -711,7 +711,7 @@ export const projects: Project[] = [
 export const memberProfiles: MemberProfile[] = [
   {
     "name": "Moulik Chatterjee",
-    "major": "Business Economics; Stats & Data Science",
+    "major": "Economics and Statistics & Data Science",
     "gradYear": "2027",
     "linkedinUrl": "https://www.linkedin.com/in/moulik-chatterjee/",
     "photoUrl": "/assets/linkedin_headshots/moulik-chatterjee.jpeg",
